@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/YOUR_ORG/agent_skills_directory/main/schema/catalog-schema.json",
+  "title": "Agent Skills Catalog",
+  "description": "Schema for the aggregated agent skills catalog",
+  "type": "object",
+  "required": ["version", "generated_at", "total_skills", "providers", "categories", "skills"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema reference"
+    },
+    "version": {
+      "type": "string",
+      "description": "Catalog version in YYYY.MM.DD format",
+      "pattern": "^\\d{4}\\.\\d{2}\\.\\d{2}$"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of when the catalog was generated"
+    },
+    "total_skills": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of skills in the catalog"
+    },
+    "providers": {
+      "type": "object",
+      "description": "Map of provider IDs to provider information",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "repo", "skills_count"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Display name of the provider"
+          },
+          "repo": {
+            "type": "string",
+            "format": "uri",
+            "description": "GitHub repository URL"
+          },
+          "skills_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of skills from this provider"
+          }
+        }
+      }
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of all categories present in the catalog"
+    },
+    "skills": {
+      "type": "array",
+      "description": "Array of all skills",
+      "items": {
+        "$ref": "#/definitions/skill"
+      }
+    }
+  },
+  "definitions": {
+    "skill": {
+      "type": "object",
+      "required": ["id", "name", "description", "provider", "category", "source", "has_scripts", "has_references", "has_assets", "tags"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier in format provider/skill-name",
+          "pattern": "^[a-z0-9-]+/[a-z0-9-]+$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Skill name (from SKILL.md frontmatter)",
+          "maxLength": 64,
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "description": {
+          "type": "string",
+          "description": "Skill description (from SKILL.md frontmatter)",
+          "maxLength": 1024
+        },
+        "provider": {
+          "type": "string",
+          "description": "Provider ID"
+        },
+        "category": {
+          "type": "string",
+          "description": "Skill category",
+          "enum": ["documents", "development", "creative", "enterprise", "integrations", "data", "other"]
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "License information"
+        },
+        "compatibility": {
+          "type": ["string", "null"],
+          "description": "Environment requirements",
+          "maxLength": 500
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Additional metadata from SKILL.md",
+          "additionalProperties": true
+        },
+        "source": {
+          "$ref": "#/definitions/source"
+        },
+        "has_scripts": {
+          "type": "boolean",
+          "description": "Whether the skill has a scripts/ directory"
+        },
+        "has_references": {
+          "type": "boolean",
+          "description": "Whether the skill has a references/ directory"
+        },
+        "has_assets": {
+          "type": "boolean",
+          "description": "Whether the skill has an assets/ or templates/ directory"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 10,
+          "description": "Searchable tags extracted from skill content"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["repo", "path", "skill_md_url"],
+      "properties": {
+        "repo": {
+          "type": "string",
+          "format": "uri",
+          "description": "Source repository URL"
+        },
+        "path": {
+          "type": "string",
+          "description": "Path to skill directory within the repository"
+        },
+        "skill_md_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Direct URL to fetch SKILL.md content"
+        },
+        "commit_sha": {
+          "type": ["string", "null"],
+          "description": "Git commit SHA for reproducibility"
+        }
+      }
+    }
+  }
+}
