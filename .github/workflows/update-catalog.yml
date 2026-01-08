@@ -1,0 +1,105 @@
+name: Update Skills Catalog
+
+on:
+  schedule:
+    # Run daily at 6:00 UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      create_release:
+        description: 'Create a new release'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  update-catalog:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install pyyaml
+      
+      - name: Run aggregation script
+        run: |
+          python scripts/aggregate.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
+      
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet catalog.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add catalog.json catalog.min.json
+          git commit -m "Update catalog - ${{ steps.date.outputs.date }}"
+          git push
+      
+      - name: Create Release
+        if: steps.changes.outputs.changed == 'true' || inputs.create_release == 'true'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.date.outputs.date }}
+          name: Skills Catalog v${{ steps.date.outputs.date }}
+          body: |
+            ## Agent Skills Catalog
+            
+            Updated: ${{ steps.date.outputs.date }}
+            
+            ### Download
+            - [catalog.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.json) - Pretty printed
+            - [catalog.min.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.min.json) - Minified
+            
+            ### CDN URLs
+            ```
+            # Latest
+            https://cdn.jsdelivr.net/gh/${{ github.repository }}@main/catalog.json
+            
+            # This version
+            https://cdn.jsdelivr.net/gh/${{ github.repository }}@v${{ steps.date.outputs.date }}/catalog.json
+            ```
+          files: |
+            catalog.json
+            catalog.min.json
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Summary
+        run: |
+          echo "## Catalog Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Date**: ${{ steps.date.outputs.date }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Changes detected**: ${{ steps.changes.outputs.changed }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f catalog.json ]; then
+            TOTAL=$(python -c "import json; print(json.load(open('catalog.json'))['total_skills'])")
+            echo "- **Total skills**: $TOTAL" >> $GITHUB_STEP_SUMMARY
+          fi
