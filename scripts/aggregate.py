@@ -269,7 +269,7 @@ def build_catalog() -> dict:
     # Build catalog
     now = datetime.now(timezone.utc)
     catalog = {
-        "$schema": "https://raw.githubusercontent.com/YOUR_ORG/agent_skills_directory/main/schema/catalog-schema.json",
+        "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
         "version": now.strftime("%Y.%m.%d"),
         "generated_at": now.isoformat(),
         "total_skills": len(all_skills),

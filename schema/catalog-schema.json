@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/YOUR_ORG/agent_skills_directory/main/schema/catalog-schema.json",
+  "$id": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
   "title": "Agent Skills Catalog",
   "description": "Schema for the aggregated agent skills catalog",
   "type": "object",
