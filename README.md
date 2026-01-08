@@ -2,9 +2,13 @@
 
 A centralized, automatically-updated catalog of [Agent Skills](https://agentskills.io) from multiple providers.
 
+> **🔄 Updated Daily** — A GitHub Action runs every day at 06:00 UTC to fetch the latest skills from all providers and update the catalog. You can always target `@main` for the latest or pin to a specific version.
+
 ## What is this?
 
 This repository aggregates skills from various providers into a single, standardized JSON catalog that can be consumed by MCP servers, AI agents, and developer tools.
+
+**Used by:** [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) — An MCP server that exposes these skills to AI agents.
 
 **Providers:**
 - [Anthropic](https://github.com/anthropics/skills) - Official skills from Anthropic
@@ -181,7 +185,9 @@ This aggregation tool is MIT licensed. Individual skills retain their original l
 
 ## Related
 
+- [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) - MCP server that consumes this catalog
 - [Agent Skills Specification](https://agentskills.io/specification)
 - [Anthropic Skills](https://github.com/anthropics/skills)
 - [OpenAI Skills](https://github.com/openai/skills)
+- [GitHub Awesome Copilot](https://github.com/github/awesome-copilot)
 - [Model Context Protocol](https://modelcontextprotocol.io)
