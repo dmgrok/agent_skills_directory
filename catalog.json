@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/YOUR_ORG/agent_skills_directory/main/schema/catalog-schema.json",
   "version": "2026.01.08",
-  "generated_at": "2026-01-08T22:47:40.338390+00:00",
+  "generated_at": "2026-01-08T22:54:20.554716+00:00",
   "total_skills": 29,
   "providers": {
     "anthropics": {
