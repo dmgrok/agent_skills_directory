@@ -131,6 +131,55 @@
 ├── references/     # Documentation files (optional)
 └── assets/         # Templates, schemas (optional)</code></pre>
                 </div>
+
+                <div class="skill-quality">
+                    <h3>🛠️ How to Build a Good Skill</h3>
+                    <ul>
+                        <li>Start with a clear goal and a single responsibility per skill.</li>
+                        <li>Keep instructions concise; prefer step lists over prose.</li>
+                        <li>Include context guards (prereqs, tech stack) to avoid misuse.</li>
+                        <li>Document inputs/outputs and expected files touched.</li>
+                        <li>Add short examples or test commands that validate success.</li>
+                        <li>Reference trusted sources (docs, standards) when relevant.</li>
+                        <li>Check for safety: no secrets, destructive commands, or ambiguous actions.</li>
+                        <li>Use tags and category from the <a href="https://github.com/dmgrok/agent_skills_directory/blob/main/schema/catalog-schema.json" target="_blank">catalog schema</a> for easy discovery.</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">📖 See the <a href="https://agentskills.io" target="_blank">Agent Skills specification</a> for full guidelines.</p>
+                </div>
+
+                <div class="skill-template">
+                    <h3>📝 Sample SKILL.md Template</h3>
+                    <pre><code>---
+name: my-awesome-skill
+description: Brief description of what this skill does
+category: development
+tags: [typescript, testing, react]
+version: 1.0.0
+---
+
+# My Awesome Skill
+
+## Context
+- Works with: TypeScript, React projects
+- Requires: Node.js 18+
+
+## Instructions
+
+1. **Step One** — Clear action the agent should take
+2. **Step Two** — Next action with expected outcome
+3. **Step Three** — Final step or validation
+
+## Examples
+
+```bash
+# Command to verify the skill worked
+npm test
+```
+
+## References
+- [Official Docs](https://example.com/docs)
+</code></pre>
+                </div>
             </section>
         </div>
 
