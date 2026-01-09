@@ -674,6 +674,94 @@ footer a:hover {
     color: var(--text);
 }
 
+/* Skill Quality & Scoping Sections */
+.skill-quality,
+.skill-scoping,
+.skill-template {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill-quality h3,
+.skill-scoping h3,
+.skill-template h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.skill-quality ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-quality li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.skill-quality li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--success);
+}
+
+.skill-scoping p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.scoping-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.scoping-table th,
+.scoping-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.scoping-table th {
+    background: var(--bg);
+    color: var(--text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+.scoping-table td code {
+    background: var(--bg);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.scoping-table tbody tr:hover {
+    background: var(--bg-card-hover);
+}
+
+.skill-template pre {
+    margin: 0;
+    overflow-x: auto;
+    background: var(--bg);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.skill-template code {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text);
+}
+
 /* Method Tabs */
 .method-tabs {
     display: flex;
