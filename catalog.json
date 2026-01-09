@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.01.08",
-  "generated_at": "2026-01-08T23:00:22.166779+00:00",
+  "version": "2026.01.09",
+  "generated_at": "2026-01-09T06:42:25.279222+00:00",
   "total_skills": 29,
   "providers": {
     "anthropics": {
@@ -523,7 +523,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/create-plan",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/create-plan/SKILL.md",
-        "commit_sha": "d3966156c8491a67217502c8ea37d2faa3e19e2b"
+        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
       },
       "has_scripts": false,
       "has_references": false,
@@ -549,7 +549,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-address-comments",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-address-comments/SKILL.md",
-        "commit_sha": "d3966156c8491a67217502c8ea37d2faa3e19e2b"
+        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
       },
       "has_scripts": true,
       "has_references": false,
@@ -578,7 +578,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-fix-ci",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-fix-ci/SKILL.md",
-        "commit_sha": "d3966156c8491a67217502c8ea37d2faa3e19e2b"
+        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
       },
       "has_scripts": true,
       "has_references": false,
@@ -607,7 +607,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/linear",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/linear/SKILL.md",
-        "commit_sha": "d3966156c8491a67217502c8ea37d2faa3e19e2b"
+        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
       },
       "has_scripts": false,
       "has_references": false,
@@ -632,7 +632,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-knowledge-capture",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-knowledge-capture/SKILL.md",
-        "commit_sha": "d3966156c8491a67217502c8ea37d2faa3e19e2b"
+        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
       },
       "has_scripts": false,
       "has_references": true,
@@ -662,7 +662,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-meeting-intelligence",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-meeting-intelligence/SKILL.md",
-        "commit_sha": "d3966156c8491a67217502c8ea37d2faa3e19e2b"
+        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
       },
       "has_scripts": false,
       "has_references": true,
@@ -689,7 +689,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-research-documentation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-research-documentation/SKILL.md",
-        "commit_sha": "d3966156c8491a67217502c8ea37d2faa3e19e2b"
+        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
       },
       "has_scripts": false,
       "has_references": true,
@@ -718,7 +718,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-spec-to-implementation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-spec-to-implementation/SKILL.md",
-        "commit_sha": "d3966156c8491a67217502c8ea37d2faa3e19e2b"
+        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
       },
       "has_scripts": false,
       "has_references": true,
@@ -745,7 +745,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-creator",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md",
-        "commit_sha": "d3966156c8491a67217502c8ea37d2faa3e19e2b"
+        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
       },
       "has_scripts": true,
       "has_references": false,
@@ -772,7 +772,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-installer",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-installer/SKILL.md",
-        "commit_sha": "d3966156c8491a67217502c8ea37d2faa3e19e2b"
+        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
       },
       "has_scripts": true,
       "has_references": false,
