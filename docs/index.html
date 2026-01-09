@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Skills Directory - Mother Skills MCP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🧠 Agent Skills Directory</h1>
+            <p class="subtitle">Discover skills for Claude, Copilot, and Codex agents</p>
+            <nav class="main-tabs">
+                <button class="main-tab active" data-tab="browse">🔍 Browse Skills</button>
+                <button class="main-tab" data-tab="what-are-skills">📚 What are Skills?</button>
+                <button class="main-tab" data-tab="how-to-use">🚀 How to Use</button>
+                <a href="https://github.com/dmgrok/agent_skills_directory/issues/new?template=add-skill-source.md&title=%5BNew+Source%5D+Your+Skill+Repository" target="_blank" class="main-tab btn-suggest">➕ Add New Skills</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Browse Skills Tab (Default Active) -->
+        <div id="tab-browse" class="tab-panel active">
+            <section class="search-section">
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Search skills..." autocomplete="off">
+                    <span class="search-icon">🔍</span>
+                </div>
+                
+                <div class="filters">
+                    <div class="filter-group">
+                        <label>Provider:</label>
+                        <select id="provider-filter">
+                            <option value="">All Providers</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Category:</label>
+                        <select id="category-filter">
+                            <option value="">All Categories</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <div class="stat-card">
+                    <span class="stat-number" id="total-skills">-</span>
+                    <span class="stat-label">Total Skills</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="total-providers">-</span>
+                    <span class="stat-label">Providers</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="total-categories">-</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="filtered-count">-</span>
+                    <span class="stat-label">Showing</span>
+                </div>
+            </section>
+
+            <section class="skills-section">
+                <div id="skills-grid" class="skills-grid">
+                    <div class="loading">Loading skills...</div>
+                </div>
+            </section>
+
+            <!-- Suggest New Source CTA -->
+            <section class="cta-section">
+                <h2>🌟 Have a Skill Repository?</h2>
+                <p>We aggregate skills from trusted sources. Submit your repository to be included in the directory.</p>
+                <a href="https://github.com/dmgrok/agent_skills_directory/issues/new?template=add-skill-source.md&title=%5BNew+Source%5D+Your+Skill+Repository" target="_blank" class="btn-primary">
+                    ➕ Request New Source
+                </a>
+            </section>
+        </div>
+
+        <!-- What are Skills Tab -->
+        <div id="tab-what-are-skills" class="tab-panel">
+            <section class="info-section">
+                <h2>🎯 What are Agent Skills?</h2>
+                <p class="intro-text">
+                    Agent Skills are <strong>modular, reusable instruction packages</strong> that extend AI coding agents with specialized capabilities. Unlike monolithic instruction files, skills are composable, version-controlled, and automatically matched to your project context.
+                </p>
+                
+                <div class="comparison-grid">
+                    <div class="comparison-card old-way">
+                        <h3>❌ Traditional Approach</h3>
+                        <ul>
+                            <li><code>CLAUDE.md</code> - Single file, grows unwieldy</li>
+                            <li><code>.github/copilot-instructions.md</code> - Agent-specific</li>
+                            <li><code>.cursorrules</code> - Vendor lock-in</li>
+                            <li><code>AGENTS.md</code> - Manual maintenance</li>
+                        </ul>
+                        <div class="comparison-problems">
+                            <span>🔴 One giant file per project</span>
+                            <span>🔴 No reusability across projects</span>
+                            <span>🔴 Manual updates required</span>
+                            <span>🔴 Agent-specific formats</span>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-card new-way">
+                        <h3>✅ Agent Skills Approach</h3>
+                        <ul>
+                            <li><code>SKILL.md</code> - Focused, single-purpose</li>
+                            <li>Works with Claude, Copilot, Codex</li>
+                            <li>Auto-matched to tech stack</li>
+                            <li>Community-maintained registry</li>
+                        </ul>
+                        <div class="comparison-benefits">
+                            <span>🟢 Modular & composable</span>
+                            <span>🟢 Share across projects</span>
+                            <span>🟢 Auto-updates from registry</span>
+                            <span>🟢 Agent-agnostic standard</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-structure">
+                    <h3>📁 Skill Structure</h3>
+                    <pre><code>my-skill/
+├── SKILL.md        # Instructions + metadata (required)
+├── scripts/        # Executable automation (optional)
+├── references/     # Documentation files (optional)
+└── assets/         # Templates, schemas (optional)</code></pre>
+                </div>
+            </section>
+        </div>
+
+        <!-- How to Use Tab -->
+        <div id="tab-how-to-use" class="tab-panel">
+            <section class="info-section">
+                <h2>🚀 How to Add Skills to Your Project</h2>
+                
+                <div class="method-tabs">
+                    <button class="method-tab active" data-method="mother">With Mother Skills MCP (Recommended)</button>
+                    <button class="method-tab" data-method="manual">Manual Installation</button>
+                </div>
+
+                <div class="method-content" id="method-mother">
+                    <h3>Automatic with <a href="https://github.com/dmgrok/mcp_mother_skills" target="_blank">Mother Skills MCP</a></h3>
+                    <p>Mother Skills MCP auto-detects your tech stack and installs matching skills.</p>
+                    
+                    <div class="steps">
+                        <div class="step">
+                            <span class="step-num">1</span>
+                            <div class="step-content">
+                                <h4>Configure MCP Server</h4>
+                                <p>Add to <code>.vscode/mcp.json</code> (Copilot) or <code>.mcp.json</code> (Claude):</p>
+                                <pre><code>{
+  "mcpServers": {
+    "mother-skills": {
+      "command": "node",
+      "args": ["/path/to/mcp-mother-skills/dist/index.js"],
+      "env": { "MOTHER_PROJECT_PATH": "." }
+    }
+  }
+}</code></pre>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">2</span>
+                            <div class="step-content">
+                                <h4>Sync Skills</h4>
+                                <p>In your AI agent conversation:</p>
+                                <pre><code>sync_skills</code></pre>
+                                <p>Mother detects React, TypeScript, Docker, etc. and installs relevant skills.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">3</span>
+                            <div class="step-content">
+                                <h4>Install Specific Skills</h4>
+                                <pre><code>install_skill("mcp-builder")
+install_skill("pdf")</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/dmgrok/mcp_mother_skills" target="_blank" class="btn-primary">📦 Get Mother Skills MCP</a>
+                </div>
+
+                <div class="method-content hidden" id="method-manual">
+                    <h3>Manual Installation</h3>
+                    <p>Download skills directly to your project's skills directory.</p>
+                    
+                    <div class="steps">
+                        <div class="step">
+                            <span class="step-num">1</span>
+                            <div class="step-content">
+                                <h4>Create Skills Directory</h4>
+                                <pre><code># For Copilot
+mkdir -p .github/skills
+
+# For Claude
+mkdir -p .claude/skills
+
+# For Codex
+mkdir -p .codex/skills</code></pre>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">2</span>
+                            <div class="step-content">
+                                <h4>Download a Skill</h4>
+                                <pre><code># Clone a skill from the registry
+git clone --depth 1 https://github.com/anthropics/skills.git temp
+cp -r temp/skills/pdf .github/skills/
+rm -rf temp</code></pre>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">3</span>
+                            <div class="step-content">
+                                <h4>Reference in Instructions (Optional)</h4>
+                                <p>Add to your <code>CLAUDE.md</code> or <code>.github/copilot-instructions.md</code>:</p>
+                                <pre><code>## Skills
+Load skills from .github/skills/ as needed.</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="skill-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>
+                Data from <a href="https://github.com/dmgrok/agent_skills_directory" target="_blank">Agent Skills Directory</a> · 
+                Part of <a href="https://github.com/dmgrok/mcp_mother_skills" target="_blank">Mother Skills MCP</a>
+            </p>
+            <p class="update-info">Last updated: <span id="last-updated">-</span></p>
+            <p class="api-info">
+                📡 Want daily updates? Use the API directly: <br>
+                <code><a href="https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json" target="_blank">cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json</a></code>
+            </p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
