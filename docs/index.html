@@ -138,6 +138,7 @@
                         <li>Start with a clear goal and a single responsibility per skill.</li>
                         <li>Keep instructions concise; prefer step lists over prose.</li>
                         <li>Include context guards (prereqs, tech stack) to avoid misuse.</li>
+                        <li><strong>Scope to file types</strong> using globs (e.g., <code>*.tsx</code>, <code>**/*.test.ts</code>) so the skill only applies where relevant.</li>
                         <li>Document inputs/outputs and expected files touched.</li>
                         <li>Add short examples or test commands that validate success.</li>
                         <li>Reference trusted sources (docs, standards) when relevant.</li>
@@ -147,6 +148,38 @@
                     <p style="margin-top: 1rem;">📖 See the <a href="https://agentskills.io" target="_blank">Agent Skills specification</a> for full guidelines.</p>
                 </div>
 
+                <div class="skill-scoping">
+                    <h3>🎯 Scoping Skills to File Types</h3>
+                    <p>Skills can be limited to specific files, paths, or contexts using the <code>globs</code> field or context guards:</p>
+                    <table class="scoping-table">
+                        <thead>
+                            <tr><th>Method</th><th>Example</th><th>Use Case</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>globs</code> (frontmatter)</td>
+                                <td><code>["*.tsx", "*.jsx"]</code></td>
+                                <td>Only apply to React component files</td>
+                            </tr>
+                            <tr>
+                                <td><code>globs</code> (path patterns)</td>
+                                <td><code>["src/components/**/*"]</code></td>
+                                <td>Only apply within specific directories</td>
+                            </tr>
+                            <tr>
+                                <td><code>globs</code> (test files)</td>
+                                <td><code>["**/*.test.ts", "**/*.spec.ts"]</code></td>
+                                <td>Only apply to test files</td>
+                            </tr>
+                            <tr>
+                                <td>Context guards (markdown)</td>
+                                <td><em>"Skip when editing config files"</em></td>
+                                <td>Soft guidance for the agent</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <div class="skill-template">
                     <h3>📝 Sample SKILL.md Template</h3>
                     <pre><code>---
@@ -154,14 +187,16 @@ name: my-awesome-skill
 description: Brief description of what this skill does
 category: development
 tags: [typescript, testing, react]
+globs: ["*.tsx", "*.jsx", "src/components/**/*"]
 version: 1.0.0
 ---
 
 # My Awesome Skill
 
 ## Context
-- Works with: TypeScript, React projects
-- Requires: Node.js 18+
+- **Applies to:** `*.tsx`, `*.jsx` files in React projects
+- **Skip when:** Editing config files, markdown, or non-component code
+- **Requires:** Node.js 18+, React 18+
 
 ## Instructions
 
