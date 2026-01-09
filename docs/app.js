@@ -19,6 +19,58 @@ const totalCategoriesEl = document.getElementById('total-categories');
 const filteredCountEl = document.getElementById('filtered-count');
 const lastUpdatedEl = document.getElementById('last-updated');
 
+// Parse URL query parameters for filtering
+// Supports: ?id=xxx, ?provider=xxx, ?category=xxx, ?search=xxx, ?tags=a,b,c
+function getQueryParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+        id: params.get('id'),
+        provider: params.get('provider'),
+        category: params.get('category'),
+        search: params.get('search') || params.get('q'),
+        tags: params.get('tags')?.split(',').map(t => t.trim().toLowerCase()) || []
+    };
+}
+
+// Apply URL query params to filters and trigger filtering
+function applyQueryParams() {
+    const params = getQueryParams();
+    
+    if (params.search) {
+        searchInput.value = params.search;
+    }
+    if (params.provider && providerFilter.querySelector(`option[value="${params.provider}"]`)) {
+        providerFilter.value = params.provider;
+    }
+    if (params.category && categoryFilter.querySelector(`option[value="${params.category}"]`)) {
+        categoryFilter.value = params.category;
+    }
+    
+    // If id param, show that skill's modal directly
+    if (params.id) {
+        const skill = catalog.skills.find(s => s.id === params.id || s.name === params.id);
+        if (skill) {
+            setTimeout(() => showSkillModal(skill), 100);
+        }
+    }
+    
+    // Tags filter applied in filterSkills
+    filterSkills();
+}
+
+// Update URL when filters change (without page reload)
+function updateURLParams() {
+    const params = new URLSearchParams();
+    if (searchInput.value) params.set('search', searchInput.value);
+    if (providerFilter.value) params.set('provider', providerFilter.value);
+    if (categoryFilter.value) params.set('category', categoryFilter.value);
+    
+    const newURL = params.toString() 
+        ? `${window.location.pathname}?${params.toString()}`
+        : window.location.pathname;
+    window.history.replaceState({}, '', newURL);
+}
+
 // Initialize
 async function init() {
     try {
@@ -27,7 +79,7 @@ async function init() {
         
         populateFilters();
         updateStats();
-        renderSkills(catalog.skills);
+        applyQueryParams(); // Apply URL params after loading
         
         // Update last updated date
         const date = new Date(catalog.generated_at);
@@ -77,6 +129,7 @@ function filterSkills() {
     const searchTerm = searchInput.value.toLowerCase().trim();
     const provider = providerFilter.value;
     const category = categoryFilter.value;
+    const urlTags = getQueryParams().tags;
 
     filteredSkills = catalog.skills.filter(skill => {
         // Search filter
@@ -91,10 +144,15 @@ function filterSkills() {
         // Category filter
         const matchesCategory = !category || skill.category === category;
 
-        return matchesSearch && matchesProvider && matchesCategory;
+        // Tags filter (from URL)
+        const matchesTags = urlTags.length === 0 || 
+            (skill.tags && urlTags.every(t => skill.tags.some(st => st.toLowerCase().includes(t))));
+
+        return matchesSearch && matchesProvider && matchesCategory && matchesTags;
     });
 
     filteredCountEl.textContent = filteredSkills.length;
+    updateURLParams();
     renderSkills(filteredSkills);
 }
 

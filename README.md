@@ -50,6 +50,20 @@ skill_md = requests.get(skill["source"]["skill_md_url"]).text
 
 ### MCP Server Integration
 
+### Browser (docs site) URL filters
+
+The static browser supports query-string filters so you can share/bookmark filtered views:
+
+- `?provider=anthropics`
+- `?category=development`
+- `?search=notion` (or `?q=...`)
+- `?tags=git,api`
+- `?id=anthropics/pdf` (opens modal directly)
+
+Examples:
+
+- `https://dmgrok.github.io/agent_skills_directory/?category=documents`
+- `https://dmgrok.github.io/agent_skills_directory/?provider=openai&search=notion`
 ```python
 from mcp.server import Server
 import aiohttp
@@ -120,6 +134,13 @@ class SkillsServer(Server):
   ]
 }
 ```
+
+## Development
+
+- Python dependencies: PyYAML, toon_format (TOON encoder, optional), pytest.
+- Virtual environment (recommended): `python -m venv .venv && . .venv/bin/activate`
+- Install deps: `python -m pip install pyyaml toon_format pytest`
+- Run tests: `pytest`
 
 ## Update Schedule
 
