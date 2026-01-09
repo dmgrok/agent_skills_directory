@@ -10,12 +10,21 @@ import json
 import re
 import sys
 import time
+import os
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 import urllib.request
 import urllib.error
+import subprocess
+import shutil
+
+try:
+    import toon_format  # type: ignore[import-untyped]
+    HAS_TOON = True
+except ImportError:
+    HAS_TOON = False
 
 import yaml  # type: ignore[import-untyped]
 
@@ -44,6 +53,13 @@ PROVIDERS = {
         "skills_path_prefix": "skills/",
     },
 }
+
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+DEFAULT_HEADERS = {"User-Agent": "AgentSkillsDirectory/1.0"}
+if GITHUB_TOKEN:
+    # Use GitHub token when available to avoid rate limits
+    DEFAULT_HEADERS["Authorization"] = f"Bearer {GITHUB_TOKEN}"
+    DEFAULT_HEADERS["Accept"] = "application/vnd.github+json"
 
 # Category mappings based on keywords in name/description
 CATEGORY_KEYWORDS = {
@@ -85,10 +101,7 @@ def fetch_url(url: str, retries: int = 3) -> Optional[str]:
     """Fetch content from URL with retry logic."""
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(
-                url,
-                headers={"User-Agent": "AgentSkillsDirectory/1.0"}
-            )
+            req = urllib.request.Request(url, headers=DEFAULT_HEADERS)
             with urllib.request.urlopen(req, timeout=30) as response:
                 return response.read().decode("utf-8")
         except (urllib.error.URLError, OSError) as e:
@@ -288,6 +301,39 @@ def build_catalog() -> dict:
     return catalog
 
 
+def write_toon_output(catalog: dict, output_dir: Path, catalog_json: Path) -> None:
+    """Write TOON format using python encoder if available, else fall back to npx CLI."""
+    catalog_toon = output_dir / "catalog.toon"
+
+    if HAS_TOON:
+        try:
+            toon_content = toon_format.encode(catalog)
+            catalog_toon.write_text(toon_content, encoding="utf-8")
+            print(f"✓ Written: {catalog_toon} (python toon_format)")
+            return
+        except NotImplementedError:
+            print("⚠ toon_format.encode not implemented; falling back to npx @toon-format/cli", file=sys.stderr)
+        except Exception as e:
+            print(f"⚠ toon_format.encode failed ({e}); falling back to npx @toon-format/cli", file=sys.stderr)
+
+    npx_path = shutil.which("npx")
+    if not npx_path:
+        print("⚠ Skipped TOON output: npx not found and python encoder unavailable", file=sys.stderr)
+        return
+
+    try:
+        subprocess.run(
+            [npx_path, "@toon-format/cli", str(catalog_json), "-o", str(catalog_toon)],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        print(f"✓ Written: {catalog_toon} (via npx @toon-format/cli)")
+    except subprocess.CalledProcessError as e:
+        error_out = e.stderr.strip() if e.stderr else str(e)
+        print(f"⚠ Failed TOON output via npx @toon-format/cli: {error_out}", file=sys.stderr)
+
+
 def main():
     print("=" * 50)
     print("Agent Skills Directory Aggregator")
@@ -310,6 +356,9 @@ def main():
     with open(catalog_min_json, "w") as f:
         json.dump(catalog, f, separators=(",", ":"))
     print(f"✓ Written: {catalog_min_json}")
+    
+    # Write TOON format (Token-Oriented Object Notation)
+    write_toon_output(catalog, output_dir, catalog_json)
     
     # Summary
     print(f"\n{'=' * 50}")
