@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.01.09",
-  "generated_at": "2026-01-09T13:28:40.037090+00:00",
-  "total_skills": 29,
+  "version": "2026.01.10",
+  "generated_at": "2026-01-10T06:38:12.154498+00:00",
+  "total_skills": 33,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
@@ -17,7 +17,7 @@
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
-      "skills_count": 3
+      "skills_count": 7
     }
   },
   "categories": [
@@ -436,6 +436,29 @@
       ]
     },
     {
+      "id": "github/appinsights-instrumentation",
+      "name": "appinsights-instrumentation",
+      "description": "Instrument a webapp to send useful telemetry data to Azure App Insights",
+      "provider": "github",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/appinsights-instrumentation",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/appinsights-instrumentation/SKILL.md",
+        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "appinsights",
+        "instrumentation"
+      ]
+    },
+    {
       "id": "github/azure-role-selector",
       "name": "azure-role-selector",
       "description": "When user is asking for guidance for which role to assign to an identity given desired permissions, this agent helps them understand the role that will meet the requirements with least privilege access and how to apply that role.",
@@ -448,7 +471,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-role-selector",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-role-selector/SKILL.md",
-        "commit_sha": "e496ef1b9b215939e4e7bda39480033a7ef140e6"
+        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
       },
       "has_scripts": false,
       "has_references": false,
@@ -458,6 +481,56 @@
         "azure",
         "role",
         "selector"
+      ]
+    },
+    {
+      "id": "github/github-issues",
+      "name": "github-issues",
+      "description": "Create, update, and manage GitHub issues using MCP tools. Use this skill when users want to create bug reports, feature requests, or task issues, update existing issues, add labels/assignees/milestones, or manage issue workflows. Triggers on requests like \"create an issue\", \"file a bug\", \"request a feature\", \"update issue X\", or any GitHub issue management task.",
+      "provider": "github",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/github-issues",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/github-issues/SKILL.md",
+        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "github",
+        "git",
+        "mcp",
+        "issues"
+      ]
+    },
+    {
+      "id": "github/nuget-manager",
+      "name": "nuget-manager",
+      "description": "Manage NuGet packages in .NET projects/solutions. Use this skill when adding, removing, or updating NuGet package versions. It enforces using `dotnet` CLI for package management and provides strict procedures for direct file edits only when updating versions.",
+      "provider": "github",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/nuget-manager",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nuget-manager/SKILL.md",
+        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "cli",
+        "nuget",
+        "manager"
       ]
     },
     {
@@ -473,7 +546,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/snowflake-semanticview",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/snowflake-semanticview/SKILL.md",
-        "commit_sha": "e496ef1b9b215939e4e7bda39480033a7ef140e6"
+        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
       },
       "has_scripts": false,
       "has_references": false,
@@ -482,6 +555,32 @@
         "cli",
         "snowflake",
         "semanticview"
+      ]
+    },
+    {
+      "id": "github/web-design-reviewer",
+      "name": "web-design-reviewer",
+      "description": "This skill enables visual inspection of websites running locally or remotely to identify and fix design issues. Triggers on requests like \"review website design\", \"check the UI\", \"fix the layout\", \"find design problems\". Detects issues with responsive design, accessibility, visual consistency, and layout breakage, then performs fixes at the source code level.",
+      "provider": "github",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/web-design-reviewer",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/web-design-reviewer/SKILL.md",
+        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "design",
+        "visual",
+        "web",
+        "reviewer"
       ]
     },
     {
@@ -497,7 +596,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/webapp-testing",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md",
-        "commit_sha": "e496ef1b9b215939e4e7bda39480033a7ef140e6"
+        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
       },
       "has_scripts": false,
       "has_references": false,
