@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.01.11",
-  "generated_at": "2026-01-11T06:39:56.062098+00:00",
-  "total_skills": 33,
+  "version": "2026.01.12",
+  "generated_at": "2026-01-12T06:46:35.402219+00:00",
+  "total_skills": 35,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
@@ -17,7 +17,7 @@
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
-      "skills_count": 7
+      "skills_count": 9
     }
   },
   "categories": [
@@ -448,7 +448,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/appinsights-instrumentation",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/appinsights-instrumentation/SKILL.md",
-        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
+        "commit_sha": "e0dd4e62aa1c91cb416e2b4522c0b37cb060241e"
       },
       "has_scripts": true,
       "has_references": true,
@@ -471,7 +471,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-role-selector",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-role-selector/SKILL.md",
-        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
+        "commit_sha": "e0dd4e62aa1c91cb416e2b4522c0b37cb060241e"
       },
       "has_scripts": false,
       "has_references": false,
@@ -496,7 +496,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/github-issues",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/github-issues/SKILL.md",
-        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
+        "commit_sha": "e0dd4e62aa1c91cb416e2b4522c0b37cb060241e"
       },
       "has_scripts": false,
       "has_references": true,
@@ -521,7 +521,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/nuget-manager",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nuget-manager/SKILL.md",
-        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
+        "commit_sha": "e0dd4e62aa1c91cb416e2b4522c0b37cb060241e"
       },
       "has_scripts": false,
       "has_references": false,
@@ -546,7 +546,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/snowflake-semanticview",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/snowflake-semanticview/SKILL.md",
-        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
+        "commit_sha": "e0dd4e62aa1c91cb416e2b4522c0b37cb060241e"
       },
       "has_scripts": false,
       "has_references": false,
@@ -555,6 +555,56 @@
         "cli",
         "snowflake",
         "semanticview"
+      ]
+    },
+    {
+      "id": "github/vscode-ext-commands",
+      "name": "vscode-ext-commands",
+      "description": "Guidelines for contributing commands in VS Code extensions. Indicates naming convention, visibility, localization and other relevant attributes, following VS Code extension development guidelines, libraries and good practices",
+      "provider": "github",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/vscode-ext-commands",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-commands/SKILL.md",
+        "commit_sha": "e0dd4e62aa1c91cb416e2b4522c0b37cb060241e"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "vscode",
+        "ext",
+        "commands"
+      ]
+    },
+    {
+      "id": "github/vscode-ext-localization",
+      "name": "vscode-ext-localization",
+      "description": "Guidelines for proper localization of VS Code extensions, following VS Code extension development guidelines, libraries and good practices",
+      "provider": "github",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/vscode-ext-localization",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-localization/SKILL.md",
+        "commit_sha": "e0dd4e62aa1c91cb416e2b4522c0b37cb060241e"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "vscode",
+        "ext",
+        "localization"
       ]
     },
     {
@@ -570,7 +620,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/web-design-reviewer",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/web-design-reviewer/SKILL.md",
-        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
+        "commit_sha": "e0dd4e62aa1c91cb416e2b4522c0b37cb060241e"
       },
       "has_scripts": false,
       "has_references": true,
@@ -596,7 +646,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/webapp-testing",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md",
-        "commit_sha": "750dff407bae99afda14bae0e83f47824f3f7f98"
+        "commit_sha": "e0dd4e62aa1c91cb416e2b4522c0b37cb060241e"
       },
       "has_scripts": false,
       "has_references": false,
@@ -622,7 +672,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/create-plan",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/create-plan/SKILL.md",
-        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
+        "commit_sha": "894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc"
       },
       "has_scripts": false,
       "has_references": false,
@@ -648,7 +698,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-address-comments",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-address-comments/SKILL.md",
-        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
+        "commit_sha": "894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc"
       },
       "has_scripts": true,
       "has_references": false,
@@ -677,7 +727,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-fix-ci",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-fix-ci/SKILL.md",
-        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
+        "commit_sha": "894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc"
       },
       "has_scripts": true,
       "has_references": false,
@@ -706,7 +756,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/linear",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/linear/SKILL.md",
-        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
+        "commit_sha": "894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc"
       },
       "has_scripts": false,
       "has_references": false,
@@ -731,7 +781,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-knowledge-capture",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-knowledge-capture/SKILL.md",
-        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
+        "commit_sha": "894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc"
       },
       "has_scripts": false,
       "has_references": true,
@@ -761,7 +811,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-meeting-intelligence",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-meeting-intelligence/SKILL.md",
-        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
+        "commit_sha": "894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc"
       },
       "has_scripts": false,
       "has_references": true,
@@ -788,7 +838,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-research-documentation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-research-documentation/SKILL.md",
-        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
+        "commit_sha": "894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc"
       },
       "has_scripts": false,
       "has_references": true,
@@ -817,7 +867,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-spec-to-implementation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-spec-to-implementation/SKILL.md",
-        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
+        "commit_sha": "894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc"
       },
       "has_scripts": false,
       "has_references": true,
@@ -844,7 +894,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-creator",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md",
-        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
+        "commit_sha": "894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc"
       },
       "has_scripts": true,
       "has_references": false,
@@ -871,7 +921,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-installer",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-installer/SKILL.md",
-        "commit_sha": "e911ae9feb93c14ba091f7844e361e87b81ae6e8"
+        "commit_sha": "894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc"
       },
       "has_scripts": true,
       "has_references": false,
