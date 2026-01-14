@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.01.13",
-  "generated_at": "2026-01-13T06:42:34.210681+00:00",
+  "version": "2026.01.14",
+  "generated_at": "2026-01-14T06:42:26.116348+00:00",
   "total_skills": 36,
   "providers": {
     "anthropics": {
@@ -448,7 +448,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/appinsights-instrumentation",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/appinsights-instrumentation/SKILL.md",
-        "commit_sha": "dcb1968a6cbbf907766639bc64031d39140edbb7"
+        "commit_sha": "b06e0b6aee2dd4c8e98ceffac2c8e1afd1c85535"
       },
       "has_scripts": true,
       "has_references": true,
@@ -473,7 +473,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-resource-visualizer",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-resource-visualizer/SKILL.md",
-        "commit_sha": "dcb1968a6cbbf907766639bc64031d39140edbb7"
+        "commit_sha": "b06e0b6aee2dd4c8e98ceffac2c8e1afd1c85535"
       },
       "has_scripts": false,
       "has_references": false,
@@ -498,7 +498,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-role-selector",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-role-selector/SKILL.md",
-        "commit_sha": "dcb1968a6cbbf907766639bc64031d39140edbb7"
+        "commit_sha": "b06e0b6aee2dd4c8e98ceffac2c8e1afd1c85535"
       },
       "has_scripts": false,
       "has_references": false,
@@ -523,7 +523,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/github-issues",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/github-issues/SKILL.md",
-        "commit_sha": "dcb1968a6cbbf907766639bc64031d39140edbb7"
+        "commit_sha": "b06e0b6aee2dd4c8e98ceffac2c8e1afd1c85535"
       },
       "has_scripts": false,
       "has_references": true,
@@ -548,7 +548,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/nuget-manager",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nuget-manager/SKILL.md",
-        "commit_sha": "dcb1968a6cbbf907766639bc64031d39140edbb7"
+        "commit_sha": "b06e0b6aee2dd4c8e98ceffac2c8e1afd1c85535"
       },
       "has_scripts": false,
       "has_references": false,
@@ -573,7 +573,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/snowflake-semanticview",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/snowflake-semanticview/SKILL.md",
-        "commit_sha": "dcb1968a6cbbf907766639bc64031d39140edbb7"
+        "commit_sha": "b06e0b6aee2dd4c8e98ceffac2c8e1afd1c85535"
       },
       "has_scripts": false,
       "has_references": false,
@@ -597,7 +597,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/vscode-ext-commands",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-commands/SKILL.md",
-        "commit_sha": "dcb1968a6cbbf907766639bc64031d39140edbb7"
+        "commit_sha": "b06e0b6aee2dd4c8e98ceffac2c8e1afd1c85535"
       },
       "has_scripts": false,
       "has_references": false,
@@ -622,7 +622,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/vscode-ext-localization",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-localization/SKILL.md",
-        "commit_sha": "dcb1968a6cbbf907766639bc64031d39140edbb7"
+        "commit_sha": "b06e0b6aee2dd4c8e98ceffac2c8e1afd1c85535"
       },
       "has_scripts": false,
       "has_references": false,
@@ -647,7 +647,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/web-design-reviewer",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/web-design-reviewer/SKILL.md",
-        "commit_sha": "dcb1968a6cbbf907766639bc64031d39140edbb7"
+        "commit_sha": "b06e0b6aee2dd4c8e98ceffac2c8e1afd1c85535"
       },
       "has_scripts": false,
       "has_references": true,
@@ -673,7 +673,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/webapp-testing",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md",
-        "commit_sha": "dcb1968a6cbbf907766639bc64031d39140edbb7"
+        "commit_sha": "b06e0b6aee2dd4c8e98ceffac2c8e1afd1c85535"
       },
       "has_scripts": false,
       "has_references": false,
