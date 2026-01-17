@@ -45,7 +45,6 @@
                     </div>
                 </div>
 
-                <p class="filter-hint">Share filters via URL: <code>?provider=openai&category=development&search=notion</code> or <code>?id=anthropics/pdf</code></p>
             </section>
 
             <section class="stats-section">
@@ -311,6 +310,29 @@ Load skills from .github/skills/ as needed.</code></pre>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="info-section" style="margin-top: 2rem;">
+                    <h3>🔗 Registry Endpoints</h3>
+                    <p>All formats point to the latest catalog on <code>main</code>:</p>
+                    <ul>
+                        <li><code>catalog.json</code> (pretty): <a href="https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json" target="_blank">cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json</a></li>
+                        <li><code>catalog.min.json</code> (minified): <a href="https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.json" target="_blank">cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.json</a></li>
+                        <li><code>catalog.toon</code> (TOON): <a href="https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.toon" target="_blank">cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.toon</a></li>
+                        <li><code>catalog.min.toon</code> (TOON, minified JSON source): <a href="https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.toon" target="_blank">cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.toon</a></li>
+                    </ul>
+                    <p style="margin-top: 0.5rem;">Pin a specific release with <code>@vYYYY.MM.DD</code> instead of <code>@main</code>.</p>
+                </div>
+
+                <div class="info-section" style="margin-top: 2rem;">
+                    <h3>🎛️ Filtering via URL</h3>
+                    <p>Share filtered views by adding query params to the docs URL:</p>
+<pre><code>?provider=anthropics
+?category=development
+?search=notion       # or ?q=...
+?tags=git,api        # comma-separated
+?id=anthropics/pdf   # open modal directly</code></pre>
+                    <p style="margin-top: 0.5rem;">Combine params as needed, e.g. <code>?provider=openai&category=documents&search=pdf</code>.</p>
                 </div>
             </section>
         </div>

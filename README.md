@@ -46,7 +46,9 @@ skill_md = requests.get(skill["source"]["skill_md_url"]).text
 | **Latest (CDN)** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json` |
 | **Latest (Raw)** | `https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/catalog.json` |
 | **Specific Version** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.08/catalog.json` |
-| **Minified** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.json` |
+| **Minified JSON** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.json` |
+| **TOON** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.toon` |
+| **TOON (minified JSON source)** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.toon` |
 
 ### MCP Server Integration
 
@@ -121,6 +123,7 @@ class SkillsServer(Server):
       "provider": "anthropics",
       "category": "documents",
       "license": "Apache-2.0",
+            "last_updated_at": "2026-01-07T12:00:00Z",
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "path": "skills/pdf",

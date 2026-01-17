@@ -19,6 +19,7 @@ import urllib.request
 import urllib.error
 import subprocess
 import shutil
+from urllib.parse import urlsplit
 
 try:
     import toon_format  # type: ignore[import-untyped]
@@ -89,6 +90,7 @@ class Skill:
     category: str
     license: Optional[str]
     compatibility: Optional[str]
+    last_updated_at: Optional[str]
     metadata: dict
     source: SkillSource
     has_scripts: bool
@@ -162,6 +164,39 @@ def extract_tags(name: str, description: str) -> list:
     return tags[:10]  # Limit to 10 tags
 
 
+def extract_owner_repo(repo_url: str) -> Optional[tuple[str, str]]:
+    """Return (owner, repo) tuple from a GitHub repo URL."""
+    parsed = urlsplit(repo_url)
+    parts = parsed.path.strip("/").split("/")
+    if len(parts) >= 2:
+        return parts[0], parts[1]
+    return None
+
+
+def fetch_last_updated_at(owner: str, repo: str, file_path: str) -> Optional[str]:
+    """Fetch the last commit date for a specific file."""
+    commits_url = (
+        f"https://api.github.com/repos/{owner}/{repo}/commits"
+        f"?path={file_path}&per_page=1&sha=main"
+    )
+    content = fetch_url(commits_url)
+    if not content:
+        return None
+
+    try:
+        commits = json.loads(content)
+    except json.JSONDecodeError:
+        print(f"  Warning: Failed to parse commits response for {file_path}", file=sys.stderr)
+        return None
+
+    if isinstance(commits, list) and commits:
+        commit = commits[0].get("commit", {})
+        author = commit.get("author", {}) or {}
+        committer = commit.get("committer", {}) or {}
+        return author.get("date") or committer.get("date")
+    return None
+
+
 def categorize_skill(name: str, description: str) -> str:
     """Determine category based on name and description."""
     text = f"{name} {description}".lower()
@@ -180,6 +215,7 @@ def categorize_skill(name: str, description: str) -> str:
 def fetch_provider_skills(provider_id: str, config: dict) -> list:
     """Fetch all skills from a provider repository."""
     print(f"Fetching skills from {config['name']}...")
+    owner_repo = extract_owner_repo(config["repo"])
     
     # Get repository tree
     tree_content = fetch_url(config["api_tree_url"])
@@ -231,6 +267,10 @@ def fetch_provider_skills(provider_id: str, config: dict) -> list:
         has_scripts = any(p.startswith(f"{skill_dir}/scripts/") for p in all_paths)
         has_references = any(p.startswith(f"{skill_dir}/references/") or p.startswith(f"{skill_dir}/reference/") for p in all_paths)
         has_assets = any(p.startswith(f"{skill_dir}/assets/") or p.startswith(f"{skill_dir}/templates/") for p in all_paths)
+
+        last_updated_at = None
+        if owner_repo:
+            last_updated_at = fetch_last_updated_at(owner_repo[0], owner_repo[1], sf["path"])
         
         skill = Skill(
             id=f"{provider_id}/{name}",
@@ -240,6 +280,7 @@ def fetch_provider_skills(provider_id: str, config: dict) -> list:
             category=categorize_skill(name, description),
             license=fm.get("license"),
             compatibility=fm.get("compatibility"),
+            last_updated_at=last_updated_at,
             metadata=fm.get("metadata", {}),
             source=SkillSource(
                 repo=config["repo"],
@@ -301,15 +342,18 @@ def build_catalog() -> dict:
     return catalog
 
 
-def write_toon_output(catalog: dict, output_dir: Path, catalog_json: Path) -> None:
+def write_toon_output(catalog: dict, output_dir: Path, catalog_json: Path, catalog_min_json: Path) -> None:
     """Write TOON format using python encoder if available, else fall back to npx CLI."""
     catalog_toon = output_dir / "catalog.toon"
+    catalog_toon_min = output_dir / "catalog.min.toon"
 
     if HAS_TOON:
         try:
             toon_content = toon_format.encode(catalog)
             catalog_toon.write_text(toon_content, encoding="utf-8")
+            catalog_toon_min.write_text(toon_content, encoding="utf-8")
             print(f"✓ Written: {catalog_toon} (python toon_format)")
+            print(f"✓ Written: {catalog_toon_min} (python toon_format)")
             return
         except NotImplementedError:
             print("⚠ toon_format.encode not implemented; falling back to npx @toon-format/cli", file=sys.stderr)
@@ -328,7 +372,14 @@ def write_toon_output(catalog: dict, output_dir: Path, catalog_json: Path) -> No
             capture_output=True,
             text=True,
         )
+        subprocess.run(
+            [npx_path, "@toon-format/cli", str(catalog_min_json), "-o", str(catalog_toon_min)],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
         print(f"✓ Written: {catalog_toon} (via npx @toon-format/cli)")
+        print(f"✓ Written: {catalog_toon_min} (via npx @toon-format/cli)")
     except subprocess.CalledProcessError as e:
         error_out = e.stderr.strip() if e.stderr else str(e)
         print(f"⚠ Failed TOON output via npx @toon-format/cli: {error_out}", file=sys.stderr)
@@ -358,7 +409,7 @@ def main():
     print(f"✓ Written: {catalog_min_json}")
     
     # Write TOON format (Token-Oriented Object Notation)
-    write_toon_output(catalog, output_dir, catalog_json)
+    write_toon_output(catalog, output_dir, catalog_json, catalog_min_json)
     
     # Summary
     print(f"\n{'=' * 50}")

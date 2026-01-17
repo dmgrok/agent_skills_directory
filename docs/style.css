@@ -329,6 +329,15 @@ main {
     gap: 0.5rem;
 }
 
+.skill-updated {
+    margin-top: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
 .skill-category {
     font-size: 0.75rem;
     padding: 0.2rem 0.5rem;

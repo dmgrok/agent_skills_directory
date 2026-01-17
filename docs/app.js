@@ -167,7 +167,10 @@ function renderSkills(skills) {
         return;
     }
 
-    skillsGrid.innerHTML = skills.map(skill => `
+    skillsGrid.innerHTML = skills.map(skill => {
+        const updatedLabel = formatDate(skill.last_updated_at);
+
+        return `
         <article class="skill-card" data-skill-id="${skill.id}">
             <div class="skill-header">
                 <h3 class="skill-name">${escapeHtml(skill.name)}</h3>
@@ -180,9 +183,11 @@ function renderSkills(skills) {
                     `<span class="skill-tag">#${escapeHtml(tag)}</span>`
                 ).join('')}
             </div>
+            ${updatedLabel ? `<p class="skill-updated">⏱ Updated ${updatedLabel}</p>` : ''}
             ${renderFeatures(skill)}
         </article>
-    `).join('');
+    `;
+    }).join('');
 
     // Add click handlers
     document.querySelectorAll('.skill-card').forEach(card => {
@@ -208,8 +213,19 @@ function renderFeatures(skill) {
     return `<div class="skill-features">${features.join('')}</div>`;
 }
 
+    function formatDate(dateString) {
+        if (!dateString) return null;
+        const date = new Date(dateString);
+        if (Number.isNaN(date.getTime())) return null;
+        return date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+        });
+    }
+
 function showSkillModal(skill) {
-    const providerInfo = catalog.providers[skill.provider];
+    const updatedLabel = formatDate(skill.last_updated_at);
     
     modalBody.innerHTML = `
         <div class="modal-header">
@@ -222,6 +238,13 @@ function showSkillModal(skill) {
             <h3>Description</h3>
             <p>${escapeHtml(skill.description)}</p>
         </div>
+
+        ${updatedLabel ? `
+            <div class="modal-section">
+                <h3>Last Updated</h3>
+                <p class="skill-updated">⏱ ${updatedLabel}</p>
+            </div>
+        ` : ''}
 
         ${skill.tags && skill.tags.length > 0 ? `
             <div class="modal-section">
