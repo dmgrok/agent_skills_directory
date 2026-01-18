@@ -56,7 +56,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add catalog.json catalog.min.json
+          git add catalog.json catalog.min.json catalog.toon catalog.min.toon CHANGELOG.md
           git commit -m "Update catalog - ${{ steps.date.outputs.date }}"
           git push
       
@@ -72,8 +72,11 @@ jobs:
             Updated: ${{ steps.date.outputs.date }}
             
             ### Download
-            - [catalog.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.json) - Pretty printed
-            - [catalog.min.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.min.json) - Minified
+            - [catalog.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.json) - Pretty printed JSON
+            - [catalog.min.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.min.json) - Minified JSON
+            - [catalog.toon](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.toon) - TOON format
+            - [catalog.min.toon](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.min.toon) - Minified TOON format
+            - [CHANGELOG.md](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/CHANGELOG.md) - Version history
             
             ### CDN URLs
             ```
@@ -83,6 +86,9 @@ jobs:
             # This version
             https://cdn.jsdelivr.net/gh/${{ github.repository }}@v${{ steps.date.outputs.date }}/catalog.json
             ```
+            catalog.toon
+            catalog.min.toon
+            CHANGELOG.md
           files: |
             catalog.json
             catalog.min.json
