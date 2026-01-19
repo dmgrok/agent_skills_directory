@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.01.18",
-  "generated_at": "2026-01-18T06:39:22.926373+00:00",
-  "total_skills": 36,
+  "version": "2026.01.19",
+  "generated_at": "2026-01-19T06:49:38.380591+00:00",
+  "total_skills": 39,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
@@ -17,7 +17,7 @@
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
-      "skills_count": 10
+      "skills_count": 13
     }
   },
   "categories": [
@@ -465,7 +465,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/appinsights-instrumentation",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/appinsights-instrumentation/SKILL.md",
-        "commit_sha": "204b6b0453c5fd4de8fa9274c9c389b050b9bf4c"
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
       },
       "has_scripts": true,
       "has_references": true,
@@ -491,7 +491,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-resource-visualizer",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-resource-visualizer/SKILL.md",
-        "commit_sha": "204b6b0453c5fd4de8fa9274c9c389b050b9bf4c"
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
       },
       "has_scripts": false,
       "has_references": false,
@@ -517,7 +517,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-role-selector",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-role-selector/SKILL.md",
-        "commit_sha": "204b6b0453c5fd4de8fa9274c9c389b050b9bf4c"
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
       },
       "has_scripts": false,
       "has_references": false,
@@ -527,6 +527,38 @@
         "azure",
         "role",
         "selector"
+      ]
+    },
+    {
+      "id": "github/azure-static-web-apps",
+      "name": "azure-static-web-apps",
+      "description": "Helps create, configure, and deploy Azure Static Web Apps using the SWA CLI. Use when deploying static sites to Azure, setting up SWA local development, configuring staticwebapp.config.json, adding Azure Functions APIs to SWA, or setting up GitHub Actions CI/CD for Static Web Apps.",
+      "provider": "github",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-16T18:42:27Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/azure-static-web-apps",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-static-web-apps/SKILL.md",
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "json",
+        "github",
+        "git",
+        "ci",
+        "cd",
+        "api",
+        "cli",
+        "azure",
+        "static",
+        "web"
       ]
     },
     {
@@ -543,7 +575,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/github-issues",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/github-issues/SKILL.md",
-        "commit_sha": "204b6b0453c5fd4de8fa9274c9c389b050b9bf4c"
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
       },
       "has_scripts": false,
       "has_references": true,
@@ -553,6 +585,62 @@
         "git",
         "mcp",
         "issues"
+      ]
+    },
+    {
+      "id": "github/microsoft-code-reference",
+      "name": "microsoft-code-reference",
+      "description": "Look up Microsoft API references, find working code samples, and verify SDK code is correct. Use when working with Azure SDKs, .NET libraries, or Microsoft APIs\u2014to find the right method, check parameters, get working examples, or troubleshoot errors. Catches hallucinated methods, wrong signatures, and deprecated patterns by querying official docs.",
+      "provider": "github",
+      "category": "development",
+      "license": null,
+      "compatibility": "Requires Microsoft Learn MCP Server (https://learn.microsoft.com/api/mcp)",
+      "last_updated_at": "2026-01-14T08:07:31Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/microsoft-code-reference",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-code-reference/SKILL.md",
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "api",
+        "microsoft",
+        "code",
+        "reference"
+      ]
+    },
+    {
+      "id": "github/microsoft-docs",
+      "name": "microsoft-docs",
+      "description": "Query official Microsoft documentation to understand concepts, find tutorials, and learn how services work. Use for Azure, .NET, Microsoft 365, Windows, Power Platform, and all Microsoft technologies. Get accurate, current information from learn.microsoft.com and other official Microsoft websites\u2014architecture overviews, quickstarts, configuration guides, limits, and best practices.",
+      "provider": "github",
+      "category": "documents",
+      "license": null,
+      "compatibility": "Requires Microsoft Learn MCP Server (https://learn.microsoft.com/api/mcp)",
+      "last_updated_at": "2025-12-22T04:46:23Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/microsoft-docs",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-docs/SKILL.md",
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "art",
+        "document",
+        "microsoft",
+        "docs"
       ]
     },
     {
@@ -569,7 +657,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/nuget-manager",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nuget-manager/SKILL.md",
-        "commit_sha": "204b6b0453c5fd4de8fa9274c9c389b050b9bf4c"
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
       },
       "has_scripts": false,
       "has_references": false,
@@ -589,13 +677,13 @@
       "category": "other",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-08T00:36:24Z",
+      "last_updated_at": "2026-01-18T12:12:03Z",
       "metadata": {},
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/snowflake-semanticview",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/snowflake-semanticview/SKILL.md",
-        "commit_sha": "204b6b0453c5fd4de8fa9274c9c389b050b9bf4c"
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
       },
       "has_scripts": false,
       "has_references": false,
@@ -620,7 +708,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/vscode-ext-commands",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-commands/SKILL.md",
-        "commit_sha": "204b6b0453c5fd4de8fa9274c9c389b050b9bf4c"
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
       },
       "has_scripts": false,
       "has_references": false,
@@ -646,7 +734,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/vscode-ext-localization",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-localization/SKILL.md",
-        "commit_sha": "204b6b0453c5fd4de8fa9274c9c389b050b9bf4c"
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
       },
       "has_scripts": false,
       "has_references": false,
@@ -672,7 +760,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/web-design-reviewer",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/web-design-reviewer/SKILL.md",
-        "commit_sha": "204b6b0453c5fd4de8fa9274c9c389b050b9bf4c"
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
       },
       "has_scripts": false,
       "has_references": true,
@@ -699,7 +787,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/webapp-testing",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md",
-        "commit_sha": "204b6b0453c5fd4de8fa9274c9c389b050b9bf4c"
+        "commit_sha": "b4199677e78b0d703ebf465e13b42bf908d1693b"
       },
       "has_scripts": false,
       "has_references": false,
