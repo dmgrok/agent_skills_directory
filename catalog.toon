@@ -14,13 +14,9 @@ providers:
   github:
     name: GitHub
     repo: "https://github.com/github/awesome-copilot"
-    skills_count: 13
-  vercel:
-    name: Vercel
-    repo: "https://github.com/vercel-labs/agent-skills"
-    skills_count: 3
-categories[6]: creative,data,development,documents,enterprise,other
-skills[42]:
+    skills_count: 0
+categories[5]: creative,data,development,documents,enterprise
+skills[16]:
   - id: anthropics/algorithmic-art
     name: algorithmic-art
     description: "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations."
@@ -298,7 +294,7 @@ skills[42]:
     category: data
     license: Proprietary. LICENSE.txt has complete terms
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2025-12-01T18:05:36Z"
     metadata:
     source:
       repo: "https://github.com/anthropics/skills"
