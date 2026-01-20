@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This repository aggregates agent skills from multiple providers (Anthropic, OpenAI, GitHub) into a unified JSON catalog consumed by MCP servers and AI agents. A GitHub Action runs daily at 06:00 UTC to fetch the latest skills, generating versioned releases with `YYYY.MM.DD` format.
+This repository aggregates agent skills from multiple providers (Anthropic, OpenAI, GitHub, Vercel) into a unified JSON catalog consumed by MCP servers and AI agents. A GitHub Action runs daily at 06:00 UTC to fetch the latest skills, generating versioned releases with `YYYY.MM.DD` format.
 
 **Key consumers:** [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) server.
 

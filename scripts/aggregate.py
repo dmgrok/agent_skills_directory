@@ -53,6 +53,13 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/github/awesome-copilot/main",
         "skills_path_prefix": "skills/",
     },
+    "vercel": {
+        "name": "Vercel",
+        "repo": "https://github.com/vercel-labs/agent-skills",
+        "api_tree_url": "https://api.github.com/repos/vercel-labs/agent-skills/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main",
+        "skills_path_prefix": "skills/",
+    },
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")

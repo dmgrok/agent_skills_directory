@@ -14,6 +14,7 @@ This repository aggregates skills from various providers into a single, standard
 - [Anthropic](https://github.com/anthropics/skills) - Official skills from Anthropic
 - [OpenAI](https://github.com/openai/skills) - Skills for OpenAI Codex
 - [GitHub](https://github.com/github/awesome-copilot) - Skills from GitHub Awesome Copilot
+- [Vercel](https://github.com/vercel-labs/agent-skills) - Skills from Vercel Labs
 
 ## Usage
 
@@ -214,4 +215,5 @@ This aggregation tool is MIT licensed. Individual skills retain their original l
 - [Anthropic Skills](https://github.com/anthropics/skills)
 - [OpenAI Skills](https://github.com/openai/skills)
 - [GitHub Awesome Copilot](https://github.com/github/awesome-copilot)
+- [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills)
 - [Model Context Protocol](https://modelcontextprotocol.io)

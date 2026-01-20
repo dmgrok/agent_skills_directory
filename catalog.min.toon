@@ -1,7 +1,7 @@
 "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json"
-version: 2026.01.17
-generated_at: "2026-01-17T23:24:15.444812+00:00"
-total_skills: 16
+version: 2026.01.20
+generated_at: "2026-01-20T15:06:50.493777+00:00"
+total_skills: 42
 providers:
   anthropics:
     name: Anthropic
@@ -10,13 +10,17 @@ providers:
   openai:
     name: OpenAI
     repo: "https://github.com/openai/skills"
-    skills_count: 0
+    skills_count: 10
   github:
     name: GitHub
     repo: "https://github.com/github/awesome-copilot"
-    skills_count: 0
-categories[5]: creative,data,development,documents,enterprise
-skills[16]:
+    skills_count: 13
+  vercel:
+    name: Vercel
+    repo: "https://github.com/vercel-labs/agent-skills"
+    skills_count: 3
+categories[6]: creative,data,development,documents,enterprise,other
+skills[42]:
   - id: anthropics/algorithmic-art
     name: algorithmic-art
     description: "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations."
@@ -186,7 +190,7 @@ skills[16]:
     category: documents
     license: Proprietary. LICENSE.txt has complete terms
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2025-12-01T18:05:36Z"
     metadata:
     source:
       repo: "https://github.com/anthropics/skills"
@@ -204,7 +208,7 @@ skills[16]:
     category: development
     license: Complete terms in LICENSE.txt
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2025-12-01T18:05:36Z"
     metadata:
     source:
       repo: "https://github.com/anthropics/skills"
@@ -222,7 +226,7 @@ skills[16]:
     category: enterprise
     license: Complete terms in LICENSE.txt
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2025-12-01T18:05:36Z"
     metadata:
     source:
       repo: "https://github.com/anthropics/skills"
@@ -240,7 +244,7 @@ skills[16]:
     category: creative
     license: Complete terms in LICENSE.txt
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2025-12-01T18:05:36Z"
     metadata:
     source:
       repo: "https://github.com/anthropics/skills"
@@ -258,7 +262,7 @@ skills[16]:
     category: creative
     license: Complete terms in LICENSE.txt
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2025-12-01T18:05:36Z"
     metadata:
     source:
       repo: "https://github.com/anthropics/skills"
@@ -276,7 +280,7 @@ skills[16]:
     category: development
     license: Complete terms in LICENSE.txt
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2025-12-01T18:05:36Z"
     metadata:
     source:
       repo: "https://github.com/anthropics/skills"
@@ -305,3 +309,488 @@ skills[16]:
     has_references: false
     has_assets: false
     tags[5]: xlsx,csv,pr,visual,analysis
+  - id: github/appinsights-instrumentation
+    name: appinsights-instrumentation
+    description: Instrument a webapp to send useful telemetry data to Azure App Insights
+    provider: github
+    category: data
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-09T19:25:32Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/appinsights-instrumentation
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/appinsights-instrumentation/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: true
+    has_references: true
+    has_assets: false
+    tags[2]: appinsights,instrumentation
+  - id: github/azure-role-selector
+    name: azure-role-selector
+    description: "When user is asking for guidance for which role to assign to an identity given desired permissions, this agent helps them understand the role that will meet the requirements with least privilege access and how to apply that role."
+    provider: github
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-05T19:31:06Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/azure-role-selector
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-role-selector/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,azure,role,selector
+  - id: github/azure-static-web-apps
+    name: azure-static-web-apps
+    description: "Helps create, configure, and deploy Azure Static Web Apps using the SWA CLI. Use when deploying static sites to Azure, setting up SWA local development, configuring staticwebapp.config.json, adding Azure Functions APIs to SWA, or setting up GitHub Actions CI/CD for Static Web Apps."
+    provider: github
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-16T18:42:27Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/azure-static-web-apps
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-static-web-apps/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[10]: json,github,git,ci,cd,api,cli,azure,static,web
+  - id: github/github-issues
+    name: github-issues
+    description: "Create, update, and manage GitHub issues using MCP tools. Use this skill when users want to create bug reports, feature requests, or task issues, update existing issues, add labels/assignees/milestones, or manage issue workflows. Triggers on requests like \"create an issue\", \"file a bug\", \"request a feature\", \"update issue X\", or any GitHub issue management task."
+    provider: github
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-08T14:10:24Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/github-issues
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/github-issues/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[4]: github,git,mcp,issues
+  - id: github/make-skill-template
+    name: make-skill-template
+    description: "Create new Agent Skills for GitHub Copilot from prompts or by duplicating this template. Use when asked to \"create a skill\", \"make a new skill\", \"scaffold a skill\", or when building specialized AI capabilities with bundled resources. Generates SKILL.md files with proper frontmatter, directory structure, and optional scripts/references/assets folders."
+    provider: github
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-19T03:02:12Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/make-skill-template
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/make-skill-template/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[7]: github,git,pr,ci,make,skill,template
+  - id: github/microsoft-code-reference
+    name: microsoft-code-reference
+    description: "Look up Microsoft API references, find working code samples, and verify SDK code is correct. Use when working with Azure SDKs, .NET libraries, or Microsoft APIs—to find the right method, check parameters, get working examples, or troubleshoot errors. Catches hallucinated methods, wrong signatures, and deprecated patterns by querying official docs."
+    provider: github
+    category: development
+    license: null
+    compatibility: "Requires Microsoft Learn MCP Server (https://learn.microsoft.com/api/mcp)"
+    last_updated_at: "2026-01-14T08:07:31Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/microsoft-code-reference
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-code-reference/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[6]: pr,ci,api,microsoft,code,reference
+  - id: github/microsoft-docs
+    name: microsoft-docs
+    description: "Query official Microsoft documentation to understand concepts, find tutorials, and learn how services work. Use for Azure, .NET, Microsoft 365, Windows, Power Platform, and all Microsoft technologies. Get accurate, current information from learn.microsoft.com and other official Microsoft websites—architecture overviews, quickstarts, configuration guides, limits, and best practices."
+    provider: github
+    category: documents
+    license: null
+    compatibility: "Requires Microsoft Learn MCP Server (https://learn.microsoft.com/api/mcp)"
+    last_updated_at: "2025-12-22T04:46:23Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/microsoft-docs
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-docs/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[6]: pr,ci,art,document,microsoft,docs
+  - id: github/nuget-manager
+    name: nuget-manager
+    description: "Manage NuGet packages in .NET projects/solutions. Use this skill when adding, removing, or updating NuGet package versions. It enforces using `dotnet` CLI for package management and provides strict procedures for direct file edits only when updating versions."
+    provider: github
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-06T20:34:03Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/nuget-manager
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nuget-manager/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,cli,nuget,manager
+  - id: github/snowflake-semanticview
+    name: snowflake-semanticview
+    description: "Create, alter, and validate Snowflake semantic views using Snowflake CLI (snow). Use when asked to build or troubleshoot semantic views/semantic layer definitions with CREATE/ALTER SEMANTIC VIEW, to validate semantic-view DDL against Snowflake via CLI, or to guide Snowflake CLI installation and connection setup."
+    provider: github
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-18T12:12:03Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/snowflake-semanticview
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/snowflake-semanticview/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: cli,snowflake,semanticview
+  - id: github/vscode-ext-commands
+    name: vscode-ext-commands
+    description: "Guidelines for contributing commands in VS Code extensions. Indicates naming convention, visibility, localization and other relevant attributes, following VS Code extension development guidelines, libraries and good practices"
+    provider: github
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-11T16:18:36Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/vscode-ext-commands
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-commands/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,vscode,ext,commands
+  - id: github/vscode-ext-localization
+    name: vscode-ext-localization
+    description: "Guidelines for proper localization of VS Code extensions, following VS Code extension development guidelines, libraries and good practices"
+    provider: github
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-11T16:15:56Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/vscode-ext-localization
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-localization/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,vscode,ext,localization
+  - id: github/web-design-reviewer
+    name: web-design-reviewer
+    description: "This skill enables visual inspection of websites running locally or remotely to identify and fix design issues. Triggers on requests like \"review website design\", \"check the UI\", \"fix the layout\", \"find design problems\". Detects issues with responsive design, accessibility, visual consistency, and layout breakage, then performs fixes at the source code level."
+    provider: github
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-09T00:27:12Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/web-design-reviewer
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/web-design-reviewer/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[5]: pr,design,visual,web,reviewer
+  - id: github/webapp-testing
+    name: webapp-testing
+    description: "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs."
+    provider: github
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-17T23:27:05Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/webapp-testing
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: test,webapp,testing
+  - id: openai/create-plan
+    name: create-plan
+    description: Create a concise plan. Use when a user explicitly asks for a plan related to a coding task.
+    provider: openai
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-21T03:20:14Z"
+    metadata:
+      "short-description": Create a plan
+    source:
+      repo: "https://github.com/openai/skills"
+      path: skills/.experimental/create-plan
+      skill_md_url: "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/create-plan/SKILL.md"
+      commit_sha: 894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: ci,create,plan
+  - id: openai/gh-address-comments
+    name: gh-address-comments
+    description: Help address review/issue comments on the open GitHub PR for the current branch using gh CLI; verify gh auth first and prompt the user to authenticate if not logged in.
+    provider: openai
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-19T22:10:04Z"
+    metadata:
+      "short-description": Address comments in a GitHub PR review
+    source:
+      repo: "https://github.com/openai/skills"
+      path: skills/.curated/gh-address-comments
+      skill_md_url: "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-address-comments/SKILL.md"
+      commit_sha: 894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[6]: github,git,pr,cli,address,comments
+  - id: openai/gh-fix-ci
+    name: gh-fix-ci
+    description: "Inspect GitHub PR checks with gh, pull failing GitHub Actions logs, summarize failure context, then create a fix plan and implement after user approval. Use when a user asks to debug or fix failing PR CI/CD checks on GitHub Actions and wants a plan + code changes; for external checks (e.g., Buildkite), only report the details URL and mark them out of scope."
+    provider: openai
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-19T22:10:04Z"
+    metadata:
+      "short-description": Fix failing Github CI actions
+    source:
+      repo: "https://github.com/openai/skills"
+      path: skills/.curated/gh-fix-ci
+      skill_md_url: "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-fix-ci/SKILL.md"
+      commit_sha: 894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[6]: github,git,pr,ci,cd,fix
+  - id: openai/linear
+    name: linear
+    description: "Manage issues, projects & team workflows in Linear. Use when the user wants to read, create or updates tickets in Linear."
+    provider: openai
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-21T03:20:25Z"
+    metadata:
+      "short-description": Manage Linear issues in Codex
+    source:
+      repo: "https://github.com/openai/skills"
+      path: skills/.experimental/linear
+      skill_md_url: "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/linear/SKILL.md"
+      commit_sha: 894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[2]: pr,linear
+  - id: openai/notion-knowledge-capture
+    name: notion-knowledge-capture
+    description: "Capture conversations and decisions into structured Notion pages; use when turning chats/notes into wiki entries, how-tos, decisions, or FAQs with proper linking."
+    provider: openai
+    category: enterprise
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-19T17:18:15Z"
+    metadata:
+      "short-description": Capture conversations into structured Notion pages
+    source:
+      repo: "https://github.com/openai/skills"
+      path: skills/.curated/notion-knowledge-capture
+      skill_md_url: "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-knowledge-capture/SKILL.md"
+      commit_sha: 894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[7]: pr,ci,notion,knowledge,wiki,faq,capture
+  - id: openai/notion-meeting-intelligence
+    name: notion-meeting-intelligence
+    description: "Prepare meeting materials with Notion context and Codex research; use when gathering context, drafting agendas/pre-reads, and tailoring materials to attendees."
+    provider: openai
+    category: enterprise
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-19T17:18:15Z"
+    metadata:
+      "short-description": Prep meetings with Notion context and tailored agendas
+    source:
+      repo: "https://github.com/openai/skills"
+      path: skills/.curated/notion-meeting-intelligence
+      skill_md_url: "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-meeting-intelligence/SKILL.md"
+      commit_sha: 894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[4]: pr,notion,meeting,intelligence
+  - id: openai/notion-research-documentation
+    name: notion-research-documentation
+    description: "Research across Notion and synthesize into structured documentation; use when gathering info from multiple Notion sources to produce briefs, comparisons, or reports with citations."
+    provider: openai
+    category: documents
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-19T17:18:15Z"
+    metadata:
+      "short-description": Research Notion content and produce briefs/reports
+    source:
+      repo: "https://github.com/openai/skills"
+      path: skills/.curated/notion-research-documentation
+      skill_md_url: "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-research-documentation/SKILL.md"
+      commit_sha: 894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[6]: pr,ci,notion,document,research,documentation
+  - id: openai/notion-spec-to-implementation
+    name: notion-spec-to-implementation
+    description: "Turn Notion specs into implementation plans, tasks, and progress tracking; use when implementing PRDs/feature specs and creating Notion plans + tasks from them."
+    provider: openai
+    category: enterprise
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-19T17:18:15Z"
+    metadata:
+      "short-description": "Turn Notion specs into implementation plans, tasks, and progress tracking"
+    source:
+      repo: "https://github.com/openai/skills"
+      path: skills/.curated/notion-spec-to-implementation
+      skill_md_url: "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-spec-to-implementation/SKILL.md"
+      commit_sha: 894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[4]: pr,notion,spec,implementation
+  - id: openai/skill-creator
+    name: skill-creator
+    description: "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations."
+    provider: openai
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-19T17:17:20Z"
+    metadata:
+      "short-description": Create or update a skill
+    source:
+      repo: "https://github.com/openai/skills"
+      path: skills/.system/skill-creator
+      skill_md_url: "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md"
+      commit_sha: 894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[4]: ci,knowledge,skill,creator
+  - id: openai/skill-installer
+    name: skill-installer
+    description: "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos)."
+    provider: openai
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-09T00:21:33Z"
+    metadata:
+      "short-description": Install curated skills from openai/skills or other repos
+    source:
+      repo: "https://github.com/openai/skills"
+      path: skills/.system/skill-installer
+      skill_md_url: "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-installer/SKILL.md"
+      commit_sha: 894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[5]: github,git,pr,skill,installer
+  - id: vercel/vercel-deploy
+    name: vercel-deploy
+    description: "Deploy applications and websites to Vercel. Use this skill when the user requests deployment actions such as \"Deploy my app\", \"Deploy this to production\", \"Create a preview deployment\", \"Deploy and give me the link\", or \"Push this live\". No authentication required - returns preview URL and claimable deployment link."
+    provider: vercel
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-16T20:23:00Z"
+    metadata:
+      author: vercel
+      version: 1.0.0
+    source:
+      repo: "https://github.com/vercel-labs/agent-skills"
+      path: skills/claude.ai/vercel-deploy-claimable
+      skill_md_url: "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/claude.ai/vercel-deploy-claimable/SKILL.md"
+      commit_sha: c80bb309ac23ea5dbad0b927d58c94ef47b63a00
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[3]: pr,vercel,deploy
+  - id: vercel/vercel-react-best-practices
+    name: vercel-react-best-practices
+    description: "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements."
+    provider: vercel
+    category: development
+    license: MIT
+    compatibility: null
+    last_updated_at: "2026-01-15T18:09:40Z"
+    metadata:
+      author: vercel
+      version: 1.0.0
+    source:
+      repo: "https://github.com/vercel-labs/agent-skills"
+      path: skills/react-best-practices
+      skill_md_url: "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-best-practices/SKILL.md"
+      commit_sha: c80bb309ac23ea5dbad0b927d58c94ef47b63a00
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[5]: pr,vercel,react,best,practices
+  - id: vercel/web-design-guidelines
+    name: web-design-guidelines
+    description: "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\"."
+    provider: vercel
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-16T23:47:11Z"
+    metadata:
+      author: vercel
+      version: 1.0.0
+      "argument-hint": <file-or-pattern>
+    source:
+      repo: "https://github.com/vercel-labs/agent-skills"
+      path: skills/web-design-guidelines
+      skill_md_url: "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/web-design-guidelines/SKILL.md"
+      commit_sha: c80bb309ac23ea5dbad0b927d58c94ef47b63a00
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,design,web,guidelines
