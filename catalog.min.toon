@@ -1,7 +1,7 @@
 "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json"
-version: 2026.01.19
-generated_at: "2026-01-19T06:49:38.380591+00:00"
-total_skills: 39
+version: 2026.01.20
+generated_at: "2026-01-20T06:46:04.209067+00:00"
+total_skills: 40
 providers:
   anthropics:
     name: Anthropic
@@ -14,9 +14,9 @@ providers:
   github:
     name: GitHub
     repo: "https://github.com/github/awesome-copilot"
-    skills_count: 13
+    skills_count: 14
 categories[6]: creative,data,development,documents,enterprise,other
-skills[39]:
+skills[40]:
   - id: anthropics/algorithmic-art
     name: algorithmic-art
     description: "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations."
@@ -318,7 +318,7 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/appinsights-instrumentation
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/appinsights-instrumentation/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: true
     has_references: true
     has_assets: false
@@ -337,7 +337,7 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-resource-visualizer
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-resource-visualizer/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: false
     has_references: false
     has_assets: true
@@ -355,7 +355,7 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-role-selector
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-role-selector/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: false
     has_references: false
     has_assets: false
@@ -373,7 +373,7 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-static-web-apps
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-static-web-apps/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: false
     has_references: false
     has_assets: false
@@ -391,11 +391,29 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/github-issues
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/github-issues/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: false
     has_references: true
     has_assets: false
     tags[4]: github,git,mcp,issues
+  - id: github/make-skill-template
+    name: make-skill-template
+    description: "Create new Agent Skills for GitHub Copilot from prompts or by duplicating this template. Use when asked to \"create a skill\", \"make a new skill\", \"scaffold a skill\", or when building specialized AI capabilities with bundled resources. Generates SKILL.md files with proper frontmatter, directory structure, and optional scripts/references/assets folders."
+    provider: github
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-19T03:02:12Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/make-skill-template
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/make-skill-template/SKILL.md"
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[7]: github,git,pr,ci,make,skill,template
   - id: github/microsoft-code-reference
     name: microsoft-code-reference
     description: "Look up Microsoft API references, find working code samples, and verify SDK code is correct. Use when working with Azure SDKs, .NET libraries, or Microsoft APIs—to find the right method, check parameters, get working examples, or troubleshoot errors. Catches hallucinated methods, wrong signatures, and deprecated patterns by querying official docs."
@@ -409,7 +427,7 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/microsoft-code-reference
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-code-reference/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: false
     has_references: false
     has_assets: false
@@ -427,7 +445,7 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/microsoft-docs
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-docs/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: false
     has_references: false
     has_assets: false
@@ -445,7 +463,7 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/nuget-manager
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nuget-manager/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: false
     has_references: false
     has_assets: false
@@ -463,7 +481,7 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/snowflake-semanticview
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/snowflake-semanticview/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: false
     has_references: false
     has_assets: false
@@ -481,7 +499,7 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/vscode-ext-commands
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-commands/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: false
     has_references: false
     has_assets: false
@@ -499,7 +517,7 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/vscode-ext-localization
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-localization/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: false
     has_references: false
     has_assets: false
@@ -517,7 +535,7 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/web-design-reviewer
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/web-design-reviewer/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: false
     has_references: true
     has_assets: false
@@ -535,7 +553,7 @@ skills[39]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/webapp-testing
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md"
-      commit_sha: b4199677e78b0d703ebf465e13b42bf908d1693b
+      commit_sha: 5fb41dae2a8906d14c52f42adacf155b393ee17e
     has_scripts: false
     has_references: false
     has_assets: false
