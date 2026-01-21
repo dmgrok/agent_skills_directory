@@ -60,6 +60,20 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main",
         "skills_path_prefix": "skills/",
     },
+    "huggingface": {
+        "name": "HuggingFace",
+        "repo": "https://github.com/huggingface/skills",
+        "api_tree_url": "https://api.github.com/repos/huggingface/skills/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/huggingface/skills/main",
+        "skills_path_prefix": "skills/",
+    },
+    "skillcreatorai": {
+        "name": "SkillCreator.ai",
+        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+        "api_tree_url": "https://api.github.com/repos/skillcreatorai/Ai-Agent-Skills/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main",
+        "skills_path_prefix": "skills/",
+    },
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")

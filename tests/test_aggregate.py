@@ -39,8 +39,10 @@ def test_write_toon_output_uses_python_encoder(tmp_path, monkeypatch):
     output_dir = tmp_path
     catalog_json = output_dir / "catalog.json"
     catalog_json.write_text("{}", encoding="utf-8")
+    catalog_min_json = output_dir / "catalog.min.json"
+    catalog_min_json.write_text("{}", encoding="utf-8")
 
-    aggregate.write_toon_output({"hello": "world"}, output_dir, catalog_json)
+    aggregate.write_toon_output({"hello": "world"}, output_dir, catalog_json, catalog_min_json)
 
     toon_file = output_dir / "catalog.toon"
     assert toon_file.exists()
