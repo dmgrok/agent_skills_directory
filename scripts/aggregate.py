@@ -134,6 +134,12 @@ class Skill:
     has_assets: bool
     tags: list[str]
     body: str = field(default="", repr=False)  # Full SKILL.md body for dedup comparison
+    
+    # Duplicate annotation fields
+    duplicate_status: Optional[str] = field(default=None)  # "mirror" or "probable_duplicate"
+    duplicate_annotation: Optional[str] = field(default=None)  # Human-readable annotation
+    duplicate_of: Optional[str] = field(default=None)  # ID of the reference skill
+    duplicate_similarity: Optional[float] = field(default=None)  # Similarity score
 
 
 def compute_content_hash(text: str) -> str:
@@ -201,22 +207,22 @@ def compute_enhanced_similarity(skill1, skill2) -> float:
 
 def deduplicate_skills(skills: list, similarity_threshold: float = 0.8) -> tuple[list, list, dict]:
     """
-    Remove duplicate skills, keeping the highest quality version.
-    Track similar skills that are kept for cross-referencing.
+    Annotate duplicate skills instead of removing them.
+    Mark skills as "mirror" (complete duplicate) or "probable duplicate" based on similarity.
     
     Deduplication strategy:
     1. Group skills by name
     2. For groups with multiple skills, check content similarity
-    3. If similarity > threshold (likely mirrors), keep the one from highest priority provider
-    4. Track similar skills (0.5 <= similarity <= threshold) for cross-referencing
-    5. Return deduplicated list, removed duplicates, and similarity map
+    3. If similarity > threshold, annotate as duplicate (keep in catalog with metadata)
+    4. Distinguish between "mirror" (>95% similar) and "probable duplicate" (80-95%)
+    5. Track all similar skills for cross-referencing
     
     Args:
         skills: List of Skill objects
-        similarity_threshold: Minimum similarity (0-1) to consider as duplicate. Default 0.8.
+        similarity_threshold: Similarity threshold above which skills are annotated as duplicates (default 0.8)
     
     Returns:
-        Tuple of (deduplicated skills, removed duplicates, similar_skills_map)
+        Tuple of (all skills with annotations, list of duplicate metadata, similar_skills_map)
         similar_skills_map: Dict mapping skill id to list of similar skill ids with scores
     """
     from collections import defaultdict
@@ -226,37 +232,51 @@ def deduplicate_skills(skills: list, similarity_threshold: float = 0.8) -> tuple
     for skill in skills:
         by_name[skill.name].append(skill)
     
-    deduplicated = []
-    removed = []
+    all_skills = []  # Keep all skills, annotated
+    duplicate_metadata = []  # Track duplicate info for reference
     similar_skills_map: dict[str, list] = {}  # Maps skill_id to similar skills
     
     for name, group in by_name.items():
         if len(group) == 1:
-            deduplicated.append(group[0])
+            all_skills.append(group[0])
             continue
         
         # Sort by provider priority (lower = better)
         group.sort(key=lambda s: PROVIDER_PRIORITY.get(s.provider, 99))
         
-        # Check if duplicates are actually similar content
+        # The best (first) skill in the group is the reference
         best = group[0]
+        all_skills.append(best)
         kept_in_group = [best]
         
         for other in group[1:]:
             similarity = compute_enhanced_similarity(best, other)
+            
             if similarity > similarity_threshold:
-                # Similar content - this is a mirror, remove it
-                removed.append({
+                # High similarity - annotate as duplicate but keep it
+                if similarity >= 0.95:
+                    # Complete mirror
+                    other.duplicate_status = "mirror"
+                    other.duplicate_annotation = f"Complete mirror of {best.id}"
+                else:
+                    # Probable duplicate
+                    other.duplicate_status = "probable_duplicate"
+                    other.duplicate_annotation = f"Probable duplicate of {best.id} ({round(similarity * 100)}% similar)"
+                
+                other.duplicate_of = best.id
+                other.duplicate_similarity = round(similarity, 2)
+                
+                # Track for the duplicates summary
+                duplicate_metadata.append({
                     "skill": other,
-                    "reason": f"mirror of {best.provider}/{best.name}",
+                    "reference": best.id,
+                    "status": other.duplicate_status,
                     "similarity": round(similarity, 2)
                 })
-            else:
-                # Different content with same name - keep both (unique implementations)
-                kept_in_group.append(other)
-                deduplicated.append(other)
-        
-        deduplicated.append(best)
+            
+            # Keep all skills, even duplicates
+            all_skills.append(other)
+            kept_in_group.append(other)
         
         # For all kept skills in this group, record their similar counterparts
         if len(kept_in_group) > 1:
@@ -273,7 +293,7 @@ def deduplicate_skills(skills: list, similarity_threshold: float = 0.8) -> tuple
                 if similar_list:
                     similar_skills_map[skill_a.id] = similar_list
     
-    return deduplicated, removed, similar_skills_map
+    return all_skills, duplicate_metadata, similar_skills_map
 
 
 def fetch_url(url: str, retries: int = 3) -> Optional[str]:
@@ -492,19 +512,31 @@ def build_catalog() -> dict:
             "skills_count": len(skills)
         }
     
-    # Deduplicate skills - remove mirrors, keep highest quality
-    print(f"\nDeduplicating skills...")
-    all_skills, removed, similar_skills_map = deduplicate_skills(all_skills)
+    # Deduplicate skills - annotate mirrors and probable duplicates
+    print(f"\nAnnotating duplicate skills...")
+    all_skills, duplicate_metadata, similar_skills_map = deduplicate_skills(all_skills)
     
-    if removed:
-        print(f"  Removed {len(removed)} duplicate/mirror skills:")
-        for r in removed:
-            print(f"    - {r['skill'].id} ({r['reason']}, similarity: {r['similarity']})")
+    if duplicate_metadata:
+        mirrors = [d for d in duplicate_metadata if d['status'] == 'mirror']
+        probable = [d for d in duplicate_metadata if d['status'] == 'probable_duplicate']
+        
+        print(f"  Annotated {len(duplicate_metadata)} duplicate skills:")
+        if mirrors:
+            print(f"    {len(mirrors)} complete mirrors (≥95% similar):")
+            for d in mirrors:
+                print(f"      - {d['skill'].id} → {d['reference']} ({round(d['similarity'] * 100)}%)")
+        if probable:
+            print(f"    {len(probable)} probable duplicates (80-95% similar):")
+            for d in probable:
+                print(f"      - {d['skill'].id} → {d['reference']} ({round(d['similarity'] * 100)}%)")
     
     if similar_skills_map:
-        print(f"  Found {len(similar_skills_map)} skills with similar counterparts (kept as different implementations)")
+        # Count how many skills have similar counterparts (excluding duplicates)
+        non_duplicate_similar = sum(1 for skill in all_skills 
+                                   if skill.id in similar_skills_map and not skill.duplicate_status)
+        print(f"  Found {non_duplicate_similar} skills with similar counterparts (kept as different implementations)")
     
-    # Update provider stats after dedup
+    # Update provider stats - all skills are kept now
     for provider_id in provider_stats:
         count = sum(1 for s in all_skills if s.provider == provider_id)
         provider_stats[provider_id]["skills_count"] = count
@@ -525,7 +557,11 @@ def build_catalog() -> dict:
         "providers": provider_stats,
         "categories": categories,
         "skills": [],
-        "duplicates": []  # Skills removed as mirrors (>80% similar)
+        "duplicate_summary": {
+            "total_annotated": len(duplicate_metadata),
+            "mirrors": len([r for r in duplicate_metadata if r["status"] == "mirror"]),
+            "probable_duplicates": len([r for r in duplicate_metadata if r["status"] == "probable_duplicate"])
+        }
     }
     
     # Convert skills to dicts
@@ -539,16 +575,6 @@ def build_catalog() -> dict:
         if skill.id in similar_skills_map:
             skill_dict["similar_skills"] = similar_skills_map[skill.id]
         catalog["skills"].append(skill_dict)
-    
-    # Add removed duplicates to catalog for transparency
-    for r in removed:
-        dup_skill = r["skill"]
-        dup_dict = asdict(dup_skill)
-        dup_dict["source"] = asdict(dup_skill.source)
-        dup_dict.pop("body", None)
-        dup_dict["duplicate_of"] = r["reason"].replace("mirror of ", "")
-        dup_dict["similarity"] = r["similarity"]
-        catalog["duplicates"].append(dup_dict)
     
     return catalog
 

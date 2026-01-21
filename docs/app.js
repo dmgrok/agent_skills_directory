@@ -14,8 +14,6 @@ const searchInput = document.getElementById('search');
 const providerFilter = document.getElementById('provider-filter');
 const categoryFilter = document.getElementById('category-filter');
 const skillsGrid = document.getElementById('skills-grid');
-const duplicatesSection = document.getElementById('duplicates-section');
-const duplicatesGrid = document.getElementById('duplicates-grid');
 const modal = document.getElementById('skill-modal');
 const modalBody = document.getElementById('modal-body');
 
@@ -81,13 +79,12 @@ function updateURLParams() {
 // Initialize
 async function init() {
     try {
-        const response = await fetch(CATALOG_URL);
+        const response = await fetch(CATALOG_URL, { cache: 'no-cache' });
         catalog = await response.json();
         
         populateFilters();
         updateStats();
         applyQueryParams(); // Apply URL params after loading
-        renderDuplicates(); // Render duplicates section
         
         // Update last updated date
         const date = new Date(catalog.generated_at);
@@ -177,12 +174,23 @@ function renderSkills(skills) {
 
     skillsGrid.innerHTML = skills.map(skill => {
         const updatedLabel = formatDate(skill.last_updated_at);
+        
+        // Generate duplicate badge if skill is annotated
+        let duplicateBadge = '';
+        if (skill.duplicate_status) {
+            const badgeClass = skill.duplicate_status === 'mirror' ? 'duplicate-badge-mirror' : 'duplicate-badge-probable';
+            const badgeText = skill.duplicate_status === 'mirror' ? '🔄 Mirror' : '⚠️ Probable Duplicate';
+            duplicateBadge = `<span class="duplicate-badge ${badgeClass}" title="${escapeHtml(skill.duplicate_annotation || '')}">${badgeText}</span>`;
+        }
 
         return `
-        <article class="skill-card" data-skill-id="${skill.id}">
+        <article class="skill-card ${skill.duplicate_status ? 'skill-card-duplicate' : ''}" data-skill-id="${skill.id}">
             <div class="skill-header">
                 <h3 class="skill-name">${escapeHtml(skill.name)}</h3>
-                <span class="skill-provider ${skill.provider}">${skill.provider}</span>
+                <div class="skill-header-badges">
+                    <span class="skill-provider ${skill.provider}">${skill.provider}</span>
+                    ${duplicateBadge}
+                </div>
             </div>
             <p class="skill-description">${escapeHtml(skill.description)}</p>
             <div class="skill-meta">
@@ -208,45 +216,6 @@ function renderSkills(skills) {
 
     // Update filtered count
     filteredCountEl.textContent = skills.length;
-}
-
-function renderDuplicates() {
-    // Show duplicates section only if there are duplicates
-    if (!catalog.duplicates || catalog.duplicates.length === 0) {
-        duplicatesSection.style.display = 'none';
-        return;
-    }
-
-    duplicatesSection.style.display = 'block';
-    duplicatesGrid.innerHTML = catalog.duplicates.map(dup => {
-        // Find the kept skill from the main skills list
-        const keptSkill = catalog.skills.find(s => s.id === dup.duplicate_of);
-        const keptProvider = keptSkill ? keptSkill.provider : dup.duplicate_of.split('/')[0];
-        
-        return `
-            <div class="duplicate-card">
-                <div class="duplicate-header">
-                    <span class="duplicate-name">${escapeHtml(dup.name)}</span>
-                    <span class="similarity-badge">${Math.round(dup.similarity * 100)}% similar</span>
-                </div>
-                <div class="duplicate-info">
-                    <div class="duplicate-removed">
-                        <span class="label">Removed (lower priority):</span>
-                        <span class="skill-provider ${dup.provider}">${dup.provider}</span>
-                        <span class="duplicate-id">${escapeHtml(dup.id)}</span>
-                    </div>
-                    <div class="duplicate-kept">
-                        <span class="label">Kept (higher priority):</span>
-                        <span class="skill-provider ${keptProvider}">${keptProvider}</span>
-                        <span class="duplicate-id">${escapeHtml(dup.duplicate_of)}</span>
-                    </div>
-                </div>
-                <div class="duplicate-reason">
-                    Mirror/duplicate detected via compression-based similarity (NCD algorithm)
-                </div>
-            </div>
-        `;
-    }).join('');
 }
 
 function renderFeatures(skill) {
