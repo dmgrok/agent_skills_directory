@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.01.20",
-  "generated_at": "2026-01-20T15:06:50.493777+00:00",
-  "total_skills": 42,
+  "version": "2026.01.21",
+  "generated_at": "2026-01-21T06:47:00.232283+00:00",
+  "total_skills": 43,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
@@ -17,7 +17,7 @@
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
-      "skills_count": 13
+      "skills_count": 14
     },
     "vercel": {
       "name": "Vercel",
@@ -437,7 +437,7 @@
       "category": "data",
       "license": "Proprietary. LICENSE.txt has complete terms",
       "compatibility": null,
-      "last_updated_at": null,
+      "last_updated_at": "2025-12-01T18:05:36Z",
       "metadata": {},
       "source": {
         "repo": "https://github.com/anthropics/skills",
@@ -478,6 +478,34 @@
       "tags": [
         "appinsights",
         "instrumentation"
+      ]
+    },
+    {
+      "id": "github/azure-resource-visualizer",
+      "name": "azure-resource-visualizer",
+      "description": "Analyze Azure resource groups and generate detailed Mermaid architecture diagrams showing the relationships between individual resources. Use this skill when the user asks for a diagram of their Azure resources or help in understanding how the resources relate to each other.",
+      "provider": "github",
+      "category": "creative",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": "2025-12-19T19:01:51Z",
+      "metadata": {
+        "author": "Tom Meschter (tom.meschter@microsoft.com)"
+      },
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/azure-resource-visualizer",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-resource-visualizer/SKILL.md",
+        "commit_sha": "5fb41dae2a8906d14c52f42adacf155b393ee17e"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "visual",
+        "azure",
+        "resource",
+        "visualizer"
       ]
     },
     {
@@ -1108,7 +1136,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/claude.ai/vercel-deploy-claimable",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/claude.ai/vercel-deploy-claimable/SKILL.md",
-        "commit_sha": "c80bb309ac23ea5dbad0b927d58c94ef47b63a00"
+        "commit_sha": "dd157cbd26f5c1f1154214035d3f8c9d7fe87a1c"
       },
       "has_scripts": true,
       "has_references": false,
@@ -1136,7 +1164,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/react-best-practices",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-best-practices/SKILL.md",
-        "commit_sha": "c80bb309ac23ea5dbad0b927d58c94ef47b63a00"
+        "commit_sha": "dd157cbd26f5c1f1154214035d3f8c9d7fe87a1c"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1167,7 +1195,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/web-design-guidelines",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/web-design-guidelines/SKILL.md",
-        "commit_sha": "c80bb309ac23ea5dbad0b927d58c94ef47b63a00"
+        "commit_sha": "dd157cbd26f5c1f1154214035d3f8c9d7fe87a1c"
       },
       "has_scripts": false,
       "has_references": false,
