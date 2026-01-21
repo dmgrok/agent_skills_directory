@@ -11,7 +11,8 @@ import re
 import sys
 import time
 import os
-from dataclasses import dataclass, asdict
+import zlib
+from dataclasses import dataclass, asdict, field
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
@@ -83,6 +84,17 @@ if GITHUB_TOKEN:
     DEFAULT_HEADERS["Authorization"] = f"Bearer {GITHUB_TOKEN}"
     DEFAULT_HEADERS["Accept"] = "application/vnd.github+json"
 
+# Provider priority for deduplication (lower = higher priority)
+# Official sources preferred over community mirrors
+PROVIDER_PRIORITY = {
+    "anthropics": 1,
+    "openai": 2,
+    "github": 3,
+    "vercel": 4,
+    "huggingface": 5,
+    "skillcreatorai": 10,  # Community mirror - lowest priority
+}
+
 # Category mappings based on keywords in name/description
 CATEGORY_KEYWORDS = {
     "documents": ["pdf", "docx", "xlsx", "pptx", "document", "spreadsheet", "presentation"],
@@ -118,6 +130,115 @@ class Skill:
     has_references: bool
     has_assets: bool
     tags: list[str]
+    body: str = field(default="", repr=False)  # Full SKILL.md body for dedup comparison
+
+
+def compute_content_hash(text: str) -> str:
+    """Compute a normalized hash of content for similarity detection."""
+    # Normalize: lowercase, remove extra whitespace, strip
+    normalized = re.sub(r'\s+', ' ', text.lower().strip())
+    # Use zlib crc32 as a fast hash
+    return format(zlib.crc32(normalized.encode('utf-8')) & 0xffffffff, '08x')
+
+
+def compute_similarity(text1: str, text2: str) -> float:
+    """
+    Compute similarity ratio between two texts using compression.
+    Higher ratio means more similar content (1.0 = identical).
+    """
+    if not text1 or not text2:
+        return 0.0
+    
+    # Normalize texts
+    t1 = re.sub(r'\s+', ' ', text1.lower().strip())
+    t2 = re.sub(r'\s+', ' ', text2.lower().strip())
+    
+    # Compression-based similarity (Normalized Compression Distance)
+    c1 = len(zlib.compress(t1.encode('utf-8')))
+    c2 = len(zlib.compress(t2.encode('utf-8')))
+    c12 = len(zlib.compress((t1 + t2).encode('utf-8')))
+    
+    # NCD formula: (C(xy) - min(C(x), C(y))) / max(C(x), C(y))
+    # We return 1 - NCD so higher = more similar
+    ncd = (c12 - min(c1, c2)) / max(c1, c2)
+    return max(0.0, 1.0 - ncd)
+
+
+def deduplicate_skills(skills: list, similarity_threshold: float = 0.8) -> tuple[list, list, dict]:
+    """
+    Remove duplicate skills, keeping the highest quality version.
+    Track similar skills that are kept for cross-referencing.
+    
+    Deduplication strategy:
+    1. Group skills by name
+    2. For groups with multiple skills, check content similarity
+    3. If similarity > threshold (likely mirrors), keep the one from highest priority provider
+    4. Track similar skills (0.5 <= similarity <= threshold) for cross-referencing
+    5. Return deduplicated list, removed duplicates, and similarity map
+    
+    Args:
+        skills: List of Skill objects
+        similarity_threshold: Minimum similarity (0-1) to consider as duplicate. Default 0.8.
+    
+    Returns:
+        Tuple of (deduplicated skills, removed duplicates, similar_skills_map)
+        similar_skills_map: Dict mapping skill id to list of similar skill ids with scores
+    """
+    from collections import defaultdict
+    
+    # Group by skill name
+    by_name: dict[str, list] = defaultdict(list)
+    for skill in skills:
+        by_name[skill.name].append(skill)
+    
+    deduplicated = []
+    removed = []
+    similar_skills_map: dict[str, list] = {}  # Maps skill_id to similar skills
+    
+    for name, group in by_name.items():
+        if len(group) == 1:
+            deduplicated.append(group[0])
+            continue
+        
+        # Sort by provider priority (lower = better)
+        group.sort(key=lambda s: PROVIDER_PRIORITY.get(s.provider, 99))
+        
+        # Check if duplicates are actually similar content
+        best = group[0]
+        kept_in_group = [best]
+        
+        for other in group[1:]:
+            similarity = compute_similarity(best.body, other.body)
+            if similarity > similarity_threshold:
+                # Similar content - this is a mirror, remove it
+                removed.append({
+                    "skill": other,
+                    "reason": f"mirror of {best.provider}/{best.name}",
+                    "similarity": round(similarity, 2)
+                })
+            else:
+                # Different content with same name - keep both (unique implementations)
+                kept_in_group.append(other)
+                deduplicated.append(other)
+        
+        deduplicated.append(best)
+        
+        # For all kept skills in this group, record their similar counterparts
+        if len(kept_in_group) > 1:
+            for i, skill_a in enumerate(kept_in_group):
+                similar_list = []
+                for j, skill_b in enumerate(kept_in_group):
+                    if i != j:
+                        sim = compute_similarity(skill_a.body, skill_b.body)
+                        similar_list.append({
+                            "id": skill_b.id,
+                            "provider": skill_b.provider,
+                            "similarity": round(sim, 2)
+                        })
+                if similar_list:
+                    similar_skills_map[skill_a.id] = similar_list
+    
+    return deduplicated, removed, similar_skills_map
 
 
 def fetch_url(url: str, retries: int = 3) -> Optional[str]:
@@ -312,7 +433,8 @@ def fetch_provider_skills(provider_id: str, config: dict) -> list:
             has_scripts=has_scripts,
             has_references=has_references,
             has_assets=has_assets,
-            tags=extract_tags(name, description)
+            tags=extract_tags(name, description),
+            body=parsed["body"]  # Store body for dedup comparison
         )
         
         skills.append(skill)
@@ -334,6 +456,23 @@ def build_catalog() -> dict:
             "repo": config["repo"],
             "skills_count": len(skills)
         }
+    
+    # Deduplicate skills - remove mirrors, keep highest quality
+    print(f"\nDeduplicating skills...")
+    all_skills, removed, similar_skills_map = deduplicate_skills(all_skills)
+    
+    if removed:
+        print(f"  Removed {len(removed)} duplicate/mirror skills:")
+        for r in removed:
+            print(f"    - {r['skill'].id} ({r['reason']}, similarity: {r['similarity']})")
+    
+    if similar_skills_map:
+        print(f"  Found {len(similar_skills_map)} skills with similar counterparts (kept as different implementations)")
+    
+    # Update provider stats after dedup
+    for provider_id in provider_stats:
+        count = sum(1 for s in all_skills if s.provider == provider_id)
+        provider_stats[provider_id]["skills_count"] = count
     
     # Sort skills by provider then name
     all_skills.sort(key=lambda s: (s.provider, s.name))
@@ -358,6 +497,11 @@ def build_catalog() -> dict:
         skill_dict = asdict(skill)
         # Convert nested dataclass
         skill_dict["source"] = asdict(skill.source)
+        # Remove body field (only used for dedup, not for output)
+        skill_dict.pop("body", None)
+        # Add similar skills if this skill has counterparts
+        if skill.id in similar_skills_map:
+            skill_dict["similar_skills"] = similar_skills_map[skill.id]
         catalog["skills"].append(skill_dict)
     
     return catalog

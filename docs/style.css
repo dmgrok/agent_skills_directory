@@ -915,3 +915,50 @@ footer a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+/* Similar Skills Section */
+.similar-skills-section {
+    background: rgba(99, 102, 241, 0.05);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.similar-skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.similar-skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.similar-skill-item:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--primary);
+}
+
+.similar-skill-id {
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--text);
+    flex: 1;
+}
+
+.similarity-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(245, 158, 11, 0.2);
+    color: var(--warning);
+    border-radius: 4px;
+    font-weight: 500;
+}

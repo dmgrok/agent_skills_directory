@@ -1,18 +1,18 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
   "version": "2026.01.21",
-  "generated_at": "2026-01-21T10:20:32.629458+00:00",
-  "total_skills": 96,
+  "generated_at": "2026-01-21T11:03:19.602387+00:00",
+  "total_skills": 93,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
       "repo": "https://github.com/anthropics/skills",
-      "skills_count": 15
+      "skills_count": 16
     },
     "openai": {
       "name": "OpenAI",
       "repo": "https://github.com/openai/skills",
-      "skills_count": 10
+      "skills_count": 9
     },
     "github": {
       "name": "GitHub",
@@ -32,7 +32,7 @@
     "skillcreatorai": {
       "name": "SkillCreator.ai",
       "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-      "skills_count": 46
+      "skills_count": 43
     }
   },
   "categories": [
@@ -67,6 +67,13 @@
       "tags": [
         "art",
         "algorithmic"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/algorithmic-art",
+          "provider": "skillcreatorai",
+          "similarity": 0.02
+        }
       ]
     },
     {
@@ -95,6 +102,13 @@
         "brand",
         "visual",
         "guidelines"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/brand-guidelines",
+          "provider": "skillcreatorai",
+          "similarity": 0.11
+        }
       ]
     },
     {
@@ -123,6 +137,13 @@
         "visual",
         "document",
         "canvas"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/canvas-design",
+          "provider": "skillcreatorai",
+          "similarity": 0.03
+        }
       ]
     },
     {
@@ -153,6 +174,40 @@
       ]
     },
     {
+      "id": "anthropics/docx",
+      "name": "docx",
+      "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks",
+      "provider": "anthropics",
+      "category": "documents",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "compatibility": null,
+      "last_updated_at": "2025-12-01T18:05:36Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/anthropics/skills",
+        "path": "skills/docx",
+        "skill_md_url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/docx/SKILL.md",
+        "commit_sha": "69c0b1a0674149f27b61b2635f935524b6add202"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "docx",
+        "pr",
+        "document",
+        "extract",
+        "analysis"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/docx",
+          "provider": "skillcreatorai",
+          "similarity": 0.08
+        }
+      ]
+    },
+    {
       "id": "anthropics/frontend-design",
       "name": "frontend-design",
       "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
@@ -176,6 +231,13 @@
         "design",
         "art",
         "frontend"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/frontend-design",
+          "provider": "skillcreatorai",
+          "similarity": 0.64
+        }
       ]
     },
     {
@@ -203,6 +265,13 @@
         "faq",
         "internal",
         "comms"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/internal-comms",
+          "provider": "skillcreatorai",
+          "similarity": 0.09
+        }
       ]
     },
     {
@@ -230,6 +299,13 @@
         "mcp",
         "design",
         "builder"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/mcp-builder",
+          "provider": "skillcreatorai",
+          "similarity": 0.18
+        }
       ]
     },
     {
@@ -256,6 +332,13 @@
         "pr",
         "document",
         "extract"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/pdf",
+          "provider": "skillcreatorai",
+          "similarity": 0.35
+        }
       ]
     },
     {
@@ -281,6 +364,13 @@
         "pptx",
         "pr",
         "analysis"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/pptx",
+          "provider": "skillcreatorai",
+          "similarity": 0.01
+        }
       ]
     },
     {
@@ -307,6 +397,13 @@
         "knowledge",
         "skill",
         "creator"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/skill-creator",
+          "provider": "skillcreatorai",
+          "similarity": 0.1
+        }
       ]
     },
     {
@@ -334,6 +431,13 @@
         "knowledge",
         "gif",
         "creator"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/slack-gif-creator",
+          "provider": "skillcreatorai",
+          "similarity": 0.13
+        }
       ]
     },
     {
@@ -411,6 +515,18 @@
         "test",
         "webapp",
         "testing"
+      ],
+      "similar_skills": [
+        {
+          "id": "github/webapp-testing",
+          "provider": "github",
+          "similarity": 0.12
+        },
+        {
+          "id": "skillcreatorai/webapp-testing",
+          "provider": "skillcreatorai",
+          "similarity": 0.07
+        }
       ]
     },
     {
@@ -438,6 +554,13 @@
         "pr",
         "visual",
         "analysis"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/xlsx",
+          "provider": "skillcreatorai",
+          "similarity": 0.18
+        }
       ]
     },
     {
@@ -814,6 +937,18 @@
         "test",
         "webapp",
         "testing"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/webapp-testing",
+          "provider": "anthropics",
+          "similarity": 0.14
+        },
+        {
+          "id": "skillcreatorai/webapp-testing",
+          "provider": "skillcreatorai",
+          "similarity": 0.18
+        }
       ]
     },
     {
@@ -1271,34 +1406,6 @@
       ]
     },
     {
-      "id": "openai/skill-creator",
-      "name": "skill-creator",
-      "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2025-12-19T17:17:20Z",
-      "metadata": {
-        "short-description": "Create or update a skill"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.system/skill-creator",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md",
-        "commit_sha": "894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "ci",
-        "knowledge",
-        "skill",
-        "creator"
-      ]
-    },
-    {
       "id": "openai/skill-installer",
       "name": "skill-installer",
       "description": "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos).",
@@ -1349,6 +1456,13 @@
       "tags": [
         "art",
         "algorithmic"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/algorithmic-art",
+          "provider": "anthropics",
+          "similarity": 0.02
+        }
       ]
     },
     {
@@ -1454,6 +1568,13 @@
         "brand",
         "visual",
         "guidelines"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/brand-guidelines",
+          "provider": "anthropics",
+          "similarity": 0.11
+        }
       ]
     },
     {
@@ -1482,6 +1603,13 @@
         "visual",
         "document",
         "canvas"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/canvas-design",
+          "provider": "anthropics",
+          "similarity": 0.02
+        }
       ]
     },
     {
@@ -1695,33 +1823,6 @@
       ]
     },
     {
-      "id": "skillcreatorai/doc-coauthoring",
-      "name": "doc-coauthoring",
-      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
-      "provider": "skillcreatorai",
-      "category": "documents",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2025-12-20T19:04:33Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-        "path": "skills/doc-coauthoring",
-        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/doc-coauthoring/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "ci",
-        "document",
-        "doc",
-        "coauthoring"
-      ]
-    },
-    {
       "id": "skillcreatorai/docx",
       "name": "docx",
       "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for creating new documents, modifying content, working with tracked changes, or adding comments.",
@@ -1746,6 +1847,13 @@
         "document",
         "extract",
         "analysis"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/docx",
+          "provider": "anthropics",
+          "similarity": 0.08
+        }
       ]
     },
     {
@@ -1872,6 +1980,13 @@
         "design",
         "art",
         "frontend"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/frontend-design",
+          "provider": "anthropics",
+          "similarity": 0.64
+        }
       ]
     },
     {
@@ -1926,6 +2041,13 @@
         "faq",
         "internal",
         "comms"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/internal-comms",
+          "provider": "anthropics",
+          "similarity": 0.09
+        }
       ]
     },
     {
@@ -2105,6 +2227,13 @@
         "mcp",
         "design",
         "builder"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/mcp-builder",
+          "provider": "anthropics",
+          "similarity": 0.17
+        }
       ]
     },
     {
@@ -2157,6 +2286,13 @@
         "pr",
         "document",
         "extract"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/pdf",
+          "provider": "anthropics",
+          "similarity": 0.34
+        }
       ]
     },
     {
@@ -2182,6 +2318,13 @@
         "pptx",
         "pr",
         "analysis"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/pptx",
+          "provider": "anthropics",
+          "similarity": 0.01
+        }
       ]
     },
     {
@@ -2235,33 +2378,6 @@
       ]
     },
     {
-      "id": "skillcreatorai/raffle-winner-picker",
-      "name": "raffle-winner-picker",
-      "description": "Picks random winners from lists, spreadsheets, or Google Sheets for giveaways, raffles, and contests. Ensures fair, unbiased selection with transparency.",
-      "provider": "skillcreatorai",
-      "category": "documents",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2025-12-18T23:49:49Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-        "path": "skills/raffle-winner-picker",
-        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/raffle-winner-picker/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "test",
-        "raffle",
-        "winner",
-        "picker"
-      ]
-    },
-    {
       "id": "skillcreatorai/react-best-practices",
       "name": "react-best-practices",
       "description": "React development guidelines with hooks, component patterns, state management, and performance optimization.",
@@ -2311,6 +2427,13 @@
         "knowledge",
         "skill",
         "creator"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/skill-creator",
+          "provider": "anthropics",
+          "similarity": 0.1
+        }
       ]
     },
     {
@@ -2337,32 +2460,13 @@
         "slack",
         "gif",
         "creator"
-      ]
-    },
-    {
-      "id": "skillcreatorai/theme-factory",
-      "name": "theme-factory",
-      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
-      "provider": "skillcreatorai",
-      "category": "creative",
-      "license": "Complete terms in LICENSE.txt",
-      "compatibility": null,
-      "last_updated_at": "2025-12-18T23:49:49Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-        "path": "skills/theme-factory",
-        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/theme-factory/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "art",
-        "theme",
-        "factory"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/slack-gif-creator",
+          "provider": "anthropics",
+          "similarity": 0.13
+        }
       ]
     },
     {
@@ -2411,6 +2515,13 @@
       "tags": [
         "vercel",
         "deploy"
+      ],
+      "similar_skills": [
+        {
+          "id": "vercel/vercel-deploy",
+          "provider": "vercel",
+          "similarity": 0.06
+        }
       ]
     },
     {
@@ -2463,6 +2574,13 @@
         "visual",
         "web",
         "guidelines"
+      ],
+      "similar_skills": [
+        {
+          "id": "vercel/web-design-guidelines",
+          "provider": "vercel",
+          "similarity": 0.16
+        }
       ]
     },
     {
@@ -2488,6 +2606,18 @@
         "test",
         "webapp",
         "testing"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/webapp-testing",
+          "provider": "anthropics",
+          "similarity": 0.08
+        },
+        {
+          "id": "github/webapp-testing",
+          "provider": "github",
+          "similarity": 0.17
+        }
       ]
     },
     {
@@ -2515,6 +2645,13 @@
         "pr",
         "visual",
         "analysis"
+      ],
+      "similar_skills": [
+        {
+          "id": "anthropics/xlsx",
+          "provider": "anthropics",
+          "similarity": 0.18
+        }
       ]
     },
     {
@@ -2543,6 +2680,13 @@
         "pr",
         "vercel",
         "deploy"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/vercel-deploy",
+          "provider": "skillcreatorai",
+          "similarity": 0.06
+        }
       ]
     },
     {
@@ -2603,6 +2747,13 @@
         "design",
         "web",
         "guidelines"
+      ],
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/web-design-guidelines",
+          "provider": "skillcreatorai",
+          "similarity": 0.17
+        }
       ]
     }
   ]

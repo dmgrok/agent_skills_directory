@@ -1,16 +1,16 @@
 "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json"
 version: 2026.01.21
-generated_at: "2026-01-21T10:20:32.629458+00:00"
-total_skills: 96
+generated_at: "2026-01-21T11:03:19.602387+00:00"
+total_skills: 93
 providers:
   anthropics:
     name: Anthropic
     repo: "https://github.com/anthropics/skills"
-    skills_count: 15
+    skills_count: 16
   openai:
     name: OpenAI
     repo: "https://github.com/openai/skills"
-    skills_count: 10
+    skills_count: 9
   github:
     name: GitHub
     repo: "https://github.com/github/awesome-copilot"
@@ -26,9 +26,9 @@ providers:
   skillcreatorai:
     name: SkillCreator.ai
     repo: "https://github.com/skillcreatorai/Ai-Agent-Skills"
-    skills_count: 46
+    skills_count: 43
 categories[7]: creative,data,development,documents,enterprise,integrations,other
-skills[96]:
+skills[93]:
   - id: anthropics/algorithmic-art
     name: algorithmic-art
     description: "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations."
@@ -47,6 +47,8 @@ skills[96]:
     has_references: false
     has_assets: true
     tags[2]: art,algorithmic
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/algorithmic-art,skillcreatorai,0.02
   - id: anthropics/brand-guidelines
     name: brand-guidelines
     description: "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply."
@@ -65,6 +67,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[6]: ci,design,art,brand,visual,guidelines
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/brand-guidelines,skillcreatorai,0.11
   - id: anthropics/canvas-design
     name: canvas-design
     description: "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations."
@@ -83,6 +87,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[6]: pdf,design,art,visual,document,canvas
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/canvas-design,skillcreatorai,0.03
   - id: anthropics/doc-coauthoring
     name: doc-coauthoring
     description: "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks."
@@ -101,6 +107,26 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[5]: pr,ci,document,doc,coauthoring
+  - id: anthropics/docx
+    name: docx
+    description: "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks"
+    provider: anthropics
+    category: documents
+    license: Proprietary. LICENSE.txt has complete terms
+    compatibility: null
+    last_updated_at: "2025-12-01T18:05:36Z"
+    metadata:
+    source:
+      repo: "https://github.com/anthropics/skills"
+      path: skills/docx
+      skill_md_url: "https://raw.githubusercontent.com/anthropics/skills/main/skills/docx/SKILL.md"
+      commit_sha: 69c0b1a0674149f27b61b2635f935524b6add202
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[5]: docx,pr,document,extract,analysis
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/docx,skillcreatorai,0.08
   - id: anthropics/frontend-design
     name: frontend-design
     description: "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics."
@@ -119,6 +145,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[4]: pr,design,art,frontend
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/frontend-design,skillcreatorai,0.64
   - id: anthropics/internal-comms
     name: internal-comms
     description: "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.)."
@@ -137,6 +165,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[5]: pr,ci,faq,internal,comms
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/internal-comms,skillcreatorai,0.09
   - id: anthropics/mcp-builder
     name: mcp-builder
     description: "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK)."
@@ -155,6 +185,8 @@ skills[96]:
     has_references: true
     has_assets: false
     tags[5]: pr,api,mcp,design,builder
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/mcp-builder,skillcreatorai,0.18
   - id: anthropics/pdf
     name: pdf
     description: "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale."
@@ -173,6 +205,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[4]: pdf,pr,document,extract
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/pdf,skillcreatorai,0.35
   - id: anthropics/pptx
     name: pptx
     description: "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Modifying or editing content, (3) Working with layouts, (4) Adding comments or speaker notes, or any other presentation tasks"
@@ -191,6 +225,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[3]: pptx,pr,analysis
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/pptx,skillcreatorai,0.01
   - id: anthropics/skill-creator
     name: skill-creator
     description: "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations."
@@ -209,6 +245,8 @@ skills[96]:
     has_references: true
     has_assets: false
     tags[4]: ci,knowledge,skill,creator
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/skill-creator,skillcreatorai,0.1
   - id: anthropics/slack-gif-creator
     name: slack-gif-creator
     description: "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\""
@@ -227,6 +265,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[5]: pr,slack,knowledge,gif,creator
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/slack-gif-creator,skillcreatorai,0.13
   - id: anthropics/theme-factory
     name: theme-factory
     description: "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly."
@@ -281,6 +321,9 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[3]: test,webapp,testing
+    similar_skills[2]{id,provider,similarity}:
+      github/webapp-testing,github,0.12
+      skillcreatorai/webapp-testing,skillcreatorai,0.07
   - id: anthropics/xlsx
     name: xlsx
     description: "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for: (1) Creating new spreadsheets with formulas and formatting, (2) Reading or analyzing data, (3) Modify existing spreadsheets while preserving formulas, (4) Data analysis and visualization in spreadsheets, or (5) Recalculating formulas"
@@ -299,6 +342,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[5]: xlsx,csv,pr,visual,analysis
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/xlsx,skillcreatorai,0.18
   - id: github/appinsights-instrumentation
     name: appinsights-instrumentation
     description: Instrument a webapp to send useful telemetry data to Azure App Insights
@@ -552,6 +597,9 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[3]: test,webapp,testing
+    similar_skills[2]{id,provider,similarity}:
+      anthropics/webapp-testing,anthropics,0.14
+      skillcreatorai/webapp-testing,skillcreatorai,0.18
   - id: huggingface/hugging-face-cli
     name: hugging-face-cli
     description: "Execute Hugging Face Hub operations using the `hf` CLI. Use when the user needs to download models/datasets/spaces, upload files to Hub repositories, create repos, manage local cache, or run compute jobs on HF infrastructure. Covers authentication, file transfers, repository creation, cache operations, and cloud compute."
@@ -848,25 +896,6 @@ skills[96]:
     has_references: true
     has_assets: false
     tags[4]: pr,notion,spec,implementation
-  - id: openai/skill-creator
-    name: skill-creator
-    description: "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations."
-    provider: openai
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2025-12-19T17:17:20Z"
-    metadata:
-      "short-description": Create or update a skill
-    source:
-      repo: "https://github.com/openai/skills"
-      path: skills/.system/skill-creator
-      skill_md_url: "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md"
-      commit_sha: 894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[4]: ci,knowledge,skill,creator
   - id: openai/skill-installer
     name: skill-installer
     description: "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos)."
@@ -904,6 +933,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[2]: art,algorithmic
+    similar_skills[1]{id,provider,similarity}:
+      anthropics/algorithmic-art,anthropics,0.02
   - id: skillcreatorai/artifacts-builder
     name: artifacts-builder
     description: "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts."
@@ -976,6 +1007,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[5]: design,art,brand,visual,guidelines
+    similar_skills[1]{id,provider,similarity}:
+      anthropics/brand-guidelines,anthropics,0.11
   - id: skillcreatorai/canvas-design
     name: canvas-design
     description: "Create beautiful visual art in .png and .pdf documents using design philosophy. Use when the user asks to create a poster, piece of art, design, or other static visual piece. Creates original visual designs."
@@ -994,6 +1027,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[6]: pdf,design,art,visual,document,canvas
+    similar_skills[1]{id,provider,similarity}:
+      anthropics/canvas-design,anthropics,0.02
   - id: skillcreatorai/changelog-generator
     name: changelog-generator
     description: "Automatically creates user-facing changelogs from git commits by analyzing commit history, categorizing changes, and transforming technical commits into clear, customer-friendly release notes. Turns hours of manual changelog writing into minutes of automated generation."
@@ -1138,24 +1173,6 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[5]: pr,slack,analysis,developer,growth
-  - id: skillcreatorai/doc-coauthoring
-    name: doc-coauthoring
-    description: "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks."
-    provider: skillcreatorai
-    category: documents
-    license: null
-    compatibility: null
-    last_updated_at: "2025-12-20T19:04:33Z"
-    metadata:
-    source:
-      repo: "https://github.com/skillcreatorai/Ai-Agent-Skills"
-      path: skills/doc-coauthoring
-      skill_md_url: "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/doc-coauthoring/SKILL.md"
-      commit_sha: 6bef1a5dec74f88cc4a305e4e95d286071ce7017
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[5]: pr,ci,document,doc,coauthoring
   - id: skillcreatorai/docx
     name: docx
     description: "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for creating new documents, modifying content, working with tracked changes, or adding comments."
@@ -1174,6 +1191,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[5]: docx,pr,document,extract,analysis
+    similar_skills[1]{id,provider,similarity}:
+      anthropics/docx,anthropics,0.08
   - id: skillcreatorai/domain-name-brainstormer
     name: domain-name-brainstormer
     description: "Generates creative domain name ideas for your project and checks availability across multiple TLDs (.com, .io, .dev, .ai, etc.). Saves hours of brainstorming and manual checking."
@@ -1264,6 +1283,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[4]: pr,design,art,frontend
+    similar_skills[1]{id,provider,similarity}:
+      anthropics/frontend-design,anthropics,0.64
   - id: skillcreatorai/image-enhancer
     name: image-enhancer
     description: "Improves the quality of images, especially screenshots, by enhancing resolution, sharpness, and clarity. Perfect for preparing images for presentations, documentation, or social media posts."
@@ -1300,6 +1321,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[5]: pr,ci,faq,internal,comms
+    similar_skills[1]{id,provider,similarity}:
+      anthropics/internal-comms,anthropics,0.09
   - id: skillcreatorai/invoice-organizer
     name: invoice-organizer
     description: "Automatically organizes invoices and receipts for tax preparation by reading messy files, extracting key information, renaming them consistently, and sorting them into logical folders. Turns hours of manual bookkeeping into minutes of automated organization."
@@ -1426,6 +1449,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[5]: pr,api,mcp,design,builder
+    similar_skills[1]{id,provider,similarity}:
+      anthropics/mcp-builder,anthropics,0.17
   - id: skillcreatorai/meeting-insights-analyzer
     name: meeting-insights-analyzer
     description: "Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insights, and actionable feedback. Identifies when you avoid conflict, use filler words, dominate conversations, or miss opportunities to listen. Perfect for professionals seeking to improve their communication and leadership skills."
@@ -1462,6 +1487,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[4]: pdf,pr,document,extract
+    similar_skills[1]{id,provider,similarity}:
+      anthropics/pdf,anthropics,0.34
   - id: skillcreatorai/pptx
     name: pptx
     description: "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for creating new presentations, modifying content, working with layouts, adding speaker notes, or any presentation tasks."
@@ -1480,6 +1507,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[3]: pptx,pr,analysis
+    similar_skills[1]{id,provider,similarity}:
+      anthropics/pptx,anthropics,0.01
   - id: skillcreatorai/python-development
     name: python-development
     description: "Modern Python development with Python 3.12+, Django, FastAPI, async patterns, and production best practices. Use for Python projects, APIs, data processing, or automation scripts."
@@ -1516,24 +1545,6 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[2]: test,regression
-  - id: skillcreatorai/raffle-winner-picker
-    name: raffle-winner-picker
-    description: "Picks random winners from lists, spreadsheets, or Google Sheets for giveaways, raffles, and contests. Ensures fair, unbiased selection with transparency."
-    provider: skillcreatorai
-    category: documents
-    license: null
-    compatibility: null
-    last_updated_at: "2025-12-18T23:49:49Z"
-    metadata:
-    source:
-      repo: "https://github.com/skillcreatorai/Ai-Agent-Skills"
-      path: skills/raffle-winner-picker
-      skill_md_url: "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/raffle-winner-picker/SKILL.md"
-      commit_sha: 6bef1a5dec74f88cc4a305e4e95d286071ce7017
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[5]: pr,test,raffle,winner,picker
   - id: skillcreatorai/react-best-practices
     name: react-best-practices
     description: "React development guidelines with hooks, component patterns, state management, and performance optimization."
@@ -1570,6 +1581,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[4]: ci,knowledge,skill,creator
+    similar_skills[1]{id,provider,similarity}:
+      anthropics/skill-creator,anthropics,0.1
   - id: skillcreatorai/slack-gif-creator
     name: slack-gif-creator
     description: "Toolkit for creating animated GIFs optimized for Slack, with validators for size constraints and composable animation primitives. This skill applies when users request animated GIFs or emoji animations for Slack from descriptions like \"make me a GIF for Slack of X doing Y\"."
@@ -1588,24 +1601,8 @@ skills[96]:
     has_references: false
     has_assets: true
     tags[4]: pr,slack,gif,creator
-  - id: skillcreatorai/theme-factory
-    name: theme-factory
-    description: "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly."
-    provider: skillcreatorai
-    category: creative
-    license: Complete terms in LICENSE.txt
-    compatibility: null
-    last_updated_at: "2025-12-18T23:49:49Z"
-    metadata:
-    source:
-      repo: "https://github.com/skillcreatorai/Ai-Agent-Skills"
-      path: skills/theme-factory
-      skill_md_url: "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/theme-factory/SKILL.md"
-      commit_sha: 6bef1a5dec74f88cc4a305e4e95d286071ce7017
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[4]: pr,art,theme,factory
+    similar_skills[1]{id,provider,similarity}:
+      anthropics/slack-gif-creator,anthropics,0.13
   - id: skillcreatorai/upgrading-expo
     name: upgrading-expo
     description: Guidelines for upgrading Expo SDK versions and fixing dependency issues.
@@ -1642,6 +1639,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[2]: vercel,deploy
+    similar_skills[1]{id,provider,similarity}:
+      vercel/vercel-deploy,vercel,0.06
   - id: skillcreatorai/video-downloader
     name: video-downloader
     description: "Downloads videos from YouTube and other platforms for offline viewing, editing, or archival. Handles various formats and quality options."
@@ -1678,6 +1677,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[6]: pr,ci,design,visual,web,guidelines
+    similar_skills[1]{id,provider,similarity}:
+      vercel/web-design-guidelines,vercel,0.16
   - id: skillcreatorai/webapp-testing
     name: webapp-testing
     description: "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs."
@@ -1696,6 +1697,9 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[3]: test,webapp,testing
+    similar_skills[2]{id,provider,similarity}:
+      anthropics/webapp-testing,anthropics,0.08
+      github/webapp-testing,github,0.17
   - id: skillcreatorai/xlsx
     name: xlsx
     description: "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for creating new spreadsheets, reading/analyzing data, modifying existing spreadsheets, or recalculating formulas."
@@ -1714,6 +1718,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[5]: xlsx,csv,pr,visual,analysis
+    similar_skills[1]{id,provider,similarity}:
+      anthropics/xlsx,anthropics,0.18
   - id: vercel/vercel-deploy
     name: vercel-deploy
     description: "Deploy applications and websites to Vercel. Use this skill when the user requests deployment actions such as \"Deploy my app\", \"Deploy this to production\", \"Create a preview deployment\", \"Deploy and give me the link\", or \"Push this live\". No authentication required - returns preview URL and claimable deployment link."
@@ -1734,6 +1740,8 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[3]: pr,vercel,deploy
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/vercel-deploy,skillcreatorai,0.06
   - id: vercel/vercel-react-best-practices
     name: vercel-react-best-practices
     description: "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements."
@@ -1775,3 +1783,5 @@ skills[96]:
     has_references: false
     has_assets: false
     tags[4]: pr,design,web,guidelines
+    similar_skills[1]{id,provider,similarity}:
+      skillcreatorai/web-design-guidelines,skillcreatorai,0.17

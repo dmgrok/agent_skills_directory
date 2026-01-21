@@ -286,6 +286,24 @@ function showSkillModal(skill) {
             </p>
         </div>
 
+        ${skill.similar_skills && skill.similar_skills.length > 0 ? `
+            <div class="modal-section similar-skills-section">
+                <h3>🔗 Similar Skills</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+                    Other implementations of "${escapeHtml(skill.name)}" with different content:
+                </p>
+                <div class="similar-skills-list">
+                    ${skill.similar_skills.map(s => `
+                        <div class="similar-skill-item" data-skill-id="${escapeHtml(s.id)}">
+                            <span class="skill-provider ${s.provider}">${s.provider}</span>
+                            <span class="similar-skill-id">${escapeHtml(s.id)}</span>
+                            <span class="similarity-badge">${Math.round(s.similarity * 100)}% similar</span>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        ` : ''}
+
         <div class="modal-links">
             <a href="${skill.source.skill_md_url}" target="_blank" class="modal-link">
                 📄 View SKILL.md
@@ -305,6 +323,15 @@ function showSkillModal(skill) {
 
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+    
+    // Add click handlers for similar skill items
+    document.querySelectorAll('.similar-skill-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const skillId = item.dataset.skillId;
+            const similarSkill = catalog.skills.find(s => s.id === skillId);
+            if (similarSkill) showSkillModal(similarSkill);
+        });
+    });
 }
 
 function closeModal() {
