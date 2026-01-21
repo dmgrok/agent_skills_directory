@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
   "version": "2026.01.21",
-  "generated_at": "2026-01-21T12:33:33.229354+00:00",
-  "total_skills": 94,
+  "generated_at": "2026-01-21T12:49:46.558504+00:00",
+  "total_skills": 82,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
@@ -17,7 +17,7 @@
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
-      "skills_count": 14
+      "skills_count": 12
     },
     "vercel": {
       "name": "Vercel",
@@ -27,12 +27,12 @@
     "huggingface": {
       "name": "HuggingFace",
       "repo": "https://github.com/huggingface/skills",
-      "skills_count": 8
+      "skills_count": 7
     },
     "skillcreatorai": {
       "name": "SkillCreator.ai",
       "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-      "skills_count": 44
+      "skills_count": 35
     }
   },
   "categories": [
@@ -72,7 +72,7 @@
         {
           "id": "skillcreatorai/algorithmic-art",
           "provider": "skillcreatorai",
-          "similarity": 0.02
+          "similarity": 0.79
         }
       ]
     },
@@ -84,7 +84,7 @@
       "category": "creative",
       "license": "Complete terms in LICENSE.txt",
       "compatibility": null,
-      "last_updated_at": "2025-12-01T18:05:36Z",
+      "last_updated_at": null,
       "metadata": {},
       "source": {
         "repo": "https://github.com/anthropics/skills",
@@ -107,7 +107,7 @@
         {
           "id": "skillcreatorai/brand-guidelines",
           "provider": "skillcreatorai",
-          "similarity": 0.11
+          "similarity": 0.72
         }
       ]
     },
@@ -142,7 +142,7 @@
         {
           "id": "skillcreatorai/canvas-design",
           "provider": "skillcreatorai",
-          "similarity": 0.03
+          "similarity": 0.74
         }
       ]
     },
@@ -198,13 +198,6 @@
         "document",
         "extract",
         "analysis"
-      ],
-      "similar_skills": [
-        {
-          "id": "skillcreatorai/docx",
-          "provider": "skillcreatorai",
-          "similarity": 0.08
-        }
       ]
     },
     {
@@ -231,13 +224,6 @@
         "design",
         "art",
         "frontend"
-      ],
-      "similar_skills": [
-        {
-          "id": "skillcreatorai/frontend-design",
-          "provider": "skillcreatorai",
-          "similarity": 0.64
-        }
       ]
     },
     {
@@ -270,7 +256,7 @@
         {
           "id": "skillcreatorai/internal-comms",
           "provider": "skillcreatorai",
-          "similarity": 0.09
+          "similarity": 0.65
         }
       ]
     },
@@ -299,13 +285,6 @@
         "mcp",
         "design",
         "builder"
-      ],
-      "similar_skills": [
-        {
-          "id": "skillcreatorai/mcp-builder",
-          "provider": "skillcreatorai",
-          "similarity": 0.18
-        }
       ]
     },
     {
@@ -316,7 +295,7 @@
       "category": "documents",
       "license": "Proprietary. LICENSE.txt has complete terms",
       "compatibility": null,
-      "last_updated_at": "2025-12-01T18:05:36Z",
+      "last_updated_at": null,
       "metadata": {},
       "source": {
         "repo": "https://github.com/anthropics/skills",
@@ -332,13 +311,6 @@
         "pr",
         "document",
         "extract"
-      ],
-      "similar_skills": [
-        {
-          "id": "skillcreatorai/pdf",
-          "provider": "skillcreatorai",
-          "similarity": 0.35
-        }
       ]
     },
     {
@@ -369,7 +341,7 @@
         {
           "id": "skillcreatorai/pptx",
           "provider": "skillcreatorai",
-          "similarity": 0.01
+          "similarity": 0.78
         }
       ]
     },
@@ -397,13 +369,6 @@
         "knowledge",
         "skill",
         "creator"
-      ],
-      "similar_skills": [
-        {
-          "id": "skillcreatorai/skill-creator",
-          "provider": "skillcreatorai",
-          "similarity": 0.1
-        }
       ]
     },
     {
@@ -436,7 +401,7 @@
         {
           "id": "skillcreatorai/slack-gif-creator",
           "provider": "skillcreatorai",
-          "similarity": 0.13
+          "similarity": 0.71
         }
       ]
     },
@@ -515,18 +480,6 @@
         "test",
         "webapp",
         "testing"
-      ],
-      "similar_skills": [
-        {
-          "id": "github/webapp-testing",
-          "provider": "github",
-          "similarity": 0.12
-        },
-        {
-          "id": "skillcreatorai/webapp-testing",
-          "provider": "skillcreatorai",
-          "similarity": 0.07
-        }
       ]
     },
     {
@@ -537,7 +490,7 @@
       "category": "data",
       "license": "Proprietary. LICENSE.txt has complete terms",
       "compatibility": null,
-      "last_updated_at": "2025-12-01T18:05:36Z",
+      "last_updated_at": null,
       "metadata": {},
       "source": {
         "repo": "https://github.com/anthropics/skills",
@@ -554,13 +507,6 @@
         "pr",
         "visual",
         "analysis"
-      ],
-      "similar_skills": [
-        {
-          "id": "skillcreatorai/xlsx",
-          "provider": "skillcreatorai",
-          "similarity": 0.18
-        }
       ]
     },
     {
@@ -639,38 +585,6 @@
         "azure",
         "role",
         "selector"
-      ]
-    },
-    {
-      "id": "github/azure-static-web-apps",
-      "name": "azure-static-web-apps",
-      "description": "Helps create, configure, and deploy Azure Static Web Apps using the SWA CLI. Use when deploying static sites to Azure, setting up SWA local development, configuring staticwebapp.config.json, adding Azure Functions APIs to SWA, or setting up GitHub Actions CI/CD for Static Web Apps.",
-      "provider": "github",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-16T18:42:27Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/github/awesome-copilot",
-        "path": "skills/azure-static-web-apps",
-        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-static-web-apps/SKILL.md",
-        "commit_sha": "5fb41dae2a8906d14c52f42adacf155b393ee17e"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "json",
-        "github",
-        "git",
-        "ci",
-        "cd",
-        "api",
-        "cli",
-        "azure",
-        "static",
-        "web"
       ]
     },
     {
@@ -869,7 +783,7 @@
       "category": "development",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-11T16:15:56Z",
+      "last_updated_at": null,
       "metadata": {},
       "source": {
         "repo": "https://github.com/github/awesome-copilot",
@@ -912,43 +826,6 @@
         "visual",
         "web",
         "reviewer"
-      ]
-    },
-    {
-      "id": "github/webapp-testing",
-      "name": "webapp-testing",
-      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
-      "provider": "github",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2025-12-17T23:27:05Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/github/awesome-copilot",
-        "path": "skills/webapp-testing",
-        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md",
-        "commit_sha": "5fb41dae2a8906d14c52f42adacf155b393ee17e"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "test",
-        "webapp",
-        "testing"
-      ],
-      "similar_skills": [
-        {
-          "id": "anthropics/webapp-testing",
-          "provider": "anthropics",
-          "similarity": 0.14
-        },
-        {
-          "id": "skillcreatorai/webapp-testing",
-          "provider": "skillcreatorai",
-          "similarity": 0.18
-        }
       ]
     },
     {
@@ -1062,33 +939,6 @@
       ]
     },
     {
-      "id": "huggingface/hugging-face-model-trainer",
-      "name": "hugging-face-model-trainer",
-      "description": "This skill should be used when users want to train or fine-tune language models using TRL (Transformer Reinforcement Learning) on Hugging Face Jobs infrastructure. Covers SFT, DPO, GRPO and reward modeling training methods, plus GGUF conversion for local deployment. Includes guidance on the TRL Jobs package, UV scripts with PEP 723 format, dataset preparation and validation, hardware selection, cost estimation, Trackio monitoring, Hub authentication, and model persistence. Should be invoked for tasks involving cloud GPU training, GGUF conversion, or when users mention training on Hugging Face Jobs without local GPU setup.",
-      "provider": "huggingface",
-      "category": "data",
-      "license": "Complete terms in LICENSE.txt",
-      "compatibility": null,
-      "last_updated_at": "2026-01-12T15:26:31Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/huggingface/skills",
-        "path": "skills/hugging-face-model-trainer",
-        "skill_md_url": "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-model-trainer/SKILL.md",
-        "commit_sha": "462a39896c44a7bbaf2c39aa49056a43af228d55"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "hugging",
-        "face",
-        "model",
-        "trainer"
-      ]
-    },
-    {
       "id": "huggingface/hugging-face-paper-publisher",
       "name": "hugging-face-paper-publisher",
       "description": "Publish and manage research papers on Hugging Face Hub. Supports creating paper pages, linking papers to models/datasets, claiming authorship, and generating professional markdown-based research articles.",
@@ -1183,7 +1033,7 @@
       "category": "development",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2025-12-21T03:20:14Z",
+      "last_updated_at": null,
       "metadata": {
         "short-description": "Create a plan"
       },
@@ -1327,7 +1177,7 @@
       "category": "enterprise",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2025-12-19T17:18:15Z",
+      "last_updated_at": null,
       "metadata": {
         "short-description": "Prep meetings with Notion context and tailored agendas"
       },
@@ -1461,7 +1311,7 @@
         {
           "id": "anthropics/algorithmic-art",
           "provider": "anthropics",
-          "similarity": 0.02
+          "similarity": 0.79
         }
       ]
     },
@@ -1573,7 +1423,7 @@
         {
           "id": "anthropics/brand-guidelines",
           "provider": "anthropics",
-          "similarity": 0.11
+          "similarity": 0.73
         }
       ]
     },
@@ -1608,7 +1458,7 @@
         {
           "id": "anthropics/canvas-design",
           "provider": "anthropics",
-          "similarity": 0.02
+          "similarity": 0.75
         }
       ]
     },
@@ -1823,40 +1673,6 @@
       ]
     },
     {
-      "id": "skillcreatorai/docx",
-      "name": "docx",
-      "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for creating new documents, modifying content, working with tracked changes, or adding comments.",
-      "provider": "skillcreatorai",
-      "category": "documents",
-      "license": "Apache-2.0",
-      "compatibility": null,
-      "last_updated_at": "2025-12-17T20:29:57Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-        "path": "skills/docx",
-        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/docx/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "docx",
-        "pr",
-        "document",
-        "extract",
-        "analysis"
-      ],
-      "similar_skills": [
-        {
-          "id": "anthropics/docx",
-          "provider": "anthropics",
-          "similarity": 0.08
-        }
-      ]
-    },
-    {
       "id": "skillcreatorai/domain-name-brainstormer",
       "name": "domain-name-brainstormer",
       "description": "Generates creative domain name ideas for your project and checks availability across multiple TLDs (.com, .io, .dev, .ai, etc.). Saves hours of brainstorming and manual checking.",
@@ -1932,64 +1748,6 @@
       ]
     },
     {
-      "id": "skillcreatorai/file-organizer",
-      "name": "file-organizer",
-      "description": "Intelligently organizes your files and folders across your computer by understanding context, finding duplicates, suggesting better structures, and automating cleanup tasks. Reduces cognitive load and keeps your digital workspace tidy without manual effort.",
-      "provider": "skillcreatorai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2025-12-18T23:49:49Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-        "path": "skills/file-organizer",
-        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/file-organizer/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "git",
-        "file",
-        "organizer"
-      ]
-    },
-    {
-      "id": "skillcreatorai/frontend-design",
-      "name": "frontend-design",
-      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
-      "provider": "skillcreatorai",
-      "category": "creative",
-      "license": "Apache-2.0",
-      "compatibility": null,
-      "last_updated_at": "2025-12-17T20:29:57Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-        "path": "skills/frontend-design",
-        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/frontend-design/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "design",
-        "art",
-        "frontend"
-      ],
-      "similar_skills": [
-        {
-          "id": "anthropics/frontend-design",
-          "provider": "anthropics",
-          "similarity": 0.64
-        }
-      ]
-    },
-    {
       "id": "skillcreatorai/image-enhancer",
       "name": "image-enhancer",
       "description": "Improves the quality of images, especially screenshots, by enhancing resolution, sharpness, and clarity. Perfect for preparing images for presentations, documentation, or social media posts.",
@@ -2046,7 +1804,7 @@
         {
           "id": "anthropics/internal-comms",
           "provider": "anthropics",
-          "similarity": 0.09
+          "similarity": 0.66
         }
       ]
     },
@@ -2203,40 +1961,6 @@
       ]
     },
     {
-      "id": "skillcreatorai/mcp-builder",
-      "name": "mcp-builder",
-      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
-      "provider": "skillcreatorai",
-      "category": "development",
-      "license": "Apache-2.0",
-      "compatibility": null,
-      "last_updated_at": "2025-12-17T20:29:57Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-        "path": "skills/mcp-builder",
-        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/mcp-builder/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "api",
-        "mcp",
-        "design",
-        "builder"
-      ],
-      "similar_skills": [
-        {
-          "id": "anthropics/mcp-builder",
-          "provider": "anthropics",
-          "similarity": 0.17
-        }
-      ]
-    },
-    {
       "id": "skillcreatorai/meeting-insights-analyzer",
       "name": "meeting-insights-analyzer",
       "description": "Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insights, and actionable feedback. Identifies when you avoid conflict, use filler words, dominate conversations, or miss opportunities to listen. Perfect for professionals seeking to improve their communication and leadership skills.",
@@ -2260,39 +1984,6 @@
         "meeting",
         "insights",
         "analyzer"
-      ]
-    },
-    {
-      "id": "skillcreatorai/pdf",
-      "name": "pdf",
-      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale.",
-      "provider": "skillcreatorai",
-      "category": "documents",
-      "license": "Apache-2.0",
-      "compatibility": null,
-      "last_updated_at": "2025-12-17T20:29:57Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-        "path": "skills/pdf",
-        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/pdf/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "pdf",
-        "pr",
-        "document",
-        "extract"
-      ],
-      "similar_skills": [
-        {
-          "id": "anthropics/pdf",
-          "provider": "anthropics",
-          "similarity": 0.34
-        }
       ]
     },
     {
@@ -2323,7 +2014,7 @@
         {
           "id": "anthropics/pptx",
           "provider": "anthropics",
-          "similarity": 0.01
+          "similarity": 0.78
         }
       ]
     },
@@ -2351,30 +2042,6 @@
         "api",
         "python",
         "development"
-      ]
-    },
-    {
-      "id": "skillcreatorai/qa-regression",
-      "name": "qa-regression",
-      "description": "Automate QA regression testing with reusable test skills. Create login flows, dashboard checks, user creation, and other common test scenarios that run consistently.",
-      "provider": "skillcreatorai",
-      "category": "development",
-      "license": "MIT",
-      "compatibility": null,
-      "last_updated_at": "2025-12-18T22:01:07Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-        "path": "skills/qa-regression",
-        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/qa-regression/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "test",
-        "regression"
       ]
     },
     {
@@ -2431,39 +2098,6 @@
       ]
     },
     {
-      "id": "skillcreatorai/skill-creator",
-      "name": "skill-creator",
-      "description": "Guide for creating effective skills. Use when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
-      "provider": "skillcreatorai",
-      "category": "development",
-      "license": "Apache-2.0",
-      "compatibility": null,
-      "last_updated_at": "2025-12-17T20:29:57Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-        "path": "skills/skill-creator",
-        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/skill-creator/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "ci",
-        "knowledge",
-        "skill",
-        "creator"
-      ],
-      "similar_skills": [
-        {
-          "id": "anthropics/skill-creator",
-          "provider": "anthropics",
-          "similarity": 0.1
-        }
-      ]
-    },
-    {
       "id": "skillcreatorai/slack-gif-creator",
       "name": "slack-gif-creator",
       "description": "Toolkit for creating animated GIFs optimized for Slack, with validators for size constraints and composable animation primitives. This skill applies when users request animated GIFs or emoji animations for Slack from descriptions like \"make me a GIF for Slack of X doing Y\".",
@@ -2492,7 +2126,7 @@
         {
           "id": "anthropics/slack-gif-creator",
           "provider": "anthropics",
-          "similarity": 0.13
+          "similarity": 0.71
         }
       ]
     },
@@ -2547,7 +2181,7 @@
         {
           "id": "vercel/vercel-deploy",
           "provider": "vercel",
-          "similarity": 0.06
+          "similarity": 0.49
         }
       ]
     },
@@ -2606,78 +2240,7 @@
         {
           "id": "vercel/web-design-guidelines",
           "provider": "vercel",
-          "similarity": 0.16
-        }
-      ]
-    },
-    {
-      "id": "skillcreatorai/webapp-testing",
-      "name": "webapp-testing",
-      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
-      "provider": "skillcreatorai",
-      "category": "development",
-      "license": "Apache-2.0",
-      "compatibility": null,
-      "last_updated_at": "2025-12-17T20:29:57Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-        "path": "skills/webapp-testing",
-        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/webapp-testing/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "test",
-        "webapp",
-        "testing"
-      ],
-      "similar_skills": [
-        {
-          "id": "anthropics/webapp-testing",
-          "provider": "anthropics",
-          "similarity": 0.08
-        },
-        {
-          "id": "github/webapp-testing",
-          "provider": "github",
-          "similarity": 0.17
-        }
-      ]
-    },
-    {
-      "id": "skillcreatorai/xlsx",
-      "name": "xlsx",
-      "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for creating new spreadsheets, reading/analyzing data, modifying existing spreadsheets, or recalculating formulas.",
-      "provider": "skillcreatorai",
-      "category": "data",
-      "license": "Apache-2.0",
-      "compatibility": null,
-      "last_updated_at": "2025-12-17T20:29:57Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-        "path": "skills/xlsx",
-        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/xlsx/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "xlsx",
-        "csv",
-        "pr",
-        "visual",
-        "analysis"
-      ],
-      "similar_skills": [
-        {
-          "id": "anthropics/xlsx",
-          "provider": "anthropics",
-          "similarity": 0.18
+          "similarity": 0.54
         }
       ]
     },
@@ -2712,7 +2275,7 @@
         {
           "id": "skillcreatorai/vercel-deploy",
           "provider": "skillcreatorai",
-          "similarity": 0.06
+          "similarity": 0.48
         }
       ]
     },
@@ -2779,7 +2342,7 @@
         {
           "id": "skillcreatorai/web-design-guidelines",
           "provider": "skillcreatorai",
-          "similarity": 0.17
+          "similarity": 0.54
         }
       ]
     }
@@ -2812,7 +2375,121 @@
         "coauthoring"
       ],
       "duplicate_of": "anthropics/doc-coauthoring",
-      "similarity": 0.96
+      "similarity": 1.0
+    },
+    {
+      "id": "skillcreatorai/docx",
+      "name": "docx",
+      "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for creating new documents, modifying content, working with tracked changes, or adding comments.",
+      "provider": "skillcreatorai",
+      "category": "documents",
+      "license": "Apache-2.0",
+      "compatibility": null,
+      "last_updated_at": "2025-12-17T20:29:57Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+        "path": "skills/docx",
+        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/docx/SKILL.md",
+        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "docx",
+        "pr",
+        "document",
+        "extract",
+        "analysis"
+      ],
+      "duplicate_of": "anthropics/docx",
+      "similarity": 0.85
+    },
+    {
+      "id": "skillcreatorai/frontend-design",
+      "name": "frontend-design",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
+      "provider": "skillcreatorai",
+      "category": "creative",
+      "license": "Apache-2.0",
+      "compatibility": null,
+      "last_updated_at": "2025-12-17T20:29:57Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+        "path": "skills/frontend-design",
+        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/frontend-design/SKILL.md",
+        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "design",
+        "art",
+        "frontend"
+      ],
+      "duplicate_of": "anthropics/frontend-design",
+      "similarity": 1.0
+    },
+    {
+      "id": "skillcreatorai/mcp-builder",
+      "name": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "provider": "skillcreatorai",
+      "category": "development",
+      "license": "Apache-2.0",
+      "compatibility": null,
+      "last_updated_at": "2025-12-17T20:29:57Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+        "path": "skills/mcp-builder",
+        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/mcp-builder/SKILL.md",
+        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "mcp",
+        "design",
+        "builder"
+      ],
+      "duplicate_of": "anthropics/mcp-builder",
+      "similarity": 1.0
+    },
+    {
+      "id": "skillcreatorai/pdf",
+      "name": "pdf",
+      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale.",
+      "provider": "skillcreatorai",
+      "category": "documents",
+      "license": "Apache-2.0",
+      "compatibility": null,
+      "last_updated_at": "2025-12-17T20:29:57Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+        "path": "skills/pdf",
+        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/pdf/SKILL.md",
+        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pdf",
+        "pr",
+        "document",
+        "extract"
+      ],
+      "duplicate_of": "anthropics/pdf",
+      "similarity": 1.0
     },
     {
       "id": "openai/skill-creator",
@@ -2842,7 +2519,35 @@
         "creator"
       ],
       "duplicate_of": "anthropics/skill-creator",
-      "similarity": 0.89
+      "similarity": 1.0
+    },
+    {
+      "id": "skillcreatorai/skill-creator",
+      "name": "skill-creator",
+      "description": "Guide for creating effective skills. Use when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+      "provider": "skillcreatorai",
+      "category": "development",
+      "license": "Apache-2.0",
+      "compatibility": null,
+      "last_updated_at": "2025-12-17T20:29:57Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+        "path": "skills/skill-creator",
+        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/skill-creator/SKILL.md",
+        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "knowledge",
+        "skill",
+        "creator"
+      ],
+      "duplicate_of": "anthropics/skill-creator",
+      "similarity": 0.93
     },
     {
       "id": "skillcreatorai/theme-factory",
@@ -2870,7 +2575,90 @@
         "factory"
       ],
       "duplicate_of": "anthropics/theme-factory",
-      "similarity": 0.97
+      "similarity": 1.0
+    },
+    {
+      "id": "github/webapp-testing",
+      "name": "webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+      "provider": "github",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-17T23:27:05Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/webapp-testing",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md",
+        "commit_sha": "5fb41dae2a8906d14c52f42adacf155b393ee17e"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "test",
+        "webapp",
+        "testing"
+      ],
+      "duplicate_of": "anthropics/webapp-testing",
+      "similarity": 1.0
+    },
+    {
+      "id": "skillcreatorai/webapp-testing",
+      "name": "webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+      "provider": "skillcreatorai",
+      "category": "development",
+      "license": "Apache-2.0",
+      "compatibility": null,
+      "last_updated_at": "2025-12-17T20:29:57Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+        "path": "skills/webapp-testing",
+        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/webapp-testing/SKILL.md",
+        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "test",
+        "webapp",
+        "testing"
+      ],
+      "duplicate_of": "anthropics/webapp-testing",
+      "similarity": 0.99
+    },
+    {
+      "id": "skillcreatorai/xlsx",
+      "name": "xlsx",
+      "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for creating new spreadsheets, reading/analyzing data, modifying existing spreadsheets, or recalculating formulas.",
+      "provider": "skillcreatorai",
+      "category": "data",
+      "license": "Apache-2.0",
+      "compatibility": null,
+      "last_updated_at": "2025-12-17T20:29:57Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+        "path": "skills/xlsx",
+        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/xlsx/SKILL.md",
+        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "xlsx",
+        "csv",
+        "pr",
+        "visual",
+        "analysis"
+      ],
+      "duplicate_of": "anthropics/xlsx",
+      "similarity": 0.82
     }
   ]
 }

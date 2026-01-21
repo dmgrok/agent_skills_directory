@@ -84,6 +84,9 @@ if GITHUB_TOKEN:
     DEFAULT_HEADERS["Authorization"] = f"Bearer {GITHUB_TOKEN}"
     DEFAULT_HEADERS["Accept"] = "application/vnd.github+json"
 
+# Trusted sources - these are prioritized and used for enhanced similarity detection
+TRUSTED_SOURCES = {"anthropics", "openai", "vercel", "github"}
+
 # Provider priority for deduplication (lower = higher priority)
 # Official sources preferred over community mirrors
 PROVIDER_PRIORITY = {
@@ -164,6 +167,38 @@ def compute_similarity(text1: str, text2: str) -> float:
     return max(0.0, 1.0 - ncd)
 
 
+def compute_enhanced_similarity(skill1, skill2) -> float:
+    """
+    Enhanced similarity that considers metadata and handles skills with different detail levels.
+    Gives higher weight to name/description similarity for trusted sources.
+    """
+    # Start with body similarity
+    body_sim = compute_similarity(skill1.body, skill2.body)
+    
+    # Check if both skills have same name (case-insensitive)
+    same_name = skill1.name.lower() == skill2.name.lower()
+    
+    # Check metadata similarity
+    desc_sim = 0.0
+    if skill1.description and skill2.description:
+        desc_sim = compute_similarity(skill1.description, skill2.description)
+    
+    # If names match and either is from a trusted source, boost similarity
+    if same_name:
+        skill1_trusted = skill1.provider in TRUSTED_SOURCES
+        skill2_trusted = skill2.provider in TRUSTED_SOURCES
+        
+        if skill1_trusted or skill2_trusted:
+            # For trusted sources with matching names, heavily weight metadata
+            # This catches cases where one has extensive docs and other is concise
+            metadata_sim = desc_sim * 0.7 + body_sim * 0.3
+            # Boost by a base amount for same name from trusted source
+            return min(1.0, metadata_sim + 0.3)
+    
+    # Default: primarily body similarity with some description weight
+    return body_sim * 0.8 + desc_sim * 0.2
+
+
 def deduplicate_skills(skills: list, similarity_threshold: float = 0.8) -> tuple[list, list, dict]:
     """
     Remove duplicate skills, keeping the highest quality version.
@@ -208,7 +243,7 @@ def deduplicate_skills(skills: list, similarity_threshold: float = 0.8) -> tuple
         kept_in_group = [best]
         
         for other in group[1:]:
-            similarity = compute_similarity(best.body, other.body)
+            similarity = compute_enhanced_similarity(best, other)
             if similarity > similarity_threshold:
                 # Similar content - this is a mirror, remove it
                 removed.append({
@@ -229,7 +264,7 @@ def deduplicate_skills(skills: list, similarity_threshold: float = 0.8) -> tuple
                 similar_list = []
                 for j, skill_b in enumerate(kept_in_group):
                     if i != j:
-                        sim = compute_similarity(skill_a.body, skill_b.body)
+                        sim = compute_enhanced_similarity(skill_a, skill_b)
                         similar_list.append({
                             "id": skill_b.id,
                             "provider": skill_b.provider,
