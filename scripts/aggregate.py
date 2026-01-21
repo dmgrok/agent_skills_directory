@@ -489,7 +489,8 @@ def build_catalog() -> dict:
         "total_skills": len(all_skills),
         "providers": provider_stats,
         "categories": categories,
-        "skills": []
+        "skills": [],
+        "duplicates": []  # Skills removed as mirrors (>80% similar)
     }
     
     # Convert skills to dicts
@@ -503,6 +504,16 @@ def build_catalog() -> dict:
         if skill.id in similar_skills_map:
             skill_dict["similar_skills"] = similar_skills_map[skill.id]
         catalog["skills"].append(skill_dict)
+    
+    # Add removed duplicates to catalog for transparency
+    for r in removed:
+        dup_skill = r["skill"]
+        dup_dict = asdict(dup_skill)
+        dup_dict["source"] = asdict(dup_skill.source)
+        dup_dict.pop("body", None)
+        dup_dict["duplicate_of"] = r["reason"].replace("mirror of ", "")
+        dup_dict["similarity"] = r["similarity"]
+        catalog["duplicates"].append(dup_dict)
     
     return catalog
 

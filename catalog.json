@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
   "version": "2026.01.21",
-  "generated_at": "2026-01-21T11:03:19.602387+00:00",
-  "total_skills": 93,
+  "generated_at": "2026-01-21T12:27:13.764734+00:00",
+  "total_skills": 94,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
@@ -32,7 +32,7 @@
     "skillcreatorai": {
       "name": "SkillCreator.ai",
       "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-      "skills_count": 43
+      "skills_count": 44
     }
   },
   "categories": [
@@ -154,7 +154,7 @@
       "category": "documents",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2025-12-04T17:01:46Z",
+      "last_updated_at": null,
       "metadata": {},
       "source": {
         "repo": "https://github.com/anthropics/skills",
@@ -2378,6 +2378,33 @@
       ]
     },
     {
+      "id": "skillcreatorai/raffle-winner-picker",
+      "name": "raffle-winner-picker",
+      "description": "Picks random winners from lists, spreadsheets, or Google Sheets for giveaways, raffles, and contests. Ensures fair, unbiased selection with transparency.",
+      "provider": "skillcreatorai",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-18T23:49:49Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+        "path": "skills/raffle-winner-picker",
+        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/raffle-winner-picker/SKILL.md",
+        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "test",
+        "raffle",
+        "winner",
+        "picker"
+      ]
+    },
+    {
       "id": "skillcreatorai/react-best-practices",
       "name": "react-best-practices",
       "description": "React development guidelines with hooks, component patterns, state management, and performance optimization.",
@@ -2755,6 +2782,95 @@
           "similarity": 0.17
         }
       ]
+    }
+  ],
+  "duplicates": [
+    {
+      "id": "skillcreatorai/doc-coauthoring",
+      "name": "doc-coauthoring",
+      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
+      "provider": "skillcreatorai",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-20T19:04:33Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+        "path": "skills/doc-coauthoring",
+        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/doc-coauthoring/SKILL.md",
+        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "document",
+        "doc",
+        "coauthoring"
+      ],
+      "duplicate_of": "anthropics/doc-coauthoring",
+      "similarity": 0.96
+    },
+    {
+      "id": "openai/skill-creator",
+      "name": "skill-creator",
+      "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-19T17:17:20Z",
+      "metadata": {
+        "short-description": "Create or update a skill"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.system/skill-creator",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md",
+        "commit_sha": "894d404ce8df5fa06ffa4ae2cb7352e06f8b2abc"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "knowledge",
+        "skill",
+        "creator"
+      ],
+      "duplicate_of": "anthropics/skill-creator",
+      "similarity": 0.89
+    },
+    {
+      "id": "skillcreatorai/theme-factory",
+      "name": "theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+      "provider": "skillcreatorai",
+      "category": "creative",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": "2025-12-18T23:49:49Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+        "path": "skills/theme-factory",
+        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/theme-factory/SKILL.md",
+        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "art",
+        "theme",
+        "factory"
+      ],
+      "duplicate_of": "anthropics/theme-factory",
+      "similarity": 0.97
     }
   ]
 }

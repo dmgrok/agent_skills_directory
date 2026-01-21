@@ -1,5 +1,10 @@
 // Agent Skills Directory Browser
-const CATALOG_URL = 'https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json';
+const CATALOG_URL_CDN = 'https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json';
+const CATALOG_URL_LOCAL = './catalog.json';
+// Use local file when testing on localhost, otherwise use CDN
+const CATALOG_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+    ? CATALOG_URL_LOCAL 
+    : CATALOG_URL_CDN;
 
 let catalog = null;
 let filteredSkills = [];
@@ -9,6 +14,8 @@ const searchInput = document.getElementById('search');
 const providerFilter = document.getElementById('provider-filter');
 const categoryFilter = document.getElementById('category-filter');
 const skillsGrid = document.getElementById('skills-grid');
+const duplicatesSection = document.getElementById('duplicates-section');
+const duplicatesGrid = document.getElementById('duplicates-grid');
 const modal = document.getElementById('skill-modal');
 const modalBody = document.getElementById('modal-body');
 
@@ -80,6 +87,7 @@ async function init() {
         populateFilters();
         updateStats();
         applyQueryParams(); // Apply URL params after loading
+        renderDuplicates(); // Render duplicates section
         
         // Update last updated date
         const date = new Date(catalog.generated_at);
@@ -200,6 +208,45 @@ function renderSkills(skills) {
 
     // Update filtered count
     filteredCountEl.textContent = skills.length;
+}
+
+function renderDuplicates() {
+    // Show duplicates section only if there are duplicates
+    if (!catalog.duplicates || catalog.duplicates.length === 0) {
+        duplicatesSection.style.display = 'none';
+        return;
+    }
+
+    duplicatesSection.style.display = 'block';
+    duplicatesGrid.innerHTML = catalog.duplicates.map(dup => {
+        // Find the kept skill from the main skills list
+        const keptSkill = catalog.skills.find(s => s.id === dup.duplicate_of);
+        const keptProvider = keptSkill ? keptSkill.provider : dup.duplicate_of.split('/')[0];
+        
+        return `
+            <div class="duplicate-card">
+                <div class="duplicate-header">
+                    <span class="duplicate-name">${escapeHtml(dup.name)}</span>
+                    <span class="similarity-badge">${Math.round(dup.similarity * 100)}% similar</span>
+                </div>
+                <div class="duplicate-info">
+                    <div class="duplicate-removed">
+                        <span class="label">Removed (lower priority):</span>
+                        <span class="skill-provider ${dup.provider}">${dup.provider}</span>
+                        <span class="duplicate-id">${escapeHtml(dup.id)}</span>
+                    </div>
+                    <div class="duplicate-kept">
+                        <span class="label">Kept (higher priority):</span>
+                        <span class="skill-provider ${keptProvider}">${keptProvider}</span>
+                        <span class="duplicate-id">${escapeHtml(dup.duplicate_of)}</span>
+                    </div>
+                </div>
+                <div class="duplicate-reason">
+                    Mirror/duplicate detected via compression-based similarity (NCD algorithm)
+                </div>
+            </div>
+        `;
+    }).join('');
 }
 
 function renderFeatures(skill) {
