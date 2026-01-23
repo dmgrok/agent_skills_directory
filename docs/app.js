@@ -598,7 +598,11 @@ function showBundleModal(bundle) {
                 Or install skills individually:
             </p>
             <code style="display: block; background: var(--bg); padding: 1rem; border-radius: 8px; font-size: 0.85rem; margin-top: 0.5rem; white-space: pre-wrap;">
-${bundle.skills.map(s => `install_skill("${s.split('/')[1]}")`).join('\n')}</code>
+${bundle.skills.map(s => {
+                const parts = s.split('/');
+                const skillName = parts.length > 1 ? parts[1] : s;
+                return `install_skill("${skillName}")`;
+            }).join('\n')}</code>
         </div>
     `;
 
