@@ -1,0 +1,275 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/bundles-schema.json",
+  "version": "1.0.0",
+  "generated_at": "2026-01-23T00:00:00Z",
+  "total_bundles": 18,
+  "bundles": [
+    {
+      "id": "frontend-react",
+      "name": "React Frontend",
+      "description": "Modern React development with testing and best practices",
+      "icon": "⚛️",
+      "skills": [
+        "skillcreatorai/react-best-practices",
+        "vercel/vercel-react-best-practices",
+        "anthropics/frontend-design",
+        "skillcreatorai/webapp-testing"
+      ],
+      "use_cases": ["Building React SPAs", "Component libraries", "Dashboard UIs"],
+      "tags": ["frontend", "web", "react"],
+      "category": "frontend"
+    },
+    {
+      "id": "frontend-design",
+      "name": "Frontend Design",
+      "description": "Beautiful, production-grade web interfaces",
+      "icon": "🎨",
+      "skills": [
+        "anthropics/frontend-design",
+        "skillcreatorai/web-design-guidelines",
+        "vercel/web-design-guidelines",
+        "anthropics/theme-factory"
+      ],
+      "use_cases": ["Landing pages", "Marketing sites", "Design systems"],
+      "tags": ["frontend", "design", "ui"],
+      "category": "frontend"
+    },
+    {
+      "id": "fullstack-nextjs",
+      "name": "Full-Stack Next.js",
+      "description": "Complete Next.js stack with deployment",
+      "icon": "🚀",
+      "skills": [
+        "vercel/vercel-react-best-practices",
+        "vercel/vercel-deploy",
+        "skillcreatorai/javascript-typescript",
+        "skillcreatorai/backend-development"
+      ],
+      "use_cases": ["SaaS applications", "E-commerce platforms", "Marketing sites"],
+      "tags": ["fullstack", "web", "nextjs"],
+      "category": "fullstack"
+    },
+    {
+      "id": "fullstack-expo",
+      "name": "Expo Mobile",
+      "description": "Cross-platform mobile apps with Expo",
+      "icon": "📱",
+      "skills": [
+        "skillcreatorai/expo-app-design",
+        "skillcreatorai/expo-deployment",
+        "skillcreatorai/upgrading-expo",
+        "skillcreatorai/react-best-practices"
+      ],
+      "use_cases": ["Mobile apps", "Cross-platform development", "React Native projects"],
+      "tags": ["mobile", "expo", "react-native"],
+      "category": "fullstack"
+    },
+    {
+      "id": "api-backend",
+      "name": "Backend Development",
+      "description": "API design, database patterns, and microservices",
+      "icon": "🔧",
+      "skills": [
+        "skillcreatorai/backend-development",
+        "skillcreatorai/database-design",
+        "skillcreatorai/python-development",
+        "skillcreatorai/javascript-typescript"
+      ],
+      "use_cases": ["REST APIs", "Microservices", "Database design"],
+      "tags": ["backend", "api"],
+      "category": "backend"
+    },
+    {
+      "id": "api-python",
+      "name": "Python Backend",
+      "description": "Python APIs with FastAPI and modern patterns",
+      "icon": "🐍",
+      "skills": [
+        "skillcreatorai/python-development",
+        "skillcreatorai/backend-development",
+        "skillcreatorai/database-design"
+      ],
+      "use_cases": ["FastAPI services", "ML model serving", "Data pipelines"],
+      "tags": ["backend", "api", "python"],
+      "category": "backend"
+    },
+    {
+      "id": "mcp-development",
+      "name": "MCP Server Development",
+      "description": "Build Model Context Protocol servers",
+      "icon": "🤖",
+      "skills": [
+        "anthropics/mcp-builder",
+        "anthropics/skill-creator",
+        "openai/skill-creator",
+        "github/make-skill-template"
+      ],
+      "use_cases": ["Building MCP servers", "Creating AI agent tools", "LLM integrations"],
+      "tags": ["mcp", "ai", "development"],
+      "category": "development"
+    },
+    {
+      "id": "llm-apps",
+      "name": "LLM Applications",
+      "description": "Build AI-powered applications",
+      "icon": "🧠",
+      "skills": [
+        "skillcreatorai/llm-application-dev",
+        "anthropics/mcp-builder",
+        "skillcreatorai/backend-development"
+      ],
+      "use_cases": ["Chatbots", "AI assistants", "RAG applications"],
+      "tags": ["ai", "llm", "development"],
+      "category": "development"
+    },
+    {
+      "id": "testing-web",
+      "name": "Web Testing",
+      "description": "Playwright testing and quality assurance",
+      "icon": "🧪",
+      "skills": [
+        "anthropics/webapp-testing",
+        "github/webapp-testing",
+        "skillcreatorai/qa-regression",
+        "github/agentic-eval"
+      ],
+      "use_cases": ["E2E testing", "Browser automation", "Quality assurance"],
+      "tags": ["testing", "quality", "playwright"],
+      "category": "development"
+    },
+    {
+      "id": "code-quality",
+      "name": "Code Quality",
+      "description": "Review, refactor, and maintain code",
+      "icon": "✨",
+      "skills": [
+        "skillcreatorai/code-review",
+        "skillcreatorai/code-refactoring",
+        "github/refactor",
+        "skillcreatorai/best-practices"
+      ],
+      "use_cases": ["Code reviews", "Refactoring", "Technical debt"],
+      "tags": ["quality", "refactoring", "review"],
+      "category": "development"
+    },
+    {
+      "id": "devops-github",
+      "name": "GitHub DevOps",
+      "description": "GitHub CLI, Actions, and CI/CD workflows",
+      "icon": "🐙",
+      "skills": [
+        "github/gh-cli",
+        "github/git-commit",
+        "github/github-issues",
+        "openai/gh-fix-ci"
+      ],
+      "use_cases": ["CI/CD pipelines", "GitHub automation", "Issue management"],
+      "tags": ["devops", "github", "ci-cd"],
+      "category": "development"
+    },
+    {
+      "id": "azure-cloud",
+      "name": "Azure Cloud",
+      "description": "Azure deployment and DevOps",
+      "icon": "☁️",
+      "skills": [
+        "github/azure-static-web-apps",
+        "github/azure-deployment-preflight",
+        "github/azure-devops-cli",
+        "github/azure-resource-visualizer"
+      ],
+      "use_cases": ["Azure deployments", "Cloud infrastructure", "DevOps pipelines"],
+      "tags": ["azure", "cloud", "devops"],
+      "category": "development"
+    },
+    {
+      "id": "documents",
+      "name": "Document Creation",
+      "description": "Create PDFs, DOCX, PPTX, and spreadsheets",
+      "icon": "📄",
+      "skills": [
+        "anthropics/pdf",
+        "anthropics/docx",
+        "anthropics/pptx",
+        "anthropics/xlsx"
+      ],
+      "use_cases": ["Document generation", "Report creation", "Spreadsheet automation"],
+      "tags": ["documents", "office", "productivity"],
+      "category": "documents"
+    },
+    {
+      "id": "documentation",
+      "name": "Technical Documentation",
+      "description": "Write docs, specs, and technical content",
+      "icon": "📝",
+      "skills": [
+        "anthropics/doc-coauthoring",
+        "skillcreatorai/code-documentation",
+        "github/prd",
+        "skillcreatorai/changelog-generator"
+      ],
+      "use_cases": ["Technical specs", "API documentation", "README files"],
+      "tags": ["docs", "writing", "technical"],
+      "category": "documents"
+    },
+    {
+      "id": "enterprise-notion",
+      "name": "Notion Integration",
+      "description": "Notion-powered knowledge management",
+      "icon": "📚",
+      "skills": [
+        "openai/notion-knowledge-capture",
+        "openai/notion-meeting-intelligence",
+        "openai/notion-research-documentation",
+        "openai/notion-spec-to-implementation"
+      ],
+      "use_cases": ["Knowledge bases", "Meeting notes", "Project specs"],
+      "tags": ["enterprise", "notion", "productivity"],
+      "category": "enterprise"
+    },
+    {
+      "id": "enterprise-comms",
+      "name": "Enterprise Communications",
+      "description": "Internal comms and team collaboration",
+      "icon": "📢",
+      "skills": [
+        "anthropics/internal-comms",
+        "anthropics/slack-gif-creator",
+        "skillcreatorai/meeting-insights-analyzer"
+      ],
+      "use_cases": ["Status reports", "Team updates", "Slack content"],
+      "tags": ["enterprise", "communication", "slack"],
+      "category": "enterprise"
+    },
+    {
+      "id": "huggingface-ml",
+      "name": "HuggingFace ML",
+      "description": "Machine learning with HuggingFace",
+      "icon": "🤗",
+      "skills": [
+        "huggingface/hugging-face-cli",
+        "huggingface/hugging-face-datasets",
+        "huggingface/hugging-face-model-trainer",
+        "huggingface/hugging-face-evaluation"
+      ],
+      "use_cases": ["Model training", "Dataset management", "ML experiments"],
+      "tags": ["ml", "huggingface", "data"],
+      "category": "data"
+    },
+    {
+      "id": "creative-visual",
+      "name": "Visual Design",
+      "description": "Create art, designs, and visual content",
+      "icon": "🎨",
+      "skills": [
+        "anthropics/canvas-design",
+        "anthropics/algorithmic-art",
+        "anthropics/theme-factory",
+        "anthropics/brand-guidelines"
+      ],
+      "use_cases": ["Visual art", "Posters", "Brand assets"],
+      "tags": ["creative", "design", "art"],
+      "category": "creative"
+    }
+  ]
+}

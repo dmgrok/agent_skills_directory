@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/bundles-schema.json",
+  "title": "Agent Skills Bundles",
+  "description": "Schema for curated skill bundles - collections of skills grouped by use case",
+  "type": "object",
+  "required": ["version", "generated_at", "total_bundles", "bundles"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema reference"
+    },
+    "version": {
+      "type": "string",
+      "description": "Bundles schema version (semver)",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of when the bundles were generated"
+    },
+    "total_bundles": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of bundles"
+    },
+    "bundles": {
+      "type": "array",
+      "description": "Array of curated skill bundles",
+      "items": {
+        "$ref": "#/definitions/bundle"
+      }
+    }
+  },
+  "definitions": {
+    "bundle": {
+      "type": "object",
+      "required": ["id", "name", "description", "skills", "use_cases", "tags", "category"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique bundle identifier (kebab-case)",
+          "pattern": "^[a-z0-9-]+$",
+          "maxLength": 64
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name for the bundle",
+          "maxLength": 64
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief description of what this bundle is for",
+          "maxLength": 256
+        },
+        "icon": {
+          "type": "string",
+          "description": "Emoji or icon identifier",
+          "maxLength": 8
+        },
+        "skills": {
+          "type": "array",
+          "description": "List of skill IDs in format provider/skill-name",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+/[a-z0-9-]+$"
+          },
+          "minItems": 1,
+          "maxItems": 20
+        },
+        "use_cases": {
+          "type": "array",
+          "description": "Example use cases for this bundle",
+          "items": {
+            "type": "string",
+            "maxLength": 128
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "tags": {
+          "type": "array",
+          "description": "Searchable tags for filtering",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "maxItems": 10
+        },
+        "category": {
+          "type": "string",
+          "description": "Bundle category (matches skill categories)",
+          "enum": ["frontend", "fullstack", "backend", "development", "documents", "creative", "enterprise", "data", "other"]
+        }
+      }
+    }
+  }
+}
