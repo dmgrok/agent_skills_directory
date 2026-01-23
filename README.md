@@ -139,6 +139,95 @@ class SkillsServer(Server):
 }
 ```
 
+## Skill Bundles
+
+In addition to the full catalog, we maintain curated **skill bundles** — collections of skills grouped by common use cases. Bundles make it easy to discover and install related skills together.
+
+### Quick Start with Bundles
+
+```python
+import requests
+
+# Fetch the bundles catalog
+bundles = requests.get(
+    "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json"
+).json()
+
+# List all bundles
+for bundle in bundles["bundles"]:
+    print(f"{bundle['icon']} {bundle['name']}: {bundle['description']}")
+    print(f"   Skills: {', '.join(bundle['skills'])}")
+
+# Find bundles by category
+frontend_bundles = [b for b in bundles["bundles"] if b["category"] == "frontend"]
+
+# Get skills from a specific bundle
+react_bundle = next(b for b in bundles["bundles"] if b["id"] == "frontend-react")
+skill_ids = react_bundle["skills"]  # ["skillcreatorai/react-best-practices", ...]
+```
+
+### Bundle URLs
+
+| Use Case | URL |
+|----------|-----|
+| **Latest (CDN)** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json` |
+| **Latest (Raw)** | `https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/bundles.json` |
+| **Specific Version** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.08/bundles.json` |
+
+### Bundle Format
+
+```json
+{
+  "version": "1.0.0",
+  "generated_at": "2026-01-23T00:00:00Z",
+  "total_bundles": 18,
+  "bundles": [
+    {
+      "id": "frontend-react",
+      "name": "React Frontend",
+      "description": "Modern React development with testing and best practices",
+      "icon": "⚛️",
+      "skills": [
+        "skillcreatorai/react-best-practices",
+        "vercel/vercel-react-best-practices",
+        "anthropics/frontend-design",
+        "skillcreatorai/webapp-testing"
+      ],
+      "use_cases": ["Building React SPAs", "Component libraries", "Dashboard UIs"],
+      "tags": ["frontend", "web", "react"],
+      "category": "frontend"
+    }
+  ]
+}
+```
+
+### Using Bundles with MCP
+
+```python
+import requests
+
+# CDN URLs
+CATALOG_URL = "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json"
+BUNDLES_URL = "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json"
+
+# Fetch both catalog and bundles
+catalog = requests.get(CATALOG_URL).json()
+bundles = requests.get(BUNDLES_URL).json()
+
+# Get skills for a bundle
+def get_bundle_skills(bundle_id: str):
+    bundle = next((b for b in bundles["bundles"] if b["id"] == bundle_id), None)
+    if not bundle:
+        return []
+    
+    # Map skill IDs to full skill objects
+    skills_map = {s["id"]: s for s in catalog["skills"]}
+    return [skills_map[sid] for sid in bundle["skills"] if sid in skills_map]
+
+# Example: Get all skills for React development
+react_skills = get_bundle_skills("frontend-react")
+```
+
 ## Development
 
 - Python dependencies: PyYAML, toon_format (TOON encoder, optional), pytest.
@@ -189,18 +278,28 @@ python scripts/aggregate.py
 
 ## Schema
 
-The catalog follows a JSON Schema defined in [schema/catalog-schema.json](schema/catalog-schema.json).
+The catalog and bundles follow JSON Schemas:
+- **Catalog**: [schema/catalog-schema.json](schema/catalog-schema.json)
+- **Bundles**: [schema/bundles-schema.json](schema/bundles-schema.json)
 
-Validate your catalog:
+Validate your files:
 ```bash
 pip install jsonschema
 python -c "
 import json
 from jsonschema import validate
-schema = json.load(open('schema/catalog-schema.json'))
+
+# Validate catalog
+catalog_schema = json.load(open('schema/catalog-schema.json'))
 catalog = json.load(open('catalog.json'))
-validate(catalog, schema)
-print('✓ Valid')
+validate(catalog, catalog_schema)
+print('✓ Catalog valid')
+
+# Validate bundles
+bundles_schema = json.load(open('schema/bundles-schema.json'))
+bundles = json.load(open('bundles.json'))
+validate(bundles, bundles_schema)
+print('✓ Bundles valid')
 "
 ```
 
