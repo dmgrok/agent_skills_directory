@@ -17,7 +17,7 @@
       ],
       "use_cases": ["Building React SPAs", "Component libraries", "Dashboard UIs"],
       "tags": ["frontend", "web", "react"],
-      "category": "frontend"
+      "category": "development"
     },
     {
       "id": "frontend-design",
@@ -32,7 +32,7 @@
       ],
       "use_cases": ["Landing pages", "Marketing sites", "Design systems"],
       "tags": ["frontend", "design", "ui"],
-      "category": "frontend"
+      "category": "development"
     },
     {
       "id": "fullstack-nextjs",
@@ -47,7 +47,7 @@
       ],
       "use_cases": ["SaaS applications", "E-commerce platforms", "Marketing sites"],
       "tags": ["fullstack", "web", "nextjs"],
-      "category": "fullstack"
+      "category": "development"
     },
     {
       "id": "fullstack-expo",
@@ -62,7 +62,7 @@
       ],
       "use_cases": ["Mobile apps", "Cross-platform development", "React Native projects"],
       "tags": ["mobile", "expo", "react-native"],
-      "category": "fullstack"
+      "category": "development"
     },
     {
       "id": "api-backend",
@@ -77,7 +77,7 @@
       ],
       "use_cases": ["REST APIs", "Microservices", "Database design"],
       "tags": ["backend", "api"],
-      "category": "backend"
+      "category": "development"
     },
     {
       "id": "api-python",
@@ -91,7 +91,7 @@
       ],
       "use_cases": ["FastAPI services", "ML model serving", "Data pipelines"],
       "tags": ["backend", "api", "python"],
-      "category": "backend"
+      "category": "development"
     },
     {
       "id": "mcp-development",
