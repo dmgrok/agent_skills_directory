@@ -102,6 +102,16 @@ async function init() {
         if (bundlesResponse && bundlesResponse.ok) {
             bundles = await bundlesResponse.json();
             initBundles();
+        } else if (typeof bundlesGrid !== 'undefined' && bundlesGrid) {
+            // Provide feedback when bundles fail to load or are unavailable
+            bundlesGrid.innerHTML = `
+                <div class="no-results">
+                    <p>No bundles available or failed to load bundles.</p>
+                    <p style="margin-top: 0.5rem; font-size: 0.85rem;">
+                        Try refreshing or check <a href="${BUNDLES_URL}" target="_blank">the bundles source</a>.
+                    </p>
+                </div>
+            `;
         }
         
         populateFilters();
