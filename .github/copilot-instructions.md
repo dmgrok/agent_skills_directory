@@ -126,13 +126,32 @@ Edit `CATEGORY_KEYWORDS` dict or `categorize_skill()` function (line 195).
 - ❌ Don't commit without testing schema validation
 - ❌ Don't modify GitHub Actions workflow without updating commit file list (currently: catalog.json, catalog.min.json, catalog.toon, catalog.min.toon, CHANGELOG.md)
 - ❌ Don't use `dmgrok` as git user in automated workflows - use `github-actions[bot]` instead
+- ❌ **Don't add new features without updating the docs site** - always update `docs/index.html`, `docs/app.js`, and `docs/style.css` when adding user-facing features
+
+## Adding New Features Checklist
+
+When adding a new feature that users can interact with (new JSON files, new data types, new endpoints):
+
+1. **Schema**: Create/update schema in `schema/` directory
+2. **Docs Site**: Update the static docs site in `docs/`:
+   - `index.html`: Add new tabs/sections in the UI
+   - `app.js`: Add fetch logic, rendering functions, and event handlers
+   - `style.css`: Add styles for new components
+3. **README.md**: Document the feature with usage examples
+4. **Copilot Instructions**: Update this file to document the new feature
+5. **GitHub Actions**: Update workflow if new files need to be committed
 
 ## Key Files Reference
 
 - `scripts/aggregate.py`: Core aggregation logic (425 lines)
 - `schema/catalog-schema.json`: Output contract (167 lines)
+- `schema/bundles-schema.json`: Curated skill bundles schema
 - `.github/workflows/update-catalog.yml`: Automation pipeline (106 lines)
-- `docs/app.js`: Static site catalog display logic
+- `docs/app.js`: Static site catalog and bundles display logic
+- `docs/index.html`: Static site HTML with tabs for Skills, Bundles, and Help
+- `docs/style.css`: Static site styling
 - `tests/test_aggregate.py`: Unit tests for parsing and encoding
 - `CHANGELOG.md`: Auto-generated version history
 - `README.md`: User-facing documentation with usage examples
+- `bundles.json`: Curated skill bundles for common use cases
+- `catalog.json`: Aggregated skills catalog (auto-generated)

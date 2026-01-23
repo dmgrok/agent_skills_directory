@@ -1,13 +1,20 @@
 // Agent Skills Directory Browser
 const CATALOG_URL_CDN = 'https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json';
 const CATALOG_URL_LOCAL = './catalog.json';
+const BUNDLES_URL_CDN = 'https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json';
+const BUNDLES_URL_LOCAL = './bundles.json';
 // Use local file when testing on localhost, otherwise use CDN
 const CATALOG_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
     ? CATALOG_URL_LOCAL 
     : CATALOG_URL_CDN;
+const BUNDLES_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+    ? BUNDLES_URL_LOCAL 
+    : BUNDLES_URL_CDN;
 
 let catalog = null;
+let bundles = null;
 let filteredSkills = [];
+let filteredBundles = [];
 
 // DOM Elements
 const searchInput = document.getElementById('search');
@@ -23,6 +30,11 @@ const totalProvidersEl = document.getElementById('total-providers');
 const totalCategoriesEl = document.getElementById('total-categories');
 const filteredCountEl = document.getElementById('filtered-count');
 const lastUpdatedEl = document.getElementById('last-updated');
+
+// Bundles elements
+const bundlesGrid = document.getElementById('bundles-grid');
+const bundleCategoryFilter = document.getElementById('bundle-category-filter');
+const totalBundlesEl = document.getElementById('total-bundles');
 
 // Parse URL query parameters for filtering
 // Supports: ?id=xxx, ?provider=xxx, ?category=xxx, ?search=xxx, ?tags=a,b,c
@@ -79,8 +91,28 @@ function updateURLParams() {
 // Initialize
 async function init() {
     try {
-        const response = await fetch(CATALOG_URL, { cache: 'no-cache' });
-        catalog = await response.json();
+        // Load catalog and bundles in parallel
+        const [catalogResponse, bundlesResponse] = await Promise.all([
+            fetch(CATALOG_URL, { cache: 'no-cache' }),
+            fetch(BUNDLES_URL, { cache: 'no-cache' }).catch(() => null)
+        ]);
+        
+        catalog = await catalogResponse.json();
+        
+        if (bundlesResponse && bundlesResponse.ok) {
+            bundles = await bundlesResponse.json();
+            initBundles();
+        } else if (typeof bundlesGrid !== 'undefined' && bundlesGrid) {
+            // Provide feedback when bundles fail to load or are unavailable
+            bundlesGrid.innerHTML = `
+                <div class="no-results">
+                    <p>No bundles available or failed to load bundles.</p>
+                    <p style="margin-top: 0.5rem; font-size: 0.85rem;">
+                        Try refreshing or check <a href="${BUNDLES_URL}" target="_blank">the bundles source</a>.
+                    </p>
+                </div>
+            `;
+        }
         
         populateFilters();
         updateStats();
@@ -421,6 +453,165 @@ function debounce(func, wait) {
         clearTimeout(timeout);
         timeout = setTimeout(later, wait);
     };
+}
+
+// ===== BUNDLES FUNCTIONALITY =====
+
+function initBundles() {
+    if (!bundles || !bundles.bundles) return;
+    
+    // Populate category filter
+    const categories = [...new Set(bundles.bundles.map(b => b.category))].sort();
+    categories.forEach(category => {
+        const option = document.createElement('option');
+        option.value = category;
+        option.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+        bundleCategoryFilter.appendChild(option);
+    });
+    
+    // Update total
+    totalBundlesEl.textContent = bundles.total_bundles;
+    
+    // Initial render
+    filterBundles();
+    
+    // Add event listener
+    bundleCategoryFilter.addEventListener('change', filterBundles);
+}
+
+function filterBundles() {
+    if (!bundles || !bundles.bundles) return;
+    
+    const category = bundleCategoryFilter.value;
+    
+    filteredBundles = bundles.bundles.filter(bundle => {
+        return !category || bundle.category === category;
+    });
+    
+    renderBundles(filteredBundles);
+}
+
+function renderBundles(bundlesList) {
+    if (!bundlesList || bundlesList.length === 0) {
+        bundlesGrid.innerHTML = `
+            <div class="no-results">
+                <p>No bundles found matching your criteria.</p>
+            </div>
+        `;
+        return;
+    }
+
+    bundlesGrid.innerHTML = bundlesList.map(bundle => `
+        <article class="bundle-card" data-bundle-id="${bundle.id}">
+            <div class="bundle-header">
+                <span class="bundle-icon">${bundle.icon || '📦'}</span>
+                <div class="bundle-title-group">
+                    <h3 class="bundle-name">${escapeHtml(bundle.name)}</h3>
+                    <span class="bundle-category-badge">${bundle.category}</span>
+                </div>
+            </div>
+            <p class="bundle-description">${escapeHtml(bundle.description)}</p>
+            
+            <div class="bundle-skills">
+                <span class="bundle-skills-label">📚 ${bundle.skills.length} skills included:</span>
+                <div class="bundle-skills-list">
+                    ${bundle.skills.slice(0, 4).map(skill => 
+                        `<span class="bundle-skill-item">${escapeHtml(skill)}</span>`
+                    ).join('')}
+                    ${bundle.skills.length > 4 ? `<span class="bundle-skill-more">+${bundle.skills.length - 4} more</span>` : ''}
+                </div>
+            </div>
+            
+            <div class="bundle-use-cases">
+                <span class="bundle-use-cases-label">💡 Use cases:</span>
+                <div class="bundle-use-cases-list">
+                    ${bundle.use_cases.map(uc => `<span class="bundle-use-case">${escapeHtml(uc)}</span>`).join('')}
+                </div>
+            </div>
+            
+            <div class="bundle-tags">
+                ${bundle.tags.map(tag => `<span class="bundle-tag">#${escapeHtml(tag)}</span>`).join('')}
+            </div>
+        </article>
+    `).join('');
+
+    // Add click handlers
+    document.querySelectorAll('.bundle-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const bundleId = card.dataset.bundleId;
+            const bundle = bundles.bundles.find(b => b.id === bundleId);
+            if (bundle) showBundleModal(bundle);
+        });
+    });
+}
+
+function showBundleModal(bundle) {
+    modalBody.innerHTML = `
+        <div class="modal-header">
+            <span class="bundle-icon-large">${bundle.icon || '📦'}</span>
+            <h2>${escapeHtml(bundle.name)}</h2>
+            <span class="bundle-category-badge">${bundle.category}</span>
+        </div>
+
+        <div class="modal-section">
+            <h3>Description</h3>
+            <p>${escapeHtml(bundle.description)}</p>
+        </div>
+
+        <div class="modal-section">
+            <h3>📚 Included Skills (${bundle.skills.length})</h3>
+            <div class="bundle-skills-grid">
+                ${bundle.skills.map(skill => {
+                    const skillData = catalog?.skills?.find(s => s.id === skill || s.name === skill.split('/')[1]);
+                    return `
+                        <div class="bundle-skill-card ${skillData ? 'clickable' : ''}" data-skill-id="${skillData?.id || ''}">
+                            <span class="bundle-skill-name">${escapeHtml(skill)}</span>
+                            ${skillData ? `<span class="bundle-skill-provider ${skillData.provider}">${skillData.provider}</span>` : '<span class="bundle-skill-missing">not in catalog</span>'}
+                        </div>
+                    `;
+                }).join('')}
+            </div>
+        </div>
+
+        <div class="modal-section">
+            <h3>💡 Use Cases</h3>
+            <ul class="bundle-use-cases-modal">
+                ${bundle.use_cases.map(uc => `<li>${escapeHtml(uc)}</li>`).join('')}
+            </ul>
+        </div>
+
+        <div class="modal-section">
+            <h3>Tags</h3>
+            <div class="modal-tags">
+                ${bundle.tags.map(tag => `<span class="skill-tag">#${escapeHtml(tag)}</span>`).join('')}
+            </div>
+        </div>
+
+        <div class="modal-section" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+            <h3>Install Bundle with Mother Skills MCP</h3>
+            <code style="display: block; background: var(--bg); padding: 1rem; border-radius: 8px; font-size: 0.9rem;">
+                install_bundle("${escapeHtml(bundle.id)}")
+            </code>
+            <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-muted);">
+                Or install skills individually:
+            </p>
+            <code style="display: block; background: var(--bg); padding: 1rem; border-radius: 8px; font-size: 0.85rem; margin-top: 0.5rem; white-space: pre-wrap;">
+${bundle.skills.map(s => `install_skill("${s.split('/')[1]}")`).join('\n')}</code>
+        </div>
+    `;
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Add click handlers for skill cards that exist in catalog
+    document.querySelectorAll('.bundle-skill-card.clickable').forEach(card => {
+        card.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const skillId = card.dataset.skillId;
+            const skill = catalog.skills.find(s => s.id === skillId);
+            if (skill) showSkillModal(skill);
+        });
+    });
 }
 
 // Start

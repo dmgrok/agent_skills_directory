@@ -14,6 +14,7 @@
             <p class="subtitle">Discover skills for Claude, Copilot, and Codex agents</p>
             <nav class="main-tabs">
                 <button class="main-tab active" data-tab="browse">🔍 Browse Skills</button>
+                <button class="main-tab" data-tab="bundles">📦 Skill Bundles</button>
                 <button class="main-tab" data-tab="what-are-skills">📚 What are Skills?</button>
                 <button class="main-tab" data-tab="how-to-use">🚀 How to Use</button>
                 <a href="https://github.com/dmgrok/agent_skills_directory/issues/new?assignees=&labels=new-source%2Cneeds-review&template=add-skill-source.md&title=%5BNew+Source%5D+" target="_blank" class="main-tab btn-suggest">➕ Add New Skills</a>
@@ -89,6 +90,32 @@
                 <a href="https://github.com/dmgrok/agent_skills_directory/issues/new?assignees=&labels=new-source%2Cneeds-review&template=add-skill-source.md&title=%5BNew+Source%5D+" target="_blank" class="btn-primary">
                     ➕ Request New Source
                 </a>
+            </section>
+        </div>
+
+        <!-- Skill Bundles Tab -->
+        <div id="tab-bundles" class="tab-panel">
+            <section class="bundles-section">
+                <div class="bundles-header">
+                    <h2>📦 Curated Skill Bundles</h2>
+                    <p class="bundles-intro">Pre-configured collections of skills grouped by use case. Install an entire stack with one command!</p>
+                </div>
+
+                <div class="bundles-filters">
+                    <div class="filter-group">
+                        <label>Category:</label>
+                        <select id="bundle-category-filter">
+                            <option value="">All Categories</option>
+                        </select>
+                    </div>
+                    <div class="bundles-stats">
+                        <span id="total-bundles">-</span> bundles available
+                    </div>
+                </div>
+
+                <div id="bundles-grid" class="bundles-grid">
+                    <div class="loading">Loading bundles...</div>
+                </div>
             </section>
         </div>
 
@@ -330,6 +357,7 @@ Load skills from .github/skills/ as needed.</code></pre>
                         <li><code>catalog.min.json</code> (minified): <a href="https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.json" target="_blank">cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.json</a></li>
                         <li><code>catalog.toon</code> (TOON): <a href="https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.toon" target="_blank">cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.toon</a></li>
                         <li><code>catalog.min.toon</code> (TOON, minified JSON source): <a href="https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.toon" target="_blank">cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.toon</a></li>
+                        <li><code>bundles.json</code> (skill bundles): <a href="https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json" target="_blank">cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json</a></li>
                     </ul>
                     <p style="margin-top: 0.5rem;">Pin a specific release with <code>@vYYYY.MM.DD</code> instead of <code>@main</code>.</p>
                 </div>
