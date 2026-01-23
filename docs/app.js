@@ -562,9 +562,7 @@ function showBundleModal(bundle) {
             <h3>📚 Included Skills (${bundle.skills.length})</h3>
             <div class="bundle-skills-grid">
                 ${bundle.skills.map(skill => {
-                    const skillParts = skill.split('/');
-                    const skillName = skillParts.length > 1 ? skillParts[1] : skill;
-                    const skillData = catalog?.skills?.find(s => s.id === skill || s.name === skillName);
+                    const skillData = catalog?.skills?.find(s => s.id === skill || s.name === (skill.split('/')[1] ?? skill));
                     return `
                         <div class="bundle-skill-card ${skillData ? 'clickable' : ''}" data-skill-id="${skillData?.id || ''}">
                             <span class="bundle-skill-name">${escapeHtml(skill)}</span>
@@ -598,11 +596,7 @@ function showBundleModal(bundle) {
                 Or install skills individually:
             </p>
             <code style="display: block; background: var(--bg); padding: 1rem; border-radius: 8px; font-size: 0.85rem; margin-top: 0.5rem; white-space: pre-wrap;">
-${bundle.skills.map(s => {
-                const parts = s.split('/');
-                const skillName = parts.length > 1 ? parts[1] : s;
-                return `install_skill("${skillName}")`;
-            }).join('\n')}</code>
+${bundle.skills.map(s => `install_skill("${s.split('/')[1] ?? s}")`).join('\n')}</code>
         </div>
     `;
 
