@@ -204,6 +204,12 @@ skill_ids = react_bundle["skills"]  # ["skillcreatorai/react-best-practices", ..
 ### Using Bundles with MCP
 
 ```python
+import requests
+
+# CDN URLs
+CATALOG_URL = "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json"
+BUNDLES_URL = "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json"
+
 # Fetch both catalog and bundles
 catalog = requests.get(CATALOG_URL).json()
 bundles = requests.get(BUNDLES_URL).json()
