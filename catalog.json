@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.01.22",
-  "generated_at": "2026-01-22T06:44:35.403226+00:00",
-  "total_skills": 100,
+  "version": "2026.01.23",
+  "generated_at": "2026-01-23T06:44:09.623584+00:00",
+  "total_skills": 112,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
@@ -12,12 +12,12 @@
     "openai": {
       "name": "OpenAI",
       "repo": "https://github.com/openai/skills",
-      "skills_count": 10
+      "skills_count": 12
     },
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
-      "skills_count": 17
+      "skills_count": 26
     },
     "vercel": {
       "name": "Vercel",
@@ -32,7 +32,7 @@
     "skillcreatorai": {
       "name": "SkillCreator.ai",
       "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-      "skills_count": 46
+      "skills_count": 47
     }
   },
   "categories": [
@@ -647,6 +647,38 @@
       ]
     },
     {
+      "id": "github/agentic-eval",
+      "name": "agentic-eval",
+      "description": "Patterns and techniques for evaluating and improving AI agent outputs. Use this skill when:\n- Implementing self-critique and reflection loops\n- Building evaluator-optimizer pipelines for quality-critical generation\n- Creating test-driven code refinement workflows\n- Designing rubric-based or LLM-as-judge evaluation systems\n- Adding iterative improvement to agent outputs (code, reports, analysis)\n- Measuring and improving agent response quality",
+      "provider": "github",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-19T03:39:54Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/agentic-eval",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/agentic-eval/SKILL.md",
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "test",
+        "design",
+        "analysis",
+        "agentic",
+        "eval"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
       "id": "github/appinsights-instrumentation",
       "name": "appinsights-instrumentation",
       "description": "Instrument a webapp to send useful telemetry data to Azure App Insights",
@@ -660,7 +692,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/appinsights-instrumentation",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/appinsights-instrumentation/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": true,
       "has_references": true,
@@ -688,7 +720,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-deployment-preflight",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-deployment-preflight/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": true,
@@ -699,6 +731,39 @@
         "azure",
         "deployment",
         "preflight"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "github/azure-devops-cli",
+      "name": "azure-devops-cli",
+      "description": "Manage Azure DevOps resources via CLI including projects, repos, pipelines, builds, pull requests, work items, artifacts, and service endpoints. Use when working with Azure DevOps, az commands, devops automation, CI/CD, or when user mentions Azure DevOps CLI.",
+      "provider": "github",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T17:18:52Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/azure-devops-cli",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-devops-cli/SKILL.md",
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "cd",
+        "cli",
+        "art",
+        "azure",
+        "devops"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -721,7 +786,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-resource-visualizer",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-resource-visualizer/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": false,
@@ -751,7 +816,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-role-selector",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-role-selector/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": false,
@@ -781,7 +846,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-static-web-apps",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-static-web-apps/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": false,
@@ -804,6 +869,96 @@
       "duplicate_similarity": null
     },
     {
+      "id": "github/chrome-devtools",
+      "name": "chrome-devtools",
+      "description": "Expert-level browser automation, debugging, and performance analysis using Chrome DevTools MCP. Use for interacting with web pages, capturing screenshots, analyzing network traffic, and profiling performance.",
+      "provider": "github",
+      "category": "development",
+      "license": "MIT",
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T17:18:52Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/chrome-devtools",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/chrome-devtools/SKILL.md",
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "mcp",
+        "analysis",
+        "chrome",
+        "devtools"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "github/gh-cli",
+      "name": "gh-cli",
+      "description": "GitHub CLI (gh) comprehensive reference for repositories, issues, pull requests, Actions, projects, releases, gists, codespaces, organizations, extensions, and all GitHub operations from the command line.",
+      "provider": "github",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T17:18:52Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/gh-cli",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/gh-cli/SKILL.md",
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "github",
+        "git",
+        "pr",
+        "cli"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "github/git-commit",
+      "name": "git-commit",
+      "description": "Execute git commit with conventional commit message analysis, intelligent staging, and message generation. Use when user asks to commit changes, create a git commit, or mentions \"/commit\". Supports: (1) Auto-detecting type and scope from changes, (2) Generating conventional commit messages from diff, (3) Interactive commit with optional type/scope/description overrides, (4) Intelligent file staging for logical grouping",
+      "provider": "github",
+      "category": "development",
+      "license": "MIT",
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T17:18:52Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/git-commit",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/git-commit/SKILL.md",
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "git",
+        "analysis",
+        "commit"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
       "id": "github/github-issues",
       "name": "github-issues",
       "description": "Create, update, and manage GitHub issues using MCP tools. Use this skill when users want to create bug reports, feature requests, or task issues, update existing issues, add labels/assignees/milestones, or manage issue workflows. Triggers on requests like \"create an issue\", \"file a bug\", \"request a feature\", \"update issue X\", or any GitHub issue management task.",
@@ -817,7 +972,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/github-issues",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/github-issues/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": true,
@@ -847,7 +1002,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/image-manipulation-image-magick",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/image-manipulation-image-magick/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": false,
@@ -877,7 +1032,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/legacy-circuit-mockups",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/legacy-circuit-mockups/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": true,
@@ -910,7 +1065,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/make-skill-template",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/make-skill-template/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": false,
@@ -923,6 +1078,36 @@
         "make",
         "skill",
         "template"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "github/mcp-cli",
+      "name": "mcp-cli",
+      "description": "Interface for MCP (Model Context Protocol) servers via CLI. Use when you need to interact with external tools, APIs, or data sources through MCP servers, list available MCP servers/tools, or call MCP tools from command line.",
+      "provider": "github",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T17:18:52Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/mcp-cli",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/mcp-cli/SKILL.md",
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "mcp",
+        "cli"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -943,7 +1128,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/microsoft-code-reference",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-code-reference/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": false,
@@ -975,7 +1160,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/microsoft-docs",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-docs/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1007,7 +1192,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/nuget-manager",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nuget-manager/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1017,6 +1202,98 @@
         "cli",
         "nuget",
         "manager"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "github/plantuml-ascii",
+      "name": "plantuml-ascii",
+      "description": "Generate ASCII art diagrams using PlantUML text mode. Use when user asks to create ASCII diagrams, text-based diagrams, terminal-friendly diagrams, or mentions plantuml ascii, text diagram, ascii art diagram. Supports: Converting PlantUML diagrams to ASCII art, Creating sequence diagrams, class diagrams, flowcharts in ASCII format, Generating Unicode-enhanced ASCII art with -utxt flag",
+      "provider": "github",
+      "category": "development",
+      "license": "MIT",
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T17:18:52Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/plantuml-ascii",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/plantuml-ascii/SKILL.md",
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "art",
+        "convert",
+        "plantuml",
+        "ascii"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "github/prd",
+      "name": "prd",
+      "description": "Generate high-quality Product Requirements Documents (PRDs) for software systems and AI-powered features. Includes executive summaries, user stories, technical specifications, and risk analysis.",
+      "provider": "github",
+      "category": "development",
+      "license": "MIT",
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T17:36:52Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/prd",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/prd/SKILL.md",
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "document",
+        "analysis",
+        "prd"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "github/refactor",
+      "name": "refactor",
+      "description": "Surgical code refactoring to improve maintainability without changing behavior. Covers extracting functions, renaming variables, breaking down god functions, improving type safety, eliminating code smells, and applying design patterns. Less drastic than repo-rebuilder; use for gradual improvements.",
+      "provider": "github",
+      "category": "development",
+      "license": "MIT",
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T17:18:52Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/refactor",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/refactor/SKILL.md",
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "design",
+        "extract",
+        "refactor"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -1037,7 +1314,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/snowflake-semanticview",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/snowflake-semanticview/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1066,7 +1343,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/vscode-ext-commands",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-commands/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1096,7 +1373,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/vscode-ext-localization",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-localization/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1126,7 +1403,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/web-design-reviewer",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/web-design-reviewer/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": true,
@@ -1157,7 +1434,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/webapp-testing",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md",
-        "commit_sha": "42cfbda0e16940788b7da38c09894a8a08907ebe"
+        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1441,6 +1718,70 @@
       "duplicate_similarity": null
     },
     {
+      "id": "openai/codex-readiness-integration-test",
+      "name": "codex-readiness-integration-test",
+      "description": "Run the Codex Readiness integration test. Use when you need an end-to-end agentic loop with build/test scoring.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T18:54:33Z",
+      "metadata": {
+        "short-description": "Run Codex Readiness integration test"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.experimental/codex-readiness-integration-test",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/codex-readiness-integration-test/SKILL.md",
+        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "test",
+        "codex",
+        "readiness",
+        "integration"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "openai/codex-readiness-unit-test",
+      "name": "codex-readiness-unit-test",
+      "description": "Run the Codex Readiness unit test report. Use when you need deterministic checks plus in-session LLM evals for AGENTS.md/PLANS.md.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T18:54:33Z",
+      "metadata": {
+        "short-description": "Run Codex Readiness unit test report"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.experimental/codex-readiness-unit-test",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/codex-readiness-unit-test/SKILL.md",
+        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "test",
+        "codex",
+        "readiness",
+        "unit"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
       "id": "openai/create-plan",
       "name": "create-plan",
       "description": "Create a concise plan. Use when a user explicitly asks for a plan related to a coding task.",
@@ -1456,7 +1797,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/create-plan",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/create-plan/SKILL.md",
-        "commit_sha": "dcd0ea2572d11db33b4bd860455b12368a31c0f8"
+        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1487,7 +1828,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-address-comments",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-address-comments/SKILL.md",
-        "commit_sha": "dcd0ea2572d11db33b4bd860455b12368a31c0f8"
+        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
       },
       "has_scripts": true,
       "has_references": false,
@@ -1521,7 +1862,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-fix-ci",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-fix-ci/SKILL.md",
-        "commit_sha": "dcd0ea2572d11db33b4bd860455b12368a31c0f8"
+        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
       },
       "has_scripts": true,
       "has_references": false,
@@ -1555,7 +1896,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/linear",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/linear/SKILL.md",
-        "commit_sha": "dcd0ea2572d11db33b4bd860455b12368a31c0f8"
+        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1585,7 +1926,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-knowledge-capture",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-knowledge-capture/SKILL.md",
-        "commit_sha": "dcd0ea2572d11db33b4bd860455b12368a31c0f8"
+        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
       },
       "has_scripts": false,
       "has_references": true,
@@ -1620,7 +1961,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-meeting-intelligence",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-meeting-intelligence/SKILL.md",
-        "commit_sha": "dcd0ea2572d11db33b4bd860455b12368a31c0f8"
+        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
       },
       "has_scripts": false,
       "has_references": true,
@@ -1652,7 +1993,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-research-documentation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-research-documentation/SKILL.md",
-        "commit_sha": "dcd0ea2572d11db33b4bd860455b12368a31c0f8"
+        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
       },
       "has_scripts": false,
       "has_references": true,
@@ -1686,7 +2027,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-spec-to-implementation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-spec-to-implementation/SKILL.md",
-        "commit_sha": "dcd0ea2572d11db33b4bd860455b12368a31c0f8"
+        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
       },
       "has_scripts": false,
       "has_references": true,
@@ -1718,7 +2059,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-creator",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md",
-        "commit_sha": "dcd0ea2572d11db33b4bd860455b12368a31c0f8"
+        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
       },
       "has_scripts": true,
       "has_references": false,
@@ -1762,7 +2103,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-installer",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-installer/SKILL.md",
-        "commit_sha": "dcd0ea2572d11db33b4bd860455b12368a31c0f8"
+        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
       },
       "has_scripts": true,
       "has_references": false,
@@ -1793,7 +2134,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/algorithmic-art",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/algorithmic-art/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1828,7 +2169,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/artifacts-builder",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/artifacts-builder/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": true,
       "has_references": false,
@@ -1857,7 +2198,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/ask-questions-if-underspecified",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/ask-questions-if-underspecified/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1887,7 +2228,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/backend-development",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/backend-development/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1898,6 +2239,36 @@
         "design",
         "backend",
         "development"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "skillcreatorai/best-practices",
+      "name": "best-practices",
+      "description": "Transforms vague prompts into optimized Claude Code prompts. Adds verification, specific context, constraints, and proper phasing. Invoke with /best-practices.",
+      "provider": "skillcreatorai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-23T00:19:18Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+        "path": "skills/best-practices",
+        "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/best-practices/SKILL.md",
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "best",
+        "practices"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -1918,7 +2289,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/brand-guidelines",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/brand-guidelines/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1956,7 +2327,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/canvas-design",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/canvas-design/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1995,7 +2366,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/changelog-generator",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/changelog-generator/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2025,7 +2396,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/code-documentation",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/code-documentation/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2055,7 +2426,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/code-refactoring",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/code-refactoring/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2085,7 +2456,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/code-review",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/code-review/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2115,7 +2486,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/competitive-ads-extractor",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/competitive-ads-extractor/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2146,7 +2517,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/content-research-writer",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/content-research-writer/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2178,7 +2549,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/database-design",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/database-design/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2206,7 +2577,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/developer-growth-analysis",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/developer-growth-analysis/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2237,7 +2608,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/doc-coauthoring",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/doc-coauthoring/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2275,7 +2646,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/docx",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/docx/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2313,7 +2684,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/domain-name-brainstormer",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/domain-name-brainstormer/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2343,7 +2714,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/expo-app-design",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/expo-app-design/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2372,7 +2743,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/expo-deployment",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/expo-deployment/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2400,7 +2771,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/file-organizer",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/file-organizer/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2429,7 +2800,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/frontend-design",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/frontend-design/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2466,7 +2837,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/image-enhancer",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/image-enhancer/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2497,7 +2868,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/internal-comms",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/internal-comms/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2535,7 +2906,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/invoice-organizer",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/invoice-organizer/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2565,7 +2936,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/javascript-typescript",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/javascript-typescript/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2594,7 +2965,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/jira-issues",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/jira-issues/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2622,7 +2993,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/job-application",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/job-application/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2651,7 +3022,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/lead-research-assistant",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/lead-research-assistant/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2681,7 +3052,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/llm-application-dev",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/llm-application-dev/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2711,7 +3082,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/mcp-builder",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/mcp-builder/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2749,7 +3120,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/meeting-insights-analyzer",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/meeting-insights-analyzer/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2779,7 +3150,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/pdf",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/pdf/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2816,7 +3187,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/pptx",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/pptx/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2852,7 +3223,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/python-development",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/python-development/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2882,7 +3253,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/qa-regression",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/qa-regression/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2910,7 +3281,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/raffle-winner-picker",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/raffle-winner-picker/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2941,7 +3312,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/react-best-practices",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/react-best-practices/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2971,7 +3342,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/skill-creator",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/skill-creator/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3013,7 +3384,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/slack-gif-creator",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/slack-gif-creator/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3050,7 +3421,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/theme-factory",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/theme-factory/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3087,7 +3458,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/upgrading-expo",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/upgrading-expo/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3115,7 +3486,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/vercel-deploy",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/vercel-deploy/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3150,7 +3521,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/video-downloader",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/video-downloader/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3178,7 +3549,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/web-design-guidelines",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/web-design-guidelines/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3217,7 +3588,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/webapp-testing",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/webapp-testing/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3258,7 +3629,7 @@
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
         "path": "skills/xlsx",
         "skill_md_url": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main/skills/xlsx/SKILL.md",
-        "commit_sha": "6bef1a5dec74f88cc4a305e4e95d286071ce7017"
+        "commit_sha": "6195a031c29c5bc11d1d4b3e4c64e660e441f087"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3299,7 +3670,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/claude.ai/vercel-deploy-claimable",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/claude.ai/vercel-deploy-claimable/SKILL.md",
-        "commit_sha": "cf9a8a624718607352f29338da830d2844fa879e"
+        "commit_sha": "cadecb671fa7743c4e1f238b4672812e49ec0483"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3338,7 +3709,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/react-best-practices",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-best-practices/SKILL.md",
-        "commit_sha": "cf9a8a624718607352f29338da830d2844fa879e"
+        "commit_sha": "cadecb671fa7743c4e1f238b4672812e49ec0483"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3373,7 +3744,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/web-design-guidelines",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/web-design-guidelines/SKILL.md",
-        "commit_sha": "cf9a8a624718607352f29338da830d2844fa879e"
+        "commit_sha": "cadecb671fa7743c4e1f238b4672812e49ec0483"
       },
       "has_scripts": false,
       "has_references": false,
