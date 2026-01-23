@@ -562,7 +562,9 @@ function showBundleModal(bundle) {
             <h3>📚 Included Skills (${bundle.skills.length})</h3>
             <div class="bundle-skills-grid">
                 ${bundle.skills.map(skill => {
-                    const skillData = catalog?.skills?.find(s => s.id === skill || s.name === skill.split('/')[1]);
+                    const skillParts = skill.split('/');
+                    const skillName = skillParts.length > 1 ? skillParts[1] : skill;
+                    const skillData = catalog?.skills?.find(s => s.id === skill || s.name === skillName);
                     return `
                         <div class="bundle-skill-card ${skillData ? 'clickable' : ''}" data-skill-id="${skillData?.id || ''}">
                             <span class="bundle-skill-name">${escapeHtml(skill)}</span>
