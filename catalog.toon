@@ -1,6 +1,6 @@
 "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json"
-version: 2026.01.23
-generated_at: "2026-01-23T17:14:14.615721+00:00"
+version: 2026.01.24
+generated_at: "2026-01-24T06:40:29.439782+00:00"
 total_skills: 112
 providers:
   anthropics:
@@ -2529,7 +2529,7 @@ skills[112]:
       repo: "https://github.com/vercel-labs/agent-skills"
       path: skills/claude.ai/vercel-deploy-claimable
       skill_md_url: "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/claude.ai/vercel-deploy-claimable/SKILL.md"
-      commit_sha: cadecb671fa7743c4e1f238b4672812e49ec0483
+      commit_sha: c4399b192588e71fdf0cb507c7b6ad9e9657ce6b
     has_scripts: true
     has_references: false
     has_assets: false
@@ -2547,7 +2547,7 @@ skills[112]:
     category: development
     license: MIT
     compatibility: null
-    last_updated_at: "2026-01-15T18:09:40Z"
+    last_updated_at: "2026-01-23T19:24:52Z"
     metadata:
       author: vercel
       version: 1.0.0
@@ -2555,7 +2555,7 @@ skills[112]:
       repo: "https://github.com/vercel-labs/agent-skills"
       path: skills/react-best-practices
       skill_md_url: "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-best-practices/SKILL.md"
-      commit_sha: cadecb671fa7743c4e1f238b4672812e49ec0483
+      commit_sha: c4399b192588e71fdf0cb507c7b6ad9e9657ce6b
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2580,7 +2580,7 @@ skills[112]:
       repo: "https://github.com/vercel-labs/agent-skills"
       path: skills/web-design-guidelines
       skill_md_url: "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/web-design-guidelines/SKILL.md"
-      commit_sha: cadecb671fa7743c4e1f238b4672812e49ec0483
+      commit_sha: c4399b192588e71fdf0cb507c7b6ad9e9657ce6b
     has_scripts: false
     has_references: false
     has_assets: false
