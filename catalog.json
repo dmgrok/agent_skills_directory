@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.01.24",
-  "generated_at": "2026-01-24T06:40:29.439782+00:00",
+  "version": "2026.01.25",
+  "generated_at": "2026-01-25T06:40:37.227917+00:00",
   "total_skills": 112,
   "providers": {
     "anthropics": {
