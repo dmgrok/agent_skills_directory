@@ -1,0 +1,148 @@
+# GitHub Actions workflow to build standalone executables
+# Builds for Windows, macOS (Intel + ARM), and Linux
+# Creates release with downloadable binaries
+
+name: Build Standalone Executables
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version tag (e.g., v0.1.0)'
+        required: false
+        default: 'dev'
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            name: linux-x64
+            artifact: skills-linux-x64
+          - os: macos-latest
+            name: macos-arm64
+            artifact: skills-macos-arm64
+          - os: macos-13
+            name: macos-x64
+            artifact: skills-macos-x64
+          - os: windows-latest
+            name: windows-x64
+            artifact: skills-windows-x64.exe
+
+    runs-on: ${{ matrix.os }}
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyinstaller
+          pip install -e ".[validation]"
+
+      - name: Build executable
+        run: python scripts/build_standalone.py --with-validation
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact }}
+          path: dist/skills*
+          retention-days: 30
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: binaries
+
+      - name: Display structure
+        run: ls -la binaries/*/
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: binaries/*/*
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update Homebrew Formula SHA256
+        run: |
+          # Calculate SHA256 for each binary
+          ARM64_SHA=$(sha256sum binaries/skills-macos-arm64/skills-macos-arm64 | cut -d' ' -f1)
+          X64_SHA=$(sha256sum binaries/skills-macos-x64/skills-macos-x64 | cut -d' ' -f1)
+          LINUX_SHA=$(sha256sum binaries/skills-linux-x64/skills-linux-x64 | cut -d' ' -f1)
+          
+          # Extract version from tag
+          VERSION=${GITHUB_REF#refs/tags/v}
+          
+          # Create updated formula
+          cat > homebrew-tap/Formula/skills.rb << EOF
+          # Homebrew formula for Agent Skills CLI
+          class Skills < Formula
+            desc "The package manager for AI agent skills"
+            homepage "https://github.com/dmgrok/agent_skills_directory"
+            version "$VERSION"
+            license "MIT"
+
+            on_macos do
+              on_arm do
+                url "https://github.com/dmgrok/agent_skills_directory/releases/download/v$VERSION/skills-macos-arm64"
+                sha256 "$ARM64_SHA"
+              end
+              on_intel do
+                url "https://github.com/dmgrok/agent_skills_directory/releases/download/v$VERSION/skills-macos-x64"
+                sha256 "$X64_SHA"
+              end
+            end
+
+            on_linux do
+              url "https://github.com/dmgrok/agent_skills_directory/releases/download/v$VERSION/skills-linux-x64"
+              sha256 "$LINUX_SHA"
+            end
+
+            def install
+              if OS.mac?
+                if Hardware::CPU.arm?
+                  bin.install "skills-macos-arm64" => "skills"
+                else
+                  bin.install "skills-macos-x64" => "skills"
+                end
+              else
+                bin.install "skills-linux-x64" => "skills"
+              end
+            end
+
+            test do
+              assert_match "skills", shell_output("#{bin}/skills --version")
+            end
+          end
+          EOF
+          
+          echo "Updated Formula/skills.rb with version $VERSION"
+          cat homebrew-tap/Formula/skills.rb
+
+      - name: Commit Formula Update
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update Homebrew formula for ${{ github.ref_name }}"
+          file_pattern: homebrew-tap/Formula/skills.rb

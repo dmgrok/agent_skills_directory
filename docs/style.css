@@ -1365,3 +1365,125 @@ footer a:hover {
     left: 0;
     color: var(--primary);
 }
+
+/* CLI Tab Styles */
+.cli-install-box {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+}
+
+.cli-install-box h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.cli-install-box pre {
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.cli-commands {
+    margin: 2rem 0;
+}
+
+.cli-commands h3 {
+    margin-bottom: 1.5rem;
+}
+
+.cli-command {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cli-command h4 {
+    font-family: monospace;
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.cli-command p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.cli-command pre {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.cli-paths,
+.cli-manifest,
+.cli-agents {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.cli-paths h3,
+.cli-manifest h3,
+.cli-agents h3 {
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.cli-paths pre,
+.cli-manifest pre {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.cli-manifest p,
+.cli-agents p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+/* Agents table */
+.agents-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.agents-table th,
+.agents-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.agents-table th {
+    background: var(--bg);
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.agents-table td {
+    color: var(--text);
+}
+
+.agents-table td code {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.agents-table tbody tr:hover {
+    background: var(--bg-card-hover);
+}
+
+.agents-table tbody tr:last-child td {
+    border-bottom: none;
+}

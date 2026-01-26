@@ -1,0 +1,284 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/skill-manifest-schema.json",
+  "title": "Skill Manifest",
+  "description": "Schema for skill.json manifest files - the package.json of AI agent skills",
+  "type": "object",
+  "required": ["name", "version", "description"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Skill name (lowercase, hyphens allowed)",
+      "pattern": "^[a-z0-9-]+$",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version (e.g., 1.0.0)",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(-[a-zA-Z0-9.-]+)?(\\+[a-zA-Z0-9.-]+)?$"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of what the skill does",
+      "maxLength": 280
+    },
+    "author": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "email": { "type": "string", "format": "email" },
+            "url": { "type": "string", "format": "uri" }
+          },
+          "required": ["name"]
+        }
+      ],
+      "description": "Skill author"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX license identifier (e.g., MIT, Apache-2.0)"
+    },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string", "maxLength": 32 },
+      "maxItems": 10,
+      "description": "Keywords for discovery"
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to skill homepage or documentation"
+    },
+    "repository": {
+      "oneOf": [
+        { "type": "string", "format": "uri" },
+        {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string", "enum": ["git", "svn", "mercurial"] },
+            "url": { "type": "string", "format": "uri" },
+            "directory": { "type": "string" }
+          },
+          "required": ["type", "url"]
+        }
+      ],
+      "description": "Source repository"
+    },
+    "bugs": {
+      "oneOf": [
+        { "type": "string", "format": "uri" },
+        {
+          "type": "object",
+          "properties": {
+            "url": { "type": "string", "format": "uri" },
+            "email": { "type": "string", "format": "email" }
+          }
+        }
+      ],
+      "description": "Bug tracker URL or contact"
+    },
+    "runtime": {
+      "type": "string",
+      "enum": ["mcp", "langchain", "crewai", "autogen", "openai-assistants", "anthropic-tools", "universal"],
+      "description": "Target runtime/framework",
+      "default": "universal"
+    },
+    "entry": {
+      "type": "string",
+      "description": "Main entry point file (e.g., skill.py, index.js)",
+      "default": "SKILL.md"
+    },
+    "files": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Glob patterns of files to include when installing"
+    },
+    "dependencies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "description": "Version range (semver)"
+      },
+      "description": "Required skills (e.g., { 'anthropic/browser-use': '^1.0.0' })"
+    },
+    "devDependencies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Development-only skill dependencies"
+    },
+    "peerDependencies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Skills that must be installed alongside"
+    },
+    "engines": {
+      "type": "object",
+      "properties": {
+        "python": { "type": "string", "description": "Python version range" },
+        "node": { "type": "string", "description": "Node.js version range" },
+        "skills": { "type": "string", "description": "Skills CLI version range" }
+      },
+      "description": "Runtime version requirements"
+    },
+    "os": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["darwin", "linux", "win32", "!darwin", "!linux", "!win32"] },
+      "description": "Supported operating systems"
+    },
+    "cpu": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Supported CPU architectures"
+    },
+    "config": {
+      "type": "object",
+      "description": "Default configuration values",
+      "additionalProperties": true
+    },
+    "scripts": {
+      "type": "object",
+      "properties": {
+        "preinstall": { "type": "string" },
+        "install": { "type": "string" },
+        "postinstall": { "type": "string" },
+        "test": { "type": "string" },
+        "lint": { "type": "string" },
+        "build": { "type": "string" }
+      },
+      "additionalProperties": { "type": "string" },
+      "description": "Lifecycle scripts"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "web-browsing",
+          "file-system",
+          "code-execution",
+          "api-calls",
+          "database",
+          "shell-access",
+          "network",
+          "memory",
+          "vision",
+          "audio",
+          "human-in-loop"
+        ]
+      },
+      "description": "Required capabilities/permissions"
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/parameter"
+      },
+      "description": "Input parameters the skill accepts"
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/parameter"
+      },
+      "description": "Output parameters the skill produces"
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "input": { "type": "object" },
+          "output": { "type": "object" }
+        },
+        "required": ["name", "input"]
+      },
+      "description": "Usage examples"
+    },
+    "private": {
+      "type": "boolean",
+      "description": "If true, skill won't be published to registry",
+      "default": false
+    },
+    "deprecated": {
+      "oneOf": [
+        { "type": "boolean" },
+        { "type": "string" }
+      ],
+      "description": "Deprecation warning message or boolean"
+    },
+    "funding": {
+      "oneOf": [
+        { "type": "string", "format": "uri" },
+        {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string" },
+            "url": { "type": "string", "format": "uri" }
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              { "type": "string", "format": "uri" },
+              {
+                "type": "object",
+                "properties": {
+                  "type": { "type": "string" },
+                  "url": { "type": "string", "format": "uri" }
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "description": "Funding information"
+    }
+  },
+  "definitions": {
+    "parameter": {
+      "type": "object",
+      "required": ["name", "type"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Parameter name"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["string", "number", "boolean", "array", "object", "file", "url"],
+          "description": "Parameter type"
+        },
+        "description": {
+          "type": "string",
+          "description": "Parameter description"
+        },
+        "required": {
+          "type": "boolean",
+          "default": false
+        },
+        "default": {
+          "description": "Default value"
+        },
+        "enum": {
+          "type": "array",
+          "description": "Allowed values"
+        },
+        "examples": {
+          "type": "array",
+          "description": "Example values"
+        }
+      }
+    }
+  }
+}

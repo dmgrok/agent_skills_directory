@@ -1,0 +1,95 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-skills"
+version = "0.1.0"
+description = "The package manager for AI agent skills"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Agent Skills Directory", email = "skills@example.com" }
+]
+keywords = [
+    "ai",
+    "agent",
+    "skills",
+    "llm",
+    "mcp",
+    "langchain",
+    "crewai",
+    "autogen",
+    "package-manager"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov",
+    "black",
+    "ruff",
+]
+# Enhanced validation with industry-standard libraries
+validation = [
+    "detect-secrets>=1.4.0",  # Yelp's secret detection (20+ detectors)
+    "semver>=3.0.0",          # Full semver 2.0 spec compliance
+    "rapidfuzz>=3.0.0",       # Fast string similarity (C-optimized)
+]
+# For building standalone executables
+build = [
+    "pyinstaller>=6.0.0",     # Create standalone executables
+]
+# All optional dependencies
+all = [
+    "detect-secrets>=1.4.0",
+    "semver>=3.0.0",
+    "rapidfuzz>=3.0.0",
+    "pyinstaller>=6.0.0",
+    "pytest>=7.0",
+    "pytest-cov",
+    "black",
+    "ruff",
+]
+
+[project.scripts]
+skills = "cli.skills:main"
+
+[project.urls]
+Homepage = "https://github.com/dmgrok/agent_skills_directory"
+Documentation = "https://dmgrok.github.io/agent_skills_directory"
+Repository = "https://github.com/dmgrok/agent_skills_directory"
+Changelog = "https://github.com/dmgrok/agent_skills_directory/blob/main/CHANGELOG.md"
+Issues = "https://github.com/dmgrok/agent_skills_directory/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cli"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I", "N"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

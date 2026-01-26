@@ -78,6 +78,11 @@
       "type": "object",
       "required": ["id", "name", "description", "provider", "category", "source", "has_scripts", "has_references", "has_assets", "tags"],
       "properties": {
+        "version": {
+          "type": ["string", "null"],
+          "description": "Semantic version of the skill (e.g., 1.0.0)",
+          "pattern": "^\\d+\\.\\d+\\.\\d+(-[a-zA-Z0-9.-]+)?(\\+[a-zA-Z0-9.-]+)?$"
+        },
         "id": {
           "type": "string",
           "description": "Unique identifier in format provider/skill-name",

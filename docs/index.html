@@ -15,6 +15,7 @@
             <nav class="main-tabs">
                 <button class="main-tab active" data-tab="browse">🔍 Browse Skills</button>
                 <button class="main-tab" data-tab="bundles">📦 Skill Bundles</button>
+                <button class="main-tab" data-tab="cli">⚡ CLI</button>
                 <button class="main-tab" data-tab="what-are-skills">📚 What are Skills?</button>
                 <button class="main-tab" data-tab="how-to-use">🚀 How to Use</button>
                 <a href="https://github.com/dmgrok/agent_skills_directory/issues/new?assignees=&labels=new-source%2Cneeds-review&template=add-skill-source.md&title=%5BNew+Source%5D+" target="_blank" class="main-tab btn-suggest">➕ Add New Skills</a>
@@ -115,6 +116,375 @@
 
                 <div id="bundles-grid" class="bundles-grid">
                     <div class="loading">Loading bundles...</div>
+                </div>
+            </section>
+        </div>
+
+        <!-- CLI Tab -->
+        <div id="tab-cli" class="tab-panel">
+            <section class="info-section">
+                <h2>⚡ Skills CLI</h2>
+                <p class="intro-text">
+                    <strong>The package manager for AI agent skills.</strong> Search, install, and manage skills from your terminal—just like npm for packages.
+                </p>
+
+                <div class="cli-install-box">
+                    <h3>📦 Installation</h3>
+                    <pre><code># Install from PyPI
+pip install agent-skills
+
+# Or install from source
+git clone https://github.com/dmgrok/agent_skills_directory
+cd agent_skills_directory
+pip install -e .</code></pre>
+                </div>
+
+                <div class="cli-commands">
+                    <h3>🛠️ Commands</h3>
+                    
+                    <div class="cli-command">
+                        <h4><code>skills search &lt;query&gt;</code></h4>
+                        <p>Search for skills by name, description, or tags</p>
+                        <pre><code>$ skills search "web scraping"
+Found 5 skill(s):
+
+  anthropic/web-researcher
+  Advanced web research and data extraction
+  #web #research #scraping
+
+  github/browser-use
+  Browser automation for web interaction
+  #browser #automation #web</code></pre>
+                    </div>
+
+                    <div class="cli-command">
+                        <h4><code>skills info &lt;skill-id&gt;</code></h4>
+                        <p>View detailed information about a skill</p>
+                        <pre><code>$ skills info anthropic/pdf
+
+pdf
+────────────────────────────────────────
+  id:          anthropic/pdf
+  provider:    anthropics
+  category:    documents
+  description: Process and analyze PDF documents
+  tags:        pdf, documents, extraction
+  repo:        https://github.com/anthropics/skills
+
+  Not installed. Run: skills install anthropic/pdf</code></pre>
+                    </div>
+
+                    <div class="cli-command">
+                        <h4><code>skills install &lt;skill-id&gt;</code></h4>
+                        <p>Install a skill to <code>~/.skills/installed/</code></p>
+                        <pre><code>$ skills install github/web-design-reviewer
+→ Installing github/web-design-reviewer...
+✓ Installed github/web-design-reviewer → ~/.skills/installed/github/web-design-reviewer
+
+# Install a specific version
+$ skills install anthropic/pdf@1.2.0
+
+# Force reinstall
+$ skills install anthropic/pdf --force</code></pre>
+                    </div>
+
+                    <div class="cli-command">
+                        <h4><code>skills list</code></h4>
+                        <p>List all installed skills</p>
+                        <pre><code>$ skills list
+
+Installed skills (3):
+
+  anthropic/pdf@1.0.0
+  Process and analyze PDF documents
+
+  github/web-design-reviewer@0.0.0
+  Visual inspection of websites
+
+  vercel/nextjs-app-router@1.2.0
+  Next.js App Router development
+
+# Output as JSON
+$ skills list --json</code></pre>
+                    </div>
+
+                    <div class="cli-command">
+                        <h4><code>skills install &lt;skill-id&gt;</code></h4>
+                        <p>Install a skill to <code>~/.skills/installed/</code> (global) or your project</p>
+                        <pre><code># Global install (default)
+$ skills install anthropic/pdf
+→ Installing anthropics/pdf [global]...
+✓ Installed anthropics/pdf → ~/.skills/installed/anthropics/pdf
+
+# Project install (auto-detects agent)
+$ skills install anthropic/pdf --project
+→ Installing anthropics/pdf [project (copilot)]...
+✓ Installed anthropics/pdf → .github/skills/pdf
+→ Tip: Reference this skill in your .github/copilot-instructions.md
+
+# Project install with specific agent
+$ skills install anthropic/pdf -p --agent claude
+→ Installing anthropics/pdf [project (claude)]...
+✓ Installed anthropics/pdf → .claude/skills/pdf
+→ Tip: Reference this skill in your CLAUDE.md
+
+# Other agents
+$ skills install anthropic/pdf -p --agent copilot  # .github/skills/
+$ skills install anthropic/pdf -p --agent codex    # .codex/skills/
+$ skills install anthropic/pdf -p --agent cursor   # .cursor/skills/</code></pre>
+                    </div>
+
+                    <div class="cli-command">
+                        <h4><code>skills detect</code></h4>
+                        <p>Show detected agent and skill paths for current directory</p>
+                        <pre><code>$ skills detect
+
+Agent Detection
+────────────────────────────────────────
+  Detected agent:  GitHub Copilot (copilot)
+  Project path:    /path/to/your/project
+
+Installation Paths
+────────────────────────────────────────
+  Project paths (--project):
+    ✓ .github/skills
+      .claude/skills
+
+  Personal path (--global):
+      ~/.copilot/skills
+
+  Instructions file:
+    ✓ .github/copilot-instructions.md</code></pre>
+                    </div>
+
+                    <div class="cli-command">
+                        <h4><code>skills list</code></h4>
+                        <p>List all installed skills grouped by location</p>
+                        <pre><code>$ skills list
+
+Installed skills (3):
+
+  [global]
+    anthropic/pdf@1.0.0
+    Process and analyze PDF documents
+
+  [project (copilot)]
+    github/web-design-reviewer@0.0.0
+    Visual inspection of websites
+
+  [project (claude)]
+    vercel/nextjs-app-router@1.2.0
+    Next.js App Router development
+
+# Output as JSON
+$ skills list --json</code></pre>
+                    </div>
+
+                    <div class="cli-command">
+                        <h4><code>skills init</code></h4>
+                        <p>Create a new <code>skill.json</code> manifest interactively</p>
+                        <pre><code>$ skills init
+
+Creating skill.json
+
+skill name (my-skill): web-scraper
+version (1.0.0): 
+description: Scrape and extract data from websites
+author: Your Name
+license (MIT): 
+runtime (universal): mcp
+keywords (comma-separated): web, scraping, extraction
+
+✓ Created skill.json
+✓ Created SKILL.md</code></pre>
+                    </div>
+
+                    <div class="cli-command">
+                        <h4><code>skills uninstall &lt;skill-id&gt;</code></h4>
+                        <p>Remove an installed skill</p>
+                        <pre><code>$ skills uninstall anthropic/pdf
+Remove anthropic/pdf from ~/.skills/installed/anthropic/pdf? [y/N] y
+✓ Uninstalled anthropic/pdf</code></pre>
+                    </div>
+
+                    <div class="cli-command">
+                        <h4><code>skills update</code></h4>
+                        <p>Check for and apply updates to installed skills</p>
+                        <pre><code>$ skills update
+
+Updates available:
+  anthropic/pdf
+  vercel/nextjs-app-router
+
+Update 2 skill(s)? [y/N] y
+✓ Updated anthropic/pdf
+✓ Updated vercel/nextjs-app-router</code></pre>
+                    </div>
+
+                    <div class="cli-command">
+                        <h4><code>skills config</code></h4>
+                        <p>View or modify CLI configuration</p>
+                        <pre><code>$ skills config list
+{
+  "registry": "https://cdn.jsdelivr.net/.../catalog.json",
+  "cache_ttl": 3600,
+  "auto_update": true
+}
+
+$ skills config set cache_ttl 7200
+✓ Set cache_ttl = 7200</code></pre>
+                    </div>
+                </div>
+
+                <div class="cli-commands">
+                    <h3>📤 Publishing Commands</h3>
+                    
+                    <div class="cli-command">
+                        <h4><code>skills login</code></h4>
+                        <p>Authenticate with GitHub for publishing skills</p>
+                        <pre><code>$ skills login
+
+GitHub Authentication
+────────────────────────────────────────
+→ Opening browser to generate a personal access token...
+  URL: https://github.com/settings/tokens/new?...
+
+Paste your token: ghp_xxxxxxxxxxxx
+✓ Authenticated as: your-username
+✓ Token saved to ~/.skills/config.json</code></pre>
+                    </div>
+
+                    <div class="cli-command">
+                        <h4><code>skills validate</code></h4>
+                        <p>Validate a skill directory before publishing</p>
+                        <pre><code>$ skills validate ./my-skill
+
+Validating Skill
+────────────────────────────────────────
+  Directory: /path/to/my-skill
+→ Fetching catalog for duplicate check...
+
+✅ Valid
+
+Checks passed:
+  ✓ skill.json schema valid
+  ✓ SKILL.md has content
+  ✓ No secrets detected
+  ✓ No malicious patterns
+  ✓ No duplicate name</code></pre>
+                    </div>
+
+                    <div class="cli-command">
+                        <h4><code>skills publish</code></h4>
+                        <p>Publish a skill to GitHub and optionally submit to the directory</p>
+                        <pre><code>$ skills publish
+
+Publishing Skill
+────────────────────────────────────────
+→ Running validation checks...
+✓ Valid skill: web-scraper@1.0.0
+✓ Authenticated as: your-username
+→ Skill ID: your-username/web-scraper
+→ Pushing to GitHub...
+✓ Created release: v1.0.0
+
+✓ Published your-username/web-scraper@1.0.0
+
+  To add to the official directory:
+    skills publish --submit
+
+# Submit to official directory
+$ skills publish --submit
+→ Creating submission issue...
+✓ Submission created!
+  https://github.com/dmgrok/agent_skills_directory/issues/123
+
+# Preview without changes
+$ skills publish --dry-run</code></pre>
+                    </div>
+                </div>
+
+                <div class="cli-agents">
+                    <h3>🤖 Supported Agents & Paths</h3>
+                    <p>Skills are installed to different directories based on the detected agent:</p>
+                    <table class="agents-table">
+                        <thead>
+                            <tr><th>Agent</th><th>Project Path</th><th>Personal Path</th><th>Instructions File</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Claude</strong></td>
+                                <td><code>.claude/skills/</code></td>
+                                <td><code>~/.claude/skills/</code></td>
+                                <td><code>CLAUDE.md</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Copilot</strong></td>
+                                <td><code>.github/skills/</code></td>
+                                <td><code>~/.copilot/skills/</code></td>
+                                <td><code>.github/copilot-instructions.md</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Codex</strong></td>
+                                <td><code>.codex/skills/</code></td>
+                                <td><code>~/.codex/skills/</code></td>
+                                <td><code>AGENTS.md</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cursor</strong></td>
+                                <td><code>.cursor/skills/</code></td>
+                                <td><code>~/.cursor/skills/</code></td>
+                                <td><code>.cursorrules</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cli-paths">
+                    <h3>📂 Local Registry Structure</h3>
+                    <pre><code># Global skills (shared across projects)
+~/.skills/
+├── config.json          # CLI configuration
+├── installed/           # Global skills
+│   └── anthropic/pdf/
+└── cache/               # Catalog cache
+
+# Project skills (per-agent)
+your-project/
+├── .claude/skills/      # Claude skills
+│   └── pdf/
+├── .github/skills/      # Copilot skills
+│   └── web-design-reviewer/
+├── .codex/skills/       # Codex skills
+└── .cursor/skills/      # Cursor skills</code></pre>
+                </div>
+
+                <div class="cli-manifest">
+                    <h3>📄 skill.json Manifest</h3>
+                    <p>Define your skill's metadata, dependencies, and capabilities:</p>
+                    <pre><code>{
+  "name": "my-skill",
+  "version": "1.0.0",
+  "description": "A skill that does amazing things",
+  "author": "Your Name",
+  "license": "MIT",
+  "runtime": "mcp",
+  "keywords": ["automation", "productivity"],
+  "entry": "SKILL.md",
+  "dependencies": {
+    "anthropic/browser-use": "^1.0.0"
+  },
+  "capabilities": ["web-browsing", "file-system"],
+  "inputs": [
+    { "name": "url", "type": "string", "required": true }
+  ],
+  "outputs": [
+    { "name": "result", "type": "object" }
+  ]
+}</code></pre>
+                    <p style="margin-top: 1rem;">
+                        📖 See the full <a href="https://github.com/dmgrok/agent_skills_directory/blob/main/schema/skill-manifest-schema.json" target="_blank">skill manifest schema</a>.
+                    </p>
                 </div>
             </section>
         </div>

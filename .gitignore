@@ -21,3 +21,6 @@ Thumbs.db
 # Local testing
 *.local.json
 .env
+dist/
+build/
+*.spec

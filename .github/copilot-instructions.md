@@ -154,14 +154,56 @@ When adding a new feature that users can interact with (new JSON files, new data
 
 - `scripts/aggregate.py`: Core aggregation logic (~500 lines, 24 providers)
 - `scripts/analyze_repo.py`: Utility to evaluate potential new provider repos
+- `cli/skills.py`: CLI tool for installing/managing skills (npm-like)
+- `cli/__init__.py`: CLI package init
+- `pyproject.toml`: Python package configuration for CLI distribution
 - `schema/catalog-schema.json`: Output contract with stars/description fields
 - `schema/bundles-schema.json`: Curated skill bundles schema
+- `schema/skill-manifest-schema.json`: skill.json manifest schema (like package.json)
 - `.github/workflows/update-catalog.yml`: Automation pipeline (106 lines)
 - `docs/app.js`: Static site catalog and bundles display logic (shows stars)
-- `docs/index.html`: Static site HTML with tabs for Skills, Bundles, and Help
-- `docs/style.css`: Static site styling (star badges, etc.)
+- `docs/index.html`: Static site HTML with tabs for Skills, Bundles, CLI, and Help
+- `docs/style.css`: Static site styling (star badges, CLI styles, etc.)
 - `tests/test_aggregate.py`: Unit tests for parsing and encoding
 - `CHANGELOG.md`: Auto-generated version history
 - `README.md`: User-facing documentation with provider tables
 - `bundles.json`: Curated skill bundles for common use cases
 - `catalog.json`: Aggregated skills catalog (auto-generated)
+
+## CLI Tool (`cli/skills.py`)
+
+The CLI provides npm-like package management for skills:
+
+### Commands
+- `skills search <query>` - Search skills by name/description/tags
+- `skills info <skill-id>` - Show detailed skill information
+- `skills install <skill-id>[@version]` - Install a skill to `~/.skills/installed/`
+- `skills uninstall <skill-id>` - Remove an installed skill
+- `skills list [--json]` - List installed skills
+- `skills init` - Create a new skill.json manifest interactively
+- `skills update` - Check for and apply updates
+- `skills config list|get|set` - Manage CLI configuration
+- `skills cache clean|list` - Manage cache
+- `skills run <skill-id>` - Preview/run a skill (placeholder for runtime integration)
+
+### Local Registry Structure
+```
+~/.skills/
+├── config.json          # CLI configuration
+├── installed/           # Installed skills
+│   ├── provider/
+│   │   └── skill-name/
+│   │       ├── skill.json   # Manifest
+│   │       └── SKILL.md     # Instructions
+└── cache/               # Catalog cache
+```
+
+### skill.json Manifest Schema
+Defines skill metadata, dependencies, and capabilities (like package.json for skills):
+- `name`, `version`, `description` - Basic info
+- `dependencies` - Other skills required
+- `runtime` - Target framework (mcp, langchain, crewai, etc.)
+- `capabilities` - Required permissions (web-browsing, file-system, etc.)
+- `inputs`/`outputs` - Parameter definitions
+
+See `schema/skill-manifest-schema.json` for full specification.

@@ -57,7 +57,71 @@ We aggregate skills from **24 repositories** with a combined **136K+ GitHub star
 
 ## Usage
 
-### Quick Start
+### ⚡ Quick Install (Recommended)
+
+**One-liner (no Python required!):**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/install.sh | sh
+```
+
+**Or with Homebrew (macOS/Linux):**
+
+```bash
+brew install dmgrok/tap/skills
+```
+
+**Or download directly:**
+
+| Platform | Download |
+|----------|----------|
+| macOS (Apple Silicon) | [skills-macos-arm64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-arm64) |
+| macOS (Intel) | [skills-macos-x64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-x64) |
+| Linux (x64) | [skills-linux-x64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-linux-x64) |
+| Windows | [skills-windows-x64.exe](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-windows-x64.exe) |
+
+### 🐍 Install via pip (if you have Python)
+
+```bash
+# Install from PyPI
+pip install agent-skills
+
+# Or with enhanced validation
+pip install agent-skills[validation]
+```
+
+**Core commands:**
+
+```bash
+# Search for skills
+skills search "web scraping"
+
+# Get skill info
+skills info anthropic/pdf
+
+# Install a skill
+skills install github/web-design-reviewer
+skills install anthropic/pdf@1.0.0  # specific version
+
+# List installed skills
+skills list
+skills list --json
+
+# Create a new skill
+skills init
+
+# Update all installed skills
+skills update
+
+# Remove a skill
+skills uninstall anthropic/pdf
+```
+
+**Local registry:** Skills are installed to `~/.skills/installed/` with a `skill.json` manifest.
+
+📖 See the full [CLI documentation](https://dmgrok.github.io/agent_skills_directory/?tab=cli).
+
+### Quick Start (API)
 
 ```python
 import requests
