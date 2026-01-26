@@ -71,6 +71,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ref: main  # Checkout main branch, not the tag
 
       - name: Download all artifacts
         uses: actions/download-artifact@v4
@@ -85,6 +87,7 @@ jobs:
         with:
           files: binaries/*/*
           generate_release_notes: true
+          tag_name: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
