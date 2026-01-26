@@ -1,5 +1,5 @@
 # GitHub Actions workflow to build standalone executables
-# Builds for Windows, macOS (Intel + ARM), and Linux
+# Builds for Windows, macOS (ARM), and Linux
 # Creates release with downloadable binaries
 
 name: Build Standalone Executables
@@ -14,6 +14,9 @@ on:
         description: 'Version tag (e.g., v0.1.0)'
         required: false
         default: 'dev'
+
+permissions:
+  contents: write
 
 jobs:
   build:
