@@ -10,8 +10,9 @@
 <body>
     <header>
         <div class="container">
-            <h1>🧠 Agent Skills Directory</h1>
-            <p class="subtitle">Discover skills for Claude, Copilot, and Codex agents</p>
+            <h1>🧠 skills</h1>
+            <p class="subtitle">The package manager for AI agent skills</p>
+            <p class="tagline">Search, install, and publish skills for Claude, Copilot, Codex & Cursor</p>
             <nav class="main-tabs">
                 <button class="main-tab active" data-tab="browse">🔍 Browse Skills</button>
                 <button class="main-tab" data-tab="bundles">📦 Skill Bundles</button>
@@ -129,14 +130,40 @@
                 </p>
 
                 <div class="cli-install-box">
-                    <h3>📦 Installation</h3>
-                    <pre><code># Install from PyPI
-pip install agent-skills
-
-# Or install from source
-git clone https://github.com/dmgrok/agent_skills_directory
-cd agent_skills_directory
-pip install -e .</code></pre>
+                    <h3>📦 Quick Install</h3>
+                    
+                    <div class="install-methods">
+                        <div class="install-method">
+                            <h4>🍺 Homebrew (macOS/Linux)</h4>
+                            <pre><code>brew install dmgrok/tap/skills</code></pre>
+                        </div>
+                        
+                        <div class="install-method">
+                            <h4>⚡ One-liner (macOS/Linux)</h4>
+                            <pre><code>curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/install.sh | sh</code></pre>
+                        </div>
+                        
+                        <div class="install-method">
+                            <h4>📥 Direct Download</h4>
+                            <div class="download-links">
+                                <a href="https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-arm64" class="download-btn">
+                                    🍎 macOS (ARM64 & Intel)
+                                </a>
+                                <a href="https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-linux-x64" class="download-btn">
+                                    🐧 Linux (x64)
+                                </a>
+                                <a href="https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-windows-x64.exe" class="download-btn">
+                                    🪟 Windows (x64)
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="install-method">
+                            <h4>🐍 pip (if you have Python)</h4>
+                            <pre><code>pip install agent-skills              # Basic
+pip install agent-skills[validation]  # With enhanced validation</code></pre>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="cli-commands">

@@ -1,370 +1,264 @@
-# Agent Skills Directory
+# skills
 
-A centralized, automatically-updated catalog of [Agent Skills](https://agentskills.io) from multiple providers.
-
-> **🔄 Updated Daily** — A GitHub Action runs every day at 06:00 UTC to fetch the latest skills from all providers and update the catalog. You can always target `@main` for the latest or pin to a specific version.
-
-[![Skills](https://img.shields.io/badge/Skills-174-blue)](https://dmgrok.github.io/agent_skills_directory/)
-[![Providers](https://img.shields.io/badge/Providers-24-green)](https://dmgrok.github.io/agent_skills_directory/)
-[![Stars](https://img.shields.io/badge/Combined%20Stars-136K-yellow)](https://dmgrok.github.io/agent_skills_directory/)
-
-## What is this?
-
-This repository aggregates skills from various providers into a single, standardized JSON catalog that can be consumed by MCP servers, AI agents, and developer tools.
-
-🌐 **[Browse Skills Online](https://dmgrok.github.io/agent_skills_directory/)** — Interactive catalog with search, filtering, and skill bundles.
-
-**Used by:** [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) — An MCP server that exposes these skills to AI agents.
-
-## Providers
-
-We aggregate skills from **24 repositories** with a combined **136K+ GitHub stars**:
-
-### Official Provider Repositories
-
-| Provider | Repository | Skills | ⭐ Stars | Description |
-|----------|------------|:------:|:-------:|-------------|
-| **Anthropic** | [anthropics/skills](https://github.com/anthropics/skills) | 16 | 54K | Public repository for Agent Skills |
-| **Obra Superpowers** | [obra/superpowers](https://github.com/obra/superpowers) | 14 | 36K | Agentic skills framework & software development methodology |
-| **GitHub** | [github/awesome-copilot](https://github.com/github/awesome-copilot) | 26 | 19K | Community-contributed instructions, prompts, and configurations |
-| **Vercel** | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 3 | 17K | Skills from Vercel Labs |
-| **OpenAI** | [openai/skills](https://github.com/openai/skills) | 12 | 2K | Skills Catalog for Codex |
-| **HuggingFace** | [huggingface/skills](https://github.com/huggingface/skills) | 8 | 1K | ML/AI skills from HuggingFace |
-
-### Community Multi-Skill Repositories
-
-| Provider | Repository | Skills | ⭐ Stars | Description |
-|----------|------------|:------:|:-------:|-------------|
-| **NotebookLM** | [PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) | 1 | 2.7K | Google NotebookLM integration |
-| **Playwright** | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | 1 | 1.5K | Browser automation with Playwright |
-| **SkillCreator.ai** | [skillcreatorai/Ai-Agent-Skills](https://github.com/skillcreatorai/Ai-Agent-Skills) | 47 | 620 | Homebrew for AI Agent Skills |
-| **iOS Simulator** | [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) | 1 | 391 | iOS app testing and debugging |
-| **Claude Marketplace** | [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | 18 | 267 | Engineering, visual docs, productivity skills |
-| **Tapestry Skills** | [michalparkola/tapestry-skills-for-claude-code](https://github.com/michalparkola/tapestry-skills-for-claude-code) | 4 | 181 | Content extraction and knowledge skills |
-| **AWS Skills** | [zxkane/aws-skills](https://github.com/zxkane/aws-skills) | 5 | 101 | AWS CDK, cost optimization, serverless skills |
-| **Sanjay AI Skills** | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) | 12 | 41 | Google Workspace and database skills |
-
-### Community Single-Skill Repositories
-
-| Provider | Repository | ⭐ Stars | Description |
-|----------|------------|:-------:|-------------|
-| **CSV Summarizer** | [coffeefuelbump/csv-data-summarizer-claude-skill](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) | 192 | CSV data analysis and insights |
-| **FFUF Web Fuzzing** | [jthack/ffuf_claude_skill](https://github.com/jthack/ffuf_claude_skill) | 100 | Security fuzzing with ffuf |
-| **D3.js Visualization** | [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | 81 | Create D3.js data visualizations |
-| **EPUB Converter** | [smerchek/claude-epub-skill](https://github.com/smerchek/claude-epub-skill) | 55 | Convert markdown to EPUB ebooks |
-| **Family History** | [emaynard/claude-family-history-research-skill](https://github.com/emaynard/claude-family-history-research-skill) | 28 | Genealogy research assistance |
-| **Move Code Quality** | [1NickPappas/move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) | 10 | Move language (blockchain) code quality |
-
-## Usage
-
-### ⚡ Quick Install (Recommended)
-
-**One-liner (no Python required!):**
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/install.sh | sh
-```
-
-**Or with Homebrew (macOS/Linux):**
+**The package manager for AI agent skills.**
 
 ```bash
 brew install dmgrok/tap/skills
 ```
 
-**Or download directly:**
+[![npm-like CLI](https://img.shields.io/badge/CLI-npm--like-CB3837?logo=npm)](https://github.com/dmgrok/agent_skills_directory/releases)
+[![Skills](https://img.shields.io/badge/Skills-174-blue)](https://dmgrok.github.io/agent_skills_directory/)
+[![Providers](https://img.shields.io/badge/Providers-24-green)](https://dmgrok.github.io/agent_skills_directory/)
+[![Stars](https://img.shields.io/badge/Combined%20Stars-136K+-yellow)](https://dmgrok.github.io/agent_skills_directory/)
+
+---
+
+## What is this?
+
+**skills** is to AI agents what **npm** is to JavaScript.
+
+Search, install, publish, and manage reusable skills for Claude, Copilot, Codex, and Cursor—all from your terminal.
+
+```bash
+skills search "web scraping"     # Find skills
+skills install anthropic/pdf     # Install a skill
+skills publish                   # Share your own
+```
+
+🌐 **[Browse 174+ Skills Online →](https://dmgrok.github.io/agent_skills_directory/)**
+
+---
+
+## Quick Install
+
+### macOS (Homebrew)
+
+```bash
+brew install dmgrok/tap/skills
+```
+
+### One-liner (macOS/Linux)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/install.sh | sh
+```
+
+### Direct Download
 
 | Platform | Download |
 |----------|----------|
-| macOS (Apple Silicon) | [skills-macos-arm64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-arm64) |
-| macOS (Intel) | [skills-macos-x64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-x64) |
-| Linux (x64) | [skills-linux-x64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-linux-x64) |
-| Windows | [skills-windows-x64.exe](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-windows-x64.exe) |
+| **macOS** (Apple Silicon & Intel) | [skills-macos-arm64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-arm64) |
+| **Linux** (x64) | [skills-linux-x64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-linux-x64) |
+| **Windows** (x64) | [skills-windows-x64.exe](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-windows-x64.exe) |
 
-### 🐍 Install via pip (if you have Python)
+### pip (if you prefer Python)
 
 ```bash
-# Install from PyPI
-pip install agent-skills
-
-# Or with enhanced validation
-pip install agent-skills[validation]
+pip install agent-skills              # Basic
+pip install agent-skills[validation]  # With enhanced validation
 ```
 
-**Core commands:**
+---
+
+## Usage
+
+### Search & Discover
 
 ```bash
-# Search for skills
-skills search "web scraping"
+# Search by keyword
+skills search "pdf"
 
-# Get skill info
+# Browse by provider
+skills search --provider anthropic
+
+# View skill details
 skills info anthropic/pdf
+```
 
-# Install a skill
-skills install github/web-design-reviewer
-skills install anthropic/pdf@1.0.0  # specific version
+### Install Skills
 
+```bash
+# Install globally (default)
+skills install anthropic/pdf
+
+# Install to project (auto-detects your agent)
+skills install anthropic/pdf --project
+
+# Install for specific agent
+skills install anthropic/pdf -p --agent claude   # → .claude/skills/
+skills install anthropic/pdf -p --agent copilot  # → .github/skills/
+skills install anthropic/pdf -p --agent codex    # → .codex/skills/
+skills install anthropic/pdf -p --agent cursor   # → .cursor/skills/
+
+# Install specific version
+skills install anthropic/pdf@1.2.0
+```
+
+### Manage Skills
+
+```bash
 # List installed skills
 skills list
 skills list --json
 
-# Create a new skill
-skills init
-
-# Update all installed skills
+# Update all skills
 skills update
 
 # Remove a skill
 skills uninstall anthropic/pdf
+
+# Detect which agent you're using
+skills detect
 ```
 
-**Local registry:** Skills are installed to `~/.skills/installed/` with a `skill.json` manifest.
+### Create & Publish
 
-📖 See the full [CLI documentation](https://dmgrok.github.io/agent_skills_directory/?tab=cli).
+```bash
+# Create a new skill
+skills init
 
-### Quick Start (API)
+# Validate before publishing
+skills validate .
+
+# Publish to GitHub
+skills login
+skills publish
+
+# Submit to official directory
+skills publish --submit
+```
+
+---
+
+## Supported Agents
+
+| Agent | Project Path | Personal Path | Detection |
+|-------|--------------|---------------|-----------|
+| **Claude** | `.claude/skills/` | `~/.claude/skills/` | `CLAUDE.md` |
+| **Copilot** | `.github/skills/` | `~/.copilot/skills/` | `.github/copilot-instructions.md` |
+| **Codex** | `.codex/skills/` | `~/.codex/skills/` | `AGENTS.md` |
+| **Cursor** | `.cursor/skills/` | `~/.cursor/skills/` | `.cursorrules` |
+
+---
+
+## Catalog API
+
+The skills catalog is a JSON file updated daily at 06:00 UTC.
+
+### Endpoints
+
+| Format | URL |
+|--------|-----|
+| **JSON (CDN)** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json` |
+| **Minified** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.json` |
+| **Bundles** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json` |
+| **Pinned Version** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.26/catalog.json` |
+
+### Example
 
 ```python
 import requests
 
-# Fetch the latest catalog
 catalog = requests.get(
     "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json"
 ).json()
 
-# List all skills
+# List skills
 for skill in catalog["skills"]:
     print(f"{skill['id']}: {skill['description']}")
 
 # Filter by category
 dev_skills = [s for s in catalog["skills"] if s["category"] == "development"]
-
-# Get a specific skill's full content
-skill = catalog["skills"][0]
-skill_md = requests.get(skill["source"]["skill_md_url"]).text
 ```
 
-### URLs
+---
 
-| Use Case | URL |
-|----------|-----|
-| **Latest (CDN)** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json` |
-| **Latest (Raw)** | `https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/catalog.json` |
-| **Specific Version** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.26/catalog.json` |
-| **Minified JSON** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.json` |
-| **TOON** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.toon` |
-| **TOON (minified JSON source)** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.toon` |
+## Providers
 
-### MCP Server Integration
+We aggregate skills from **24 repositories** with **136K+ combined GitHub stars**:
 
-### Browser (docs site) URL filters
+### Major Providers
 
-The static browser supports query-string filters so you can share/bookmark filtered views:
+| Provider | Repository | Skills | ⭐ |
+|----------|------------|:------:|:--:|
+| **Anthropic** | [anthropics/skills](https://github.com/anthropics/skills) | 16 | 54K |
+| **Obra** | [obra/superpowers](https://github.com/obra/superpowers) | 14 | 36K |
+| **GitHub** | [github/awesome-copilot](https://github.com/github/awesome-copilot) | 26 | 19K |
+| **Vercel** | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 3 | 17K |
+| **OpenAI** | [openai/skills](https://github.com/openai/skills) | 12 | 2K |
+| **HuggingFace** | [huggingface/skills](https://github.com/huggingface/skills) | 8 | 1K |
 
-- `?provider=anthropics`
-- `?category=development`
-- `?search=notion` (or `?q=...`)
-- `?tags=git,api`
-- `?id=anthropics/pdf` (opens modal directly)
+### Community
 
-Examples:
+| Provider | Repository | Skills | ⭐ |
+|----------|------------|:------:|:--:|
+| **SkillCreator.ai** | [skillcreatorai/Ai-Agent-Skills](https://github.com/skillcreatorai/Ai-Agent-Skills) | 47 | 620 |
+| **Claude Marketplace** | [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | 18 | 267 |
+| **NotebookLM** | [PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) | 1 | 2.7K |
+| **Playwright** | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | 1 | 1.5K |
 
-- `https://dmgrok.github.io/agent_skills_directory/?category=documents`
-- `https://dmgrok.github.io/agent_skills_directory/?provider=openai&search=notion`
-```python
-from mcp.server import Server
-import aiohttp
+[View all 24 providers →](https://dmgrok.github.io/agent_skills_directory/)
 
-CATALOG_URL = "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json"
+---
 
-class SkillsServer(Server):
-    def __init__(self):
-        super().__init__("skills-directory")
-        self.catalog = None
-    
-    async def load_catalog(self):
-        async with aiohttp.ClientSession() as session:
-            async with session.get(CATALOG_URL) as resp:
-                self.catalog = await resp.json()
-    
-    @server.list_tools()
-    async def list_tools(self):
-        return [
-            Tool(
-                name="search_skills",
-                description="Search the agent skills catalog",
-                inputSchema={...}
-            )
-        ]
-    
-    @server.call_tool()
-    async def call_tool(self, name: str, arguments: dict):
-        if name == "search_skills":
-            query = arguments.get("query", "").lower()
-            matches = [
-                s for s in self.catalog["skills"]
-                if query in s["name"] or query in s["description"].lower()
-            ]
-            return matches
+## Creating Skills
+
+A skill is a directory with two files:
+
+```
+my-skill/
+├── skill.json    # Metadata (like package.json)
+└── SKILL.md      # Instructions for the agent
 ```
 
-## Catalog Format
+### skill.json
 
 ```json
 {
-  "version": "2026.01.26",
-  "generated_at": "2026-01-26T12:00:00Z",
-  "total_skills": 174,
-  "providers": {
-    "anthropics": {
-      "name": "Anthropic",
-      "repo": "https://github.com/anthropics/skills",
-      "skills_count": 16,
-      "stars": 54014,
-      "description": "Public repository for Agent Skills"
-    },
-    "openai": {
-      "name": "OpenAI",
-      "repo": "https://github.com/openai/skills",
-      "skills_count": 12,
-      "stars": 2060,
-      "description": "Skills Catalog for Codex"
-    }
-  },
-  "categories": ["creative", "data", "development", "documents", "enterprise", "integrations", "other"],
-  "skills": [
-    {
-      "id": "anthropics/pdf-processing",
-      "name": "pdf-processing",
-      "description": "Extract text and tables from PDF files...",
-      "provider": "anthropics",
-      "category": "documents",
-      "license": "Apache-2.0",
-      "last_updated_at": "2026-01-07T12:00:00Z",
-      "source": {
-        "repo": "https://github.com/anthropics/skills",
-        "path": "skills/pdf",
-        "skill_md_url": "https://raw.githubusercontent.com/..."
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": true,
-      "tags": ["pdf", "documents", "extraction"]
-    }
-  ]
-}
-```
-
-## Skill Bundles
-
-In addition to the full catalog, we maintain curated **skill bundles** — collections of skills grouped by common use cases. Bundles make it easy to discover and install related skills together.
-
-### Quick Start with Bundles
-
-```python
-import requests
-
-# Fetch the bundles catalog
-bundles = requests.get(
-    "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json"
-).json()
-
-# List all bundles
-for bundle in bundles["bundles"]:
-    print(f"{bundle['icon']} {bundle['name']}: {bundle['description']}")
-    print(f"   Skills: {', '.join(bundle['skills'])}")
-
-# Find bundles by category
-frontend_bundles = [b for b in bundles["bundles"] if b["category"] == "frontend"]
-
-# Get skills from a specific bundle
-react_bundle = next(b for b in bundles["bundles"] if b["id"] == "frontend-react")
-skill_ids = react_bundle["skills"]  # ["skillcreatorai/react-best-practices", ...]
-```
-
-### Bundle URLs
-
-| Use Case | URL |
-|----------|-----|
-| **Latest (CDN)** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json` |
-| **Latest (Raw)** | `https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/bundles.json` |
-| **Specific Version** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.26/bundles.json` |
-
-### Bundle Format
-
-```json
-{
+  "name": "my-skill",
   "version": "1.0.0",
-  "generated_at": "2026-01-23T00:00:00Z",
-  "total_bundles": 18,
-  "bundles": [
-    {
-      "id": "frontend-react",
-      "name": "React Frontend",
-      "description": "Modern React development with testing and best practices",
-      "icon": "⚛️",
-      "skills": [
-        "skillcreatorai/react-best-practices",
-        "vercel/vercel-react-best-practices",
-        "anthropics/frontend-design",
-        "skillcreatorai/webapp-testing"
-      ],
-      "use_cases": ["Building React SPAs", "Component libraries", "Dashboard UIs"],
-      "tags": ["frontend", "web", "react"],
-      "category": "frontend"
-    }
-  ]
+  "description": "What this skill does",
+  "author": "your-username",
+  "license": "MIT",
+  "keywords": ["keyword1", "keyword2"],
+  "runtime": "universal"
 }
 ```
 
-### Using Bundles with MCP
+### SKILL.md
 
-```python
-import requests
+```markdown
+---
+name: My Skill
+version: 1.0.0
+description: What this skill does
+---
 
-# CDN URLs
-CATALOG_URL = "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json"
-BUNDLES_URL = "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json"
+# My Skill
 
-# Fetch both catalog and bundles
-catalog = requests.get(CATALOG_URL).json()
-bundles = requests.get(BUNDLES_URL).json()
-
-# Get skills for a bundle
-def get_bundle_skills(bundle_id: str):
-    bundle = next((b for b in bundles["bundles"] if b["id"] == bundle_id), None)
-    if not bundle:
-        return []
-    
-    # Map skill IDs to full skill objects
-    skills_map = {s["id"]: s for s in catalog["skills"]}
-    return [skills_map[sid] for sid in bundle["skills"] if sid in skills_map]
-
-# Example: Get all skills for React development
-react_skills = get_bundle_skills("frontend-react")
+Instructions for the AI agent on how to use this skill...
 ```
 
-## Development
+### Publish
 
-- Python dependencies: PyYAML, toon_format (TOON encoder, optional), pytest.
-- Virtual environment (recommended): `python -m venv .venv && . .venv/bin/activate`
-- Install deps: `python -m pip install pyyaml toon_format pytest`
-- Run tests: `pytest`
+```bash
+cd my-skill
+skills validate .    # Check for issues
+skills login         # Authenticate with GitHub
+skills publish       # Push to GitHub
+skills publish --submit  # Request inclusion in directory
+```
 
-## Update Schedule
+---
 
-The catalog is automatically updated daily at 06:00 UTC via GitHub Actions.
+## Contributing
 
-- Each update creates a new release with version `vYYYY.MM.DD`
-- Changes are only committed if new skills are detected
-- Historical versions are preserved in GitHub Releases
+### Add a Provider
 
-## Adding a Provider
-
-To add a new skills provider, edit `scripts/aggregate.py`:
+Edit `scripts/aggregate.py`:
 
 ```python
 PROVIDERS = {
-    # ... existing providers
     "your-org": {
         "name": "Your Organization",
         "repo": "https://github.com/your-org/skills",
@@ -375,69 +269,26 @@ PROVIDERS = {
 }
 ```
 
-## Local Development
+### Local Development
 
 ```bash
-# Clone the repository
 git clone https://github.com/dmgrok/agent_skills_directory.git
 cd agent_skills_directory
-
-# Install dependencies
-pip install pyyaml
-
-# Run aggregation
+pip install -e ".[validation]"
 python scripts/aggregate.py
-
-# Outputs: catalog.json, catalog.min.json
+pytest
 ```
 
-## Schema
-
-The catalog and bundles follow JSON Schemas:
-- **Catalog**: [schema/catalog-schema.json](schema/catalog-schema.json)
-- **Bundles**: [schema/bundles-schema.json](schema/bundles-schema.json)
-
-Validate your files:
-```bash
-pip install jsonschema
-python -c "
-import json
-from jsonschema import validate
-
-# Validate catalog
-catalog_schema = json.load(open('schema/catalog-schema.json'))
-catalog = json.load(open('catalog.json'))
-validate(catalog, catalog_schema)
-print('✓ Catalog valid')
-
-# Validate bundles
-bundles_schema = json.load(open('schema/bundles-schema.json'))
-bundles = json.load(open('bundles.json'))
-validate(bundles, bundles_schema)
-print('✓ Bundles valid')
-"
-```
-
-## Categories
-
-Skills are automatically categorized based on their name and description:
-
-| Category | Description | Example Skills |
-|----------|-------------|----------------|
-| **development** | Coding, testing, debugging, CI/CD | TDD, git workflows, code review |
-| **documents** | Document processing, PDFs, text extraction | PDF processing, markdown, EPUB |
-| **data** | Data analysis, databases, CSV processing | CSV summarizer, database skills |
-| **integrations** | Third-party APIs and services | AWS, Google Workspace, NotebookLM |
-| **creative** | Design, content creation, visualization | D3.js charts, frontend design |
-| **enterprise** | Business workflows, productivity | Productivity tools, engineering workflows |
-| **other** | Miscellaneous skills | Various utilities |
-
-## License
-
-This aggregation tool is MIT licensed. Individual skills retain their original licenses as specified in their respective repositories.
+---
 
 ## Related
 
-- [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) - MCP server that consumes this catalog
-- [Agent Skills Specification](https://agentskills.io/specification)
-- [Model Context Protocol](https://modelcontextprotocol.io)
+- 🌐 [Browse Skills](https://dmgrok.github.io/agent_skills_directory/) — Interactive catalog
+- 🔌 [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) — MCP server integration
+- 📖 [Agent Skills Spec](https://agentskills.io/specification) — Standard specification
+
+---
+
+## License
+
+MIT. Individual skills retain their original licenses.
