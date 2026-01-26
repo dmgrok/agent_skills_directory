@@ -17,11 +17,33 @@ Output:
 """
 
 import argparse
+import io
 import platform
 import shutil
 import subprocess
 import sys
 from pathlib import Path
+
+# Fix Windows console encoding for emoji output
+if sys.platform == "win32":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
+
+# Cross-platform emoji/symbols (fallback to ASCII on Windows if needed)
+def _icon(emoji: str, fallback: str) -> str:
+    """Return emoji or ASCII fallback based on platform/encoding."""
+    if sys.platform == "win32":
+        try:
+            emoji.encode(sys.stdout.encoding or 'utf-8')
+            return emoji
+        except (UnicodeEncodeError, LookupError):
+            return fallback
+    return emoji
+
+ICON_BUILD = _icon("🔨", "[BUILD]")
+ICON_OK = _icon("✅", "[OK]")
+ICON_FAIL = _icon("❌", "[FAIL]")
+ICON_CLEAN = _icon("🧹", "[CLEAN]")
 
 # Project root
 ROOT = Path(__file__).parent.parent
@@ -57,7 +79,7 @@ def get_platform_suffix():
 def build_executable(onefile: bool = True, include_validation: bool = False):
     """Build the standalone executable."""
     
-    print(f"🔨 Building skills CLI for {platform.system()}...")
+    print(f"{ICON_BUILD} Building skills CLI for {platform.system()}...")
     
     # Base PyInstaller command
     cmd = [
@@ -93,7 +115,7 @@ def build_executable(onefile: bool = True, include_validation: bool = False):
     result = subprocess.run(cmd, cwd=ROOT)
     
     if result.returncode != 0:
-        print("❌ Build failed!")
+        print(f"{ICON_FAIL} Build failed!")
         return False
     
     # Rename with platform suffix
@@ -105,17 +127,17 @@ def build_executable(onefile: bool = True, include_validation: bool = False):
         dst_name = f"skills-{suffix}" + (".exe" if platform.system() == "Windows" else "")
         dst = DIST_DIR / dst_name
         shutil.move(src, dst)
-        print(f"✅ Built: {dst}")
+        print(f"{ICON_OK} Built: {dst}")
         print(f"   Size: {dst.stat().st_size / 1024 / 1024:.1f} MB")
     else:
-        print(f"✅ Built: {DIST_DIR / exe_name}")
+        print(f"{ICON_OK} Built: {DIST_DIR / exe_name}")
     
     return True
 
 
 def clean():
     """Clean build artifacts."""
-    print("🧹 Cleaning build artifacts...")
+    print(f"{ICON_CLEAN} Cleaning build artifacts...")
     
     for dir_path in [BUILD_DIR, DIST_DIR]:
         if dir_path.exists():
@@ -127,7 +149,7 @@ def clean():
         spec_file.unlink()
         print(f"   Removed: {spec_file}")
     
-    print("✅ Clean complete")
+    print(f"{ICON_OK} Clean complete")
 
 
 def main():
@@ -148,7 +170,7 @@ def main():
         return
     
     if not check_pyinstaller():
-        print("❌ PyInstaller not installed. Run: pip install pyinstaller")
+        print(f"{ICON_FAIL} PyInstaller not installed. Run: pip install pyinstaller")
         sys.exit(1)
     
     onefile = not args.onedir
