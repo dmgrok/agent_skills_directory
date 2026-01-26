@@ -10,11 +10,45 @@ This repository aggregates skills from various providers into a single, standard
 
 **Used by:** [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) — An MCP server that exposes these skills to AI agents.
 
-**Providers:**
-- [Anthropic](https://github.com/anthropics/skills) - Official skills from Anthropic
-- [OpenAI](https://github.com/openai/skills) - Skills for OpenAI Codex
-- [GitHub](https://github.com/github/awesome-copilot) - Skills from GitHub Awesome Copilot
-- [Vercel](https://github.com/vercel-labs/agent-skills) - Skills from Vercel Labs
+## Providers
+
+We aggregate skills from **24 repositories** across official and community sources:
+
+### Official Provider Repositories
+
+| Provider | Repository | Description |
+|----------|------------|-------------|
+| **Anthropic** | [anthropics/skills](https://github.com/anthropics/skills) | Official skills from Anthropic |
+| **OpenAI** | [openai/skills](https://github.com/openai/skills) | Skills for OpenAI Codex |
+| **GitHub** | [github/awesome-copilot](https://github.com/github/awesome-copilot) | Skills from GitHub Awesome Copilot |
+| **Vercel** | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | Skills from Vercel Labs |
+| **HuggingFace** | [huggingface/skills](https://github.com/huggingface/skills) | ML/AI skills from HuggingFace |
+
+### Community Multi-Skill Repositories
+
+| Provider | Repository | Description |
+|----------|------------|-------------|
+| **SkillCreator.ai** | [skillcreatorai/Ai-Agent-Skills](https://github.com/skillcreatorai/Ai-Agent-Skills) | Large collection of community skills |
+| **Obra Superpowers** | [obra/superpowers](https://github.com/obra/superpowers) | Development workflow skills (TDD, git worktrees, debugging) |
+| **Tapestry Skills** | [michalparkola/tapestry-skills-for-claude-code](https://github.com/michalparkola/tapestry-skills-for-claude-code) | Content extraction and knowledge skills |
+| **Sanjay AI Skills** | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) | Google Workspace and database skills |
+| **AWS Skills** | [zxkane/aws-skills](https://github.com/zxkane/aws-skills) | AWS CDK, cost optimization, serverless skills |
+| **Claude Marketplace** | [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | Engineering, visual docs, productivity skills |
+
+### Community Single-Skill Repositories
+
+| Provider | Repository | Description |
+|----------|------------|-------------|
+| **EPUB Converter** | [smerchek/claude-epub-skill](https://github.com/smerchek/claude-epub-skill) | Convert markdown to EPUB ebooks |
+| **D3.js Visualization** | [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | Create D3.js data visualizations |
+| **FFUF Web Fuzzing** | [jthack/ffuf_claude_skill](https://github.com/jthack/ffuf_claude_skill) | Security fuzzing with ffuf |
+| **iOS Simulator** | [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) | iOS app testing and debugging |
+| **Move Code Quality** | [1NickPappas/move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) | Move language (blockchain) code quality |
+| **Playwright Automation** | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | Browser automation testing |
+| **PICT Test Cases** | [omkamal/pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) | Pairwise combinatorial testing |
+| **CSV Summarizer** | [coffeefuelbump/csv-data-summarizer-claude-skill](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) | CSV data analysis and insights |
+| **Family History** | [emaynard/claude-family-history-research-skill](https://github.com/emaynard/claude-family-history-research-skill) | Genealogy research assistance |
+| **NotebookLM** | [PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) | Google NotebookLM integration |
 
 ## Usage
 

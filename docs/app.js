@@ -139,11 +139,20 @@ async function init() {
 }
 
 function populateFilters() {
-    // Populate providers
-    Object.entries(catalog.providers).forEach(([id, provider]) => {
+    // Populate providers (sorted by stars descending, then by name)
+    const sortedProviders = Object.entries(catalog.providers)
+        .sort((a, b) => {
+            const starsA = a[1].stars || 0;
+            const starsB = b[1].stars || 0;
+            if (starsB !== starsA) return starsB - starsA;
+            return a[1].name.localeCompare(b[1].name);
+        });
+    
+    sortedProviders.forEach(([id, provider]) => {
         const option = document.createElement('option');
         option.value = id;
-        option.textContent = `${provider.name} (${provider.skills_count})`;
+        const starsText = provider.stars ? ` ⭐${formatStars(provider.stars)}` : '';
+        option.textContent = `${provider.name} (${provider.skills_count})${starsText}`;
         providerFilter.appendChild(option);
     });
 
@@ -154,6 +163,14 @@ function populateFilters() {
         option.textContent = category.charAt(0).toUpperCase() + category.slice(1);
         categoryFilter.appendChild(option);
     });
+}
+
+// Format star count (e.g., 1234 -> 1.2k)
+function formatStars(stars) {
+    if (stars >= 1000) {
+        return (stars / 1000).toFixed(1) + 'k';
+    }
+    return stars.toString();
 }
 
 function updateStats() {
@@ -206,6 +223,10 @@ function renderSkills(skills) {
 
     skillsGrid.innerHTML = skills.map(skill => {
         const updatedLabel = formatDate(skill.last_updated_at);
+        const provider = catalog.providers[skill.provider];
+        const starsHtml = provider && provider.stars 
+            ? `<span class="skill-stars" title="${provider.stars.toLocaleString()} GitHub stars">⭐ ${formatStars(provider.stars)}</span>` 
+            : '';
         
         // Generate duplicate badge if skill is annotated
         let duplicateBadge = '';
@@ -221,6 +242,7 @@ function renderSkills(skills) {
                 <h3 class="skill-name">${escapeHtml(skill.name)}</h3>
                 <div class="skill-header-badges">
                     <span class="skill-provider ${skill.provider}">${skill.provider}</span>
+                    ${starsHtml}
                     ${duplicateBadge}
                 </div>
             </div>

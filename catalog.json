@@ -1,38 +1,176 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
   "version": "2026.01.26",
-  "generated_at": "2026-01-26T06:48:49.985768+00:00",
-  "total_skills": 112,
+  "generated_at": "2026-01-26T16:17:48.278835+00:00",
+  "total_skills": 174,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
       "repo": "https://github.com/anthropics/skills",
-      "skills_count": 16
+      "skills_count": 16,
+      "stars": 54014,
+      "description": "Public repository for Agent Skills"
     },
     "openai": {
       "name": "OpenAI",
       "repo": "https://github.com/openai/skills",
-      "skills_count": 12
+      "skills_count": 12,
+      "stars": 2060,
+      "description": "Skills Catalog for Codex"
     },
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
-      "skills_count": 26
+      "skills_count": 26,
+      "stars": 19018,
+      "description": "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
     },
     "vercel": {
       "name": "Vercel",
       "repo": "https://github.com/vercel-labs/agent-skills",
-      "skills_count": 3
+      "skills_count": 3,
+      "stars": 16700,
+      "description": null
     },
     "huggingface": {
       "name": "HuggingFace",
       "repo": "https://github.com/huggingface/skills",
-      "skills_count": 8
+      "skills_count": 8,
+      "stars": 1058,
+      "description": null
     },
     "skillcreatorai": {
       "name": "SkillCreator.ai",
       "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-      "skills_count": 47
+      "skills_count": 47,
+      "stars": 620,
+      "description": "Homebrew for AI Agent Skills."
+    },
+    "obra-superpowers": {
+      "name": "Obra Superpowers",
+      "repo": "https://github.com/obra/superpowers",
+      "skills_count": 14,
+      "stars": 36744,
+      "description": "An agentic skills framework & software development methodology that works."
+    },
+    "tapestry": {
+      "name": "Tapestry Skills",
+      "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
+      "skills_count": 4,
+      "stars": 181,
+      "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
+    },
+    "sanjay-ai-skills": {
+      "name": "Sanjay AI Skills",
+      "repo": "https://github.com/sanjay3290/ai-skills",
+      "skills_count": 12,
+      "stars": 41,
+      "description": "Collection of agent skills for AI coding assistants"
+    },
+    "aws-skills": {
+      "name": "AWS Skills",
+      "repo": "https://github.com/zxkane/aws-skills",
+      "skills_count": 5,
+      "stars": 101,
+      "description": "Claude Agent Skills for AWS"
+    },
+    "claude-marketplace-engineering": {
+      "name": "Claude Marketplace (Engineering)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 5,
+      "stars": 267,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "claude-marketplace-visual": {
+      "name": "Claude Marketplace (Visual)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 5,
+      "stars": 267,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "claude-marketplace-code": {
+      "name": "Claude Marketplace (Code Ops)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 4,
+      "stars": 267,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "claude-marketplace-productivity": {
+      "name": "Claude Marketplace (Productivity)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 4,
+      "stars": 267,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "epub-skill": {
+      "name": "EPUB Converter",
+      "repo": "https://github.com/smerchek/claude-epub-skill",
+      "skills_count": 1,
+      "stars": 55,
+      "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
+    },
+    "d3js-skill": {
+      "name": "D3.js Visualization",
+      "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+      "skills_count": 1,
+      "stars": 81,
+      "description": "A Claude skill for d3.js."
+    },
+    "ffuf-skill": {
+      "name": "FFUF Web Fuzzing",
+      "repo": "https://github.com/jthack/ffuf_claude_skill",
+      "skills_count": 1,
+      "stars": 100,
+      "description": "This is a \"skill\" for claude to use FFUF."
+    },
+    "ios-simulator-skill": {
+      "name": "iOS Simulator",
+      "repo": "https://github.com/conorluddy/ios-simulator-skill",
+      "skills_count": 1,
+      "stars": 391,
+      "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
+    },
+    "move-quality-skill": {
+      "name": "Move Code Quality",
+      "repo": "https://github.com/1NickPappas/move-code-quality-skill",
+      "skills_count": 1,
+      "stars": 10,
+      "description": "Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist"
+    },
+    "playwright-skill": {
+      "name": "Playwright Automation",
+      "repo": "https://github.com/lackeyjb/playwright-skill",
+      "skills_count": 1,
+      "stars": 1475,
+      "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
+    },
+    "pypict-skill": {
+      "name": "PICT Test Cases",
+      "repo": "https://github.com/omkamal/pypict-claude-skill",
+      "skills_count": 0,
+      "stars": null,
+      "description": null
+    },
+    "csv-summarizer-skill": {
+      "name": "CSV Data Summarizer",
+      "repo": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill",
+      "skills_count": 1,
+      "stars": 192,
+      "description": "A Claude Skill that automatically analyzes uploaded CSV files \u2014 generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
+    },
+    "family-history-skill": {
+      "name": "Family History Research",
+      "repo": "https://github.com/emaynard/claude-family-history-research-skill",
+      "skills_count": 1,
+      "stars": 28,
+      "description": "A Claude Skill to assist with family history and genealogy research planning."
+    },
+    "notebooklm-skill": {
+      "name": "NotebookLM Integration",
+      "repo": "https://github.com/PleasePrompto/notebooklm-skill",
+      "skills_count": 1,
+      "stars": 2725,
+      "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
     }
   },
   "categories": [
@@ -127,7 +265,7 @@
       "category": "creative",
       "license": "Complete terms in LICENSE.txt",
       "compatibility": null,
-      "last_updated_at": "2025-12-01T18:05:36Z",
+      "last_updated_at": null,
       "metadata": {},
       "source": {
         "repo": "https://github.com/anthropics/skills",
@@ -575,7 +713,7 @@
       "category": "development",
       "license": "Complete terms in LICENSE.txt",
       "compatibility": null,
-      "last_updated_at": "2025-12-01T18:05:36Z",
+      "last_updated_at": null,
       "metadata": {},
       "source": {
         "repo": "https://github.com/anthropics/skills",
@@ -645,6 +783,862 @@
           "similarity": 0.82
         }
       ]
+    },
+    {
+      "id": "aws-skills/aws-agentic-ai",
+      "name": "aws-agentic-ai",
+      "description": "AWS Bedrock AgentCore comprehensive expert for deploying and managing all AgentCore services. Use when working with Gateway, Runtime, Memory, Identity, or any AgentCore component. Covers MCP target deployment, credential management, schema optimization, runtime configuration, memory management, and identity services.",
+      "provider": "aws-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-16T06:55:43Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/zxkane/aws-skills",
+        "path": "plugins/aws-agentic-ai/skills/aws-agentic-ai",
+        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-agentic-ai/skills/aws-agentic-ai/SKILL.md",
+        "commit_sha": "e48bf4c63b6a2a39dac29c03546a3df97b384d0f"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "mcp",
+        "aws",
+        "agentic"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "aws-skills/aws-cdk-development",
+      "name": "aws-cdk-development",
+      "description": "AWS Cloud Development Kit (CDK) expert for building cloud infrastructure with TypeScript/Python. Use when creating CDK stacks, defining CDK constructs, implementing infrastructure as code, or when the user mentions CDK, CloudFormation, IaC, cdk synth, cdk deploy, or wants to define AWS infrastructure programmatically. Covers CDK app structure, construct patterns, stack composition, and deployment workflows.",
+      "provider": "aws-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-16T06:55:43Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/zxkane/aws-skills",
+        "path": "plugins/aws-cdk/skills/aws-cdk-development",
+        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-cdk/skills/aws-cdk-development/SKILL.md",
+        "commit_sha": "e48bf4c63b6a2a39dac29c03546a3df97b384d0f"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "cd",
+        "aws",
+        "cdk",
+        "development"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "aws-skills/aws-cost-operations",
+      "name": "aws-cost-operations",
+      "description": "This skill provides AWS cost optimization, monitoring, and operational best practices with integrated MCP servers for billing analysis, cost estimation, observability, and security assessment.",
+      "provider": "aws-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-16T06:55:43Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/zxkane/aws-skills",
+        "path": "plugins/aws-cost-ops/skills/aws-cost-operations",
+        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-cost-ops/skills/aws-cost-operations/SKILL.md",
+        "commit_sha": "e48bf4c63b6a2a39dac29c03546a3df97b384d0f"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "mcp",
+        "analysis",
+        "aws",
+        "cost",
+        "operations"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "aws-skills/aws-mcp-setup",
+      "name": "aws-mcp-setup",
+      "description": "Configure AWS Documentation MCP server to query up-to-date AWS knowledge, APIs, and best practices",
+      "provider": "aws-skills",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-16T06:55:43Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/zxkane/aws-skills",
+        "path": "plugins/aws-common/skills/aws-mcp-setup",
+        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-common/skills/aws-mcp-setup/SKILL.md",
+        "commit_sha": "e48bf4c63b6a2a39dac29c03546a3df97b384d0f"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "mcp",
+        "document",
+        "knowledge",
+        "aws",
+        "setup"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "aws-skills/aws-serverless-eda",
+      "name": "aws-serverless-eda",
+      "description": "AWS serverless and event-driven architecture expert based on Well-Architected Framework. Use when building serverless APIs, Lambda functions, REST APIs, microservices, or async workflows. Covers Lambda with TypeScript/Python, API Gateway (REST/HTTP), DynamoDB, Step Functions, EventBridge, SQS, SNS, and serverless patterns. Essential when user mentions serverless, Lambda, API Gateway, event-driven, async processing, queues, pub/sub, or wants to build scalable serverless applications with AWS best practices.",
+      "provider": "aws-skills",
+      "category": "integrations",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-16T06:55:43Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/zxkane/aws-skills",
+        "path": "plugins/serverless-eda/skills/aws-serverless-eda",
+        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/serverless-eda/skills/aws-serverless-eda/SKILL.md",
+        "commit_sha": "e48bf4c63b6a2a39dac29c03546a3df97b384d0f"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "aws",
+        "serverless",
+        "eda"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-code/code-execution",
+      "name": "code-execution",
+      "description": "Execute Python code locally with marketplace API access for 90%+ token savings on bulk operations. Activates when user requests bulk operations (10+ files), complex multi-step workflows, iterative processing, or mentions efficiency/performance.",
+      "provider": "claude-marketplace-code",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T19:39:06Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "code-operations-plugin/skills/code-execution",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/code-operations-plugin/skills/code-execution/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "api",
+        "code",
+        "execution"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-code/code-refactor",
+      "name": "code-refactor",
+      "description": "Perform bulk code refactoring operations like renaming variables/functions across files, replacing patterns, and updating API calls. Use when users request renaming identifiers, replacing deprecated code patterns, updating method calls, or making consistent changes across multiple locations.",
+      "provider": "claude-marketplace-code",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "code-operations-plugin/skills/code-refactor",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/code-operations-plugin/skills/code-refactor/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "api",
+        "code",
+        "refactor"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-code/code-transfer",
+      "name": "code-transfer",
+      "description": "Transfer code between files with line-based precision. Use when users request copying code from one location to another, moving functions or classes between files, extracting code blocks, or inserting code at specific line numbers.",
+      "provider": "claude-marketplace-code",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "code-operations-plugin/skills/code-transfer",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/code-operations-plugin/skills/code-transfer/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "extract",
+        "code",
+        "transfer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-code/file-operations",
+      "name": "file-operations",
+      "description": "Analyze files and get detailed metadata including size, line counts, modification times, and content statistics. Use when users request file information, statistics, or analysis without modifying files.",
+      "provider": "claude-marketplace-code",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "code-operations-plugin/skills/file-operations",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/code-operations-plugin/skills/file-operations/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "analysis",
+        "file",
+        "operations"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-engineering/ensemble-solving",
+      "name": "ensemble-solving",
+      "description": "Generate multiple diverse solutions in parallel and select the best. Use for architecture decisions, code generation with multiple valid approaches, or creative tasks where exploring alternatives improves quality.",
+      "provider": "claude-marketplace-engineering",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-14T20:17:30Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "engineering-workflow-plugin/skills/ensemble-solving",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/engineering-workflow-plugin/skills/ensemble-solving/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "ensemble",
+        "solving"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-engineering/feature-planning",
+      "name": "feature-planning",
+      "description": "Break down feature requests into detailed, implementable plans with clear tasks. Use when user requests a new feature, enhancement, or complex change.",
+      "provider": "claude-marketplace-engineering",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "engineering-workflow-plugin/skills/feature-planning",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/engineering-workflow-plugin/skills/feature-planning/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "feature",
+        "planning"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-engineering/git-pushing",
+      "name": "git-pushing",
+      "description": "Stage, commit, and push git changes with conventional commit messages. Use when user wants to commit and push changes, mentions pushing to remote, or asks to save and push their work. Also activates when user says \"push changes\", \"commit and push\", \"push this\", \"push to github\", or similar git workflow requests.",
+      "provider": "claude-marketplace-engineering",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "engineering-workflow-plugin/skills/git-pushing",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/engineering-workflow-plugin/skills/git-pushing/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "github",
+        "git",
+        "pushing"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-engineering/review-implementing",
+      "name": "review-implementing",
+      "description": "Process and implement code review feedback systematically. Use when user provides reviewer comments, PR feedback, code review notes, or asks to implement suggestions from reviews.",
+      "provider": "claude-marketplace-engineering",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "engineering-workflow-plugin/skills/review-implementing",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/engineering-workflow-plugin/skills/review-implementing/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "review",
+        "implementing"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-engineering/test-fixing",
+      "name": "test-fixing",
+      "description": "Run tests and systematically fix all failing tests using smart error grouping. Use when user asks to fix failing tests, mentions test failures, runs test suite and failures occur, or requests to make tests pass.",
+      "provider": "claude-marketplace-engineering",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "engineering-workflow-plugin/skills/test-fixing",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/engineering-workflow-plugin/skills/test-fixing/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "test",
+        "art",
+        "fixing"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-productivity/code-auditor",
+      "name": "code-auditor",
+      "description": "Performs comprehensive codebase analysis covering architecture, code quality, security, performance, testing, and maintainability. Use when user wants to audit code quality, identify technical debt, find security issues, assess test coverage, or get a codebase health check.",
+      "provider": "claude-marketplace-productivity",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "productivity-skills-plugin/skills/code-auditor",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/productivity-skills-plugin/skills/code-auditor/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "test",
+        "analysis",
+        "code",
+        "auditor"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-productivity/codebase-documenter",
+      "name": "codebase-documenter",
+      "description": "Generates comprehensive documentation explaining how a codebase works, including architecture, key components, data flow, and development guidelines. Use when user wants to understand unfamiliar code, create onboarding docs, document architecture, or explain how the system works.",
+      "provider": "claude-marketplace-productivity",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "productivity-skills-plugin/skills/codebase-documenter",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/productivity-skills-plugin/skills/codebase-documenter/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "document",
+        "codebase",
+        "documenter"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-productivity/conversation-analyzer",
+      "name": "conversation-analyzer",
+      "description": "Analyzes your Claude Code conversation history to identify patterns, common mistakes, and opportunities for workflow improvement. Use when user wants to understand usage patterns, optimize workflow, identify automation opportunities, or check if they're following best practices.",
+      "provider": "claude-marketplace-productivity",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "productivity-skills-plugin/skills/conversation-analyzer",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/productivity-skills-plugin/skills/conversation-analyzer/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "conversation",
+        "analyzer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-productivity/project-bootstrapper",
+      "name": "project-bootstrapper",
+      "description": "Sets up new projects or improves existing projects with development best practices, tooling, documentation, and workflow automation. Use when user wants to start a new project, improve project structure, add development tooling, or establish professional workflows.",
+      "provider": "claude-marketplace-productivity",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "productivity-skills-plugin/skills/project-bootstrapper",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/productivity-skills-plugin/skills/project-bootstrapper/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "art",
+        "document",
+        "project",
+        "bootstrapper"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-visual/architecture-diagram-creator",
+      "name": "architecture-diagram-creator",
+      "description": "Create comprehensive HTML architecture diagrams showing data flows, business objectives, features, technical architecture, and deployment. Use when users request system architecture, project documentation, high-level overviews, or technical specifications.",
+      "provider": "claude-marketplace-visual",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "visual-documentation-plugin/skills/architecture-diagram-creator",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/visual-documentation-plugin/skills/architecture-diagram-creator/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "ci",
+        "document",
+        "architecture",
+        "diagram",
+        "creator"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-visual/dashboard-creator",
+      "name": "dashboard-creator",
+      "description": "Create HTML dashboards with KPI metric cards, bar/pie/line charts, progress indicators, and data visualizations. Use when users request dashboards, metrics displays, KPI visualizations, data charts, or monitoring interfaces.",
+      "provider": "claude-marketplace-visual",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "visual-documentation-plugin/skills/dashboard-creator",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/visual-documentation-plugin/skills/dashboard-creator/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "art",
+        "visual",
+        "dashboard",
+        "creator"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-visual/flowchart-creator",
+      "name": "flowchart-creator",
+      "description": "Create HTML flowcharts and process diagrams with decision trees, color-coded stages, arrows, and swimlanes. Use when users request flowcharts, process diagrams, workflow visualizations, or decision trees.",
+      "provider": "claude-marketplace-visual",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "visual-documentation-plugin/skills/flowchart-creator",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/visual-documentation-plugin/skills/flowchart-creator/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "ci",
+        "art",
+        "visual",
+        "flowchart",
+        "creator"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-visual/technical-doc-creator",
+      "name": "technical-doc-creator",
+      "description": "Create HTML technical documentation with code blocks, API workflows, system architecture diagrams, and syntax highlighting. Use when users request technical documentation, API docs, API references, code examples, or developer documentation.",
+      "provider": "claude-marketplace-visual",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "visual-documentation-plugin/skills/technical-doc-creator",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/visual-documentation-plugin/skills/technical-doc-creator/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "api",
+        "document",
+        "technical",
+        "doc",
+        "creator"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "claude-marketplace-visual/timeline-creator",
+      "name": "timeline-creator",
+      "description": "Create HTML timelines and project roadmaps with Gantt charts, milestones, phase groupings, and progress indicators. Use when users request timelines, roadmaps, Gantt charts, project schedules, or milestone visualizations.",
+      "provider": "claude-marketplace-visual",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-10T13:41:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "path": "visual-documentation-plugin/skills/timeline-creator",
+        "skill_md_url": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main/visual-documentation-plugin/skills/timeline-creator/SKILL.md",
+        "commit_sha": "004b0ece6e4b207a18c81d9e641eb2c29521a258"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "art",
+        "visual",
+        "timeline",
+        "creator"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "csv-summarizer-skill/csv-data-summarizer",
+      "name": "csv-data-summarizer",
+      "description": "Analyzes CSV files, generates summary stats, and plots quick visualizations using Python and pandas.",
+      "provider": "csv-summarizer-skill",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-10-16T20:05:34Z",
+      "metadata": {
+        "version": "2.1.0",
+        "dependencies": "python>=3.8, pandas>=2.0.0, matplotlib>=3.7.0, seaborn>=0.12.0"
+      },
+      "source": {
+        "repo": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill",
+        "path": "",
+        "skill_md_url": "https://raw.githubusercontent.com/coffeefuelbump/csv-data-summarizer-claude-skill/main/SKILL.md",
+        "commit_sha": "9b3affd270f85aaf1c8a7a457f510034d5736cde"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "csv",
+        "visual",
+        "data",
+        "summarizer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "d3js-skill/d3-viz",
+      "name": "d3-viz",
+      "description": "Creating interactive data visualisations using d3.js. This skill should be used when creating custom charts, graphs, network diagrams, geographic visualisations, or any complex SVG-based data visualisation that requires fine-grained control over visual elements, transitions, or interactions. Use this for bespoke visualisations beyond standard charting libraries, whether in React, Vue, Svelte, vanilla JavaScript, or any other environment.",
+      "provider": "d3js-skill",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-10-18T02:22:25Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+        "path": "",
+        "skill_md_url": "https://raw.githubusercontent.com/chrisvoncsefalvay/claude-d3js-skill/main/SKILL.md",
+        "commit_sha": "e198c87d03f1c9811acbff681886fac24baee53d"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "art",
+        "visual",
+        "viz"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "epub-skill/markdown-to-epub-converter",
+      "name": "markdown-to-epub-converter",
+      "description": "Convert markdown documents and chat summaries into formatted EPUB ebook files that can be read on any device or uploaded to Kindle.",
+      "provider": "epub-skill",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-10-17T03:51:02Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/smerchek/claude-epub-skill",
+        "path": "markdown-to-epub",
+        "skill_md_url": "https://raw.githubusercontent.com/smerchek/claude-epub-skill/main/markdown-to-epub/SKILL.md",
+        "commit_sha": "7c0723087b9f6ec2352b42b73f61d224b542e059"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "document",
+        "convert",
+        "markdown",
+        "epub",
+        "converter"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "family-history-skill/family-history-planning",
+      "name": "family-history-planning",
+      "description": "Provides assistance with planning family history and genealogy research projects.",
+      "provider": "family-history-skill",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-06T02:04:46Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/emaynard/claude-family-history-research-skill",
+        "path": "",
+        "skill_md_url": "https://raw.githubusercontent.com/emaynard/claude-family-history-research-skill/main/SKILL.md",
+        "commit_sha": "7334d3d400740fda3de1c54c90e186307f8f1176"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "family",
+        "history",
+        "planning"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "ffuf-skill/ffuf-web-fuzzing",
+      "name": "ffuf-web-fuzzing",
+      "description": "Expert guidance for ffuf web fuzzing during penetration testing, including authenticated fuzzing with raw requests, auto-calibration, and result analysis",
+      "provider": "ffuf-skill",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-10-16T19:35:05Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/jthack/ffuf_claude_skill",
+        "path": "ffuf-skill",
+        "skill_md_url": "https://raw.githubusercontent.com/jthack/ffuf_claude_skill/main/ffuf-skill/SKILL.md",
+        "commit_sha": "50fd4af4d8bd60cfc48fd84eda1720fbd718857d"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "test",
+        "analysis",
+        "ffuf",
+        "web",
+        "fuzzing"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
     },
     {
       "id": "github/agentic-eval",
@@ -1595,7 +2589,7 @@
       "category": "data",
       "license": "Complete terms in LICENSE.txt",
       "compatibility": null,
-      "last_updated_at": "2026-01-12T15:26:31Z",
+      "last_updated_at": null,
       "metadata": {},
       "source": {
         "repo": "https://github.com/huggingface/skills",
@@ -1711,6 +2705,508 @@
         "hugging",
         "face",
         "trackio"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "ios-simulator-skill/ios-simulator-skill",
+      "name": "ios-simulator-skill",
+      "description": "21 production-ready scripts for iOS app testing, building, and automation. Provides semantic UI navigation, build automation, accessibility testing, and simulator lifecycle management. Optimized for AI agents with minimal token output.",
+      "provider": "ios-simulator-skill",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-10T10:28:14Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/conorluddy/ios-simulator-skill",
+        "path": "ios-simulator-skill",
+        "skill_md_url": "https://raw.githubusercontent.com/conorluddy/ios-simulator-skill/main/ios-simulator-skill/SKILL.md",
+        "commit_sha": "1b7708b305570760a2bcaec8f0e9c88ec2a506e0"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "test",
+        "ios",
+        "simulator",
+        "skill"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "move-quality-skill/move-code-quality",
+      "name": "move-code-quality",
+      "description": "Analyzes Move language packages against the official Move Book Code Quality Checklist. Use this skill when reviewing Move code, checking Move 2024 Edition compliance, or analyzing Move packages for best practices. Activates automatically when working with .move files or Move.toml manifests.",
+      "provider": "move-quality-skill",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-10-21T21:18:59Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/1NickPappas/move-code-quality-skill",
+        "path": "",
+        "skill_md_url": "https://raw.githubusercontent.com/1NickPappas/move-code-quality-skill/main/SKILL.md",
+        "commit_sha": "6813ac55cb3bfcaa35c349da7dd5f9eae745009d"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "move",
+        "code",
+        "quality"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "notebooklm-skill/notebooklm",
+      "name": "notebooklm",
+      "description": "Use this skill to query your Google NotebookLM notebooks directly from Claude Code for source-grounded, citation-backed answers from Gemini. Browser automation, library management, persistent auth. Drastically reduced hallucinations through document-only responses.",
+      "provider": "notebooklm-skill",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/PleasePrompto/notebooklm-skill",
+        "path": "",
+        "skill_md_url": "https://raw.githubusercontent.com/PleasePrompto/notebooklm-skill/master/SKILL.md",
+        "commit_sha": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "document",
+        "notebooklm"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/brainstorming",
+      "name": "brainstorming",
+      "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
+      "provider": "obra-superpowers",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-17T21:10:01Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/brainstorming",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/brainstorming/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "design",
+        "brainstorming"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/dispatching-parallel-agents",
+      "name": "dispatching-parallel-agents",
+      "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
+      "provider": "obra-superpowers",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-12T04:41:15Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/dispatching-parallel-agents",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/dispatching-parallel-agents/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "dispatching",
+        "parallel",
+        "agents"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/executing-plans",
+      "name": "executing-plans",
+      "description": "Use when you have a written implementation plan to execute in a separate session with review checkpoints",
+      "provider": "obra-superpowers",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-12T04:41:15Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/executing-plans",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/executing-plans/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "executing",
+        "plans"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/finishing-a-development-branch",
+      "name": "finishing-a-development-branch",
+      "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup",
+      "provider": "obra-superpowers",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-10-17T17:18:50Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/finishing-a-development-branch",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/finishing-a-development-branch/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "test",
+        "merge",
+        "finishing",
+        "development",
+        "branch"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/receiving-code-review",
+      "name": "receiving-code-review",
+      "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+      "provider": "obra-superpowers",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-23T22:00:01Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/receiving-code-review",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/receiving-code-review/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "receiving",
+        "code",
+        "review"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/requesting-code-review",
+      "name": "requesting-code-review",
+      "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+      "provider": "obra-superpowers",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-12T04:41:15Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/requesting-code-review",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/requesting-code-review/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "requesting",
+        "code",
+        "review"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/subagent-driven-development",
+      "name": "subagent-driven-development",
+      "description": "Use when executing implementation plans with independent tasks in the current session",
+      "provider": "obra-superpowers",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-12T04:03:39Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/subagent-driven-development",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/subagent-driven-development/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "subagent",
+        "driven",
+        "development"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/systematic-debugging",
+      "name": "systematic-debugging",
+      "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
+      "provider": "obra-superpowers",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-12T04:41:15Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/systematic-debugging",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/systematic-debugging/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "test",
+        "systematic",
+        "debugging"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/test-driven-development",
+      "name": "test-driven-development",
+      "description": "Use when implementing any feature or bugfix, before writing implementation code",
+      "provider": "obra-superpowers",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-12T04:41:15Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/test-driven-development",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/test-driven-development/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "test",
+        "driven",
+        "development"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/using-git-worktrees",
+      "name": "using-git-worktrees",
+      "description": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - creates isolated git worktrees with smart directory selection and safety verification",
+      "provider": "obra-superpowers",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-23T19:26:33Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/using-git-worktrees",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/using-git-worktrees/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "git",
+        "art",
+        "using",
+        "worktrees"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/using-superpowers",
+      "name": "using-superpowers",
+      "description": "Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions",
+      "provider": "obra-superpowers",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-27T04:41:22Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/using-superpowers",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/using-superpowers/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "art",
+        "using",
+        "superpowers"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/verification-before-completion",
+      "name": "verification-before-completion",
+      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+      "provider": "obra-superpowers",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-10-17T16:40:36Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/verification-before-completion",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/verification-before-completion/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "verification",
+        "before",
+        "completion"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/writing-plans",
+      "name": "writing-plans",
+      "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
+      "provider": "obra-superpowers",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-12T04:41:15Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/writing-plans",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-plans/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "writing",
+        "plans"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "obra-superpowers/writing-skills",
+      "name": "writing-skills",
+      "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
+      "provider": "obra-superpowers",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-24T05:49:04Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/obra/superpowers",
+        "path": "skills/writing-skills",
+        "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-skills/SKILL.md",
+        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "writing",
+        "skills"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -2114,6 +3610,396 @@
         "pr",
         "skill",
         "installer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "playwright-skill/playwright-skill",
+      "name": "playwright-skill",
+      "description": "Complete browser automation with Playwright. Auto-detects dev servers, writes clean test scripts to /tmp. Test pages, fill forms, take screenshots, check responsive design, validate UX, test login flows, check links, automate any browser task. Use when user wants to test websites, automate browser interactions, validate web functionality, or perform any browser-based testing.",
+      "provider": "playwright-skill",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-19T16:23:34Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/lackeyjb/playwright-skill",
+        "path": "skills/playwright-skill",
+        "skill_md_url": "https://raw.githubusercontent.com/lackeyjb/playwright-skill/main/skills/playwright-skill/SKILL.md",
+        "commit_sha": "bb7e920d376022958214e349ef25498a2644e189"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "test",
+        "design",
+        "playwright",
+        "skill"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "sanjay-ai-skills/deep-research",
+      "name": "deep-research",
+      "description": "Execute autonomous multi-step research using Google Gemini Deep Research Agent. Use for: market analysis, competitive landscaping, literature reviews, technical research, due diligence. Takes 2-10 minutes but produces detailed, cited reports. Costs $2-5 per task.",
+      "provider": "sanjay-ai-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-12T17:12:31Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "path": "skills/deep-research",
+        "skill_md_url": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/deep-research/SKILL.md",
+        "commit_sha": "6b0da0bd9d7e0b3cd24707413823df0e542f39c8"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "api",
+        "analysis",
+        "deep",
+        "research"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "sanjay-ai-skills/gmail",
+      "name": "gmail",
+      "description": "Interact with Gmail - search emails, read messages, send emails, create drafts, and manage labels.\nUse when user asks to: search email, read email, send email, create email draft, mark as read,\narchive email, star email, or manage Gmail labels. Lightweight alternative to full Google\nWorkspace MCP server with standalone OAuth authentication.",
+      "provider": "sanjay-ai-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-20T17:37:25Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "path": "skills/gmail",
+        "skill_md_url": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/gmail/SKILL.md",
+        "commit_sha": "6b0da0bd9d7e0b3cd24707413823df0e542f39c8"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "mcp",
+        "email",
+        "gmail"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "sanjay-ai-skills/google-calendar",
+      "name": "google-calendar",
+      "description": "Interact with Google Calendar - list calendars, view events, create/update/delete events, and find free time.\nUse when user asks to: check calendar, schedule a meeting, create an event, find available time, list upcoming events,\ndelete or update a calendar event, or respond to meeting invitations. Lightweight alternative to full\nGoogle Workspace MCP server with standalone OAuth authentication.",
+      "provider": "sanjay-ai-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-20T17:37:25Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "path": "skills/google-calendar",
+        "skill_md_url": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-calendar/SKILL.md",
+        "commit_sha": "6b0da0bd9d7e0b3cd24707413823df0e542f39c8"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "mcp",
+        "meeting",
+        "google",
+        "calendar"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "sanjay-ai-skills/google-chat",
+      "name": "google-chat",
+      "description": "Interact with Google Chat - list spaces, send messages, read conversations, and manage DMs.\nUse when user asks to: send a message on Google Chat, read chat messages, list chat spaces,\nfind a chat room, send a DM, or create a new chat space. Lightweight alternative to full\nGoogle Workspace MCP server with standalone OAuth authentication.",
+      "provider": "sanjay-ai-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-20T17:37:25Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "path": "skills/google-chat",
+        "skill_md_url": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-chat/SKILL.md",
+        "commit_sha": "6b0da0bd9d7e0b3cd24707413823df0e542f39c8"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "mcp",
+        "google",
+        "chat"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "sanjay-ai-skills/google-docs",
+      "name": "google-docs",
+      "description": "Interact with Google Docs - create documents, search by title, read content, and edit text.\nUse when user asks to: create a Google Doc, find a document, read doc content, add text to a doc,\nor replace text in a document. Lightweight alternative to full Google Workspace MCP server with\nstandalone OAuth authentication.",
+      "provider": "sanjay-ai-skills",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-20T17:37:25Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "path": "skills/google-docs",
+        "skill_md_url": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-docs/SKILL.md",
+        "commit_sha": "6b0da0bd9d7e0b3cd24707413823df0e542f39c8"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "mcp",
+        "document",
+        "google",
+        "docs"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "sanjay-ai-skills/google-drive",
+      "name": "google-drive",
+      "description": "Interact with Google Drive - search files, find folders, list contents, and download files.\nUse when user asks to: search Google Drive, find a file/folder, list Drive contents,\ndownload a file from Drive, or browse Drive folders. Lightweight alternative to full\nGoogle Workspace MCP server with standalone OAuth authentication.",
+      "provider": "sanjay-ai-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-20T17:37:25Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "path": "skills/google-drive",
+        "skill_md_url": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-drive/SKILL.md",
+        "commit_sha": "6b0da0bd9d7e0b3cd24707413823df0e542f39c8"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "mcp",
+        "google",
+        "drive"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "sanjay-ai-skills/google-sheets",
+      "name": "google-sheets",
+      "description": "Read Google Sheets spreadsheets - get content, fetch specific ranges, search for spreadsheets, and view metadata.\nUse when user asks to: read a spreadsheet, get data from Google Sheets, find a spreadsheet, check sheet contents,\nexport spreadsheet data, or get cell values. Lightweight alternative to full Google Workspace MCP server with\nstandalone OAuth authentication. Read-only access.",
+      "provider": "sanjay-ai-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-20T17:37:25Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "path": "skills/google-sheets",
+        "skill_md_url": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-sheets/SKILL.md",
+        "commit_sha": "6b0da0bd9d7e0b3cd24707413823df0e542f39c8"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "mcp",
+        "google",
+        "sheets"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "sanjay-ai-skills/google-slides",
+      "name": "google-slides",
+      "description": "Read content from Google Slides presentations - get text, find presentations, and retrieve metadata.\nUse when user asks to: read a presentation, find slides, get presentation content, search for a slideshow,\nor check presentation details. Lightweight alternative to full Google Workspace MCP server with standalone\nOAuth authentication. Read-only operations only.",
+      "provider": "sanjay-ai-skills",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-20T17:37:25Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "path": "skills/google-slides",
+        "skill_md_url": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-slides/SKILL.md",
+        "commit_sha": "6b0da0bd9d7e0b3cd24707413823df0e542f39c8"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "mcp",
+        "google",
+        "slides"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "sanjay-ai-skills/imagen",
+      "name": "imagen",
+      "description": "Generate images using Google Gemini's image generation capabilities.\nUse this skill when the user needs to create, generate, or produce images\nfor any purpose including UI mockups, icons, illustrations, diagrams,\nconcept art, placeholder images, or visual representations.",
+      "provider": "sanjay-ai-skills",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "path": "skills/imagen",
+        "skill_md_url": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/imagen/SKILL.md",
+        "commit_sha": "6b0da0bd9d7e0b3cd24707413823df0e542f39c8"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "art",
+        "visual",
+        "imagen"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "sanjay-ai-skills/jules",
+      "name": "jules",
+      "description": "Delegate coding tasks to Google Jules AI agent for asynchronous execution. Use when user says: 'have Jules fix', 'delegate to Jules', 'send to Jules', 'ask Jules to', 'check Jules sessions', 'pull Jules results', 'jules add tests', 'jules add docs', 'jules review pr'. Handles: bug fixes, documentation, features, tests, refactoring, code reviews. Works with GitHub repos, creates PRs.",
+      "provider": "sanjay-ai-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-24T23:46:31Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "path": "skills/jules",
+        "skill_md_url": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/jules/SKILL.md",
+        "commit_sha": "6b0da0bd9d7e0b3cd24707413823df0e542f39c8"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "github",
+        "git",
+        "pr",
+        "test",
+        "document",
+        "jules"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "sanjay-ai-skills/outline",
+      "name": "outline",
+      "description": "Search, read, and manage Outline wiki documents. Use when: (1) searching wiki for documentation, (2) reading wiki pages or articles, (3) listing wiki collections or documents, (4) creating or updating wiki content, (5) exporting documents as markdown. Works with any Outline wiki instance (self-hosted or cloud).",
+      "provider": "sanjay-ai-skills",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-20T14:46:31Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "path": "skills/outline",
+        "skill_md_url": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/outline/SKILL.md",
+        "commit_sha": "6b0da0bd9d7e0b3cd24707413823df0e542f39c8"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "art",
+        "document",
+        "wiki",
+        "outline"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "sanjay-ai-skills/postgres",
+      "name": "postgres",
+      "description": "Execute read-only SQL queries against multiple PostgreSQL databases. Use when: (1) querying PostgreSQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
+      "provider": "sanjay-ai-skills",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-22T18:51:28Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "path": "skills/postgres",
+        "skill_md_url": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/postgres/SKILL.md",
+        "commit_sha": "6b0da0bd9d7e0b3cd24707413823df0e542f39c8"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "analysis",
+        "postgres"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -2930,7 +4816,7 @@
       "category": "other",
       "license": "MIT",
       "compatibility": null,
-      "last_updated_at": "2025-12-17T20:29:57Z",
+      "last_updated_at": null,
       "metadata": {},
       "source": {
         "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
@@ -3654,6 +5540,126 @@
       ]
     },
     {
+      "id": "tapestry/article-extractor",
+      "name": "article-extractor",
+      "description": "Extract clean article content from URLs (blog posts, articles, tutorials) and save as readable text. Use when user wants to download, extract, or save an article/blog post from a URL without ads, navigation, or clutter.",
+      "provider": "tapestry",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-10-24T09:42:32Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
+        "path": "article-extractor",
+        "skill_md_url": "https://raw.githubusercontent.com/michalparkola/tapestry-skills-for-claude-code/main/article-extractor/SKILL.md",
+        "commit_sha": "b134509a6f2f80b4adbfe9c71f2a23ac3bc6ab10"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "art",
+        "extract",
+        "article",
+        "extractor"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "tapestry/ship-learn-next",
+      "name": "ship-learn-next",
+      "description": "Transform learning content (like YouTube transcripts, articles, tutorials) into actionable implementation plans using the Ship-Learn-Next framework. Use when user wants to turn advice, lessons, or educational content into concrete action steps, reps, or a learning quest.",
+      "provider": "tapestry",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-10-24T09:44:30Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
+        "path": "ship-learn-next",
+        "skill_md_url": "https://raw.githubusercontent.com/michalparkola/tapestry-skills-for-claude-code/main/ship-learn-next/SKILL.md",
+        "commit_sha": "b134509a6f2f80b4adbfe9c71f2a23ac3bc6ab10"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "art",
+        "ship",
+        "learn",
+        "next"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "tapestry/tapestry",
+      "name": "tapestry",
+      "description": "Unified content extraction and action planning. Use when user says \"tapestry <URL>\", \"weave <URL>\", \"help me plan <URL>\", \"extract and plan <URL>\", \"make this actionable <URL>\", or similar phrases indicating they want to extract content and create an action plan. Automatically detects content type (YouTube video, article, PDF) and processes accordingly.",
+      "provider": "tapestry",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-10-24T09:44:05Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
+        "path": "tapestry",
+        "skill_md_url": "https://raw.githubusercontent.com/michalparkola/tapestry-skills-for-claude-code/main/tapestry/SKILL.md",
+        "commit_sha": "b134509a6f2f80b4adbfe9c71f2a23ac3bc6ab10"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pdf",
+        "pr",
+        "art",
+        "extract",
+        "tapestry"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "tapestry/youtube-transcript",
+      "name": "youtube-transcript",
+      "description": "Download YouTube video transcripts when user provides a YouTube URL or asks to download/get/fetch a transcript from YouTube. Also use when user wants to transcribe or get captions/subtitles from a YouTube video.",
+      "provider": "tapestry",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-10-24T09:44:18Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
+        "path": "youtube-transcript",
+        "skill_md_url": "https://raw.githubusercontent.com/michalparkola/tapestry-skills-for-claude-code/main/youtube-transcript/SKILL.md",
+        "commit_sha": "b134509a6f2f80b4adbfe9c71f2a23ac3bc6ab10"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "youtube",
+        "transcript"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
       "id": "vercel/vercel-deploy",
       "name": "vercel-deploy",
       "description": "Deploy applications and websites to Vercel. Use this skill when the user requests deployment actions such as \"Deploy my app\", \"Deploy this to production\", \"Create a preview deployment\", \"Deploy and give me the link\", or \"Push this live\". No authentication required - returns preview URL and claimable deployment link.",
@@ -3734,7 +5740,7 @@
       "category": "development",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-16T23:47:11Z",
+      "last_updated_at": null,
       "metadata": {
         "author": "vercel",
         "version": "1.0.0",

@@ -45,6 +45,15 @@
             "type": "integer",
             "minimum": 0,
             "description": "Number of skills from this provider"
+          },
+          "stars": {
+            "type": ["integer", "null"],
+            "minimum": 0,
+            "description": "GitHub repository star count"
+          },
+          "description": {
+            "type": ["string", "null"],
+            "description": "GitHub repository description"
           }
         }
       }

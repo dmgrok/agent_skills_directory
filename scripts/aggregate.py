@@ -75,6 +75,135 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/skillcreatorai/Ai-Agent-Skills/main",
         "skills_path_prefix": "skills/",
     },
+    # Community providers discovered from awesome-llm-skills README
+    "obra-superpowers": {
+        "name": "Obra Superpowers",
+        "repo": "https://github.com/obra/superpowers",
+        "api_tree_url": "https://api.github.com/repos/obra/superpowers/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/obra/superpowers/main",
+        "skills_path_prefix": "skills/",
+    },
+    "tapestry": {
+        "name": "Tapestry Skills",
+        "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
+        "api_tree_url": "https://api.github.com/repos/michalparkola/tapestry-skills-for-claude-code/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/michalparkola/tapestry-skills-for-claude-code/main",
+        "skills_path_prefix": "",
+    },
+    "sanjay-ai-skills": {
+        "name": "Sanjay AI Skills",
+        "repo": "https://github.com/sanjay3290/ai-skills",
+        "api_tree_url": "https://api.github.com/repos/sanjay3290/ai-skills/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/sanjay3290/ai-skills/main",
+        "skills_path_prefix": "skills/",
+    },
+    "aws-skills": {
+        "name": "AWS Skills",
+        "repo": "https://github.com/zxkane/aws-skills",
+        "api_tree_url": "https://api.github.com/repos/zxkane/aws-skills/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/zxkane/aws-skills/main",
+        "skills_path_prefix": "plugins/",
+    },
+    # Claude Skills Marketplace - split by plugin category
+    "claude-marketplace-engineering": {
+        "name": "Claude Marketplace (Engineering)",
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "api_tree_url": "https://api.github.com/repos/mhattingpete/claude-skills-marketplace/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main",
+        "skills_path_prefix": "engineering-workflow-plugin/skills/",
+    },
+    "claude-marketplace-visual": {
+        "name": "Claude Marketplace (Visual)",
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "api_tree_url": "https://api.github.com/repos/mhattingpete/claude-skills-marketplace/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main",
+        "skills_path_prefix": "visual-documentation-plugin/skills/",
+    },
+    "claude-marketplace-code": {
+        "name": "Claude Marketplace (Code Ops)",
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "api_tree_url": "https://api.github.com/repos/mhattingpete/claude-skills-marketplace/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main",
+        "skills_path_prefix": "code-operations-plugin/skills/",
+    },
+    "claude-marketplace-productivity": {
+        "name": "Claude Marketplace (Productivity)",
+        "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+        "api_tree_url": "https://api.github.com/repos/mhattingpete/claude-skills-marketplace/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/mhattingpete/claude-skills-marketplace/main",
+        "skills_path_prefix": "productivity-skills-plugin/skills/",
+    },
+    # Single-skill community repos
+    "epub-skill": {
+        "name": "EPUB Converter",
+        "repo": "https://github.com/smerchek/claude-epub-skill",
+        "api_tree_url": "https://api.github.com/repos/smerchek/claude-epub-skill/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/smerchek/claude-epub-skill/main",
+        "skills_path_prefix": "",
+    },
+    "d3js-skill": {
+        "name": "D3.js Visualization",
+        "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+        "api_tree_url": "https://api.github.com/repos/chrisvoncsefalvay/claude-d3js-skill/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/chrisvoncsefalvay/claude-d3js-skill/main",
+        "skills_path_prefix": "",
+    },
+    "ffuf-skill": {
+        "name": "FFUF Web Fuzzing",
+        "repo": "https://github.com/jthack/ffuf_claude_skill",
+        "api_tree_url": "https://api.github.com/repos/jthack/ffuf_claude_skill/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/jthack/ffuf_claude_skill/main",
+        "skills_path_prefix": "",
+    },
+    "ios-simulator-skill": {
+        "name": "iOS Simulator",
+        "repo": "https://github.com/conorluddy/ios-simulator-skill",
+        "api_tree_url": "https://api.github.com/repos/conorluddy/ios-simulator-skill/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/conorluddy/ios-simulator-skill/main",
+        "skills_path_prefix": "ios-simulator-skill/",
+    },
+    "move-quality-skill": {
+        "name": "Move Code Quality",
+        "repo": "https://github.com/1NickPappas/move-code-quality-skill",
+        "api_tree_url": "https://api.github.com/repos/1NickPappas/move-code-quality-skill/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/1NickPappas/move-code-quality-skill/main",
+        "skills_path_prefix": "",
+    },
+    "playwright-skill": {
+        "name": "Playwright Automation",
+        "repo": "https://github.com/lackeyjb/playwright-skill",
+        "api_tree_url": "https://api.github.com/repos/lackeyjb/playwright-skill/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/lackeyjb/playwright-skill/main",
+        "skills_path_prefix": "skills/",
+    },
+    "pypict-skill": {
+        "name": "PICT Test Cases",
+        "repo": "https://github.com/omkamal/pypict-claude-skill",
+        "api_tree_url": "https://api.github.com/repos/omkamal/pypict-claude-skill/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/omkamal/pypict-claude-skill/main",
+        "skills_path_prefix": "",
+    },
+    "csv-summarizer-skill": {
+        "name": "CSV Data Summarizer",
+        "repo": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill",
+        "api_tree_url": "https://api.github.com/repos/coffeefuelbump/csv-data-summarizer-claude-skill/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/coffeefuelbump/csv-data-summarizer-claude-skill/main",
+        "skills_path_prefix": "",
+    },
+    "family-history-skill": {
+        "name": "Family History Research",
+        "repo": "https://github.com/emaynard/claude-family-history-research-skill",
+        "api_tree_url": "https://api.github.com/repos/emaynard/claude-family-history-research-skill/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/emaynard/claude-family-history-research-skill/main",
+        "skills_path_prefix": "",
+    },
+    "notebooklm-skill": {
+        "name": "NotebookLM Integration",
+        "repo": "https://github.com/PleasePrompto/notebooklm-skill",
+        "api_tree_url": "https://api.github.com/repos/PleasePrompto/notebooklm-skill/git/trees/master?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/PleasePrompto/notebooklm-skill/master",
+        "skills_path_prefix": "",
+    },
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -370,6 +499,34 @@ def extract_owner_repo(repo_url: str) -> Optional[tuple[str, str]]:
     return None
 
 
+def fetch_repo_stars(owner: str, repo: str) -> Optional[int]:
+    """Fetch the star count for a GitHub repository."""
+    api_url = f"https://api.github.com/repos/{owner}/{repo}"
+    content = fetch_url(api_url)
+    if not content:
+        return None
+
+    try:
+        repo_data = json.loads(content)
+        return repo_data.get("stargazers_count")
+    except json.JSONDecodeError:
+        return None
+
+
+def fetch_repo_description(owner: str, repo: str) -> Optional[str]:
+    """Fetch the description for a GitHub repository."""
+    api_url = f"https://api.github.com/repos/{owner}/{repo}"
+    content = fetch_url(api_url)
+    if not content:
+        return None
+
+    try:
+        repo_data = json.loads(content)
+        return repo_data.get("description")
+    except json.JSONDecodeError:
+        return None
+
+
 def fetch_last_updated_at(owner: str, repo: str, file_path: str) -> Optional[str]:
     """Fetch the last commit date for a specific file."""
     commits_url = (
@@ -433,11 +590,14 @@ def fetch_provider_skills(provider_id: str, config: dict) -> list:
         path = item.get("path", "")
         all_paths.add(path)
         
-        if path.startswith(config["skills_path_prefix"]) and path.endswith("/SKILL.md"):
+        # Match SKILL.md files under the skills_path_prefix
+        # Handle both "skills/name/SKILL.md" and root-level "SKILL.md" (when prefix is "")
+        prefix = config["skills_path_prefix"]
+        if path.startswith(prefix) and (path.endswith("/SKILL.md") or path == "SKILL.md"):
             skill_files.append({
                 "path": path,
                 "sha": item.get("sha"),
-                "dir": str(Path(path).parent)
+                "dir": str(Path(path).parent) if "/" in path else ""
             })
     
     print(f"  Found {len(skill_files)} skills")
@@ -503,13 +663,39 @@ def build_catalog() -> dict:
     all_skills = []
     provider_stats = {}
     
+    # Track unique repos to avoid duplicate API calls for stars
+    repo_cache: dict[str, dict] = {}  # repo_url -> {stars, description}
+    
     for provider_id, config in PROVIDERS.items():
         skills = fetch_provider_skills(provider_id, config)
         all_skills.extend(skills)
+        
+        # Fetch repo stats (stars, description) - cache by repo URL
+        repo_url = config["repo"]
+        if repo_url not in repo_cache:
+            owner_repo = extract_owner_repo(repo_url)
+            stars = None
+            description = None
+            if owner_repo:
+                # Fetch repo info in one call
+                api_url = f"https://api.github.com/repos/{owner_repo[0]}/{owner_repo[1]}"
+                content = fetch_url(api_url)
+                if content:
+                    try:
+                        repo_data = json.loads(content)
+                        stars = repo_data.get("stargazers_count")
+                        description = repo_data.get("description")
+                    except json.JSONDecodeError:
+                        pass
+            repo_cache[repo_url] = {"stars": stars, "description": description}
+        
+        cached = repo_cache[repo_url]
         provider_stats[provider_id] = {
             "name": config["name"],
             "repo": config["repo"],
-            "skills_count": len(skills)
+            "skills_count": len(skills),
+            "stars": cached["stars"],
+            "description": cached["description"]
         }
     
     # Deduplicate skills - annotate mirrors and probable duplicates

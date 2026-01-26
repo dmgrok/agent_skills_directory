@@ -346,6 +346,15 @@ main {
     color: #60a5fa;
 }
 
+.skill-stars {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
 .skill-description {
     color: var(--text-muted);
     font-size: 0.9rem;
