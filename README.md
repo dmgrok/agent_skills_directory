@@ -4,51 +4,56 @@ A centralized, automatically-updated catalog of [Agent Skills](https://agentskil
 
 > **🔄 Updated Daily** — A GitHub Action runs every day at 06:00 UTC to fetch the latest skills from all providers and update the catalog. You can always target `@main` for the latest or pin to a specific version.
 
+[![Skills](https://img.shields.io/badge/Skills-174-blue)](https://dmgrok.github.io/agent_skills_directory/)
+[![Providers](https://img.shields.io/badge/Providers-24-green)](https://dmgrok.github.io/agent_skills_directory/)
+[![Stars](https://img.shields.io/badge/Combined%20Stars-136K-yellow)](https://dmgrok.github.io/agent_skills_directory/)
+
 ## What is this?
 
 This repository aggregates skills from various providers into a single, standardized JSON catalog that can be consumed by MCP servers, AI agents, and developer tools.
+
+🌐 **[Browse Skills Online](https://dmgrok.github.io/agent_skills_directory/)** — Interactive catalog with search, filtering, and skill bundles.
 
 **Used by:** [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) — An MCP server that exposes these skills to AI agents.
 
 ## Providers
 
-We aggregate skills from **24 repositories** across official and community sources:
+We aggregate skills from **24 repositories** with a combined **136K+ GitHub stars**:
 
 ### Official Provider Repositories
 
-| Provider | Repository | Description |
-|----------|------------|-------------|
-| **Anthropic** | [anthropics/skills](https://github.com/anthropics/skills) | Official skills from Anthropic |
-| **OpenAI** | [openai/skills](https://github.com/openai/skills) | Skills for OpenAI Codex |
-| **GitHub** | [github/awesome-copilot](https://github.com/github/awesome-copilot) | Skills from GitHub Awesome Copilot |
-| **Vercel** | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | Skills from Vercel Labs |
-| **HuggingFace** | [huggingface/skills](https://github.com/huggingface/skills) | ML/AI skills from HuggingFace |
+| Provider | Repository | Skills | ⭐ Stars | Description |
+|----------|------------|:------:|:-------:|-------------|
+| **Anthropic** | [anthropics/skills](https://github.com/anthropics/skills) | 16 | 54K | Public repository for Agent Skills |
+| **Obra Superpowers** | [obra/superpowers](https://github.com/obra/superpowers) | 14 | 36K | Agentic skills framework & software development methodology |
+| **GitHub** | [github/awesome-copilot](https://github.com/github/awesome-copilot) | 26 | 19K | Community-contributed instructions, prompts, and configurations |
+| **Vercel** | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 3 | 17K | Skills from Vercel Labs |
+| **OpenAI** | [openai/skills](https://github.com/openai/skills) | 12 | 2K | Skills Catalog for Codex |
+| **HuggingFace** | [huggingface/skills](https://github.com/huggingface/skills) | 8 | 1K | ML/AI skills from HuggingFace |
 
 ### Community Multi-Skill Repositories
 
-| Provider | Repository | Description |
-|----------|------------|-------------|
-| **SkillCreator.ai** | [skillcreatorai/Ai-Agent-Skills](https://github.com/skillcreatorai/Ai-Agent-Skills) | Large collection of community skills |
-| **Obra Superpowers** | [obra/superpowers](https://github.com/obra/superpowers) | Development workflow skills (TDD, git worktrees, debugging) |
-| **Tapestry Skills** | [michalparkola/tapestry-skills-for-claude-code](https://github.com/michalparkola/tapestry-skills-for-claude-code) | Content extraction and knowledge skills |
-| **Sanjay AI Skills** | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) | Google Workspace and database skills |
-| **AWS Skills** | [zxkane/aws-skills](https://github.com/zxkane/aws-skills) | AWS CDK, cost optimization, serverless skills |
-| **Claude Marketplace** | [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | Engineering, visual docs, productivity skills |
+| Provider | Repository | Skills | ⭐ Stars | Description |
+|----------|------------|:------:|:-------:|-------------|
+| **NotebookLM** | [PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) | 1 | 2.7K | Google NotebookLM integration |
+| **Playwright** | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | 1 | 1.5K | Browser automation with Playwright |
+| **SkillCreator.ai** | [skillcreatorai/Ai-Agent-Skills](https://github.com/skillcreatorai/Ai-Agent-Skills) | 47 | 620 | Homebrew for AI Agent Skills |
+| **iOS Simulator** | [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) | 1 | 391 | iOS app testing and debugging |
+| **Claude Marketplace** | [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | 18 | 267 | Engineering, visual docs, productivity skills |
+| **Tapestry Skills** | [michalparkola/tapestry-skills-for-claude-code](https://github.com/michalparkola/tapestry-skills-for-claude-code) | 4 | 181 | Content extraction and knowledge skills |
+| **AWS Skills** | [zxkane/aws-skills](https://github.com/zxkane/aws-skills) | 5 | 101 | AWS CDK, cost optimization, serverless skills |
+| **Sanjay AI Skills** | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) | 12 | 41 | Google Workspace and database skills |
 
 ### Community Single-Skill Repositories
 
-| Provider | Repository | Description |
-|----------|------------|-------------|
-| **EPUB Converter** | [smerchek/claude-epub-skill](https://github.com/smerchek/claude-epub-skill) | Convert markdown to EPUB ebooks |
-| **D3.js Visualization** | [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | Create D3.js data visualizations |
-| **FFUF Web Fuzzing** | [jthack/ffuf_claude_skill](https://github.com/jthack/ffuf_claude_skill) | Security fuzzing with ffuf |
-| **iOS Simulator** | [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) | iOS app testing and debugging |
-| **Move Code Quality** | [1NickPappas/move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) | Move language (blockchain) code quality |
-| **Playwright Automation** | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | Browser automation testing |
-| **PICT Test Cases** | [omkamal/pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) | Pairwise combinatorial testing |
-| **CSV Summarizer** | [coffeefuelbump/csv-data-summarizer-claude-skill](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) | CSV data analysis and insights |
-| **Family History** | [emaynard/claude-family-history-research-skill](https://github.com/emaynard/claude-family-history-research-skill) | Genealogy research assistance |
-| **NotebookLM** | [PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) | Google NotebookLM integration |
+| Provider | Repository | ⭐ Stars | Description |
+|----------|------------|:-------:|-------------|
+| **CSV Summarizer** | [coffeefuelbump/csv-data-summarizer-claude-skill](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) | 192 | CSV data analysis and insights |
+| **FFUF Web Fuzzing** | [jthack/ffuf_claude_skill](https://github.com/jthack/ffuf_claude_skill) | 100 | Security fuzzing with ffuf |
+| **D3.js Visualization** | [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | 81 | Create D3.js data visualizations |
+| **EPUB Converter** | [smerchek/claude-epub-skill](https://github.com/smerchek/claude-epub-skill) | 55 | Convert markdown to EPUB ebooks |
+| **Family History** | [emaynard/claude-family-history-research-skill](https://github.com/emaynard/claude-family-history-research-skill) | 28 | Genealogy research assistance |
+| **Move Code Quality** | [1NickPappas/move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) | 10 | Move language (blockchain) code quality |
 
 ## Usage
 
@@ -80,7 +85,7 @@ skill_md = requests.get(skill["source"]["skill_md_url"]).text
 |----------|-----|
 | **Latest (CDN)** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json` |
 | **Latest (Raw)** | `https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/catalog.json` |
-| **Specific Version** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.08/catalog.json` |
+| **Specific Version** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.26/catalog.json` |
 | **Minified JSON** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.json` |
 | **TOON** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.toon` |
 | **TOON (minified JSON source)** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.toon` |
@@ -142,14 +147,26 @@ class SkillsServer(Server):
 
 ```json
 {
-  "version": "2026.01.08",
-  "generated_at": "2026-01-08T06:00:00Z",
-  "total_skills": 47,
+  "version": "2026.01.26",
+  "generated_at": "2026-01-26T12:00:00Z",
+  "total_skills": 174,
   "providers": {
-    "anthropics": { "name": "Anthropic", "repo": "...", "skills_count": 35 },
-    "openai": { "name": "OpenAI", "repo": "...", "skills_count": 12 }
+    "anthropics": {
+      "name": "Anthropic",
+      "repo": "https://github.com/anthropics/skills",
+      "skills_count": 16,
+      "stars": 54014,
+      "description": "Public repository for Agent Skills"
+    },
+    "openai": {
+      "name": "OpenAI",
+      "repo": "https://github.com/openai/skills",
+      "skills_count": 12,
+      "stars": 2060,
+      "description": "Skills Catalog for Codex"
+    }
   },
-  "categories": ["development", "documents", "creative", "enterprise", ...],
+  "categories": ["creative", "data", "development", "documents", "enterprise", "integrations", "other"],
   "skills": [
     {
       "id": "anthropics/pdf-processing",
@@ -158,7 +175,7 @@ class SkillsServer(Server):
       "provider": "anthropics",
       "category": "documents",
       "license": "Apache-2.0",
-            "last_updated_at": "2026-01-07T12:00:00Z",
+      "last_updated_at": "2026-01-07T12:00:00Z",
       "source": {
         "repo": "https://github.com/anthropics/skills",
         "path": "skills/pdf",
@@ -206,7 +223,7 @@ skill_ids = react_bundle["skills"]  # ["skillcreatorai/react-best-practices", ..
 |----------|-----|
 | **Latest (CDN)** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json` |
 | **Latest (Raw)** | `https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/bundles.json` |
-| **Specific Version** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.08/bundles.json` |
+| **Specific Version** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.26/bundles.json` |
 
 ### Bundle Format
 
@@ -337,6 +354,20 @@ print('✓ Bundles valid')
 "
 ```
 
+## Categories
+
+Skills are automatically categorized based on their name and description:
+
+| Category | Description | Example Skills |
+|----------|-------------|----------------|
+| **development** | Coding, testing, debugging, CI/CD | TDD, git workflows, code review |
+| **documents** | Document processing, PDFs, text extraction | PDF processing, markdown, EPUB |
+| **data** | Data analysis, databases, CSV processing | CSV summarizer, database skills |
+| **integrations** | Third-party APIs and services | AWS, Google Workspace, NotebookLM |
+| **creative** | Design, content creation, visualization | D3.js charts, frontend design |
+| **enterprise** | Business workflows, productivity | Productivity tools, engineering workflows |
+| **other** | Miscellaneous skills | Various utilities |
+
 ## License
 
 This aggregation tool is MIT licensed. Individual skills retain their original licenses as specified in their respective repositories.
@@ -345,8 +376,4 @@ This aggregation tool is MIT licensed. Individual skills retain their original l
 
 - [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) - MCP server that consumes this catalog
 - [Agent Skills Specification](https://agentskills.io/specification)
-- [Anthropic Skills](https://github.com/anthropics/skills)
-- [OpenAI Skills](https://github.com/openai/skills)
-- [GitHub Awesome Copilot](https://github.com/github/awesome-copilot)
-- [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills)
 - [Model Context Protocol](https://modelcontextprotocol.io)

@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-This repository aggregates agent skills from multiple providers (Anthropic, OpenAI, GitHub, Vercel) into a unified JSON catalog consumed by MCP servers and AI agents. A GitHub Action runs daily at 06:00 UTC to fetch the latest skills, generating versioned releases with `YYYY.MM.DD` format.
+This repository aggregates agent skills from **24 provider repositories** (Anthropic, OpenAI, GitHub, Vercel, HuggingFace, and 18+ community repos) into a unified JSON catalog consumed by MCP servers and AI agents. A GitHub Action runs daily at 06:00 UTC to fetch the latest skills, generating versioned releases with `YYYY.MM.DD` format.
+
+**Current stats:** 174 skills, 24 providers, 136K+ combined GitHub stars
 
 **Key consumers:** [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) server.
 
@@ -17,7 +19,7 @@ This repository aggregates agent skills from multiple providers (Anthropic, Open
    - Auto-updates `CHANGELOG.md` with version metadata
    - Uses `GITHUB_TOKEN` env var to avoid rate limits
 
-2. **Provider System** - Extensible provider configuration (lines 33-54 in aggregate.py)
+2. **Provider System** - Extensible provider configuration (lines 35-207 in aggregate.py)
    ```python
    PROVIDERS = {
        "provider-id": {
@@ -25,11 +27,14 @@ This repository aggregates agent skills from multiple providers (Anthropic, Open
            "repo": "https://github.com/org/repo",
            "api_tree_url": "https://api.github.com/repos/.../git/trees/main?recursive=1",
            "raw_base": "https://raw.githubusercontent.com/.../main",
-           "skills_path_prefix": "skills/",
+           "skills_path_prefix": "skills/",  # Can be "" for root-level SKILL.md
        }
    }
    ```
-   Add new providers by extending this dict - no other code changes needed.
+   - Add new providers by extending this dict - no other code changes needed
+   - Supports root-level `SKILL.md` files (single-skill repos) with `skills_path_prefix: ""`
+   - Some repos use `master` branch instead of `main` - adjust URLs accordingly
+   - Provider stats include `stars` and `description` fetched from GitHub API
 
 3. **Category System** - Keyword-based auto-categorization (lines 67-74)
    - Maps skills to categories: `documents`, `development`, `creative`, `enterprise`, `integrations`, `data`, `other`
@@ -96,15 +101,19 @@ The script tries Python `toon_format.encode()` first, then falls back to `npx @t
 ### CDN Delivery
 Primary distribution via jsdelivr CDN with two patterns:
 - Latest: `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json`
-- Pinned: `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.08/catalog.json`
+- Pinned: `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.26/catalog.json`
 
 ## Common Development Tasks
 
 ### Adding a New Provider
 1. Edit `PROVIDERS` dict in `scripts/aggregate.py`
-2. Ensure repo follows structure: `skills/*/SKILL.md` with YAML frontmatter
-3. Run `python scripts/aggregate.py` to test
-4. Verify in `catalog.json` under `providers` object
+2. Ensure repo follows one of these structures:
+   - Multi-skill repo: `skills/*/SKILL.md` with YAML frontmatter
+   - Single-skill repo: `SKILL.md` at root (use `skills_path_prefix: ""`)
+3. Check the branch name (main vs master) and adjust URLs accordingly
+4. Run `python scripts/aggregate.py` to test
+5. Verify in `catalog.json` under `providers` object
+6. Update README.md provider tables if adding a significant provider
 
 ### Modifying Categorization Logic
 Edit `CATEGORY_KEYWORDS` dict or `categorize_skill()` function (line 195).
@@ -143,15 +152,16 @@ When adding a new feature that users can interact with (new JSON files, new data
 
 ## Key Files Reference
 
-- `scripts/aggregate.py`: Core aggregation logic (425 lines)
-- `schema/catalog-schema.json`: Output contract (167 lines)
+- `scripts/aggregate.py`: Core aggregation logic (~500 lines, 24 providers)
+- `scripts/analyze_repo.py`: Utility to evaluate potential new provider repos
+- `schema/catalog-schema.json`: Output contract with stars/description fields
 - `schema/bundles-schema.json`: Curated skill bundles schema
 - `.github/workflows/update-catalog.yml`: Automation pipeline (106 lines)
-- `docs/app.js`: Static site catalog and bundles display logic
+- `docs/app.js`: Static site catalog and bundles display logic (shows stars)
 - `docs/index.html`: Static site HTML with tabs for Skills, Bundles, and Help
-- `docs/style.css`: Static site styling
+- `docs/style.css`: Static site styling (star badges, etc.)
 - `tests/test_aggregate.py`: Unit tests for parsing and encoding
 - `CHANGELOG.md`: Auto-generated version history
-- `README.md`: User-facing documentation with usage examples
+- `README.md`: User-facing documentation with provider tables
 - `bundles.json`: Curated skill bundles for common use cases
 - `catalog.json`: Aggregated skills catalog (auto-generated)
