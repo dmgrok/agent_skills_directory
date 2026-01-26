@@ -131,50 +131,148 @@
                     <strong>The package manager for AI agent skills.</strong> Search, install, and manage skills from your terminal—just like npm for packages.
                 </p>
 
-                <div class="cli-install-box">
-                    <h3>📦 Quick Install</h3>
-                    
-                    <div class="install-methods">
-                        <div class="install-method">
-                            <h4>🍺 Homebrew (macOS/Linux)</h4>
-                            <pre><code>brew install dmgrok/tap/skills</code></pre>
-                        </div>
-                        
-                        <div class="install-method">
-                            <h4>⚡ One-liner (macOS/Linux)</h4>
-                            <pre><code>curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/install.sh | sh</code></pre>
-                        </div>
-                        
-                        <div class="install-method">
-                            <h4>📥 Direct Download</h4>
-                            <div class="download-links">
-                                <a href="https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-arm64" class="download-btn">
-                                    🍎 macOS (ARM64 & Intel)
-                                </a>
-                                <a href="https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-linux-x64" class="download-btn">
-                                    🐧 Linux (x64)
-                                </a>
-                                <a href="https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-windows-x64.exe" class="download-btn">
-                                    🪟 Windows (x64)
+                <!-- Quick Start Tabs -->
+                <div class="cli-quickstart">
+                    <div class="quickstart-tabs">
+                        <button class="quickstart-tab active" data-quickstart="macos">🍎 macOS</button>
+                        <button class="quickstart-tab" data-quickstart="linux">🐧 Linux</button>
+                        <button class="quickstart-tab" data-quickstart="windows">🪟 Windows</button>
+                        <button class="quickstart-tab" data-quickstart="python">🐍 Python</button>
+                    </div>
+
+                    <div class="quickstart-content">
+                        <div class="quickstart-panel active" data-quickstart-panel="macos">
+                            <h3>macOS Installation</h3>
+                            <div class="install-option recommended">
+                                <div class="install-option-header">
+                                    <span class="badge badge-primary">Recommended</span>
+                                    <h4>🍺 Homebrew</h4>
+                                </div>
+                                <div class="code-block-wrapper">
+                                    <pre><code>brew install dmgrok/tap/skills</code></pre>
+                                    <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                        <span class="copy-icon">📋</span>
+                                        <span class="copy-text">Copy</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="install-option">
+                                <div class="install-option-header">
+                                    <h4>⚡ Quick Install Script</h4>
+                                </div>
+                                <div class="code-block-wrapper">
+                                    <pre><code>curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/install.sh | sh</code></pre>
+                                    <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                        <span class="copy-icon">📋</span>
+                                        <span class="copy-text">Copy</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="install-option">
+                                <div class="install-option-header">
+                                    <h4>📥 Direct Download</h4>
+                                </div>
+                                <a href="https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-arm64" class="download-btn-large">
+                                    Download for macOS (ARM64 & Intel)
                                 </a>
                             </div>
                         </div>
-                        
-                        <div class="install-method">
-                            <h4>🐍 From Source (if you have Python)</h4>
-                            <pre><code>git clone https://github.com/dmgrok/agent_skills_directory.git
+
+                        <div class="quickstart-panel" data-quickstart-panel="linux">
+                            <h3>Linux Installation</h3>
+                            <div class="install-option recommended">
+                                <div class="install-option-header">
+                                    <span class="badge badge-primary">Recommended</span>
+                                    <h4>⚡ Quick Install Script</h4>
+                                </div>
+                                <div class="code-block-wrapper">
+                                    <pre><code>curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/install.sh | sh</code></pre>
+                                    <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                        <span class="copy-icon">📋</span>
+                                        <span class="copy-text">Copy</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="install-option">
+                                <div class="install-option-header">
+                                    <h4>🍺 Homebrew (if installed)</h4>
+                                </div>
+                                <div class="code-block-wrapper">
+                                    <pre><code>brew install dmgrok/tap/skills</code></pre>
+                                    <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                        <span class="copy-icon">📋</span>
+                                        <span class="copy-text">Copy</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="install-option">
+                                <div class="install-option-header">
+                                    <h4>📥 Direct Download</h4>
+                                </div>
+                                <a href="https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-linux-x64" class="download-btn-large">
+                                    Download for Linux (x64)
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="quickstart-panel" data-quickstart-panel="windows">
+                            <h3>Windows Installation</h3>
+                            <div class="install-option recommended">
+                                <div class="install-option-header">
+                                    <span class="badge badge-primary">Recommended</span>
+                                    <h4>📥 Direct Download</h4>
+                                </div>
+                                <a href="https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-windows-x64.exe" class="download-btn-large">
+                                    Download for Windows (x64)
+                                </a>
+                                <p class="install-note">After downloading, add the executable to your PATH or run from the download location.</p>
+                            </div>
+                        </div>
+
+                        <div class="quickstart-panel" data-quickstart-panel="python">
+                            <h3>Install from Source (Python Required)</h3>
+                            <div class="install-option">
+                                <div class="install-option-header">
+                                    <h4>🐍 pip install (editable)</h4>
+                                </div>
+                                <div class="code-block-wrapper">
+                                    <pre><code>git clone https://github.com/dmgrok/agent_skills_directory.git
 cd agent_skills_directory && pip install -e .</code></pre>
+                                    <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                        <span class="copy-icon">📋</span>
+                                        <span class="copy-text">Copy</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="cli-commands">
-                    <h3>🛠️ Commands</h3>
-                    
-                    <div class="cli-command">
-                        <h4><code>skills search &lt;query&gt;</code></h4>
-                        <p>Search for skills by name, description, or tags</p>
-                        <pre><code>$ skills search "web scraping"
+                <!-- Command Reference -->
+                <div class="cli-commands-section">
+                    <div class="commands-header">
+                        <h3>🛠️ Command Reference</h3>
+                        <div class="command-filter">
+                            <input type="text" id="command-search" placeholder="Search commands..." class="command-search-input">
+                            <div class="command-categories">
+                                <button class="category-btn active" data-category="all">All</button>
+                                <button class="category-btn" data-category="discovery">🔍 Discovery</button>
+                                <button class="category-btn" data-category="installation">📦 Install</button>
+                                <button class="category-btn" data-category="management">🔧 Manage</button>
+                                <button class="category-btn" data-category="publishing">📤 Publish</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cli-commands">
+                        <div class="cli-command" data-category="discovery">
+                            <div class="command-header">
+                                <h4><code>skills search &lt;query&gt;</code></h4>
+                                <span class="badge badge-discovery">Discovery</span>
+                            </div>
+                            <p>Search for skills by name, description, or tags</p>
+                            <div class="code-block-wrapper">
+                                <pre><code>$ skills search "web scraping"
 Found 5 skill(s):
 
   anthropic/web-researcher
@@ -184,12 +282,21 @@ Found 5 skill(s):
   github/browser-use
   Browser automation for web interaction
   #browser #automation #web</code></pre>
-                    </div>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
 
-                    <div class="cli-command">
-                        <h4><code>skills info &lt;skill-id&gt;</code></h4>
-                        <p>View detailed information about a skill</p>
-                        <pre><code>$ skills info anthropic/pdf
+                        <div class="cli-command" data-category="discovery">
+                            <div class="command-header">
+                                <h4><code>skills info &lt;skill-id&gt;</code></h4>
+                                <span class="badge badge-discovery">Discovery</span>
+                            </div>
+                            <p>View detailed information about a skill</p>
+                            <div class="code-block-wrapper">
+                                <pre><code>$ skills info anthropic/pdf
 
 pdf
 ────────────────────────────────────────
@@ -201,12 +308,21 @@ pdf
   repo:        https://github.com/anthropics/skills
 
   Not installed. Run: skills install anthropic/pdf</code></pre>
-                    </div>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
 
-                    <div class="cli-command">
-                        <h4><code>skills install &lt;skill-id&gt;</code></h4>
-                        <p>Install a skill to <code>~/.skills/installed/</code></p>
-                        <pre><code>$ skills install github/web-design-reviewer
+                        <div class="cli-command" data-category="installation">
+                            <div class="command-header">
+                                <h4><code>skills install &lt;skill-id&gt;</code></h4>
+                                <span class="badge badge-install">Install</span>
+                            </div>
+                            <p>Install a skill to <code>~/.skills/installed/</code> (global) or project directory</p>
+                            <div class="code-block-wrapper">
+                                <pre><code>$ skills install github/web-design-reviewer
 → Installing github/web-design-reviewer...
 ✓ Installed github/web-design-reviewer → ~/.skills/installed/github/web-design-reviewer
 
@@ -214,33 +330,9 @@ pdf
 $ skills install anthropic/pdf@1.2.0
 
 # Force reinstall
-$ skills install anthropic/pdf --force</code></pre>
-                    </div>
+$ skills install anthropic/pdf --force
 
-                    <div class="cli-command">
-                        <h4><code>skills list</code></h4>
-                        <p>List all installed skills</p>
-                        <pre><code>$ skills list
-
-Installed skills (3):
-
-  anthropic/pdf@1.0.0
-  Process and analyze PDF documents
-
-  github/web-design-reviewer@0.0.0
-  Visual inspection of websites
-
-  vercel/nextjs-app-router@1.2.0
-  Next.js App Router development
-
-# Output as JSON
-$ skills list --json</code></pre>
-                    </div>
-
-                    <div class="cli-command">
-                        <h4><code>skills install &lt;skill-id&gt;</code></h4>
-                        <p>Install a skill to <code>~/.skills/installed/</code> (global) or your project</p>
-                        <pre><code># Global install (default)
+# Global install (default)
 $ skills install anthropic/pdf
 → Installing anthropics/pdf [global]...
 ✓ Installed anthropics/pdf → ~/.skills/installed/anthropics/pdf
@@ -261,12 +353,21 @@ $ skills install anthropic/pdf -p --agent claude
 $ skills install anthropic/pdf -p --agent copilot  # .github/skills/
 $ skills install anthropic/pdf -p --agent codex    # .codex/skills/
 $ skills install anthropic/pdf -p --agent cursor   # .cursor/skills/</code></pre>
-                    </div>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
 
-                    <div class="cli-command">
-                        <h4><code>skills detect</code></h4>
-                        <p>Show detected agent and skill paths for current directory</p>
-                        <pre><code>$ skills detect
+                        <div class="cli-command" data-category="discovery">
+                            <div class="command-header">
+                                <h4><code>skills detect</code></h4>
+                                <span class="badge badge-discovery">Discovery</span>
+                            </div>
+                            <p>Show detected agent and skill paths for current directory</p>
+                            <div class="code-block-wrapper">
+                                <pre><code>$ skills detect
 
 Agent Detection
 ────────────────────────────────────────
@@ -284,12 +385,21 @@ Installation Paths
 
   Instructions file:
     ✓ .github/copilot-instructions.md</code></pre>
-                    </div>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
 
-                    <div class="cli-command">
-                        <h4><code>skills list</code></h4>
-                        <p>List all installed skills grouped by location</p>
-                        <pre><code>$ skills list
+                        <div class="cli-command" data-category="management">
+                            <div class="command-header">
+                                <h4><code>skills list</code></h4>
+                                <span class="badge badge-manage">Manage</span>
+                            </div>
+                            <p>List all installed skills grouped by location</p>
+                            <div class="code-block-wrapper">
+                                <pre><code>$ skills list
 
 Installed skills (3):
 
@@ -307,12 +417,21 @@ Installed skills (3):
 
 # Output as JSON
 $ skills list --json</code></pre>
-                    </div>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
 
-                    <div class="cli-command">
-                        <h4><code>skills init</code></h4>
-                        <p>Create a new <code>skill.json</code> manifest interactively</p>
-                        <pre><code>$ skills init
+                        <div class="cli-command" data-category="publishing">
+                            <div class="command-header">
+                                <h4><code>skills init</code></h4>
+                                <span class="badge badge-publish">Publish</span>
+                            </div>
+                            <p>Create a new <code>skill.json</code> manifest interactively</p>
+                            <div class="code-block-wrapper">
+                                <pre><code>$ skills init
 
 Creating skill.json
 
@@ -326,20 +445,38 @@ keywords (comma-separated): web, scraping, extraction
 
 ✓ Created skill.json
 ✓ Created SKILL.md</code></pre>
-                    </div>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
 
-                    <div class="cli-command">
-                        <h4><code>skills uninstall &lt;skill-id&gt;</code></h4>
-                        <p>Remove an installed skill</p>
-                        <pre><code>$ skills uninstall anthropic/pdf
+                        <div class="cli-command" data-category="management">
+                            <div class="command-header">
+                                <h4><code>skills uninstall &lt;skill-id&gt;</code></h4>
+                                <span class="badge badge-manage">Manage</span>
+                            </div>
+                            <p>Remove an installed skill</p>
+                            <div class="code-block-wrapper">
+                                <pre><code>$ skills uninstall anthropic/pdf
 Remove anthropic/pdf from ~/.skills/installed/anthropic/pdf? [y/N] y
 ✓ Uninstalled anthropic/pdf</code></pre>
-                    </div>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
 
-                    <div class="cli-command">
-                        <h4><code>skills update</code></h4>
-                        <p>Check for and apply updates to installed skills</p>
-                        <pre><code>$ skills update
+                        <div class="cli-command" data-category="management">
+                            <div class="command-header">
+                                <h4><code>skills update</code></h4>
+                                <span class="badge badge-manage">Manage</span>
+                            </div>
+                            <p>Check for and apply updates to installed skills</p>
+                            <div class="code-block-wrapper">
+                                <pre><code>$ skills update
 
 Updates available:
   anthropic/pdf
@@ -348,12 +485,21 @@ Updates available:
 Update 2 skill(s)? [y/N] y
 ✓ Updated anthropic/pdf
 ✓ Updated vercel/nextjs-app-router</code></pre>
-                    </div>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
 
-                    <div class="cli-command">
-                        <h4><code>skills config</code></h4>
-                        <p>View or modify CLI configuration</p>
-                        <pre><code>$ skills config list
+                        <div class="cli-command" data-category="management">
+                            <div class="command-header">
+                                <h4><code>skills config</code></h4>
+                                <span class="badge badge-manage">Manage</span>
+                            </div>
+                            <p>View or modify CLI configuration</p>
+                            <div class="code-block-wrapper">
+                                <pre><code>$ skills config list
 {
   "registry": "https://cdn.jsdelivr.net/.../catalog.json",
   "cache_ttl": 3600,
@@ -362,16 +508,30 @@ Update 2 skill(s)? [y/N] y
 
 $ skills config set cache_ttl 7200
 ✓ Set cache_ttl = 7200</code></pre>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="cli-commands">
-                    <h3>📤 Publishing Commands</h3>
+                <!-- Publishing Commands Section -->
+                <div class="cli-commands-section">
+                    <div class="commands-header">
+                        <h3>📤 Publishing Commands</h3>
+                    </div>
                     
-                    <div class="cli-command">
-                        <h4><code>skills login</code></h4>
-                        <p>Authenticate with GitHub for publishing skills</p>
-                        <pre><code>$ skills login
+                    <div class="cli-commands">
+                        <div class="cli-command" data-category="publishing">
+                            <div class="command-header">
+                                <h4><code>skills login</code></h4>
+                                <span class="badge badge-publish">Publish</span>
+                            </div>
+                            <p>Authenticate with GitHub for publishing skills</p>
+                            <div class="code-block-wrapper">
+                                <pre><code>$ skills login
 
 GitHub Authentication
 ────────────────────────────────────────
@@ -381,12 +541,21 @@ GitHub Authentication
 Paste your token: ghp_xxxxxxxxxxxx
 ✓ Authenticated as: your-username
 ✓ Token saved to ~/.skills/config.json</code></pre>
-                    </div>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
 
-                    <div class="cli-command">
-                        <h4><code>skills validate</code></h4>
-                        <p>Validate a skill directory before publishing</p>
-                        <pre><code>$ skills validate ./my-skill
+                        <div class="cli-command" data-category="publishing">
+                            <div class="command-header">
+                                <h4><code>skills validate</code></h4>
+                                <span class="badge badge-publish">Publish</span>
+                            </div>
+                            <p>Validate a skill directory before publishing</p>
+                            <div class="code-block-wrapper">
+                                <pre><code>$ skills validate ./my-skill
 
 Validating Skill
 ────────────────────────────────────────
@@ -401,12 +570,21 @@ Checks passed:
   ✓ No secrets detected
   ✓ No malicious patterns
   ✓ No duplicate name</code></pre>
-                    </div>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
 
-                    <div class="cli-command">
-                        <h4><code>skills publish</code></h4>
-                        <p>Publish a skill to GitHub and optionally submit to the directory</p>
-                        <pre><code>$ skills publish
+                        <div class="cli-command" data-category="publishing">
+                            <div class="command-header">
+                                <h4><code>skills publish</code></h4>
+                                <span class="badge badge-publish">Publish</span>
+                            </div>
+                            <p>Publish a skill to GitHub and optionally submit to the directory</p>
+                            <div class="code-block-wrapper">
+                                <pre><code>$ skills publish
 
 Publishing Skill
 ────────────────────────────────────────
@@ -430,90 +608,13 @@ $ skills publish --submit
 
 # Preview without changes
 $ skills publish --dry-run</code></pre>
+                                <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="cli-agents">
-                    <h3>🤖 Supported Agents & Paths</h3>
-                    <p>Skills are installed to different directories based on the detected agent:</p>
-                    <table class="agents-table">
-                        <thead>
-                            <tr><th>Agent</th><th>Project Path</th><th>Personal Path</th><th>Instructions File</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Claude</strong></td>
-                                <td><code>.claude/skills/</code></td>
-                                <td><code>~/.claude/skills/</code></td>
-                                <td><code>CLAUDE.md</code></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Copilot</strong></td>
-                                <td><code>.github/skills/</code></td>
-                                <td><code>~/.copilot/skills/</code></td>
-                                <td><code>.github/copilot-instructions.md</code></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Codex</strong></td>
-                                <td><code>.codex/skills/</code></td>
-                                <td><code>~/.codex/skills/</code></td>
-                                <td><code>AGENTS.md</code></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Cursor</strong></td>
-                                <td><code>.cursor/skills/</code></td>
-                                <td><code>~/.cursor/skills/</code></td>
-                                <td><code>.cursorrules</code></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="cli-paths">
-                    <h3>📂 Local Registry Structure</h3>
-                    <pre><code># Global skills (shared across projects)
-~/.skills/
-├── config.json          # CLI configuration
-├── installed/           # Global skills
-│   └── anthropic/pdf/
-└── cache/               # Catalog cache
-
-# Project skills (per-agent)
-your-project/
-├── .claude/skills/      # Claude skills
-│   └── pdf/
-├── .github/skills/      # Copilot skills
-│   └── web-design-reviewer/
-├── .codex/skills/       # Codex skills
-└── .cursor/skills/      # Cursor skills</code></pre>
-                </div>
-
-                <div class="cli-manifest">
-                    <h3>📄 skill.json Manifest</h3>
-                    <p>Define your skill's metadata, dependencies, and capabilities:</p>
-                    <pre><code>{
-  "name": "my-skill",
-  "version": "1.0.0",
-  "description": "A skill that does amazing things",
-  "author": "Your Name",
-  "license": "MIT",
-  "runtime": "mcp",
-  "keywords": ["automation", "productivity"],
-  "entry": "SKILL.md",
-  "dependencies": {
-    "anthropic/browser-use": "^1.0.0"
-  },
-  "capabilities": ["web-browsing", "file-system"],
-  "inputs": [
-    { "name": "url", "type": "string", "required": true }
-  ],
-  "outputs": [
-    { "name": "result", "type": "object" }
-  ]
-}</code></pre>
-                    <p style="margin-top: 1rem;">
-                        📖 See the full <a href="https://github.com/dmgrok/agent_skills_directory/blob/main/schema/skill-manifest-schema.json" target="_blank">skill manifest schema</a>.
-                    </p>
                 </div>
             </section>
         </div>
@@ -658,16 +759,18 @@ npm test
         <!-- How to Use Tab -->
         <div id="tab-how-to-use" class="tab-panel">
             <section class="info-section">
-                <h2>🚀 How to Add Skills to Your Project</h2>
+                <h2>🚀 How to Use Skills</h2>
+                <p class="intro-text">Choose the method that works best for your workflow</p>
                 
                 <div class="method-tabs">
-                    <button class="method-tab active" data-method="mother">With Mother Skills MCP (Recommended)</button>
-                    <button class="method-tab" data-method="manual">Manual Installation</button>
+                    <button class="method-tab active" data-method="mcp">🤖 MCP Server</button>
+                    <button class="method-tab" data-method="cli">⚡ CLI Tool</button>
+                    <button class="method-tab" data-method="manual">📥 Manual</button>
                 </div>
 
-                <div class="method-content" id="method-mother">
-                    <h3>Automatic with <a href="https://github.com/dmgrok/mcp_mother_skills" target="_blank">Mother Skills MCP</a></h3>
-                    <p>Mother Skills MCP auto-detects your tech stack and installs matching skills.</p>
+                <div class="method-content" id="method-mcp">
+                    <h3>🤖 Mother Skills MCP Server <span class="badge badge-primary">Recommended</span></h3>
+                    <p>Auto-detects your tech stack and installs matching skills automatically.</p>
                     
                     <div class="steps">
                         <div class="step">
@@ -698,51 +801,214 @@ npm test
                         <div class="step">
                             <span class="step-num">3</span>
                             <div class="step-content">
-                                <h4>Install Specific Skills</h4>
-                                <pre><code>install_skill("mcp-builder")
-install_skill("pdf")</code></pre>
+                                <h4>Install Specific Skills or Bundles</h4>
+                                <pre><code>install_skill("pdf")
+install_bundle("web-development")</code></pre>
                             </div>
                         </div>
                     </div>
                     <a href="https://github.com/dmgrok/mcp_mother_skills" target="_blank" class="btn-primary">📦 Get Mother Skills MCP</a>
                 </div>
 
-                <div class="method-content hidden" id="method-manual">
-                    <h3>Manual Installation</h3>
-                    <p>Download skills directly to your project's skills directory.</p>
+                <div class="method-content hidden" id="method-cli">
+                    <h3>⚡ Skills CLI Tool</h3>
+                    <p>npm-like package manager for skills. Search, install, and manage skills from your terminal.</p>
                     
                     <div class="steps">
                         <div class="step">
                             <span class="step-num">1</span>
                             <div class="step-content">
-                                <h4>Create Skills Directory</h4>
-                                <pre><code># For Copilot
-mkdir -p .github/skills
+                                <h4>Install the CLI</h4>
+                                <pre><code># Homebrew (macOS/Linux)
+brew install dmgrok/tap/skills
 
-# For Claude
-mkdir -p .claude/skills
-
-# For Codex
-mkdir -p .codex/skills</code></pre>
+# Or quick install script
+curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/install.sh | sh</code></pre>
+                                <p style="margin-top: 0.5rem;">See the <strong>CLI tab</strong> above for all installation options.</p>
                             </div>
                         </div>
                         <div class="step">
                             <span class="step-num">2</span>
                             <div class="step-content">
-                                <h4>Download a Skill</h4>
-                                <pre><code># Clone a skill from the registry
-git clone --depth 1 https://github.com/anthropics/skills.git temp
-cp -r temp/skills/pdf .github/skills/
-rm -rf temp</code></pre>
+                                <h4>Search & Install Skills</h4>
+                                <pre><code># Search for skills
+skills search "pdf"
+
+# Install globally
+skills install anthropic/pdf
+
+# Install to project (auto-detects agent)
+skills install anthropic/pdf --project</code></pre>
                             </div>
                         </div>
                         <div class="step">
                             <span class="step-num">3</span>
                             <div class="step-content">
+                                <h4>Manage Installed Skills</h4>
+                                <pre><code># List installed skills
+skills list
+
+# Update skills
+skills update
+
+# Detect project agent
+skills detect</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1.5rem; padding: 1rem; background: var(--bg-card); border-left: 3px solid var(--primary); border-radius: 6px;">
+                        💡 <strong>Tip:</strong> Check the <strong>CLI tab</strong> above for the complete command reference and all features.
+                    </p>
+                </div>
+
+                <div class="method-content hidden" id="method-manual">
+                    <h3>📥 Manual Download from Website</h3>
+                    <p>Browse and download skills directly from this website—no tools required.</p>
+                    
+                    <div class="steps">
+                        <div class="step">
+                            <span class="step-num">1</span>
+                            <div class="step-content">
+                                <h4>Browse Skills</h4>
+                                <p>Go to the <strong>Browse Skills</strong> tab above and find a skill you want.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">2</span>
+                            <div class="step-content">
+                                <h4>Get the Skill Link</h4>
+                                <p>Click on a skill card to view details. The modal shows the source repository link.</p>
+                                <p>Visit the skill's GitHub repo and download the <code>SKILL.md</code> file (and any <code>scripts/</code>, <code>references/</code>, or <code>assets/</code> folders).</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">3</span>
+                            <div class="step-content">
+                                <h4>Add to Your Project</h4>
+                                <p>Create a skills directory and add the downloaded files:</p>
+                                <pre><code># For GitHub Copilot
+.github/skills/skill-name/SKILL.md
+
+# For Claude
+.claude/skills/skill-name/SKILL.md
+
+# For Cursor
+.cursor/skills/skill-name/SKILL.md</code></pre>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">4</span>
+                            <div class="step-content">
                                 <h4>Reference in Instructions (Optional)</h4>
-                                <p>Add to your <code>CLAUDE.md</code> or <code>.github/copilot-instructions.md</code>:</p>
-                                <pre><code>## Skills
-Load skills from .github/skills/ as needed.</code></pre>
+                                <p>Some agents auto-discover skills. For others, add to your instructions file:</p>
+                                <pre><code>## Available Skills
+Check .github/skills/ for reusable agent instructions.</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reference Documentation -->
+                <div class="cli-reference-section">
+                    <h3 class="reference-section-title">📚 Reference Documentation</h3>
+                    <p class="reference-intro">Additional details about agents, file structure, and manifest format</p>
+                    
+                    <div class="reference-accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span class="accordion-title">🤖 Supported Agents & Paths</span>
+                                <span class="accordion-icon">▼</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Skills are installed to different directories based on the detected agent:</p>
+                                <table class="agents-table">
+                                    <thead>
+                                        <tr><th>Agent</th><th>Project Path</th><th>Personal Path</th><th>Instructions File</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Claude</strong></td>
+                                            <td><code>.claude/skills/</code></td>
+                                            <td><code>~/.claude/skills/</code></td>
+                                            <td><code>CLAUDE.md</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Copilot</strong></td>
+                                            <td><code>.github/skills/</code></td>
+                                            <td><code>~/.copilot/skills/</code></td>
+                                            <td><code>.github/copilot-instructions.md</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Codex</strong></td>
+                                            <td><code>.codex/skills/</code></td>
+                                            <td><code>~/.codex/skills/</code></td>
+                                            <td><code>AGENTS.md</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Cursor</strong></td>
+                                            <td><code>.cursor/skills/</code></td>
+                                            <td><code>~/.cursor/skills/</code></td>
+                                            <td><code>.cursorrules</code></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span class="accordion-title">📂 Local Registry Structure</span>
+                                <span class="accordion-icon">▼</span>
+                            </button>
+                            <div class="accordion-content">
+                                <pre><code># Global skills (shared across projects)
+~/.skills/
+├── config.json          # CLI configuration
+├── installed/           # Global skills
+│   └── anthropic/pdf/
+└── cache/               # Catalog cache
+
+# Project skills (per-agent)
+your-project/
+├── .claude/skills/      # Claude skills
+│   └── pdf/
+├── .github/skills/      # Copilot skills
+│   └── web-design-reviewer/
+├── .codex/skills/       # Codex skills
+└── .cursor/skills/      # Cursor skills</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <span class="accordion-title">📄 skill.json Manifest</span>
+                                <span class="accordion-icon">▼</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Define your skill's metadata, dependencies, and capabilities:</p>
+                                <pre><code>{
+  "name": "my-skill",
+  "version": "1.0.0",
+  "description": "A skill that does amazing things",
+  "author": "Your Name",
+  "license": "MIT",
+  "runtime": "mcp",
+  "keywords": ["automation", "productivity"],
+  "entry": "SKILL.md",
+  "dependencies": {
+    "anthropic/browser-use": "^1.0.0"
+  },
+  "capabilities": ["web-browsing", "file-system"],
+  "inputs": [
+    { "name": "url", "type": "string", "required": true }
+  ],
+  "outputs": [
+    { "name": "result", "type": "object" }
+  ]
+}</code></pre>
+                                <p style="margin-top: 1rem;">
+                                    📖 See the full <a href="https://github.com/dmgrok/agent_skills_directory/blob/main/schema/skill-manifest-schema.json" target="_blank">skill manifest schema</a>.
+                                </p>
                             </div>
                         </div>
                     </div>

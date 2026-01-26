@@ -687,5 +687,131 @@ ${bundle.skills.map(s => `install_skill("${s.split('/')[1] ?? s}")`).join('\n')}
     });
 }
 
+// Method tabs (How to Use section)
+document.querySelectorAll('.method-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        const methodId = tab.dataset.method;
+        
+        // Update tabs
+        document.querySelectorAll('.method-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        // Update content
+        document.querySelectorAll('.method-content').forEach(content => {
+            content.classList.add('hidden');
+        });
+        const targetContent = document.getElementById(`method-${methodId}`);
+        if (targetContent) {
+            targetContent.classList.remove('hidden');
+        }
+    });
+});
+
+// Quickstart tabs functionality
+document.querySelectorAll('.quickstart-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = tab.dataset.quickstart;
+        
+        // Update tabs
+        document.querySelectorAll('.quickstart-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        // Update panels
+        document.querySelectorAll('.quickstart-panel').forEach(panel => {
+            panel.classList.remove('active');
+        });
+        document.querySelector(`[data-quickstart-panel="${target}"]`).classList.add('active');
+    });
+});
+
+// Command category filtering
+let currentCategory = 'all';
+let currentSearchQuery = '';
+
+document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        currentCategory = btn.dataset.category;
+        
+        // Update buttons
+        document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        filterCommands();
+    });
+});
+
+// Command search
+const commandSearchInput = document.getElementById('command-search');
+if (commandSearchInput) {
+    commandSearchInput.addEventListener('input', (e) => {
+        currentSearchQuery = e.target.value.toLowerCase();
+        filterCommands();
+    });
+}
+
+function filterCommands() {
+    document.querySelectorAll('.cli-command').forEach(cmd => {
+        const category = cmd.dataset.category || 'all';
+        const commandText = cmd.textContent.toLowerCase();
+        
+        const categoryMatch = currentCategory === 'all' || category === currentCategory;
+        const searchMatch = currentSearchQuery === '' || commandText.includes(currentSearchQuery);
+        
+        if (categoryMatch && searchMatch) {
+            cmd.style.display = 'block';
+        } else {
+            cmd.style.display = 'none';
+        }
+    });
+}
+
+// Copy code functionality
+function copyCode(button) {
+    const codeBlock = button.previousElementSibling;
+    const code = codeBlock.querySelector('code').textContent;
+    
+    navigator.clipboard.writeText(code).then(() => {
+        // Visual feedback
+        const originalText = button.querySelector('.copy-text').textContent;
+        button.classList.add('copied');
+        button.querySelector('.copy-text').textContent = 'Copied!';
+        button.querySelector('.copy-icon').textContent = '✓';
+        
+        setTimeout(() => {
+            button.classList.remove('copied');
+            button.querySelector('.copy-text').textContent = originalText;
+            button.querySelector('.copy-icon').textContent = '📋';
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+        button.querySelector('.copy-text').textContent = 'Failed';
+        setTimeout(() => {
+            button.querySelector('.copy-text').textContent = 'Copy';
+        }, 2000);
+    });
+}
+
+// Make copyCode available globally
+window.copyCode = copyCode;
+
+// Accordion toggle functionality
+function toggleAccordion(button) {
+    const accordionItem = button.parentElement;
+    const isActive = accordionItem.classList.contains('active');
+    
+    // Close all accordion items
+    document.querySelectorAll('.accordion-item').forEach(item => {
+        item.classList.remove('active');
+    });
+    
+    // Open clicked item if it wasn't already open
+    if (!isActive) {
+        accordionItem.classList.add('active');
+    }
+}
+
+// Make toggleAccordion available globally
+window.toggleAccordion = toggleAccordion;
+
 // Start
 init();
