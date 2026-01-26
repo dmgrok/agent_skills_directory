@@ -201,6 +201,77 @@ We aggregate skills from **24 repositories** with **136K+ combined GitHub stars*
 
 ---
 
+## Using Your Own Skills Repository
+
+**For enterprises and teams needing governance and control.**
+
+You can create your own private skills repository instead of using the public catalog. This is ideal for:
+
+- **Security & Compliance** — Keep proprietary skills internal
+- **Governance** — Control and audit skill usage across your organization
+- **Custom Skills** — Share organization-specific workflows
+- **Air-gapped Environments** — No external dependencies
+
+### Setting Up a Private Repository
+
+1. **Create a GitHub repository** with your skills:
+
+```
+your-org/internal-skills/
+├── skills/
+│   ├── security-audit/
+│   │   ├── skill.json
+│   │   └── SKILL.md
+│   ├── compliance-check/
+│   │   ├── skill.json
+│   │   └── SKILL.md
+│   └── ...
+```
+
+2. **Point the CLI to your repository**:
+
+```bash
+skills config set registry https://cdn.jsdelivr.net/gh/your-org/internal-skills@main/catalog.json
+```
+
+3. **Generate your catalog**:
+
+```bash
+# Fork this repo and adjust PROVIDERS in scripts/aggregate.py
+PROVIDERS = {
+    "your-org": {
+        "name": "Your Organization",
+        "repo": "https://github.com/your-org/internal-skills",
+        "api_tree_url": "https://api.github.com/repos/your-org/internal-skills/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/your-org/internal-skills/main",
+        "skills_path_prefix": "skills/",
+    },
+}
+
+python scripts/aggregate.py  # Generates catalog.json
+```
+
+4. **Distribute to your team**:
+
+```bash
+# Team members configure their CLI
+skills config set registry https://your-internal-cdn/catalog.json
+
+# Now they can use your skills
+skills search "security"
+skills install your-org/security-audit
+```
+
+### Benefits for Enterprises
+
+- **Centralized Management** — Single source of truth for approved skills
+- **Version Control** — Pin skills to specific versions organization-wide
+- **Audit Trail** — Track skill usage and updates via Git history
+- **Custom Policies** — Enforce security, compliance, and coding standards
+- **Private Hosting** — Host on internal infrastructure (S3, CDN, etc.)
+
+---
+
 ## Creating Skills
 
 A skill is a directory with two files:
