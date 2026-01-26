@@ -138,8 +138,26 @@ jobs:
           echo "Updated Formula/skills.rb with version $VERSION"
           cat homebrew-tap/Formula/skills.rb
 
-      - name: Commit Formula Update
+      - name: Commit Formula Update to Main Repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update Homebrew formula for ${{ github.ref_name }}"
           file_pattern: homebrew-tap/Formula/skills.rb
+
+      - name: Push Formula to Tap Repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Clone the tap repository
+          git clone https://x-access-token:${GITHUB_TOKEN}@github.com/dmgrok/homebrew-tap.git tap-repo
+          
+          # Copy the updated formula
+          cp homebrew-tap/Formula/skills.rb tap-repo/Formula/skills.rb
+          
+          # Commit and push
+          cd tap-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Formula/skills.rb
+          git commit -m "chore: update formula for ${{ github.ref_name }}" || echo "No changes to commit"
+          git push origin main
