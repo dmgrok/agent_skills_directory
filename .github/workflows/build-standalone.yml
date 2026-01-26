@@ -27,9 +27,8 @@ jobs:
           - os: macos-latest
             name: macos-arm64
             artifact: skills-macos-arm64
-          - os: macos-13
-            name: macos-x64
-            artifact: skills-macos-x64
+          # Note: macOS-13 (Intel) runners retired Jan 2025
+          # Intel Mac users can run ARM binary via Rosetta 2
           - os: windows-latest
             name: windows-x64
             artifact: skills-windows-x64.exe
@@ -90,13 +89,13 @@ jobs:
         run: |
           # Calculate SHA256 for each binary
           ARM64_SHA=$(sha256sum binaries/skills-macos-arm64/skills-macos-arm64 | cut -d' ' -f1)
-          X64_SHA=$(sha256sum binaries/skills-macos-x64/skills-macos-x64 | cut -d' ' -f1)
           LINUX_SHA=$(sha256sum binaries/skills-linux-x64/skills-linux-x64 | cut -d' ' -f1)
           
           # Extract version from tag
           VERSION=${GITHUB_REF#refs/tags/v}
           
           # Create updated formula
+          # Note: Intel Macs use ARM binary via Rosetta 2 (macOS-13 runners retired)
           cat > homebrew-tap/Formula/skills.rb << EOF
           # Homebrew formula for Agent Skills CLI
           class Skills < Formula
@@ -106,14 +105,9 @@ jobs:
             license "MIT"
 
             on_macos do
-              on_arm do
-                url "https://github.com/dmgrok/agent_skills_directory/releases/download/v$VERSION/skills-macos-arm64"
-                sha256 "$ARM64_SHA"
-              end
-              on_intel do
-                url "https://github.com/dmgrok/agent_skills_directory/releases/download/v$VERSION/skills-macos-x64"
-                sha256 "$X64_SHA"
-              end
+              # ARM64 binary works on both ARM and Intel (via Rosetta 2)
+              url "https://github.com/dmgrok/agent_skills_directory/releases/download/v$VERSION/skills-macos-arm64"
+              sha256 "$ARM64_SHA"
             end
 
             on_linux do
@@ -123,11 +117,7 @@ jobs:
 
             def install
               if OS.mac?
-                if Hardware::CPU.arm?
-                  bin.install "skills-macos-arm64" => "skills"
-                else
-                  bin.install "skills-macos-x64" => "skills"
-                end
+                bin.install "skills-macos-arm64" => "skills"
               else
                 bin.install "skills-linux-x64" => "skills"
               end

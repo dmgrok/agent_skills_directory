@@ -3,6 +3,7 @@
 # Or: brew install dmgrok/tap/skills
 #
 # This formula is auto-updated by GitHub Actions when a new release is published.
+# Note: ARM64 binary works on Intel Macs via Rosetta 2.
 
 class Skills < Formula
   desc "The package manager for AI agent skills"
@@ -11,14 +12,9 @@ class Skills < Formula
   license "MIT"
 
   on_macos do
-    on_arm do
-      url "https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-arm64"
-      sha256 "PENDING_FIRST_RELEASE"
-    end
-    on_intel do
-      url "https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-x64"
-      sha256 "PENDING_FIRST_RELEASE"
-    end
+    # ARM64 binary works on both Apple Silicon and Intel (via Rosetta 2)
+    url "https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-arm64"
+    sha256 "PENDING_FIRST_RELEASE"
   end
 
   on_linux do
@@ -28,11 +24,7 @@ class Skills < Formula
 
   def install
     if OS.mac?
-      if Hardware::CPU.arm?
-        bin.install "skills-macos-arm64" => "skills"
-      else
-        bin.install "skills-macos-x64" => "skills"
-      end
+      bin.install "skills-macos-arm64" => "skills"
     else
       bin.install "skills-linux-x64" => "skills"
     end

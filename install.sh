@@ -71,6 +71,12 @@ get_download_url() {
         ext=".exe"
     fi
     
+    # macOS: Always use ARM64 binary (works on Intel via Rosetta 2)
+    # This is because macOS-13 (Intel) GitHub runners were retired
+    if [ "$os" = "macos" ]; then
+        arch="arm64"
+    fi
+    
     echo "https://github.com/${REPO}/releases/latest/download/skills-${os}-${arch}${ext}"
 }
 
