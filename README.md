@@ -51,11 +51,11 @@ curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/
 | **Linux** (x64) | [skills-linux-x64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-linux-x64) |
 | **Windows** (x64) | [skills-windows-x64.exe](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-windows-x64.exe) |
 
-### pip (if you prefer Python)
+### From Source (if you prefer Python)
 
 ```bash
-pip install agent-skills              # Basic
-pip install agent-skills[validation]  # With enhanced validation
+git clone https://github.com/dmgrok/agent_skills_directory.git
+cd agent_skills_directory && pip install -e .
 ```
 
 ---
