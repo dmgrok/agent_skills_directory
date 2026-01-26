@@ -296,71 +296,65 @@ function renderFeatures(skill) {
 
 function showSkillModal(skill) {
     const updatedLabel = formatDate(skill.last_updated_at);
+    const provider = catalog.providers[skill.provider];
+    const starsHtml = provider && provider.stars 
+        ? `<span class="modal-stars">⭐ ${formatStars(provider.stars)} stars</span>` 
+        : '';
     
     modalBody.innerHTML = `
         <div class="modal-header">
             <h2>${escapeHtml(skill.name)}</h2>
-            <span class="skill-provider ${skill.provider}">${skill.provider}</span>
-            <span class="skill-category">📁 ${skill.category}</span>
+            <div class="modal-header-badges">
+                <span class="skill-provider ${skill.provider}">${skill.provider}</span>
+                ${starsHtml}
+                <span class="skill-category">📁 ${skill.category}</span>
+            </div>
         </div>
 
         <div class="modal-section">
-            <h3>Description</h3>
-            <p>${escapeHtml(skill.description)}</p>
+            <p class="skill-description-large">${escapeHtml(skill.description)}</p>
         </div>
 
         ${updatedLabel ? `
-            <div class="modal-section">
-                <h3>Last Updated</h3>
-                <p class="skill-updated">⏱ ${updatedLabel}</p>
+            <div class="modal-meta">
+                <span>⏱ Updated ${updatedLabel}</span>
+                ${skill.license ? `<span>📜 ${escapeHtml(skill.license)}</span>` : ''}
             </div>
         ` : ''}
 
         ${skill.tags && skill.tags.length > 0 ? `
-            <div class="modal-section">
-                <h3>Tags</h3>
-                <div class="modal-tags">
-                    ${skill.tags.map(tag => `<span class="skill-tag">#${escapeHtml(tag)}</span>`).join('')}
-                </div>
+            <div class="modal-tags">
+                ${skill.tags.map(tag => `<span class="skill-tag">#${escapeHtml(tag)}</span>`).join('')}
             </div>
         ` : ''}
 
-        <div class="modal-section">
-            <h3>Features</h3>
-            <div class="modal-tags">
-                ${skill.has_scripts ? '<span class="feature-badge scripts">📜 Has scripts</span>' : ''}
-                ${skill.has_references ? '<span class="feature-badge references">📚 Has references</span>' : ''}
-                ${skill.has_assets ? '<span class="feature-badge assets">📦 Has assets</span>' : ''}
-                ${!skill.has_scripts && !skill.has_references && !skill.has_assets ? '<span class="skill-category">SKILL.md only</span>' : ''}
-            </div>
+        <div class="modal-actions">
+            <button class="modal-action-btn primary" onclick="copyInstallCommand('${escapeHtml(skill.id)}')">
+                📋 Copy Install Command
+            </button>
+            <a href="${skill.source.repo}/tree/main/${skill.source.path}" target="_blank" class="modal-action-btn secondary">
+                📂 View on GitHub
+            </a>
         </div>
 
-        ${skill.license ? `
-            <div class="modal-section">
-                <h3>License</h3>
-                <p>${escapeHtml(skill.license)}</p>
+        <div class="modal-section skill-content-section">
+            <div class="skill-content-header">
+                <h3>📄 SKILL.md</h3>
+                <button class="btn-toggle-raw" onclick="toggleRawView()">View Raw</button>
             </div>
-        ` : ''}
-
-        ${skill.compatibility ? `
-            <div class="modal-section">
-                <h3>Compatibility</h3>
-                <p>${escapeHtml(skill.compatibility)}</p>
+            <div id="skill-content" class="skill-content">
+                <div class="loading-content">Loading skill content...</div>
             </div>
-        ` : ''}
-
-        <div class="modal-section">
-            <h3>Source</h3>
-            <p style="font-family: monospace; font-size: 0.85rem; color: var(--text-muted);">
-                ${escapeHtml(skill.source.path)}
-            </p>
+            <div id="skill-content-raw" class="skill-content-raw" style="display: none;">
+                <pre><code class="loading-content">Loading...</code></pre>
+            </div>
         </div>
 
         ${skill.similar_skills && skill.similar_skills.length > 0 ? `
             <div class="modal-section similar-skills-section">
                 <h3>🔗 Similar Skills</h3>
                 <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">
-                    Other implementations of "${escapeHtml(skill.name)}" with different content:
+                    Other implementations with different content:
                 </p>
                 <div class="similar-skills-list">
                     ${skill.similar_skills.map(s => `
@@ -373,26 +367,13 @@ function showSkillModal(skill) {
                 </div>
             </div>
         ` : ''}
-
-        <div class="modal-links">
-            <a href="${skill.source.skill_md_url}" target="_blank" class="modal-link">
-                📄 View SKILL.md
-            </a>
-            <a href="${skill.source.repo}/tree/main/${skill.source.path}" target="_blank" class="modal-link secondary">
-                📂 Browse on GitHub
-            </a>
-        </div>
-
-        <div class="modal-section" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);">
-            <h3>Install with Mother Skills MCP</h3>
-            <code style="display: block; background: var(--bg); padding: 1rem; border-radius: 8px; font-size: 0.9rem;">
-                install_skill("${escapeHtml(skill.name)}")
-            </code>
-        </div>
     `;
 
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+    
+    // Fetch and render SKILL.md content
+    fetchSkillContent(skill.source.skill_md_url);
     
     // Add click handlers for similar skill items
     document.querySelectorAll('.similar-skill-item').forEach(item => {
@@ -401,6 +382,76 @@ function showSkillModal(skill) {
             const similarSkill = catalog.skills.find(s => s.id === skillId);
             if (similarSkill) showSkillModal(similarSkill);
         });
+    });
+}
+
+// Fetch and render SKILL.md content
+async function fetchSkillContent(url) {
+    const contentEl = document.getElementById('skill-content');
+    const rawEl = document.getElementById('skill-content-raw');
+    
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error('Failed to fetch');
+        
+        const rawContent = await response.text();
+        
+        // Remove YAML frontmatter if present
+        let content = rawContent;
+        if (content.startsWith('---')) {
+            const endOfFrontmatter = content.indexOf('---', 3);
+            if (endOfFrontmatter !== -1) {
+                content = content.substring(endOfFrontmatter + 3).trim();
+            }
+        }
+        
+        // Render markdown
+        if (typeof marked !== 'undefined') {
+            contentEl.innerHTML = marked.parse(content);
+        } else {
+            // Fallback: basic formatting
+            contentEl.innerHTML = `<pre>${escapeHtml(content)}</pre>`;
+        }
+        
+        // Store raw content
+        rawEl.innerHTML = `<pre><code>${escapeHtml(rawContent)}</code></pre>`;
+        
+    } catch (error) {
+        contentEl.innerHTML = `
+            <div class="content-error">
+                <p>Unable to load skill content.</p>
+                <a href="${url}" target="_blank">View on GitHub →</a>
+            </div>
+        `;
+        rawEl.innerHTML = `<pre><code>Error loading content</code></pre>`;
+    }
+}
+
+// Toggle between rendered and raw view
+function toggleRawView() {
+    const contentEl = document.getElementById('skill-content');
+    const rawEl = document.getElementById('skill-content-raw');
+    const btn = document.querySelector('.btn-toggle-raw');
+    
+    if (rawEl.style.display === 'none') {
+        rawEl.style.display = 'block';
+        contentEl.style.display = 'none';
+        btn.textContent = 'View Rendered';
+    } else {
+        rawEl.style.display = 'none';
+        contentEl.style.display = 'block';
+        btn.textContent = 'View Raw';
+    }
+}
+
+// Copy install command to clipboard
+function copyInstallCommand(skillId) {
+    const command = `skills install ${skillId}`;
+    navigator.clipboard.writeText(command).then(() => {
+        const btn = document.querySelector('.modal-action-btn.primary');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '✓ Copied!';
+        setTimeout(() => btn.innerHTML = originalText, 2000);
     });
 }
 
