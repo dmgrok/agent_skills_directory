@@ -29,6 +29,53 @@ skills publish                   # Share your own
 
 ---
 
+## Skills Providers
+
+This directory aggregates skills from **24 provider repositories** across the AI agent ecosystem:
+
+### Major Providers
+
+| Provider | Repository | Skills | Stars |
+|----------|-----------|--------|-------|
+| [Anthropic](https://github.com/anthropics/skills) | anthropics/skills | 16 | 54.7K ⭐ |
+| [Obra Superpowers](https://github.com/obra/superpowers) | obra/superpowers | 14 | 37.3K ⭐ |
+| [GitHub Copilot](https://github.com/github/awesome-copilot) | github/awesome-copilot | 26 | 19.1K ⭐ |
+| [Vercel](https://github.com/vercel-labs/agent-skills) | vercel-labs/agent-skills | 5 | 16.9K ⭐ |
+| [NotebookLM](https://github.com/PleasePrompto/notebooklm-skill) | notebooklm-skill | 1 | 2.8K ⭐ |
+| [OpenAI Codex](https://github.com/openai/skills) | openai/skills | 12 | 2.1K ⭐ |
+| [Playwright](https://github.com/lackeyjb/playwright-skill) | playwright-skill | 1 | 1.5K ⭐ |
+| [HuggingFace](https://github.com/huggingface/skills) | huggingface/skills | 8 | 1.1K ⭐ |
+
+### Community Collections
+
+| Provider | Repository | Skills | Stars |
+|----------|-----------|--------|-------|
+| [SkillCreator.ai](https://github.com/skillcreatorai/Ai-Agent-Skills) | skillcreatorai/Ai-Agent-Skills | 47 | 624 ⭐ |
+| [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) | ios-simulator-skill | 1 | 395 ⭐ |
+| [Claude Marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | claude-skills-marketplace | 18 | 271 ⭐ |
+| [CSV Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) | csv-summarizer-skill | 1 | 193 ⭐ |
+| [Tapestry Skills](https://github.com/michalparkola/tapestry-skills-for-claude-code) | tapestry-skills | 4 | 181 ⭐ |
+| [AWS Skills](https://github.com/zxkane/aws-skills) | aws-skills | 5 | 101 ⭐ |
+| [FFUF Web Fuzzing](https://github.com/jthack/ffuf_claude_skill) | ffuf-skill | 1 | 100 ⭐ |
+| [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | d3js-skill | 1 | 83 ⭐ |
+| [EPUB Converter](https://github.com/smerchek/claude-epub-skill) | epub-skill | 1 | 56 ⭐ |
+| [Sanjay AI Skills](https://github.com/sanjay3290/ai-skills) | ai-skills | 12 | 43 ⭐ |
+| [PICT Test Cases](https://github.com/omkamal/pypict-claude-skill) | pypict-skill | 1 | 28 ⭐ |
+| [Family History](https://github.com/emaynard/claude-family-history-research-skill) | family-history-skill | 1 | 28 ⭐ |
+| [Move Code Quality](https://github.com/1NickPappas/move-code-quality-skill) | move-quality-skill | 1 | 10 ⭐ |
+
+**Total: 177 skills • 136K+ combined stars**
+
+[View all 24 providers →](https://dmgrok.github.io/agent_skills_directory/)
+
+### Similar Directories & Listings
+
+- 🌟 **[heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills)** - Curated list of agent skills and frameworks
+- 🌟 **[Prat011/awesome-llm-skills](https://github.com/Prat011/awesome-llm-skills)** - Comprehensive collection of LLM agent skills
+- 📖 **[Agent Skills Spec](https://agentskills.io/specification)** - Standard specification for agent skills
+
+---
+
 ## Quick Install
 
 ### macOS (Homebrew)
