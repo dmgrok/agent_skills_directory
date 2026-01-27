@@ -371,21 +371,68 @@ skills publish --submit  # Request inclusion in directory
 
 ## Contributing
 
-### Add a Provider
+There are several ways to contribute skills to the directory:
 
-Edit `scripts/aggregate.py`:
+### 1. Publish Your Own Skill (Easiest)
+
+Create a skill and publish it directly:
+
+```bash
+# Create your skill
+mkdir my-skill && cd my-skill
+skills init                      # Interactive setup
+
+# Publish to GitHub + request directory inclusion
+skills login                     # Authenticate with GitHub
+skills publish --submit          # Creates repo + submits to directory
+```
+
+This will:
+1. Create a GitHub repo `your-username/skill-my-skill`
+2. Push your `skill.json` and `SKILL.md`
+3. Open a PR to add you as a single-skill provider
+
+### 2. Contribute to an Existing Provider
+
+Add your skill to an existing provider repository. Since we scan providers daily, your skill will appear automatically!
+
+**Recommended providers accepting contributions:**
+
+| Provider | How to Contribute |
+|----------|-------------------|
+| [skillcreatorai/Ai-Agent-Skills](https://github.com/skillcreatorai/Ai-Agent-Skills) | Fork → Add skill in `skills/` → PR |
+| [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) | Fork → Add skill in `skills/` → PR |
+| [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | Fork → Add skill → PR |
+
+### 3. Add a New Provider Source
+
+Have a repository with multiple skills? Request to add it as a provider:
+
+**Option A: Open an issue**
+
+[➕ Request New Provider](https://github.com/dmgrok/agent_skills_directory/issues/new?labels=new-source&title=[New+Provider]+your-org/repo-name)
+
+**Option B: Submit a PR** editing `scripts/aggregate.py`:
 
 ```python
 PROVIDERS = {
     "your-org": {
         "name": "Your Organization",
-        "repo": "https://github.com/your-org/skills",
-        "api_tree_url": "https://api.github.com/repos/your-org/skills/git/trees/main?recursive=1",
-        "raw_base": "https://raw.githubusercontent.com/your-org/skills/main",
-        "skills_path_prefix": "skills/",
+        "repo": "https://github.com/your-org/skills-repo",
+        "api_tree_url": "https://api.github.com/repos/your-org/skills-repo/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/your-org/skills-repo/main",
+        "skills_path_prefix": "skills/",  # or "" for root-level SKILL.md
     },
 }
 ```
+
+### Provider Requirements
+
+For a repository to be scanned as a provider:
+
+- ✅ Each skill has a `SKILL.md` file with YAML frontmatter (`name`, `description`)
+- ✅ Public GitHub repository
+- ✅ Skills in a consistent path (e.g., `skills/*/SKILL.md` or root `SKILL.md`)
 
 ### Local Development
 
@@ -393,8 +440,8 @@ PROVIDERS = {
 git clone https://github.com/dmgrok/agent_skills_directory.git
 cd agent_skills_directory
 pip install -e ".[validation]"
-python scripts/aggregate.py
-pytest
+python scripts/aggregate.py      # Test aggregation locally
+pytest                           # Run tests
 ```
 
 ---
