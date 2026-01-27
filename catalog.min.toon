@@ -1,49 +1,49 @@
 "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json"
-version: 2026.01.26
-generated_at: "2026-01-26T16:17:48.278835+00:00"
-total_skills: 174
+version: 2026.01.27
+generated_at: "2026-01-27T06:46:17.697810+00:00"
+total_skills: 177
 providers:
   anthropics:
     name: Anthropic
     repo: "https://github.com/anthropics/skills"
     skills_count: 16
-    stars: 54014
+    stars: 54750
     description: Public repository for Agent Skills
   openai:
     name: OpenAI
     repo: "https://github.com/openai/skills"
     skills_count: 12
-    stars: 2060
+    stars: 2077
     description: Skills Catalog for Codex
   github:
     name: GitHub
     repo: "https://github.com/github/awesome-copilot"
     skills_count: 26
-    stars: 19018
+    stars: 19089
     description: "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
   vercel:
     name: Vercel
     repo: "https://github.com/vercel-labs/agent-skills"
-    skills_count: 3
-    stars: 16700
+    skills_count: 5
+    stars: 16923
     description: null
   huggingface:
     name: HuggingFace
     repo: "https://github.com/huggingface/skills"
     skills_count: 8
-    stars: 1058
+    stars: 1061
     description: null
   skillcreatorai:
     name: SkillCreator.ai
     repo: "https://github.com/skillcreatorai/Ai-Agent-Skills"
     skills_count: 47
-    stars: 620
+    stars: 624
     description: Homebrew for AI Agent Skills.
   "obra-superpowers":
     name: Obra Superpowers
     repo: "https://github.com/obra/superpowers"
     skills_count: 14
-    stars: 36744
+    stars: 37348
     description: An agentic skills framework & software development methodology that works.
   tapestry:
     name: Tapestry Skills
@@ -55,7 +55,7 @@ providers:
     name: Sanjay AI Skills
     repo: "https://github.com/sanjay3290/ai-skills"
     skills_count: 12
-    stars: 41
+    stars: 43
     description: Collection of agent skills for AI coding assistants
   "aws-skills":
     name: AWS Skills
@@ -67,37 +67,37 @@ providers:
     name: Claude Marketplace (Engineering)
     repo: "https://github.com/mhattingpete/claude-skills-marketplace"
     skills_count: 5
-    stars: 267
+    stars: 271
     description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
   "claude-marketplace-visual":
     name: Claude Marketplace (Visual)
     repo: "https://github.com/mhattingpete/claude-skills-marketplace"
     skills_count: 5
-    stars: 267
+    stars: 271
     description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
   "claude-marketplace-code":
     name: Claude Marketplace (Code Ops)
     repo: "https://github.com/mhattingpete/claude-skills-marketplace"
     skills_count: 4
-    stars: 267
+    stars: 271
     description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
   "claude-marketplace-productivity":
     name: Claude Marketplace (Productivity)
     repo: "https://github.com/mhattingpete/claude-skills-marketplace"
     skills_count: 4
-    stars: 267
+    stars: 271
     description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
   "epub-skill":
     name: EPUB Converter
     repo: "https://github.com/smerchek/claude-epub-skill"
     skills_count: 1
-    stars: 55
+    stars: 56
     description: "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
   "d3js-skill":
     name: D3.js Visualization
     repo: "https://github.com/chrisvoncsefalvay/claude-d3js-skill"
     skills_count: 1
-    stars: 81
+    stars: 83
     description: A Claude skill for d3.js.
   "ffuf-skill":
     name: FFUF Web Fuzzing
@@ -109,7 +109,7 @@ providers:
     name: iOS Simulator
     repo: "https://github.com/conorluddy/ios-simulator-skill"
     skills_count: 1
-    stars: 391
+    stars: 395
     description: "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
   "move-quality-skill":
     name: Move Code Quality
@@ -121,19 +121,19 @@ providers:
     name: Playwright Automation
     repo: "https://github.com/lackeyjb/playwright-skill"
     skills_count: 1
-    stars: 1475
+    stars: 1482
     description: Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.
   "pypict-skill":
     name: PICT Test Cases
     repo: "https://github.com/omkamal/pypict-claude-skill"
-    skills_count: 0
-    stars: null
-    description: null
+    skills_count: 1
+    stars: 28
+    description: A claude skill that generate test cases using N-wise test cases using the pypict library
   "csv-summarizer-skill":
     name: CSV Data Summarizer
     repo: "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill"
     skills_count: 1
-    stars: 192
+    stars: 193
     description: "A Claude Skill that automatically analyzes uploaded CSV files — generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
   "family-history-skill":
     name: Family History Research
@@ -145,10 +145,10 @@ providers:
     name: NotebookLM Integration
     repo: "https://github.com/PleasePrompto/notebooklm-skill"
     skills_count: 1
-    stars: 2725
+    stars: 2750
     description: "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
 categories[7]: creative,data,development,documents,enterprise,integrations,other
-skills[174]:
+skills[177]:
   - id: anthropics/algorithmic-art
     name: algorithmic-art
     description: "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations."
@@ -204,7 +204,7 @@ skills[174]:
     category: creative
     license: Complete terms in LICENSE.txt
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2025-12-01T18:05:36Z"
     metadata:
     source:
       repo: "https://github.com/anthropics/skills"
@@ -491,7 +491,7 @@ skills[174]:
     category: development
     license: Complete terms in LICENSE.txt
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2025-12-01T18:05:36Z"
     metadata:
     source:
       repo: "https://github.com/anthropics/skills"
@@ -1822,7 +1822,7 @@ skills[174]:
     category: data
     license: Complete terms in LICENSE.txt
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2026-01-12T15:26:31Z"
     metadata:
     source:
       repo: "https://github.com/huggingface/skills"
@@ -2578,6 +2578,28 @@ skills[174]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
+  - id: pypict-skill/pict-test-designer
+    name: pict-test-designer
+    description: "Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for any piece of requirements or code. Analyzes inputs, generates PICT models with parameters, values, and constraints for valid scenarios using pairwise testing. Outputs the PICT model, markdown table of test cases, and expected results."
+    provider: pypict-skill
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2025-10-19T18:59:52Z"
+    metadata:
+    source:
+      repo: "https://github.com/omkamal/pypict-claude-skill"
+      path: ""
+      skill_md_url: "https://raw.githubusercontent.com/omkamal/pypict-claude-skill/main/SKILL.md"
+      commit_sha: a001d8737c70066401cfe1b39cf64969b4d3e5df
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[5]: pr,test,design,pict,designer
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
   - id: sanjay-ai-skills/deep-research
     name: deep-research
     description: "Execute autonomous multi-step research using Google Gemini Deep Research Agent. Use for: market analysis, competitive landscaping, literature reviews, technical research, due diligence. Takes 2-10 minutes but produces detailed, cited reports. Costs $2-5 per task."
@@ -2761,7 +2783,7 @@ skills[174]:
     category: creative
     license: null
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2025-12-23T03:28:23Z"
     metadata:
     source:
       repo: "https://github.com/sanjay3290/ai-skills"
@@ -3413,7 +3435,7 @@ skills[174]:
     category: other
     license: MIT
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2025-12-17T20:29:57Z"
     metadata:
     source:
       repo: "https://github.com/skillcreatorai/Ai-Agent-Skills"
@@ -4000,6 +4022,30 @@ skills[174]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
+  - id: vercel/vercel-composition-patterns
+    name: vercel-composition-patterns
+    description: "React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flexible component libraries, or designing reusable APIs. Triggers on tasks involving compound components, render props, context providers, or component architecture."
+    provider: vercel
+    category: creative
+    license: MIT
+    compatibility: null
+    last_updated_at: "2026-01-26T18:26:09Z"
+    metadata:
+      author: vercel
+      version: 1.0.0
+    source:
+      repo: "https://github.com/vercel-labs/agent-skills"
+      path: skills/composition-patterns
+      skill_md_url: "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/composition-patterns/SKILL.md"
+      commit_sha: 23a77cf47783bbc1b647d40b14c1f61e3413a629
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[6]: pr,api,design,vercel,composition,patterns
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
   - id: vercel/vercel-deploy
     name: vercel-deploy
     description: "Deploy applications and websites to Vercel. Use this skill when the user requests deployment actions such as \"Deploy my app\", \"Deploy this to production\", \"Create a preview deployment\", \"Deploy and give me the link\", or \"Push this live\". No authentication required - returns preview URL and claimable deployment link."
@@ -4015,7 +4061,7 @@ skills[174]:
       repo: "https://github.com/vercel-labs/agent-skills"
       path: skills/claude.ai/vercel-deploy-claimable
       skill_md_url: "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/claude.ai/vercel-deploy-claimable/SKILL.md"
-      commit_sha: c4399b192588e71fdf0cb507c7b6ad9e9657ce6b
+      commit_sha: 23a77cf47783bbc1b647d40b14c1f61e3413a629
     has_scripts: true
     has_references: false
     has_assets: false
@@ -4041,11 +4087,35 @@ skills[174]:
       repo: "https://github.com/vercel-labs/agent-skills"
       path: skills/react-best-practices
       skill_md_url: "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-best-practices/SKILL.md"
-      commit_sha: c4399b192588e71fdf0cb507c7b6ad9e9657ce6b
+      commit_sha: 23a77cf47783bbc1b647d40b14c1f61e3413a629
     has_scripts: false
     has_references: false
     has_assets: false
     tags[5]: pr,vercel,react,best,practices
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+  - id: vercel/vercel-react-native-skills
+    name: vercel-react-native-skills
+    description: "React Native and Expo best practices for building performant mobile apps. Use when building React Native components, optimizing list performance, implementing animations, or working with native modules. Triggers on tasks involving React Native, Expo, mobile performance, or native platform APIs."
+    provider: vercel
+    category: integrations
+    license: MIT
+    compatibility: null
+    last_updated_at: "2026-01-26T18:26:09Z"
+    metadata:
+      author: vercel
+      version: 1.0.0
+    source:
+      repo: "https://github.com/vercel-labs/agent-skills"
+      path: skills/react-native-skills
+      skill_md_url: "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-native-skills/SKILL.md"
+      commit_sha: 23a77cf47783bbc1b647d40b14c1f61e3413a629
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[6]: pr,api,vercel,react,native,skills
     duplicate_status: null
     duplicate_annotation: null
     duplicate_of: null
@@ -4057,7 +4127,7 @@ skills[174]:
     category: development
     license: null
     compatibility: null
-    last_updated_at: null
+    last_updated_at: "2026-01-16T23:47:11Z"
     metadata:
       author: vercel
       version: 1.0.0
@@ -4066,7 +4136,7 @@ skills[174]:
       repo: "https://github.com/vercel-labs/agent-skills"
       path: skills/web-design-guidelines
       skill_md_url: "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/web-design-guidelines/SKILL.md"
-      commit_sha: c4399b192588e71fdf0cb507c7b6ad9e9657ce6b
+      commit_sha: 23a77cf47783bbc1b647d40b14c1f61e3413a629
     has_scripts: false
     has_references: false
     has_assets: false
