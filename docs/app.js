@@ -90,7 +90,12 @@ function updateURLParams() {
 
 // Initialize
 async function init() {
+    const loader = document.getElementById('loading-spinner');
+    
     try {
+        // Show loader
+        if (loader) loader.style.display = 'flex';
+        
         // Load catalog and bundles in parallel
         const [catalogResponse, bundlesResponse] = await Promise.all([
             fetch(CATALOG_URL, { cache: 'no-cache' }),
@@ -125,8 +130,15 @@ async function init() {
             month: 'long',
             day: 'numeric'
         });
+        
+        // Hide loader
+        if (loader) loader.style.display = 'none';
     } catch (error) {
         console.error('Failed to load catalog:', error);
+        
+        // Hide loader
+        if (loader) loader.style.display = 'none';
+        
         skillsGrid.innerHTML = `
             <div class="no-results">
                 <p>Failed to load skills catalog.</p>
