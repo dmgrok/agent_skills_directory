@@ -1,112 +1,112 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.01.27",
-  "generated_at": "2026-01-27T06:46:17.697810+00:00",
-  "total_skills": 177,
+  "version": "2026.01.28",
+  "generated_at": "2026-01-28T06:46:38.214947+00:00",
+  "total_skills": 187,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
       "repo": "https://github.com/anthropics/skills",
       "skills_count": 16,
-      "stars": 54750,
+      "stars": 56183,
       "description": "Public repository for Agent Skills"
     },
     "openai": {
       "name": "OpenAI",
       "repo": "https://github.com/openai/skills",
-      "skills_count": 12,
-      "stars": 2077,
+      "skills_count": 20,
+      "stars": 2116,
       "description": "Skills Catalog for Codex"
     },
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
-      "skills_count": 26,
-      "stars": 19089,
+      "skills_count": 28,
+      "stars": 19233,
       "description": "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
     },
     "vercel": {
       "name": "Vercel",
       "repo": "https://github.com/vercel-labs/agent-skills",
       "skills_count": 5,
-      "stars": 16923,
-      "description": null
+      "stars": 17257,
+      "description": "Vercel's official collection of agent skills"
     },
     "huggingface": {
       "name": "HuggingFace",
       "repo": "https://github.com/huggingface/skills",
       "skills_count": 8,
-      "stars": 1061,
+      "stars": 1067,
       "description": null
     },
     "skillcreatorai": {
       "name": "SkillCreator.ai",
       "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
       "skills_count": 47,
-      "stars": 624,
+      "stars": 629,
       "description": "Homebrew for AI Agent Skills."
     },
     "obra-superpowers": {
       "name": "Obra Superpowers",
       "repo": "https://github.com/obra/superpowers",
       "skills_count": 14,
-      "stars": 37348,
+      "stars": 38348,
       "description": "An agentic skills framework & software development methodology that works."
     },
     "tapestry": {
       "name": "Tapestry Skills",
       "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
       "skills_count": 4,
-      "stars": 181,
+      "stars": 183,
       "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
     },
     "sanjay-ai-skills": {
       "name": "Sanjay AI Skills",
       "repo": "https://github.com/sanjay3290/ai-skills",
       "skills_count": 12,
-      "stars": 43,
+      "stars": 45,
       "description": "Collection of agent skills for AI coding assistants"
     },
     "aws-skills": {
       "name": "AWS Skills",
       "repo": "https://github.com/zxkane/aws-skills",
       "skills_count": 5,
-      "stars": 101,
+      "stars": 103,
       "description": "Claude Agent Skills for AWS"
     },
     "claude-marketplace-engineering": {
       "name": "Claude Marketplace (Engineering)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 5,
-      "stars": 271,
+      "stars": 277,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-visual": {
       "name": "Claude Marketplace (Visual)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 5,
-      "stars": 271,
+      "stars": 277,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-code": {
       "name": "Claude Marketplace (Code Ops)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 4,
-      "stars": 271,
+      "stars": 277,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-productivity": {
       "name": "Claude Marketplace (Productivity)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 4,
-      "stars": 271,
+      "stars": 277,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "epub-skill": {
       "name": "EPUB Converter",
       "repo": "https://github.com/smerchek/claude-epub-skill",
       "skills_count": 1,
-      "stars": 56,
+      "stars": 58,
       "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
     },
     "d3js-skill": {
@@ -120,14 +120,14 @@
       "name": "FFUF Web Fuzzing",
       "repo": "https://github.com/jthack/ffuf_claude_skill",
       "skills_count": 1,
-      "stars": 100,
+      "stars": 102,
       "description": "This is a \"skill\" for claude to use FFUF."
     },
     "ios-simulator-skill": {
       "name": "iOS Simulator",
       "repo": "https://github.com/conorluddy/ios-simulator-skill",
       "skills_count": 1,
-      "stars": 395,
+      "stars": 406,
       "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
     },
     "move-quality-skill": {
@@ -141,7 +141,7 @@
       "name": "Playwright Automation",
       "repo": "https://github.com/lackeyjb/playwright-skill",
       "skills_count": 1,
-      "stars": 1482,
+      "stars": 1495,
       "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
     },
     "pypict-skill": {
@@ -155,7 +155,7 @@
       "name": "CSV Data Summarizer",
       "repo": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill",
       "skills_count": 1,
-      "stars": 193,
+      "stars": 196,
       "description": "A Claude Skill that automatically analyzes uploaded CSV files \u2014 generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
     },
     "family-history-skill": {
@@ -169,7 +169,7 @@
       "name": "NotebookLM Integration",
       "repo": "https://github.com/PleasePrompto/notebooklm-skill",
       "skills_count": 1,
-      "stars": 2750,
+      "stars": 2799,
       "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
     }
   },
@@ -515,6 +515,11 @@
       "duplicate_of": null,
       "duplicate_similarity": null,
       "similar_skills": [
+        {
+          "id": "openai/pdf",
+          "provider": "openai",
+          "similarity": 0.49
+        },
         {
           "id": "skillcreatorai/pdf",
           "provider": "skillcreatorai",
@@ -1654,7 +1659,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/agentic-eval",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/agentic-eval/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1686,7 +1691,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/appinsights-instrumentation",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/appinsights-instrumentation/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": true,
       "has_references": true,
@@ -1714,7 +1719,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-deployment-preflight",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-deployment-preflight/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": true,
@@ -1745,7 +1750,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-devops-cli",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-devops-cli/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1780,7 +1785,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-resource-visualizer",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-resource-visualizer/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1810,7 +1815,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-role-selector",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-role-selector/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1840,7 +1845,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-static-web-apps",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-static-web-apps/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1876,7 +1881,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/chrome-devtools",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/chrome-devtools/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1907,7 +1912,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/gh-cli",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/gh-cli/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1937,7 +1942,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/git-commit",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/git-commit/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1966,7 +1971,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/github-issues",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/github-issues/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": true,
@@ -1996,7 +2001,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/image-manipulation-image-magick",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/image-manipulation-image-magick/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2026,7 +2031,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/legacy-circuit-mockups",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/legacy-circuit-mockups/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": true,
@@ -2059,7 +2064,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/make-skill-template",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/make-skill-template/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2092,7 +2097,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/mcp-cli",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/mcp-cli/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2122,7 +2127,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/microsoft-code-reference",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-code-reference/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2154,7 +2159,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/microsoft-docs",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-docs/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2186,7 +2191,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/nuget-manager",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nuget-manager/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2216,7 +2221,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/plantuml-ascii",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/plantuml-ascii/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2247,7 +2252,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/prd",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/prd/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2278,7 +2283,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/refactor",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/refactor/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2288,6 +2293,36 @@
         "design",
         "extract",
         "refactor"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "github/scoutqa-test",
+      "name": "scoutqa-test",
+      "description": "This skill should be used when the user asks to \"test this website\", \"run exploratory testing\", \"check for accessibility issues\", \"verify the login flow works\", \"find bugs on this page\", or requests automated QA testing. Triggers on web application testing scenarios including smoke tests, accessibility audits, e-commerce flows, and user flow validation using ScoutQA CLI. IMPORTANT: Use this skill proactively after implementing web application features to verify they work correctly - don't wait for the user to ask for testing.",
+      "provider": "github",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-23T06:49:01Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/scoutqa-test",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/scoutqa-test/SKILL.md",
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "test",
+        "cli",
+        "scoutqa"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -2308,7 +2343,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/snowflake-semanticview",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/snowflake-semanticview/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2337,7 +2372,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/vscode-ext-commands",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-commands/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2367,7 +2402,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/vscode-ext-localization",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-localization/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2397,7 +2432,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/web-design-reviewer",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/web-design-reviewer/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": true,
@@ -2428,7 +2463,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/webapp-testing",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md",
-        "commit_sha": "cfb896c2325b8c0527a88362846d25b8080c5071"
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2454,6 +2489,38 @@
           "similarity": 1.0
         }
       ]
+    },
+    {
+      "id": "github/workiq-copilot",
+      "name": "workiq-copilot",
+      "description": "Guides the Copilot CLI on how to use the WorkIQ CLI/MCP server to query Microsoft 365 Copilot data (emails, meetings, docs, Teams, people) for live context, summaries, and recommendations.",
+      "provider": "github",
+      "category": "enterprise",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-26T03:00:26Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/github/awesome-copilot",
+        "path": "skills/workiq-copilot",
+        "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/workiq-copilot/SKILL.md",
+        "commit_sha": "2e317e23e5268c825cec9fa3c12930d35d8b4d03"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "mcp",
+        "cli",
+        "meeting",
+        "email",
+        "workiq",
+        "copilot"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
     },
     {
       "id": "huggingface/hugging-face-cli",
@@ -3221,7 +3288,7 @@
       "category": "development",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-22T18:54:33Z",
+      "last_updated_at": "2026-01-27T07:15:35Z",
       "metadata": {
         "short-description": "Run Codex Readiness integration test"
       },
@@ -3229,7 +3296,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/codex-readiness-integration-test",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/codex-readiness-integration-test/SKILL.md",
-        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
       },
       "has_scripts": true,
       "has_references": true,
@@ -3261,7 +3328,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/codex-readiness-unit-test",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/codex-readiness-unit-test/SKILL.md",
-        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
       },
       "has_scripts": true,
       "has_references": true,
@@ -3293,7 +3360,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/create-plan",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/create-plan/SKILL.md",
-        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3302,6 +3369,40 @@
         "ci",
         "create",
         "plan"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "openai/doc",
+      "name": "doc",
+      "description": "Use when the task involves reading, creating, or editing `.docx` documents, especially when formatting or layout fidelity matters; prefer `python-docx` plus the bundled `scripts/render_docx.py` for visual checks.",
+      "provider": "openai",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T11:18:44Z",
+      "metadata": {
+        "short-description": "Edit and review docx files"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/doc",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/doc/SKILL.md",
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "docx",
+        "pr",
+        "ci",
+        "visual",
+        "document",
+        "doc"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -3324,7 +3425,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-address-comments",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-address-comments/SKILL.md",
-        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3358,7 +3459,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-fix-ci",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-fix-ci/SKILL.md",
-        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3370,6 +3471,39 @@
         "ci",
         "cd",
         "fix"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "openai/imagegen",
+      "name": "imagegen",
+      "description": "Use when the user asks to generate or edit images via the OpenAI Image API (for example: generate image, edit/inpaint/mask, background removal or replacement, transparent background, product shots, concept art, covers, or batch variants); run the bundled CLI (`scripts/image_gen.py`) and require `OPENAI_API_KEY` for live calls.",
+      "provider": "openai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T11:18:44Z",
+      "metadata": {
+        "short-description": "Generate and edit images using OpenAI"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/imagegen",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/imagegen/SKILL.md",
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "cli",
+        "art",
+        "imagegen"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -3392,7 +3526,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/linear",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/linear/SKILL.md",
-        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3422,7 +3556,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-knowledge-capture",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-knowledge-capture/SKILL.md",
-        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
       },
       "has_scripts": false,
       "has_references": true,
@@ -3457,7 +3591,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-meeting-intelligence",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-meeting-intelligence/SKILL.md",
-        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
       },
       "has_scripts": false,
       "has_references": true,
@@ -3489,7 +3623,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-research-documentation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-research-documentation/SKILL.md",
-        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
       },
       "has_scripts": false,
       "has_references": true,
@@ -3523,7 +3657,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-spec-to-implementation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-spec-to-implementation/SKILL.md",
-        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
       },
       "has_scripts": false,
       "has_references": true,
@@ -3533,6 +3667,80 @@
         "notion",
         "spec",
         "implementation"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "openai/pdf",
+      "name": "pdf",
+      "description": "Use when tasks involve reading, creating, or reviewing PDF files where rendering and layout matter; prefer visual checks by rendering pages (Poppler) and use Python tools such as `reportlab`, `pdfplumber`, and `pypdf` for generation and extraction.",
+      "provider": "openai",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T11:18:44Z",
+      "metadata": {
+        "short-description": "Create, edit, and review PDFs"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/pdf",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/pdf/SKILL.md",
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pdf",
+        "pr",
+        "visual",
+        "extract"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "anthropics/pdf",
+          "provider": "anthropics",
+          "similarity": 0.49
+        },
+        {
+          "id": "skillcreatorai/pdf",
+          "provider": "skillcreatorai",
+          "similarity": 0.5
+        }
+      ]
+    },
+    {
+      "id": "openai/screenshot",
+      "name": "screenshot",
+      "description": "Use when the user explicitly asks for a desktop or system screenshot (full screen, specific app or window, or a pixel region), or when tool-specific capture capabilities are unavailable and an OS-level capture is needed.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T11:18:44Z",
+      "metadata": {
+        "short-description": "Capture screenshots"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/screenshot",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/screenshot/SKILL.md",
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "screenshot"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -3555,7 +3763,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-creator",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md",
-        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3599,7 +3807,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-installer",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-installer/SKILL.md",
-        "commit_sha": "7b086f550ea28ace5f08181daccf4eff08b0a23f"
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3610,6 +3818,136 @@
         "pr",
         "skill",
         "installer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "openai/sora",
+      "name": "sora",
+      "description": "Use when the user asks to generate, remix, poll, list, download, or delete Sora videos via OpenAI\u2019s video API using the bundled CLI (`scripts/sora.py`), including requests like \u201cgenerate AI video,\u201d \u201cSora,\u201d \u201cvideo remix,\u201d \u201cdownload video/thumbnail/spritesheet,\u201d and batch video generation; requires `OPENAI_API_KEY` and Sora API access.",
+      "provider": "openai",
+      "category": "integrations",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T11:18:44Z",
+      "metadata": {
+        "short-description": "Generate and manage Sora videos"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/sora",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/sora/SKILL.md",
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "cli",
+        "sora"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "openai/speech",
+      "name": "speech",
+      "description": "Use when the user asks for text-to-speech narration or voiceover, accessibility reads, audio prompts, or batch speech generation via the OpenAI Audio API; run the bundled CLI (`scripts/text_to_speech.py`) with built-in voices and require `OPENAI_API_KEY` for live calls. Custom voice creation is out of scope.",
+      "provider": "openai",
+      "category": "integrations",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T11:18:44Z",
+      "metadata": {
+        "short-description": "Generate narrated audio from text"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/speech",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/speech/SKILL.md",
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "cli",
+        "speech"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "openai/spreadsheet",
+      "name": "spreadsheet",
+      "description": "Use when tasks involve creating, editing, analyzing, or formatting spreadsheets (`.xlsx`, `.csv`, `.tsv`) using Python (`openpyxl`, `pandas`), especially when formulas, references, and formatting need to be preserved and verified.",
+      "provider": "openai",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T11:18:44Z",
+      "metadata": {
+        "short-description": "Create, edit, and analyze spreadsheets"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/spreadsheet",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/spreadsheet/SKILL.md",
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "xlsx",
+        "csv",
+        "pr",
+        "ci",
+        "spreadsheet"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "openai/yeet",
+      "name": "yeet",
+      "description": "Use only when the user explicitly asks to stage, commit, push, and open a GitHub pull request in one flow using the GitHub CLI (`gh`).",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T11:18:44Z",
+      "metadata": {
+        "short-description": "Stage, commit, and open PR"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/yeet",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/yeet/SKILL.md",
+        "commit_sha": "aac2078f9f293e5335f5efe33148f40d75b56389"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "github",
+        "git",
+        "ci",
+        "cli",
+        "yeet"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -5087,6 +5425,11 @@
           "id": "anthropics/pdf",
           "provider": "anthropics",
           "similarity": 1.0
+        },
+        {
+          "id": "openai/pdf",
+          "provider": "openai",
+          "similarity": 0.49
         }
       ]
     },
@@ -5707,7 +6050,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/composition-patterns",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/composition-patterns/SKILL.md",
-        "commit_sha": "23a77cf47783bbc1b647d40b14c1f61e3413a629"
+        "commit_sha": "6650c778d5c591d4196bf2e96038a00559ecd0bc"
       },
       "has_scripts": false,
       "has_references": false,
@@ -5742,7 +6085,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/claude.ai/vercel-deploy-claimable",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/claude.ai/vercel-deploy-claimable/SKILL.md",
-        "commit_sha": "23a77cf47783bbc1b647d40b14c1f61e3413a629"
+        "commit_sha": "6650c778d5c591d4196bf2e96038a00559ecd0bc"
       },
       "has_scripts": true,
       "has_references": false,
@@ -5781,7 +6124,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/react-best-practices",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-best-practices/SKILL.md",
-        "commit_sha": "23a77cf47783bbc1b647d40b14c1f61e3413a629"
+        "commit_sha": "6650c778d5c591d4196bf2e96038a00559ecd0bc"
       },
       "has_scripts": false,
       "has_references": false,
@@ -5806,7 +6149,7 @@
       "category": "integrations",
       "license": "MIT",
       "compatibility": null,
-      "last_updated_at": "2026-01-26T18:26:09Z",
+      "last_updated_at": "2026-01-27T00:48:33Z",
       "metadata": {
         "author": "vercel",
         "version": "1.0.0"
@@ -5815,7 +6158,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/react-native-skills",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-native-skills/SKILL.md",
-        "commit_sha": "23a77cf47783bbc1b647d40b14c1f61e3413a629"
+        "commit_sha": "6650c778d5c591d4196bf2e96038a00559ecd0bc"
       },
       "has_scripts": false,
       "has_references": false,
@@ -5851,7 +6194,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/web-design-guidelines",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/web-design-guidelines/SKILL.md",
-        "commit_sha": "23a77cf47783bbc1b647d40b14c1f61e3413a629"
+        "commit_sha": "6650c778d5c591d4196bf2e96038a00559ecd0bc"
       },
       "has_scripts": false,
       "has_references": false,
