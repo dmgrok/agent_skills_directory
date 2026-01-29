@@ -16,6 +16,10 @@ let bundles = null;
 let filteredSkills = [];
 let filteredBundles = [];
 
+// Pagination state
+const SKILLS_PER_PAGE = 24;
+let currentPage = 1;
+
 // DOM Elements
 const searchInput = document.getElementById('search');
 const providerFilter = document.getElementById('provider-filter');
@@ -218,6 +222,7 @@ function filterSkills() {
     });
 
     filteredCountEl.textContent = filteredSkills.length;
+    currentPage = 1; // Reset to first page when filters change
     updateURLParams();
     renderSkills(filteredSkills);
 }
@@ -230,10 +235,17 @@ function renderSkills(skills) {
                 <p style="margin-top: 0.5rem; font-size: 0.85rem;">Try adjusting your search or filters.</p>
             </div>
         `;
+        renderPagination(0, 0);
         return;
     }
 
-    skillsGrid.innerHTML = skills.map(skill => {
+    // Pagination calculations
+    const totalPages = Math.ceil(skills.length / SKILLS_PER_PAGE);
+    const startIndex = (currentPage - 1) * SKILLS_PER_PAGE;
+    const endIndex = startIndex + SKILLS_PER_PAGE;
+    const paginatedSkills = skills.slice(startIndex, endIndex);
+
+    skillsGrid.innerHTML = paginatedSkills.map(skill => {
         const updatedLabel = formatDate(skill.last_updated_at);
         const provider = catalog.providers[skill.provider];
         const starsHtml = provider && provider.stars 
@@ -280,8 +292,98 @@ function renderSkills(skills) {
         });
     });
 
-    // Update filtered count
+    // Update filtered count and render pagination
     filteredCountEl.textContent = skills.length;
+    renderPagination(skills.length, totalPages);
+}
+
+function renderPagination(totalSkills, totalPages) {
+    // Remove existing pagination
+    const existingPagination = document.querySelector('.pagination');
+    if (existingPagination) existingPagination.remove();
+
+    if (totalPages <= 1) return;
+
+    const pagination = document.createElement('div');
+    pagination.className = 'pagination';
+
+    // Previous button
+    const prevBtn = document.createElement('button');
+    prevBtn.className = 'pagination-btn';
+    prevBtn.innerHTML = '← Prev';
+    prevBtn.disabled = currentPage === 1;
+    prevBtn.addEventListener('click', () => goToPage(currentPage - 1));
+
+    // Page info
+    const pageInfo = document.createElement('span');
+    pageInfo.className = 'pagination-info';
+    pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+
+    // Page numbers
+    const pageNumbers = document.createElement('div');
+    pageNumbers.className = 'pagination-numbers';
+    
+    const maxVisiblePages = 5;
+    let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+    
+    if (endPage - startPage < maxVisiblePages - 1) {
+        startPage = Math.max(1, endPage - maxVisiblePages + 1);
+    }
+
+    if (startPage > 1) {
+        pageNumbers.appendChild(createPageBtn(1));
+        if (startPage > 2) {
+            const ellipsis = document.createElement('span');
+            ellipsis.className = 'pagination-ellipsis';
+            ellipsis.textContent = '...';
+            pageNumbers.appendChild(ellipsis);
+        }
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+        pageNumbers.appendChild(createPageBtn(i));
+    }
+
+    if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+            const ellipsis = document.createElement('span');
+            ellipsis.className = 'pagination-ellipsis';
+            ellipsis.textContent = '...';
+            pageNumbers.appendChild(ellipsis);
+        }
+        pageNumbers.appendChild(createPageBtn(totalPages));
+    }
+
+    // Next button
+    const nextBtn = document.createElement('button');
+    nextBtn.className = 'pagination-btn';
+    nextBtn.innerHTML = 'Next →';
+    nextBtn.disabled = currentPage === totalPages;
+    nextBtn.addEventListener('click', () => goToPage(currentPage + 1));
+
+    pagination.appendChild(prevBtn);
+    pagination.appendChild(pageNumbers);
+    pagination.appendChild(pageInfo);
+    pagination.appendChild(nextBtn);
+
+    // Insert after skills grid
+    skillsGrid.parentNode.insertBefore(pagination, skillsGrid.nextSibling);
+}
+
+function createPageBtn(pageNum) {
+    const btn = document.createElement('button');
+    btn.className = 'pagination-page' + (pageNum === currentPage ? ' active' : '');
+    btn.textContent = pageNum;
+    btn.addEventListener('click', () => goToPage(pageNum));
+    return btn;
+}
+
+function goToPage(page) {
+    currentPage = page;
+    renderSkills(filteredSkills);
+    // Scroll to top of skills section
+    document.querySelector('.skills-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function renderFeatures(skill) {
