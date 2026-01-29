@@ -20,6 +20,11 @@ let filteredBundles = [];
 const SKILLS_PER_PAGE = 24;
 let currentPage = 1;
 
+// Search optimization: pre-built index and cache
+let searchIndex = null;
+let searchCache = new Map();
+const SEARCH_CACHE_MAX_SIZE = 50;
+
 // DOM Elements
 const searchInput = document.getElementById('search');
 const providerFilter = document.getElementById('provider-filter');
@@ -124,6 +129,7 @@ async function init() {
         }
         
         populateFilters();
+        buildSearchIndex(); // Build search index for fast lookups
         updateStats();
         applyQueryParams(); // Apply URL params after loading
         
@@ -195,31 +201,98 @@ function updateStats() {
     totalCategoriesEl.textContent = catalog.categories.length;
 }
 
+// Build search index for O(1) lookups on pre-processed text
+function buildSearchIndex() {
+    searchIndex = catalog.skills.map((skill, index) => {
+        // Pre-concatenate and lowercase all searchable fields
+        const tagsText = (skill.tags || []).join(' ').toLowerCase();
+        const searchText = `${skill.name.toLowerCase()} ${skill.description.toLowerCase()} ${tagsText}`;
+        
+        return {
+            index,
+            searchText,
+            tagsLower: (skill.tags || []).map(t => t.toLowerCase()),
+            provider: skill.provider,
+            category: skill.category
+        };
+    });
+    
+    // Clear cache when index is rebuilt
+    searchCache.clear();
+}
+
+// Get cache key for current filter state
+function getSearchCacheKey(searchTerm, provider, category, urlTags) {
+    return `${searchTerm}|${provider}|${category}|${urlTags.join(',')}`;
+}
+
 function filterSkills() {
     const searchTerm = searchInput.value.toLowerCase().trim();
     const provider = providerFilter.value;
     const category = categoryFilter.value;
     const urlTags = getQueryParams().tags;
+    
+    // Check cache first
+    const cacheKey = getSearchCacheKey(searchTerm, provider, category, urlTags);
+    if (searchCache.has(cacheKey)) {
+        filteredSkills = searchCache.get(cacheKey);
+        filteredCountEl.textContent = filteredSkills.length;
+        currentPage = 1;
+        updateURLParams();
+        renderSkills(filteredSkills);
+        return;
+    }
 
-    filteredSkills = catalog.skills.filter(skill => {
-        // Search filter
-        const matchesSearch = !searchTerm || 
-            skill.name.toLowerCase().includes(searchTerm) ||
-            skill.description.toLowerCase().includes(searchTerm) ||
-            (skill.tags && skill.tags.some(tag => tag.toLowerCase().includes(searchTerm)));
-
-        // Provider filter
-        const matchesProvider = !provider || skill.provider === provider;
-
-        // Category filter
-        const matchesCategory = !category || skill.category === category;
-
-        // Tags filter (from URL)
-        const matchesTags = urlTags.length === 0 || 
-            (skill.tags && urlTags.every(t => skill.tags.some(st => st.toLowerCase().includes(t))));
-
-        return matchesSearch && matchesProvider && matchesCategory && matchesTags;
-    });
+    // Use search index for fast filtering
+    const matchingIndices = [];
+    const hasSearch = searchTerm.length > 0;
+    const hasProvider = provider.length > 0;
+    const hasCategory = category.length > 0;
+    const hasUrlTags = urlTags.length > 0;
+    
+    for (let i = 0; i < searchIndex.length; i++) {
+        const entry = searchIndex[i];
+        
+        // Provider filter (fastest - direct comparison)
+        if (hasProvider && entry.provider !== provider) continue;
+        
+        // Category filter (fast - direct comparison)
+        if (hasCategory && entry.category !== category) continue;
+        
+        // Search filter (use pre-built searchText)
+        if (hasSearch && entry.searchText.indexOf(searchTerm) === -1) continue;
+        
+        // Tags filter from URL
+        if (hasUrlTags) {
+            let allTagsMatch = true;
+            for (const t of urlTags) {
+                let found = false;
+                for (const st of entry.tagsLower) {
+                    if (st.indexOf(t) !== -1) {
+                        found = true;
+                        break;
+                    }
+                }
+                if (!found) {
+                    allTagsMatch = false;
+                    break;
+                }
+            }
+            if (!allTagsMatch) continue;
+        }
+        
+        matchingIndices.push(entry.index);
+    }
+    
+    // Map indices back to skills
+    filteredSkills = matchingIndices.map(i => catalog.skills[i]);
+    
+    // Cache the result (with LRU-style eviction)
+    if (searchCache.size >= SEARCH_CACHE_MAX_SIZE) {
+        const firstKey = searchCache.keys().next().value;
+        searchCache.delete(firstKey);
+    }
+    searchCache.set(cacheKey, filteredSkills);
 
     filteredCountEl.textContent = filteredSkills.length;
     currentPage = 1; // Reset to first page when filters change
