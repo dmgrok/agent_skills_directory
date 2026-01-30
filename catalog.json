@@ -1,133 +1,133 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.01.29",
-  "generated_at": "2026-01-29T06:58:55.594002+00:00",
+  "version": "2026.01.30",
+  "generated_at": "2026-01-30T06:59:48.516863+00:00",
   "total_skills": 189,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
       "repo": "https://github.com/anthropics/skills",
       "skills_count": 16,
-      "stars": 57421,
+      "stars": 58409,
       "description": "Public repository for Agent Skills"
     },
     "openai": {
       "name": "OpenAI",
       "repo": "https://github.com/openai/skills",
       "skills_count": 21,
-      "stars": 2149,
+      "stars": 2197,
       "description": "Skills Catalog for Codex"
     },
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
       "skills_count": 29,
-      "stars": 19392,
+      "stars": 19543,
       "description": "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
     },
     "vercel": {
       "name": "Vercel",
       "repo": "https://github.com/vercel-labs/agent-skills",
       "skills_count": 5,
-      "stars": 17646,
+      "stars": 17937,
       "description": "Vercel's official collection of agent skills"
     },
     "huggingface": {
       "name": "HuggingFace",
       "repo": "https://github.com/huggingface/skills",
       "skills_count": 8,
-      "stars": 1080,
+      "stars": 1101,
       "description": null
     },
     "skillcreatorai": {
       "name": "SkillCreator.ai",
       "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
       "skills_count": 47,
-      "stars": 637,
+      "stars": 644,
       "description": "Homebrew for AI Agent Skills."
     },
     "obra-superpowers": {
       "name": "Obra Superpowers",
       "repo": "https://github.com/obra/superpowers",
       "skills_count": 14,
-      "stars": 39298,
+      "stars": 40100,
       "description": "An agentic skills framework & software development methodology that works."
     },
     "tapestry": {
       "name": "Tapestry Skills",
       "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
       "skills_count": 4,
-      "stars": 188,
+      "stars": 194,
       "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
     },
     "sanjay-ai-skills": {
       "name": "Sanjay AI Skills",
       "repo": "https://github.com/sanjay3290/ai-skills",
       "skills_count": 12,
-      "stars": 48,
+      "stars": 50,
       "description": "Collection of agent skills for AI coding assistants"
     },
     "aws-skills": {
       "name": "AWS Skills",
       "repo": "https://github.com/zxkane/aws-skills",
       "skills_count": 5,
-      "stars": 106,
+      "stars": 110,
       "description": "Claude Agent Skills for AWS"
     },
     "claude-marketplace-engineering": {
       "name": "Claude Marketplace (Engineering)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 5,
-      "stars": 283,
+      "stars": 289,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-visual": {
       "name": "Claude Marketplace (Visual)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 5,
-      "stars": 283,
+      "stars": 289,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-code": {
       "name": "Claude Marketplace (Code Ops)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 4,
-      "stars": 283,
+      "stars": 289,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-productivity": {
       "name": "Claude Marketplace (Productivity)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 4,
-      "stars": 283,
+      "stars": 289,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "epub-skill": {
       "name": "EPUB Converter",
       "repo": "https://github.com/smerchek/claude-epub-skill",
       "skills_count": 1,
-      "stars": 59,
+      "stars": 60,
       "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
     },
     "d3js-skill": {
       "name": "D3.js Visualization",
       "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
       "skills_count": 1,
-      "stars": 85,
+      "stars": 87,
       "description": "A Claude skill for d3.js."
     },
     "ffuf-skill": {
       "name": "FFUF Web Fuzzing",
       "repo": "https://github.com/jthack/ffuf_claude_skill",
       "skills_count": 1,
-      "stars": 102,
+      "stars": 103,
       "description": "This is a \"skill\" for claude to use FFUF."
     },
     "ios-simulator-skill": {
       "name": "iOS Simulator",
       "repo": "https://github.com/conorluddy/ios-simulator-skill",
       "skills_count": 1,
-      "stars": 421,
+      "stars": 432,
       "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
     },
     "move-quality-skill": {
@@ -141,7 +141,7 @@
       "name": "Playwright Automation",
       "repo": "https://github.com/lackeyjb/playwright-skill",
       "skills_count": 1,
-      "stars": 1507,
+      "stars": 1526,
       "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
     },
     "pypict-skill": {
@@ -155,7 +155,7 @@
       "name": "CSV Data Summarizer",
       "repo": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill",
       "skills_count": 1,
-      "stars": 198,
+      "stars": 202,
       "description": "A Claude Skill that automatically analyzes uploaded CSV files \u2014 generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
     },
     "family-history-skill": {
@@ -169,7 +169,7 @@
       "name": "NotebookLM Integration",
       "repo": "https://github.com/PleasePrompto/notebooklm-skill",
       "skills_count": 1,
-      "stars": 2847,
+      "stars": 2916,
       "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
     }
   },
@@ -6115,7 +6115,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/composition-patterns",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/composition-patterns/SKILL.md",
-        "commit_sha": "9d3963f6e6bace32fd133475f46532b8d764e4d6"
+        "commit_sha": "e23951b8cad2f4b1e7e176c5731127c1263fe86f"
       },
       "has_scripts": false,
       "has_references": false,
@@ -6150,7 +6150,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/claude.ai/vercel-deploy-claimable",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/claude.ai/vercel-deploy-claimable/SKILL.md",
-        "commit_sha": "9d3963f6e6bace32fd133475f46532b8d764e4d6"
+        "commit_sha": "e23951b8cad2f4b1e7e176c5731127c1263fe86f"
       },
       "has_scripts": true,
       "has_references": false,
@@ -6189,7 +6189,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/react-best-practices",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-best-practices/SKILL.md",
-        "commit_sha": "9d3963f6e6bace32fd133475f46532b8d764e4d6"
+        "commit_sha": "e23951b8cad2f4b1e7e176c5731127c1263fe86f"
       },
       "has_scripts": false,
       "has_references": false,
@@ -6223,7 +6223,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/react-native-skills",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-native-skills/SKILL.md",
-        "commit_sha": "9d3963f6e6bace32fd133475f46532b8d764e4d6"
+        "commit_sha": "e23951b8cad2f4b1e7e176c5731127c1263fe86f"
       },
       "has_scripts": false,
       "has_references": false,
@@ -6259,7 +6259,7 @@
         "repo": "https://github.com/vercel-labs/agent-skills",
         "path": "skills/web-design-guidelines",
         "skill_md_url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/web-design-guidelines/SKILL.md",
-        "commit_sha": "9d3963f6e6bace32fd133475f46532b8d764e4d6"
+        "commit_sha": "e23951b8cad2f4b1e7e176c5731127c1263fe86f"
       },
       "has_scripts": false,
       "has_references": false,
