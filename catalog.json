@@ -1,14 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
   "version": "2026.01.31",
-  "generated_at": "2026-01-31T12:27:37.015014+00:00",
-  "total_skills": 190,
+  "generated_at": "2026-01-31T13:11:16.672964+00:00",
+  "total_skills": 245,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
       "repo": "https://github.com/anthropics/skills",
       "skills_count": 16,
-      "stars": 59361,
+      "stars": 59377,
       "description": "Public repository for Agent Skills"
     },
     "openai": {
@@ -22,21 +22,21 @@
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
       "skills_count": 29,
-      "stars": 19670,
+      "stars": 19674,
       "description": "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
     },
     "vercel": {
       "name": "Vercel",
       "repo": "https://github.com/vercel-labs/agent-skills",
       "skills_count": 5,
-      "stars": 18145,
+      "stars": 18150,
       "description": "Vercel's official collection of agent skills"
     },
     "huggingface": {
       "name": "HuggingFace",
       "repo": "https://github.com/huggingface/skills",
       "skills_count": 8,
-      "stars": 1114,
+      "stars": 1116,
       "description": null
     },
     "skillcreatorai": {
@@ -50,7 +50,7 @@
       "name": "Obra Superpowers",
       "repo": "https://github.com/obra/superpowers",
       "skills_count": 14,
-      "stars": 40860,
+      "stars": 40873,
       "description": "An agentic skills framework & software development methodology that works."
     },
     "tapestry": {
@@ -127,7 +127,7 @@
       "name": "iOS Simulator",
       "repo": "https://github.com/conorluddy/ios-simulator-skill",
       "skills_count": 1,
-      "stars": 439,
+      "stars": 440,
       "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
     },
     "move-quality-skill": {
@@ -178,6 +178,125 @@
       "skills_count": 1,
       "stars": 1,
       "description": "AI-powered testing skills for automation frameworks"
+    },
+    "stripe": {
+      "name": "Stripe",
+      "repo": "https://github.com/stripe/ai",
+      "skills_count": 2,
+      "stars": 1238,
+      "description": "One-stop shop for building AI-powered products and businesses with Stripe."
+    },
+    "cloudflare": {
+      "name": "Cloudflare",
+      "repo": "https://github.com/cloudflare/skills",
+      "skills_count": 7,
+      "stars": 203,
+      "description": null
+    },
+    "trailofbits": {
+      "name": "Trail of Bits Security",
+      "repo": "https://github.com/trailofbits/skills",
+      "skills_count": 0,
+      "stars": 2255,
+      "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
+    },
+    "expo": {
+      "name": "Expo",
+      "repo": "https://github.com/expo/skills",
+      "skills_count": 0,
+      "stars": 813,
+      "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services"
+    },
+    "getsentry": {
+      "name": "Sentry",
+      "repo": "https://github.com/getsentry/skills",
+      "skills_count": 0,
+      "stars": 167,
+      "description": "Agent Skills used by the Sentry team for development."
+    },
+    "supabase": {
+      "name": "Supabase",
+      "repo": "https://github.com/supabase/agent-skills",
+      "skills_count": 1,
+      "stars": 956,
+      "description": "Agent Skills to help developers using AI agents with Supabase"
+    },
+    "google-labs-stitch": {
+      "name": "Google Labs Stitch",
+      "repo": "https://github.com/google-labs-code/stitch-skills",
+      "skills_count": 4,
+      "stars": 988,
+      "description": null
+    },
+    "composiohq": {
+      "name": "ComposioHQ",
+      "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "skills_count": 32,
+      "stars": 28510,
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
+    },
+    "better-auth": {
+      "name": "Better Auth",
+      "repo": "https://github.com/better-auth/skills",
+      "skills_count": 0,
+      "stars": 89,
+      "description": null
+    },
+    "tinybird": {
+      "name": "Tinybird",
+      "repo": "https://github.com/tinybirdco/tinybird-agent-skills",
+      "skills_count": 1,
+      "stars": 4,
+      "description": null
+    },
+    "neondatabase": {
+      "name": "Neon Database",
+      "repo": "https://github.com/neondatabase/agent-skills",
+      "skills_count": 1,
+      "stars": 17,
+      "description": "Agent Skills for Neon Severless Postgres"
+    },
+    "fal-ai": {
+      "name": "fal.ai",
+      "repo": "https://github.com/fal-ai-community/skills",
+      "skills_count": 6,
+      "stars": 13,
+      "description": null
+    },
+    "remotion": {
+      "name": "Remotion",
+      "repo": "https://github.com/remotion-dev/skills",
+      "skills_count": 1,
+      "stars": 1158,
+      "description": "Agent Skills"
+    },
+    "nginity": {
+      "name": "nginity Enterprise",
+      "repo": "https://github.com/alirezarezvani/claude-skills",
+      "skills_count": 0,
+      "stars": 1491,
+      "description": "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
+    },
+    "voltagent": {
+      "name": "VoltAgent Catalog",
+      "repo": "https://github.com/VoltAgent/awesome-agent-skills",
+      "skills_count": 0,
+      "stars": 5249,
+      "description": "Claude Code Skills and 200+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
+    },
+    "heilcheng": {
+      "name": "heilcheng Catalog",
+      "repo": "https://github.com/heilcheng/awesome-agent-skills",
+      "skills_count": 0,
+      "stars": 1846,
+      "description": "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Copilot, VS Code)"
+    },
+    "travisvn": {
+      "name": "travisvn Collection",
+      "repo": "https://github.com/travisvn/awesome-claude-skills",
+      "skills_count": 0,
+      "stars": 6317,
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows \u2014 particularly Claude Code"
     }
   },
   "categories": [
@@ -291,6 +410,11 @@
           "id": "skillcreatorai/brand-guidelines",
           "provider": "skillcreatorai",
           "similarity": 0.72
+        },
+        {
+          "id": "composiohq/brand-guidelines",
+          "provider": "composiohq",
+          "similarity": 1.0
         }
       ]
     },
@@ -330,6 +454,11 @@
           "id": "skillcreatorai/canvas-design",
           "provider": "skillcreatorai",
           "similarity": 0.74
+        },
+        {
+          "id": "composiohq/canvas-design",
+          "provider": "composiohq",
+          "similarity": 1.0
         }
       ]
     },
@@ -406,6 +535,11 @@
           "id": "skillcreatorai/docx",
           "provider": "skillcreatorai",
           "similarity": 0.85
+        },
+        {
+          "id": "composiohq/docx",
+          "provider": "composiohq",
+          "similarity": 1.0
         }
       ]
     },
@@ -481,6 +615,11 @@
           "id": "skillcreatorai/internal-comms",
           "provider": "skillcreatorai",
           "similarity": 0.65
+        },
+        {
+          "id": "composiohq/internal-comms",
+          "provider": "composiohq",
+          "similarity": 1.0
         }
       ]
     },
@@ -518,6 +657,11 @@
         {
           "id": "skillcreatorai/mcp-builder",
           "provider": "skillcreatorai",
+          "similarity": 1.0
+        },
+        {
+          "id": "composiohq/mcp-builder",
+          "provider": "composiohq",
           "similarity": 1.0
         }
       ]
@@ -561,6 +705,11 @@
           "id": "skillcreatorai/pdf",
           "provider": "skillcreatorai",
           "similarity": 1.0
+        },
+        {
+          "id": "composiohq/pdf",
+          "provider": "composiohq",
+          "similarity": 1.0
         }
       ]
     },
@@ -597,6 +746,11 @@
           "id": "skillcreatorai/pptx",
           "provider": "skillcreatorai",
           "similarity": 0.78
+        },
+        {
+          "id": "composiohq/pptx",
+          "provider": "composiohq",
+          "similarity": 1.0
         }
       ]
     },
@@ -639,6 +793,11 @@
           "id": "skillcreatorai/skill-creator",
           "provider": "skillcreatorai",
           "similarity": 0.93
+        },
+        {
+          "id": "composiohq/skill-creator",
+          "provider": "composiohq",
+          "similarity": 1.0
         }
       ]
     },
@@ -677,6 +836,11 @@
           "id": "skillcreatorai/slack-gif-creator",
           "provider": "skillcreatorai",
           "similarity": 0.71
+        },
+        {
+          "id": "composiohq/slack-gif-creator",
+          "provider": "composiohq",
+          "similarity": 0.71
         }
       ]
     },
@@ -713,6 +877,11 @@
         {
           "id": "skillcreatorai/theme-factory",
           "provider": "skillcreatorai",
+          "similarity": 1.0
+        },
+        {
+          "id": "composiohq/theme-factory",
+          "provider": "composiohq",
           "similarity": 1.0
         }
       ]
@@ -785,6 +954,11 @@
           "id": "skillcreatorai/webapp-testing",
           "provider": "skillcreatorai",
           "similarity": 0.99
+        },
+        {
+          "id": "composiohq/webapp-testing",
+          "provider": "composiohq",
+          "similarity": 1.0
         }
       ]
     },
@@ -823,6 +997,11 @@
           "id": "skillcreatorai/xlsx",
           "provider": "skillcreatorai",
           "similarity": 0.82
+        },
+        {
+          "id": "composiohq/xlsx",
+          "provider": "composiohq",
+          "similarity": 1.0
         }
       ]
     },
@@ -1529,6 +1708,1424 @@
       "duplicate_similarity": null
     },
     {
+      "id": "cloudflare/agents-sdk",
+      "name": "agents-sdk",
+      "description": "Build stateful AI agents using the Cloudflare Agents SDK. Load when creating agents with persistent state, scheduling, RPC, MCP servers, email handling, or streaming chat. Covers Agent class, AIChatAgent, state management, and Code Mode for reduced token usage.",
+      "provider": "cloudflare",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-28T17:13:50Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/cloudflare/skills",
+        "path": "skills/agents-sdk",
+        "skill_md_url": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/agents-sdk/SKILL.md",
+        "commit_sha": "75a603ba7551d17765d83909594c94a660f3f794"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "mcp",
+        "email",
+        "agents",
+        "sdk"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "cloudflare/building-ai-agent-on-cloudflare",
+      "name": "building-ai-agent-on-cloudflare",
+      "description": "Builds AI agents on Cloudflare using the Agents SDK with state management,\nreal-time WebSockets, scheduled tasks, tool integration, and chat capabilities.\nGenerates production-ready agent code deployed to Workers.\n\nUse when: user wants to \"build an agent\", \"AI agent\", \"chat agent\", \"stateful\nagent\", mentions \"Agents SDK\", needs \"real-time AI\", \"WebSocket AI\", or asks\nabout agent \"state management\", \"scheduled tasks\", or \"tool calling\".",
+      "provider": "cloudflare",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-28T17:13:50Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/cloudflare/skills",
+        "path": "skills/building-ai-agent-on-cloudflare",
+        "skill_md_url": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/building-ai-agent-on-cloudflare/SKILL.md",
+        "commit_sha": "75a603ba7551d17765d83909594c94a660f3f794"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "building",
+        "agent",
+        "cloudflare"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "cloudflare/building-mcp-server-on-cloudflare",
+      "name": "building-mcp-server-on-cloudflare",
+      "description": "Builds remote MCP (Model Context Protocol) servers on Cloudflare Workers\nwith tools, OAuth authentication, and production deployment. Generates\nserver code, configures auth providers, and deploys to Workers.\n\nUse when: user wants to \"build MCP server\", \"create MCP tools\", \"remote\nMCP\", \"deploy MCP\", add \"OAuth to MCP\", or mentions Model Context Protocol\non Cloudflare. Also triggers on \"MCP authentication\" or \"MCP deployment\".",
+      "provider": "cloudflare",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-28T17:13:50Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/cloudflare/skills",
+        "path": "skills/building-mcp-server-on-cloudflare",
+        "skill_md_url": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/building-mcp-server-on-cloudflare/SKILL.md",
+        "commit_sha": "75a603ba7551d17765d83909594c94a660f3f794"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "mcp",
+        "building",
+        "server",
+        "cloudflare"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "cloudflare/cloudflare",
+      "name": "cloudflare",
+      "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task.",
+      "provider": "cloudflare",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-28T17:13:50Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/cloudflare/skills",
+        "path": "skills/cloudflare",
+        "skill_md_url": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/cloudflare/SKILL.md",
+        "commit_sha": "75a603ba7551d17765d83909594c94a660f3f794"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "cloudflare"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "cloudflare/durable-objects",
+      "name": "durable-objects",
+      "description": "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest.",
+      "provider": "cloudflare",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-28T17:13:50Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/cloudflare/skills",
+        "path": "skills/durable-objects",
+        "skill_md_url": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/durable-objects/SKILL.md",
+        "commit_sha": "75a603ba7551d17765d83909594c94a660f3f794"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "test",
+        "durable",
+        "objects"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "cloudflare/web-perf",
+      "name": "web-perf",
+      "description": "Analyzes web performance using Chrome DevTools MCP. Measures Core Web Vitals (FCP, LCP, TBT, CLS, Speed Index), identifies render-blocking resources, network dependency chains, layout shifts, caching issues, and accessibility gaps. Use when asked to audit, profile, debug, or optimize page load performance, Lighthouse scores, or site speed.",
+      "provider": "cloudflare",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-28T17:13:50Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/cloudflare/skills",
+        "path": "skills/web-perf",
+        "skill_md_url": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/web-perf/SKILL.md",
+        "commit_sha": "75a603ba7551d17765d83909594c94a660f3f794"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "mcp",
+        "web",
+        "perf"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "cloudflare/wrangler",
+      "name": "wrangler",
+      "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices.",
+      "provider": "cloudflare",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-28T17:13:50Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/cloudflare/skills",
+        "path": "skills/wrangler",
+        "skill_md_url": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/wrangler/SKILL.md",
+        "commit_sha": "75a603ba7551d17765d83909594c94a660f3f794"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "cli",
+        "wrangler"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "composiohq/artifacts-builder",
+      "name": "artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+      "provider": "composiohq",
+      "category": "creative",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "artifacts-builder",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/artifacts-builder/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "art",
+        "artifacts",
+        "builder"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of skillcreatorai/artifacts-builder",
+      "duplicate_of": "skillcreatorai/artifacts-builder",
+      "duplicate_similarity": 0.97,
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/artifacts-builder",
+          "provider": "skillcreatorai",
+          "similarity": 0.97
+        }
+      ]
+    },
+    {
+      "id": "composiohq/brand-guidelines",
+      "name": "brand-guidelines",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
+      "provider": "composiohq",
+      "category": "creative",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "brand-guidelines",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/brand-guidelines/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "design",
+        "art",
+        "brand",
+        "visual",
+        "guidelines"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of anthropics/brand-guidelines",
+      "duplicate_of": "anthropics/brand-guidelines",
+      "duplicate_similarity": 1.0,
+      "similar_skills": [
+        {
+          "id": "anthropics/brand-guidelines",
+          "provider": "anthropics",
+          "similarity": 1.0
+        },
+        {
+          "id": "skillcreatorai/brand-guidelines",
+          "provider": "skillcreatorai",
+          "similarity": 0.2
+        }
+      ]
+    },
+    {
+      "id": "composiohq/canvas-design",
+      "name": "canvas-design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
+      "provider": "composiohq",
+      "category": "creative",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "canvas-design",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/canvas-design/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pdf",
+        "design",
+        "art",
+        "visual",
+        "document",
+        "canvas"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of anthropics/canvas-design",
+      "duplicate_of": "anthropics/canvas-design",
+      "duplicate_similarity": 1.0,
+      "similar_skills": [
+        {
+          "id": "anthropics/canvas-design",
+          "provider": "anthropics",
+          "similarity": 1.0
+        },
+        {
+          "id": "skillcreatorai/canvas-design",
+          "provider": "skillcreatorai",
+          "similarity": 0.15
+        }
+      ]
+    },
+    {
+      "id": "composiohq/changelog-generator",
+      "name": "changelog-generator",
+      "description": "Automatically creates user-facing changelogs from git commits by analyzing commit history, categorizing changes, and transforming technical commits into clear, customer-friendly release notes. Turns hours of manual changelog writing into minutes of automated generation.",
+      "provider": "composiohq",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "changelog-generator",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/changelog-generator/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "git",
+        "ci",
+        "changelog",
+        "generator"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of skillcreatorai/changelog-generator",
+      "duplicate_of": "skillcreatorai/changelog-generator",
+      "duplicate_similarity": 0.97,
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/changelog-generator",
+          "provider": "skillcreatorai",
+          "similarity": 0.97
+        }
+      ]
+    },
+    {
+      "id": "composiohq/competitive-ads-extractor",
+      "name": "competitive-ads-extractor",
+      "description": "Extracts and analyzes competitors' ads from ad libraries (Facebook, LinkedIn, etc.) to understand what messaging, problems, and creative approaches are working. Helps inspire and improve your own ad campaigns.",
+      "provider": "composiohq",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "competitive-ads-extractor",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/competitive-ads-extractor/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "extract",
+        "competitive",
+        "ads",
+        "extractor"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of skillcreatorai/competitive-ads-extractor",
+      "duplicate_of": "skillcreatorai/competitive-ads-extractor",
+      "duplicate_similarity": 0.97,
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/competitive-ads-extractor",
+          "provider": "skillcreatorai",
+          "similarity": 0.97
+        }
+      ]
+    },
+    {
+      "id": "composiohq/connect",
+      "name": "connect",
+      "description": "Connect Claude to any app. Send emails, create issues, post messages, update databases - take real actions across Gmail, Slack, GitHub, Notion, and 1000+ services.",
+      "provider": "composiohq",
+      "category": "enterprise",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "connect",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/connect/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "github",
+        "git",
+        "notion",
+        "slack",
+        "email",
+        "connect"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "composiohq/connect-apps",
+      "name": "connect-apps",
+      "description": "Connect Claude to external apps like Gmail, Slack, GitHub. Use this skill when the user wants to send emails, create issues, post messages, or take actions in external services.",
+      "provider": "composiohq",
+      "category": "enterprise",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "connect-apps",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/connect-apps/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "github",
+        "git",
+        "slack",
+        "email",
+        "connect",
+        "apps"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "composiohq/content-research-writer",
+      "name": "content-research-writer",
+      "description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, iterating on outlines, and providing real-time feedback on each section. Transforms your writing process from solo effort to collaborative partnership.",
+      "provider": "composiohq",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "content-research-writer",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/content-research-writer/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "art",
+        "content",
+        "research",
+        "writer"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of skillcreatorai/content-research-writer",
+      "duplicate_of": "skillcreatorai/content-research-writer",
+      "duplicate_similarity": 0.96,
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/content-research-writer",
+          "provider": "skillcreatorai",
+          "similarity": 0.96
+        }
+      ]
+    },
+    {
+      "id": "composiohq/developer-growth-analysis",
+      "name": "developer-growth-analysis",
+      "description": "Analyzes your recent Claude Code chat history to identify coding patterns, development gaps, and areas for improvement, curates relevant learning resources from HackerNews, and automatically sends a personalized growth report to your Slack DMs.",
+      "provider": "composiohq",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "developer-growth-analysis",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/developer-growth-analysis/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "slack",
+        "analysis",
+        "developer",
+        "growth"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of skillcreatorai/developer-growth-analysis",
+      "duplicate_of": "skillcreatorai/developer-growth-analysis",
+      "duplicate_similarity": 0.96,
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/developer-growth-analysis",
+          "provider": "skillcreatorai",
+          "similarity": 0.96
+        }
+      ]
+    },
+    {
+      "id": "composiohq/docx",
+      "name": "docx",
+      "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks",
+      "provider": "composiohq",
+      "category": "documents",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "document-skills/docx",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/document-skills/docx/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "docx",
+        "pr",
+        "document",
+        "extract",
+        "analysis"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of anthropics/docx",
+      "duplicate_of": "anthropics/docx",
+      "duplicate_similarity": 1.0,
+      "similar_skills": [
+        {
+          "id": "anthropics/docx",
+          "provider": "anthropics",
+          "similarity": 1.0
+        },
+        {
+          "id": "skillcreatorai/docx",
+          "provider": "skillcreatorai",
+          "similarity": 0.21
+        }
+      ]
+    },
+    {
+      "id": "composiohq/domain-name-brainstormer",
+      "name": "domain-name-brainstormer",
+      "description": "Generates creative domain name ideas for your project and checks availability across multiple TLDs (.com, .io, .dev, .ai, etc.). Saves hours of brainstorming and manual checking.",
+      "provider": "composiohq",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "domain-name-brainstormer",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/domain-name-brainstormer/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "domain",
+        "name",
+        "brainstormer"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of skillcreatorai/domain-name-brainstormer",
+      "duplicate_of": "skillcreatorai/domain-name-brainstormer",
+      "duplicate_similarity": 0.97,
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/domain-name-brainstormer",
+          "provider": "skillcreatorai",
+          "similarity": 0.97
+        }
+      ]
+    },
+    {
+      "id": "composiohq/file-organizer",
+      "name": "file-organizer",
+      "description": "Intelligently organizes your files and folders across your computer by understanding context, finding duplicates, suggesting better structures, and automating cleanup tasks. Reduces cognitive load and keeps your digital workspace tidy without manual effort.",
+      "provider": "composiohq",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "file-organizer",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/file-organizer/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "git",
+        "file",
+        "organizer"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of skillcreatorai/file-organizer",
+      "duplicate_of": "skillcreatorai/file-organizer",
+      "duplicate_similarity": 0.96,
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/file-organizer",
+          "provider": "skillcreatorai",
+          "similarity": 0.96
+        }
+      ]
+    },
+    {
+      "id": "composiohq/image-enhancer",
+      "name": "image-enhancer",
+      "description": "Improves the quality of images, especially screenshots, by enhancing resolution, sharpness, and clarity. Perfect for preparing images for presentations, documentation, or social media posts.",
+      "provider": "composiohq",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "image-enhancer",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/image-enhancer/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "document",
+        "image",
+        "enhancer"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of skillcreatorai/image-enhancer",
+      "duplicate_of": "skillcreatorai/image-enhancer",
+      "duplicate_similarity": 0.97,
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/image-enhancer",
+          "provider": "skillcreatorai",
+          "similarity": 0.97
+        }
+      ]
+    },
+    {
+      "id": "composiohq/internal-comms",
+      "name": "internal-comms",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
+      "provider": "composiohq",
+      "category": "development",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "internal-comms",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/internal-comms/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "faq",
+        "internal",
+        "comms"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of anthropics/internal-comms",
+      "duplicate_of": "anthropics/internal-comms",
+      "duplicate_similarity": 1.0,
+      "similar_skills": [
+        {
+          "id": "anthropics/internal-comms",
+          "provider": "anthropics",
+          "similarity": 1.0
+        },
+        {
+          "id": "skillcreatorai/internal-comms",
+          "provider": "skillcreatorai",
+          "similarity": 0.16
+        }
+      ]
+    },
+    {
+      "id": "composiohq/invoice-organizer",
+      "name": "invoice-organizer",
+      "description": "Automatically organizes invoices and receipts for tax preparation by reading messy files, extracting key information, renaming them consistently, and sorting them into logical folders. Turns hours of manual bookkeeping into minutes of automated organization.",
+      "provider": "composiohq",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "invoice-organizer",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/invoice-organizer/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "extract",
+        "invoice",
+        "organizer"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of skillcreatorai/invoice-organizer",
+      "duplicate_of": "skillcreatorai/invoice-organizer",
+      "duplicate_similarity": 0.96,
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/invoice-organizer",
+          "provider": "skillcreatorai",
+          "similarity": 0.96
+        }
+      ]
+    },
+    {
+      "id": "composiohq/langsmith-fetch",
+      "name": "langsmith-fetch",
+      "description": "Debug LangChain and LangGraph agents by fetching execution traces from LangSmith Studio. Use when debugging agent behavior, investigating errors, analyzing tool calls, checking memory operations, or examining agent performance. Automatically fetches recent traces and analyzes execution patterns. Requires langsmith-fetch CLI installed.",
+      "provider": "composiohq",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "langsmith-fetch",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/langsmith-fetch/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "cli",
+        "langsmith",
+        "fetch"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "composiohq/lead-research-assistant",
+      "name": "lead-research-assistant",
+      "description": "Identifies high-quality leads for your product or service by analyzing your business, searching for target companies, and providing actionable contact strategies. Perfect for sales, business development, and marketing professionals.",
+      "provider": "composiohq",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "lead-research-assistant",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/lead-research-assistant/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "lead",
+        "research",
+        "assistant"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of skillcreatorai/lead-research-assistant",
+      "duplicate_of": "skillcreatorai/lead-research-assistant",
+      "duplicate_similarity": 0.97,
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/lead-research-assistant",
+          "provider": "skillcreatorai",
+          "similarity": 0.97
+        }
+      ]
+    },
+    {
+      "id": "composiohq/mcp-builder",
+      "name": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "provider": "composiohq",
+      "category": "development",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "mcp-builder",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/mcp-builder/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "mcp",
+        "design",
+        "builder"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of anthropics/mcp-builder",
+      "duplicate_of": "anthropics/mcp-builder",
+      "duplicate_similarity": 1.0,
+      "similar_skills": [
+        {
+          "id": "anthropics/mcp-builder",
+          "provider": "anthropics",
+          "similarity": 1.0
+        },
+        {
+          "id": "skillcreatorai/mcp-builder",
+          "provider": "skillcreatorai",
+          "similarity": 0.26
+        }
+      ]
+    },
+    {
+      "id": "composiohq/meeting-insights-analyzer",
+      "name": "meeting-insights-analyzer",
+      "description": "Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insights, and actionable feedback. Identifies when you avoid conflict, use filler words, dominate conversations, or miss opportunities to listen. Perfect for professionals seeking to improve their communication and leadership skills.",
+      "provider": "composiohq",
+      "category": "enterprise",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "meeting-insights-analyzer",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/meeting-insights-analyzer/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "meeting",
+        "insights",
+        "analyzer"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of skillcreatorai/meeting-insights-analyzer",
+      "duplicate_of": "skillcreatorai/meeting-insights-analyzer",
+      "duplicate_similarity": 0.96,
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/meeting-insights-analyzer",
+          "provider": "skillcreatorai",
+          "similarity": 0.96
+        }
+      ]
+    },
+    {
+      "id": "composiohq/pdf",
+      "name": "pdf",
+      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale.",
+      "provider": "composiohq",
+      "category": "documents",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "document-skills/pdf",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/document-skills/pdf/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pdf",
+        "pr",
+        "document",
+        "extract"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of anthropics/pdf",
+      "duplicate_of": "anthropics/pdf",
+      "duplicate_similarity": 1.0,
+      "similar_skills": [
+        {
+          "id": "anthropics/pdf",
+          "provider": "anthropics",
+          "similarity": 1.0
+        },
+        {
+          "id": "openai/pdf",
+          "provider": "openai",
+          "similarity": 0.49
+        },
+        {
+          "id": "skillcreatorai/pdf",
+          "provider": "skillcreatorai",
+          "similarity": 0.47
+        }
+      ]
+    },
+    {
+      "id": "composiohq/pptx",
+      "name": "pptx",
+      "description": "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Modifying or editing content, (3) Working with layouts, (4) Adding comments or speaker notes, or any other presentation tasks",
+      "provider": "composiohq",
+      "category": "documents",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "document-skills/pptx",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/document-skills/pptx/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pptx",
+        "pr",
+        "analysis"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of anthropics/pptx",
+      "duplicate_of": "anthropics/pptx",
+      "duplicate_similarity": 1.0,
+      "similar_skills": [
+        {
+          "id": "anthropics/pptx",
+          "provider": "anthropics",
+          "similarity": 1.0
+        },
+        {
+          "id": "skillcreatorai/pptx",
+          "provider": "skillcreatorai",
+          "similarity": 0.15
+        }
+      ]
+    },
+    {
+      "id": "composiohq/raffle-winner-picker",
+      "name": "raffle-winner-picker",
+      "description": "Picks random winners from lists, spreadsheets, or Google Sheets for giveaways, raffles, and contests. Ensures fair, unbiased selection with transparency.",
+      "provider": "composiohq",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "raffle-winner-picker",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/raffle-winner-picker/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "test",
+        "raffle",
+        "winner",
+        "picker"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of skillcreatorai/raffle-winner-picker",
+      "duplicate_of": "skillcreatorai/raffle-winner-picker",
+      "duplicate_similarity": 0.97,
+      "similar_skills": [
+        {
+          "id": "skillcreatorai/raffle-winner-picker",
+          "provider": "skillcreatorai",
+          "similarity": 0.97
+        }
+      ]
+    },
+    {
+      "id": "composiohq/skill-creator",
+      "name": "skill-creator",
+      "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+      "provider": "composiohq",
+      "category": "development",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "skill-creator",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/skill-creator/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "knowledge",
+        "skill",
+        "creator"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of anthropics/skill-creator",
+      "duplicate_of": "anthropics/skill-creator",
+      "duplicate_similarity": 1.0,
+      "similar_skills": [
+        {
+          "id": "anthropics/skill-creator",
+          "provider": "anthropics",
+          "similarity": 1.0
+        },
+        {
+          "id": "openai/skill-creator",
+          "provider": "openai",
+          "similarity": 1.0
+        },
+        {
+          "id": "skillcreatorai/skill-creator",
+          "provider": "skillcreatorai",
+          "similarity": 0.26
+        }
+      ]
+    },
+    {
+      "id": "composiohq/skill-share",
+      "name": "skill-share",
+      "description": "A skill that creates new Claude skills and automatically shares them on Slack using Rube for seamless team collaboration and skill discovery.",
+      "provider": "composiohq",
+      "category": "enterprise",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "skill-share",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/skill-share/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "slack",
+        "skill",
+        "share"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "composiohq/slack-gif-creator",
+      "name": "slack-gif-creator",
+      "description": "Toolkit for creating animated GIFs optimized for Slack, with validators for size constraints and composable animation primitives. This skill applies when users request animated GIFs or emoji animations for Slack from descriptions like \"make me a GIF for Slack of X doing Y\".",
+      "provider": "composiohq",
+      "category": "enterprise",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "slack-gif-creator",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/slack-gif-creator/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "slack",
+        "gif",
+        "creator"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "anthropics/slack-gif-creator",
+          "provider": "anthropics",
+          "similarity": 0.71
+        },
+        {
+          "id": "skillcreatorai/slack-gif-creator",
+          "provider": "skillcreatorai",
+          "similarity": 0.96
+        }
+      ]
+    },
+    {
+      "id": "composiohq/tailored-resume-generator",
+      "name": "tailored-resume-generator",
+      "description": "Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances",
+      "provider": "composiohq",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "tailored-resume-generator",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/tailored-resume-generator/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "tailored",
+        "resume",
+        "generator"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "composiohq/template-skill",
+      "name": "template-skill",
+      "description": "Replace with description of the skill and when Claude should use it.",
+      "provider": "composiohq",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "template-skill",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/template-skill/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "template",
+        "skill"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "composiohq/theme-factory",
+      "name": "theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+      "provider": "composiohq",
+      "category": "creative",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "theme-factory",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/theme-factory/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "art",
+        "theme",
+        "factory"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of anthropics/theme-factory",
+      "duplicate_of": "anthropics/theme-factory",
+      "duplicate_similarity": 1.0,
+      "similar_skills": [
+        {
+          "id": "anthropics/theme-factory",
+          "provider": "anthropics",
+          "similarity": 1.0
+        },
+        {
+          "id": "skillcreatorai/theme-factory",
+          "provider": "skillcreatorai",
+          "similarity": 0.97
+        }
+      ]
+    },
+    {
+      "id": "composiohq/twitter-algorithm-optimizer",
+      "name": "twitter-algorithm-optimizer",
+      "description": "Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit user tweets to improve engagement and visibility based on how the recommendation system ranks content.",
+      "provider": "composiohq",
+      "category": "other",
+      "license": "AGPL-3.0 (referencing Twitter's algorithm source)",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "twitter-algorithm-optimizer",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/twitter-algorithm-optimizer/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "twitter",
+        "algorithm",
+        "optimizer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "composiohq/webapp-testing",
+      "name": "webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+      "provider": "composiohq",
+      "category": "development",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "webapp-testing",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/webapp-testing/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "test",
+        "webapp",
+        "testing"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of anthropics/webapp-testing",
+      "duplicate_of": "anthropics/webapp-testing",
+      "duplicate_similarity": 1.0,
+      "similar_skills": [
+        {
+          "id": "anthropics/webapp-testing",
+          "provider": "anthropics",
+          "similarity": 1.0
+        },
+        {
+          "id": "github/webapp-testing",
+          "provider": "github",
+          "similarity": 1.0
+        },
+        {
+          "id": "skillcreatorai/webapp-testing",
+          "provider": "skillcreatorai",
+          "similarity": 0.25
+        }
+      ]
+    },
+    {
+      "id": "composiohq/xlsx",
+      "name": "xlsx",
+      "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for: (1) Creating new spreadsheets with formulas and formatting, (2) Reading or analyzing data, (3) Modify existing spreadsheets while preserving formulas, (4) Data analysis and visualization in spreadsheets, or (5) Recalculating formulas",
+      "provider": "composiohq",
+      "category": "data",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "document-skills/xlsx",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/document-skills/xlsx/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "xlsx",
+        "csv",
+        "pr",
+        "visual",
+        "analysis"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of anthropics/xlsx",
+      "duplicate_of": "anthropics/xlsx",
+      "duplicate_similarity": 1.0,
+      "similar_skills": [
+        {
+          "id": "anthropics/xlsx",
+          "provider": "anthropics",
+          "similarity": 1.0
+        },
+        {
+          "id": "skillcreatorai/xlsx",
+          "provider": "skillcreatorai",
+          "similarity": 0.28
+        }
+      ]
+    },
+    {
+      "id": "composiohq/youtube-downloader",
+      "name": "youtube-downloader",
+      "description": "Download YouTube videos with customizable quality and format options. Use this skill when the user asks to download, save, or grab YouTube videos. Supports various quality settings (best, 1080p, 720p, 480p, 360p), multiple formats (mp4, webm, mkv), and audio-only downloads as MP3.",
+      "provider": "composiohq",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+        "path": "video-downloader",
+        "skill_md_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/video-downloader/SKILL.md",
+        "commit_sha": "362d35428562ad05d1faa1767abaf39d6e3a8e7a"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "youtube",
+        "downloader"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
       "id": "csv-summarizer-skill/csv-data-summarizer",
       "name": "csv-data-summarizer",
       "description": "Analyzes CSV files, generates summary stats, and plots quick visualizations using Python and pandas.",
@@ -1615,6 +3212,199 @@
         "markdown",
         "epub",
         "converter"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "fal-ai/fal-audio",
+      "name": "fal-audio",
+      "description": "Text-to-speech and speech-to-text using fal.ai audio models. Use when the user requests \"Convert text to speech\", \"Transcribe audio\", \"Generate voice\", \"Speech to text\", \"TTS\", \"STT\", or similar audio tasks.",
+      "provider": "fal-ai",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T21:12:57Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-audio",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-audio/SKILL.md",
+        "commit_sha": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "convert",
+        "fal",
+        "audio"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "fal-ai/fal-generate",
+      "name": "fal-generate",
+      "description": "Generate images and videos using fal.ai AI models with queue support. Use when the user requests \"Generate image\", \"Create video\", \"Make a picture of...\", \"Text to image\", \"Image to video\", \"Search models\", or similar generation tasks.",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T21:12:57Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "3.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-generate",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-generate/SKILL.md",
+        "commit_sha": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "generate"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "fal-ai/fal-image-edit",
+      "name": "fal-image-edit",
+      "description": "Edit images using AI on fal.ai. Style transfer, object removal, background changes, and more. Use when the user requests \"Edit image\", \"Remove object\", \"Change background\", \"Apply style\", or similar image editing tasks.",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T21:12:57Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-image-edit",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-image-edit/SKILL.md",
+        "commit_sha": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "image",
+        "edit"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "fal-ai/fal-platform",
+      "name": "fal-platform",
+      "description": "fal.ai Platform APIs for model management, pricing, usage tracking, and cost estimation. Use when user asks \"show pricing\", \"check usage\", \"estimate cost\", \"setup fal\", \"add API key\", or platform management tasks.",
+      "provider": "fal-ai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T21:12:57Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-platform",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-platform/SKILL.md",
+        "commit_sha": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "api",
+        "fal",
+        "platform"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "fal-ai/fal-upscale",
+      "name": "fal-upscale",
+      "description": "Upscale and enhance image resolution using AI. Use when the user requests \"Upscale image\", \"Enhance resolution\", \"Make image bigger\", \"Increase quality\", or similar upscaling tasks.",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T21:12:57Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-upscale",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-upscale/SKILL.md",
+        "commit_sha": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "upscale"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "fal-ai/fal-workflow",
+      "name": "fal-workflow",
+      "description": "Generate production-ready fal.ai workflow JSON files. Use when user requests \"create workflow\", \"chain models\", \"multi-step generation\", \"image to video pipeline\", or complex AI generation pipelines.",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T15:14:37Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "3.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-workflow",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-workflow/SKILL.md",
+        "commit_sha": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "json",
+        "pr",
+        "fal",
+        "workflow"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -2556,6 +4346,11 @@
           "id": "skillcreatorai/webapp-testing",
           "provider": "skillcreatorai",
           "similarity": 1.0
+        },
+        {
+          "id": "composiohq/webapp-testing",
+          "provider": "composiohq",
+          "similarity": 1.0
         }
       ]
     },
@@ -2585,6 +4380,122 @@
         "email",
         "workiq",
         "copilot"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "google-labs-stitch/design-md",
+      "name": "design-md",
+      "description": "Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files",
+      "provider": "google-labs-stitch",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-22T20:09:05Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/google-labs-code/stitch-skills",
+        "path": "skills/design-md",
+        "skill_md_url": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/design-md/SKILL.md",
+        "commit_sha": "dbb6ff328ba3ed832b8505fcf18ed6789ac2b211"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "design"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "google-labs-stitch/enhance-prompt",
+      "name": "enhance-prompt",
+      "description": "Transforms vague UI ideas into polished, Stitch-optimized prompts. Enhances specificity, adds UI/UX keywords, injects design system context, and structures output for better generation results.",
+      "provider": "google-labs-stitch",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-29T20:05:15Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/google-labs-code/stitch-skills",
+        "path": "skills/enhance-prompt",
+        "skill_md_url": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/enhance-prompt/SKILL.md",
+        "commit_sha": "dbb6ff328ba3ed832b8505fcf18ed6789ac2b211"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "design",
+        "enhance",
+        "prompt"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "google-labs-stitch/react:components",
+      "name": "react:components",
+      "description": "Converts Stitch designs into modular Vite and React components using system-level networking and AST-based validation.",
+      "provider": "google-labs-stitch",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-16T17:36:57Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/google-labs-code/stitch-skills",
+        "path": "skills/react-components",
+        "skill_md_url": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/react-components/SKILL.md",
+        "commit_sha": "dbb6ff328ba3ed832b8505fcf18ed6789ac2b211"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "design",
+        "convert",
+        "react:components"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "google-labs-stitch/stitch-loop",
+      "name": "stitch-loop",
+      "description": "Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern",
+      "provider": "google-labs-stitch",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-23T19:54:24Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/google-labs-code/stitch-skills",
+        "path": "skills/stitch-loop",
+        "skill_md_url": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/stitch-loop/SKILL.md",
+        "commit_sha": "dbb6ff328ba3ed832b8505fcf18ed6789ac2b211"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "stitch",
+        "loop"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -2903,6 +4814,38 @@
         "move",
         "code",
         "quality"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "neondatabase/neon-postgres",
+      "name": "neon-postgres",
+      "description": "Guides and best practices for working with Neon Serverless Postgres. Covers getting started, local development with Neon, choosing a connection method, Neon features, authentication (@neondatabase/auth), PostgREST-style data API (@neondatabase/neon-js), Neon CLI, and Neon's Platform API/SDKs. Use for any Neon-related questions.",
+      "provider": "neondatabase",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T23:26:48Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/neondatabase/agent-skills",
+        "path": "skills/neon-postgres",
+        "skill_md_url": "https://raw.githubusercontent.com/neondatabase/agent-skills/main/skills/neon-postgres/SKILL.md",
+        "commit_sha": "758ac1a6399086ed7594d9ba74ad1101d155421f"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "cli",
+        "art",
+        "neon",
+        "postgres"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -3365,7 +5308,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/codex-readiness-integration-test",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/codex-readiness-integration-test/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": true,
       "has_references": true,
@@ -3397,7 +5340,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/codex-readiness-unit-test",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/codex-readiness-unit-test/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": true,
       "has_references": true,
@@ -3429,7 +5372,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/create-plan",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/create-plan/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3458,7 +5401,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/doc",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/doc/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3492,7 +5435,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-address-comments",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-address-comments/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3524,7 +5467,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-fix-ci",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-fix-ci/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3557,7 +5500,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/gitlab-address-comments",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/gitlab-address-comments/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3588,7 +5531,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/imagegen",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/imagegen/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": true,
       "has_references": true,
@@ -3621,7 +5564,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/linear",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/linear/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3651,7 +5594,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-knowledge-capture",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-knowledge-capture/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": false,
       "has_references": true,
@@ -3686,7 +5629,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-meeting-intelligence",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-meeting-intelligence/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": false,
       "has_references": true,
@@ -3718,7 +5661,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-research-documentation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-research-documentation/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": false,
       "has_references": true,
@@ -3752,7 +5695,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-spec-to-implementation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-spec-to-implementation/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": false,
       "has_references": true,
@@ -3782,7 +5725,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/pdf",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/pdf/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3807,6 +5750,11 @@
           "id": "skillcreatorai/pdf",
           "provider": "skillcreatorai",
           "similarity": 0.5
+        },
+        {
+          "id": "composiohq/pdf",
+          "provider": "composiohq",
+          "similarity": 0.49
         }
       ]
     },
@@ -3824,7 +5772,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/screenshot",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/screenshot/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3854,7 +5802,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-creator",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3879,6 +5827,11 @@
           "id": "skillcreatorai/skill-creator",
           "provider": "skillcreatorai",
           "similarity": 0.9
+        },
+        {
+          "id": "composiohq/skill-creator",
+          "provider": "composiohq",
+          "similarity": 1.0
         }
       ]
     },
@@ -3898,7 +5851,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-installer",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-installer/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3929,7 +5882,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/sora",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/sora/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": true,
       "has_references": true,
@@ -3959,7 +5912,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/speech",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/speech/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": true,
       "has_references": true,
@@ -3989,7 +5942,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/spreadsheet",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/spreadsheet/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": false,
       "has_references": true,
@@ -4014,13 +5967,13 @@
       "category": "development",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-30T18:34:32Z",
+      "last_updated_at": "2026-01-31T12:26:07Z",
       "metadata": {},
       "source": {
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/yeet",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/yeet/SKILL.md",
-        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
+        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
       },
       "has_scripts": false,
       "has_references": false,
@@ -4092,6 +6045,38 @@
         "design",
         "pict",
         "designer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "remotion/remotion-best-practices",
+      "name": "remotion-best-practices",
+      "description": "Best practices for Remotion - Video creation in React",
+      "provider": "remotion",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-30T13:56:20Z",
+      "metadata": {
+        "tags": "remotion, video, react, animation, composition"
+      },
+      "source": {
+        "repo": "https://github.com/remotion-dev/skills",
+        "path": "skills/remotion",
+        "skill_md_url": "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion/SKILL.md",
+        "commit_sha": "bcddbb086a15c0a43c78b8dc23f2e3f961100625"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "remotion",
+        "best",
+        "practices"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -4520,7 +6505,14 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "composiohq/artifacts-builder",
+          "provider": "composiohq",
+          "similarity": 0.97
+        }
+      ]
     },
     {
       "id": "skillcreatorai/ask-questions-if-underspecified",
@@ -4648,6 +6640,11 @@
           "id": "anthropics/brand-guidelines",
           "provider": "anthropics",
           "similarity": 0.73
+        },
+        {
+          "id": "composiohq/brand-guidelines",
+          "provider": "composiohq",
+          "similarity": 0.2
         }
       ]
     },
@@ -4687,6 +6684,11 @@
           "id": "anthropics/canvas-design",
           "provider": "anthropics",
           "similarity": 0.75
+        },
+        {
+          "id": "composiohq/canvas-design",
+          "provider": "composiohq",
+          "similarity": 0.14
         }
       ]
     },
@@ -4718,7 +6720,14 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "composiohq/changelog-generator",
+          "provider": "composiohq",
+          "similarity": 0.97
+        }
+      ]
     },
     {
       "id": "skillcreatorai/code-documentation",
@@ -4839,7 +6848,14 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "composiohq/competitive-ads-extractor",
+          "provider": "composiohq",
+          "similarity": 0.97
+        }
+      ]
     },
     {
       "id": "skillcreatorai/content-research-writer",
@@ -4871,7 +6887,14 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "composiohq/content-research-writer",
+          "provider": "composiohq",
+          "similarity": 0.96
+        }
+      ]
     },
     {
       "id": "skillcreatorai/database-design",
@@ -4930,7 +6953,14 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "composiohq/developer-growth-analysis",
+          "provider": "composiohq",
+          "similarity": 0.96
+        }
+      ]
     },
     {
       "id": "skillcreatorai/doc-coauthoring",
@@ -5005,6 +7035,11 @@
           "id": "anthropics/docx",
           "provider": "anthropics",
           "similarity": 0.87
+        },
+        {
+          "id": "composiohq/docx",
+          "provider": "composiohq",
+          "similarity": 0.22
         }
       ]
     },
@@ -5036,7 +7071,14 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "composiohq/domain-name-brainstormer",
+          "provider": "composiohq",
+          "similarity": 0.97
+        }
+      ]
     },
     {
       "id": "skillcreatorai/expo-app-design",
@@ -5122,7 +7164,14 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "composiohq/file-organizer",
+          "provider": "composiohq",
+          "similarity": 0.96
+        }
+      ]
     },
     {
       "id": "skillcreatorai/frontend-design",
@@ -5190,7 +7239,14 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "composiohq/image-enhancer",
+          "provider": "composiohq",
+          "similarity": 0.97
+        }
+      ]
     },
     {
       "id": "skillcreatorai/internal-comms",
@@ -5227,6 +7283,11 @@
           "id": "anthropics/internal-comms",
           "provider": "anthropics",
           "similarity": 0.66
+        },
+        {
+          "id": "composiohq/internal-comms",
+          "provider": "composiohq",
+          "similarity": 0.17
         }
       ]
     },
@@ -5258,7 +7319,14 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "composiohq/invoice-organizer",
+          "provider": "composiohq",
+          "similarity": 0.96
+        }
+      ]
     },
     {
       "id": "skillcreatorai/javascript-typescript",
@@ -5374,7 +7442,14 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "composiohq/lead-research-assistant",
+          "provider": "composiohq",
+          "similarity": 0.97
+        }
+      ]
     },
     {
       "id": "skillcreatorai/llm-application-dev",
@@ -5441,6 +7516,11 @@
           "id": "anthropics/mcp-builder",
           "provider": "anthropics",
           "similarity": 1.0
+        },
+        {
+          "id": "composiohq/mcp-builder",
+          "provider": "composiohq",
+          "similarity": 0.26
         }
       ]
     },
@@ -5472,7 +7552,14 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "composiohq/meeting-insights-analyzer",
+          "provider": "composiohq",
+          "similarity": 0.96
+        }
+      ]
     },
     {
       "id": "skillcreatorai/pdf",
@@ -5513,6 +7600,11 @@
           "id": "openai/pdf",
           "provider": "openai",
           "similarity": 0.49
+        },
+        {
+          "id": "composiohq/pdf",
+          "provider": "composiohq",
+          "similarity": 0.47
         }
       ]
     },
@@ -5549,6 +7641,11 @@
           "id": "anthropics/pptx",
           "provider": "anthropics",
           "similarity": 0.78
+        },
+        {
+          "id": "composiohq/pptx",
+          "provider": "composiohq",
+          "similarity": 0.15
         }
       ]
     },
@@ -5639,7 +7736,14 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "similar_skills": [
+        {
+          "id": "composiohq/raffle-winner-picker",
+          "provider": "composiohq",
+          "similarity": 0.97
+        }
+      ]
     },
     {
       "id": "skillcreatorai/react-best-practices",
@@ -5710,6 +7814,11 @@
           "id": "openai/skill-creator",
           "provider": "openai",
           "similarity": 0.9
+        },
+        {
+          "id": "composiohq/skill-creator",
+          "provider": "composiohq",
+          "similarity": 0.26
         }
       ]
     },
@@ -5747,6 +7856,11 @@
           "id": "anthropics/slack-gif-creator",
           "provider": "anthropics",
           "similarity": 0.71
+        },
+        {
+          "id": "composiohq/slack-gif-creator",
+          "provider": "composiohq",
+          "similarity": 0.96
         }
       ]
     },
@@ -5784,6 +7898,11 @@
           "id": "anthropics/theme-factory",
           "provider": "anthropics",
           "similarity": 1.0
+        },
+        {
+          "id": "composiohq/theme-factory",
+          "provider": "composiohq",
+          "similarity": 0.97
         }
       ]
     },
@@ -5955,6 +8074,11 @@
           "id": "github/webapp-testing",
           "provider": "github",
           "similarity": 1.0
+        },
+        {
+          "id": "composiohq/webapp-testing",
+          "provider": "composiohq",
+          "similarity": 0.25
         }
       ]
     },
@@ -5993,8 +8117,110 @@
           "id": "anthropics/xlsx",
           "provider": "anthropics",
           "similarity": 0.83
+        },
+        {
+          "id": "composiohq/xlsx",
+          "provider": "composiohq",
+          "similarity": 0.28
         }
       ]
+    },
+    {
+      "id": "stripe/stripe-best-practices",
+      "name": "stripe-best-practices",
+      "description": "Best practices for building a Stripe integrations",
+      "provider": "stripe",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-20T19:28:05Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/stripe/ai",
+        "path": "skills/stripe-best-practices",
+        "skill_md_url": "https://raw.githubusercontent.com/stripe/ai/main/skills/stripe-best-practices/SKILL.md",
+        "commit_sha": "67e7de32a5bb90ace156e62c911078dfdc12f8da"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "stripe",
+        "best",
+        "practices"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "stripe/upgrade-stripe",
+      "name": "upgrade-stripe",
+      "description": "Guide for upgrading Stripe API versions and SDKs",
+      "provider": "stripe",
+      "category": "integrations",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-20T19:28:05Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/stripe/ai",
+        "path": "skills/upgrade-stripe",
+        "skill_md_url": "https://raw.githubusercontent.com/stripe/ai/main/skills/upgrade-stripe/SKILL.md",
+        "commit_sha": "67e7de32a5bb90ace156e62c911078dfdc12f8da"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "api",
+        "upgrade",
+        "stripe"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "supabase/supabase-postgres-best-practices",
+      "name": "supabase-postgres-best-practices",
+      "description": "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
+      "provider": "supabase",
+      "category": "development",
+      "license": "MIT",
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T21:38:29Z",
+      "metadata": {
+        "author": "supabase",
+        "version": "1.1.0",
+        "organization": "Supabase",
+        "date": "January 2026",
+        "abstract": "Comprehensive Postgres performance optimization guide for developers using Supabase and Postgres. Contains performance rules across 8 categories, prioritized by impact from critical (query performance, connection management) to incremental (advanced features). Each rule includes detailed explanations, incorrect vs. correct SQL examples, query plan analysis, and specific performance metrics to guide automated optimization and code generation."
+      },
+      "source": {
+        "repo": "https://github.com/supabase/agent-skills",
+        "path": "skills/supabase-postgres-best-practices",
+        "skill_md_url": "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase-postgres-best-practices/SKILL.md",
+        "commit_sha": "22e466937a34fe4f2c7d2d199599c7a76cbcf51f"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "design",
+        "supabase",
+        "postgres",
+        "best",
+        "practices"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
     },
     {
       "id": "tapestry/article-extractor",
@@ -6110,6 +8336,35 @@
         "pr",
         "youtube",
         "transcript"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
+    {
+      "id": "tinybird/tinybird",
+      "name": "tinybird",
+      "description": "Tinybird Code agent tools and prompts for working with Tinybird projects, datafiles, queries, deployments, and tests.",
+      "provider": "tinybird",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-21T09:26:34Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/tinybirdco/tinybird-agent-skills",
+        "path": "skills/tinybird-best-practices",
+        "skill_md_url": "https://raw.githubusercontent.com/tinybirdco/tinybird-agent-skills/main/skills/tinybird-best-practices/SKILL.md",
+        "commit_sha": "52435474e156b8b0097d5926a4d704b779f08bc6"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "test",
+        "tinybird"
       ],
       "duplicate_status": null,
       "duplicate_annotation": null,
@@ -6302,8 +8557,8 @@
     }
   ],
   "duplicate_summary": {
-    "total_annotated": 11,
-    "mirrors": 8,
+    "total_annotated": 34,
+    "mirrors": 31,
     "probable_duplicates": 3
   }
 }
