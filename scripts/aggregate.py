@@ -204,6 +204,13 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/PleasePrompto/notebooklm-skill/master",
         "skills_path_prefix": "",
     },
+    "aiqualitylab": {
+        "name": "AI Quality Lab",
+        "repo": "https://github.com/aiqualitylab/agent-skills",
+        "api_tree_url": "https://api.github.com/repos/aiqualitylab/agent-skills/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/aiqualitylab/agent-skills/main",
+        "skills_path_prefix": "skills/",
+    },
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")

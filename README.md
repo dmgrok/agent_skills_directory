@@ -1,481 +1,420 @@
-# skills
+# Gitleaks
 
-**The package manager for AI agent skills.**
-
-```bash
-brew install dmgrok/tap/skills
+```
+┌─○───┐
+│ │╲  │
+│ │ ○ │
+│ ○ ░ │
+└─░───┘
 ```
 
-[![npm-like CLI](https://img.shields.io/badge/CLI-npm--like-CB3837?logo=npm)](https://github.com/dmgrok/agent_skills_directory/releases)
-[![Skills](https://img.shields.io/badge/Skills-174-blue)](https://dmgrok.github.io/agent_skills_directory/)
-[![Providers](https://img.shields.io/badge/Providers-24-green)](https://dmgrok.github.io/agent_skills_directory/)
-[![Stars](https://img.shields.io/badge/Combined%20Stars-136K+-yellow)](https://dmgrok.github.io/agent_skills_directory/)
+<p align="left">
+  <p align="left">
+	  <a href="https://github.com/zricethezav/gitleaks/actions/workflows/test.yml">
+		  <img alt="Github Test" src="https://github.com/zricethezav/gitleaks/actions/workflows/test.yml/badge.svg">
+	  </a>
+	  <a href="https://hub.docker.com/r/zricethezav/gitleaks">
+		  <img src="https://img.shields.io/docker/pulls/zricethezav/gitleaks.svg" />
+	  </a>
+	  <a href="https://github.com/zricethezav/gitleaks-action">
+        	<img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue">
+    	 </a>
+	  <a href="https://twitter.com/intent/follow?screen_name=zricethezav">
+		  <img src="https://img.shields.io/twitter/follow/zricethezav?label=Follow%20zricethezav&style=social&color=blue" alt="Follow @zricethezav" />
+	  </a>
+  </p>
+</p>
 
----
+### Join our Discord! [![Discord](https://img.shields.io/discord/1102689410522284044.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/8Hzbrnkr7E)
 
-## What is this?
+Gitleaks is a SAST tool for **detecting** and **preventing** hardcoded secrets like passwords, api keys, and tokens in git repos. Gitleaks is an **easy-to-use, all-in-one solution** for detecting secrets, past or present, in your code.
 
-**skills** is to AI agents what **npm** is to JavaScript.
+```
+➜  ~/code(master) gitleaks detect --source . -v
 
-Search, install, publish, and manage reusable skills for Claude, Copilot, Codex, and Cursor—all from your terminal.
+    ○
+    │╲
+    │ ○
+    ○ ░
+    ░    gitleaks
 
-```bash
-skills search "web scraping"     # Find skills
-skills install anthropic/pdf     # Install a skill
-skills publish                   # Share your own
+
+Finding:     "export BUNDLE_ENTERPRISE__CONTRIBSYS__COM=cafebabe:deadbeef",
+Secret:      cafebabe:deadbeef
+RuleID:      sidekiq-secret
+Entropy:     2.609850
+File:        cmd/generate/config/rules/sidekiq.go
+Line:        23
+Commit:      cd5226711335c68be1e720b318b7bc3135a30eb2
+Author:      John
+Email:       john@users.noreply.github.com
+Date:        2022-08-03T12:31:40Z
+Fingerprint: cd5226711335c68be1e720b318b7bc3135a30eb2:cmd/generate/config/rules/sidekiq.go:sidekiq-secret:23
 ```
 
-🌐 **[Browse 174+ Skills Online →](https://dmgrok.github.io/agent_skills_directory/)**
+## Getting Started
 
----
+Gitleaks can be installed using Homebrew, Docker, or Go. Gitleaks is also available in binary form for many popular platforms and OS types on the [releases page](https://github.com/zricethezav/gitleaks/releases). In addition, Gitleaks can be implemented as a pre-commit hook directly in your repo or as a GitHub action using [Gitleaks-Action](https://github.com/gitleaks/gitleaks-action).
 
-## 🚀 Contributing New Providers
-
-Want to add your skills to the directory? It's fully automated!
-
-1. **[Create a New Provider Issue](https://github.com/dmgrok/agent_skills_directory/issues/new?template=new-provider.yml)** with your repository details
-2. Our automated validation system will:
-   - ✅ Validate skills using [LGTM Agent Skills](https://github.com/dmgrok/LGTM_agent_skills)
-   - 🔒 Scan for secrets with gitleaks
-   - 🛡️ Check for prompt injection attacks with Lakera Guard
-   - 🤖 Auto-create a PR if validation passes (70+ score required)
-3. Once merged, your skills are automatically included in daily aggregation runs
-
-**Requirements:**
-- Skills in `SKILL.md` format with YAML frontmatter
-- Valid license (MIT, Apache 2.0, etc.)
-- No hardcoded secrets or malicious content
-- Score 70+ on LGTM validation
-
-**Example:** See [issue #11](https://github.com/dmgrok/agent_skills_directory/issues/11) for a sample submission.
-
----
-
-## Skills Providers
-
-This directory aggregates skills from **24 provider repositories** across the AI agent ecosystem:
-
-### Major Providers
-
-| Provider | Repository | Skills | Stars |
-|----------|-----------|--------|-------|
-| [Anthropic](https://github.com/anthropics/skills) | anthropics/skills | 16 | 54.7K ⭐ |
-| [Obra Superpowers](https://github.com/obra/superpowers) | obra/superpowers | 14 | 37.3K ⭐ |
-| [GitHub Copilot](https://github.com/github/awesome-copilot) | github/awesome-copilot | 26 | 19.1K ⭐ |
-| [Vercel](https://github.com/vercel-labs/agent-skills) | vercel-labs/agent-skills | 5 | 16.9K ⭐ |
-| [NotebookLM](https://github.com/PleasePrompto/notebooklm-skill) | notebooklm-skill | 1 | 2.8K ⭐ |
-| [OpenAI Codex](https://github.com/openai/skills) | openai/skills | 12 | 2.1K ⭐ |
-| [Playwright](https://github.com/lackeyjb/playwright-skill) | playwright-skill | 1 | 1.5K ⭐ |
-| [HuggingFace](https://github.com/huggingface/skills) | huggingface/skills | 8 | 1.1K ⭐ |
-
-### Community Collections
-
-| Provider | Repository | Skills | Stars |
-|----------|-----------|--------|-------|
-| [SkillCreator.ai](https://github.com/skillcreatorai/Ai-Agent-Skills) | skillcreatorai/Ai-Agent-Skills | 47 | 624 ⭐ |
-| [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) | ios-simulator-skill | 1 | 395 ⭐ |
-| [Claude Marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | claude-skills-marketplace | 18 | 271 ⭐ |
-| [CSV Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) | csv-summarizer-skill | 1 | 193 ⭐ |
-| [Tapestry Skills](https://github.com/michalparkola/tapestry-skills-for-claude-code) | tapestry-skills | 4 | 181 ⭐ |
-| [AWS Skills](https://github.com/zxkane/aws-skills) | aws-skills | 5 | 101 ⭐ |
-| [FFUF Web Fuzzing](https://github.com/jthack/ffuf_claude_skill) | ffuf-skill | 1 | 100 ⭐ |
-| [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | d3js-skill | 1 | 83 ⭐ |
-| [EPUB Converter](https://github.com/smerchek/claude-epub-skill) | epub-skill | 1 | 56 ⭐ |
-| [Sanjay AI Skills](https://github.com/sanjay3290/ai-skills) | ai-skills | 12 | 43 ⭐ |
-| [PICT Test Cases](https://github.com/omkamal/pypict-claude-skill) | pypict-skill | 1 | 28 ⭐ |
-| [Family History](https://github.com/emaynard/claude-family-history-research-skill) | family-history-skill | 1 | 28 ⭐ |
-| [Move Code Quality](https://github.com/1NickPappas/move-code-quality-skill) | move-quality-skill | 1 | 10 ⭐ |
-
-**Total: 177 skills • 136K+ combined stars**
-
-[View all 24 providers →](https://dmgrok.github.io/agent_skills_directory/)
-
-### Similar Directories & Listings
-
-- 🌟 **[heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills)** - Curated list of agent skills and frameworks
-- 🌟 **[Prat011/awesome-llm-skills](https://github.com/Prat011/awesome-llm-skills)** - Comprehensive collection of LLM agent skills
-- 📖 **[Agent Skills Spec](https://agentskills.io/specification)** - Standard specification for agent skills
-
----
-
-## Quick Install
-
-### macOS (Homebrew)
+### Installing
 
 ```bash
-brew install dmgrok/tap/skills
+# MacOS
+brew install gitleaks
+
+# Docker (DockerHub)
+docker pull zricethezav/gitleaks:latest
+docker run -v ${path_to_host_folder_to_scan}:/path zricethezav/gitleaks:latest [COMMAND] --source="/path" [OPTIONS]
+
+# Docker (ghcr.io)
+docker pull ghcr.io/gitleaks/gitleaks:latest
+docker run -v ${path_to_host_folder_to_scan}:/path ghcr.io/gitleaks/gitleaks:latest [COMMAND] --source="/path" [OPTIONS]
+
+# From Source
+git clone https://github.com/gitleaks/gitleaks.git
+cd gitleaks
+make build
 ```
 
-### One-liner (macOS/Linux)
+### GitHub Action
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/install.sh | sh
+Check out the official [Gitleaks GitHub Action](https://github.com/gitleaks/gitleaks-action)
+
+```
+name: gitleaks
+on: [pull_request, push, workflow_dispatch]
+jobs:
+  scan:
+    name: gitleaks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE}} # Only required for Organizations, not personal accounts.
 ```
 
-### Direct Download
+### Pre-Commit
 
-| Platform | Download |
-|----------|----------|
-| **macOS** (Apple Silicon & Intel) | [skills-macos-arm64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-arm64) |
-| **Linux** (x64) | [skills-linux-x64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-linux-x64) |
-| **Windows** (x64) | [skills-windows-x64.exe](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-windows-x64.exe) |
+1. Install pre-commit from https://pre-commit.com/#install
+2. Create a `.pre-commit-config.yaml` file at the root of your repository with the following content:
 
-### From Source (if you prefer Python)
+   ```
+   repos:
+     - repo: https://github.com/gitleaks/gitleaks
+       rev: v8.16.1
+       hooks:
+         - id: gitleaks
+   ```
 
-```bash
-git clone https://github.com/dmgrok/agent_skills_directory.git
-cd agent_skills_directory && pip install -e .
+   for a [native execution of GitLeaks](https://github.com/zricethezav/gitleaks/releases) or use the [`gitleaks-docker` pre-commit ID](https://github.com/zricethezav/gitleaks/blob/master/.pre-commit-hooks.yaml) for executing GitLeaks using the [official Docker images](#docker)
+
+3. Auto-update the config to the latest repos' versions by executing `pre-commit autoupdate`
+4. Install with `pre-commit install`
+5. Now you're all set!
+
+```
+➜ git commit -m "this commit contains a secret"
+Detect hardcoded secrets.................................................Failed
 ```
 
----
+Note: to disable the gitleaks pre-commit hook you can prepend `SKIP=gitleaks` to the commit command
+and it will skip running gitleaks
+
+```
+➜ SKIP=gitleaks git commit -m "skip gitleaks check"
+Detect hardcoded secrets................................................Skipped
+```
 
 ## Usage
 
-### Search & Discover
+```
+Usage:
+  gitleaks [command]
 
-```bash
-# Search by keyword
-skills search "pdf"
+Available Commands:
+  completion  generate the autocompletion script for the specified shell
+  detect      detect secrets in code
+  help        Help about any command
+  protect     protect secrets in code
+  version     display gitleaks version
 
-# Browse by provider
-skills search --provider anthropic
+Flags:
+  -b, --baseline-path string       path to baseline with issues that can be ignored
+  -c, --config string              config file path
+                                   order of precedence:
+                                   1. --config/-c
+                                   2. env var GITLEAKS_CONFIG
+                                   3. (--source/-s)/.gitleaks.toml
+                                   If none of the three options are used, then gitleaks will use the default config
+      --exit-code int              exit code when leaks have been encountered (default 1)
+  -h, --help                       help for gitleaks
+  -l, --log-level string           log level (trace, debug, info, warn, error, fatal) (default "info")
+      --max-target-megabytes int   files larger than this will be skipped
+      --no-color                   turn off color for verbose output
+      --no-banner                  suppress banner
+      --redact                     redact secrets from logs and stdout
+  -f, --report-format string       output format (json, csv, junit, sarif) (default "json")
+  -r, --report-path string         report file
+  -s, --source string              path to source (default ".")
+  -v, --verbose                    show verbose output from scan
 
-# View skill details
-skills info anthropic/pdf
+Use "gitleaks [command] --help" for more information about a command.
 ```
 
-### Install Skills
+### Commands
 
-```bash
-# Install globally (default)
-skills install anthropic/pdf
+There are two commands you will use to detect secrets; `detect` and `protect`.
 
-# Install to project (auto-detects your agent)
-skills install anthropic/pdf --project
+#### Detect
 
-# Install for specific agent
-skills install anthropic/pdf -p --agent claude   # → .claude/skills/
-skills install anthropic/pdf -p --agent copilot  # → .github/skills/
-skills install anthropic/pdf -p --agent codex    # → .codex/skills/
-skills install anthropic/pdf -p --agent cursor   # → .cursor/skills/
+The `detect` command is used to scan repos, directories, and files. This command can be used on developer machines and in CI environments.
 
-# Install specific version
-skills install anthropic/pdf@1.2.0
-```
+When running `detect` on a git repository, gitleaks will parse the output of a `git log -p` command (you can see how this executed
+[here](https://github.com/zricethezav/gitleaks/blob/7240e16769b92d2a1b137c17d6bf9d55a8562899/git/git.go#L17-L25)).
+[`git log -p` generates patches](https://git-scm.com/docs/git-log#_generating_patch_text_with_p) which gitleaks will use to detect secrets.
+You can configure what commits `git log` will range over by using the `--log-opts` flag. `--log-opts` accepts any option for `git log -p`.
+For example, if you wanted to run gitleaks on a range of commits you could use the following command: `gitleaks detect --source . --log-opts="--all commitA..commitB"`.
+See the `git log` [documentation](https://git-scm.com/docs/git-log) for more information.
 
-### Manage Skills
+You can scan files and directories by using the `--no-git` option.
 
-```bash
-# List installed skills
-skills list
-skills list --json
+If you want to run only specific rules you can do so by using the `--enable-rule` option (with a rule ID as a parameter), this flag can be used multiple times. For example: `--enable-rule=atlassian-api-token` will only apply that rule. You can find a list of rules [here](config/gitleaks.toml).
 
-# Update all skills
-skills update
+#### Protect
 
-# Remove a skill
-skills uninstall anthropic/pdf
+The `protect` command is used to scan uncommitted changes in a git repo. This command should be used on developer machines in accordance with
+[shifting left on security](https://cloud.google.com/architecture/devops/devops-tech-shifting-left-on-security).
+When running `protect` on a git repository, gitleaks will parse the output of a `git diff` command (you can see how this executed
+[here](https://github.com/zricethezav/gitleaks/blob/7240e16769b92d2a1b137c17d6bf9d55a8562899/git/git.go#L48-L49)). You can set the
+`--staged` flag to check for changes in commits that have been `git add`ed. The `--staged` flag should be used when running Gitleaks
+as a pre-commit.
 
-# Detect which agent you're using
-skills detect
-```
+**NOTE**: the `protect` command can only be used on git repos, running `protect` on files or directories will result in an error message.
 
-### Create & Publish
+### Creating a baseline
 
-```bash
-# Create a new skill
-skills init
-
-# Validate before publishing
-skills validate .
-
-# Publish to GitHub
-skills login
-skills publish
-
-# Submit to official directory
-skills publish --submit
-```
-
----
-
-## Supported Agents
-
-| Agent | Project Path | Personal Path | Detection |
-|-------|--------------|---------------|-----------|
-| **Claude** | `.claude/skills/` | `~/.claude/skills/` | `CLAUDE.md` |
-| **Copilot** | `.github/skills/` | `~/.copilot/skills/` | `.github/copilot-instructions.md` |
-| **Codex** | `.codex/skills/` | `~/.codex/skills/` | `AGENTS.md` |
-| **Cursor** | `.cursor/skills/` | `~/.cursor/skills/` | `.cursorrules` |
-
----
-
-## Catalog API
-
-The skills catalog is a JSON file updated daily at 06:00 UTC.
-
-### Endpoints
-
-| Format | URL |
-|--------|-----|
-| **JSON (CDN)** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json` |
-| **Minified** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.json` |
-| **Bundles** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json` |
-| **Pinned Version** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.26/catalog.json` |
-
-### Example
-
-```python
-import requests
-
-catalog = requests.get(
-    "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json"
-).json()
-
-# List skills
-for skill in catalog["skills"]:
-    print(f"{skill['id']}: {skill['description']}")
-
-# Filter by category
-dev_skills = [s for s in catalog["skills"] if s["category"] == "development"]
-```
-
----
-
-## Providers
-
-We aggregate skills from **24 repositories** with **136K+ combined GitHub stars**:
-
-### Major Providers
-
-| Provider | Repository | Skills | ⭐ |
-|----------|------------|:------:|:--:|
-| **Anthropic** | [anthropics/skills](https://github.com/anthropics/skills) | 16 | 54K |
-| **Obra** | [obra/superpowers](https://github.com/obra/superpowers) | 14 | 36K |
-| **GitHub** | [github/awesome-copilot](https://github.com/github/awesome-copilot) | 26 | 19K |
-| **Vercel** | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 3 | 17K |
-| **OpenAI** | [openai/skills](https://github.com/openai/skills) | 12 | 2K |
-| **HuggingFace** | [huggingface/skills](https://github.com/huggingface/skills) | 8 | 1K |
-
-### Community
-
-| Provider | Repository | Skills | ⭐ |
-|----------|------------|:------:|:--:|
-| **SkillCreator.ai** | [skillcreatorai/Ai-Agent-Skills](https://github.com/skillcreatorai/Ai-Agent-Skills) | 47 | 620 |
-| **Claude Marketplace** | [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | 18 | 267 |
-| **NotebookLM** | [PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) | 1 | 2.7K |
-| **Playwright** | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | 1 | 1.5K |
-
-[View all 24 providers →](https://dmgrok.github.io/agent_skills_directory/)
-
----
-
-## Using Your Own Skills Repository
-
-**For enterprises and teams needing governance and control.**
-
-You can create your own private skills repository instead of using the public catalog. This is ideal for:
-
-- **Security & Compliance** — Keep proprietary skills internal
-- **Governance** — Control and audit skill usage across your organization
-- **Custom Skills** — Share organization-specific workflows
-- **Air-gapped Environments** — No external dependencies
-
-### Setting Up a Private Repository
-
-1. **Create a GitHub repository** with your skills:
+When scanning large repositories or repositories with a long history, it can be convenient to use a baseline. When using a baseline,
+gitleaks will ignore any old findings that are present in the baseline. A baseline can be any gitleaks report. To create a gitleaks report, run gitleaks with the `--report-path` parameter.
 
 ```
-your-org/internal-skills/
-├── skills/
-│   ├── security-audit/
-│   │   ├── skill.json
-│   │   └── SKILL.md
-│   ├── compliance-check/
-│   │   ├── skill.json
-│   │   └── SKILL.md
-│   └── ...
+gitleaks detect --report-path gitleaks-report.json # This will save the report in a file called gitleaks-report.json
 ```
 
-2. **Point the CLI to your repository**:
-
-```bash
-skills config set registry https://cdn.jsdelivr.net/gh/your-org/internal-skills@main/catalog.json
-```
-
-3. **Generate your catalog**:
-
-```bash
-# Fork this repo and adjust PROVIDERS in scripts/aggregate.py
-PROVIDERS = {
-    "your-org": {
-        "name": "Your Organization",
-        "repo": "https://github.com/your-org/internal-skills",
-        "api_tree_url": "https://api.github.com/repos/your-org/internal-skills/git/trees/main?recursive=1",
-        "raw_base": "https://raw.githubusercontent.com/your-org/internal-skills/main",
-        "skills_path_prefix": "skills/",
-    },
-}
-
-python scripts/aggregate.py  # Generates catalog.json
-```
-
-4. **Distribute to your team**:
-
-```bash
-# Team members configure their CLI
-skills config set registry https://your-internal-cdn/catalog.json
-
-# Now they can use your skills
-skills search "security"
-skills install your-org/security-audit
-```
-
-### Benefits for Enterprises
-
-- **Centralized Management** — Single source of truth for approved skills
-- **Version Control** — Pin skills to specific versions organization-wide
-- **Audit Trail** — Track skill usage and updates via Git history
-- **Custom Policies** — Enforce security, compliance, and coding standards
-- **Private Hosting** — Host on internal infrastructure (S3, CDN, etc.)
-
----
-
-## Creating Skills
-
-A skill is a directory with two files:
+Once as baseline is created it can be applied when running the detect command again:
 
 ```
-my-skill/
-├── skill.json    # Metadata (like package.json)
-└── SKILL.md      # Instructions for the agent
+gitleaks detect --baseline-path gitleaks-report.json --report-path findings.json
 ```
 
-### skill.json
+After running the detect command with the --baseline-path parameter, report output (findings.json) will only contain new issues.
 
-```json
-{
-  "name": "my-skill",
-  "version": "1.0.0",
-  "description": "What this skill does",
-  "author": "your-username",
-  "license": "MIT",
-  "keywords": ["keyword1", "keyword2"],
-  "runtime": "universal"
-}
+### Verify Findings
+
+You can verify a finding found by gitleaks using a `git log` command.
+Example output:
+
+```
+Finding:     aws_secret="AKIAIMNOJVGFDXXXE4OA"
+RuleID:      aws-access-token
+Secret       AKIAIMNOJVGFDXXXE4OA
+Entropy:     3.65
+File:        checks_test.go
+Line:        37
+Commit:      ec2fc9d6cb0954fb3b57201cf6133c48d8ca0d29
+Author:      Zachary Rice
+Email:       z@email.com
+Date:        2018-01-28T17:39:00Z
+Fingerprint: ec2fc9d6cb0954fb3b57201cf6133c48d8ca0d29:checks_test.go:aws-access-token:37
 ```
 
-### SKILL.md
+We can use the following format to verify the leak:
 
-```markdown
----
-name: My Skill
-version: 1.0.0
-description: What this skill does
----
-
-# My Skill
-
-Instructions for the AI agent on how to use this skill...
+```
+git log -L {StartLine,EndLine}:{File} {Commit}
 ```
 
-### Publish
+So in this example it would look like:
 
-```bash
-cd my-skill
-skills validate .    # Check for issues
-skills login         # Authenticate with GitHub
-skills publish       # Push to GitHub
-skills publish --submit  # Request inclusion in directory
+```
+git log -L 37,37:checks_test.go ec2fc9d6cb0954fb3b57201cf6133c48d8ca0d29
 ```
 
----
+Which gives us:
 
-## Contributing
+```
+commit ec2fc9d6cb0954fb3b57201cf6133c48d8ca0d29
+Author: zricethezav <thisispublicanyways@gmail.com>
+Date:   Sun Jan 28 17:39:00 2018 -0500
 
-There are several ways to contribute skills to the directory:
+    [update] entropy check
 
-### 1. Publish Your Own Skill (Easiest)
+diff --git a/checks_test.go b/checks_test.go
+--- a/checks_test.go
++++ b/checks_test.go
+@@ -28,0 +37,1 @@
++               "aws_secret= \"AKIAIMNOJVGFDXXXE4OA\"":          true,
 
-Create a skill and publish it directly:
-
-```bash
-# Create your skill
-mkdir my-skill && cd my-skill
-skills init                      # Interactive setup
-
-# Publish to GitHub + request directory inclusion
-skills login                     # Authenticate with GitHub
-skills publish --submit          # Creates repo + submits to directory
 ```
 
-This will:
-1. Create a GitHub repo `your-username/skill-my-skill`
-2. Push your `skill.json` and `SKILL.md`
-3. Open a PR to add you as a single-skill provider
+## Pre-Commit hook
 
-### 2. Contribute to an Existing Provider
+You can run Gitleaks as a pre-commit hook by copying the example `pre-commit.py` script into
+your `.git/hooks/` directory.
 
-Add your skill to an existing provider repository. Since we scan providers daily, your skill will appear automatically!
+## Configuration
 
-**Recommended providers accepting contributions:**
+Gitleaks offers a configuration format you can follow to write your own secret detection rules:
 
-| Provider | How to Contribute |
-|----------|-------------------|
-| [skillcreatorai/Ai-Agent-Skills](https://github.com/skillcreatorai/Ai-Agent-Skills) | Fork → Add skill in `skills/` → PR |
-| [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) | Fork → Add skill in `skills/` → PR |
-| [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | Fork → Add skill → PR |
+```toml
+# Title for the gitleaks configuration file.
+title = "Gitleaks title"
 
-### 3. Add a New Provider Source
+# Extend the base (this) configuration. When you extend a configuration
+# the base rules take precedence over the extended rules. I.e., if there are
+# duplicate rules in both the base configuration and the extended configuration
+# the base rules will override the extended rules.
+# Another thing to know with extending configurations is you can chain together
+# multiple configuration files to a depth of 2. Allowlist arrays are appended
+# and can contain duplicates.
+# useDefault and path can NOT be used at the same time. Choose one.
+[extend]
+# useDefault will extend the base configuration with the default gitleaks config:
+# https://github.com/zricethezav/gitleaks/blob/master/config/gitleaks.toml
+useDefault = true
+# or you can supply a path to a configuration. Path is relative to where gitleaks
+# was invoked, not the location of the base config.
+path = "common_config.toml"
 
-Have a repository with multiple skills? Request to add it as a provider:
+# An array of tables that contain information that define instructions
+# on how to detect secrets
+[[rules]]
 
-**Option A: Open an issue**
+# Unique identifier for this rule
+id = "awesome-rule-1"
 
-[➕ Request New Provider](https://github.com/dmgrok/agent_skills_directory/issues/new?labels=new-source&title=[New+Provider]+your-org/repo-name)
+# Short human readable description of the rule.
+description = "awesome rule 1"
 
-**Option B: Submit a PR** editing `scripts/aggregate.py`:
+# Golang regular expression used to detect secrets. Note Golang's regex engine
+# does not support lookaheads.
+regex = '''one-go-style-regex-for-this-rule'''
 
-```python
-PROVIDERS = {
-    "your-org": {
-        "name": "Your Organization",
-        "repo": "https://github.com/your-org/skills-repo",
-        "api_tree_url": "https://api.github.com/repos/your-org/skills-repo/git/trees/main?recursive=1",
-        "raw_base": "https://raw.githubusercontent.com/your-org/skills-repo/main",
-        "skills_path_prefix": "skills/",  # or "" for root-level SKILL.md
-    },
-}
+# Golang regular expression used to match paths. This can be used as a standalone rule or it can be used
+# in conjunction with a valid `regex` entry.
+path = '''a-file-path-regex'''
+
+# Array of strings used for metadata and reporting purposes.
+tags = ["tag","another tag"]
+
+# Int used to extract secret from regex match and used as the group that will have
+# its entropy checked if `entropy` is set.
+secretGroup = 3
+
+# Float representing the minimum shannon entropy a regex group must have to be considered a secret.
+entropy = 3.5
+
+# Keywords are used for pre-regex check filtering. Rules that contain
+# keywords will perform a quick string compare check to make sure the
+# keyword(s) are in the content being scanned. Ideally these values should
+# either be part of the idenitifer or unique strings specific to the rule's regex
+# (introduced in v8.6.0)
+keywords = [
+  "auth",
+  "password",
+  "token",
+]
+
+# You can include an allowlist table for a single rule to reduce false positives or ignore commits
+# with known/rotated secrets
+[rules.allowlist]
+description = "ignore commit A"
+commits = [ "commit-A", "commit-B"]
+paths = [
+  '''go\.mod''',
+  '''go\.sum'''
+]
+# note: (rule) regexTarget defaults to check the _Secret_ in the finding.
+# if regexTarget is not specified then _Secret_ will be used.
+# Acceptable values for regexTarget are "match" and "line"
+regexTarget = "match"
+regexes = [
+  '''process''',
+  '''getenv''',
+]
+# note: stopwords targets the extracted secret, not the entire regex match
+# like 'regexes' does. (stopwords introduced in 8.8.0)
+stopwords = [
+  '''client''',
+  '''endpoint''',
+]
+
+
+# This is a global allowlist which has a higher order of precedence than rule-specific allowlists.
+# If a commit listed in the `commits` field below is encountered then that commit will be skipped and no
+# secrets will be detected for said commit. The same logic applies for regexes and paths.
+[allowlist]
+description = "global allow list"
+commits = [ "commit-A", "commit-B", "commit-C"]
+paths = [
+  '''gitleaks\.toml''',
+  '''(.*?)(jpg|gif|doc)'''
+]
+
+# note: (global) regexTarget defaults to check the _Secret_ in the finding.
+# if regexTarget is not specified then _Secret_ will be used.
+# Acceptable values for regexTarget are "match" and "line"
+regexTarget = "match"
+
+regexes = [
+  '''219-09-9999''',
+  '''078-05-1120''',
+  '''(9[0-9]{2}|666)-\d{2}-\d{4}''',
+]
+# note: stopwords targets the extracted secret, not the entire regex match
+# like 'regexes' does. (stopwords introduced in 8.8.0)
+stopwords = [
+  '''client''',
+  '''endpoint''',
+]
 ```
 
-### Provider Requirements
+Refer to the default [gitleaks config](https://github.com/zricethezav/gitleaks/blob/master/config/gitleaks.toml) for examples or follow the [contributing guidelines](https://github.com/zricethezav/gitleaks/blob/master/README.md) if you would like to contribute to the default configuration. Additionally, you can check out [this gitleaks blog post](https://blog.gitleaks.io/stop-leaking-secrets-configuration-2-3-aeed293b1fbf) which covers advanced configuration setups.
 
-For a repository to be scanned as a provider:
+### Additional Configuration
 
-- ✅ Each skill has a `SKILL.md` file with YAML frontmatter (`name`, `description`)
-- ✅ Public GitHub repository
-- ✅ Skills in a consistent path (e.g., `skills/*/SKILL.md` or root `SKILL.md`)
+#### gitleaks:allow
 
-### Local Development
+If you are knowingly committing a test secret that gitleaks will catch you can add a `gitleaks:allow` comment to that line which will instruct gitleaks
+to ignore that secret. Ex:
 
-```bash
-git clone https://github.com/dmgrok/agent_skills_directory.git
-cd agent_skills_directory
-pip install -e ".[validation]"
-python scripts/aggregate.py      # Test aggregation locally
-pytest                           # Run tests
+```
+class CustomClass:
+    discord_client_secret = '8dyfuiRyq=vVc3RRr_edRk-fK__JItpZ'  #gitleaks:allow
+
 ```
 
----
+#### .gitleaksignore
 
-## Related
+You can ignore specific findings by creating a `.gitleaksignore` file at the root of your repo. In release v8.10.0 Gitleaks added a `Fingerprint` value to the Gitleaks report. Each leak, or finding, has a Fingerprint that uniquely identifies a secret. Add this fingerprint to the `.gitleaksignore` file to ignore that specific secret. See Gitleaks' [.gitleaksignore](https://github.com/zricethezav/gitleaks/blob/master/.gitleaksignore) for an example. Note: this feature is experimental and is subject to change in the future.
 
-- 🌐 [Browse Skills](https://dmgrok.github.io/agent_skills_directory/) — Interactive catalog
-- 🔌 [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) — MCP server integration
-- 📖 [Agent Skills Spec](https://agentskills.io/specification) — Standard specification
+## Sponsorships
 
----
+<p align="left">
+	  <a href="https://www.tines.com/?utm_source=oss&utm_medium=sponsorship&utm_campaign=gitleaks">
+		  <img alt="Tines Sponsorship" src="https://user-images.githubusercontent.com/15034943/146411864-4878f936-b4f7-49a0-b625-f9f40c704bfa.png" width=200>
+	  </a>
+  </p>
 
-## License
+## Exit Codes
 
-MIT. Individual skills retain their original licenses.
+You can always set the exit code when leaks are encountered with the --exit-code flag. Default exit codes below:
+
+```
+0 - no leaks present
+1 - leaks or error encountered
+126 - unknown flag
+```
