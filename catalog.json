@@ -1,105 +1,105 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.01.30",
-  "generated_at": "2026-01-30T06:59:48.516863+00:00",
+  "version": "2026.01.31",
+  "generated_at": "2026-01-31T06:50:47.620335+00:00",
   "total_skills": 189,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
       "repo": "https://github.com/anthropics/skills",
       "skills_count": 16,
-      "stars": 58409,
+      "stars": 59139,
       "description": "Public repository for Agent Skills"
     },
     "openai": {
       "name": "OpenAI",
       "repo": "https://github.com/openai/skills",
       "skills_count": 21,
-      "stars": 2197,
+      "stars": 2226,
       "description": "Skills Catalog for Codex"
     },
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
       "skills_count": 29,
-      "stars": 19543,
+      "stars": 19656,
       "description": "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
     },
     "vercel": {
       "name": "Vercel",
       "repo": "https://github.com/vercel-labs/agent-skills",
       "skills_count": 5,
-      "stars": 17937,
+      "stars": 18100,
       "description": "Vercel's official collection of agent skills"
     },
     "huggingface": {
       "name": "HuggingFace",
       "repo": "https://github.com/huggingface/skills",
       "skills_count": 8,
-      "stars": 1101,
+      "stars": 1111,
       "description": null
     },
     "skillcreatorai": {
       "name": "SkillCreator.ai",
       "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
       "skills_count": 47,
-      "stars": 644,
+      "stars": 653,
       "description": "Homebrew for AI Agent Skills."
     },
     "obra-superpowers": {
       "name": "Obra Superpowers",
       "repo": "https://github.com/obra/superpowers",
       "skills_count": 14,
-      "stars": 40100,
+      "stars": 40718,
       "description": "An agentic skills framework & software development methodology that works."
     },
     "tapestry": {
       "name": "Tapestry Skills",
       "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
       "skills_count": 4,
-      "stars": 194,
+      "stars": 195,
       "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
     },
     "sanjay-ai-skills": {
       "name": "Sanjay AI Skills",
       "repo": "https://github.com/sanjay3290/ai-skills",
       "skills_count": 12,
-      "stars": 50,
+      "stars": 51,
       "description": "Collection of agent skills for AI coding assistants"
     },
     "aws-skills": {
       "name": "AWS Skills",
       "repo": "https://github.com/zxkane/aws-skills",
       "skills_count": 5,
-      "stars": 110,
+      "stars": 113,
       "description": "Claude Agent Skills for AWS"
     },
     "claude-marketplace-engineering": {
       "name": "Claude Marketplace (Engineering)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 5,
-      "stars": 289,
+      "stars": 292,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-visual": {
       "name": "Claude Marketplace (Visual)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 5,
-      "stars": 289,
+      "stars": 292,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-code": {
       "name": "Claude Marketplace (Code Ops)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 4,
-      "stars": 289,
+      "stars": 292,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-productivity": {
       "name": "Claude Marketplace (Productivity)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 4,
-      "stars": 289,
+      "stars": 292,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "epub-skill": {
@@ -120,14 +120,14 @@
       "name": "FFUF Web Fuzzing",
       "repo": "https://github.com/jthack/ffuf_claude_skill",
       "skills_count": 1,
-      "stars": 103,
+      "stars": 104,
       "description": "This is a \"skill\" for claude to use FFUF."
     },
     "ios-simulator-skill": {
       "name": "iOS Simulator",
       "repo": "https://github.com/conorluddy/ios-simulator-skill",
       "skills_count": 1,
-      "stars": 432,
+      "stars": 438,
       "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
     },
     "move-quality-skill": {
@@ -141,7 +141,7 @@
       "name": "Playwright Automation",
       "repo": "https://github.com/lackeyjb/playwright-skill",
       "skills_count": 1,
-      "stars": 1526,
+      "stars": 1539,
       "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
     },
     "pypict-skill": {
@@ -155,7 +155,7 @@
       "name": "CSV Data Summarizer",
       "repo": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill",
       "skills_count": 1,
-      "stars": 202,
+      "stars": 204,
       "description": "A Claude Skill that automatically analyzes uploaded CSV files \u2014 generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
     },
     "family-history-skill": {
@@ -169,7 +169,7 @@
       "name": "NotebookLM Integration",
       "repo": "https://github.com/PleasePrompto/notebooklm-skill",
       "skills_count": 1,
-      "stars": 2916,
+      "stars": 2990,
       "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
     }
   },
@@ -2568,7 +2568,7 @@
         "repo": "https://github.com/huggingface/skills",
         "path": "skills/hugging-face-cli",
         "skill_md_url": "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-cli/SKILL.md",
-        "commit_sha": "462a39896c44a7bbaf2c39aa49056a43af228d55"
+        "commit_sha": "2afeee6dc7270dd91bef2b59a5b60b2222fbd8a0"
       },
       "has_scripts": false,
       "has_references": true,
@@ -2597,7 +2597,7 @@
         "repo": "https://github.com/huggingface/skills",
         "path": "skills/hugging-face-datasets",
         "skill_md_url": "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-datasets/SKILL.md",
-        "commit_sha": "462a39896c44a7bbaf2c39aa49056a43af228d55"
+        "commit_sha": "2afeee6dc7270dd91bef2b59a5b60b2222fbd8a0"
       },
       "has_scripts": true,
       "has_references": false,
@@ -2629,7 +2629,7 @@
         "repo": "https://github.com/huggingface/skills",
         "path": "skills/hugging-face-evaluation",
         "skill_md_url": "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-evaluation/SKILL.md",
-        "commit_sha": "462a39896c44a7bbaf2c39aa49056a43af228d55"
+        "commit_sha": "2afeee6dc7270dd91bef2b59a5b60b2222fbd8a0"
       },
       "has_scripts": true,
       "has_references": false,
@@ -2663,7 +2663,7 @@
         "repo": "https://github.com/huggingface/skills",
         "path": "skills/hugging-face-jobs",
         "skill_md_url": "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-jobs/SKILL.md",
-        "commit_sha": "462a39896c44a7bbaf2c39aa49056a43af228d55"
+        "commit_sha": "2afeee6dc7270dd91bef2b59a5b60b2222fbd8a0"
       },
       "has_scripts": true,
       "has_references": true,
@@ -2694,7 +2694,7 @@
         "repo": "https://github.com/huggingface/skills",
         "path": "skills/hugging-face-model-trainer",
         "skill_md_url": "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-model-trainer/SKILL.md",
-        "commit_sha": "462a39896c44a7bbaf2c39aa49056a43af228d55"
+        "commit_sha": "2afeee6dc7270dd91bef2b59a5b60b2222fbd8a0"
       },
       "has_scripts": true,
       "has_references": true,
@@ -2725,7 +2725,7 @@
         "repo": "https://github.com/huggingface/skills",
         "path": "skills/hugging-face-paper-publisher",
         "skill_md_url": "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-paper-publisher/SKILL.md",
-        "commit_sha": "462a39896c44a7bbaf2c39aa49056a43af228d55"
+        "commit_sha": "2afeee6dc7270dd91bef2b59a5b60b2222fbd8a0"
       },
       "has_scripts": true,
       "has_references": true,
@@ -2757,7 +2757,7 @@
         "repo": "https://github.com/huggingface/skills",
         "path": "skills/hugging-face-tool-builder",
         "skill_md_url": "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-tool-builder/SKILL.md",
-        "commit_sha": "462a39896c44a7bbaf2c39aa49056a43af228d55"
+        "commit_sha": "2afeee6dc7270dd91bef2b59a5b60b2222fbd8a0"
       },
       "has_scripts": false,
       "has_references": true,
@@ -2790,7 +2790,7 @@
         "repo": "https://github.com/huggingface/skills",
         "path": "skills/hugging-face-trackio",
         "skill_md_url": "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-trackio/SKILL.md",
-        "commit_sha": "462a39896c44a7bbaf2c39aa49056a43af228d55"
+        "commit_sha": "2afeee6dc7270dd91bef2b59a5b60b2222fbd8a0"
       },
       "has_scripts": false,
       "has_references": true,
@@ -2915,7 +2915,7 @@
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/brainstorming",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/brainstorming/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2943,7 +2943,7 @@
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/dispatching-parallel-agents",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/dispatching-parallel-agents/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -2967,13 +2967,13 @@
       "category": "development",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2025-12-12T04:41:15Z",
+      "last_updated_at": "2026-01-29T23:12:50Z",
       "metadata": {},
       "source": {
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/executing-plans",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/executing-plans/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3001,7 +3001,7 @@
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/finishing-a-development-branch",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/finishing-a-development-branch/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3034,7 +3034,7 @@
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/receiving-code-review",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/receiving-code-review/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3064,7 +3064,7 @@
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/requesting-code-review",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/requesting-code-review/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3087,13 +3087,13 @@
       "category": "other",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2025-12-12T04:03:39Z",
+      "last_updated_at": "2026-01-29T23:12:50Z",
       "metadata": {},
       "source": {
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/subagent-driven-development",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/subagent-driven-development/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3122,7 +3122,7 @@
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/systematic-debugging",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/systematic-debugging/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3152,7 +3152,7 @@
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/test-driven-development",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/test-driven-development/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3175,13 +3175,13 @@
       "category": "development",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2025-12-23T19:26:33Z",
+      "last_updated_at": "2026-01-29T22:46:45Z",
       "metadata": {},
       "source": {
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/using-git-worktrees",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/using-git-worktrees/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3211,7 +3211,7 @@
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/using-superpowers",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/using-superpowers/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3240,7 +3240,7 @@
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/verification-before-completion",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/verification-before-completion/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3270,7 +3270,7 @@
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/writing-plans",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-plans/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3298,7 +3298,7 @@
         "repo": "https://github.com/obra/superpowers",
         "path": "skills/writing-skills",
         "skill_md_url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-skills/SKILL.md",
-        "commit_sha": "469a6d81ebb8b827e284d4afb090c6c622d97747"
+        "commit_sha": "06b92f36820f38175b2ed6ff3f8df45157d54731"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3328,7 +3328,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/codex-readiness-integration-test",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/codex-readiness-integration-test/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": true,
       "has_references": true,
@@ -3360,7 +3360,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/codex-readiness-unit-test",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/codex-readiness-unit-test/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": true,
       "has_references": true,
@@ -3392,7 +3392,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/create-plan",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/create-plan/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3415,19 +3415,17 @@
       "category": "documents",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-27T11:18:44Z",
-      "metadata": {
-        "short-description": "Edit and review docx files"
-      },
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
       "source": {
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/doc",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/doc/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": true,
       "has_references": false,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "docx",
         "pr",
@@ -3457,7 +3455,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-address-comments",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-address-comments/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3478,30 +3476,27 @@
     {
       "id": "openai/gh-fix-ci",
       "name": "gh-fix-ci",
-      "description": "Inspect GitHub PR checks with gh, pull failing GitHub Actions logs, summarize failure context, then create a fix plan and implement after user approval. Use when a user asks to debug or fix failing PR CI/CD checks on GitHub Actions and wants a plan + code changes; for external checks (e.g., Buildkite), only report the details URL and mark them out of scope.",
+      "description": "Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use `gh` to inspect checks and logs, summarize failure context, draft a fix plan, and implement only after explicit approval. Treat external providers (for example Buildkite) as out of scope and report only the details URL.",
       "provider": "openai",
       "category": "development",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2025-12-19T22:10:04Z",
-      "metadata": {
-        "short-description": "Fix failing Github CI actions"
-      },
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
       "source": {
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-fix-ci",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-fix-ci/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": true,
       "has_references": false,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "github",
         "git",
         "pr",
         "ci",
-        "cd",
         "fix"
       ],
       "duplicate_status": null,
@@ -3525,7 +3520,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/gitlab-address-comments",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/gitlab-address-comments/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3550,19 +3545,17 @@
       "category": "creative",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-27T11:18:44Z",
-      "metadata": {
-        "short-description": "Generate and edit images using OpenAI"
-      },
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
       "source": {
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/imagegen",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/imagegen/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": true,
       "has_references": true,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "pr",
         "api",
@@ -3591,7 +3584,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/linear",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/linear/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": false,
       "has_references": false,
@@ -3621,7 +3614,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-knowledge-capture",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-knowledge-capture/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": false,
       "has_references": true,
@@ -3656,7 +3649,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-meeting-intelligence",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-meeting-intelligence/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": false,
       "has_references": true,
@@ -3688,7 +3681,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-research-documentation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-research-documentation/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": false,
       "has_references": true,
@@ -3722,7 +3715,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-spec-to-implementation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-spec-to-implementation/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": false,
       "has_references": true,
@@ -3746,19 +3739,17 @@
       "category": "documents",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-27T11:18:44Z",
-      "metadata": {
-        "short-description": "Create, edit, and review PDFs"
-      },
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
       "source": {
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/pdf",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/pdf/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": false,
       "has_references": false,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "pdf",
         "pr",
@@ -3790,19 +3781,17 @@
       "category": "development",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-27T11:18:44Z",
-      "metadata": {
-        "short-description": "Capture screenshots"
-      },
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
       "source": {
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/screenshot",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/screenshot/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": true,
       "has_references": false,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "ci",
         "screenshot"
@@ -3828,7 +3817,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-creator",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3872,7 +3861,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-installer",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-installer/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": true,
       "has_references": false,
@@ -3897,19 +3886,17 @@
       "category": "integrations",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-27T11:18:44Z",
-      "metadata": {
-        "short-description": "Generate and manage Sora videos"
-      },
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
       "source": {
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/sora",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/sora/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": true,
       "has_references": true,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "pr",
         "api",
@@ -3929,19 +3916,17 @@
       "category": "integrations",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-27T11:18:44Z",
-      "metadata": {
-        "short-description": "Generate narrated audio from text"
-      },
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
       "source": {
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/speech",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/speech/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": true,
       "has_references": true,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "pr",
         "api",
@@ -3961,19 +3946,17 @@
       "category": "documents",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-27T11:18:44Z",
-      "metadata": {
-        "short-description": "Create, edit, and analyze spreadsheets"
-      },
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
       "source": {
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/spreadsheet",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/spreadsheet/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": false,
       "has_references": true,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "xlsx",
         "csv",
@@ -3994,19 +3977,17 @@
       "category": "development",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-01-27T11:18:44Z",
-      "metadata": {
-        "short-description": "Stage, commit, and open PR"
-      },
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
       "source": {
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/yeet",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/yeet/SKILL.md",
-        "commit_sha": "3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd"
+        "commit_sha": "33a75a7b572867072dc0674bee8e63e06c19e67b"
       },
       "has_scripts": false,
       "has_references": false,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "github",
         "git",
