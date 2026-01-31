@@ -112,7 +112,7 @@ jobs:
       - name: Validate skills with LGTM Agent Skills
         if: steps.parse.outputs.repo_owner
         id: lgtm
-        uses: dmgrok/LGTM_agent_skills@v0.0.1
+        uses: dmgrok/LGTM_agent_skills@main
         with:
           path: './contributor-repo/${{ steps.parse.outputs.skills_path_prefix }}'
           min-score: 70
