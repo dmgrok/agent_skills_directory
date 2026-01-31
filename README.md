@@ -20,9 +20,9 @@ brew install dmgrok/tap/skills
 Search, install, publish, and manage reusable skills for Claude, Copilot, Codex, and Cursor—all from your terminal.
 
 ```bash
-skills search "web scraping"     # Find skills
-skills install anthropic/pdf     # Install a skill
-skills publish                   # Share your own
+skillsdir search "web scraping"     # Find skills
+skillsdir install anthropic/pdf     # Install a skill
+skillsdir publish                   # Share your own
 ```
 
 🌐 **[Browse 174+ Skills Online →](https://dmgrok.github.io/agent_skills_directory/)**
@@ -135,46 +135,46 @@ cd agent_skills_directory && pip install -e .
 
 ```bash
 # Search by keyword
-skills search "pdf"
+skillsdir search "pdf"
 
 # Browse by provider
-skills search --provider anthropic
+skillsdir search --provider anthropic
 
 # View skill details
-skills info anthropic/pdf
+skillsdir info anthropic/pdf
 ```
 
 ### Install Skills
 
 ```bash
 # Install globally (default)
-skills install anthropic/pdf
+skillsdir install anthropic/pdf
 
 # Install to project (auto-detects your agent)
-skills install anthropic/pdf --project
+skillsdir install anthropic/pdf --project
 
 # Install for specific agent
-skills install anthropic/pdf -p --agent claude   # → .claude/skills/
-skills install anthropic/pdf -p --agent copilot  # → .github/skills/
-skills install anthropic/pdf -p --agent codex    # → .codex/skills/
-skills install anthropic/pdf -p --agent cursor   # → .cursor/skills/
+skillsdir install anthropic/pdf -p --agent claude   # → .claude/skills/
+skillsdir install anthropic/pdf -p --agent copilot  # → .github/skills/
+skillsdir install anthropic/pdf -p --agent codex    # → .codex/skills/
+skillsdir install anthropic/pdf -p --agent cursor   # → .cursor/skills/
 
 # Install specific version
-skills install anthropic/pdf@1.2.0
+skillsdir install anthropic/pdf@1.2.0
 ```
 
 ### Manage Skills
 
 ```bash
 # List installed skills
-skills list
-skills list --json
+skillsdir list
+skillsdir list --json
 
 # Update all skills
-skills update
+skillsdir update
 
 # Remove a skill
-skills uninstall anthropic/pdf
+skillsdir uninstall anthropic/pdf
 
 # Detect which agent you're using
 skills detect
@@ -184,17 +184,17 @@ skills detect
 
 ```bash
 # Create a new skill
-skills init
+skillsdir init
 
 # Validate before publishing
 skills validate .
 
 # Publish to GitHub
 skills login
-skills publish
+skillsdir publish
 
 # Submit to official directory
-skills publish --submit
+skillsdir publish --submit
 ```
 
 ---
@@ -300,7 +300,7 @@ your-org/internal-skills/
 2. **Point the CLI to your repository**:
 
 ```bash
-skills config set registry https://cdn.jsdelivr.net/gh/your-org/internal-skills@main/catalog.json
+skillsdir config set registry https://cdn.jsdelivr.net/gh/your-org/internal-skills@main/catalog.json
 ```
 
 3. **Generate your catalog**:
@@ -324,11 +324,11 @@ python scripts/aggregate.py  # Generates catalog.json
 
 ```bash
 # Team members configure their CLI
-skills config set registry https://your-internal-cdn/catalog.json
+skillsdir config set registry https://your-internal-cdn/catalog.json
 
 # Now they can use your skills
-skills search "security"
-skills install your-org/security-audit
+skillsdir search "security"
+skillsdir install your-org/security-audit
 ```
 
 ### Benefits for Enterprises
@@ -385,8 +385,8 @@ Instructions for the AI agent on how to use this skill...
 cd my-skill
 skills validate .    # Check for issues
 skills login         # Authenticate with GitHub
-skills publish       # Push to GitHub
-skills publish --submit  # Request inclusion in directory
+skillsdir publish       # Push to GitHub
+skillsdir publish --submit  # Request inclusion in directory
 ```
 
 ---
@@ -402,11 +402,11 @@ Create a skill and publish it directly:
 ```bash
 # Create your skill
 mkdir my-skill && cd my-skill
-skills init                      # Interactive setup
+skillsdir init                      # Interactive setup
 
 # Publish to GitHub + request directory inclusion
 skills login                     # Authenticate with GitHub
-skills publish --submit          # Creates repo + submits to directory
+skillsdir publish --submit          # Creates repo + submits to directory
 ```
 
 This will:

@@ -633,7 +633,7 @@ function toggleRawView() {
 
 // Copy install command to clipboard
 function copyInstallCommand(skillId) {
-    const command = `skills install ${skillId}`;
+    const command = `skillsdir install ${skillId}`;
     navigator.clipboard.writeText(command).then(() => {
         const btn = document.querySelector('.modal-action-btn.primary');
         const originalText = btn.innerHTML;
