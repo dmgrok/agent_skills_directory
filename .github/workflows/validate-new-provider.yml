@@ -162,8 +162,19 @@ jobs:
             echo "❌ Validation failed"
           fi
       
-      - name: Add provider to aggregate.py
+      - name: Test provider configuration (lightweight)
         if: steps.check.outputs.validation_passed == 'true'
+        id: test_provider
+        run: |
+          pip install requests pyyaml
+          
+          # Test the provider using lightweight script
+          python scripts/test_provider.py '${{ steps.parse.outputs.config_json }}'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Add provider to aggregate.py
+        if: steps.test_provider.outcome == 'success'
         id: add_provider
         run: |
           python3 << 'EOF'
@@ -205,13 +216,6 @@ jobs:
               sys.exit(1)
           EOF
       
-      - name: Run aggregation to test
-        if: steps.check.outputs.validation_passed == 'true'
-        run: |
-          python scripts/aggregate.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
       - name: Create Pull Request
         if: steps.check.outputs.validation_passed == 'true'
         id: create_pr
@@ -241,7 +245,7 @@ jobs:
             - ✅ Testing: ${{ steps.lgtm.outputs.testing || steps.lgtm_defaults.outputs.testing }}
             - ✅ Originality: ${{ steps.lgtm.outputs.originality || steps.lgtm_defaults.outputs.originality }}
             
-            ${{ steps.lgtm.outcome == 'failure' && '⚠️ **Note**: LGTM validation temporarily unavailable - PR created for manual review' || '' }}
+            ${Provider validated successfully (fetches SKILL.md files and parses frontmatter) LGTM validation temporarily unavailable - PR created for manual review' || '' }}
             
             ### Changes
             - Added provider configuration to `scripts/aggregate.py`
