@@ -51,12 +51,22 @@ jobs:
             const issue = context.payload.issue;
             const body = issue.body || '';
             
+            console.log('Issue body:', body);
+            
             // Try parsing form template format first
-            const repoUrlMatch = body.match(/### Repository URL\s*\n\s*(.+)/);
-            const providerNameMatch = body.match(/### Provider Name\s*\n\s*(.+)/);
-            const providerIdMatch = body.match(/### Provider ID\s*\n\s*(.+)/);
-            const skillsPathMatch = body.match(/### Skills Location\s*\n\s*(.+)/);
-            const branchMatch = body.match(/### Default Branch\s*\n\s*(.+)/);
+            const repoUrlMatch = body.match(/### Repository URL\s*\n+\s*(.+?)(?:\n|$)/);
+            const providerNameMatch = body.match(/### Provider Name\s*\n+\s*(.+?)(?:\n|$)/);
+            const providerIdMatch = body.match(/### Provider ID\s*\n+\s*(.+?)(?:\n|$)/);
+            const skillsPathMatch = body.match(/### Skills Location\s*\n+\s*(.+?)(?:\n|$)/);
+            const branchMatch = body.match(/### Default Branch\s*\n+\s*(.+?)(?:\n|$)/);
+            
+            console.log('Matches:', {
+              repoUrl: repoUrlMatch?.[1],
+              providerName: providerNameMatch?.[1],
+              providerId: providerIdMatch?.[1],
+              skillsPath: skillsPathMatch?.[1],
+              branch: branchMatch?.[1]
+            });
             
             if (repoUrlMatch && providerNameMatch && providerIdMatch && branchMatch) {
               // Parse form template format
@@ -107,7 +117,7 @@ jobs:
               core.setOutput('repo_owner', repoOwner);
               core.setOutput('repo_name', repoName);
               
-              console.log('✅ Parsed form template format');
+              console.log('✅ Parsed form template format:', config);
               return;
             }
             
