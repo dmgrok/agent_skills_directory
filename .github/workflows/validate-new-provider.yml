@@ -51,8 +51,8 @@ jobs:
             const issue = context.payload.issue;
             const body = issue.body || '';
             
-            // Extract provider configuration from issue body
-            const codeBlockMatch = body.match(/```(?:json)?\s*\n({[\s\S]*?"repo"[\s\S]*?})\s*\n```/);
+            // Extract provider configuration from issue body (supports both JSON and Python-style dict)
+            const codeBlockMatch = body.match(/```(?:json|python)?\s*\n([\s\S]*?"repo"[\s\S]*?)\s*\n```/);
             
             if (!codeBlockMatch) {
               core.setFailed('Could not find provider configuration in issue body');
@@ -60,7 +60,14 @@ jobs:
             }
             
             try {
-              const config = JSON.parse(codeBlockMatch[1]);
+              // Clean up the config string (wrap in braces if needed, remove trailing commas)
+              let configStr = codeBlockMatch[1].trim();
+              if (!configStr.startsWith('{')) {
+                configStr = '{' + configStr + '}';
+              }
+              configStr = configStr.replace(/,(\s*[}\]])/g, '$1'); // Remove trailing commas
+              
+              const config = JSON.parse(configStr);
               const providerId = Object.keys(config)[0];
               const providerData = config[providerId];
               
