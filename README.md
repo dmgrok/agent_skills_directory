@@ -29,6 +29,28 @@ skills publish                   # Share your own
 
 ---
 
+## 🚀 Contributing New Providers
+
+Want to add your skills to the directory? It's fully automated!
+
+1. **[Create a New Provider Issue](https://github.com/dmgrok/agent_skills_directory/issues/new?template=new-provider.yml)** with your repository details
+2. Our automated validation system will:
+   - ✅ Validate skills using [LGTM Agent Skills](https://github.com/dmgrok/LGTM_agent_skills)
+   - 🔒 Scan for secrets with gitleaks
+   - 🛡️ Check for prompt injection attacks with Lakera Guard
+   - 🤖 Auto-create a PR if validation passes (70+ score required)
+3. Once merged, your skills are automatically included in daily aggregation runs
+
+**Requirements:**
+- Skills in `SKILL.md` format with YAML frontmatter
+- Valid license (MIT, Apache 2.0, etc.)
+- No hardcoded secrets or malicious content
+- Score 70+ on LGTM validation
+
+**Example:** See [issue #11](https://github.com/dmgrok/agent_skills_directory/issues/11) for a sample submission.
+
+---
+
 ## Skills Providers
 
 This directory aggregates skills from **24 provider repositories** across the AI agent ecosystem:

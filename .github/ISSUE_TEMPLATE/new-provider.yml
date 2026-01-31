@@ -1,0 +1,146 @@
+name: 🚀 New Provider Submission
+description: Submit a new skills provider repository for automated validation and inclusion
+title: "[New Source] "
+labels: ["new-source"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📦 New Skills Provider Submission
+        
+        Submit your repository to be included in the Agent Skills Directory. Our automated system will:
+        - ✅ Validate skills using LGTM Agent Skills validator
+        - 🔒 Scan for secrets using gitleaks
+        - 🛡️ Check for prompt injection attacks using Lakera Guard
+        - 🤖 Automatically create a PR if validation passes
+        
+        **Requirements:**
+        - Skills must be in `SKILL.md` format with YAML frontmatter
+        - Repository must have proper license (MIT, Apache 2.0, etc.)
+        - No hardcoded secrets or malicious content
+        - Skills must score 70+ on LGTM validation
+  
+  - type: input
+    id: repo_url
+    attributes:
+      label: Repository URL
+      description: Full GitHub repository URL
+      placeholder: https://github.com/username/repo
+    validations:
+      required: true
+  
+  - type: input
+    id: provider_name
+    attributes:
+      label: Provider Name
+      description: Display name for your organization/project
+      placeholder: My Organization
+    validations:
+      required: true
+  
+  - type: input
+    id: provider_id
+    attributes:
+      label: Provider ID
+      description: Short identifier (lowercase, no spaces)
+      placeholder: myorg
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: skills_path
+    attributes:
+      label: Skills Location
+      description: Where are SKILL.md files located?
+      options:
+        - "skills/ directory (multiple skills)"
+        - "Root directory (single SKILL.md)"
+    validations:
+      required: true
+  
+  - type: input
+    id: branch
+    attributes:
+      label: Default Branch
+      description: Main branch name (usually 'main' or 'master')
+      placeholder: main
+    validations:
+      required: true
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Why should this source be included?
+      description: Tell us about your skills and what value they bring
+      placeholder: |
+        - Brief description of your skills
+        - Key features or capabilities
+        - Target use cases
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: categories
+    attributes:
+      label: Category Focus
+      description: What categories do your skills cover?
+      multiple: true
+      options:
+        - Testing & QA
+        - Development
+        - AI/ML Integration
+        - Data Analysis
+        - Automation
+        - Creative
+        - Enterprise
+        - Documentation
+        - Other
+  
+  - type: checkboxes
+    id: quality_checklist
+    attributes:
+      label: Quality Checklist
+      description: Confirm your repository meets these requirements
+      options:
+        - label: Repository is publicly accessible
+          required: true
+        - label: Repository has a clear license file
+          required: true
+        - label: Skills follow the SKILL.md format with YAML frontmatter
+          required: true
+        - label: Skills have clear names and descriptions
+          required: true
+        - label: No hardcoded secrets, API keys, or sensitive data
+          required: true
+        - label: No malicious or harmful content
+          required: true
+        - label: Repository has been active within the last 6 months
+          required: false
+  
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        ## 🔧 Provider Configuration (Auto-generated)
+        
+        After submitting, our bot will generate the configuration below. **Do not edit manually.**
+  
+  - type: textarea
+    id: provider_config
+    attributes:
+      label: Provider Configuration
+      description: Leave this empty - it will be auto-generated
+      placeholder: |
+        {
+          "your-provider-id": {
+            "name": "Your Provider Name",
+            "repo": "https://github.com/username/repo",
+            "api_tree_url": "https://api.github.com/repos/username/repo/git/trees/main?recursive=1",
+            "raw_base": "https://raw.githubusercontent.com/username/repo/main",
+            "skills_path_prefix": "skills/"
+          }
+        }
+      render: json
+    validations:
+      required: false
