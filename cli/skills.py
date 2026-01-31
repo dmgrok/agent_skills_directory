@@ -1979,6 +1979,120 @@ def find_readme(project_path: Path) -> Optional[Path]:
     return None
 
 
+def extract_keywords(text: str, min_length: int = 3) -> set:
+    """Extract meaningful keywords from text."""
+    # Remove markdown, code blocks, URLs
+    text = re.sub(r'```.*?```', ' ', text, flags=re.DOTALL)
+    text = re.sub(r'`[^`]+`', ' ', text)
+    text = re.sub(r'https?://\S+', ' ', text)
+    text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+    
+    # Extract words
+    words = re.findall(r'\b[a-z][a-z0-9_-]*\b', text.lower())
+    
+    # Common stop words to exclude
+    stop_words = {
+        'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
+        'of', 'with', 'by', 'from', 'as', 'is', 'was', 'are', 'were', 'be',
+        'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did', 'will',
+        'would', 'should', 'could', 'may', 'might', 'must', 'can', 'this',
+        'that', 'these', 'those', 'i', 'you', 'he', 'she', 'it', 'we', 'they',
+        'what', 'which', 'who', 'when', 'where', 'why', 'how', 'all', 'each',
+        'every', 'both', 'few', 'more', 'most', 'other', 'some', 'such', 'no',
+        'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 'use',
+        'using', 'used', 'make', 'made', 'get', 'set', 'put', 'new', 'also'
+    }
+    
+    keywords = {w for w in words if len(w) >= min_length and w not in stop_words}
+    return keywords
+
+
+def prefilter_skills_by_relevance(
+    skills: List[Dict],
+    readme_content: str,
+    analysis: Dict,
+    top_n: int = 30
+) -> List[Dict]:
+    """
+    Pre-filter catalog to top N most relevant skills before LLM analysis.
+    This dramatically reduces the context size sent to LLM.
+    """
+    # Extract keywords from README
+    readme_keywords = extract_keywords(readme_content) if readme_content else set()
+    
+    # Extract context from project structure
+    languages = set(l.lower() for l in analysis.get("languages", []))
+    frameworks = set(f.lower() for f in analysis.get("frameworks", []))
+    file_exts = set(analysis.get("file_types", []))
+    
+    # Build combined context keywords
+    context_keywords = readme_keywords | languages | frameworks
+    
+    # Score each skill
+    scored_skills = []
+    for skill in skills:
+        score = 0
+        skill_name = skill["name"].lower()
+        skill_desc = skill.get("description", "").lower()
+        skill_tags = [t.lower() for t in skill.get("tags", [])]
+        skill_category = skill.get("category", "").lower()
+        
+        # Build skill searchable text
+        skill_text = f"{skill_name} {skill_desc} {' '.join(skill_tags)} {skill_category}"
+        skill_words = set(extract_keywords(skill_text))
+        
+        # Keyword overlap score (most important)
+        overlap = context_keywords & skill_words
+        score += len(overlap) * 10
+        
+        # Direct keyword matches get bonus
+        for keyword in readme_keywords:
+            if len(keyword) > 4 and keyword in skill_text:
+                score += 20
+        
+        # Language exact matches
+        for lang in languages:
+            if lang in skill_tags or lang in skill_name:
+                score += 15
+        
+        # Framework exact matches
+        for framework in frameworks:
+            if framework in skill_text:
+                score += 15
+        
+        # Quality and maintenance bonus
+        quality = skill.get("quality_score", 0)
+        if quality >= 80:
+            score += 5
+        elif quality >= 60:
+            score += 2
+        
+        maint = skill.get("maintenance_status", "")
+        if maint == "active":
+            score += 3
+        elif maint == "maintained":
+            score += 1
+        
+        # Category relevance
+        if readme_content:
+            if "api" in readme_keywords or "rest" in readme_keywords:
+                if "api" in skill_text or "rest" in skill_text:
+                    score += 5
+            if "database" in readme_keywords or "db" in readme_keywords:
+                if "database" in skill_text or "sql" in skill_text:
+                    score += 5
+            if "test" in readme_keywords or "testing" in readme_keywords:
+                if "test" in skill_text:
+                    score += 5
+        
+        if score > 0:
+            scored_skills.append((score, skill))
+    
+    # Sort by score and return top N
+    scored_skills.sort(key=lambda x: (-x[0], -x[1].get("quality_score", 0)))
+    return [skill for score, skill in scored_skills[:top_n]]
+
+
 def cmd_suggest(args):
     """Use LLM to suggest relevant skills based on project README and catalog."""
     project_path = Path(args.path or Path.cwd())
@@ -2027,15 +2141,22 @@ def cmd_suggest(args):
     skills_list = catalog.get("skills", [])
     print_info(f"Analyzing against {len(skills_list)} skills from catalog...")
     
-    # Prepare skills summary for LLM
+    # Pre-filter to most relevant skills (dramatically reduces LLM context)
+    relevant_skills = prefilter_skills_by_relevance(skills_list, readme_content, analysis, top_n=30)
+    
+    if args.verbose:
+        efficiency = (1 - len(relevant_skills) / len(skills_list)) * 100
+        print(f"{Colors.DIM}Pre-filtered to {len(relevant_skills)} most relevant skills ({efficiency:.0f}% reduction){Colors.RESET}")
+    
+    # Prepare compact skills summary for LLM
     skills_summary = []
-    for skill in skills_list:
+    for skill in relevant_skills:
         skills_summary.append({
             "id": skill["id"],
             "name": skill["name"],
-            "description": skill.get("description", ""),
+            "description": skill.get("description", "")[:150],  # Truncate long descriptions
             "category": skill.get("category", ""),
-            "tags": skill.get("tags", [])[:8],
+            "tags": skill.get("tags", [])[:5],  # Limit tags
             "quality_score": skill.get("quality_score", 0),
             "maintenance_status": skill.get("maintenance_status", "unknown")
         })
@@ -2044,33 +2165,33 @@ def cmd_suggest(args):
     prompt = f"""Analyze this software project and recommend the most relevant AI agent skills from the catalog.
 
 PROJECT README:
-{readme_content if readme_content else 'No README available'}
+{readme_content[:4000] if readme_content else 'No README available'}
+{' [... truncated for length ...]' if len(readme_content) > 4000 else ''}
 
 PROJECT STRUCTURE:
 - Languages detected: {', '.join(analysis['languages']) or 'None'}
 - Frameworks detected: {', '.join(analysis['frameworks']) or 'None'}
 - File types: {', '.join(list(analysis['file_types'])[:20])}
 
-AVAILABLE SKILLS CATALOG ({len(skills_summary)} skills):
-{json.dumps(skills_summary[:100], indent=2)}
+RELEVANT SKILLS (pre-filtered from {len(skills_list)} total skills):
+{json.dumps(skills_summary, indent=2)}
 
 TASK:
-Based on the README content and project structure, recommend 5-10 skills from the catalog that would be most useful.
+Based on the README and project structure, recommend 5-10 skills from the list above.
 
 CONSIDERATIONS:
-1. README content describes the project's purpose and tech stack
-2. Prioritize skills matching the project's domain and technologies
+1. README describes the project's purpose, features, and tech stack
+2. Match skills to the project's actual needs and domain
 3. Prefer high quality_score (80+) and maintenance_status "active"
-4. Match skills by category, tags, and description relevance
-5. Only recommend skills that actually exist in the provided catalog
+4. Only recommend skills from the list above
 
 RESPONSE FORMAT (JSON only):
 {{
   "project_summary": "Brief 1-2 sentence description of what this project does",
   "recommendations": [
     {{
-      "skill_id": "exact-provider/skill-name-from-catalog",
-      "reason": "Why this skill is relevant to the project",
+      "skill_id": "exact-provider/skill-name-from-list",
+      "reason": "Why this skill is relevant (be specific to the project)",
       "confidence": "high|medium|low"
     }}
   ]
