@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This repository aggregates agent skills from **24 provider repositories** (Anthropic, OpenAI, GitHub, Vercel, HuggingFace, and 18+ community repos) into a unified JSON catalog consumed by MCP servers and AI agents. A GitHub Action runs daily at 06:00 UTC to fetch the latest skills, generating versioned releases with `YYYY.MM.DD` format.
+This repository aggregates agent skills from **41 provider repositories** (Anthropic, OpenAI, GitHub, Vercel, HuggingFace, Stripe, Cloudflare, Supabase, and 33+ community repos) into a unified JSON catalog consumed by MCP servers and AI agents. A GitHub Action runs daily at 06:00 UTC to fetch the latest skills, generating versioned releases with `YYYY.MM.DD` format.
 
-**Current stats:** 174 skills, 24 providers, 136K+ combined GitHub stars
+**Current stats:** 250+ skills, 41 providers, 150K+ combined GitHub stars
 
 **Key consumers:** [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) server.
 
@@ -152,7 +152,7 @@ When adding a new feature that users can interact with (new JSON files, new data
 
 ## Key Files Reference
 
-- `scripts/aggregate.py`: Core aggregation logic (~500 lines, 24 providers)
+- `scripts/aggregate.py`: Core aggregation logic (~500 lines, 41 providers)
 - `scripts/analyze_repo.py`: Utility to evaluate potential new provider repos
 - `cli/skills.py`: CLI tool for installing/managing skills (npm-like)
 - `cli/__init__.py`: CLI package init

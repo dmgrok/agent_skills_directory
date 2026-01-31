@@ -7,9 +7,9 @@ brew install dmgrok/tap/skills
 ```
 
 [![npm-like CLI](https://img.shields.io/badge/CLI-npm--like-CB3837?logo=npm)](https://github.com/dmgrok/agent_skills_directory/releases)
-[![Skills](https://img.shields.io/badge/Skills-174-blue)](https://dmgrok.github.io/agent_skills_directory/)
-[![Providers](https://img.shields.io/badge/Providers-24-green)](https://dmgrok.github.io/agent_skills_directory/)
-[![Stars](https://img.shields.io/badge/Combined%20Stars-136K+-yellow)](https://dmgrok.github.io/agent_skills_directory/)
+[![Skills](https://img.shields.io/badge/Skills-250+-blue)](https://dmgrok.github.io/agent_skills_directory/)
+[![Providers](https://img.shields.io/badge/Providers-41-green)](https://dmgrok.github.io/agent_skills_directory/)
+[![Stars](https://img.shields.io/badge/Combined%20Stars-150K+-yellow)](https://dmgrok.github.io/agent_skills_directory/)
 
 ---
 
@@ -25,7 +25,7 @@ skillsdir install anthropic/pdf     # Install a skill
 skillsdir publish                   # Share your own
 ```
 
-🌐 **[Browse 174+ Skills Online →](https://dmgrok.github.io/agent_skills_directory/)**
+🌐 **[Browse 250+ Skills Online →](https://dmgrok.github.io/agent_skills_directory/)**
 
 ---
 
@@ -53,7 +53,7 @@ Want to add your skills to the directory? It's fully automated!
 
 ## Skills Providers
 
-This directory aggregates skills from **24 provider repositories** across the AI agent ecosystem:
+This directory aggregates skills from **41 provider repositories** across the AI agent ecosystem:
 
 ### Major Providers
 
@@ -67,6 +67,28 @@ This directory aggregates skills from **24 provider repositories** across the AI
 | [OpenAI Codex](https://github.com/openai/skills) | openai/skills | 12 | 2.1K ⭐ |
 | [Playwright](https://github.com/lackeyjb/playwright-skill) | playwright-skill | 1 | 1.5K ⭐ |
 | [HuggingFace](https://github.com/huggingface/skills) | huggingface/skills | 8 | 1.1K ⭐ |
+
+### Enterprise & Official Providers
+
+| Provider | Repository | Focus | Stars |
+|----------|-----------|-------|-------|
+| [VoltAgent](https://github.com/VoltAgent/awesome-agent-skills) | voltagent/awesome-agent-skills | Skills aggregator (172+ skills) | 5.2K ⭐ |
+| [heilcheng](https://github.com/heilcheng/awesome-agent-skills) | heilcheng/awesome-agent-skills | Multi-language catalog | 1.8K ⭐ |
+| [Stripe](https://github.com/stripe/ai) | stripe/ai | Payment integrations | Official |
+| [Cloudflare](https://github.com/cloudflare/skills) | cloudflare/skills | Workers, Pages, AI | Official |
+| [Supabase](https://github.com/supabase/agent-skills) | supabase/agent-skills | PostgreSQL best practices | Official |
+| [Trail of Bits](https://github.com/trailofbits/skills) | trailofbits/skills | Security (20+ skills) | Official |
+| [Expo](https://github.com/expo/skills) | expo/skills | React Native | Official |
+| [Sentry](https://github.com/getsentry/skills) | getsentry/skills | Code review, PR automation | Official |
+| [Google Labs Stitch](https://github.com/google-labs-code/stitch-skills) | google-labs-stitch | MCP server skills | Google |
+| [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) | composiohq/awesome-claude-skills | 20+ productivity skills | 1K+ integrations |
+| [Better Auth](https://github.com/better-auth/skills) | better-auth/skills | Authentication | Official |
+| [Tinybird](https://github.com/tinybirdco/tinybird-agent-skills) | tinybird/tinybird-agent-skills | Analytics | Official |
+| [Neon Database](https://github.com/neondatabase/agent-skills) | neondatabase/agent-skills | Serverless Postgres | Official |
+| [fal.ai](https://github.com/fal-ai-community/skills) | fal-ai/skills | AI models, image/video | Official |
+| [Remotion](https://github.com/remotion-dev/skills) | remotion/skills | Video creation | Official |
+| [nginity](https://github.com/alirezarezvani/claude-skills) | nginity/claude-skills | Enterprise skills | Official |
+| [travisvn](https://github.com/travisvn/awesome-claude-skills) | travisvn/awesome-claude-skills | Community curated | Community |
 
 ### Community Collections
 
@@ -86,9 +108,9 @@ This directory aggregates skills from **24 provider repositories** across the AI
 | [Family History](https://github.com/emaynard/claude-family-history-research-skill) | family-history-skill | 1 | 28 ⭐ |
 | [Move Code Quality](https://github.com/1NickPappas/move-code-quality-skill) | move-quality-skill | 1 | 10 ⭐ |
 
-**Total: 177 skills • 136K+ combined stars**
+**Total: 250+ skills • 150K+ combined stars**
 
-[View all 24 providers →](https://dmgrok.github.io/agent_skills_directory/)
+[View all 41 providers →](https://dmgrok.github.io/agent_skills_directory/)
 
 ### Similar Directories & Listings
 
@@ -266,7 +288,7 @@ We aggregate skills from **24 repositories** with **136K+ combined GitHub stars*
 | **NotebookLM** | [PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) | 1 | 2.7K |
 | **Playwright** | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | 1 | 1.5K |
 
-[View all 24 providers →](https://dmgrok.github.io/agent_skills_directory/)
+[View all 41 providers →](https://dmgrok.github.io/agent_skills_directory/)
 
 ---
 
