@@ -1,42 +1,42 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
   "version": "2026.01.31",
-  "generated_at": "2026-01-31T06:50:47.620335+00:00",
-  "total_skills": 189,
+  "generated_at": "2026-01-31T12:27:37.015014+00:00",
+  "total_skills": 190,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
       "repo": "https://github.com/anthropics/skills",
       "skills_count": 16,
-      "stars": 59139,
+      "stars": 59361,
       "description": "Public repository for Agent Skills"
     },
     "openai": {
       "name": "OpenAI",
       "repo": "https://github.com/openai/skills",
       "skills_count": 21,
-      "stars": 2226,
+      "stars": 2240,
       "description": "Skills Catalog for Codex"
     },
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
       "skills_count": 29,
-      "stars": 19656,
+      "stars": 19670,
       "description": "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
     },
     "vercel": {
       "name": "Vercel",
       "repo": "https://github.com/vercel-labs/agent-skills",
       "skills_count": 5,
-      "stars": 18100,
+      "stars": 18145,
       "description": "Vercel's official collection of agent skills"
     },
     "huggingface": {
       "name": "HuggingFace",
       "repo": "https://github.com/huggingface/skills",
       "skills_count": 8,
-      "stars": 1111,
+      "stars": 1114,
       "description": null
     },
     "skillcreatorai": {
@@ -50,21 +50,21 @@
       "name": "Obra Superpowers",
       "repo": "https://github.com/obra/superpowers",
       "skills_count": 14,
-      "stars": 40718,
+      "stars": 40860,
       "description": "An agentic skills framework & software development methodology that works."
     },
     "tapestry": {
       "name": "Tapestry Skills",
       "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
       "skills_count": 4,
-      "stars": 195,
+      "stars": 196,
       "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
     },
     "sanjay-ai-skills": {
       "name": "Sanjay AI Skills",
       "repo": "https://github.com/sanjay3290/ai-skills",
       "skills_count": 12,
-      "stars": 51,
+      "stars": 52,
       "description": "Collection of agent skills for AI coding assistants"
     },
     "aws-skills": {
@@ -78,28 +78,28 @@
       "name": "Claude Marketplace (Engineering)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 5,
-      "stars": 292,
+      "stars": 294,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-visual": {
       "name": "Claude Marketplace (Visual)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 5,
-      "stars": 292,
+      "stars": 294,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-code": {
       "name": "Claude Marketplace (Code Ops)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 4,
-      "stars": 292,
+      "stars": 294,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-productivity": {
       "name": "Claude Marketplace (Productivity)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 4,
-      "stars": 292,
+      "stars": 294,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "epub-skill": {
@@ -127,7 +127,7 @@
       "name": "iOS Simulator",
       "repo": "https://github.com/conorluddy/ios-simulator-skill",
       "skills_count": 1,
-      "stars": 438,
+      "stars": 439,
       "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
     },
     "move-quality-skill": {
@@ -141,7 +141,7 @@
       "name": "Playwright Automation",
       "repo": "https://github.com/lackeyjb/playwright-skill",
       "skills_count": 1,
-      "stars": 1539,
+      "stars": 1541,
       "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
     },
     "pypict-skill": {
@@ -169,8 +169,15 @@
       "name": "NotebookLM Integration",
       "repo": "https://github.com/PleasePrompto/notebooklm-skill",
       "skills_count": 1,
-      "stars": 2990,
+      "stars": 2997,
       "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
+    },
+    "aiqualitylab": {
+      "name": "AI Quality Lab",
+      "repo": "https://github.com/aiqualitylab/agent-skills",
+      "skills_count": 1,
+      "stars": 1,
+      "description": "AI-powered testing skills for automation frameworks"
     }
   },
   "categories": [
@@ -183,6 +190,36 @@
     "other"
   ],
   "skills": [
+    {
+      "id": "aiqualitylab/Selenium Self-Healing",
+      "name": "Selenium Self-Healing",
+      "description": "AI-powered self-healing Selenium tests with Reqnroll BDD",
+      "provider": "aiqualitylab",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-29T21:39:03Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/aiqualitylab/agent-skills",
+        "path": "skills/selenium-selfhealing",
+        "skill_md_url": "https://raw.githubusercontent.com/aiqualitylab/agent-skills/main/skills/selenium-selfhealing/SKILL.md",
+        "commit_sha": "3f3dd5df1ce906512214747387bb4acabc4b417c"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "test",
+        "Selenium",
+        "Self",
+        "Healing"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null
+    },
     {
       "id": "anthropics/algorithmic-art",
       "name": "algorithmic-art",
