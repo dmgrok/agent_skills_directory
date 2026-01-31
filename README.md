@@ -1,51 +1,40 @@
 # Agent Skills Directory
 
-**Informed discoverability for AI agent skills.** Find the right skills for your project with quality scores, maintenance status, and security validation.
+**Intelligent skill discovery for AI agents.** Find quality-validated skills that match your project with smart recommendations, maintenance tracking, and security scanning.
 
 ```bash
-# Tell us about your project, get curated recommendations
-skillsdir recommend --project-type "stripe integration"
+# Get intelligent recommendations for your project
+skillsdir suggest
 
-# Or browse with quality insights
+# Or search with quality insights
+skillsdir search "pdf extraction"
+
+# Browse the catalog
 open https://dmgrok.github.io/agent_skills_directory/
 ```
 
-[![Complementary to skills.sh](https://img.shields.io/badge/Works%20With-skills.sh-blue)](https://skills.sh)
-[![Curated Skills](https://img.shields.io/badge/Curated-250+-success)](https://dmgrok.github.io/agent_skills_directory/)
-[![Quality Scored](https://img.shields.io/badge/LGTM-Validated-yellow)](https://github.com/dmgrok/LGTM_agent_skills)
-[![Maintenance Tracked](https://img.shields.io/badge/Maintenance-Tracked-green)](https://dmgrok.github.io/agent_skills_directory/)
+[![Curated Skills](https://img.shields.io/badge/Skills-245+-success)](https://dmgrok.github.io/agent_skills_directory/)
+[![Providers](https://img.shields.io/badge/Providers-41-blue)](https://dmgrok.github.io/agent_skills_directory/)
+[![Quality Tracked](https://img.shields.io/badge/Quality-Tracked-yellow)](https://github.com/dmgrok/LGTM_agent_skills)
+[![Maintenance Status](https://img.shields.io/badge/Maintenance-🟢🟡🟠🔴-green)](https://dmgrok.github.io/agent_skills_directory/)
 
 ---
 
-## What is this?
+## Why This Exists
 
-**Your project needs AI agent skills. But which ones?**
+**The Problem:** There are thousands of AI agent skills. Which ones work? Which are maintained? Which fit your project?
 
-This project helps you discover the **right** skills through:
+**The Solution:** We aggregate, validate, and score skills from 41+ official providers so you can make informed decisions.
 
-- 🎯 **Quality Scoring** - LGTM validation (70+ required) + security scanning
-- 📊 **Maintenance Tracking** - Active (🟢), Maintained (🟡), Stale (🟠), Abandoned (🔴)
-- 🔍 **Smart Discovery** - Find skills that match your project type and tech stack
-- 🛡️ **Security Validated** - Every skill scanned for secrets and prompt injection
-- 🏢 **Official Sources Only** - Anthropic, OpenAI, GitHub, Stripe, Cloudflare, Supabase + 35 more
+### Key Features
 
-### The Problem We Solve
-
-[skills.sh](https://skills.sh) has 30K+ skills. **Which ones should you use?** 
-
-We provide the **quality layer** to make informed decisions:
-
-```bash
-# Instead of guessing from 30K options...
-skillsdir search "pdf extraction"
-# → anthropic/pdf: 🟢 Active, LGTM 87/100, ✓ Security passed
-# → skillcreator/pdf-parser: 🔴 Abandoned (912 days), LGTM 65/100
-
-# Make informed choice, then install via skills.sh
-skills.sh install anthropic/pdf
-```
-
-🌐 **[Browse with Quality Insights →](https://dmgrok.github.io/agent_skills_directory/)**
+- 🎯 **Smart Recommendations** - Analyzes your project and suggests relevant skills
+- 📊 **Quality Scoring** - 0-100 points based on documentation, maintenance, and provider trust
+- 🟢 **Maintenance Status** - Active, Maintained, Stale, or Abandoned with days-since-update
+- 🔍 **Similar Skills** - See how many alternatives exist for each skill
+- 🛡️ **Security Validated** - Scanned for secrets and prompt injection
+- 🏢 **Official Sources** - Anthropic, OpenAI, GitHub, Vercel, Stripe, Cloudflare + 35 more
+- 💯 **100% Local** - No LLM or external API required for recommendations
 
 ---
 
@@ -140,47 +129,39 @@ This directory aggregates skills from **41 provider repositories** across the AI
 
 ---
 
-## Quick Install
+## Quick Start
 
-### macOS (Homebrew)
+### Installation
 
+**macOS (Homebrew)**
 ```bash
-brew install dmgrok/tap/skills
+brew install dmgrok/tap/skillsdir
 ```
 
-### One-liner (macOS/Linux)
-
+**Linux/macOS (Install Script)**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/install.sh | bash
 ```
 
-### Direct Download
-
-| Platform | Download |
-|----------|----------|
-| **macOS** (Apple Silicon & Intel) | [skills-macos-arm64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-macos-arm64) |
-| **Linux** (x64) | [skills-linux-x64](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-linux-x64) |
-| **Windows** (x64) | [skills-windows-x64.exe](https://github.com/dmgrok/agent_skills_directory/releases/latest/download/skills-windows-x64.exe) |
-
-### From Source (if you prefer Python)
-
+**Python (pip)**
 ```bash
-git clone https://github.com/dmgrok/agent_skills_directory.git
-cd agent_skills_directory && pip install -e .
+pip install skillsdir
 ```
 
 ---
 
 ## Usage
 
-### Smart Skill Recommendations
+### 🎯 Smart Recommendations
+
+Let the CLI analyze your project and recommend the best skills:
 
 ```bash
-# Intelligent skill recommendations based on your project
+# Analyze current directory
 skillsdir suggest
 
-# Analyze a specific project
-skillsdir suggest /path/to/project
+# Analyze specific project
+skillsdir suggest /path/to/my-react-app
 
 # Show detailed analysis
 skillsdir suggest --verbose
@@ -189,27 +170,55 @@ skillsdir suggest --verbose
 skillsdir suggest --llm
 ```
 
-The `suggest` command uses a sophisticated scoring algorithm:
-- **README keyword matching** - Extracts and matches technical terms
-- **Language/framework detection** - Identifies your tech stack from files
-- **Domain-specific patterns** - Detects API, database, testing, devops contexts
-- **Quality scoring** - Prioritizes well-maintained, high-quality skills
-- **100% local** - No LLM or external API required for excellent results
+**Example Output:**
+```
+1. playwright-skill/playwright-skill ⭐0 (high)
+   Complete browser automation with Playwright...
+   │ 🟢 Active • Updated: 15d ago • High Quality • 13 similar
+   → tags match: playwright, testing; testing domain match
 
-### Search & Discover
+2. skillcreatorai/react-best-practices ⭐0 (high)
+   React development guidelines with hooks...
+   │ 🟡 Maintained • Updated: 45d ago • Good Quality • 3 similar
+   → tags match: react; 4 keyword matches; frontend domain match
+```
+
+**How It Works:**
+1. **README Analysis** - Extracts keywords and technical terms
+2. **File Structure** - Detects languages, frameworks, file types
+3. **Smart Pre-filtering** - Reduces 245+ skills to top 30 most relevant (88% reduction)
+4. **Sophisticated Scoring** - Multi-factor algorithm with domain detection
+5. **Rich Output** - Quality scores, maintenance status, similar skills count
+
+**Scoring Algorithm:**
+- Name matches (30pts) - Direct keyword in skill name
+- Tag matches (25pts) - README keywords in skill tags
+- Language/framework (20pts) - Tech stack alignment
+- Domain detection (15pts) - API, database, testing, devops, etc.
+- Quality score (10pts) - Documentation completeness
+- Maintenance (8pts) - Active vs abandoned
+- Provider trust (3pts) - Official sources
+
+**No LLM Required!** Works 100% locally with excellent results.
+
+### 🔍 Search & Discover
 
 ```bash
-# Search by keyword
+# Keyword search
 skillsdir search "pdf"
 
-# Browse by provider
-skillsdir search --provider anthropic
-
-# View skill details
+# View detailed skill info
 skillsdir info anthropic/pdf
 ```
 
-### Install Skills
+**Search Output Shows:**
+- Quality score (⭐0-100)
+- Maintenance status (🟢 Active, 🟡 Maintained, 🟠 Stale, 🔴 Abandoned)
+- Days since last update
+- Tags and categories
+- Installation status
+
+### 📦 Install & Manage Skills
 
 ```bash
 # Install globally (default)
@@ -226,11 +235,7 @@ skillsdir install anthropic/pdf -p --agent cursor   # → .cursor/skills/
 
 # Install specific version
 skillsdir install anthropic/pdf@1.2.0
-```
 
-### Manage Skills
-
-```bash
 # List installed skills
 skillsdir list
 skillsdir list --json
@@ -240,14 +245,48 @@ skillsdir update
 
 # Remove a skill
 skillsdir uninstall anthropic/pdf
-
-# Detect which agent you're using
-skills detect
 ```
 
-### Create & Publish
+### 🛠️ Create & Publish Skills
 
 ```bash
+# Create new skill.json
+skillsdir init
+
+# Validate before publishing
+skillsdir validate
+
+# Publish to GitHub
+skillsdir login
+skillsdir publish
+
+# Submit to official directory
+skillsdir publish --submit
+```
+
+---
+
+## Quality Indicators
+
+### 🌟 Quality Score (0-100)
+- **Maintenance** (50pts): Active=50, Maintained=40, Stale=20, Abandoned=5
+- **Documentation** (30pts): Scripts=10, References=10, Assets=10
+- **Provider Trust** (20pts): Official=20, Community=10
+
+### 🟢 Maintenance Status
+- **🟢 Active**: Updated <30 days ago
+- **🟡 Maintained**: Updated <6 months ago
+- **🟠 Stale**: Updated <1 year ago
+- **🔴 Abandoned**: Updated >1 year ago
+
+### 🔗 Similar Skills
+Shows how many alternative skills exist with similar:
+- Categories
+- Tags (2+ overlap)
+- Name keywords
+- Description keywords
+
+This helps you explore options and make informed comparisons.
 # Create a new skill
 skillsdir init
 
@@ -264,32 +303,29 @@ skillsdir publish --submit
 
 ---
 
-## Supported Agents
+## Supported Agents & Paths
 
-| Agent | Project Path | Personal Path | Detection |
-|-------|--------------|---------------|-----------|
-| **Claude** | `.claude/skills/` | `~/.claude/skills/` | `CLAUDE.md` |
+| Agent | Project Path | Personal Path | Auto-Detection |
+|-------|--------------|---------------|----------------|
+| **Claude** | `.claude/skills/` | `~/.claude/skills/` | `CLAUDE.md`, `.claude/` |
 | **Copilot** | `.github/skills/` | `~/.copilot/skills/` | `.github/copilot-instructions.md` |
 | **Codex** | `.codex/skills/` | `~/.codex/skills/` | `AGENTS.md` |
 | **Cursor** | `.cursor/skills/` | `~/.cursor/skills/` | `.cursorrules` |
 
 ---
 
-## Catalog API
+## API Access
+
+### Catalog API
 
 The skills catalog is a JSON file updated daily at 06:00 UTC.
 
-### Endpoints
+**CDN Endpoints:**
+- **Latest:** `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json`
+- **Minified:** `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.json`
+- **Versioned:** `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.26/catalog.json`
 
-| Format | URL |
-|--------|-----|
-| **JSON (CDN)** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json` |
-| **Minified** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.min.json` |
-| **Bundles** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/bundles.json` |
-| **Pinned Version** | `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@v2026.01.26/catalog.json` |
-
-### Example
-
+**Example Usage:**
 ```python
 import requests
 
@@ -297,41 +333,51 @@ catalog = requests.get(
     "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json"
 ).json()
 
-# List skills
-for skill in catalog["skills"]:
-    print(f"{skill['id']}: {skill['description']}")
+# Filter by quality and maintenance
+quality_skills = [
+    s for s in catalog["skills"] 
+    if s["quality_score"] >= 80 
+    and s["maintenance_status"] == "active"
+]
 
-# Filter by category
-dev_skills = [s for s in catalog["skills"] if s["category"] == "development"]
+# Group by category
+from collections import defaultdict
+by_category = defaultdict(list)
+for skill in catalog["skills"]:
+    by_category[skill["category"]].append(skill["id"])
 ```
 
 ---
 
-## Providers
+## Contributing
 
-We aggregate skills from **24 repositories** with **136K+ combined GitHub stars**:
+### 🚀 Add Your Skills
 
-### Major Providers
+Want to include your skills in the directory?
 
-| Provider | Repository | Skills | ⭐ |
-|----------|------------|:------:|:--:|
-| **Anthropic** | [anthropics/skills](https://github.com/anthropics/skills) | 16 | 54K |
-| **Obra** | [obra/superpowers](https://github.com/obra/superpowers) | 14 | 36K |
-| **GitHub** | [github/awesome-copilot](https://github.com/github/awesome-copilot) | 26 | 19K |
-| **Vercel** | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 3 | 17K |
-| **OpenAI** | [openai/skills](https://github.com/openai/skills) | 12 | 2K |
-| **HuggingFace** | [huggingface/skills](https://github.com/huggingface/skills) | 8 | 1K |
+1. **[Create a Provider Issue](https://github.com/dmgrok/agent_skills_directory/issues/new?template=new-provider.yml)**
+2. Our validation system checks:
+   - ✅ Valid SKILL.md format with YAML frontmatter
+   - ✅ License compatibility (MIT, Apache 2.0, etc.)
+   - ✅ No hardcoded secrets (gitleaks scan)
+   - ✅ No prompt injection attacks (Lakera Guard)
+   - ✅ LGTM validation score 70+
+3. Auto-PR created if validation passes
+4. Skills appear in next daily aggregation
 
-### Community
+**See:** [Issue #11](https://github.com/dmgrok/agent_skills_directory/issues/11) for example submission
 
-| Provider | Repository | Skills | ⭐ |
-|----------|------------|:------:|:--:|
-| **SkillCreator.ai** | [skillcreatorai/Ai-Agent-Skills](https://github.com/skillcreatorai/Ai-Agent-Skills) | 47 | 620 |
-| **Claude Marketplace** | [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | 18 | 267 |
-| **NotebookLM** | [PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) | 1 | 2.7K |
-| **Playwright** | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | 1 | 1.5K |
+### 🐛 Report Issues
 
-[View all 41 providers →](https://dmgrok.github.io/agent_skills_directory/)
+Found a bug or have a feature request? [Open an issue](https://github.com/dmgrok/agent_skills_directory/issues/new)
+
+### 💻 Contribute Code
+
+PRs welcome! Check out the [development guide](.github/copilot-instructions.md) for:
+- Project architecture
+- Aggregation pipeline
+- CLI development
+- Testing procedures
 
 ---
 
@@ -533,14 +579,20 @@ pytest                           # Run tests
 
 ---
 
-## Related
+## License
 
-- 🌐 [Browse Skills](https://dmgrok.github.io/agent_skills_directory/) — Interactive catalog
-- 🔌 [MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills) — MCP server integration
-- 📖 [Agent Skills Spec](https://agentskills.io/specification) — Standard specification
+MIT License - Individual skills retain their original licenses.
 
 ---
 
-## License
+## Related Projects
 
-MIT. Individual skills retain their original licenses.
+- 🌐 **[Browse Skills](https://dmgrok.github.io/agent_skills_directory/)** - Interactive web catalog
+- 🔌 **[MCP Mother Skills](https://github.com/dmgrok/mcp_mother_skills)** - MCP server integration  
+- 📖 **[Agent Skills Spec](https://agentskills.io/specification)** - Standard specification
+- 🛡️ **[LGTM Agent Skills](https://github.com/dmgrok/LGTM_agent_skills)** - Quality validation tool
+- 💻 **[skills.sh](https://skills.sh)** - Package manager for agent skills
+
+---
+
+**[🐛 Issues](https://github.com/dmgrok/agent_skills_directory/issues) • [💬 Discussions](https://github.com/dmgrok/agent_skills_directory/discussions) • [📊 Changelog](CHANGELOG.md)**
