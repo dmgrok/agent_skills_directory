@@ -51,11 +51,71 @@ jobs:
             const issue = context.payload.issue;
             const body = issue.body || '';
             
-            // Extract provider configuration from issue body (supports both JSON and Python-style dict)
+            // Try parsing form template format first
+            const repoUrlMatch = body.match(/### Repository URL\s*\n\s*(.+)/);
+            const providerNameMatch = body.match(/### Provider Name\s*\n\s*(.+)/);
+            const providerIdMatch = body.match(/### Provider ID\s*\n\s*(.+)/);
+            const skillsPathMatch = body.match(/### Skills Location\s*\n\s*(.+)/);
+            const branchMatch = body.match(/### Default Branch\s*\n\s*(.+)/);
+            
+            if (repoUrlMatch && providerNameMatch && providerIdMatch && branchMatch) {
+              // Parse form template format
+              const repoUrl = repoUrlMatch[1].trim();
+              const providerName = providerNameMatch[1].trim();
+              const providerId = providerIdMatch[1].trim();
+              const branch = branchMatch[1].trim();
+              
+              // Determine skills path prefix
+              let skillsPathPrefix = 'skills/';
+              if (skillsPathMatch) {
+                const skillsPath = skillsPathMatch[1].trim();
+                if (skillsPath.includes('Root directory')) {
+                  skillsPathPrefix = '';
+                }
+              }
+              
+              // Generate URLs
+              const repoMatch = repoUrl.match(/github\.com\/([^\/]+)\/([^\/\s]+)/);
+              if (!repoMatch) {
+                core.setFailed('Invalid GitHub repository URL');
+                return;
+              }
+              
+              const repoOwner = repoMatch[1];
+              const repoName = repoMatch[2].replace(/\.git$/, '');
+              
+              const apiTreeUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/git/trees/${branch}?recursive=1`;
+              const rawBase = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${branch}`;
+              
+              const config = {
+                [providerId]: {
+                  name: providerName,
+                  repo: repoUrl,
+                  api_tree_url: apiTreeUrl,
+                  raw_base: rawBase,
+                  skills_path_prefix: skillsPathPrefix
+                }
+              };
+              
+              core.setOutput('provider_id', providerId);
+              core.setOutput('provider_name', providerName);
+              core.setOutput('repo_url', repoUrl);
+              core.setOutput('api_tree_url', apiTreeUrl);
+              core.setOutput('raw_base', rawBase);
+              core.setOutput('skills_path_prefix', skillsPathPrefix);
+              core.setOutput('config_json', JSON.stringify(config));
+              core.setOutput('repo_owner', repoOwner);
+              core.setOutput('repo_name', repoName);
+              
+              console.log('✅ Parsed form template format');
+              return;
+            }
+            
+            // Fallback: Try parsing code block format (Provider Configuration field)
             const codeBlockMatch = body.match(/```(?:json|python)?\s*\n([\s\S]*?"repo"[\s\S]*?)\s*\n```/);
             
             if (!codeBlockMatch) {
-              core.setFailed('Could not find provider configuration in issue body');
+              core.setFailed('Could not parse issue - missing required fields (Repository URL, Provider Name, Provider ID, Default Branch)');
               return;
             }
             
@@ -85,6 +145,8 @@ jobs:
                 core.setOutput('repo_owner', repoMatch[1]);
                 core.setOutput('repo_name', repoMatch[2].replace(/\.git$/, ''));
               }
+              
+              console.log('✅ Parsed code block format');
             } catch (error) {
               core.setFailed(`Failed to parse provider configuration: ${error.message}`);
             }
