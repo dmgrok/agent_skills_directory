@@ -41,28 +41,71 @@ This repository aggregates agent skills from **41 provider repositories** (Anthr
    - Based on keyword matching in name/description
    - To add categories: extend `CATEGORY_KEYWORDS` dict
 
-4. **Schema** - `schema/catalog-schema.json` defines the output contract
+4. **Quality Scoring System** - Composite quality metrics (0-100 points)
+   - **Maintenance score (50pts max)**: active=50, maintained=40, stale=20, abandoned=5
+     - active: updated < 30 days ago
+     - maintained: updated < 6 months ago
+     - stale: updated < 1 year ago
+     - abandoned: updated > 1 year ago
+   - **Documentation completeness (30pts max)**: scripts=10, references=10, assets=10
+   - **Provider trust (20pts max)**: trusted providers=20, community=10
+     - Trusted: anthropics, openai, github, vercel, stripe, cloudflare, supabase, etc.
+   - Used for informed discoverability - helping users choose between similar skills
+   - Displayed in web UI as colored badges and in CLI with ⭐ emoji
+
+5. **Schema** - `schema/catalog-schema.json` defines the output contract
    - JSON Schema draft-07
    - Validates version format: `^\d{4}\.\d{2}\.\d{2}$`
    - Each skill has: `source` (repo metadata), `has_scripts`, `has_references`, `has_assets` flags
+   - Includes `quality_score` (0-100), `maintenance_status`, `days_since_update`
 
-5. **Static Docs Site** - `docs/` directory (HTML/JS/CSS)
+6. **Static Docs Site** - `docs/` directory (HTML/JS/CSS)
    - Pure client-side catalog browser
    - Fetches catalog via jsdelivr CDN
    - Supports URL query params: `?provider=`, `?category=`, `?search=`, `?tags=`, `?id=`
+   - Shows quality scores, maintenance badges, and similar skills with score comparison
 
 ## Critical Workflows
 
 ### Running Aggregation Locally
 ```bash
-# Required: PyYAML, optional: toon_format (for TOON encoding), pytest
+# Required: PyYAML, optional: toon_format (for TOON encoding), python-dotenv (for .env support), pytest
 python -m venv .venv && . .venv/bin/activate
-pip install pyyaml toon_format pytest
+pip install pyyaml toon_format python-dotenv pytest
 
-# Run aggregation (uses GITHUB_TOKEN env var if available)
+# Optional: Create .env file with GitHub token to avoid rate limits
+echo "GITHUB_TOKEN=your_token_here" > .env
+
+# Run full aggregation (fetches all providers)
 python scripts/aggregate.py
 
-# Outputs: catalog.json, catalog.min.json, catalog.toon, catalog.min.toon, CHANGELOG.md updated
+# Run incremental aggregation (only fetches changed providers - saves API requests)
+python scripts/aggregate.py --incremental
+
+# Outputs: catalog.json, catalog.min.json, catalog.toon, catalog.min.toon, 
+#          CHANGELOG.md updated, aggregation_state.json (for incremental mode)
+```
+
+### Incremental Mode (New!)
+The aggregator supports an **incremental mode** that dramatically reduces GitHub API requests:
+- Uses `aggregation_state.json` to track last run timestamp and provider commit SHAs
+- Checks each provider's HEAD commit to detect changes
+- Only fetches/processes providers with new commits
+- **Savings**: With 41 providers, typically saves 70-80+ GitHub API requests per run
+- **Daily GH Actions runs**: Use `--incremental` by default
+- **Manual full refresh**: Available via workflow_dispatch with `full_refresh: true`
+
+State file structure:
+```json
+{
+  "last_run": "2026-01-31T12:00:00+00:00",
+  "provider_commits": {
+    "anthropics": "abc123...",
+    "openai": "def456..."
+  },
+  "skills_count": 250,
+  "version": "2026.01.31"
+}
 ```
 
 ### Testing
@@ -85,6 +128,8 @@ The script tries Python `toon_format.encode()` first, then falls back to `npx @t
 - **`last_updated_at`**: Fetched via GitHub API commits endpoint for each `SKILL.md` file (see `fetch_last_updated_at()`)
 - **`has_scripts/has_references/has_assets`**: Detected by checking tree paths for `scripts/`, `references/`, `assets/` directories
 - **`tags`**: Auto-extracted from name/description using keyword matching (max 10 tags)
+- **`quality_score`**: Calculated via `calculate_quality_score()` combining maintenance (50pts), documentation (30pts), and provider trust (20pts)
+- **`maintenance_status`**: Derived from `days_since_update` via `calculate_maintenance_status()`
 
 ### Error Handling
 - Network requests use retry logic with exponential backoff (3 retries, see `fetch_url()`)
@@ -93,9 +138,11 @@ The script tries Python `toon_format.encode()` first, then falls back to `npx @t
 
 ### GitHub Actions Integration
 - **Workflow**: `.github/workflows/update-catalog.yml`
+- **Incremental mode**: Daily runs use `--incremental` to save API requests
+- **Full refresh option**: workflow_dispatch supports `full_refresh: true` for manual full runs
 - **Commit strategy**: Only commits if `catalog.json` changes
 - **Release strategy**: Creates GitHub release with `vYYYY.MM.DD` tag on changes
-- **Files committed**: `catalog.json`, `catalog.min.json`, `catalog.toon`, `catalog.min.toon`, `CHANGELOG.md`
+- **Files committed**: `catalog.json`, `catalog.min.json`, `catalog.toon`, `catalog.min.toon`, `CHANGELOG.md`, `aggregation_state.json`
 - **Git user**: `github-actions[bot]` (NOT dmgrok) for automated commits
 
 ### CDN Delivery
@@ -152,7 +199,7 @@ When adding a new feature that users can interact with (new JSON files, new data
 
 ## Key Files Reference
 
-- `scripts/aggregate.py`: Core aggregation logic (~500 lines, 41 providers)
+- `scripts/aggregate.py`: Core aggregation logic (~1200 lines, 41 providers, incremental mode support)
 - `scripts/analyze_repo.py`: Utility to evaluate potential new provider repos
 - `cli/skills.py`: CLI tool for installing/managing skills (npm-like)
 - `cli/__init__.py`: CLI package init
@@ -160,7 +207,7 @@ When adding a new feature that users can interact with (new JSON files, new data
 - `schema/catalog-schema.json`: Output contract with stars/description fields
 - `schema/bundles-schema.json`: Curated skill bundles schema
 - `schema/skill-manifest-schema.json`: skill.json manifest schema (like package.json)
-- `.github/workflows/update-catalog.yml`: Automation pipeline (106 lines)
+- `.github/workflows/update-catalog.yml`: Automation pipeline with incremental mode
 - `docs/app.js`: Static site catalog and bundles display logic (shows stars)
 - `docs/index.html`: Static site HTML with tabs for Skills, Bundles, CLI, and Help
 - `docs/style.css`: Static site styling (star badges, CLI styles, etc.)
@@ -169,6 +216,7 @@ When adding a new feature that users can interact with (new JSON files, new data
 - `README.md`: User-facing documentation with provider tables
 - `bundles.json`: Curated skill bundles for common use cases
 - `catalog.json`: Aggregated skills catalog (auto-generated)
+- `aggregation_state.json`: Incremental mode state file (tracks commit SHAs)
 
 ## CLI Tool (`cli/skills.py`)
 
@@ -176,7 +224,8 @@ The CLI provides npm-like package management for skills:
 
 ### Commands
 - `skillsdir search <query>` - Search skills by name/description/tags
-- `skills info <skill-id>` - Show detailed skill information
+- `skillsdir info <skill-id>` - Show detailed skill information
+- `skillsdir suggest [path]` - AI-powered skill recommendations based on project README and structure
 - `skillsdir install <skill-id>[@version]` - Install a skill to `~/.skills/installed/`
 - `skillsdir uninstall <skill-id>` - Remove an installed skill
 - `skillsdir list [--json]` - List installed skills
@@ -185,6 +234,19 @@ The CLI provides npm-like package management for skills:
 - `skillsdir config list|get|set` - Manage CLI configuration
 - `skillsdir cache clean|list` - Manage cache
 - `skillsdir run <skill-id>` - Preview/run a skill (placeholder for runtime integration)
+
+### Suggest Command (New!)
+The `suggest` command uses AI to analyze projects and recommend relevant skills:
+- **Input**: Project README + file structure analysis (languages, frameworks, file types)
+- **Processing**: Uses Perplexity MCP's reasoning capability to match project needs with catalog skills
+- **Output**: 5-10 ranked recommendations with confidence levels and quality scores
+- **Fallback**: Heuristic-based matching when LLM is unavailable (keyword matching in README + tech stack)
+- **Usage**: `skillsdir suggest [path] [--verbose]`
+
+Implementation details:
+- `find_readme()` - Locates README.md in project
+- `cmd_suggest()` - Main command handler (uses MCP if available)
+- `generate_heuristic_suggestions()` - Fallback for when LLM unavailable (scores skills by README keywords, language/framework matching, quality, and maintenance status)
 
 ### Local Registry Structure
 ```

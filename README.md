@@ -1,31 +1,51 @@
-# skills
+# Agent Skills Directory
 
-**The package manager for AI agent skills.**
+**Informed discoverability for AI agent skills.** Find the right skills for your project with quality scores, maintenance status, and security validation.
 
 ```bash
-brew install dmgrok/tap/skills
+# Tell us about your project, get curated recommendations
+skillsdir recommend --project-type "stripe integration"
+
+# Or browse with quality insights
+open https://dmgrok.github.io/agent_skills_directory/
 ```
 
-[![npm-like CLI](https://img.shields.io/badge/CLI-npm--like-CB3837?logo=npm)](https://github.com/dmgrok/agent_skills_directory/releases)
-[![Skills](https://img.shields.io/badge/Skills-250+-blue)](https://dmgrok.github.io/agent_skills_directory/)
-[![Providers](https://img.shields.io/badge/Providers-41-green)](https://dmgrok.github.io/agent_skills_directory/)
-[![Stars](https://img.shields.io/badge/Combined%20Stars-150K+-yellow)](https://dmgrok.github.io/agent_skills_directory/)
+[![Complementary to skills.sh](https://img.shields.io/badge/Works%20With-skills.sh-blue)](https://skills.sh)
+[![Curated Skills](https://img.shields.io/badge/Curated-250+-success)](https://dmgrok.github.io/agent_skills_directory/)
+[![Quality Scored](https://img.shields.io/badge/LGTM-Validated-yellow)](https://github.com/dmgrok/LGTM_agent_skills)
+[![Maintenance Tracked](https://img.shields.io/badge/Maintenance-Tracked-green)](https://dmgrok.github.io/agent_skills_directory/)
 
 ---
 
 ## What is this?
 
-**skills** is to AI agents what **npm** is to JavaScript.
+**Your project needs AI agent skills. But which ones?**
 
-Search, install, publish, and manage reusable skills for Claude, Copilot, Codex, and Cursor—all from your terminal.
+This project helps you discover the **right** skills through:
+
+- 🎯 **Quality Scoring** - LGTM validation (70+ required) + security scanning
+- 📊 **Maintenance Tracking** - Active (🟢), Maintained (🟡), Stale (🟠), Abandoned (🔴)
+- 🔍 **Smart Discovery** - Find skills that match your project type and tech stack
+- 🛡️ **Security Validated** - Every skill scanned for secrets and prompt injection
+- 🏢 **Official Sources Only** - Anthropic, OpenAI, GitHub, Stripe, Cloudflare, Supabase + 35 more
+
+### The Problem We Solve
+
+[skills.sh](https://skills.sh) has 30K+ skills. **Which ones should you use?** 
+
+We provide the **quality layer** to make informed decisions:
 
 ```bash
-skillsdir search "web scraping"     # Find skills
-skillsdir install anthropic/pdf     # Install a skill
-skillsdir publish                   # Share your own
+# Instead of guessing from 30K options...
+skillsdir search "pdf extraction"
+# → anthropic/pdf: 🟢 Active, LGTM 87/100, ✓ Security passed
+# → skillcreator/pdf-parser: 🔴 Abandoned (912 days), LGTM 65/100
+
+# Make informed choice, then install via skills.sh
+skills.sh install anthropic/pdf
 ```
 
-🌐 **[Browse 250+ Skills Online →](https://dmgrok.github.io/agent_skills_directory/)**
+🌐 **[Browse with Quality Insights →](https://dmgrok.github.io/agent_skills_directory/)**
 
 ---
 
@@ -152,6 +172,25 @@ cd agent_skills_directory && pip install -e .
 ---
 
 ## Usage
+
+### AI-Powered Skill Recommendations
+
+```bash
+# Let AI analyze your project and suggest skills
+skillsdir suggest
+
+# Analyze a specific project
+skillsdir suggest /path/to/project
+
+# Show detailed analysis
+skillsdir suggest --verbose
+```
+
+The `suggest` command:
+- Reads your project's README to understand its purpose
+- Analyzes file types, languages, and frameworks
+- Uses LLM (via Perplexity MCP) to match your project with relevant skills from the catalog
+- Provides quality-scored recommendations with confidence levels
 
 ### Search & Discover
 

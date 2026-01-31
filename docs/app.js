@@ -332,6 +332,30 @@ function renderSkills(skills) {
             const badgeText = skill.duplicate_status === 'mirror' ? '🔄 Mirror' : '⚠️ Probable Duplicate';
             duplicateBadge = `<span class="duplicate-badge ${badgeClass}" title="${escapeHtml(skill.duplicate_annotation || '')}">${badgeText}</span>`;
         }
+        
+        // Maintenance status badge
+        let maintenanceBadge = '';
+        if (skill.maintenance_status) {
+            const statusMap = {
+                'active': { emoji: '🟢', label: 'Active', class: 'maint-active', title: `Updated ${skill.days_since_update} days ago` },
+                'maintained': { emoji: '🟡', label: 'Maintained', class: 'maint-maintained', title: `Updated ${skill.days_since_update} days ago` },
+                'stale': { emoji: '🟠', label: 'Stale', class: 'maint-stale', title: `Updated ${skill.days_since_update} days ago` },
+                'abandoned': { emoji: '🔴', label: 'Abandoned', class: 'maint-abandoned', title: `Updated ${skill.days_since_update} days ago` }
+            };
+            const status = statusMap[skill.maintenance_status];
+            if (status) {
+                maintenanceBadge = `<span class="maintenance-badge ${status.class}" title="${status.title}">${status.emoji} ${status.label}</span>`;
+            }
+        }
+
+        // Quality score badge
+        let qualityBadge = '';
+        if (typeof skill.quality_score === 'number') {
+            const scoreClass = skill.quality_score >= 80 ? 'quality-excellent' :
+                              skill.quality_score >= 60 ? 'quality-good' :
+                              skill.quality_score >= 40 ? 'quality-fair' : 'quality-low';
+            qualityBadge = `<span class="quality-badge ${scoreClass}" title="Quality score: ${skill.quality_score}/100">⭐ ${skill.quality_score}</span>`;
+        }
 
         return `
         <article class="skill-card ${skill.duplicate_status ? 'skill-card-duplicate' : ''}" data-skill-id="${skill.id}">
@@ -340,6 +364,8 @@ function renderSkills(skills) {
                 <div class="skill-header-badges">
                     <span class="skill-provider ${skill.provider}">${skill.provider}</span>
                     ${starsHtml}
+                    ${qualityBadge}
+                    ${maintenanceBadge}
                     ${duplicateBadge}
                 </div>
             </div>
@@ -488,6 +514,32 @@ function showSkillModal(skill) {
         ? `<span class="modal-stars">⭐ ${formatStars(provider.stars)} stars</span>` 
         : '';
     
+    // Quality/maintenance badge
+    let qualityBadge = '';
+    if (skill.maintenance_status) {
+        const statusMap = {
+            'active': { emoji: '🟢', label: 'Active', class: 'quality-active', desc: 'Updated recently' },
+            'maintained': { emoji: '🟡', label: 'Maintained', class: 'quality-maintained', desc: 'Regularly updated' },
+            'stale': { emoji: '🟠', label: 'Stale', class: 'quality-stale', desc: 'Infrequent updates' },
+            'abandoned': { emoji: '🔴', label: 'Abandoned', class: 'quality-abandoned', desc: 'No recent updates' }
+        };
+        const status = statusMap[skill.maintenance_status];
+        if (status) {
+            const daysText = skill.days_since_update ? `${skill.days_since_update} days ago` : 'Unknown';
+            const scoreText = typeof skill.quality_score === 'number' ? `${skill.quality_score}/100` : 'N/A';
+            qualityBadge = `
+                <div class="quality-indicator ${status.class}">
+                    <div class="quality-badge">
+                        <span class="quality-emoji">${status.emoji}</span>
+                        <span class="quality-label">${status.label}</span>
+                        <span class="quality-score">⭐ ${scoreText}</span>
+                    </div>
+                    <div class="quality-desc">${status.desc} • Last update: ${daysText}</div>
+                </div>
+            `;
+        }
+    }
+    
     modalBody.innerHTML = `
         <div class="modal-header">
             <h2>${escapeHtml(skill.name)}</h2>
@@ -497,6 +549,8 @@ function showSkillModal(skill) {
                 <span class="skill-category">📁 ${skill.category}</span>
             </div>
         </div>
+
+        ${qualityBadge}
 
         <div class="modal-section">
             <p class="skill-description-large">${escapeHtml(skill.description)}</p>
@@ -544,13 +598,26 @@ function showSkillModal(skill) {
                     Other implementations with different content:
                 </p>
                 <div class="similar-skills-list">
-                    ${skill.similar_skills.map(s => `
+                    ${skill.similar_skills.map(s => {
+                        const similarSkill = catalog.skills.find(sk => sk.id === s.id);
+                        const scoreText = similarSkill && typeof similarSkill.quality_score === 'number' 
+                            ? `⭐ ${similarSkill.quality_score}` 
+                            : '';
+                        const scoreDiff = similarSkill && typeof similarSkill.quality_score === 'number' && typeof skill.quality_score === 'number'
+                            ? similarSkill.quality_score - skill.quality_score
+                            : null;
+                        const diffBadge = scoreDiff !== null
+                            ? `<span class="score-diff ${scoreDiff > 0 ? 'positive' : 'negative'}">${scoreDiff > 0 ? '+' : ''}${scoreDiff}</span>`
+                            : '';
+                        return `
                         <div class="similar-skill-item" data-skill-id="${escapeHtml(s.id)}">
                             <span class="skill-provider ${s.provider}">${s.provider}</span>
                             <span class="similar-skill-id">${escapeHtml(s.id)}</span>
+                            ${scoreText ? `<span class="similar-score">${scoreText}</span>` : ''}
+                            ${diffBadge}
                             <span class="similarity-badge">${Math.round(s.similarity * 100)}% similar</span>
                         </div>
-                    `).join('')}
+                    `;}).join('')}
                 </div>
             </div>
         ` : ''}

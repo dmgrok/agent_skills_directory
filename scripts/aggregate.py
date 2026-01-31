@@ -12,6 +12,7 @@ import sys
 import time
 import os
 import zlib
+import argparse
 from dataclasses import dataclass, asdict, field
 from datetime import datetime, timezone
 from pathlib import Path
@@ -21,6 +22,13 @@ import urllib.error
 import subprocess
 import shutil
 from urllib.parse import urlsplit
+
+# Load environment variables from .env if available
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # dotenv not installed, skip
 
 try:
     import toon_format  # type: ignore[import-untyped]
@@ -399,6 +407,9 @@ CATEGORY_KEYWORDS = {
     "data": ["data", "analysis", "extract", "transform", "csv", "json"],
 }
 
+# State file for incremental aggregation
+STATE_FILE = Path(__file__).parent.parent / "aggregation_state.json"
+
 
 @dataclass
 class SkillSource:
@@ -431,6 +442,98 @@ class Skill:
     duplicate_annotation: Optional[str] = field(default=None)  # Human-readable annotation
     duplicate_of: Optional[str] = field(default=None)  # ID of the reference skill
     duplicate_similarity: Optional[float] = field(default=None)  # Similarity score
+    
+    # Maintenance KPIs
+    days_since_update: Optional[int] = field(default=None)  # Days since last commit
+    maintenance_status: Optional[str] = field(default=None)  # "active", "maintained", "stale", "abandoned"
+    quality_score: Optional[int] = field(default=None)  # Composite quality score 0-100
+
+
+def calculate_quality_score(
+    maintenance_status: Optional[str],
+    has_scripts: bool,
+    has_references: bool,
+    has_assets: bool,
+    provider: str
+) -> int:
+    """
+    Calculate composite quality score (0-100) based on multiple factors.
+    
+    Scoring breakdown:
+    - Maintenance status: 0-50 points
+    - Documentation completeness: 0-30 points (scripts, references, assets)
+    - Provider trust: 0-20 points (official sources get bonus)
+    """
+    score = 0
+    
+    # Maintenance score (50 points max)
+    if maintenance_status == "active":
+        score += 50
+    elif maintenance_status == "maintained":
+        score += 40
+    elif maintenance_status == "stale":
+        score += 20
+    elif maintenance_status == "abandoned":
+        score += 5
+    else:
+        score += 25  # Unknown status - neutral
+    
+    # Documentation completeness (30 points max)
+    if has_scripts:
+        score += 10
+    if has_references:
+        score += 10
+    if has_assets:
+        score += 10
+    
+    # Provider trust bonus (20 points max)
+    # Official/trusted sources get higher scores
+    trusted_providers = {
+        "anthropics", "openai", "github", "vercel", "huggingface",
+        "stripe", "cloudflare", "supabase", "sentry", "expo",
+        "better-auth", "tinybird", "neondatabase", "fal-ai", "remotion"
+    }
+    if provider in trusted_providers:
+        score += 20
+    else:
+        score += 10  # Community providers still get partial credit
+    
+    return min(score, 100)  # Cap at 100
+
+
+def calculate_maintenance_status(last_updated_at: Optional[str]) -> tuple[Optional[int], Optional[str]]:
+    """
+    Calculate maintenance KPIs based on last update date.
+    
+    Returns:
+        (days_since_update, maintenance_status)
+        
+    Status definitions:
+        - active: Updated within 30 days
+        - maintained: Updated within 6 months
+        - stale: Updated within 1 year
+        - abandoned: No update in over 1 year
+    """
+    if not last_updated_at:
+        return None, None
+    
+    try:
+        last_update = datetime.fromisoformat(last_updated_at.replace('Z', '+00:00'))
+        now = datetime.now(timezone.utc)
+        days_since = (now - last_update).days
+        
+        if days_since < 30:
+            status = "active"
+        elif days_since < 180:  # 6 months
+            status = "maintained"
+        elif days_since < 365:  # 1 year
+            status = "stale"
+        else:
+            status = "abandoned"
+        
+        return days_since, status
+    except (ValueError, AttributeError):
+        return None, None
 
 
 def compute_content_hash(text: str) -> str:
@@ -791,6 +894,18 @@ def fetch_provider_skills(provider_id: str, config: dict) -> list:
         if owner_repo:
             last_updated_at = fetch_last_updated_at(owner_repo[0], owner_repo[1], sf["path"])
         
+        # Calculate maintenance KPIs
+        days_since_update, maintenance_status = calculate_maintenance_status(last_updated_at)
+        
+        # Calculate quality score
+        quality_score = calculate_quality_score(
+            maintenance_status,
+            has_scripts,
+            has_references,
+            has_assets,
+            provider_id
+        )
+        
         skill = Skill(
             id=f"{provider_id}/{name}",
             name=name,
@@ -811,11 +926,15 @@ def fetch_provider_skills(provider_id: str, config: dict) -> list:
             has_references=has_references,
             has_assets=has_assets,
             tags=extract_tags(name, description),
-            body=parsed["body"]  # Store body for dedup comparison
+            body=parsed["body"],  # Store body for dedup comparison
+            days_since_update=days_since_update,
+            maintenance_status=maintenance_status,
+            quality_score=quality_score
         )
         
         skills.append(skill)
-        print(f"  ✓ {name}")
+        status_emoji = {"active": "🟢", "maintained": "🟡", "stale": "🟠", "abandoned": "🔴"}.get(maintenance_status, "⚪")
+        print(f"  ✓ {name} {status_emoji} (score: {quality_score})")
     
     return skills
 
@@ -895,6 +1014,24 @@ def build_catalog() -> dict:
     # Get unique categories
     categories = sorted(set(s.category for s in all_skills))
     
+    # Calculate maintenance statistics
+    maintenance_stats = {
+        "active": len([s for s in all_skills if s.maintenance_status == "active"]),
+        "maintained": len([s for s in all_skills if s.maintenance_status == "maintained"]),
+        "stale": len([s for s in all_skills if s.maintenance_status == "stale"]),
+        "abandoned": len([s for s in all_skills if s.maintenance_status == "abandoned"]),
+        "unknown": len([s for s in all_skills if s.maintenance_status is None])
+    }
+    
+    # Calculate percentages
+    total_with_dates = len(all_skills) - maintenance_stats["unknown"]
+    if total_with_dates > 0:
+        maintenance_stats["active_percentage"] = round((maintenance_stats["active"] / total_with_dates) * 100, 1)
+        maintenance_stats["maintained_percentage"] = round(((maintenance_stats["active"] + maintenance_stats["maintained"]) / total_with_dates) * 100, 1)
+    else:
+        maintenance_stats["active_percentage"] = 0
+        maintenance_stats["maintained_percentage"] = 0
+    
     # Build catalog
     now = datetime.now(timezone.utc)
     catalog = {
@@ -909,7 +1046,8 @@ def build_catalog() -> dict:
             "total_annotated": len(duplicate_metadata),
             "mirrors": len([r for r in duplicate_metadata if r["status"] == "mirror"]),
             "probable_duplicates": len([r for r in duplicate_metadata if r["status"] == "probable_duplicate"])
-        }
+        },
+        "maintenance_summary": maintenance_stats
     }
     
     # Convert skills to dicts
@@ -925,6 +1063,65 @@ def build_catalog() -> dict:
         catalog["skills"].append(skill_dict)
     
     return catalog
+
+
+def load_state() -> dict:
+    """Load previous aggregation state for incremental mode."""
+    if STATE_FILE.exists():
+        try:
+            with open(STATE_FILE, 'r') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"⚠ Could not load state file: {e}", file=sys.stderr)
+    return {"last_run": None, "provider_commits": {}, "skills_count": 0}
+
+
+def save_state(catalog: dict, provider_commits: dict) -> None:
+    """Save aggregation state for next incremental run."""
+    state = {
+        "last_run": datetime.now(timezone.utc).isoformat(),
+        "provider_commits": provider_commits,
+        "skills_count": catalog["total_skills"],
+        "version": catalog["version"]
+    }
+    with open(STATE_FILE, 'w') as f:
+        json.dump(state, f, indent=2)
+    print(f"✓ Saved state to {STATE_FILE}")
+
+
+def get_provider_head_commit(provider_id: str, provider_config: dict) -> Optional[str]:
+    """Get the latest commit SHA for a provider's repository."""
+    # Extract owner/repo from API URL
+    url_match = re.search(r'repos/([^/]+/[^/]+)/', provider_config["api_tree_url"])
+    if not url_match:
+        return None
+    
+    owner_repo = url_match.group(1)
+    branch = "main" if "main" in provider_config["api_tree_url"] else "master"
+    commits_url = f"https://api.github.com/repos/{owner_repo}/commits/{branch}"
+    
+    try:
+        json_str = fetch_url(commits_url)
+        if json_str:
+            data = json.loads(json_str)
+            if "sha" in data:
+                return data["sha"]
+    except Exception as e:
+        print(f"⚠ Could not fetch HEAD commit for {provider_id}: {e}", file=sys.stderr)
+    
+    return None
+
+
+def check_provider_changed(provider_id: str, provider_config: dict, last_commit: Optional[str]) -> bool:
+    """Check if provider has new commits since last aggregation."""
+    if not last_commit:
+        return True  # No previous state, fetch everything
+    
+    current_commit = get_provider_head_commit(provider_id, provider_config)
+    if not current_commit:
+        return True  # Can't determine, be safe and fetch
+    
+    return current_commit != last_commit
 
 
 def write_toon_output(catalog: dict, output_dir: Path, catalog_json: Path, catalog_min_json: Path) -> None:
@@ -971,12 +1168,113 @@ def write_toon_output(catalog: dict, output_dir: Path, catalog_json: Path, catal
 
 
 def main():
+    global PROVIDERS  # Declare at top for potential modification in incremental mode
+    
+    parser = argparse.ArgumentParser(description="Aggregate skills from multiple providers")
+    parser.add_argument(
+        "--incremental",
+        action="store_true",
+        help="Only fetch from providers with changes since last run (saves API requests)"
+    )
+    args = parser.parse_args()
+    
     print("=" * 50)
     print("Agent Skills Directory Aggregator")
+    if args.incremental:
+        print("Mode: INCREMENTAL (checking for changes only)")
+    else:
+        print("Mode: FULL REFRESH")
     print("=" * 50)
     print()
     
+    # Load previous state for incremental mode
+    state = load_state() if args.incremental else None
+    provider_commits = {}
+    previous_catalog = None
+    
+    if args.incremental and state and state.get("last_run"):
+        print(f"Last run: {state['last_run']}")
+        print(f"Previous skills count: {state.get('skills_count', 0)}")
+        print("\nChecking providers for changes...")
+        
+        # Load previous catalog to merge unchanged provider skills
+        output_dir = Path(__file__).parent.parent
+        catalog_json = output_dir / "catalog.json"
+        if catalog_json.exists():
+            with open(catalog_json, 'r') as f:
+                previous_catalog = json.load(f)
+        
+        # Check which providers have changed
+        changed_providers = []
+        unchanged_providers = []
+        
+        for provider_id, provider_config in PROVIDERS.items():
+            last_commit = state.get("provider_commits", {}).get(provider_id)
+            current_commit = get_provider_head_commit(provider_id, provider_config)
+            
+            if current_commit:
+                provider_commits[provider_id] = current_commit
+            
+            if check_provider_changed(provider_id, provider_config, last_commit):
+                changed_providers.append(provider_id)
+                print(f"  ✓ {provider_config['name']}: CHANGED")
+            else:
+                unchanged_providers.append(provider_id)
+                print(f"  - {provider_config['name']}: unchanged")
+        
+        if not changed_providers:
+            print("\n✓ No changes detected. Catalog is up to date.")
+            return
+        
+        print(f"\n{len(changed_providers)}/{len(PROVIDERS)} providers have changes")
+        print(f"This will save ~{len(unchanged_providers) * 2} GitHub API requests\n")
+        
+        # Temporarily filter PROVIDERS to only changed ones
+        original_providers = PROVIDERS.copy()
+        PROVIDERS = {pid: original_providers[pid] for pid in changed_providers}
+    elif args.incremental:
+        # First run with --incremental: do full refresh but don't fetch commits upfront (save API requests)
+        print("First run with incremental mode - doing full refresh...")
+        print("(Commit tracking will be enabled after this run)\n")
+    
     catalog = build_catalog()
+    
+    # Merge with previous catalog if running in incremental mode with unchanged providers
+    if previous_catalog and args.incremental:
+        # Get list of providers we just fetched
+        fetched_providers = set(PROVIDERS.keys())
+        
+        # Get original full provider list
+        from importlib import reload
+        import sys
+        # Reload to get original PROVIDERS dict
+        original_providers_list = set(pid for pid in provider_commits.keys())
+        unchanged_providers = original_providers_list - fetched_providers
+        
+        if unchanged_providers:
+            print(f"\nMerging skills from {len(unchanged_providers)} unchanged providers...")
+            # Add skills from unchanged providers
+            for skill_dict in previous_catalog.get("skills", []):
+                if skill_dict.get("provider") in unchanged_providers:
+                    catalog["skills"].append(skill_dict)
+            
+            # Update provider stats
+            for provider_id in unchanged_providers:
+                prev_provider = previous_catalog.get("providers", {}).get(provider_id)
+                if prev_provider:
+                    catalog["providers"][provider_id] = prev_provider
+            
+            # Recalculate totals
+            catalog["total_skills"] = len(catalog["skills"])
+            print(f"  Total skills after merge: {catalog['total_skills']}")
+    
+    # After building catalog, fetch commit SHAs for state tracking (if not already done in incremental mode)
+    if not provider_commits:
+        print("\nCollecting commit SHAs for state tracking...")
+        for provider_id, provider_config in PROVIDERS.items():
+            current_commit = get_provider_head_commit(provider_id, provider_config)
+            if current_commit:
+                provider_commits[provider_id] = current_commit
     
     # Output paths
     output_dir = Path(__file__).parent.parent
@@ -996,12 +1294,26 @@ def main():
     # Write TOON format (Token-Oriented Object Notation)
     write_toon_output(catalog, output_dir, catalog_json, catalog_min_json)
     
+    # Save state for next incremental run
+    save_state(catalog, provider_commits)
+    
     # Summary
     print(f"\n{'=' * 50}")
     print(f"Total skills: {catalog['total_skills']}")
     for pid, pinfo in catalog["providers"].items():
         print(f"  {pinfo['name']}: {pinfo['skills_count']} skills")
     print(f"Categories: {', '.join(catalog['categories'])}")
+    
+    # Maintenance summary
+    maint = catalog.get("maintenance_summary", {})
+    if maint:
+        print(f"\nMaintenance Status:")
+        print(f"  🟢 Active (<30 days): {maint.get('active', 0)} ({maint.get('active_percentage', 0)}%)")
+        print(f"  🟡 Maintained (<6 mo): {maint.get('maintained', 0)}")
+        print(f"  🟠 Stale (<1 year): {maint.get('stale', 0)}")
+        print(f"  🔴 Abandoned (>1 year): {maint.get('abandoned', 0)}")
+        print(f"  Overall: {maint.get('maintained_percentage', 0)}% actively maintained")
+    
     print("=" * 50)
 
 

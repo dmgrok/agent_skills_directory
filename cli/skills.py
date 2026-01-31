@@ -5,6 +5,7 @@ skills - The package manager for AI agent skills
 Usage:
     skills search <query>           Search for skills
     skills info <skill-id>          Show skill details
+    skills suggest [path]           Get AI recommendations for your project
     skills install <skill-id>       Install a skill
     skills uninstall <skill-id>     Remove a skill
     skills list                     List installed skills
@@ -636,7 +637,14 @@ def cmd_search(args):
         
         status = f"{Colors.GREEN}✓ installed{Colors.RESET}" if is_installed else ""
         
-        print(f"  {Colors.BOLD}{skill_id}{Colors.RESET} {status}")
+        # Add quality score badge
+        quality_score = skill.get("quality_score")
+        score_badge = ""
+        if quality_score is not None:
+            score_color = Colors.GREEN if quality_score >= 80 else Colors.YELLOW if quality_score >= 60 else Colors.RED
+            score_badge = f" {score_color}⭐{quality_score}{Colors.RESET}"
+        
+        print(f"  {Colors.BOLD}{skill_id}{Colors.RESET}{score_badge} {status}")
         print(f"  {Colors.DIM}{skill.get('description', 'No description')[:80]}{Colors.RESET}")
         
         tags = skill.get("tags", [])[:5]
@@ -677,6 +685,23 @@ def cmd_info(args):
     if skill.get("last_updated_at"):
         updated = skill["last_updated_at"][:10]
         print(f"  {Colors.CYAN}updated:{Colors.RESET}     {updated}")
+        
+        # Show maintenance status
+        maint_status = skill.get("maintenance_status")
+        days_since = skill.get("days_since_update")
+        if maint_status:
+            status_emoji = {"active": "🟢", "maintained": "🟡", "stale": "🟠", "abandoned": "🔴"}.get(maint_status, "⚪")
+            status_label = maint_status.capitalize()
+            if days_since is not None:
+                print(f"  {Colors.CYAN}maintenance:{Colors.RESET}  {status_emoji} {status_label} ({days_since} days ago)")
+            else:
+                print(f"  {Colors.CYAN}maintenance:{Colors.RESET}  {status_emoji} {status_label}")
+    
+    # Show quality score
+    quality_score = skill.get("quality_score")
+    if quality_score is not None:
+        score_color = Colors.GREEN if quality_score >= 80 else Colors.YELLOW if quality_score >= 60 else Colors.RED
+        print(f"  {Colors.CYAN}quality:{Colors.RESET}     {score_color}⭐ {quality_score}/100{Colors.RESET}")
     
     tags = skill.get("tags", [])
     if tags:
@@ -697,7 +722,16 @@ def cmd_info(args):
         inst = installed[skill_id]
         print(f"\n  {Colors.GREEN}✓ Installed{Colors.RESET} (v{inst['version']} at {inst['path']})")
     else:
-        print(f"\n  {Colors.DIM}Not installed. Run: skills install {skill_id}{Colors.RESET}")
+        print(f"\n  {Colors.DIM}Not installed locally{Colors.RESET}")
+    
+    # Suggest skills.sh for actual installation
+    print(f"\n{Colors.BOLD}Installation Options:{Colors.RESET}")
+    print(f"  {Colors.CYAN}1. Via skills.sh (recommended):{Colors.RESET}")
+    print(f"     skills.sh install {skill['provider']}/{skill['name'].lower().replace(' ', '-')}")
+    print(f"\n  {Colors.CYAN}2. Manual from source:{Colors.RESET}")
+    if source.get("skill_md_url"):
+        print(f"     curl -O {source['skill_md_url']}")
+    print(f"\n  {Colors.DIM}💡 This directory provides quality metrics. Use skills.sh for package management.{Colors.RESET}")
     
     print()
     return 0
@@ -1851,6 +1885,380 @@ def cmd_stats(args):
     return 0
 
 
+def analyze_project_structure(project_path: Path) -> Dict[str, Any]:
+    """Analyze project structure to understand what technologies and frameworks are used."""
+    analysis = {
+        "languages": set(),
+        "frameworks": set(),
+        "tools": set(),
+        "file_types": set(),
+        "package_files": []
+    }
+    
+    # Common patterns to identify technologies
+    tech_patterns = {
+        "python": ["*.py", "requirements.txt", "setup.py", "pyproject.toml", "Pipfile"],
+        "javascript": ["*.js", "package.json", "*.ts", "*.jsx", "*.tsx"],
+        "java": ["*.java", "pom.xml", "build.gradle"],
+        "go": ["*.go", "go.mod"],
+        "rust": ["*.rs", "Cargo.toml"],
+        "ruby": ["*.rb", "Gemfile"],
+        "php": ["*.php", "composer.json"],
+        "c++": ["*.cpp", "*.hpp", "CMakeLists.txt"],
+        "c": ["*.c", "*.h", "Makefile"],
+    }
+    
+    framework_patterns = {
+        "react": ["package.json"],
+        "vue": ["package.json"],
+        "angular": ["angular.json"],
+        "django": ["manage.py", "settings.py"],
+        "flask": ["app.py"],
+        "fastapi": ["main.py"],
+        "express": ["package.json"],
+        "nextjs": ["next.config.js", "next.config.ts"],
+        "gatsby": ["gatsby-config.js"],
+    }
+    
+    try:
+        # Walk project directory (limit depth to avoid very deep recursion)
+        for root, dirs, files in os.walk(project_path):
+            # Skip common ignored directories
+            dirs[:] = [d for d in dirs if d not in {'.git', 'node_modules', 'venv', '.venv', 
+                                                     '__pycache__', 'dist', 'build', '.next', 
+                                                     'target', 'vendor'}]
+            
+            # Check relative depth
+            rel_path = Path(root).relative_to(project_path)
+            if len(rel_path.parts) > 3:
+                continue
+            
+            for file in files:
+                file_path = Path(root) / file
+                suffix = file_path.suffix.lower()
+                
+                # Track file types
+                if suffix:
+                    analysis["file_types"].add(suffix)
+                
+                # Check language patterns
+                for lang, patterns in tech_patterns.items():
+                    for pattern in patterns:
+                        if file_path.match(pattern):
+                            analysis["languages"].add(lang)
+                            if file in ["package.json", "requirements.txt", "Cargo.toml", "go.mod", "pom.xml"]:
+                                analysis["package_files"].append(str(file_path))
+                
+                # Check framework patterns
+                for framework, patterns in framework_patterns.items():
+                    for pattern in patterns:
+                        if file_path.match(pattern):
+                            analysis["frameworks"].add(framework)
+    
+    except Exception as e:
+        print_warning(f"Error analyzing project: {e}")
+    
+    # Convert sets to lists for JSON serialization
+    analysis["languages"] = list(analysis["languages"])
+    analysis["frameworks"] = list(analysis["frameworks"])
+    analysis["tools"] = list(analysis["tools"])
+    analysis["file_types"] = list(analysis["file_types"])
+    
+    return analysis
+
+
+def find_readme(project_path: Path) -> Optional[Path]:
+    """Find README file in project directory."""
+    readme_patterns = ["README.md", "README.MD", "readme.md", "README", "README.txt"]
+    
+    for pattern in readme_patterns:
+        readme_path = project_path / pattern
+        if readme_path.exists() and readme_path.is_file():
+            return readme_path
+    
+    return None
+
+
+def cmd_suggest(args):
+    """Use LLM to suggest relevant skills based on project README and catalog."""
+    project_path = Path(args.path or Path.cwd())
+    
+    if not project_path.exists():
+        print_error(f"Project path does not exist: {project_path}")
+        return 1
+    
+    print_info("Analyzing project...")
+    
+    # Find and read README
+    readme_path = find_readme(project_path)
+    readme_content = ""
+    
+    if readme_path:
+        try:
+            readme_content = readme_path.read_text(encoding='utf-8', errors='ignore')
+            # Truncate if too long (keep first 8000 chars for context)
+            if len(readme_content) > 8000:
+                readme_content = readme_content[:8000] + "\n\n[... truncated for length ...]"
+            print_info(f"Found README: {readme_path.name}")
+        except Exception as e:
+            print_warning(f"Could not read README: {e}")
+    else:
+        print_warning("No README found. Analysis will be limited.")
+    
+    # Analyze project structure
+    analysis = analyze_project_structure(project_path)
+    
+    if args.verbose:
+        print(f"\n{Colors.DIM}Project Analysis:{Colors.RESET}")
+        print(f"  Languages: {', '.join(analysis['languages']) or 'None detected'}")
+        print(f"  Frameworks: {', '.join(analysis['frameworks']) or 'None detected'}")
+        print(f"  File types: {', '.join(list(analysis['file_types'])[:15])}")
+        if readme_path:
+            print(f"  README: {readme_path.name} ({len(readme_content)} chars)")
+        print()
+    
+    # Fetch catalog
+    try:
+        catalog = fetch_catalog()
+    except Exception as e:
+        print_error(f"Failed to fetch catalog: {e}")
+        return 1
+    
+    skills_list = catalog.get("skills", [])
+    print_info(f"Analyzing against {len(skills_list)} skills from catalog...")
+    
+    # Prepare skills summary for LLM
+    skills_summary = []
+    for skill in skills_list:
+        skills_summary.append({
+            "id": skill["id"],
+            "name": skill["name"],
+            "description": skill.get("description", ""),
+            "category": skill.get("category", ""),
+            "tags": skill.get("tags", [])[:8],
+            "quality_score": skill.get("quality_score", 0),
+            "maintenance_status": skill.get("maintenance_status", "unknown")
+        })
+    
+    # Build prompt for LLM analysis
+    prompt = f"""Analyze this software project and recommend the most relevant AI agent skills from the catalog.
+
+PROJECT README:
+{readme_content if readme_content else 'No README available'}
+
+PROJECT STRUCTURE:
+- Languages detected: {', '.join(analysis['languages']) or 'None'}
+- Frameworks detected: {', '.join(analysis['frameworks']) or 'None'}
+- File types: {', '.join(list(analysis['file_types'])[:20])}
+
+AVAILABLE SKILLS CATALOG ({len(skills_summary)} skills):
+{json.dumps(skills_summary[:100], indent=2)}
+
+TASK:
+Based on the README content and project structure, recommend 5-10 skills from the catalog that would be most useful.
+
+CONSIDERATIONS:
+1. README content describes the project's purpose and tech stack
+2. Prioritize skills matching the project's domain and technologies
+3. Prefer high quality_score (80+) and maintenance_status "active"
+4. Match skills by category, tags, and description relevance
+5. Only recommend skills that actually exist in the provided catalog
+
+RESPONSE FORMAT (JSON only):
+{{
+  "project_summary": "Brief 1-2 sentence description of what this project does",
+  "recommendations": [
+    {{
+      "skill_id": "exact-provider/skill-name-from-catalog",
+      "reason": "Why this skill is relevant to the project",
+      "confidence": "high|medium|low"
+    }}
+  ]
+}}"""
+
+    # Try to get LLM recommendations
+    recommendations = None
+    project_summary = None
+    
+    try:
+        print_info("Requesting LLM analysis via Perplexity...")
+        
+        # Use Perplexity reasoning for analysis
+        result = mcp_perplexity_perplexity_reason(
+            messages=[
+                {"role": "user", "content": prompt}
+            ],
+            strip_thinking=True
+        )
+        
+        # Parse LLM response
+        response_text = result.get("content", "")
+        
+        # Extract JSON from response (handle markdown code blocks)
+        json_match = re.search(r'```json\s*({.*?})\s*```', response_text, re.DOTALL)
+        if json_match:
+            response_text = json_match.group(1)
+        elif response_text.strip().startswith('{'):
+            # Already JSON
+            pass
+        
+        parsed = json.loads(response_text)
+        recommendations = parsed.get("recommendations", [])
+        project_summary = parsed.get("project_summary")
+        
+        print_success("LLM analysis completed")
+        
+    except NameError:
+        # MCP not available
+        print_warning("Perplexity MCP not available. Using heuristic analysis...")
+        recommendations = None
+    except Exception as e:
+        print_warning(f"LLM analysis failed: {e}. Using heuristic analysis...")
+        recommendations = None
+    
+    # Fall back to heuristics if LLM failed
+    if not recommendations:
+        recommendations = generate_heuristic_suggestions(analysis, skills_summary, readme_content)
+    
+    # Display recommendations
+    if not recommendations:
+        print_warning("No skill recommendations found for this project.")
+        return 0
+    
+    # Show project summary if available
+    if project_summary:
+        print(f"\n{Colors.BOLD}Project Summary:{Colors.RESET}")
+        print(f"{Colors.DIM}{project_summary}{Colors.RESET}\n")
+    
+    print(f"{Colors.BOLD}Recommended Skills for Your Project:{Colors.RESET}\n")
+    
+    for i, rec in enumerate(recommendations, 1):
+        skill_id = rec["skill_id"]
+        reason = rec["reason"]
+        confidence = rec.get("confidence", "medium")
+        
+        # Get full skill details
+        skill = find_skill(catalog, skill_id)
+        if not skill:
+            continue
+        
+        confidence_color = {
+            "high": Colors.GREEN,
+            "medium": Colors.YELLOW,
+            "low": Colors.DIM
+        }.get(confidence, Colors.RESET)
+        
+        quality_score = skill.get("quality_score", 0)
+        score_badge = f"{Colors.GREEN}⭐{quality_score}{Colors.RESET}" if quality_score >= 80 else f"{Colors.YELLOW}⭐{quality_score}{Colors.RESET}"
+        
+        print(f"  {Colors.BOLD}{i}. {skill_id}{Colors.RESET} {score_badge} {confidence_color}({confidence} confidence){Colors.RESET}")
+        print(f"     {Colors.DIM}{skill.get('description', 'No description')[:80]}{Colors.RESET}")
+        print(f"     {Colors.CYAN}→{Colors.RESET} {reason}")
+        print()
+    
+    # Show installation command
+    print(f"{Colors.DIM}To install a skill:{Colors.RESET}")
+    print(f"  skillsdir install <skill-id>")
+    print()
+    
+    return 0
+
+
+def generate_heuristic_suggestions(analysis: Dict, skills: List[Dict], readme_content: str = "") -> List[Dict]:
+    """Generate skill suggestions using heuristics when LLM is not available."""
+    recommendations = []
+    
+    languages = set(analysis.get("languages", []))
+    frameworks = set(analysis.get("frameworks", []))
+    file_types = set(analysis.get("file_types", []))
+    readme_lower = readme_content.lower() if readme_content else ""
+    
+    # Score each skill based on relevance
+    scored_skills = []
+    for skill in skills:
+        score = 0
+        reasons = []
+        
+        skill_name = skill["name"].lower()
+        skill_desc = skill.get("description", "").lower()
+        skill_tags = [t.lower() for t in skill.get("tags", [])]
+        skill_text = f"{skill_name} {skill_desc} {' '.join(skill_tags)}"
+        
+        # README keyword matching (highest weight)
+        if readme_lower:
+            skill_keywords = [skill["name"].lower()] + skill_tags[:5]
+            for keyword in skill_keywords:
+                if len(keyword) > 3 and keyword in readme_lower:
+                    score += 15
+                    reasons.append(f"mentioned in README")
+                    break
+        
+        # Language matching
+        for lang in languages:
+            if lang in skill_text:
+                score += 10
+                reasons.append(f"matches {lang}")
+        
+        # Framework matching
+        for framework in frameworks:
+            if framework in skill_text:
+                score += 15
+                reasons.append(f"supports {framework}")
+        
+        # Category matching
+        category = skill.get("category", "")
+        if "python" in languages and category == "development":
+            score += 5
+        if ".md" in file_types or ".txt" in file_types:
+            if category in ["documents", "data"]:
+                score += 5
+        if ".json" in file_types or ".yaml" in file_types or ".toml" in file_types:
+            if "config" in skill_text or "yaml" in skill_text or "json" in skill_text:
+                score += 5
+        
+        # Quality bonus
+        quality = skill.get("quality_score", 0)
+        if quality >= 80:
+            score += 5
+        elif quality >= 60:
+            score += 3
+        
+        # Maintenance bonus
+        maint = skill.get("maintenance_status", "")
+        if maint == "active":
+            score += 3
+        elif maint == "maintained":
+            score += 1
+        
+        # Common useful skills for any project
+        if any(kw in skill_text for kw in ["git", "github", "code review", "testing", "debug"]):
+            score += 2
+        
+        if score > 0:
+            confidence = "high" if score >= 20 else "medium" if score >= 10 else "low"
+            scored_skills.append({
+                "skill": skill,
+                "score": score,
+                "reasons": reasons,
+                "confidence": confidence
+            })
+    
+    # Sort by score and take top recommendations
+    scored_skills.sort(key=lambda x: (-x["score"], -x["skill"].get("quality_score", 0)))
+    
+    for item in scored_skills[:10]:
+        skill = item["skill"]
+        reason = ", ".join(item["reasons"]) if item["reasons"] else "General purpose utility"
+        
+        recommendations.append({
+            "skill_id": skill["id"],
+            "reason": reason,
+            "confidence": item["confidence"]
+        })
+    
+    return recommendations
+
+
 def cmd_export(args):
     """Export installed skills to various formats."""
     from cli.loader import load_skills_from_dir, Skill
@@ -1957,12 +2365,28 @@ def cmd_export(args):
 
 def main():
     parser = argparse.ArgumentParser(
-        prog="skills",
-        description="The package manager for AI agent skills",
+        prog="skillsdir",
+        description="Informed discoverability for AI agent skills",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog=__doc__
+        epilog="""
+Informed Discoverability - Find the RIGHT skills for your project:
+
+  🎯 Quality scored (LGTM validation)
+  📊 Maintenance tracked (🟢 Active vs 🔴 Abandoned)
+  🛡️ Security validated (secrets + injection scanning)
+
+Examples:
+  skillsdir search "pdf extraction"    # Find skills with quality insights
+  skillsdir info anthropic/pdf         # See: 🟢 Active, LGTM 87/100, ✓ Security
+  
+  # Make informed decision, then install via skills.sh:
+  skills.sh install anthropic/pdf      # The actual package manager
+
+Problem: skills.sh has 30K+ skills. Which ones should you use?
+Solution: We provide quality metrics to make informed decisions.
+"""
     )
-    parser.add_argument("-v", "--version", action="version", version=f"skills {__version__}")
+    parser.add_argument("-v", "--version", action="version", version=f"skillsdir {__version__}")
     
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
     
@@ -1976,6 +2400,24 @@ def main():
     p_info = subparsers.add_parser("info", help="Show skill information")
     p_info.add_argument("skill_id", help="Skill ID (e.g., anthropic/web-researcher)")
     p_info.set_defaults(func=cmd_info)
+    
+    # suggest
+    p_suggest = subparsers.add_parser("suggest", help="Get AI-powered skill recommendations for your project",
+        description="""Analyze your project and get LLM-powered recommendations for relevant skills.
+
+This command will:
+1. Analyze your project structure (languages, frameworks, file types)
+2. Use AI to match your project with relevant skills from the catalog
+3. Rank recommendations by relevance, quality score, and maintenance status
+
+Examples:
+  skillsdir suggest                    # Analyze current directory
+  skillsdir suggest /path/to/project   # Analyze specific project
+  skillsdir suggest --verbose          # Show detailed analysis
+""")
+    p_suggest.add_argument("path", nargs="?", help="Project directory (default: current directory)")
+    p_suggest.add_argument("--verbose", "-v", action="store_true", help="Show detailed project analysis")
+    p_suggest.set_defaults(func=cmd_suggest)
     
     # install
     p_install = subparsers.add_parser("install", help="Install a skill",

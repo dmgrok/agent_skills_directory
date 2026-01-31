@@ -149,6 +149,22 @@
           },
           "maxItems": 10,
           "description": "Searchable tags extracted from skill content"
+        },
+        "days_since_update": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Number of days since the last update"
+        },
+        "maintenance_status": {
+          "type": ["string", "null"],
+          "enum": ["active", "maintained", "stale", "abandoned", null],
+          "description": "Maintenance status based on last update: active (<30d), maintained (<6mo), stale (<1yr), abandoned (>1yr)"
+        },
+        "quality_score": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Composite quality score (0-100) based on maintenance (50pts), documentation (30pts), and provider trust (20pts)"
         }
       }
     },

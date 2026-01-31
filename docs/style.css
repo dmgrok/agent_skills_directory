@@ -94,6 +94,28 @@ header h1 {
     opacity: 0.8;
 }
 
+.positioning-note {
+    background: rgba(102, 126, 234, 0.1);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin: 1rem auto 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: left;
+}
+
+.positioning-note a {
+    color: var(--primary);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.positioning-note a:hover {
+    color: var(--primary-hover);
+}
+
 /* Main Navigation Tabs */
 .main-tabs {
     display: flex;
@@ -457,6 +479,72 @@ main {
     border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
+/* Maintenance badges */
+.maintenance-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.maint-active {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.maint-maintained {
+    background: rgba(234, 179, 8, 0.15);
+    color: #eab308;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+.maint-stale {
+    background: rgba(249, 115, 22, 0.15);
+    color: #f97316;
+    border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+.maint-abandoned {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* Quality score badges */
+.quality-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.quality-excellent {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.quality-good {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.quality-fair {
+    background: rgba(234, 179, 8, 0.15);
+    color: #eab308;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+.quality-low {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
 .skill-name {
     font-size: 1.2rem;
     font-weight: 600;
@@ -637,6 +725,66 @@ main {
 
 .modal-header {
     margin-bottom: 1rem;
+}
+
+/* Quality indicator in modal */
+.quality-indicator {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid;
+}
+
+.quality-active {
+    background: rgba(34, 197, 94, 0.08);
+    border-left-color: #22c55e;
+}
+
+.quality-maintained {
+    background: rgba(234, 179, 8, 0.08);
+    border-left-color: #eab308;
+}
+
+.quality-stale {
+    background: rgba(249, 115, 22, 0.08);
+    border-left-color: #f97316;
+}
+
+.quality-abandoned {
+    background: rgba(239, 68, 68, 0.08);
+    border-left-color: #ef4444;
+}
+
+.quality-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.quality-emoji {
+    font-size: 1.2rem;
+}
+
+.quality-label {
+    font-size: 1rem;
+}
+
+.quality-score {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(251, 191, 36, 0.2);
+    color: #fbbf24;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.quality-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
 }
 
 .modal-header h2 {
@@ -1337,6 +1485,32 @@ footer a:hover {
     font-size: 0.85rem;
     color: var(--text);
     flex: 1;
+}
+
+.similar-score {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.score-diff {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.score-diff.positive {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+}
+
+.score-diff.negative {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
 }
 
 .similarity-badge {

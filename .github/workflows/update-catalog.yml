@@ -11,6 +11,11 @@ on:
         required: false
         default: false
         type: boolean
+      full_refresh:
+        description: 'Force full refresh (ignore state, fetch all providers)'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -34,7 +39,13 @@ jobs:
       
       - name: Run aggregation script
         run: |
-          python scripts/aggregate.py
+          if [ "${{ inputs.full_refresh }}" == "true" ]; then
+            echo "Running FULL REFRESH mode..."
+            python scripts/aggregate.py
+          else
+            echo "Running INCREMENTAL mode..."
+            python scripts/aggregate.py --incremental
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
@@ -56,7 +67,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add catalog.json catalog.min.json catalog.toon catalog.min.toon CHANGELOG.md
+          git add catalog.json catalog.min.json catalog.toon catalog.min.toon CHANGELOG.md aggregation_state.json
           git commit -m "Update catalog - ${{ steps.date.outputs.date }}"
           git push
       
