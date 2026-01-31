@@ -24,3 +24,8 @@ Thumbs.db
 dist/
 build/
 *.spec
+
+# Validation artifacts
+gitleaks*
+lgtm-results.json
+contributor-repo/

@@ -273,12 +273,12 @@ cd agent_skills_directory && pip install -e .</code></pre>
                     <div class="cli-commands">
                         <div class="cli-command" data-category="discovery">
                             <div class="command-header">
-                                <h4><code>skills search &lt;query&gt;</code></h4>
+                                <h4><code>skillsdir search &lt;query&gt;</code></h4>
                                 <span class="badge badge-discovery">Discovery</span>
                             </div>
                             <p>Search for skills by name, description, or tags</p>
                             <div class="code-block-wrapper">
-                                <pre><code>$ skills search "web scraping"
+                                <pre><code>$ skillsdir search "web scraping"
 Found 5 skill(s):
 
   anthropic/web-researcher
@@ -313,7 +313,7 @@ pdf
   tags:        pdf, documents, extraction
   repo:        https://github.com/anthropics/skills
 
-  Not installed. Run: skills install anthropic/pdf</code></pre>
+  Not installed. Run: skillsdir install anthropic/pdf</code></pre>
                                 <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
                                     <span class="copy-icon">📋</span>
                                     <span class="copy-text">Copy</span>
@@ -323,42 +323,42 @@ pdf
 
                         <div class="cli-command" data-category="installation">
                             <div class="command-header">
-                                <h4><code>skills install &lt;skill-id&gt;</code></h4>
+                                <h4><code>skillsdir install &lt;skill-id&gt;</code></h4>
                                 <span class="badge badge-install">Install</span>
                             </div>
                             <p>Install a skill to <code>~/.skills/installed/</code> (global) or project directory</p>
                             <div class="code-block-wrapper">
-                                <pre><code>$ skills install github/web-design-reviewer
+                                <pre><code>$ skillsdir install github/web-design-reviewer
 → Installing github/web-design-reviewer...
 ✓ Installed github/web-design-reviewer → ~/.skills/installed/github/web-design-reviewer
 
 # Install a specific version
-$ skills install anthropic/pdf@1.2.0
+$ skillsdir install anthropic/pdf@1.2.0
 
 # Force reinstall
-$ skills install anthropic/pdf --force
+$ skillsdir install anthropic/pdf --force
 
 # Global install (default)
-$ skills install anthropic/pdf
+$ skillsdir install anthropic/pdf
 → Installing anthropics/pdf [global]...
 ✓ Installed anthropics/pdf → ~/.skills/installed/anthropics/pdf
 
 # Project install (auto-detects agent)
-$ skills install anthropic/pdf --project
+$ skillsdir install anthropic/pdf --project
 → Installing anthropics/pdf [project (copilot)]...
 ✓ Installed anthropics/pdf → .github/skills/pdf
 → Tip: Reference this skill in your .github/copilot-instructions.md
 
 # Project install with specific agent
-$ skills install anthropic/pdf -p --agent claude
+$ skillsdir install anthropic/pdf -p --agent claude
 → Installing anthropics/pdf [project (claude)]...
 ✓ Installed anthropics/pdf → .claude/skills/pdf
 → Tip: Reference this skill in your CLAUDE.md
 
 # Other agents
-$ skills install anthropic/pdf -p --agent copilot  # .github/skills/
-$ skills install anthropic/pdf -p --agent codex    # .codex/skills/
-$ skills install anthropic/pdf -p --agent cursor   # .cursor/skills/</code></pre>
+$ skillsdir install anthropic/pdf -p --agent copilot  # .github/skills/
+$ skillsdir install anthropic/pdf -p --agent codex    # .codex/skills/
+$ skillsdir install anthropic/pdf -p --agent cursor   # .cursor/skills/</code></pre>
                                 <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
                                     <span class="copy-icon">📋</span>
                                     <span class="copy-text">Copy</span>
@@ -400,12 +400,12 @@ Installation Paths
 
                         <div class="cli-command" data-category="management">
                             <div class="command-header">
-                                <h4><code>skills list</code></h4>
+                                <h4><code>skillsdir list</code></h4>
                                 <span class="badge badge-manage">Manage</span>
                             </div>
                             <p>List all installed skills grouped by location</p>
                             <div class="code-block-wrapper">
-                                <pre><code>$ skills list
+                                <pre><code>$ skillsdir list
 
 Installed skills (3):
 
@@ -422,7 +422,7 @@ Installed skills (3):
     Next.js App Router development
 
 # Output as JSON
-$ skills list --json</code></pre>
+$ skillsdir list --json</code></pre>
                                 <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
                                     <span class="copy-icon">📋</span>
                                     <span class="copy-text">Copy</span>
@@ -432,12 +432,12 @@ $ skills list --json</code></pre>
 
                         <div class="cli-command" data-category="publishing">
                             <div class="command-header">
-                                <h4><code>skills init</code></h4>
+                                <h4><code>skillsdir init</code></h4>
                                 <span class="badge badge-publish">Publish</span>
                             </div>
                             <p>Create a new <code>skill.json</code> manifest interactively</p>
                             <div class="code-block-wrapper">
-                                <pre><code>$ skills init
+                                <pre><code>$ skillsdir init
 
 Creating skill.json
 
@@ -477,12 +477,12 @@ Remove anthropic/pdf from ~/.skills/installed/anthropic/pdf? [y/N] y
 
                         <div class="cli-command" data-category="management">
                             <div class="command-header">
-                                <h4><code>skills update</code></h4>
+                                <h4><code>skillsdir update</code></h4>
                                 <span class="badge badge-manage">Manage</span>
                             </div>
                             <p>Check for and apply updates to installed skills</p>
                             <div class="code-block-wrapper">
-                                <pre><code>$ skills update
+                                <pre><code>$ skillsdir update
 
 Updates available:
   anthropic/pdf
@@ -500,19 +500,19 @@ Update 2 skill(s)? [y/N] y
 
                         <div class="cli-command" data-category="management">
                             <div class="command-header">
-                                <h4><code>skills config</code></h4>
+                                <h4><code>skillsdir config</code></h4>
                                 <span class="badge badge-manage">Manage</span>
                             </div>
                             <p>View or modify CLI configuration</p>
                             <div class="code-block-wrapper">
-                                <pre><code>$ skills config list
+                                <pre><code>$ skillsdir config list
 {
   "registry": "https://cdn.jsdelivr.net/.../catalog.json",
   "cache_ttl": 3600,
   "auto_update": true
 }
 
-$ skills config set cache_ttl 7200
+$ skillsdir config set cache_ttl 7200
 ✓ Set cache_ttl = 7200</code></pre>
                                 <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
                                     <span class="copy-icon">📋</span>
@@ -838,13 +838,13 @@ curl -fsSL https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/
                             <div class="step-content">
                                 <h4>Search & Install Skills</h4>
                                 <pre><code># Search for skills
-skills search "pdf"
+skillsdir search "pdf"
 
 # Install globally
-skills install anthropic/pdf
+skillsdir install anthropic/pdf
 
 # Install to project (auto-detects agent)
-skills install anthropic/pdf --project</code></pre>
+skillsdir install anthropic/pdf --project</code></pre>
                             </div>
                         </div>
                         <div class="step">
@@ -852,10 +852,10 @@ skills install anthropic/pdf --project</code></pre>
                             <div class="step-content">
                                 <h4>Manage Installed Skills</h4>
                                 <pre><code># List installed skills
-skills list
+skillsdir list
 
 # Update skills
-skills update
+skillsdir update
 
 # Detect project agent
 skills detect</code></pre>

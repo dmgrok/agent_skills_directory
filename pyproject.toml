@@ -69,7 +69,7 @@ all = [
 ]
 
 [project.scripts]
-skills = "cli.skills:main"
+skillsdir = "cli.skills:main"
 
 [project.urls]
 Homepage = "https://github.com/dmgrok/agent_skills_directory"

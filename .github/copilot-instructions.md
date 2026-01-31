@@ -175,16 +175,16 @@ When adding a new feature that users can interact with (new JSON files, new data
 The CLI provides npm-like package management for skills:
 
 ### Commands
-- `skills search <query>` - Search skills by name/description/tags
+- `skillsdir search <query>` - Search skills by name/description/tags
 - `skills info <skill-id>` - Show detailed skill information
-- `skills install <skill-id>[@version]` - Install a skill to `~/.skills/installed/`
-- `skills uninstall <skill-id>` - Remove an installed skill
-- `skills list [--json]` - List installed skills
-- `skills init` - Create a new skill.json manifest interactively
-- `skills update` - Check for and apply updates
-- `skills config list|get|set` - Manage CLI configuration
-- `skills cache clean|list` - Manage cache
-- `skills run <skill-id>` - Preview/run a skill (placeholder for runtime integration)
+- `skillsdir install <skill-id>[@version]` - Install a skill to `~/.skills/installed/`
+- `skillsdir uninstall <skill-id>` - Remove an installed skill
+- `skillsdir list [--json]` - List installed skills
+- `skillsdir init` - Create a new skill.json manifest interactively
+- `skillsdir update` - Check for and apply updates
+- `skillsdir config list|get|set` - Manage CLI configuration
+- `skillsdir cache clean|list` - Manage cache
+- `skillsdir run <skill-id>` - Preview/run a skill (placeholder for runtime integration)
 
 ### Local Registry Structure
 ```
