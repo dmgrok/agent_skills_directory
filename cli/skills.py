@@ -1979,6 +1979,61 @@ def find_readme(project_path: Path) -> Optional[Path]:
     return None
 
 
+def count_similar_skills(skill: Dict, all_skills: List[Dict]) -> int:
+    """Count how many similar skills exist in the catalog."""
+    skill_name = skill["name"].lower()
+    skill_desc = skill.get("description", "").lower()
+    skill_tags = set(t.lower() for t in skill.get("tags", []))
+    skill_category = skill.get("category", "").lower()
+    skill_id = skill["id"]
+    
+    similar_count = 0
+    
+    for other_skill in all_skills:
+        if other_skill["id"] == skill_id:
+            continue
+        
+        other_name = other_skill["name"].lower()
+        other_desc = other_skill.get("description", "").lower()
+        other_tags = set(t.lower() for t in other_skill.get("tags", []))
+        other_category = other_skill.get("category", "").lower()
+        
+        similarity_score = 0
+        
+        # Same category
+        if skill_category and skill_category == other_category:
+            similarity_score += 1
+        
+        # Tag overlap
+        tag_overlap = len(skill_tags & other_tags)
+        if tag_overlap >= 2:
+            similarity_score += 2
+        elif tag_overlap >= 1:
+            similarity_score += 1
+        
+        # Name similarity (common words)
+        skill_words = set(skill_name.split())
+        other_words = set(other_name.split())
+        name_overlap = len(skill_words & other_words)
+        if name_overlap >= 2:
+            similarity_score += 2
+        elif name_overlap >= 1:
+            similarity_score += 1
+        
+        # Description keyword overlap
+        skill_desc_words = set(extract_keywords(skill_desc))
+        other_desc_words = set(extract_keywords(other_desc))
+        desc_overlap = len(skill_desc_words & other_desc_words)
+        if desc_overlap >= 3:
+            similarity_score += 1
+        
+        # Consider similar if score >= 3
+        if similarity_score >= 3:
+            similar_count += 1
+    
+    return similar_count
+
+
 def extract_keywords(text: str, min_length: int = 3) -> set:
     """Extract meaningful keywords from text."""
     # Remove markdown, code blocks, URLs
@@ -2245,6 +2300,14 @@ RESPONSE FORMAT (JSON only):
     
     print(f"{Colors.BOLD}Recommended Skills for Your Project:{Colors.RESET}\n")
     
+    # Calculate similar skills for each recommendation
+    similar_counts = {}
+    for rec in recommendations:
+        skill = find_skill(catalog, rec["skill_id"])
+        if skill:
+            similar_count = count_similar_skills(skill, skills_list)
+            similar_counts[rec["skill_id"]] = similar_count
+    
     for i, rec in enumerate(recommendations, 1):
         skill_id = rec["skill_id"]
         reason = rec["reason"]
@@ -2261,11 +2324,54 @@ RESPONSE FORMAT (JSON only):
             "low": Colors.DIM
         }.get(confidence, Colors.RESET)
         
+        # Quality and maintenance indicators
         quality_score = skill.get("quality_score", 0)
-        score_badge = f"{Colors.GREEN}⭐{quality_score}{Colors.RESET}" if quality_score >= 80 else f"{Colors.YELLOW}⭐{quality_score}{Colors.RESET}"
+        if quality_score >= 80:
+            quality_badge = f"{Colors.GREEN}⭐{quality_score}{Colors.RESET}"
+            quality_label = f"{Colors.GREEN}High Quality{Colors.RESET}"
+        elif quality_score >= 60:
+            quality_badge = f"{Colors.YELLOW}⭐{quality_score}{Colors.RESET}"
+            quality_label = f"{Colors.YELLOW}Good Quality{Colors.RESET}"
+        else:
+            quality_badge = f"{Colors.DIM}⭐{quality_score}{Colors.RESET}"
+            quality_label = f"{Colors.DIM}Quality: {quality_score}{Colors.RESET}"
         
-        print(f"  {Colors.BOLD}{i}. {skill_id}{Colors.RESET} {score_badge} {confidence_color}({confidence} confidence){Colors.RESET}")
+        maint_status = skill.get("maintenance_status", "unknown")
+        maint_emoji = {"active": "🟢", "maintained": "🟡", "stale": "🟠", "abandoned": "🔴"}.get(maint_status, "⚪")
+        maint_label = maint_status.capitalize()
+        
+        days_since = skill.get("days_since_update")
+        if days_since is not None:
+            if days_since < 30:
+                days_label = f"{Colors.GREEN}{days_since}d ago{Colors.RESET}"
+            elif days_since < 180:
+                days_label = f"{Colors.YELLOW}{days_since}d ago{Colors.RESET}"
+            else:
+                days_label = f"{Colors.DIM}{days_since}d ago{Colors.RESET}"
+        else:
+            days_label = ""
+        
+        # Similar skills count
+        similar_count = similar_counts.get(skill_id, 0)
+        similar_label = f"{Colors.CYAN}{similar_count} similar{Colors.RESET}" if similar_count > 0 else ""
+        
+        # Header line
+        print(f"  {Colors.BOLD}{i}. {skill_id}{Colors.RESET} {quality_badge} {confidence_color}({confidence}){Colors.RESET}")
+        
+        # Description
         print(f"     {Colors.DIM}{skill.get('description', 'No description')[:80]}{Colors.RESET}")
+        
+        # Metrics line
+        metrics_parts = []
+        metrics_parts.append(f"{maint_emoji} {maint_label}")
+        if days_label:
+            metrics_parts.append(f"Updated: {days_label}")
+        metrics_parts.append(quality_label)
+        if similar_label:
+            metrics_parts.append(similar_label)
+        print(f"     {Colors.DIM}│{Colors.RESET} {f' {Colors.DIM}•{Colors.RESET} '.join(metrics_parts)}")
+        
+        # Reason
         print(f"     {Colors.CYAN}→{Colors.RESET} {reason}")
         print()
     
