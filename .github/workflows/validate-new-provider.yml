@@ -2,7 +2,13 @@ name: Validate and Add New Provider
 
 on:
   issues:
-    types: [opened, edited]
+    types: [opened, edited, labeled]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Issue number to validate'
+        required: true
+        type: number
 
 permissions:
   contents: write
