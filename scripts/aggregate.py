@@ -330,6 +330,42 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/travisvn/awesome-claude-skills/main",
         "skills_path_prefix": "",
     },
+    # New community providers from GitHub search
+    "obsidian-plugin": {
+        "name": "Obsidian Plugin Development",
+        "repo": "https://github.com/gapmiss/obsidian-plugin-skill",
+        "api_tree_url": "https://api.github.com/repos/gapmiss/obsidian-plugin-skill/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/gapmiss/obsidian-plugin-skill/main",
+        "skills_path_prefix": ".claude/skills/",
+    },
+    "stream-coding": {
+        "name": "Stream Coding Methodology",
+        "repo": "https://github.com/frmoretto/stream-coding",
+        "api_tree_url": "https://api.github.com/repos/frmoretto/stream-coding/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/frmoretto/stream-coding/main",
+        "skills_path_prefix": "skills/",
+    },
+    "ipsw-skill": {
+        "name": "IPSW iOS Firmware",
+        "repo": "https://github.com/blacktop/ipsw-skill",
+        "api_tree_url": "https://api.github.com/repos/blacktop/ipsw-skill/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/blacktop/ipsw-skill/main",
+        "skills_path_prefix": "skill/",
+    },
+    "visionos-agents": {
+        "name": "visionOS Development",
+        "repo": "https://github.com/tomkrikorian/visionOSAgents",
+        "api_tree_url": "https://api.github.com/repos/tomkrikorian/visionOSAgents/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/tomkrikorian/visionOSAgents/main",
+        "skills_path_prefix": "skills/",
+    },
+    "skills-to-agents": {
+        "name": "Skills to Agents Converter",
+        "repo": "https://github.com/dave1010/skills-to-agents",
+        "api_tree_url": "https://api.github.com/repos/dave1010/skills-to-agents/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/dave1010/skills-to-agents/main",
+        "skills_path_prefix": "",
+    },
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
