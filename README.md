@@ -173,10 +173,10 @@ cd agent_skills_directory && pip install -e .
 
 ## Usage
 
-### AI-Powered Skill Recommendations
+### Smart Skill Recommendations
 
 ```bash
-# Let AI analyze your project and suggest skills
+# Intelligent skill recommendations based on your project
 skillsdir suggest
 
 # Analyze a specific project
@@ -184,13 +184,17 @@ skillsdir suggest /path/to/project
 
 # Show detailed analysis
 skillsdir suggest --verbose
+
+# Optional: Enhance with LLM (requires Perplexity MCP)
+skillsdir suggest --llm
 ```
 
-The `suggest` command:
-- Reads your project's README to understand its purpose
-- Analyzes file types, languages, and frameworks
-- Uses LLM (via Perplexity MCP) to match your project with relevant skills from the catalog
-- Provides quality-scored recommendations with confidence levels
+The `suggest` command uses a sophisticated scoring algorithm:
+- **README keyword matching** - Extracts and matches technical terms
+- **Language/framework detection** - Identifies your tech stack from files
+- **Domain-specific patterns** - Detects API, database, testing, devops contexts
+- **Quality scoring** - Prioritizes well-maintained, high-quality skills
+- **100% local** - No LLM or external API required for excellent results
 
 ### Search & Discover
 
