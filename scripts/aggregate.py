@@ -211,6 +211,13 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/aiqualitylab/agent-skills/main",
         "skills_path_prefix": "skills/",
     },
+    "stripe": {
+        "name": "Stripe",
+        "repo": "https://github.com/stripe/ai",
+        "api_tree_url": "https://api.github.com/repos/stripe/ai/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/stripe/ai/main",
+        "skills_path_prefix": "skills/",
+    },
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
