@@ -62,6 +62,12 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
       
+      - name: Copy catalog files to docs directory
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          cp catalog.json catalog.min.json bundles.json docs/
+          git add docs/catalog.json docs/catalog.min.json docs/bundles.json
+      
       - name: Commit changes
         if: steps.changes.outputs.changed == 'true'
         run: |
