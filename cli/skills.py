@@ -2197,49 +2197,41 @@ RESPONSE FORMAT (JSON only):
   ]
 }}"""
 
-    # Try to get LLM recommendations
-    recommendations = None
+    # Use enhanced heuristic search (fast, accurate, no LLM needed)
     project_summary = None
+    recommendations = generate_enhanced_recommendations(
+        relevant_skills, 
+        readme_content, 
+        analysis, 
+        top_n=10
+    )
     
-    try:
-        print_info("Requesting LLM analysis via Perplexity...")
-        
-        # Use Perplexity reasoning for analysis
-        result = mcp_perplexity_perplexity_reason(
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
-            strip_thinking=True
-        )
-        
-        # Parse LLM response
-        response_text = result.get("content", "")
-        
-        # Extract JSON from response (handle markdown code blocks)
-        json_match = re.search(r'```json\s*({.*?})\s*```', response_text, re.DOTALL)
-        if json_match:
-            response_text = json_match.group(1)
-        elif response_text.strip().startswith('{'):
-            # Already JSON
-            pass
-        
-        parsed = json.loads(response_text)
-        recommendations = parsed.get("recommendations", [])
-        project_summary = parsed.get("project_summary")
-        
-        print_success("LLM analysis completed")
-        
-    except NameError:
-        # MCP not available
-        print_warning("Perplexity MCP not available. Using heuristic analysis...")
-        recommendations = None
-    except Exception as e:
-        print_warning(f"LLM analysis failed: {e}. Using heuristic analysis...")
-        recommendations = None
-    
-    # Fall back to heuristics if LLM failed
-    if not recommendations:
-        recommendations = generate_heuristic_suggestions(analysis, skills_summary, readme_content)
+    # Optional: Try LLM enhancement if --llm flag is set (future feature)
+    if getattr(args, 'use_llm', False):
+        try:
+            print_info("Enhancing with LLM analysis via Perplexity...")
+            
+            result = mcp_perplexity_perplexity_reason(
+                messages=[{"role": "user", "content": prompt}],
+                strip_thinking=True
+            )
+            
+            response_text = result.get("content", "")
+            json_match = re.search(r'```json\s*({.*?})\s*```', response_text, re.DOTALL)
+            if json_match:
+                response_text = json_match.group(1)
+            
+            parsed = json.loads(response_text)
+            llm_recommendations = parsed.get("recommendations", [])
+            project_summary = parsed.get("project_summary")
+            
+            if llm_recommendations:
+                recommendations = llm_recommendations
+                print_success("LLM enhancement completed")
+                
+        except Exception as e:
+            if args.verbose:
+                print_warning(f"LLM enhancement skipped: {e}")
     
     # Display recommendations
     if not recommendations:
@@ -2285,99 +2277,173 @@ RESPONSE FORMAT (JSON only):
     return 0
 
 
-def generate_heuristic_suggestions(analysis: Dict, skills: List[Dict], readme_content: str = "") -> List[Dict]:
-    """Generate skill suggestions using heuristics when LLM is not available."""
-    recommendations = []
-    
-    languages = set(analysis.get("languages", []))
-    frameworks = set(analysis.get("frameworks", []))
-    file_types = set(analysis.get("file_types", []))
+def generate_enhanced_recommendations(
+    skills: List[Dict],
+    readme_content: str,
+    analysis: Dict,
+    top_n: int = 10
+) -> List[Dict]:
+    """
+    Generate high-quality skill recommendations using enhanced heuristics.
+    No LLM needed - uses sophisticated scoring algorithm.
+    """
     readme_lower = readme_content.lower() if readme_content else ""
+    readme_keywords = extract_keywords(readme_content) if readme_content else set()
     
-    # Score each skill based on relevance
+    languages = set(l.lower() for l in analysis.get("languages", []))
+    frameworks = set(f.lower() for f in analysis.get("frameworks", []))
+    file_types = set(analysis.get("file_types", []))
+    
     scored_skills = []
+    
     for skill in skills:
         score = 0
         reasons = []
         
+        skill_id = skill["id"]
         skill_name = skill["name"].lower()
         skill_desc = skill.get("description", "").lower()
         skill_tags = [t.lower() for t in skill.get("tags", [])]
-        skill_text = f"{skill_name} {skill_desc} {' '.join(skill_tags)}"
+        skill_category = skill.get("category", "").lower()
         
-        # README keyword matching (highest weight)
+        # Primary matching: README keywords
+        if readme_keywords:
+            # Exact keyword matches in skill name (highest weight)
+            name_words = set(skill_name.split())
+            name_matches = readme_keywords & name_words
+            if name_matches:
+                score += 30
+                reasons.append(f"name matches: {', '.join(list(name_matches)[:2])}")
+            
+            # Keyword matches in tags (high weight)
+            tag_matches = readme_keywords & set(skill_tags)
+            if tag_matches:
+                score += 25
+                reasons.append(f"tags match: {', '.join(list(tag_matches)[:2])}")
+            
+            # Keyword matches in description (medium weight)
+            desc_words = set(extract_keywords(skill_desc))
+            desc_matches = readme_keywords & desc_words
+            if len(desc_matches) >= 2:
+                score += 15
+                reasons.append(f"{len(desc_matches)} keyword matches")
+        
+        # Language/framework matching
+        for lang in languages:
+            if lang in skill_tags:
+                score += 20
+                reasons.append(f"supports {lang}")
+                break
+            elif lang in skill_name or lang in skill_desc:
+                score += 10
+                reasons.append(f"mentions {lang}")
+                break
+        
+        for framework in frameworks:
+            if framework in skill_tags or framework in skill_name:
+                score += 20
+                reasons.append(f"supports {framework}")
+                break
+            elif framework in skill_desc:
+                score += 10
+                reasons.append(f"mentions {framework}")
+                break
+        
+        # Domain-specific matching (from README context)
         if readme_lower:
-            skill_keywords = [skill["name"].lower()] + skill_tags[:5]
-            for keyword in skill_keywords:
-                if len(keyword) > 3 and keyword in readme_lower:
+            domain_keywords = {
+                'api': ['api', 'rest', 'graphql', 'endpoint', 'swagger'],
+                'database': ['database', 'sql', 'postgres', 'mysql', 'mongodb', 'redis'],
+                'testing': ['test', 'testing', 'pytest', 'jest', 'cypress'],
+                'devops': ['docker', 'kubernetes', 'deploy', 'ci/cd', 'github-actions'],
+                'frontend': ['react', 'vue', 'angular', 'frontend', 'ui', 'component'],
+                'backend': ['backend', 'server', 'express', 'fastapi', 'django'],
+                'ml': ['machine-learning', 'ml', 'tensorflow', 'pytorch', 'model'],
+                'docs': ['documentation', 'docs', 'readme', 'markdown']
+            }
+            
+            for domain, keywords in domain_keywords.items():
+                readme_has_domain = any(kw in readme_lower for kw in keywords)
+                skill_in_domain = any(kw in skill_name or kw in skill_desc or kw in skill_tags for kw in keywords)
+                
+                if readme_has_domain and skill_in_domain:
                     score += 15
-                    reasons.append(f"mentioned in README")
+                    reasons.append(f"{domain} domain match")
                     break
         
-        # Language matching
-        for lang in languages:
-            if lang in skill_text:
-                score += 10
-                reasons.append(f"matches {lang}")
-        
-        # Framework matching
-        for framework in frameworks:
-            if framework in skill_text:
-                score += 15
-                reasons.append(f"supports {framework}")
-        
-        # Category matching
-        category = skill.get("category", "")
-        if "python" in languages and category == "development":
-            score += 5
-        if ".md" in file_types or ".txt" in file_types:
-            if category in ["documents", "data"]:
-                score += 5
-        if ".json" in file_types or ".yaml" in file_types or ".toml" in file_types:
-            if "config" in skill_text or "yaml" in skill_text or "json" in skill_text:
-                score += 5
-        
-        # Quality bonus
+        # Quality and maintenance scoring
         quality = skill.get("quality_score", 0)
         if quality >= 80:
-            score += 5
+            score += 10
+            reasons.append("high quality")
         elif quality >= 60:
-            score += 3
+            score += 5
         
-        # Maintenance bonus
         maint = skill.get("maintenance_status", "")
         if maint == "active":
-            score += 3
+            score += 8
+            reasons.append("actively maintained")
         elif maint == "maintained":
-            score += 1
+            score += 4
         
-        # Common useful skills for any project
-        if any(kw in skill_text for kw in ["git", "github", "code review", "testing", "debug"]):
-            score += 2
+        # Category relevance bonuses
+        if skill_category:
+            if languages and skill_category == "development":
+                score += 5
+            if file_types and any(ext in ['.json', '.yaml', '.toml', '.xml'] for ext in file_types):
+                if skill_category == "data":
+                    score += 5
+            if readme_lower and 'document' in readme_lower and skill_category == "documents":
+                score += 5
+        
+        # Provider trust score (official providers get slight boost)
+        provider = skill_id.split('/')[0]
+        trusted_providers = {
+            'anthropics', 'openai', 'github', 'vercel', 'cloudflare',
+            'stripe', 'supabase', 'huggingface'
+        }
+        if provider in trusted_providers:
+            score += 3
         
         if score > 0:
-            confidence = "high" if score >= 20 else "medium" if score >= 10 else "low"
+            # Determine confidence level
+            if score >= 50:
+                confidence = "high"
+            elif score >= 30:
+                confidence = "medium"
+            else:
+                confidence = "low"
+            
             scored_skills.append({
-                "skill": skill,
                 "score": score,
+                "skill": skill,
                 "reasons": reasons,
                 "confidence": confidence
             })
     
-    # Sort by score and take top recommendations
+    # Sort by score and quality
     scored_skills.sort(key=lambda x: (-x["score"], -x["skill"].get("quality_score", 0)))
     
-    for item in scored_skills[:10]:
-        skill = item["skill"]
-        reason = ", ".join(item["reasons"]) if item["reasons"] else "General purpose utility"
-        
+    # Convert to recommendation format
+    recommendations = []
+    for item in scored_skills[:top_n]:
+        reason = "; ".join(item["reasons"][:3]) if item["reasons"] else "General utility"
         recommendations.append({
-            "skill_id": skill["id"],
+            "skill_id": item["skill"]["id"],
             "reason": reason,
-            "confidence": item["confidence"]
+            "confidence": item["confidence"],
+            "score": item["score"]  # Include for debugging
         })
     
     return recommendations
+
+
+def generate_heuristic_suggestions(analysis: Dict, skills: List[Dict], readme_content: str = "") -> List[Dict]:
+    """
+    Legacy heuristic function - now redirects to enhanced version.
+    Kept for backward compatibility.
+    """
+    return generate_enhanced_recommendations(skills, readme_content, analysis, top_n=10)
 
 
 def cmd_export(args):
@@ -2524,20 +2590,27 @@ Solution: We provide quality metrics to make informed decisions.
     
     # suggest
     p_suggest = subparsers.add_parser("suggest", help="Get AI-powered skill recommendations for your project",
-        description="""Analyze your project and get LLM-powered recommendations for relevant skills.
+        description="""Analyze your project and get intelligent recommendations for relevant skills.
 
-This command will:
-1. Analyze your project structure (languages, frameworks, file types)
-2. Use AI to match your project with relevant skills from the catalog
-3. Rank recommendations by relevance, quality score, and maintenance status
+This command uses a sophisticated scoring algorithm to match your project with skills from
+the catalog. No LLM required - works entirely locally with excellent results.
+
+The algorithm considers:
+- README content and keywords
+- Project languages and frameworks  
+- File types and structure
+- Skill quality scores and maintenance status
+- Domain-specific patterns (API, database, testing, etc.)
 
 Examples:
   skillsdir suggest                    # Analyze current directory
   skillsdir suggest /path/to/project   # Analyze specific project
   skillsdir suggest --verbose          # Show detailed analysis
+  skillsdir suggest --llm              # Enhance with LLM (requires MCP)
 """)
     p_suggest.add_argument("path", nargs="?", help="Project directory (default: current directory)")
     p_suggest.add_argument("--verbose", "-v", action="store_true", help="Show detailed project analysis")
+    p_suggest.add_argument("--llm", action="store_true", dest="use_llm", help="Enhance with LLM analysis (optional, requires Perplexity MCP)")
     p_suggest.set_defaults(func=cmd_suggest)
     
     # install
