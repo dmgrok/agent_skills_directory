@@ -1,63 +1,63 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.01.31",
-  "generated_at": "2026-01-31T13:11:16.672964+00:00",
-  "total_skills": 245,
+  "version": "2026.02.01",
+  "generated_at": "2026-02-01T07:03:09.990560+00:00",
+  "total_skills": 269,
   "providers": {
     "anthropics": {
       "name": "Anthropic",
       "repo": "https://github.com/anthropics/skills",
       "skills_count": 16,
-      "stars": 59377,
+      "stars": 59804,
       "description": "Public repository for Agent Skills"
     },
     "openai": {
       "name": "OpenAI",
       "repo": "https://github.com/openai/skills",
-      "skills_count": 21,
-      "stars": 2240,
+      "skills_count": 33,
+      "stars": 2262,
       "description": "Skills Catalog for Codex"
     },
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
       "skills_count": 29,
-      "stars": 19674,
+      "stars": 19732,
       "description": "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
     },
     "vercel": {
       "name": "Vercel",
       "repo": "https://github.com/vercel-labs/agent-skills",
       "skills_count": 5,
-      "stars": 18150,
+      "stars": 18238,
       "description": "Vercel's official collection of agent skills"
     },
     "huggingface": {
       "name": "HuggingFace",
       "repo": "https://github.com/huggingface/skills",
       "skills_count": 8,
-      "stars": 1116,
+      "stars": 1124,
       "description": null
     },
     "skillcreatorai": {
       "name": "SkillCreator.ai",
       "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
       "skills_count": 47,
-      "stars": 653,
+      "stars": 657,
       "description": "Homebrew for AI Agent Skills."
     },
     "obra-superpowers": {
       "name": "Obra Superpowers",
       "repo": "https://github.com/obra/superpowers",
       "skills_count": 14,
-      "stars": 40873,
+      "stars": 41201,
       "description": "An agentic skills framework & software development methodology that works."
     },
     "tapestry": {
       "name": "Tapestry Skills",
       "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
       "skills_count": 4,
-      "stars": 196,
+      "stars": 198,
       "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
     },
     "sanjay-ai-skills": {
@@ -71,35 +71,35 @@
       "name": "AWS Skills",
       "repo": "https://github.com/zxkane/aws-skills",
       "skills_count": 5,
-      "stars": 113,
+      "stars": 114,
       "description": "Claude Agent Skills for AWS"
     },
     "claude-marketplace-engineering": {
       "name": "Claude Marketplace (Engineering)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 5,
-      "stars": 294,
+      "stars": 300,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-visual": {
       "name": "Claude Marketplace (Visual)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 5,
-      "stars": 294,
+      "stars": 300,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-code": {
       "name": "Claude Marketplace (Code Ops)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 4,
-      "stars": 294,
+      "stars": 300,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "claude-marketplace-productivity": {
       "name": "Claude Marketplace (Productivity)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 4,
-      "stars": 294,
+      "stars": 300,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
     "epub-skill": {
@@ -113,21 +113,21 @@
       "name": "D3.js Visualization",
       "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
       "skills_count": 1,
-      "stars": 87,
+      "stars": 88,
       "description": "A Claude skill for d3.js."
     },
     "ffuf-skill": {
       "name": "FFUF Web Fuzzing",
       "repo": "https://github.com/jthack/ffuf_claude_skill",
       "skills_count": 1,
-      "stars": 104,
+      "stars": 105,
       "description": "This is a \"skill\" for claude to use FFUF."
     },
     "ios-simulator-skill": {
       "name": "iOS Simulator",
       "repo": "https://github.com/conorluddy/ios-simulator-skill",
       "skills_count": 1,
-      "stars": 440,
+      "stars": 442,
       "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
     },
     "move-quality-skill": {
@@ -141,7 +141,7 @@
       "name": "Playwright Automation",
       "repo": "https://github.com/lackeyjb/playwright-skill",
       "skills_count": 1,
-      "stars": 1541,
+      "stars": 1546,
       "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
     },
     "pypict-skill": {
@@ -155,21 +155,21 @@
       "name": "CSV Data Summarizer",
       "repo": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill",
       "skills_count": 1,
-      "stars": 204,
+      "stars": 206,
       "description": "A Claude Skill that automatically analyzes uploaded CSV files \u2014 generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
     },
     "family-history-skill": {
       "name": "Family History Research",
       "repo": "https://github.com/emaynard/claude-family-history-research-skill",
       "skills_count": 1,
-      "stars": 27,
+      "stars": 28,
       "description": "A Claude Skill to assist with family history and genealogy research planning."
     },
     "notebooklm-skill": {
       "name": "NotebookLM Integration",
       "repo": "https://github.com/PleasePrompto/notebooklm-skill",
       "skills_count": 1,
-      "stars": 2997,
+      "stars": 3024,
       "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
     },
     "aiqualitylab": {
@@ -183,63 +183,63 @@
       "name": "Stripe",
       "repo": "https://github.com/stripe/ai",
       "skills_count": 2,
-      "stars": 1238,
+      "stars": 1241,
       "description": "One-stop shop for building AI-powered products and businesses with Stripe."
     },
     "cloudflare": {
       "name": "Cloudflare",
       "repo": "https://github.com/cloudflare/skills",
       "skills_count": 7,
-      "stars": 203,
-      "description": null
+      "stars": 206,
+      "description": "Skills for teaching agents how to better built on Cloudflare."
     },
     "trailofbits": {
       "name": "Trail of Bits Security",
       "repo": "https://github.com/trailofbits/skills",
       "skills_count": 0,
-      "stars": 2255,
+      "stars": 2276,
       "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
     },
     "expo": {
       "name": "Expo",
       "repo": "https://github.com/expo/skills",
       "skills_count": 0,
-      "stars": 813,
+      "stars": 820,
       "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services"
     },
     "getsentry": {
       "name": "Sentry",
       "repo": "https://github.com/getsentry/skills",
       "skills_count": 0,
-      "stars": 167,
+      "stars": 168,
       "description": "Agent Skills used by the Sentry team for development."
     },
     "supabase": {
       "name": "Supabase",
       "repo": "https://github.com/supabase/agent-skills",
       "skills_count": 1,
-      "stars": 956,
+      "stars": 972,
       "description": "Agent Skills to help developers using AI agents with Supabase"
     },
     "google-labs-stitch": {
       "name": "Google Labs Stitch",
       "repo": "https://github.com/google-labs-code/stitch-skills",
       "skills_count": 4,
-      "stars": 988,
+      "stars": 1011,
       "description": null
     },
     "composiohq": {
       "name": "ComposioHQ",
       "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
       "skills_count": 32,
-      "stars": 28510,
+      "stars": 28706,
       "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
     },
     "better-auth": {
       "name": "Better Auth",
       "repo": "https://github.com/better-auth/skills",
       "skills_count": 0,
-      "stars": 89,
+      "stars": 90,
       "description": null
     },
     "tinybird": {
@@ -267,36 +267,71 @@
       "name": "Remotion",
       "repo": "https://github.com/remotion-dev/skills",
       "skills_count": 1,
-      "stars": 1158,
+      "stars": 1177,
       "description": "Agent Skills"
     },
     "nginity": {
       "name": "nginity Enterprise",
       "repo": "https://github.com/alirezarezvani/claude-skills",
       "skills_count": 0,
-      "stars": 1491,
+      "stars": 1504,
       "description": "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
     },
     "voltagent": {
       "name": "VoltAgent Catalog",
       "repo": "https://github.com/VoltAgent/awesome-agent-skills",
       "skills_count": 0,
-      "stars": 5249,
+      "stars": 5428,
       "description": "Claude Code Skills and 200+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
     },
     "heilcheng": {
       "name": "heilcheng Catalog",
       "repo": "https://github.com/heilcheng/awesome-agent-skills",
       "skills_count": 0,
-      "stars": 1846,
+      "stars": 1859,
       "description": "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Copilot, VS Code)"
     },
     "travisvn": {
       "name": "travisvn Collection",
       "repo": "https://github.com/travisvn/awesome-claude-skills",
       "skills_count": 0,
-      "stars": 6317,
+      "stars": 6356,
       "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows \u2014 particularly Claude Code"
+    },
+    "obsidian-plugin": {
+      "name": "Obsidian Plugin Development",
+      "repo": "https://github.com/gapmiss/obsidian-plugin-skill",
+      "skills_count": 1,
+      "stars": 66,
+      "description": "CLAUDE SKILL for Obsidian.md plugin development"
+    },
+    "stream-coding": {
+      "name": "Stream Coding Methodology",
+      "repo": "https://github.com/frmoretto/stream-coding",
+      "skills_count": 1,
+      "stars": 42,
+      "description": "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
+    },
+    "ipsw-skill": {
+      "name": "IPSW iOS Firmware",
+      "repo": "https://github.com/blacktop/ipsw-skill",
+      "skills_count": 1,
+      "stars": 37,
+      "description": "A SKILL.md for ipsw"
+    },
+    "visionos-agents": {
+      "name": "visionOS Development",
+      "repo": "https://github.com/tomkrikorian/visionOSAgents",
+      "skills_count": 9,
+      "stars": 35,
+      "description": "AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform"
+    },
+    "skills-to-agents": {
+      "name": "Skills to Agents Converter",
+      "repo": "https://github.com/dave1010/skills-to-agents",
+      "skills_count": 0,
+      "stars": 25,
+      "description": "Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md"
     }
   },
   "categories": [
@@ -337,7 +372,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 2,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "anthropics/algorithmic-art",
@@ -366,6 +404,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
       "similar_skills": [
         {
           "id": "skillcreatorai/algorithmic-art",
@@ -405,6 +446,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
       "similar_skills": [
         {
           "id": "skillcreatorai/brand-guidelines",
@@ -449,6 +493,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
       "similar_skills": [
         {
           "id": "skillcreatorai/canvas-design",
@@ -492,6 +539,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 58,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
       "similar_skills": [
         {
           "id": "skillcreatorai/doc-coauthoring",
@@ -530,6 +580,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
       "similar_skills": [
         {
           "id": "skillcreatorai/docx",
@@ -572,6 +625,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 58,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
       "similar_skills": [
         {
           "id": "skillcreatorai/frontend-design",
@@ -610,6 +666,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
       "similar_skills": [
         {
           "id": "skillcreatorai/internal-comms",
@@ -653,6 +712,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 80,
       "similar_skills": [
         {
           "id": "skillcreatorai/mcp-builder",
@@ -695,6 +757,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
       "similar_skills": [
         {
           "id": "openai/pdf",
@@ -741,6 +806,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
       "similar_skills": [
         {
           "id": "skillcreatorai/pptx",
@@ -783,6 +851,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 80,
       "similar_skills": [
         {
           "id": "openai/skill-creator",
@@ -831,6 +902,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
       "similar_skills": [
         {
           "id": "skillcreatorai/slack-gif-creator",
@@ -873,6 +947,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
       "similar_skills": [
         {
           "id": "skillcreatorai/theme-factory",
@@ -914,7 +991,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 70
     },
     {
       "id": "anthropics/webapp-testing",
@@ -944,6 +1024,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
       "similar_skills": [
         {
           "id": "github/webapp-testing",
@@ -992,6 +1075,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 61,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
       "similar_skills": [
         {
           "id": "skillcreatorai/xlsx",
@@ -1033,7 +1119,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 16,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "aws-skills/aws-cdk-development",
@@ -1064,7 +1153,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 16,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "aws-skills/aws-cost-operations",
@@ -1096,7 +1188,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 16,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "aws-skills/aws-mcp-setup",
@@ -1129,7 +1224,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 16,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "aws-skills/aws-serverless-eda",
@@ -1160,7 +1258,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 16,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "claude-marketplace-code/code-execution",
@@ -1191,7 +1292,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "claude-marketplace-code/code-refactor",
@@ -1222,7 +1326,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "claude-marketplace-code/code-transfer",
@@ -1253,7 +1360,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 60
     },
     {
       "id": "claude-marketplace-code/file-operations",
@@ -1282,7 +1392,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "claude-marketplace-engineering/ensemble-solving",
@@ -1312,7 +1425,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 17,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "claude-marketplace-engineering/feature-planning",
@@ -1340,7 +1456,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 60
     },
     {
       "id": "claude-marketplace-engineering/git-pushing",
@@ -1369,7 +1488,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 60
     },
     {
       "id": "claude-marketplace-engineering/review-implementing",
@@ -1398,7 +1520,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "claude-marketplace-engineering/test-fixing",
@@ -1427,7 +1552,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "claude-marketplace-productivity/code-auditor",
@@ -1458,7 +1586,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "claude-marketplace-productivity/codebase-documenter",
@@ -1488,7 +1619,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "claude-marketplace-productivity/conversation-analyzer",
@@ -1517,7 +1651,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 60
     },
     {
       "id": "claude-marketplace-productivity/project-bootstrapper",
@@ -1548,7 +1685,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "claude-marketplace-visual/architecture-diagram-creator",
@@ -1580,7 +1720,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 70
     },
     {
       "id": "claude-marketplace-visual/dashboard-creator",
@@ -1611,7 +1754,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 70
     },
     {
       "id": "claude-marketplace-visual/flowchart-creator",
@@ -1643,7 +1789,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 70
     },
     {
       "id": "claude-marketplace-visual/technical-doc-creator",
@@ -1674,7 +1823,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 70
     },
     {
       "id": "claude-marketplace-visual/timeline-creator",
@@ -1705,7 +1857,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 82,
+      "maintenance_status": "maintained",
+      "quality_score": 70
     },
     {
       "id": "cloudflare/agents-sdk",
@@ -1735,7 +1890,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 3,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "cloudflare/building-ai-agent-on-cloudflare",
@@ -1765,7 +1923,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 3,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "cloudflare/building-mcp-server-on-cloudflare",
@@ -1796,7 +1957,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 3,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "cloudflare/cloudflare",
@@ -1824,7 +1988,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 3,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "cloudflare/durable-objects",
@@ -1854,7 +2021,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 3,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "cloudflare/web-perf",
@@ -1884,7 +2054,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 3,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "cloudflare/wrangler",
@@ -1913,7 +2086,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 3,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "composiohq/artifacts-builder",
@@ -1943,6 +2119,9 @@
       "duplicate_annotation": "Complete mirror of skillcreatorai/artifacts-builder",
       "duplicate_of": "skillcreatorai/artifacts-builder",
       "duplicate_similarity": 0.97,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 45,
       "similar_skills": [
         {
           "id": "skillcreatorai/artifacts-builder",
@@ -1982,6 +2161,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/brand-guidelines",
       "duplicate_of": "anthropics/brand-guidelines",
       "duplicate_similarity": 1.0,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "anthropics/brand-guidelines",
@@ -2026,6 +2208,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/canvas-design",
       "duplicate_of": "anthropics/canvas-design",
       "duplicate_similarity": 1.0,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "anthropics/canvas-design",
@@ -2068,6 +2253,9 @@
       "duplicate_annotation": "Complete mirror of skillcreatorai/changelog-generator",
       "duplicate_of": "skillcreatorai/changelog-generator",
       "duplicate_similarity": 0.97,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "skillcreatorai/changelog-generator",
@@ -2106,6 +2294,9 @@
       "duplicate_annotation": "Complete mirror of skillcreatorai/competitive-ads-extractor",
       "duplicate_of": "skillcreatorai/competitive-ads-extractor",
       "duplicate_similarity": 0.97,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "skillcreatorai/competitive-ads-extractor",
@@ -2144,7 +2335,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35
     },
     {
       "id": "composiohq/connect-apps",
@@ -2176,7 +2370,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35
     },
     {
       "id": "composiohq/content-research-writer",
@@ -2209,6 +2406,9 @@
       "duplicate_annotation": "Complete mirror of skillcreatorai/content-research-writer",
       "duplicate_of": "skillcreatorai/content-research-writer",
       "duplicate_similarity": 0.96,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "skillcreatorai/content-research-writer",
@@ -2247,6 +2447,9 @@
       "duplicate_annotation": "Complete mirror of skillcreatorai/developer-growth-analysis",
       "duplicate_of": "skillcreatorai/developer-growth-analysis",
       "duplicate_similarity": 0.96,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "skillcreatorai/developer-growth-analysis",
@@ -2285,6 +2488,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/docx",
       "duplicate_of": "anthropics/docx",
       "duplicate_similarity": 1.0,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 45,
       "similar_skills": [
         {
           "id": "anthropics/docx",
@@ -2327,6 +2533,9 @@
       "duplicate_annotation": "Complete mirror of skillcreatorai/domain-name-brainstormer",
       "duplicate_of": "skillcreatorai/domain-name-brainstormer",
       "duplicate_similarity": 0.97,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "skillcreatorai/domain-name-brainstormer",
@@ -2363,6 +2572,9 @@
       "duplicate_annotation": "Complete mirror of skillcreatorai/file-organizer",
       "duplicate_of": "skillcreatorai/file-organizer",
       "duplicate_similarity": 0.96,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "skillcreatorai/file-organizer",
@@ -2401,6 +2613,9 @@
       "duplicate_annotation": "Complete mirror of skillcreatorai/image-enhancer",
       "duplicate_of": "skillcreatorai/image-enhancer",
       "duplicate_similarity": 0.97,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "skillcreatorai/image-enhancer",
@@ -2439,6 +2654,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/internal-comms",
       "duplicate_of": "anthropics/internal-comms",
       "duplicate_similarity": 1.0,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "anthropics/internal-comms",
@@ -2481,6 +2699,9 @@
       "duplicate_annotation": "Complete mirror of skillcreatorai/invoice-organizer",
       "duplicate_of": "skillcreatorai/invoice-organizer",
       "duplicate_similarity": 0.96,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "skillcreatorai/invoice-organizer",
@@ -2516,7 +2737,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35
     },
     {
       "id": "composiohq/lead-research-assistant",
@@ -2547,6 +2771,9 @@
       "duplicate_annotation": "Complete mirror of skillcreatorai/lead-research-assistant",
       "duplicate_of": "skillcreatorai/lead-research-assistant",
       "duplicate_similarity": 0.97,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "skillcreatorai/lead-research-assistant",
@@ -2585,6 +2812,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/mcp-builder",
       "duplicate_of": "anthropics/mcp-builder",
       "duplicate_similarity": 1.0,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 55,
       "similar_skills": [
         {
           "id": "anthropics/mcp-builder",
@@ -2627,6 +2857,9 @@
       "duplicate_annotation": "Complete mirror of skillcreatorai/meeting-insights-analyzer",
       "duplicate_of": "skillcreatorai/meeting-insights-analyzer",
       "duplicate_similarity": 0.96,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "skillcreatorai/meeting-insights-analyzer",
@@ -2664,6 +2897,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/pdf",
       "duplicate_of": "anthropics/pdf",
       "duplicate_similarity": 1.0,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 45,
       "similar_skills": [
         {
           "id": "anthropics/pdf",
@@ -2710,6 +2946,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/pptx",
       "duplicate_of": "anthropics/pptx",
       "duplicate_similarity": 1.0,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 45,
       "similar_skills": [
         {
           "id": "anthropics/pptx",
@@ -2753,6 +2992,9 @@
       "duplicate_annotation": "Complete mirror of skillcreatorai/raffle-winner-picker",
       "duplicate_of": "skillcreatorai/raffle-winner-picker",
       "duplicate_similarity": 0.97,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "skillcreatorai/raffle-winner-picker",
@@ -2790,6 +3032,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/skill-creator",
       "duplicate_of": "anthropics/skill-creator",
       "duplicate_similarity": 1.0,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 45,
       "similar_skills": [
         {
           "id": "anthropics/skill-creator",
@@ -2835,7 +3080,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35
     },
     {
       "id": "composiohq/slack-gif-creator",
@@ -2866,6 +3114,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 45,
       "similar_skills": [
         {
           "id": "anthropics/slack-gif-creator",
@@ -2906,7 +3157,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35
     },
     {
       "id": "composiohq/template-skill",
@@ -2934,7 +3188,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35
     },
     {
       "id": "composiohq/theme-factory",
@@ -2965,6 +3222,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/theme-factory",
       "duplicate_of": "anthropics/theme-factory",
       "duplicate_similarity": 1.0,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "anthropics/theme-factory",
@@ -3006,7 +3266,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35
     },
     {
       "id": "composiohq/webapp-testing",
@@ -3036,6 +3299,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/webapp-testing",
       "duplicate_of": "anthropics/webapp-testing",
       "duplicate_similarity": 1.0,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 45,
       "similar_skills": [
         {
           "id": "anthropics/webapp-testing",
@@ -3084,6 +3350,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/xlsx",
       "duplicate_of": "anthropics/xlsx",
       "duplicate_similarity": 1.0,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35,
       "similar_skills": [
         {
           "id": "anthropics/xlsx",
@@ -3123,7 +3392,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 45
     },
     {
       "id": "csv-summarizer-skill/csv-data-summarizer",
@@ -3156,7 +3428,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 107,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "d3js-skill/d3-viz",
@@ -3185,7 +3460,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 106,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "epub-skill/markdown-to-epub-converter",
@@ -3216,7 +3494,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 107,
+      "maintenance_status": "maintained",
+      "quality_score": 60
     },
     {
       "id": "fal-ai/fal-audio",
@@ -3248,7 +3529,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "fal-ai/fal-generate",
@@ -3279,7 +3563,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "fal-ai/fal-image-edit",
@@ -3311,7 +3598,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "fal-ai/fal-platform",
@@ -3345,7 +3635,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "fal-ai/fal-upscale",
@@ -3376,7 +3669,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "fal-ai/fal-workflow",
@@ -3409,7 +3705,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 4,
+      "maintenance_status": "active",
+      "quality_score": 90
     },
     {
       "id": "family-history-skill/family-history-planning",
@@ -3439,7 +3738,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 87,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "ffuf-skill/ffuf-web-fuzzing",
@@ -3470,7 +3772,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 107,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "github/agentic-eval",
@@ -3502,7 +3807,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 13,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/appinsights-instrumentation",
@@ -3530,7 +3838,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 22,
+      "maintenance_status": "active",
+      "quality_score": 90
     },
     {
       "id": "github/azure-deployment-preflight",
@@ -3561,7 +3872,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 10,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "github/azure-devops-cli",
@@ -3594,7 +3908,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/azure-resource-visualizer",
@@ -3626,7 +3943,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 43,
+      "maintenance_status": "maintained",
+      "quality_score": 70
     },
     {
       "id": "github/azure-role-selector",
@@ -3656,7 +3976,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 26,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/azure-static-web-apps",
@@ -3692,7 +4015,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 15,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/chrome-devtools",
@@ -3723,7 +4049,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/copilot-sdk",
@@ -3755,7 +4084,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 6,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/gh-cli",
@@ -3785,7 +4117,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/git-commit",
@@ -3814,7 +4149,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/github-issues",
@@ -3844,7 +4182,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 23,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "github/image-manipulation-image-magick",
@@ -3874,7 +4215,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 10,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/legacy-circuit-mockups",
@@ -3907,7 +4251,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 12,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "github/make-skill-template",
@@ -3940,7 +4287,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 13,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/mcp-cli",
@@ -3970,7 +4320,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/microsoft-code-reference",
@@ -4002,7 +4355,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 17,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/microsoft-docs",
@@ -4034,7 +4390,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 41,
+      "maintenance_status": "maintained",
+      "quality_score": 60
     },
     {
       "id": "github/nuget-manager",
@@ -4064,7 +4423,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 25,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/plantuml-ascii",
@@ -4095,7 +4457,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/prd",
@@ -4126,7 +4491,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/refactor",
@@ -4156,7 +4524,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/scoutqa-test",
@@ -4186,7 +4557,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/snowflake-semanticview",
@@ -4215,7 +4589,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 13,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/vscode-ext-commands",
@@ -4245,7 +4622,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 20,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/vscode-ext-localization",
@@ -4275,7 +4655,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 20,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "github/web-design-reviewer",
@@ -4306,7 +4689,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 23,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "github/webapp-testing",
@@ -4336,6 +4722,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/webapp-testing",
       "duplicate_of": "anthropics/webapp-testing",
       "duplicate_similarity": 1.0,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
       "similar_skills": [
         {
           "id": "anthropics/webapp-testing",
@@ -4384,7 +4773,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 6,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "google-labs-stitch/design-md",
@@ -4412,7 +4804,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "google-labs-stitch/enhance-prompt",
@@ -4443,7 +4838,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 2,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "google-labs-stitch/react:components",
@@ -4472,7 +4870,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 15,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "google-labs-stitch/stitch-loop",
@@ -4500,7 +4901,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 8,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "huggingface/hugging-face-cli",
@@ -4529,7 +4933,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 22,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "huggingface/hugging-face-datasets",
@@ -4561,7 +4968,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 19,
+      "maintenance_status": "active",
+      "quality_score": 90
     },
     {
       "id": "huggingface/hugging-face-evaluation",
@@ -4595,7 +5005,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 19,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "huggingface/hugging-face-jobs",
@@ -4626,7 +5039,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 24,
+      "maintenance_status": "active",
+      "quality_score": 90
     },
     {
       "id": "huggingface/hugging-face-model-trainer",
@@ -4657,7 +5073,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 19,
+      "maintenance_status": "active",
+      "quality_score": 90
     },
     {
       "id": "huggingface/hugging-face-paper-publisher",
@@ -4689,7 +5108,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 19,
+      "maintenance_status": "active",
+      "quality_score": 100
     },
     {
       "id": "huggingface/hugging-face-tool-builder",
@@ -4722,7 +5144,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 24,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "huggingface/hugging-face-trackio",
@@ -4756,7 +5181,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 24,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "ios-simulator-skill/ios-simulator-skill",
@@ -4787,7 +5215,44 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 21,
+      "maintenance_status": "active",
+      "quality_score": 70
+    },
+    {
+      "id": "ipsw-skill/ipsw",
+      "name": "ipsw",
+      "description": "Apple firmware and binary reverse engineering with the ipsw CLI tool. Use when analyzing iOS/macOS binaries, disassembling functions in dyld_shared_cache, dumping Objective-C headers from private frameworks, downloading IPSWs or kernelcaches, extracting entitlements, analyzing Mach-O files, or researching Apple security. Triggers on requests involving Apple RE, iOS internals, kernel analysis, KEXT extraction, or vulnerability research on Apple platforms.",
+      "provider": "ipsw-skill",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-04T19:16:08Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/blacktop/ipsw-skill",
+        "path": "skill",
+        "skill_md_url": "https://raw.githubusercontent.com/blacktop/ipsw-skill/main/skill/SKILL.md",
+        "commit_sha": "84598a30c8cbd316fd0a287c6071c816b61f2f00"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "cli",
+        "extract",
+        "analysis",
+        "ipsw"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 27,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "move-quality-skill/move-code-quality",
@@ -4818,7 +5283,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 102,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "neondatabase/neon-postgres",
@@ -4850,7 +5318,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 4,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "notebooklm-skill/notebooklm",
@@ -4879,7 +5350,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 35
     },
     {
       "id": "obra-superpowers/brainstorming",
@@ -4907,7 +5381,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "obra-superpowers/dispatching-parallel-agents",
@@ -4937,7 +5414,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 51,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "obra-superpowers/executing-plans",
@@ -4965,7 +5445,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 2,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "obra-superpowers/finishing-a-development-branch",
@@ -4998,7 +5481,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 106,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "obra-superpowers/receiving-code-review",
@@ -5028,7 +5514,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 39,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "obra-superpowers/requesting-code-review",
@@ -5057,7 +5546,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 51,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "obra-superpowers/subagent-driven-development",
@@ -5086,7 +5578,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 2,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "obra-superpowers/systematic-debugging",
@@ -5116,7 +5611,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 51,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "obra-superpowers/test-driven-development",
@@ -5145,7 +5643,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 51,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "obra-superpowers/using-git-worktrees",
@@ -5175,7 +5676,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 2,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "obra-superpowers/using-superpowers",
@@ -5204,7 +5708,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 36,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "obra-superpowers/verification-before-completion",
@@ -5234,7 +5741,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 106,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "obra-superpowers/writing-plans",
@@ -5262,7 +5772,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 51,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "obra-superpowers/writing-skills",
@@ -5290,7 +5803,107 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 39,
+      "maintenance_status": "maintained",
+      "quality_score": 50
+    },
+    {
+      "id": "obsidian-plugin/obsidian",
+      "name": "obsidian",
+      "description": "Comprehensive guidelines for Obsidian.md plugin development including all 27 ESLint rules, TypeScript best practices, memory management, API usage (requestUrl vs fetch), UI/UX standards, and submission requirements. Use when working with Obsidian plugins, main.ts files, manifest.json, Plugin class, MarkdownView, TFile, vault operations, or any Obsidian API development.",
+      "provider": "obsidian-plugin",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-11-04T23:27:53Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/gapmiss/obsidian-plugin-skill",
+        "path": ".claude/skills/obsidian",
+        "skill_md_url": "https://raw.githubusercontent.com/gapmiss/obsidian-plugin-skill/main/.claude/skills/obsidian/SKILL.md",
+        "commit_sha": "b2fa26c7001222412f389f81166e24232f320f66"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "json",
+        "pr",
+        "lint",
+        "api",
+        "obsidian"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 88,
+      "maintenance_status": "maintained",
+      "quality_score": 60
+    },
+    {
+      "id": "openai/atlas",
+      "name": "atlas",
+      "description": "macOS-only AppleScript control for the ChatGPT Atlas desktop app. Use only when the user explicitly asks to control Atlas tabs/bookmarks/history on macOS and the \"ChatGPT Atlas\" app is installed; do not trigger for general browser tasks or non-macOS environments.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/atlas",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/atlas/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "ci",
+        "atlas"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 100
+    },
+    {
+      "id": "openai/cloudflare-deploy",
+      "name": "cloudflare-deploy",
+      "description": "Deploy applications and infrastructure to Cloudflare using Workers, Pages, and related platform services. Use when the user asks to deploy, host, publish, or set up a project on Cloudflare.",
+      "provider": "openai",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T20:23:45Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/cloudflare-deploy",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/cloudflare-deploy/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "cloudflare",
+        "deploy"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 90
     },
     {
       "id": "openai/codex-readiness-integration-test",
@@ -5308,7 +5921,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/codex-readiness-integration-test",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/codex-readiness-integration-test/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": true,
       "has_references": true,
@@ -5322,7 +5935,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 4,
+      "maintenance_status": "active",
+      "quality_score": 90
     },
     {
       "id": "openai/codex-readiness-unit-test",
@@ -5340,7 +5956,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/codex-readiness-unit-test",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/codex-readiness-unit-test/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": true,
       "has_references": true,
@@ -5354,7 +5970,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 90
     },
     {
       "id": "openai/create-plan",
@@ -5372,7 +5991,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/create-plan",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/create-plan/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": false,
       "has_references": false,
@@ -5385,7 +6004,43 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 42,
+      "maintenance_status": "maintained",
+      "quality_score": 60
+    },
+    {
+      "id": "openai/develop-web-game",
+      "name": "develop-web-game",
+      "description": "Use when Codex is building or iterating on a web game (HTML/JS) and needs a reliable development + testing loop: implement small changes, run a Playwright-based test script with short input bursts and intentional pauses, inspect screenshots/text, and review console errors with render_game_to_text.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/develop-web-game",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/develop-web-game/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "test",
+        "develop",
+        "web",
+        "game"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 100
     },
     {
       "id": "openai/doc",
@@ -5401,7 +6056,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/doc",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/doc/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": true,
       "has_references": false,
@@ -5417,7 +6072,45 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 1,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/figma-implement-design",
+      "name": "figma-implement-design",
+      "description": "Translate Figma nodes into production-ready code with 1:1 visual fidelity using the Figma MCP workflow (design context, screenshots, assets, and project-convention translation). Trigger when the user provides Figma URLs or node IDs, or asks to implement designs or components that must match Figma specs. Requires a working Figma MCP server connection.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/figma-implement-design",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/figma-implement-design/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "mcp",
+        "design",
+        "visual",
+        "figma",
+        "implement"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "openai/gh-address-comments",
@@ -5435,11 +6128,11 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-address-comments",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-address-comments/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": true,
       "has_references": false,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "github",
         "git",
@@ -5451,7 +6144,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 43,
+      "maintenance_status": "maintained",
+      "quality_score": 80
     },
     {
       "id": "openai/gh-fix-ci",
@@ -5467,7 +6163,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/gh-fix-ci",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-fix-ci/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": true,
       "has_references": false,
@@ -5482,7 +6178,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 1,
+      "maintenance_status": "active",
+      "quality_score": 90
     },
     {
       "id": "openai/gitlab-address-comments",
@@ -5500,7 +6199,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.experimental/gitlab-address-comments",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/gitlab-address-comments/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": true,
       "has_references": false,
@@ -5515,7 +6214,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 3,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "openai/imagegen",
@@ -5531,7 +6233,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/imagegen",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/imagegen/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": true,
       "has_references": true,
@@ -5546,7 +6248,43 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 1,
+      "maintenance_status": "active",
+      "quality_score": 100
+    },
+    {
+      "id": "openai/jupyter-notebook",
+      "name": "jupyter-notebook",
+      "description": "Use when the user asks to create, scaffold, or edit Jupyter notebooks (`.ipynb`) for experiments, explorations, or tutorials; prefer the bundled templates and run the helper script `new_notebook.py` to generate a clean starting notebook.",
+      "provider": "openai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/jupyter-notebook",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/jupyter-notebook/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "art",
+        "jupyter",
+        "notebook"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 100
     },
     {
       "id": "openai/linear",
@@ -5556,19 +6294,19 @@
       "category": "other",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2025-12-21T03:20:25Z",
+      "last_updated_at": "2026-01-31T22:21:03Z",
       "metadata": {
         "short-description": "Manage Linear issues in Codex"
       },
       "source": {
         "repo": "https://github.com/openai/skills",
-        "path": "skills/.experimental/linear",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/linear/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "path": "skills/.curated/linear",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/linear/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": false,
       "has_references": false,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "pr",
         "linear"
@@ -5576,7 +6314,43 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/netlify-deploy",
+      "name": "netlify-deploy",
+      "description": "Deploy web projects to Netlify using the Netlify CLI (`npx netlify`). Use when the user asks to deploy, host, publish, or link a site/repo on Netlify, including preview and production deploys.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T20:23:45Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/netlify-deploy",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/netlify-deploy/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "cli",
+        "netlify",
+        "deploy"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 90
     },
     {
       "id": "openai/notion-knowledge-capture",
@@ -5594,11 +6368,11 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-knowledge-capture",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-knowledge-capture/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": false,
       "has_references": true,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "pr",
         "ci",
@@ -5611,7 +6385,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 43,
+      "maintenance_status": "maintained",
+      "quality_score": 80
     },
     {
       "id": "openai/notion-meeting-intelligence",
@@ -5629,11 +6406,11 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-meeting-intelligence",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-meeting-intelligence/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": false,
       "has_references": true,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "pr",
         "notion",
@@ -5643,7 +6420,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 43,
+      "maintenance_status": "maintained",
+      "quality_score": 80
     },
     {
       "id": "openai/notion-research-documentation",
@@ -5661,11 +6441,11 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-research-documentation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-research-documentation/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": false,
       "has_references": true,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "pr",
         "ci",
@@ -5677,7 +6457,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 43,
+      "maintenance_status": "maintained",
+      "quality_score": 80
     },
     {
       "id": "openai/notion-spec-to-implementation",
@@ -5695,11 +6478,11 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/notion-spec-to-implementation",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-spec-to-implementation/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": false,
       "has_references": true,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "pr",
         "notion",
@@ -5709,7 +6492,46 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 43,
+      "maintenance_status": "maintained",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/openai-docs",
+      "name": "openai-docs",
+      "description": "Use when the user asks how to build with OpenAI products or APIs and needs up-to-date official documentation with citations (for example: Codex, Responses API, Chat Completions, Apps SDK, Agents SDK, Realtime, model capabilities or limits); prioritize OpenAI docs MCP tools and restrict any fallback browsing to official OpenAI domains.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/openai-docs",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/openai-docs/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "ci",
+        "api",
+        "mcp",
+        "document",
+        "openai",
+        "docs"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "openai/pdf",
@@ -5725,7 +6547,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/pdf",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/pdf/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": false,
       "has_references": false,
@@ -5740,6 +6562,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 1,
+      "maintenance_status": "active",
+      "quality_score": 80,
       "similar_skills": [
         {
           "id": "anthropics/pdf",
@@ -5759,6 +6584,71 @@
       ]
     },
     {
+      "id": "openai/playwright",
+      "name": "playwright",
+      "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script.",
+      "provider": "openai",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/playwright",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/playwright/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "cli",
+        "extract",
+        "playwright"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 100
+    },
+    {
+      "id": "openai/render-deploy",
+      "name": "render-deploy",
+      "description": "Deploy applications to Render by analyzing codebases, generating render.yaml Blueprints, and providing Dashboard deeplinks. Use when the user wants to deploy, host, publish, or set up their application on Render's cloud platform.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T20:23:45Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/render-deploy",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/render-deploy/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "yaml",
+        "pr",
+        "render",
+        "deploy"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
       "id": "openai/screenshot",
       "name": "screenshot",
       "description": "Use when the user explicitly asks for a desktop or system screenshot (full screen, specific app or window, or a pixel region), or when tool-specific capture capabilities are unavailable and an OS-level capture is needed.",
@@ -5772,7 +6662,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/screenshot",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/screenshot/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": true,
       "has_references": false,
@@ -5784,7 +6674,42 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 1,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/sentry",
+      "name": "sentry",
+      "description": "Use when the user asks to inspect Sentry issues or events, summarize recent production errors, or pull basic Sentry health data via the Sentry API; perform read-only queries with the bundled script and require `SENTRY_AUTH_TOKEN`.",
+      "provider": "openai",
+      "category": "integrations",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/sentry",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/sentry/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "api",
+        "sentry"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 90
     },
     {
       "id": "openai/skill-creator",
@@ -5794,7 +6719,7 @@
       "category": "development",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2025-12-19T17:17:20Z",
+      "last_updated_at": "2026-02-01T03:37:43Z",
       "metadata": {
         "short-description": "Create or update a skill"
       },
@@ -5802,11 +6727,11 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-creator",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
+      "has_references": true,
+      "has_assets": true,
       "tags": [
         "ci",
         "knowledge",
@@ -5817,6 +6742,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/skill-creator",
       "duplicate_of": "anthropics/skill-creator",
       "duplicate_similarity": 1.0,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 100,
       "similar_skills": [
         {
           "id": "anthropics/skill-creator",
@@ -5851,11 +6779,11 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/skill-installer",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-installer/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": true,
       "has_references": false,
-      "has_assets": false,
+      "has_assets": true,
       "tags": [
         "github",
         "git",
@@ -5866,7 +6794,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 23,
+      "maintenance_status": "active",
+      "quality_score": 90
     },
     {
       "id": "openai/sora",
@@ -5882,7 +6813,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/sora",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/sora/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": true,
       "has_references": true,
@@ -5896,7 +6827,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 1,
+      "maintenance_status": "active",
+      "quality_score": 100
     },
     {
       "id": "openai/speech",
@@ -5912,7 +6846,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/speech",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/speech/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": true,
       "has_references": true,
@@ -5926,7 +6860,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 1,
+      "maintenance_status": "active",
+      "quality_score": 100
     },
     {
       "id": "openai/spreadsheet",
@@ -5942,7 +6879,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/spreadsheet",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/spreadsheet/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": false,
       "has_references": true,
@@ -5957,7 +6894,86 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 1,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/transcribe",
+      "name": "transcribe",
+      "description": "Transcribe audio files to text with optional diarization and known-speaker hints. Use when a user asks to transcribe speech from audio/video, extract text from recordings, or label speakers in interviews or meetings.",
+      "provider": "openai",
+      "category": "enterprise",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/transcribe",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/transcribe/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "extract",
+        "meeting",
+        "transcribe"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 100
+    },
+    {
+      "id": "openai/vercel-deploy",
+      "name": "vercel-deploy",
+      "description": "Deploy applications and websites to Vercel using the bundled `scripts/deploy.sh` claimable-preview flow. Use when the user asks to deploy to Vercel, wants a preview URL, or says to push a project live on Vercel.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T20:23:45Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/vercel-deploy",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/vercel-deploy/SKILL.md",
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "vercel",
+        "deploy"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 90,
+      "similar_skills": [
+        {
+          "id": "vercel/vercel-deploy",
+          "provider": "vercel",
+          "similarity": 0.82
+        },
+        {
+          "id": "skillcreatorai/vercel-deploy",
+          "provider": "skillcreatorai",
+          "similarity": 0.52
+        }
+      ]
     },
     {
       "id": "openai/yeet",
@@ -5973,7 +6989,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/yeet",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/yeet/SKILL.md",
-        "commit_sha": "8766dfebfe2eafb3740e5f084b08682b299590ce"
+        "commit_sha": "94fa19526eea7676eb5ecde1b9d611d9889aa624"
       },
       "has_scripts": false,
       "has_references": false,
@@ -5988,7 +7004,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "playwright-skill/playwright-skill",
@@ -6018,7 +7037,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 43,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "pypict-skill/pict-test-designer",
@@ -6049,7 +7071,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 104,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "remotion/remotion-best-practices",
@@ -6081,7 +7106,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 1,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "sanjay-ai-skills/deep-research",
@@ -6113,7 +7141,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 19,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "sanjay-ai-skills/gmail",
@@ -6142,7 +7173,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 11,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "sanjay-ai-skills/google-calendar",
@@ -6172,7 +7206,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 11,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "sanjay-ai-skills/google-chat",
@@ -6201,7 +7238,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 11,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "sanjay-ai-skills/google-docs",
@@ -6231,7 +7271,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 11,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "sanjay-ai-skills/google-drive",
@@ -6260,7 +7303,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 11,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "sanjay-ai-skills/google-sheets",
@@ -6291,7 +7337,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 11,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "sanjay-ai-skills/google-slides",
@@ -6321,7 +7370,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 11,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "sanjay-ai-skills/imagen",
@@ -6351,7 +7403,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 40,
+      "maintenance_status": "maintained",
+      "quality_score": 60
     },
     {
       "id": "sanjay-ai-skills/jules",
@@ -6383,7 +7438,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 7,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "sanjay-ai-skills/outline",
@@ -6413,7 +7471,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 11,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "sanjay-ai-skills/postgres",
@@ -6441,7 +7502,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 40,
+      "maintenance_status": "maintained",
+      "quality_score": 60
     },
     {
       "id": "skillcreatorai/algorithmic-art",
@@ -6470,6 +7534,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/algorithmic-art",
@@ -6506,6 +7573,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
       "similar_skills": [
         {
           "id": "composiohq/artifacts-builder",
@@ -6542,7 +7612,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 30,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/backend-development",
@@ -6573,7 +7646,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/best-practices",
@@ -6603,7 +7679,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 9,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "skillcreatorai/brand-guidelines",
@@ -6635,6 +7714,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/brand-guidelines",
@@ -6679,6 +7761,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/canvas-design",
@@ -6721,6 +7806,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "composiohq/changelog-generator",
@@ -6757,7 +7845,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/code-refactoring",
@@ -6787,7 +7878,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/code-review",
@@ -6817,7 +7911,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/competitive-ads-extractor",
@@ -6849,6 +7946,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "composiohq/competitive-ads-extractor",
@@ -6888,6 +7988,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "composiohq/content-research-writer",
@@ -6922,7 +8025,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/developer-growth-analysis",
@@ -6954,6 +8060,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "composiohq/developer-growth-analysis",
@@ -6992,6 +8101,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/doc-coauthoring",
       "duplicate_of": "anthropics/doc-coauthoring",
       "duplicate_similarity": 1.0,
+      "days_since_update": 42,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/doc-coauthoring",
@@ -7030,6 +8142,9 @@
       "duplicate_annotation": "Probable duplicate of anthropics/docx (85% similar)",
       "duplicate_of": "anthropics/docx",
       "duplicate_similarity": 0.85,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/docx",
@@ -7072,6 +8187,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "composiohq/domain-name-brainstormer",
@@ -7107,7 +8225,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 16,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "skillcreatorai/expo-deployment",
@@ -7135,7 +8256,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 16,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "skillcreatorai/file-organizer",
@@ -7165,6 +8289,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "composiohq/file-organizer",
@@ -7202,6 +8329,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/frontend-design",
       "duplicate_of": "anthropics/frontend-design",
       "duplicate_similarity": 1.0,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/frontend-design",
@@ -7240,6 +8370,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "composiohq/image-enhancer",
@@ -7278,6 +8411,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/internal-comms",
@@ -7320,6 +8456,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "composiohq/invoice-organizer",
@@ -7355,7 +8494,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/jira-issues",
@@ -7383,7 +8525,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/job-application",
@@ -7412,7 +8557,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/lead-research-assistant",
@@ -7443,6 +8591,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "composiohq/lead-research-assistant",
@@ -7479,7 +8630,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/mcp-builder",
@@ -7511,6 +8665,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/mcp-builder",
       "duplicate_of": "anthropics/mcp-builder",
       "duplicate_similarity": 1.0,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/mcp-builder",
@@ -7553,6 +8710,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "composiohq/meeting-insights-analyzer",
@@ -7590,6 +8750,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/pdf",
       "duplicate_of": "anthropics/pdf",
       "duplicate_similarity": 1.0,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/pdf",
@@ -7636,6 +8799,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/pptx",
@@ -7677,7 +8843,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/qa-regression",
@@ -7705,7 +8874,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/raffle-winner-picker",
@@ -7737,6 +8909,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "composiohq/raffle-winner-picker",
@@ -7773,7 +8948,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 16,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "skillcreatorai/skill-creator",
@@ -7804,6 +8982,9 @@
       "duplicate_annotation": "Probable duplicate of anthropics/skill-creator (93% similar)",
       "duplicate_of": "anthropics/skill-creator",
       "duplicate_similarity": 0.93,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/skill-creator",
@@ -7851,6 +9032,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
       "similar_skills": [
         {
           "id": "anthropics/slack-gif-creator",
@@ -7893,6 +9077,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/theme-factory",
       "duplicate_of": "anthropics/theme-factory",
       "duplicate_similarity": 1.0,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/theme-factory",
@@ -7932,7 +9119,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 16,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "skillcreatorai/vercel-deploy",
@@ -7961,7 +9151,15 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 16,
+      "maintenance_status": "active",
+      "quality_score": 60,
       "similar_skills": [
+        {
+          "id": "openai/vercel-deploy",
+          "provider": "openai",
+          "similarity": 0.53
+        },
         {
           "id": "vercel/vercel-deploy",
           "provider": "vercel",
@@ -7995,7 +9193,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 44,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "skillcreatorai/web-design-guidelines",
@@ -8028,6 +9229,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 16,
+      "maintenance_status": "active",
+      "quality_score": 60,
       "similar_skills": [
         {
           "id": "vercel/web-design-guidelines",
@@ -8064,6 +9268,9 @@
       "duplicate_annotation": "Complete mirror of anthropics/webapp-testing",
       "duplicate_of": "anthropics/webapp-testing",
       "duplicate_similarity": 0.99,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/webapp-testing",
@@ -8112,6 +9319,9 @@
       "duplicate_annotation": "Probable duplicate of anthropics/xlsx (82% similar)",
       "duplicate_of": "anthropics/xlsx",
       "duplicate_similarity": 0.82,
+      "days_since_update": 45,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
       "similar_skills": [
         {
           "id": "anthropics/xlsx",
@@ -8124,6 +9334,38 @@
           "similarity": 0.28
         }
       ]
+    },
+    {
+      "id": "stream-coding/stream-coding",
+      "name": "stream-coding",
+      "description": "Documentation-first development methodology. The goal is AI-ready documentation - when docs are clear enough, code generation becomes automatic.\n",
+      "provider": "stream-coding",
+      "category": "documents",
+      "license": "CC-BY-4.0",
+      "compatibility": null,
+      "last_updated_at": "2026-01-19T14:12:50Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/frmoretto/stream-coding",
+        "path": "skills/stream-coding",
+        "skill_md_url": "https://raw.githubusercontent.com/frmoretto/stream-coding/main/skills/stream-coding/SKILL.md",
+        "commit_sha": "757c24081024aa87ddf1ec653f7278631408d45b"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "document",
+        "stream",
+        "coding"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 12,
+      "maintenance_status": "active",
+      "quality_score": 60
     },
     {
       "id": "stripe/stripe-best-practices",
@@ -8153,7 +9395,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 11,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "stripe/upgrade-stripe",
@@ -8182,7 +9427,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 11,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "supabase/supabase-postgres-best-practices",
@@ -8220,7 +9468,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 4,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "tapestry/article-extractor",
@@ -8250,7 +9501,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 99,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "tapestry/ship-learn-next",
@@ -8280,7 +9534,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 99,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "tapestry/tapestry",
@@ -8311,7 +9568,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 99,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "tapestry/youtube-transcript",
@@ -8340,7 +9600,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 99,
+      "maintenance_status": "maintained",
+      "quality_score": 50
     },
     {
       "id": "tinybird/tinybird",
@@ -8369,7 +9632,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 10,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "vercel/vercel-composition-patterns",
@@ -8404,7 +9670,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 3,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "vercel/vercel-deploy",
@@ -8433,11 +9702,19 @@
         "vercel",
         "deploy"
       ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
+      "duplicate_status": "probable_duplicate",
+      "duplicate_annotation": "Probable duplicate of openai/vercel-deploy (82% similar)",
+      "duplicate_of": "openai/vercel-deploy",
+      "duplicate_similarity": 0.82,
+      "days_since_update": 15,
+      "maintenance_status": "active",
+      "quality_score": 80,
       "similar_skills": [
+        {
+          "id": "openai/vercel-deploy",
+          "provider": "openai",
+          "similarity": 0.81
+        },
         {
           "id": "skillcreatorai/vercel-deploy",
           "provider": "skillcreatorai",
@@ -8477,7 +9754,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 8,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "vercel/vercel-react-native-skills",
@@ -8512,7 +9792,10 @@
       "duplicate_status": null,
       "duplicate_annotation": null,
       "duplicate_of": null,
-      "duplicate_similarity": null
+      "duplicate_similarity": null,
+      "days_since_update": 5,
+      "maintenance_status": "active",
+      "quality_score": 70
     },
     {
       "id": "vercel/web-design-guidelines",
@@ -8547,6 +9830,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
+      "days_since_update": 15,
+      "maintenance_status": "active",
+      "quality_score": 70,
       "similar_skills": [
         {
           "id": "skillcreatorai/web-design-guidelines",
@@ -8554,11 +9840,320 @@
           "similarity": 0.54
         }
       ]
+    },
+    {
+      "id": "visionos-agents/arkit-visionos-developer",
+      "name": "arkit-visionos-developer",
+      "description": "Build and debug ARKit features for visionOS, including ARKitSession setup, authorization, data providers (world tracking, plane detection, scene reconstruction, hand tracking), anchor processing, and RealityKit integration. Use when implementing ARKit workflows in immersive spaces or troubleshooting ARKit data access and provider behavior on visionOS.",
+      "provider": "visionos-agents",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-23T08:28:19Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/tomkrikorian/visionOSAgents",
+        "path": "skills/arkit-visionos-developer",
+        "skill_md_url": "https://raw.githubusercontent.com/tomkrikorian/visionOSAgents/main/skills/arkit-visionos-developer/SKILL.md",
+        "commit_sha": "8f371d59325fa8b12b605d9bbc215ab1669dd50c"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "arkit",
+        "visionos",
+        "developer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 39,
+      "maintenance_status": "maintained",
+      "quality_score": 60
+    },
+    {
+      "id": "visionos-agents/coding-standards-enforcer",
+      "name": "coding-standards-enforcer",
+      "description": "Enforce repository coding standards for Swift 6.2 concurrency, Swift language rules. Use when reviewing or implementing Swift code changes.",
+      "provider": "visionos-agents",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-23T08:28:19Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/tomkrikorian/visionOSAgents",
+        "path": "skills/coding-standards-enforcer",
+        "skill_md_url": "https://raw.githubusercontent.com/tomkrikorian/visionOSAgents/main/skills/coding-standards-enforcer/SKILL.md",
+        "commit_sha": "8f371d59325fa8b12b605d9bbc215ab1669dd50c"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "coding",
+        "standards",
+        "enforcer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 39,
+      "maintenance_status": "maintained",
+      "quality_score": 50
+    },
+    {
+      "id": "visionos-agents/ralph-driven-development",
+      "name": "ralph-driven-development",
+      "description": "Guide and tooling for Ralph Driven Development (RDD), a spec runner that repeatedly invokes Codex (or other agents) over ordered specs until a magic phrase signals completion. Use when setting up or operating an RDD workflow with plan.md, specs/, done.md, agent-run.log, and a ralph.py runner, or when customizing the runner CLI and prompt contract.",
+      "provider": "visionos-agents",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-23T08:28:19Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/tomkrikorian/visionOSAgents",
+        "path": "skills/ralph-driven-development",
+        "skill_md_url": "https://raw.githubusercontent.com/tomkrikorian/visionOSAgents/main/skills/ralph-driven-development/SKILL.md",
+        "commit_sha": "8f371d59325fa8b12b605d9bbc215ab1669dd50c"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "cli",
+        "ralph",
+        "driven",
+        "development"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 39,
+      "maintenance_status": "maintained",
+      "quality_score": 60
+    },
+    {
+      "id": "visionos-agents/ralph-driven-development-linear",
+      "name": "ralph-driven-development-linear",
+      "description": "Ralph Driven Development workflow that pulls Linear project issues via the Linear MCP and runs them sequentially with Codex. Use when automating task execution from a Linear project and when you need a runner that advances issues and asks for the next task automatically.",
+      "provider": "visionos-agents",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-23T08:28:19Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/tomkrikorian/visionOSAgents",
+        "path": "skills/ralph-driven-development-linear",
+        "skill_md_url": "https://raw.githubusercontent.com/tomkrikorian/visionOSAgents/main/skills/ralph-driven-development-linear/SKILL.md",
+        "commit_sha": "8f371d59325fa8b12b605d9bbc215ab1669dd50c"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "mcp",
+        "ralph",
+        "driven",
+        "development",
+        "linear"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 39,
+      "maintenance_status": "maintained",
+      "quality_score": 60
+    },
+    {
+      "id": "visionos-agents/realitykit-visionos-developer",
+      "name": "realitykit-visionos-developer",
+      "description": "Build, debug, and optimize RealityKit scenes for visionOS, including entity/component setup, rendering, animation, physics, audio, input, attachments, and custom systems. Use when implementing RealityKit features or troubleshooting ECS behavior on visionOS.",
+      "provider": "visionos-agents",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-19T16:21:58Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/tomkrikorian/visionOSAgents",
+        "path": "skills/realitykit-visionos-developer",
+        "skill_md_url": "https://raw.githubusercontent.com/tomkrikorian/visionOSAgents/main/skills/realitykit-visionos-developer/SKILL.md",
+        "commit_sha": "8f371d59325fa8b12b605d9bbc215ab1669dd50c"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "realitykit",
+        "visionos",
+        "developer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 12,
+      "maintenance_status": "active",
+      "quality_score": 70
+    },
+    {
+      "id": "visionos-agents/shadergraph-editor",
+      "name": "shadergraph-editor",
+      "description": "Create and edit ShaderGraph and RealityKit material networks in .usda files. Use when manually editing USD ASCII files to build, modify, or troubleshoot materials, shader nodes, and connections for RealityKit.",
+      "provider": "visionos-agents",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-23T08:28:19Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/tomkrikorian/visionOSAgents",
+        "path": "skills/shadergraph-editor",
+        "skill_md_url": "https://raw.githubusercontent.com/tomkrikorian/visionOSAgents/main/skills/shadergraph-editor/SKILL.md",
+        "commit_sha": "8f371d59325fa8b12b605d9bbc215ab1669dd50c"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "shadergraph",
+        "editor"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 39,
+      "maintenance_status": "maintained",
+      "quality_score": 60
+    },
+    {
+      "id": "visionos-agents/spatial-swiftui-developer",
+      "name": "spatial-swiftui-developer",
+      "description": "Design and implement visionOS SwiftUI scenes that integrate RealityKit content. Use when building spatial UI with RealityView, Model3D, attachments, volumetric windows, ImmersiveSpace, or spatial gestures, or when choosing SwiftUI vs RealityKit APIs for 3D presentation.",
+      "provider": "visionos-agents",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T21:00:09Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/tomkrikorian/visionOSAgents",
+        "path": "skills/spatial-swiftui-developer",
+        "skill_md_url": "https://raw.githubusercontent.com/tomkrikorian/visionOSAgents/main/skills/spatial-swiftui-developer/SKILL.md",
+        "commit_sha": "8f371d59325fa8b12b605d9bbc215ab1669dd50c"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "design",
+        "spatial",
+        "swiftui",
+        "developer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 4,
+      "maintenance_status": "active",
+      "quality_score": 70
+    },
+    {
+      "id": "visionos-agents/tkr-skill-writer",
+      "name": "tkr-skill-writer",
+      "description": "Guide for creating and structuring skills with consistent formatting, clear documentation, and proper reference organization. Use when creating new skills or updating existing skill documentation.",
+      "provider": "visionos-agents",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-23T08:28:19Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/tomkrikorian/visionOSAgents",
+        "path": "skills/tkr-skill-writer",
+        "skill_md_url": "https://raw.githubusercontent.com/tomkrikorian/visionOSAgents/main/skills/tkr-skill-writer/SKILL.md",
+        "commit_sha": "8f371d59325fa8b12b605d9bbc215ab1669dd50c"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "document",
+        "tkr",
+        "skill",
+        "writer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 39,
+      "maintenance_status": "maintained",
+      "quality_score": 50
+    },
+    {
+      "id": "visionos-agents/usd-editor",
+      "name": "usd-editor",
+      "description": "Guide for modifying USD ASCII (.usda) files, including prims, properties, composition arcs, variants, and transforms. Use when editing or reviewing .usda files by hand.",
+      "provider": "visionos-agents",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T21:00:09Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/tomkrikorian/visionOSAgents",
+        "path": "skills/usd-editor",
+        "skill_md_url": "https://raw.githubusercontent.com/tomkrikorian/visionOSAgents/main/skills/usd-editor/SKILL.md",
+        "commit_sha": "8f371d59325fa8b12b605d9bbc215ab1669dd50c"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "usd",
+        "editor"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 4,
+      "maintenance_status": "active",
+      "quality_score": 70
     }
   ],
   "duplicate_summary": {
-    "total_annotated": 34,
+    "total_annotated": 35,
     "mirrors": 31,
-    "probable_duplicates": 3
+    "probable_duplicates": 4
+  },
+  "maintenance_summary": {
+    "active": 122,
+    "maintained": 114,
+    "stale": 0,
+    "abandoned": 0,
+    "unknown": 33,
+    "active_percentage": 51.7,
+    "maintained_percentage": 100.0
   }
 }
