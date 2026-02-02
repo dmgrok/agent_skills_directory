@@ -1,9 +1,9 @@
 {
-  "last_run": "2026-02-01T07:03:18.632864+00:00",
+  "last_run": "2026-02-02T07:11:04.533424+00:00",
   "provider_commits": {
     "anthropics": "69c0b1a0674149f27b61b2635f935524b6add202",
-    "openai": "94fa19526eea7676eb5ecde1b9d611d9889aa624",
-    "github": "ccdfd66cc2311cac15b9e22073a9314a1c0d0fce",
+    "openai": "94e8003333a4650433f6c21fd855ae14019b65cb",
+    "github": "8da31944f66762bd3eef15021610e28ec5f6457f",
     "vercel": "e23951b8cad2f4b1e7e176c5731127c1263fe86f",
     "huggingface": "2afeee6dc7270dd91bef2b59a5b60b2222fbd8a0",
     "skillcreatorai": "6195a031c29c5bc11d1d4b3e4c64e660e441f087",
@@ -25,11 +25,11 @@
     "csv-summarizer-skill": "9b3affd270f85aaf1c8a7a457f510034d5736cde",
     "family-history-skill": "7334d3d400740fda3de1c54c90e186307f8f1176",
     "notebooklm-skill": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
-    "aiqualitylab": "3f3dd5df1ce906512214747387bb4acabc4b417c",
+    "aiqualitylab": "0321527eebbb39ed4ae7673c2917c6032cf2a050",
     "stripe": "67e7de32a5bb90ace156e62c911078dfdc12f8da",
     "cloudflare": "75a603ba7551d17765d83909594c94a660f3f794",
     "trailofbits": "a50696e20581d98ea991fbf9ab4105eadc5ea8b8",
-    "expo": "b631a6045b421c425df947af74d3f6007e6ccc69",
+    "expo": "ce1283f4328c1014aba4ebf445d583c2fdf02232",
     "getsentry": "6cddc6e0441e78cc83855a54266f85ed445f8d18",
     "supabase": "22e466937a34fe4f2c7d2d199599c7a76cbcf51f",
     "google-labs-stitch": "dbb6ff328ba3ed832b8505fcf18ed6789ac2b211",
@@ -38,9 +38,9 @@
     "tinybird": "52435474e156b8b0097d5926a4d704b779f08bc6",
     "neondatabase": "758ac1a6399086ed7594d9ba74ad1101d155421f",
     "fal-ai": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9",
-    "remotion": "bcddbb086a15c0a43c78b8dc23f2e3f961100625",
+    "remotion": "3c2e9b4b5c58c4f79b42cf2a609861443f7f535e",
     "nginity": "67a07d479ea201f7a50962c0fc0d7d4ca1e88a67",
-    "voltagent": "c1340aacb5ffc72cdfcee03eba4b281bf106655f",
+    "voltagent": "1bbab1515bc35100db1bcaef059ede9dd944d679",
     "heilcheng": "b72ec985761b9fd6705f242e0cab18a1d48b6fdb",
     "travisvn": "125ff05a3ddcd1b3a04b39fcbd2d208cdddb35bd",
     "obsidian-plugin": "b2fa26c7001222412f389f81166e24232f320f66",
@@ -49,6 +49,6 @@
     "visionos-agents": "8f371d59325fa8b12b605d9bbc215ab1669dd50c",
     "skills-to-agents": "10ee8c7879d217fd6fb8c723fbdbbf7e554305ad"
   },
-  "skills_count": 269,
-  "version": "2026.02.01"
+  "skills_count": 274,
+  "version": "2026.02.02"
 }
