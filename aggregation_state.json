@@ -1,9 +1,9 @@
 {
-  "last_run": "2026-02-04T07:02:12.763831+00:00",
+  "last_run": "2026-02-05T07:08:00.043640+00:00",
   "provider_commits": {
     "anthropics": "a5bcdd7e58cdff48566bf876f0a72a2008dcefbc",
-    "openai": "f46b2535abfc2ec4b383ba0da47a0357abfa198c",
-    "github": "765546a2a0257b76034f0a779dea0f2990884964",
+    "openai": "7d56b27c73a64aa84a143c358b72163731e9e7fa",
+    "github": "cd075a328d29c82a313ffd85aaa5ea184e135394",
     "vercel": "e23951b8cad2f4b1e7e176c5731127c1263fe86f",
     "huggingface": "2afeee6dc7270dd91bef2b59a5b60b2222fbd8a0",
     "skillcreatorai": "6195a031c29c5bc11d1d4b3e4c64e660e441f087",
@@ -26,21 +26,21 @@
     "family-history-skill": "7334d3d400740fda3de1c54c90e186307f8f1176",
     "notebooklm-skill": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
     "aiqualitylab": "0321527eebbb39ed4ae7673c2917c6032cf2a050",
-    "stripe": "72d20b9aa5dc515ac79ebfb76784ff035d2f0929",
+    "stripe": "dd624f517802fd51e9ae9f7671b5148a5350dc71",
     "cloudflare": "d141c2f9a1583c8b3626cf7b4205db3e2daf1e9e",
     "trailofbits": "a50696e20581d98ea991fbf9ab4105eadc5ea8b8",
     "expo": "7dcb2fbd0d86f162977d865369ac6b34d5306ad6",
-    "getsentry": "d4d8757434285e3a31f206c7a603420e1127b315",
+    "getsentry": "934d1e8b245e1517a789d34bc23de2b123488dde",
     "supabase": "22e466937a34fe4f2c7d2d199599c7a76cbcf51f",
     "google-labs-stitch": "29152aa001afa1dacceab09e0bc66d88d47e52bc",
     "composiohq": "c1d18c5419c27e813a4784bb2d34febe99123b08",
     "better-auth": "14c9623ff7cced5cdd83f026c8cc697e86b66eff",
     "tinybird": "52435474e156b8b0097d5926a4d704b779f08bc6",
-    "neondatabase": "758ac1a6399086ed7594d9ba74ad1101d155421f",
+    "neondatabase": "2f7345e4a66aa82f85bf0695cde4dc463a0aeddf",
     "fal-ai": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9",
     "remotion": "3c2e9b4b5c58c4f79b42cf2a609861443f7f535e",
-    "nginity": "336eeec20092b785f4a258adcaa2fa2ded04916c",
-    "voltagent": "770df90bd747519b47108274984bf65819341291",
+    "nginity": "0e14dbada99f64e75e397ddbecf58290e1f5ccc9",
+    "voltagent": "a4e3ed632b00ee341b2e9c794f5631bfd0b58d68",
     "heilcheng": "b72ec985761b9fd6705f242e0cab18a1d48b6fdb",
     "travisvn": "5a49b7787989207bb364728433fe6804e2837903",
     "obsidian-plugin": "b2fa26c7001222412f389f81166e24232f320f66",
@@ -49,6 +49,6 @@
     "visionos-agents": "cffc06cfe6042a7bc12439c0f6134209e4107a9e",
     "skills-to-agents": "10ee8c7879d217fd6fb8c723fbdbbf7e554305ad"
   },
-  "skills_count": 283,
-  "version": "2026.02.04"
+  "skills_count": 284,
+  "version": "2026.02.05"
 }
