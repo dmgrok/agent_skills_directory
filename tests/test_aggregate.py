@@ -31,6 +31,21 @@ def test_extract_tags_includes_keywords_and_name_words():
     assert "Converter" in tags
 
 
+def test_parse_skill_md_without_name_field():
+    """Test parsing skills that don't have a name in frontmatter (like Stripe skills)."""
+    content = """---
+description: Best practices for building Stripe integrations
+alwaysApply: false
+---
+The latest Stripe API version is 2026-01-28.clover
+"""
+    parsed = aggregate.parse_skill_md(content)
+    assert parsed is not None
+    assert "name" not in parsed["frontmatter"]
+    assert parsed["frontmatter"]["description"] == "Best practices for building Stripe integrations"
+    assert "2026-01-28" in parsed["body"]
+
+
 def test_write_toon_output_uses_python_encoder(tmp_path, monkeypatch):
     # Provide a stub encoder to avoid CLI and the unimplemented upstream encoder
     monkeypatch.setattr(aggregate, "HAS_TOON", True)
