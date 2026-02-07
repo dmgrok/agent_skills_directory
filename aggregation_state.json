@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-02-06T07:12:00.071788+00:00",
+  "last_run": "2026-02-07T06:53:10.849703+00:00",
   "provider_commits": {
-    "anthropics": "a5bcdd7e58cdff48566bf876f0a72a2008dcefbc",
-    "openai": "2f7901ee4202a26757a5237e987a8ec5a1799e29",
+    "anthropics": "1ed29a03dc852d30fa6ef2ca53a67dc2c2c2c563",
+    "openai": "a5119697b819090e00e5d11ee1d86834d7c1043a",
     "github": "4f9e20b13ae9c1259bde3831e72e3af5b6661337",
     "vercel": "e23951b8cad2f4b1e7e176c5731127c1263fe86f",
-    "huggingface": "2afeee6dc7270dd91bef2b59a5b60b2222fbd8a0",
+    "huggingface": "3f4f55d6264b7baddec94031eeda70780d7e9189",
     "skillcreatorai": "6195a031c29c5bc11d1d4b3e4c64e660e441f087",
     "obra-superpowers": "a98c5dfc9de0df5318f4980d91d24780a566ee60",
     "tapestry": "b134509a6f2f80b4adbfe9c71f2a23ac3bc6ab10",
@@ -26,11 +26,11 @@
     "family-history-skill": "7334d3d400740fda3de1c54c90e186307f8f1176",
     "notebooklm-skill": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
     "aiqualitylab": "0321527eebbb39ed4ae7673c2917c6032cf2a050",
-    "stripe": "5af4bcd15813cbcbd91baceeb5ec79cf975035f1",
+    "stripe": "1cd56cd921dd7e4994303fe5a6964f20ec36aea6",
     "cloudflare": "50c7477e4c6e249294712e88037392137a3d312f",
-    "trailofbits": "a50696e20581d98ea991fbf9ab4105eadc5ea8b8",
+    "trailofbits": "f821e35473d2eea59e8ce8f4c5a37d31b4658cb9",
     "expo": "7dcb2fbd0d86f162977d865369ac6b34d5306ad6",
-    "getsentry": "934d1e8b245e1517a789d34bc23de2b123488dde",
+    "getsentry": "c8881564e75eff4faaecc82d1c3f13356851b6e7",
     "supabase": "22e466937a34fe4f2c7d2d199599c7a76cbcf51f",
     "google-labs-stitch": "29152aa001afa1dacceab09e0bc66d88d47e52bc",
     "composiohq": "e762a98bd93f34c22926c7cf6ae7c9bb59ea9d5b",
@@ -39,8 +39,8 @@
     "neondatabase": "2f7345e4a66aa82f85bf0695cde4dc463a0aeddf",
     "fal-ai": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9",
     "remotion": "e65ecec95f6782ffa057de4dc7c54628dd1e9924",
-    "nginity": "0e14dbada99f64e75e397ddbecf58290e1f5ccc9",
-    "voltagent": "a4e3ed632b00ee341b2e9c794f5631bfd0b58d68",
+    "nginity": "1aa1901191ef5384fce796c06624d215660f377c",
+    "voltagent": "22556677fd93fbf72fa6f3f3699ddc8667346ee2",
     "heilcheng": "b72ec985761b9fd6705f242e0cab18a1d48b6fdb",
     "travisvn": "5a49b7787989207bb364728433fe6804e2837903",
     "obsidian-plugin": "b2fa26c7001222412f389f81166e24232f320f66",
@@ -50,5 +50,5 @@
     "skills-to-agents": "10ee8c7879d217fd6fb8c723fbdbbf7e554305ad"
   },
   "skills_count": 363,
-  "version": "2026.02.06"
+  "version": "2026.02.07"
 }
