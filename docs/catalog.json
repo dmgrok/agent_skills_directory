@@ -1,155 +1,43 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.02.07",
-  "generated_at": "2026-02-07T06:53:01.639291+00:00",
-  "total_skills": 363,
+  "version": "2026.02.08",
+  "generated_at": "2026-02-08T07:00:01.718852+00:00",
+  "total_skills": 358,
   "providers": {
-    "anthropics": {
-      "name": "Anthropic",
-      "repo": "https://github.com/anthropics/skills",
-      "skills_count": 16,
-      "stars": 64906,
-      "description": "Public repository for Agent Skills"
-    },
     "openai": {
       "name": "OpenAI",
       "repo": "https://github.com/openai/skills",
-      "skills_count": 37,
-      "stars": 5011,
+      "skills_count": 32,
+      "stars": 6303,
       "description": "Skills Catalog for Codex"
     },
-    "huggingface": {
-      "name": "HuggingFace",
-      "repo": "https://github.com/huggingface/skills",
-      "skills_count": 8,
-      "stars": 1182,
-      "description": null
-    },
-    "stripe": {
-      "name": "Stripe",
-      "repo": "https://github.com/stripe/ai",
-      "skills_count": 0,
-      "stars": 1254,
-      "description": "One-stop shop for building AI-powered products and businesses with Stripe."
-    },
-    "trailofbits": {
-      "name": "Trail of Bits Security",
-      "repo": "https://github.com/trailofbits/skills",
-      "skills_count": 0,
-      "stars": 2430,
-      "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
-    },
-    "getsentry": {
-      "name": "Sentry",
-      "repo": "https://github.com/getsentry/skills",
-      "skills_count": 0,
-      "stars": 179,
-      "description": "Agent Skills used by the Sentry team for development."
-    },
-    "nginity": {
-      "name": "nginity Enterprise",
-      "repo": "https://github.com/alirezarezvani/claude-skills",
-      "skills_count": 0,
-      "stars": 1632,
-      "description": "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
+    "ios-simulator-skill": {
+      "name": "iOS Simulator",
+      "repo": "https://github.com/conorluddy/ios-simulator-skill",
+      "skills_count": 1,
+      "stars": 463,
+      "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
     },
     "voltagent": {
       "name": "VoltAgent Catalog",
       "repo": "https://github.com/VoltAgent/awesome-agent-skills",
       "skills_count": 0,
-      "stars": 6313,
+      "stars": 6387,
       "description": "Claude Code Skills and 200+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
-    },
-    "vercel": {
-      "name": "Vercel",
-      "repo": "https://github.com/vercel-labs/agent-skills",
-      "skills_count": 5,
-      "stars": 18238,
-      "description": "Vercel's official collection of agent skills"
-    },
-    "aiqualitylab": {
-      "name": "AI Quality Lab",
-      "repo": "https://github.com/aiqualitylab/agent-skills",
-      "skills_count": 2,
-      "stars": 1,
-      "description": "AI-powered testing skills for automation frameworks"
-    },
-    "obra-superpowers": {
-      "name": "Obra Superpowers",
-      "repo": "https://github.com/obra/superpowers",
-      "skills_count": 14,
-      "stars": 45654,
-      "description": "An agentic skills framework & software development methodology that works."
-    },
-    "github": {
-      "name": "GitHub",
-      "repo": "https://github.com/github/awesome-copilot",
-      "skills_count": 37,
-      "stars": 20308,
-      "description": "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
-    },
-    "csv-summarizer-skill": {
-      "name": "CSV Data Summarizer",
-      "repo": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill",
-      "skills_count": 1,
-      "stars": 206,
-      "description": "A Claude Skill that automatically analyzes uploaded CSV files \u2014 generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
-    },
-    "claude-marketplace-code": {
-      "name": "Claude Marketplace (Code Ops)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 4,
-      "stars": 300,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "stream-coding": {
-      "name": "Stream Coding Methodology",
-      "repo": "https://github.com/frmoretto/stream-coding",
-      "skills_count": 1,
-      "stars": 42,
-      "description": "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
-    },
-    "claude-marketplace-visual": {
-      "name": "Claude Marketplace (Visual)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 5,
-      "stars": 300,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "composiohq": {
-      "name": "ComposioHQ",
-      "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "skills_count": 111,
-      "stars": 30965,
-      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
-    },
-    "tinybird": {
-      "name": "Tinybird",
-      "repo": "https://github.com/tinybirdco/tinybird-agent-skills",
-      "skills_count": 1,
-      "stars": 4,
-      "description": null
-    },
-    "skillcreatorai": {
-      "name": "SkillCreator.ai",
-      "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-      "skills_count": 47,
-      "stars": 657,
-      "description": "Homebrew for AI Agent Skills."
-    },
-    "visionos-agents": {
-      "name": "visionOS Development",
-      "repo": "https://github.com/tomkrikorian/visionOSAgents",
-      "skills_count": 9,
-      "stars": 37,
-      "description": "AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform"
     },
     "skills-to-agents": {
       "name": "Skills to Agents Converter",
       "repo": "https://github.com/dave1010/skills-to-agents",
       "skills_count": 0,
-      "stars": 25,
+      "stars": 27,
       "description": "Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md"
+    },
+    "notebooklm-skill": {
+      "name": "NotebookLM Integration",
+      "repo": "https://github.com/PleasePrompto/notebooklm-skill",
+      "skills_count": 1,
+      "stars": 3024,
+      "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
     },
     "obsidian-plugin": {
       "name": "Obsidian Plugin Development",
@@ -158,47 +46,33 @@
       "stars": 66,
       "description": "CLAUDE SKILL for Obsidian.md plugin development"
     },
+    "aws-skills": {
+      "name": "AWS Skills",
+      "repo": "https://github.com/zxkane/aws-skills",
+      "skills_count": 5,
+      "stars": 114,
+      "description": "Claude Agent Skills for AWS"
+    },
+    "neondatabase": {
+      "name": "Neon Database",
+      "repo": "https://github.com/neondatabase/agent-skills",
+      "skills_count": 1,
+      "stars": 18,
+      "description": "Agent Skills for Neon Severless Postgres"
+    },
+    "composiohq": {
+      "name": "ComposioHQ",
+      "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "skills_count": 111,
+      "stars": 30965,
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
+    },
     "ipsw-skill": {
       "name": "IPSW iOS Firmware",
       "repo": "https://github.com/blacktop/ipsw-skill",
       "skills_count": 1,
       "stars": 37,
       "description": "A SKILL.md for ipsw"
-    },
-    "google-labs-stitch": {
-      "name": "Google Labs Stitch",
-      "repo": "https://github.com/google-labs-code/stitch-skills",
-      "skills_count": 6,
-      "stars": 1099,
-      "description": null
-    },
-    "ffuf-skill": {
-      "name": "FFUF Web Fuzzing",
-      "repo": "https://github.com/jthack/ffuf_claude_skill",
-      "skills_count": 1,
-      "stars": 105,
-      "description": "This is a \"skill\" for claude to use FFUF."
-    },
-    "tapestry": {
-      "name": "Tapestry Skills",
-      "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
-      "skills_count": 4,
-      "stars": 198,
-      "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
-    },
-    "d3js-skill": {
-      "name": "D3.js Visualization",
-      "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
-      "skills_count": 1,
-      "stars": 88,
-      "description": "A Claude skill for d3.js."
-    },
-    "supabase": {
-      "name": "Supabase",
-      "repo": "https://github.com/supabase/agent-skills",
-      "skills_count": 1,
-      "stars": 972,
-      "description": "Agent Skills to help developers using AI agents with Supabase"
     },
     "move-quality-skill": {
       "name": "Move Code Quality",
@@ -214,34 +88,6 @@
       "stars": 1546,
       "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
     },
-    "travisvn": {
-      "name": "travisvn Collection",
-      "repo": "https://github.com/travisvn/awesome-claude-skills",
-      "skills_count": 0,
-      "stars": 6476,
-      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows \u2014 particularly Claude Code"
-    },
-    "notebooklm-skill": {
-      "name": "NotebookLM Integration",
-      "repo": "https://github.com/PleasePrompto/notebooklm-skill",
-      "skills_count": 1,
-      "stars": 3024,
-      "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
-    },
-    "heilcheng": {
-      "name": "heilcheng Catalog",
-      "repo": "https://github.com/heilcheng/awesome-agent-skills",
-      "skills_count": 0,
-      "stars": 1859,
-      "description": "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Copilot, VS Code)"
-    },
-    "ios-simulator-skill": {
-      "name": "iOS Simulator",
-      "repo": "https://github.com/conorluddy/ios-simulator-skill",
-      "skills_count": 1,
-      "stars": 442,
-      "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
-    },
     "better-auth": {
       "name": "Better Auth",
       "repo": "https://github.com/better-auth/skills",
@@ -249,54 +95,19 @@
       "stars": 90,
       "description": null
     },
-    "epub-skill": {
-      "name": "EPUB Converter",
-      "repo": "https://github.com/smerchek/claude-epub-skill",
-      "skills_count": 1,
-      "stars": 60,
-      "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
+    "github": {
+      "name": "GitHub",
+      "repo": "https://github.com/github/awesome-copilot",
+      "skills_count": 37,
+      "stars": 20308,
+      "description": "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
     },
-    "claude-marketplace-productivity": {
-      "name": "Claude Marketplace (Productivity)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 4,
-      "stars": 300,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "pypict-skill": {
-      "name": "PICT Test Cases",
-      "repo": "https://github.com/omkamal/pypict-claude-skill",
-      "skills_count": 1,
-      "stars": 30,
-      "description": "A claude skill that generate test cases using N-wise test cases using the pypict library"
-    },
-    "remotion": {
-      "name": "Remotion",
-      "repo": "https://github.com/remotion-dev/skills",
-      "skills_count": 1,
-      "stars": 1392,
-      "description": "Agent Skills"
-    },
-    "claude-marketplace-engineering": {
-      "name": "Claude Marketplace (Engineering)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 5,
-      "stars": 300,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "cloudflare": {
-      "name": "Cloudflare",
-      "repo": "https://github.com/cloudflare/skills",
-      "skills_count": 8,
-      "stars": 237,
-      "description": "Skills for teaching agents how to build on Cloudflare."
-    },
-    "sanjay-ai-skills": {
-      "name": "Sanjay AI Skills",
-      "repo": "https://github.com/sanjay3290/ai-skills",
-      "skills_count": 13,
-      "stars": 55,
-      "description": "Collection of agent skills for AI coding assistants"
+    "obra-superpowers": {
+      "name": "Obra Superpowers",
+      "repo": "https://github.com/obra/superpowers",
+      "skills_count": 14,
+      "stars": 45654,
+      "description": "An agentic skills framework & software development methodology that works."
     },
     "expo": {
       "name": "Expo",
@@ -305,19 +116,131 @@
       "stars": 847,
       "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services"
     },
-    "neondatabase": {
-      "name": "Neon Database",
-      "repo": "https://github.com/neondatabase/agent-skills",
-      "skills_count": 1,
-      "stars": 18,
-      "description": "Agent Skills for Neon Severless Postgres"
+    "visionos-agents": {
+      "name": "visionOS Development",
+      "repo": "https://github.com/tomkrikorian/visionOSAgents",
+      "skills_count": 9,
+      "stars": 37,
+      "description": "AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform"
     },
-    "fal-ai": {
-      "name": "fal.ai",
-      "repo": "https://github.com/fal-ai-community/skills",
-      "skills_count": 6,
-      "stars": 13,
+    "claude-marketplace-productivity": {
+      "name": "Claude Marketplace (Productivity)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 4,
+      "stars": 300,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "sanjay-ai-skills": {
+      "name": "Sanjay AI Skills",
+      "repo": "https://github.com/sanjay3290/ai-skills",
+      "skills_count": 13,
+      "stars": 55,
+      "description": "Collection of agent skills for AI coding assistants"
+    },
+    "tinybird": {
+      "name": "Tinybird",
+      "repo": "https://github.com/tinybirdco/tinybird-agent-skills",
+      "skills_count": 1,
+      "stars": 4,
       "description": null
+    },
+    "huggingface": {
+      "name": "HuggingFace",
+      "repo": "https://github.com/huggingface/skills",
+      "skills_count": 8,
+      "stars": 1182,
+      "description": null
+    },
+    "d3js-skill": {
+      "name": "D3.js Visualization",
+      "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+      "skills_count": 1,
+      "stars": 88,
+      "description": "A Claude skill for d3.js."
+    },
+    "skillcreatorai": {
+      "name": "SkillCreator.ai",
+      "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+      "skills_count": 47,
+      "stars": 657,
+      "description": "Homebrew for AI Agent Skills."
+    },
+    "getsentry": {
+      "name": "Sentry",
+      "repo": "https://github.com/getsentry/skills",
+      "skills_count": 0,
+      "stars": 179,
+      "description": "Agent Skills used by the Sentry team for development."
+    },
+    "travisvn": {
+      "name": "travisvn Collection",
+      "repo": "https://github.com/travisvn/awesome-claude-skills",
+      "skills_count": 0,
+      "stars": 6476,
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows \u2014 particularly Claude Code"
+    },
+    "anthropics": {
+      "name": "Anthropic",
+      "repo": "https://github.com/anthropics/skills",
+      "skills_count": 16,
+      "stars": 64906,
+      "description": "Public repository for Agent Skills"
+    },
+    "tapestry": {
+      "name": "Tapestry Skills",
+      "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
+      "skills_count": 4,
+      "stars": 198,
+      "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
+    },
+    "trailofbits": {
+      "name": "Trail of Bits Security",
+      "repo": "https://github.com/trailofbits/skills",
+      "skills_count": 0,
+      "stars": 2430,
+      "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
+    },
+    "claude-marketplace-visual": {
+      "name": "Claude Marketplace (Visual)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 5,
+      "stars": 300,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "claude-marketplace-engineering": {
+      "name": "Claude Marketplace (Engineering)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 5,
+      "stars": 300,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "csv-summarizer-skill": {
+      "name": "CSV Data Summarizer",
+      "repo": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill",
+      "skills_count": 1,
+      "stars": 206,
+      "description": "A Claude Skill that automatically analyzes uploaded CSV files \u2014 generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
+    },
+    "aiqualitylab": {
+      "name": "AI Quality Lab",
+      "repo": "https://github.com/aiqualitylab/agent-skills",
+      "skills_count": 2,
+      "stars": 1,
+      "description": "AI-powered testing skills for automation frameworks"
+    },
+    "stripe": {
+      "name": "Stripe",
+      "repo": "https://github.com/stripe/ai",
+      "skills_count": 0,
+      "stars": 1254,
+      "description": "One-stop shop for building AI-powered products and businesses with Stripe."
+    },
+    "pypict-skill": {
+      "name": "PICT Test Cases",
+      "repo": "https://github.com/omkamal/pypict-claude-skill",
+      "skills_count": 1,
+      "stars": 30,
+      "description": "A claude skill that generate test cases using N-wise test cases using the pypict library"
     },
     "family-history-skill": {
       "name": "Family History Research",
@@ -326,12 +249,89 @@
       "stars": 28,
       "description": "A Claude Skill to assist with family history and genealogy research planning."
     },
-    "aws-skills": {
-      "name": "AWS Skills",
-      "repo": "https://github.com/zxkane/aws-skills",
+    "supabase": {
+      "name": "Supabase",
+      "repo": "https://github.com/supabase/agent-skills",
+      "skills_count": 1,
+      "stars": 972,
+      "description": "Agent Skills to help developers using AI agents with Supabase"
+    },
+    "google-labs-stitch": {
+      "name": "Google Labs Stitch",
+      "repo": "https://github.com/google-labs-code/stitch-skills",
+      "skills_count": 6,
+      "stars": 1099,
+      "description": null
+    },
+    "stream-coding": {
+      "name": "Stream Coding Methodology",
+      "repo": "https://github.com/frmoretto/stream-coding",
+      "skills_count": 1,
+      "stars": 42,
+      "description": "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
+    },
+    "nginity": {
+      "name": "nginity Enterprise",
+      "repo": "https://github.com/alirezarezvani/claude-skills",
+      "skills_count": 0,
+      "stars": 1632,
+      "description": "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
+    },
+    "cloudflare": {
+      "name": "Cloudflare",
+      "repo": "https://github.com/cloudflare/skills",
+      "skills_count": 8,
+      "stars": 237,
+      "description": "Skills for teaching agents how to build on Cloudflare."
+    },
+    "epub-skill": {
+      "name": "EPUB Converter",
+      "repo": "https://github.com/smerchek/claude-epub-skill",
+      "skills_count": 1,
+      "stars": 60,
+      "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
+    },
+    "vercel": {
+      "name": "Vercel",
+      "repo": "https://github.com/vercel-labs/agent-skills",
       "skills_count": 5,
-      "stars": 114,
-      "description": "Claude Agent Skills for AWS"
+      "stars": 18238,
+      "description": "Vercel's official collection of agent skills"
+    },
+    "heilcheng": {
+      "name": "heilcheng Catalog",
+      "repo": "https://github.com/heilcheng/awesome-agent-skills",
+      "skills_count": 0,
+      "stars": 1859,
+      "description": "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Copilot, VS Code)"
+    },
+    "remotion": {
+      "name": "Remotion",
+      "repo": "https://github.com/remotion-dev/skills",
+      "skills_count": 1,
+      "stars": 1392,
+      "description": "Agent Skills"
+    },
+    "claude-marketplace-code": {
+      "name": "Claude Marketplace (Code Ops)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 4,
+      "stars": 300,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "ffuf-skill": {
+      "name": "FFUF Web Fuzzing",
+      "repo": "https://github.com/jthack/ffuf_claude_skill",
+      "skills_count": 1,
+      "stars": 105,
+      "description": "This is a \"skill\" for claude to use FFUF."
+    },
+    "fal-ai": {
+      "name": "fal.ai",
+      "repo": "https://github.com/fal-ai-community/skills",
+      "skills_count": 6,
+      "stars": 13,
+      "description": null
     }
   },
   "categories": [
@@ -344,6 +344,1129 @@
     "other"
   ],
   "skills": [
+    {
+      "id": "ios-simulator-skill/ios-simulator-skill",
+      "name": "ios-simulator-skill",
+      "description": "21 production-ready scripts for iOS app testing, building, and automation. Provides semantic UI navigation, build automation, accessibility testing, and simulator lifecycle management. Optimized for AI agents with minimal token output.",
+      "provider": "ios-simulator-skill",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-10T10:28:14Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/conorluddy/ios-simulator-skill",
+        "path": "ios-simulator-skill",
+        "skill_md_url": "https://raw.githubusercontent.com/conorluddy/ios-simulator-skill/main/ios-simulator-skill/SKILL.md",
+        "commit_sha": "afcf21f5f8f69978f350cae942ac23cadedc1b65"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "test",
+        "ios",
+        "simulator",
+        "skill"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 28,
+      "maintenance_status": "active",
+      "quality_score": 70
+    },
+    {
+      "id": "openai/cloudflare-deploy",
+      "name": "cloudflare-deploy",
+      "description": "Deploy applications and infrastructure to Cloudflare using Workers, Pages, and related platform services. Use when the user asks to deploy, host, publish, or set up a project on Cloudflare.",
+      "provider": "openai",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-02-02T20:20:40Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/cloudflare-deploy",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/cloudflare-deploy/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "cloudflare",
+        "deploy"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 5,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/develop-web-game",
+      "name": "develop-web-game",
+      "description": "Use when Codex is building or iterating on a web game (HTML/JS) and needs a reliable development + testing loop: implement small changes, run a Playwright-based test script with short input bursts and intentional pauses, inspect screenshots/text, and review console errors with render_game_to_text.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/develop-web-game",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/develop-web-game/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "test",
+        "develop",
+        "web",
+        "game"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 7,
+      "maintenance_status": "active",
+      "quality_score": 100
+    },
+    {
+      "id": "openai/doc",
+      "name": "doc",
+      "description": "Use when the task involves reading, creating, or editing `.docx` documents, especially when formatting or layout fidelity matters; prefer `python-docx` plus the bundled `scripts/render_docx.py` for visual checks.",
+      "provider": "openai",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/doc",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/doc/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "docx",
+        "pr",
+        "ci",
+        "visual",
+        "document",
+        "doc"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 8,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/figma",
+      "name": "figma",
+      "description": "Use the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma, and to translate Figma nodes into production code. Trigger when a task involves Figma URLs, node IDs, design-to-code implementation, or Figma MCP setup and troubleshooting.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-02-01T17:05:37Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/figma",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/figma/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "mcp",
+        "design",
+        "figma"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 6,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/figma-implement-design",
+      "name": "figma-implement-design",
+      "description": "Translate Figma nodes into production-ready code with 1:1 visual fidelity using the Figma MCP workflow (design context, screenshots, assets, and project-convention translation). Trigger when the user provides Figma URLs or node IDs, or asks to implement designs or components that must match Figma specs. Requires a working Figma MCP server connection.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/figma-implement-design",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/figma-implement-design/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "mcp",
+        "design",
+        "visual",
+        "figma",
+        "implement"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 7,
+      "maintenance_status": "active",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/gh-address-comments",
+      "name": "gh-address-comments",
+      "description": "Help address review/issue comments on the open GitHub PR for the current branch using gh CLI; verify gh auth first and prompt the user to authenticate if not logged in.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-19T22:10:04Z",
+      "metadata": {
+        "short-description": "Address comments in a GitHub PR review"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/gh-address-comments",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-address-comments/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "github",
+        "git",
+        "pr",
+        "cli",
+        "address",
+        "comments"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 50,
+      "maintenance_status": "maintained",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/gh-fix-ci",
+      "name": "gh-fix-ci",
+      "description": "Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use `gh` to inspect checks and logs, summarize failure context, draft a fix plan, and implement only after explicit approval. Treat external providers (for example Buildkite) as out of scope and report only the details URL.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/gh-fix-ci",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-fix-ci/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "github",
+        "git",
+        "pr",
+        "ci",
+        "fix"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 8,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/imagegen",
+      "name": "imagegen",
+      "description": "Use when the user asks to generate or edit images via the OpenAI Image API (for example: generate image, edit/inpaint/mask, background removal or replacement, transparent background, product shots, concept art, covers, or batch variants); run the bundled CLI (`scripts/image_gen.py`) and require `OPENAI_API_KEY` for live calls.",
+      "provider": "openai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/imagegen",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/imagegen/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "api",
+        "cli",
+        "art",
+        "imagegen"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 8,
+      "maintenance_status": "active",
+      "quality_score": 100
+    },
+    {
+      "id": "openai/jupyter-notebook",
+      "name": "jupyter-notebook",
+      "description": "Use when the user asks to create, scaffold, or edit Jupyter notebooks (`.ipynb`) for experiments, explorations, or tutorials; prefer the bundled templates and run the helper script `new_notebook.py` to generate a clean starting notebook.",
+      "provider": "openai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/jupyter-notebook",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/jupyter-notebook/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "art",
+        "jupyter",
+        "notebook"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 7,
+      "maintenance_status": "active",
+      "quality_score": 100
+    },
+    {
+      "id": "openai/linear",
+      "name": "linear",
+      "description": "Manage issues, projects & team workflows in Linear. Use when the user wants to read, create or updates tickets in Linear.",
+      "provider": "openai",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T22:21:03Z",
+      "metadata": {
+        "short-description": "Manage Linear issues in Codex"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/linear",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/linear/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "linear"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 7,
+      "maintenance_status": "active",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/netlify-deploy",
+      "name": "netlify-deploy",
+      "description": "Deploy web projects to Netlify using the Netlify CLI (`npx netlify`). Use when the user asks to deploy, host, publish, or link a site/repo on Netlify, including preview and production deploys.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-02-02T20:20:40Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/netlify-deploy",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/netlify-deploy/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "cli",
+        "netlify",
+        "deploy"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 5,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/notion-knowledge-capture",
+      "name": "notion-knowledge-capture",
+      "description": "Capture conversations and decisions into structured Notion pages; use when turning chats/notes into wiki entries, how-tos, decisions, or FAQs with proper linking.",
+      "provider": "openai",
+      "category": "enterprise",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-19T17:18:15Z",
+      "metadata": {
+        "short-description": "Capture conversations into structured Notion pages"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/notion-knowledge-capture",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-knowledge-capture/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "ci",
+        "notion",
+        "knowledge",
+        "wiki",
+        "faq",
+        "capture"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 50,
+      "maintenance_status": "maintained",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/notion-meeting-intelligence",
+      "name": "notion-meeting-intelligence",
+      "description": "Prepare meeting materials with Notion context and Codex research; use when gathering context, drafting agendas/pre-reads, and tailoring materials to attendees.",
+      "provider": "openai",
+      "category": "enterprise",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-19T17:18:15Z",
+      "metadata": {
+        "short-description": "Prep meetings with Notion context and tailored agendas"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/notion-meeting-intelligence",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-meeting-intelligence/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "notion",
+        "meeting",
+        "intelligence"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 50,
+      "maintenance_status": "maintained",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/notion-research-documentation",
+      "name": "notion-research-documentation",
+      "description": "Research across Notion and synthesize into structured documentation; use when gathering info from multiple Notion sources to produce briefs, comparisons, or reports with citations.",
+      "provider": "openai",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-19T17:18:15Z",
+      "metadata": {
+        "short-description": "Research Notion content and produce briefs/reports"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/notion-research-documentation",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-research-documentation/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "ci",
+        "notion",
+        "document",
+        "research",
+        "documentation"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 50,
+      "maintenance_status": "maintained",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/notion-spec-to-implementation",
+      "name": "notion-spec-to-implementation",
+      "description": "Turn Notion specs into implementation plans, tasks, and progress tracking; use when implementing PRDs/feature specs and creating Notion plans + tasks from them.",
+      "provider": "openai",
+      "category": "enterprise",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2025-12-19T17:18:15Z",
+      "metadata": {
+        "short-description": "Turn Notion specs into implementation plans, tasks, and progress tracking"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/notion-spec-to-implementation",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-spec-to-implementation/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "notion",
+        "spec",
+        "implementation"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 50,
+      "maintenance_status": "maintained",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/openai-docs",
+      "name": "openai-docs",
+      "description": "Use when the user asks how to build with OpenAI products or APIs and needs up-to-date official documentation with citations (for example: Codex, Responses API, Chat Completions, Apps SDK, Agents SDK, Realtime, model capabilities or limits); prioritize OpenAI docs MCP tools and restrict any fallback browsing to official OpenAI domains.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/openai-docs",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/openai-docs/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "ci",
+        "api",
+        "mcp",
+        "document",
+        "openai",
+        "docs"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 7,
+      "maintenance_status": "active",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/pdf",
+      "name": "pdf",
+      "description": "Use when tasks involve reading, creating, or reviewing PDF files where rendering and layout matter; prefer visual checks by rendering pages (Poppler) and use Python tools such as `reportlab`, `pdfplumber`, and `pypdf` for generation and extraction.",
+      "provider": "openai",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/pdf",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/pdf/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "pdf",
+        "pr",
+        "visual",
+        "extract"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 8,
+      "maintenance_status": "active",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/playwright",
+      "name": "playwright",
+      "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script.",
+      "provider": "openai",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-02-06T18:01:32Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/playwright",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/playwright/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "cli",
+        "extract",
+        "playwright"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 1,
+      "maintenance_status": "active",
+      "quality_score": 100
+    },
+    {
+      "id": "openai/render-deploy",
+      "name": "render-deploy",
+      "description": "Deploy applications to Render by analyzing codebases, generating render.yaml Blueprints, and providing Dashboard deeplinks. Use when the user wants to deploy, host, publish, or set up their application on Render's cloud platform.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-02-02T20:20:40Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/render-deploy",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/render-deploy/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "yaml",
+        "pr",
+        "render",
+        "deploy"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 5,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/screenshot",
+      "name": "screenshot",
+      "description": "Use when the user explicitly asks for a desktop or system screenshot (full screen, specific app or window, or a pixel region), or when tool-specific capture capabilities are unavailable and an OS-level capture is needed.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/screenshot",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/screenshot/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "ci",
+        "screenshot"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 8,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/security-best-practices",
+      "name": "security-best-practices",
+      "description": "Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best practices guidance, a security review/report, or secure-by-default coding help. Trigger only for supported languages (python, javascript/typescript, go). Do not trigger for general code review, debugging, or non-security tasks.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-02-02T15:58:27Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/security-best-practices",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/security-best-practices/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "security",
+        "best",
+        "practices"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 5,
+      "maintenance_status": "active",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/security-ownership-map",
+      "name": "security-ownership-map",
+      "description": "Analyze git repositories to build a security ownership topology (people-to-file), compute bus factor and sensitive-code ownership, and export CSV/JSON for graph databases and visualization. Trigger only when the user explicitly wants a security-oriented ownership or bus-factor analysis grounded in git history (for example: orphaned sensitive code, security maintainers, CODEOWNERS reality checks for risk, sensitive hotspots, or ownership clusters). Do not trigger for general maintainer lists or non-security ownership questions.",
+      "provider": "openai",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-02-02T15:58:27Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/security-ownership-map",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/security-ownership-map/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "csv",
+        "json",
+        "git",
+        "ci",
+        "visual",
+        "analysis",
+        "security",
+        "ownership",
+        "map"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 5,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/security-threat-model",
+      "name": "security-threat-model",
+      "description": "Repository-grounded threat modeling that enumerates trust boundaries, assets, attacker capabilities, abuse paths, and mitigations, and writes a concise Markdown threat model. Trigger only when the user explicitly asks to threat model a codebase or path, enumerate threats/abuse paths, or perform AppSec threat modeling. Do not trigger for general architecture summaries, code review, or non-security design work.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-02-02T15:58:27Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/security-threat-model",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/security-threat-model/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "design",
+        "security",
+        "threat",
+        "model"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 5,
+      "maintenance_status": "active",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/sentry",
+      "name": "sentry",
+      "description": "Use when the user asks to inspect Sentry issues or events, summarize recent production errors, or pull basic Sentry health data via the Sentry API; perform read-only queries with the bundled script and require `SENTRY_AUTH_TOKEN`.",
+      "provider": "openai",
+      "category": "integrations",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/sentry",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/sentry/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "api",
+        "sentry"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 7,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/skill-creator",
+      "name": "skill-creator",
+      "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-02-01T03:37:43Z",
+      "metadata": {
+        "short-description": "Create or update a skill"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.system/skill-creator",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "knowledge",
+        "skill",
+        "creator"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 7,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/skill-installer",
+      "name": "skill-installer",
+      "description": "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos).",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-09T00:21:33Z",
+      "metadata": {
+        "short-description": "Install curated skills from openai/skills or other repos"
+      },
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.system/skill-installer",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-installer/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "github",
+        "git",
+        "pr",
+        "skill",
+        "installer"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 30,
+      "maintenance_status": "maintained",
+      "quality_score": 80
+    },
+    {
+      "id": "openai/sora",
+      "name": "sora",
+      "description": "Use when the user asks to generate, remix, poll, list, download, or delete Sora videos via OpenAI\u2019s video API using the bundled CLI (`scripts/sora.py`), including requests like \u201cgenerate AI video,\u201d \u201cSora,\u201d \u201cvideo remix,\u201d \u201cdownload video/thumbnail/spritesheet,\u201d and batch video generation; requires `OPENAI_API_KEY` and Sora API access.",
+      "provider": "openai",
+      "category": "integrations",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/sora",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/sora/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "api",
+        "cli",
+        "sora"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 8,
+      "maintenance_status": "active",
+      "quality_score": 100
+    },
+    {
+      "id": "openai/speech",
+      "name": "speech",
+      "description": "Use when the user asks for text-to-speech narration or voiceover, accessibility reads, audio prompts, or batch speech generation via the OpenAI Audio API; run the bundled CLI (`scripts/text_to_speech.py`) with built-in voices and require `OPENAI_API_KEY` for live calls. Custom voice creation is out of scope.",
+      "provider": "openai",
+      "category": "integrations",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/speech",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/speech/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "api",
+        "cli",
+        "speech"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 8,
+      "maintenance_status": "active",
+      "quality_score": 100
+    },
+    {
+      "id": "openai/spreadsheet",
+      "name": "spreadsheet",
+      "description": "Use when tasks involve creating, editing, analyzing, or formatting spreadsheets (`.xlsx`, `.csv`, `.tsv`) using Python (`openpyxl`, `pandas`), especially when formulas, references, and formatting need to be preserved and verified.",
+      "provider": "openai",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-30T18:34:32Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/spreadsheet",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/spreadsheet/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "xlsx",
+        "csv",
+        "pr",
+        "ci",
+        "spreadsheet"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 8,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/transcribe",
+      "name": "transcribe",
+      "description": "Transcribe audio files to text with optional diarization and known-speaker hints. Use when a user asks to transcribe speech from audio/video, extract text from recordings, or label speakers in interviews or meetings.",
+      "provider": "openai",
+      "category": "enterprise",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/transcribe",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/transcribe/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "extract",
+        "meeting",
+        "transcribe"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 7,
+      "maintenance_status": "active",
+      "quality_score": 100
+    },
+    {
+      "id": "openai/vercel-deploy",
+      "name": "vercel-deploy",
+      "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-02-04T22:26:32Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/vercel-deploy",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/vercel-deploy/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "vercel",
+        "deploy"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 3,
+      "maintenance_status": "active",
+      "quality_score": 90
+    },
+    {
+      "id": "openai/yeet",
+      "name": "yeet",
+      "description": "Use only when the user explicitly asks to stage, commit, push, and open a GitHub pull request in one flow using the GitHub CLI (`gh`).",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T12:26:07Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/yeet",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/yeet/SKILL.md",
+        "commit_sha": "ea6b206c683087da5b503f5ac9d7202b326ac6bb"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "github",
+        "git",
+        "ci",
+        "cli",
+        "yeet"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 7,
+      "maintenance_status": "active",
+      "quality_score": 80
+    },
     {
       "id": "anthropics/algorithmic-art",
       "name": "algorithmic-art",
@@ -1177,1280 +2300,6 @@
       "days_since_update": 30,
       "maintenance_status": "maintained",
       "quality_score": 70
-    },
-    {
-      "id": "openai/cloudflare-deploy",
-      "name": "cloudflare-deploy",
-      "description": "Deploy applications and infrastructure to Cloudflare using Workers, Pages, and related platform services. Use when the user asks to deploy, host, publish, or set up a project on Cloudflare.",
-      "provider": "openai",
-      "category": "other",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-02-02T20:20:40Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/cloudflare-deploy",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/cloudflare-deploy/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "cloudflare",
-        "deploy"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 4,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/codex-readiness-integration-test",
-      "name": "codex-readiness-integration-test",
-      "description": "Run the Codex Readiness integration test. Use when you need an end-to-end agentic loop with build/test scoring.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-27T07:15:35Z",
-      "metadata": {
-        "short-description": "Run Codex Readiness integration test"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.experimental/codex-readiness-integration-test",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/codex-readiness-integration-test/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "test",
-        "codex",
-        "readiness",
-        "integration"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 10,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/codex-readiness-unit-test",
-      "name": "codex-readiness-unit-test",
-      "description": "Run the Codex Readiness unit test report. Use when you need deterministic checks plus in-session LLM evals for AGENTS.md/PLANS.md.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-22T18:54:33Z",
-      "metadata": {
-        "short-description": "Run Codex Readiness unit test report"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.experimental/codex-readiness-unit-test",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/codex-readiness-unit-test/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "test",
-        "codex",
-        "readiness",
-        "unit"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 15,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/codex-wrapped",
-      "name": "codex-wrapped",
-      "description": "Generate a Codex Wrapped usage recap from local Codex logs, including last 30 days, last 7 days, and an all-time focus-hours callout. Use when the user asks for a usage summary, activity recap, or Codex Wrapped report.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-02-02T16:00:52Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.experimental/wrapped",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/wrapped/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "codex",
-        "wrapped"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 4,
-      "maintenance_status": "active",
-      "quality_score": 80
-    },
-    {
-      "id": "openai/create-plan",
-      "name": "create-plan",
-      "description": "Create a concise plan. Use when a user explicitly asks for a plan related to a coding task.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2025-12-21T03:20:14Z",
-      "metadata": {
-        "short-description": "Create a plan"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.experimental/create-plan",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/create-plan/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "ci",
-        "create",
-        "plan"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 48,
-      "maintenance_status": "maintained",
-      "quality_score": 60
-    },
-    {
-      "id": "openai/develop-web-game",
-      "name": "develop-web-game",
-      "description": "Use when Codex is building or iterating on a web game (HTML/JS) and needs a reliable development + testing loop: implement small changes, run a Playwright-based test script with short input bursts and intentional pauses, inspect screenshots/text, and review console errors with render_game_to_text.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-31T18:14:20Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/develop-web-game",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/develop-web-game/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "test",
-        "develop",
-        "web",
-        "game"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 6,
-      "maintenance_status": "active",
-      "quality_score": 100
-    },
-    {
-      "id": "openai/doc",
-      "name": "doc",
-      "description": "Use when the task involves reading, creating, or editing `.docx` documents, especially when formatting or layout fidelity matters; prefer `python-docx` plus the bundled `scripts/render_docx.py` for visual checks.",
-      "provider": "openai",
-      "category": "documents",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-30T18:34:32Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/doc",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/doc/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": true,
-      "tags": [
-        "docx",
-        "pr",
-        "ci",
-        "visual",
-        "document",
-        "doc"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 7,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/figma",
-      "name": "figma",
-      "description": "Use the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma, and to translate Figma nodes into production code. Trigger when a task involves Figma URLs, node IDs, design-to-code implementation, or Figma MCP setup and troubleshooting.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-02-01T17:05:37Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/figma",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/figma/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "mcp",
-        "design",
-        "figma"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 5,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/figma-implement-design",
-      "name": "figma-implement-design",
-      "description": "Translate Figma nodes into production-ready code with 1:1 visual fidelity using the Figma MCP workflow (design context, screenshots, assets, and project-convention translation). Trigger when the user provides Figma URLs or node IDs, or asks to implement designs or components that must match Figma specs. Requires a working Figma MCP server connection.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-31T18:14:20Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/figma-implement-design",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/figma-implement-design/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "mcp",
-        "design",
-        "visual",
-        "figma",
-        "implement"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 6,
-      "maintenance_status": "active",
-      "quality_score": 80
-    },
-    {
-      "id": "openai/gh-address-comments",
-      "name": "gh-address-comments",
-      "description": "Help address review/issue comments on the open GitHub PR for the current branch using gh CLI; verify gh auth first and prompt the user to authenticate if not logged in.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2025-12-19T22:10:04Z",
-      "metadata": {
-        "short-description": "Address comments in a GitHub PR review"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/gh-address-comments",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-address-comments/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": true,
-      "tags": [
-        "github",
-        "git",
-        "pr",
-        "cli",
-        "address",
-        "comments"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 49,
-      "maintenance_status": "maintained",
-      "quality_score": 80
-    },
-    {
-      "id": "openai/gh-fix-ci",
-      "name": "gh-fix-ci",
-      "description": "Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use `gh` to inspect checks and logs, summarize failure context, draft a fix plan, and implement only after explicit approval. Treat external providers (for example Buildkite) as out of scope and report only the details URL.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-30T18:34:32Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/gh-fix-ci",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/gh-fix-ci/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": true,
-      "tags": [
-        "github",
-        "git",
-        "pr",
-        "ci",
-        "fix"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 7,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/gitlab-address-comments",
-      "name": "gitlab-address-comments",
-      "description": "Help address review/issue comments on the open GitLab MR for the current branch using glab CLI. Use when the user wants help addressing review/issue comments on an open GitLab MR",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-29T02:17:06Z",
-      "metadata": {
-        "short-description": "Address comments in a GitLab MR review"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.experimental/gitlab-address-comments",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.experimental/gitlab-address-comments/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "git",
-        "cli",
-        "gitlab",
-        "address",
-        "comments"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 9,
-      "maintenance_status": "active",
-      "quality_score": 80
-    },
-    {
-      "id": "openai/imagegen",
-      "name": "imagegen",
-      "description": "Use when the user asks to generate or edit images via the OpenAI Image API (for example: generate image, edit/inpaint/mask, background removal or replacement, transparent background, product shots, concept art, covers, or batch variants); run the bundled CLI (`scripts/image_gen.py`) and require `OPENAI_API_KEY` for live calls.",
-      "provider": "openai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-30T18:34:32Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/imagegen",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/imagegen/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "api",
-        "cli",
-        "art",
-        "imagegen"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 7,
-      "maintenance_status": "active",
-      "quality_score": 100
-    },
-    {
-      "id": "openai/jupyter-notebook",
-      "name": "jupyter-notebook",
-      "description": "Use when the user asks to create, scaffold, or edit Jupyter notebooks (`.ipynb`) for experiments, explorations, or tutorials; prefer the bundled templates and run the helper script `new_notebook.py` to generate a clean starting notebook.",
-      "provider": "openai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-31T18:14:20Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/jupyter-notebook",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/jupyter-notebook/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "art",
-        "jupyter",
-        "notebook"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 6,
-      "maintenance_status": "active",
-      "quality_score": 100
-    },
-    {
-      "id": "openai/linear",
-      "name": "linear",
-      "description": "Manage issues, projects & team workflows in Linear. Use when the user wants to read, create or updates tickets in Linear.",
-      "provider": "openai",
-      "category": "other",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-31T22:21:03Z",
-      "metadata": {
-        "short-description": "Manage Linear issues in Codex"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/linear",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/linear/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "linear"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 6,
-      "maintenance_status": "active",
-      "quality_score": 80
-    },
-    {
-      "id": "openai/netlify-deploy",
-      "name": "netlify-deploy",
-      "description": "Deploy web projects to Netlify using the Netlify CLI (`npx netlify`). Use when the user asks to deploy, host, publish, or link a site/repo on Netlify, including preview and production deploys.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-02-02T20:20:40Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/netlify-deploy",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/netlify-deploy/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "cli",
-        "netlify",
-        "deploy"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 4,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/notion-knowledge-capture",
-      "name": "notion-knowledge-capture",
-      "description": "Capture conversations and decisions into structured Notion pages; use when turning chats/notes into wiki entries, how-tos, decisions, or FAQs with proper linking.",
-      "provider": "openai",
-      "category": "enterprise",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2025-12-19T17:18:15Z",
-      "metadata": {
-        "short-description": "Capture conversations into structured Notion pages"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/notion-knowledge-capture",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-knowledge-capture/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "ci",
-        "notion",
-        "knowledge",
-        "wiki",
-        "faq",
-        "capture"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 49,
-      "maintenance_status": "maintained",
-      "quality_score": 80
-    },
-    {
-      "id": "openai/notion-meeting-intelligence",
-      "name": "notion-meeting-intelligence",
-      "description": "Prepare meeting materials with Notion context and Codex research; use when gathering context, drafting agendas/pre-reads, and tailoring materials to attendees.",
-      "provider": "openai",
-      "category": "enterprise",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2025-12-19T17:18:15Z",
-      "metadata": {
-        "short-description": "Prep meetings with Notion context and tailored agendas"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/notion-meeting-intelligence",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-meeting-intelligence/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "notion",
-        "meeting",
-        "intelligence"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 49,
-      "maintenance_status": "maintained",
-      "quality_score": 80
-    },
-    {
-      "id": "openai/notion-research-documentation",
-      "name": "notion-research-documentation",
-      "description": "Research across Notion and synthesize into structured documentation; use when gathering info from multiple Notion sources to produce briefs, comparisons, or reports with citations.",
-      "provider": "openai",
-      "category": "documents",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2025-12-19T17:18:15Z",
-      "metadata": {
-        "short-description": "Research Notion content and produce briefs/reports"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/notion-research-documentation",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-research-documentation/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "ci",
-        "notion",
-        "document",
-        "research",
-        "documentation"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 49,
-      "maintenance_status": "maintained",
-      "quality_score": 80
-    },
-    {
-      "id": "openai/notion-spec-to-implementation",
-      "name": "notion-spec-to-implementation",
-      "description": "Turn Notion specs into implementation plans, tasks, and progress tracking; use when implementing PRDs/feature specs and creating Notion plans + tasks from them.",
-      "provider": "openai",
-      "category": "enterprise",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2025-12-19T17:18:15Z",
-      "metadata": {
-        "short-description": "Turn Notion specs into implementation plans, tasks, and progress tracking"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/notion-spec-to-implementation",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/notion-spec-to-implementation/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "notion",
-        "spec",
-        "implementation"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 49,
-      "maintenance_status": "maintained",
-      "quality_score": 80
-    },
-    {
-      "id": "openai/openai-docs",
-      "name": "openai-docs",
-      "description": "Use when the user asks how to build with OpenAI products or APIs and needs up-to-date official documentation with citations (for example: Codex, Responses API, Chat Completions, Apps SDK, Agents SDK, Realtime, model capabilities or limits); prioritize OpenAI docs MCP tools and restrict any fallback browsing to official OpenAI domains.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-31T18:14:20Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/openai-docs",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/openai-docs/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "ci",
-        "api",
-        "mcp",
-        "document",
-        "openai",
-        "docs"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 6,
-      "maintenance_status": "active",
-      "quality_score": 80
-    },
-    {
-      "id": "openai/pdf",
-      "name": "pdf",
-      "description": "Use when tasks involve reading, creating, or reviewing PDF files where rendering and layout matter; prefer visual checks by rendering pages (Poppler) and use Python tools such as `reportlab`, `pdfplumber`, and `pypdf` for generation and extraction.",
-      "provider": "openai",
-      "category": "documents",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-30T18:34:32Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/pdf",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/pdf/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": true,
-      "tags": [
-        "pdf",
-        "pr",
-        "visual",
-        "extract"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 7,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "similar_skills": [
-        {
-          "id": "anthropics/pdf",
-          "provider": "anthropics",
-          "similarity": 0.45
-        }
-      ]
-    },
-    {
-      "id": "openai/playwright",
-      "name": "playwright",
-      "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script.",
-      "provider": "openai",
-      "category": "data",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-02-06T18:01:32Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/playwright",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/playwright/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "cli",
-        "extract",
-        "playwright"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 100
-    },
-    {
-      "id": "openai/render-deploy",
-      "name": "render-deploy",
-      "description": "Deploy applications to Render by analyzing codebases, generating render.yaml Blueprints, and providing Dashboard deeplinks. Use when the user wants to deploy, host, publish, or set up their application on Render's cloud platform.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-02-02T20:20:40Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/render-deploy",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/render-deploy/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "yaml",
-        "pr",
-        "render",
-        "deploy"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 4,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/screenshot",
-      "name": "screenshot",
-      "description": "Use when the user explicitly asks for a desktop or system screenshot (full screen, specific app or window, or a pixel region), or when tool-specific capture capabilities are unavailable and an OS-level capture is needed.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-30T18:34:32Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/screenshot",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/screenshot/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": true,
-      "tags": [
-        "ci",
-        "screenshot"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 7,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/security-best-practices",
-      "name": "security-best-practices",
-      "description": "Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best practices guidance, a security review/report, or secure-by-default coding help. Trigger only for supported languages (python, javascript/typescript, go). Do not trigger for general code review, debugging, or non-security tasks.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-02-02T15:58:27Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/security-best-practices",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/security-best-practices/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "ci",
-        "security",
-        "best",
-        "practices"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 4,
-      "maintenance_status": "active",
-      "quality_score": 80
-    },
-    {
-      "id": "openai/security-ownership-map",
-      "name": "security-ownership-map",
-      "description": "Analyze git repositories to build a security ownership topology (people-to-file), compute bus factor and sensitive-code ownership, and export CSV/JSON for graph databases and visualization. Trigger only when the user explicitly wants a security-oriented ownership or bus-factor analysis grounded in git history (for example: orphaned sensitive code, security maintainers, CODEOWNERS reality checks for risk, sensitive hotspots, or ownership clusters). Do not trigger for general maintainer lists or non-security ownership questions.",
-      "provider": "openai",
-      "category": "data",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-02-02T15:58:27Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/security-ownership-map",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/security-ownership-map/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "csv",
-        "json",
-        "git",
-        "ci",
-        "visual",
-        "analysis",
-        "security",
-        "ownership",
-        "map"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 4,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/security-threat-model",
-      "name": "security-threat-model",
-      "description": "Repository-grounded threat modeling that enumerates trust boundaries, assets, attacker capabilities, abuse paths, and mitigations, and writes a concise Markdown threat model. Trigger only when the user explicitly asks to threat model a codebase or path, enumerate threats/abuse paths, or perform AppSec threat modeling. Do not trigger for general architecture summaries, code review, or non-security design work.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-02-02T15:58:27Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/security-threat-model",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/security-threat-model/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "ci",
-        "design",
-        "security",
-        "threat",
-        "model"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 4,
-      "maintenance_status": "active",
-      "quality_score": 80
-    },
-    {
-      "id": "openai/sentry",
-      "name": "sentry",
-      "description": "Use when the user asks to inspect Sentry issues or events, summarize recent production errors, or pull basic Sentry health data via the Sentry API; perform read-only queries with the bundled script and require `SENTRY_AUTH_TOKEN`.",
-      "provider": "openai",
-      "category": "integrations",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-31T18:14:20Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/sentry",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/sentry/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "api",
-        "sentry"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 6,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/skill-creator",
-      "name": "skill-creator",
-      "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations.",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-02-01T03:37:43Z",
-      "metadata": {
-        "short-description": "Create or update a skill"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.system/skill-creator",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-creator/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "ci",
-        "knowledge",
-        "skill",
-        "creator"
-      ],
-      "duplicate_status": "mirror",
-      "duplicate_annotation": "Complete mirror of anthropics/skill-creator",
-      "duplicate_of": "anthropics/skill-creator",
-      "duplicate_similarity": 1.0,
-      "days_since_update": 6,
-      "maintenance_status": "active",
-      "quality_score": 90,
-      "similar_skills": [
-        {
-          "id": "anthropics/skill-creator",
-          "provider": "anthropics",
-          "similarity": 1.0
-        }
-      ]
-    },
-    {
-      "id": "openai/skill-installer",
-      "name": "skill-installer",
-      "description": "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos).",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-09T00:21:33Z",
-      "metadata": {
-        "short-description": "Install curated skills from openai/skills or other repos"
-      },
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.system/skill-installer",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/skill-installer/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": true,
-      "tags": [
-        "github",
-        "git",
-        "pr",
-        "skill",
-        "installer"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 29,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/sora",
-      "name": "sora",
-      "description": "Use when the user asks to generate, remix, poll, list, download, or delete Sora videos via OpenAI\u2019s video API using the bundled CLI (`scripts/sora.py`), including requests like \u201cgenerate AI video,\u201d \u201cSora,\u201d \u201cvideo remix,\u201d \u201cdownload video/thumbnail/spritesheet,\u201d and batch video generation; requires `OPENAI_API_KEY` and Sora API access.",
-      "provider": "openai",
-      "category": "integrations",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-30T18:34:32Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/sora",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/sora/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "api",
-        "cli",
-        "sora"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 7,
-      "maintenance_status": "active",
-      "quality_score": 100
-    },
-    {
-      "id": "openai/speech",
-      "name": "speech",
-      "description": "Use when the user asks for text-to-speech narration or voiceover, accessibility reads, audio prompts, or batch speech generation via the OpenAI Audio API; run the bundled CLI (`scripts/text_to_speech.py`) with built-in voices and require `OPENAI_API_KEY` for live calls. Custom voice creation is out of scope.",
-      "provider": "openai",
-      "category": "integrations",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-30T18:34:32Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/speech",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/speech/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "api",
-        "cli",
-        "speech"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 7,
-      "maintenance_status": "active",
-      "quality_score": 100
-    },
-    {
-      "id": "openai/spreadsheet",
-      "name": "spreadsheet",
-      "description": "Use when tasks involve creating, editing, analyzing, or formatting spreadsheets (`.xlsx`, `.csv`, `.tsv`) using Python (`openpyxl`, `pandas`), especially when formulas, references, and formatting need to be preserved and verified.",
-      "provider": "openai",
-      "category": "documents",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-30T18:34:32Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/spreadsheet",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/spreadsheet/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "xlsx",
-        "csv",
-        "pr",
-        "ci",
-        "spreadsheet"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 7,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/transcribe",
-      "name": "transcribe",
-      "description": "Transcribe audio files to text with optional diarization and known-speaker hints. Use when a user asks to transcribe speech from audio/video, extract text from recordings, or label speakers in interviews or meetings.",
-      "provider": "openai",
-      "category": "enterprise",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-31T18:14:20Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/transcribe",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/transcribe/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": true,
-      "tags": [
-        "extract",
-        "meeting",
-        "transcribe"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 6,
-      "maintenance_status": "active",
-      "quality_score": 100
-    },
-    {
-      "id": "openai/vercel-deploy",
-      "name": "vercel-deploy",
-      "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-02-04T22:26:32Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/vercel-deploy",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/vercel-deploy/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": true,
-      "tags": [
-        "pr",
-        "vercel",
-        "deploy"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 2,
-      "maintenance_status": "active",
-      "quality_score": 90
-    },
-    {
-      "id": "openai/yeet",
-      "name": "yeet",
-      "description": "Use only when the user explicitly asks to stage, commit, push, and open a GitHub pull request in one flow using the GitHub CLI (`gh`).",
-      "provider": "openai",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-31T12:26:07Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/openai/skills",
-        "path": "skills/.curated/yeet",
-        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/yeet/SKILL.md",
-        "commit_sha": "a5119697b819090e00e5d11ee1d86834d7c1043a"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": true,
-      "tags": [
-        "github",
-        "git",
-        "ci",
-        "cli",
-        "yeet"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 6,
-      "maintenance_status": "active",
-      "quality_score": 80
     },
     {
       "id": "cloudflare/agents-sdk",
@@ -10312,40 +10161,6 @@
       "quality_score": 50
     },
     {
-      "id": "ios-simulator-skill/ios-simulator-skill",
-      "name": "ios-simulator-skill",
-      "description": "21 production-ready scripts for iOS app testing, building, and automation. Provides semantic UI navigation, build automation, accessibility testing, and simulator lifecycle management. Optimized for AI agents with minimal token output.",
-      "provider": "ios-simulator-skill",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-01-10T10:28:14Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/conorluddy/ios-simulator-skill",
-        "path": "ios-simulator-skill",
-        "skill_md_url": "https://raw.githubusercontent.com/conorluddy/ios-simulator-skill/main/ios-simulator-skill/SKILL.md",
-        "commit_sha": "1b7708b305570760a2bcaec8f0e9c88ec2a506e0"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "test",
-        "ios",
-        "simulator",
-        "skill"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 21,
-      "maintenance_status": "active",
-      "quality_score": 70
-    },
-    {
       "id": "ipsw-skill/ipsw",
       "name": "ipsw",
       "description": "Apple firmware and binary reverse engineering with the ipsw CLI tool. Use when analyzing iOS/macOS binaries, disassembling functions in dyld_shared_cache, dumping Objective-C headers from private frameworks, downloading IPSWs or kernelcaches, extracting entitlements, analyzing Mach-O files, or researching Apple security. Triggers on requests involving Apple RE, iOS internals, kernel analysis, KEXT extraction, or vulnerability research on Apple platforms.",
@@ -12817,17 +12632,17 @@
     }
   ],
   "duplicate_summary": {
-    "total_annotated": 1,
-    "mirrors": 1,
+    "total_annotated": 0,
+    "mirrors": 0,
     "probable_duplicates": 0
   },
   "maintenance_summary": {
-    "active": 41,
-    "maintained": 20,
+    "active": 27,
+    "maintained": 6,
     "stale": 0,
     "abandoned": 0,
     "unknown": 0,
-    "active_percentage": 67.2,
+    "active_percentage": 81.8,
     "maintained_percentage": 100.0
   }
 }
