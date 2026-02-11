@@ -1,148 +1,71 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.02.10",
-  "generated_at": "2026-02-10T07:14:50.131954+00:00",
+  "version": "2026.02.11",
+  "generated_at": "2026-02-11T07:11:40.284023+00:00",
   "total_skills": 364,
   "providers": {
-    "openai": {
-      "name": "OpenAI",
-      "repo": "https://github.com/openai/skills",
-      "skills_count": 32,
-      "stars": 7660,
-      "description": "Skills Catalog for Codex"
-    },
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
       "skills_count": 39,
-      "stars": 20683,
+      "stars": 20821,
       "description": "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
-    },
-    "sanjay-ai-skills": {
-      "name": "Sanjay AI Skills",
-      "repo": "https://github.com/sanjay3290/ai-skills",
-      "skills_count": 14,
-      "stars": 73,
-      "description": "Collection of agent skills for AI coding assistants"
     },
     "stripe": {
       "name": "Stripe",
       "repo": "https://github.com/stripe/ai",
       "skills_count": 0,
-      "stars": 1261,
+      "stars": 1263,
       "description": "One-stop shop for building AI-powered products and businesses with Stripe."
     },
     "trailofbits": {
       "name": "Trail of Bits Security",
       "repo": "https://github.com/trailofbits/skills",
       "skills_count": 0,
-      "stars": 2495,
+      "stars": 2539,
       "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
+    },
+    "getsentry": {
+      "name": "Sentry",
+      "repo": "https://github.com/getsentry/skills",
+      "skills_count": 0,
+      "stars": 184,
+      "description": "Agent Skills used by the Sentry team for development."
     },
     "supabase": {
       "name": "Supabase",
       "repo": "https://github.com/supabase/agent-skills",
       "skills_count": 1,
-      "stars": 1189,
+      "stars": 1214,
       "description": "Agent Skills to help developers using AI agents with Supabase"
     },
-    "tinybird": {
-      "name": "Tinybird",
-      "repo": "https://github.com/tinybirdco/tinybird-agent-skills",
-      "skills_count": 1,
-      "stars": 8,
+    "better-auth": {
+      "name": "Better Auth",
+      "repo": "https://github.com/better-auth/skills",
+      "skills_count": 0,
+      "stars": 101,
       "description": null
     },
     "remotion": {
       "name": "Remotion",
       "repo": "https://github.com/remotion-dev/skills",
       "skills_count": 1,
-      "stars": 1499,
+      "stars": 1517,
       "description": "Agent Skills"
     },
-    "visionos-agents": {
-      "name": "visionOS Development",
-      "repo": "https://github.com/tomkrikorian/visionOSAgents",
-      "skills_count": 12,
-      "stars": 39,
-      "description": "AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform"
-    },
-    "stream-coding": {
-      "name": "Stream Coding Methodology",
-      "repo": "https://github.com/frmoretto/stream-coding",
-      "skills_count": 1,
-      "stars": 42,
-      "description": "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
-    },
-    "ffuf-skill": {
-      "name": "FFUF Web Fuzzing",
-      "repo": "https://github.com/jthack/ffuf_claude_skill",
-      "skills_count": 1,
-      "stars": 105,
-      "description": "This is a \"skill\" for claude to use FFUF."
-    },
-    "ipsw-skill": {
-      "name": "IPSW iOS Firmware",
-      "repo": "https://github.com/blacktop/ipsw-skill",
-      "skills_count": 1,
-      "stars": 37,
-      "description": "A SKILL.md for ipsw"
-    },
-    "fal-ai": {
-      "name": "fal.ai",
-      "repo": "https://github.com/fal-ai-community/skills",
-      "skills_count": 6,
-      "stars": 13,
-      "description": null
-    },
-    "tapestry": {
-      "name": "Tapestry Skills",
-      "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
-      "skills_count": 4,
-      "stars": 198,
-      "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
-    },
-    "aws-skills": {
-      "name": "AWS Skills",
-      "repo": "https://github.com/zxkane/aws-skills",
-      "skills_count": 5,
-      "stars": 114,
-      "description": "Claude Agent Skills for AWS"
-    },
-    "claude-marketplace-visual": {
-      "name": "Claude Marketplace (Visual)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 5,
-      "stars": 300,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "move-quality-skill": {
-      "name": "Move Code Quality",
-      "repo": "https://github.com/1NickPappas/move-code-quality-skill",
-      "skills_count": 1,
-      "stars": 10,
-      "description": "Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist"
-    },
-    "getsentry": {
-      "name": "Sentry",
-      "repo": "https://github.com/getsentry/skills",
+    "nginity": {
+      "name": "nginity Enterprise",
+      "repo": "https://github.com/alirezarezvani/claude-skills",
       "skills_count": 0,
-      "stars": 179,
-      "description": "Agent Skills used by the Sentry team for development."
+      "stars": 1719,
+      "description": "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
     },
-    "family-history-skill": {
-      "name": "Family History Research",
-      "repo": "https://github.com/emaynard/claude-family-history-research-skill",
-      "skills_count": 1,
-      "stars": 28,
-      "description": "A Claude Skill to assist with family history and genealogy research planning."
-    },
-    "google-labs-stitch": {
-      "name": "Google Labs Stitch",
-      "repo": "https://github.com/google-labs-code/stitch-skills",
-      "skills_count": 6,
-      "stars": 1099,
-      "description": null
+    "voltagent": {
+      "name": "VoltAgent Catalog",
+      "repo": "https://github.com/VoltAgent/awesome-agent-skills",
+      "skills_count": 0,
+      "stars": 6669,
+      "description": "Claude Code Skills and 300+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
     },
     "csv-summarizer-skill": {
       "name": "CSV Data Summarizer",
@@ -151,75 +74,12 @@
       "stars": 206,
       "description": "A Claude Skill that automatically analyzes uploaded CSV files \u2014 generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
     },
-    "claude-marketplace-code": {
-      "name": "Claude Marketplace (Code Ops)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 4,
-      "stars": 300,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "travisvn": {
-      "name": "travisvn Collection",
-      "repo": "https://github.com/travisvn/awesome-claude-skills",
-      "skills_count": 0,
-      "stars": 6476,
-      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows \u2014 particularly Claude Code"
-    },
-    "playwright-skill": {
-      "name": "Playwright Automation",
-      "repo": "https://github.com/lackeyjb/playwright-skill",
+    "obsidian-plugin": {
+      "name": "Obsidian Plugin Development",
+      "repo": "https://github.com/gapmiss/obsidian-plugin-skill",
       "skills_count": 1,
-      "stars": 1546,
-      "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
-    },
-    "d3js-skill": {
-      "name": "D3.js Visualization",
-      "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
-      "skills_count": 1,
-      "stars": 88,
-      "description": "A Claude skill for d3.js."
-    },
-    "nginity": {
-      "name": "nginity Enterprise",
-      "repo": "https://github.com/alirezarezvani/claude-skills",
-      "skills_count": 0,
-      "stars": 1673,
-      "description": "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
-    },
-    "neondatabase": {
-      "name": "Neon Database",
-      "repo": "https://github.com/neondatabase/agent-skills",
-      "skills_count": 1,
-      "stars": 18,
-      "description": "Agent Skills for Neon Severless Postgres"
-    },
-    "heilcheng": {
-      "name": "heilcheng Catalog",
-      "repo": "https://github.com/heilcheng/awesome-agent-skills",
-      "skills_count": 0,
-      "stars": 1859,
-      "description": "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Copilot, VS Code)"
-    },
-    "skillcreatorai": {
-      "name": "SkillCreator.ai",
-      "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-      "skills_count": 47,
-      "stars": 657,
-      "description": "Homebrew for AI Agent Skills."
-    },
-    "huggingface": {
-      "name": "HuggingFace",
-      "repo": "https://github.com/huggingface/skills",
-      "skills_count": 8,
-      "stars": 1182,
-      "description": null
-    },
-    "anthropics": {
-      "name": "Anthropic",
-      "repo": "https://github.com/anthropics/skills",
-      "skills_count": 16,
-      "stars": 64906,
-      "description": "Public repository for Agent Skills"
+      "stars": 66,
+      "description": "CLAUDE SKILL for Obsidian.md plugin development"
     },
     "pypict-skill": {
       "name": "PICT Test Cases",
@@ -235,47 +95,19 @@
       "stars": 251,
       "description": "Skills for teaching agents how to build on Cloudflare."
     },
-    "voltagent": {
-      "name": "VoltAgent Catalog",
-      "repo": "https://github.com/VoltAgent/awesome-agent-skills",
-      "skills_count": 0,
-      "stars": 6482,
-      "description": "Claude Code Skills and 300+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
-    },
-    "skills-to-agents": {
-      "name": "Skills to Agents Converter",
-      "repo": "https://github.com/dave1010/skills-to-agents",
-      "skills_count": 0,
-      "stars": 27,
-      "description": "Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md"
-    },
-    "claude-marketplace-productivity": {
-      "name": "Claude Marketplace (Productivity)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 4,
-      "stars": 300,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "epub-skill": {
-      "name": "EPUB Converter",
-      "repo": "https://github.com/smerchek/claude-epub-skill",
+    "playwright-skill": {
+      "name": "Playwright Automation",
+      "repo": "https://github.com/lackeyjb/playwright-skill",
       "skills_count": 1,
-      "stars": 60,
-      "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
+      "stars": 1546,
+      "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
     },
-    "obra-superpowers": {
-      "name": "Obra Superpowers",
-      "repo": "https://github.com/obra/superpowers",
-      "skills_count": 14,
-      "stars": 45654,
-      "description": "An agentic skills framework & software development methodology that works."
-    },
-    "ios-simulator-skill": {
-      "name": "iOS Simulator",
-      "repo": "https://github.com/conorluddy/ios-simulator-skill",
-      "skills_count": 1,
-      "stars": 463,
-      "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
+    "travisvn": {
+      "name": "travisvn Collection",
+      "repo": "https://github.com/travisvn/awesome-claude-skills",
+      "skills_count": 0,
+      "stars": 6476,
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows \u2014 particularly Claude Code"
     },
     "aiqualitylab": {
       "name": "AI Quality Lab",
@@ -284,6 +116,48 @@
       "stars": 1,
       "description": "AI-powered testing skills for automation frameworks"
     },
+    "ipsw-skill": {
+      "name": "IPSW iOS Firmware",
+      "repo": "https://github.com/blacktop/ipsw-skill",
+      "skills_count": 1,
+      "stars": 37,
+      "description": "A SKILL.md for ipsw"
+    },
+    "openai": {
+      "name": "OpenAI",
+      "repo": "https://github.com/openai/skills",
+      "skills_count": 32,
+      "stars": 7660,
+      "description": "Skills Catalog for Codex"
+    },
+    "tapestry": {
+      "name": "Tapestry Skills",
+      "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
+      "skills_count": 4,
+      "stars": 198,
+      "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
+    },
+    "epub-skill": {
+      "name": "EPUB Converter",
+      "repo": "https://github.com/smerchek/claude-epub-skill",
+      "skills_count": 1,
+      "stars": 60,
+      "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
+    },
+    "claude-marketplace-code": {
+      "name": "Claude Marketplace (Code Ops)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 4,
+      "stars": 300,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "tinybird": {
+      "name": "Tinybird",
+      "repo": "https://github.com/tinybirdco/tinybird-agent-skills",
+      "skills_count": 1,
+      "stars": 8,
+      "description": null
+    },
     "vercel": {
       "name": "Vercel",
       "repo": "https://github.com/vercel-labs/agent-skills",
@@ -291,26 +165,117 @@
       "stars": 18238,
       "description": "Vercel's official collection of agent skills"
     },
-    "notebooklm-skill": {
-      "name": "NotebookLM Integration",
-      "repo": "https://github.com/PleasePrompto/notebooklm-skill",
+    "neondatabase": {
+      "name": "Neon Database",
+      "repo": "https://github.com/neondatabase/agent-skills",
       "skills_count": 1,
-      "stars": 3024,
-      "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
+      "stars": 18,
+      "description": "Agent Skills for Neon Severless Postgres"
     },
-    "obsidian-plugin": {
-      "name": "Obsidian Plugin Development",
-      "repo": "https://github.com/gapmiss/obsidian-plugin-skill",
+    "ios-simulator-skill": {
+      "name": "iOS Simulator",
+      "repo": "https://github.com/conorluddy/ios-simulator-skill",
       "skills_count": 1,
-      "stars": 66,
-      "description": "CLAUDE SKILL for Obsidian.md plugin development"
+      "stars": 463,
+      "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
     },
-    "claude-marketplace-engineering": {
-      "name": "Claude Marketplace (Engineering)",
+    "ffuf-skill": {
+      "name": "FFUF Web Fuzzing",
+      "repo": "https://github.com/jthack/ffuf_claude_skill",
+      "skills_count": 1,
+      "stars": 105,
+      "description": "This is a \"skill\" for claude to use FFUF."
+    },
+    "fal-ai": {
+      "name": "fal.ai",
+      "repo": "https://github.com/fal-ai-community/skills",
+      "skills_count": 6,
+      "stars": 13,
+      "description": null
+    },
+    "family-history-skill": {
+      "name": "Family History Research",
+      "repo": "https://github.com/emaynard/claude-family-history-research-skill",
+      "skills_count": 1,
+      "stars": 28,
+      "description": "A Claude Skill to assist with family history and genealogy research planning."
+    },
+    "visionos-agents": {
+      "name": "visionOS Development",
+      "repo": "https://github.com/tomkrikorian/visionOSAgents",
+      "skills_count": 12,
+      "stars": 39,
+      "description": "AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform"
+    },
+    "claude-marketplace-visual": {
+      "name": "Claude Marketplace (Visual)",
       "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 5,
       "stars": 300,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "d3js-skill": {
+      "name": "D3.js Visualization",
+      "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+      "skills_count": 1,
+      "stars": 88,
+      "description": "A Claude skill for d3.js."
+    },
+    "huggingface": {
+      "name": "HuggingFace",
+      "repo": "https://github.com/huggingface/skills",
+      "skills_count": 8,
+      "stars": 1182,
+      "description": null
+    },
+    "stream-coding": {
+      "name": "Stream Coding Methodology",
+      "repo": "https://github.com/frmoretto/stream-coding",
+      "skills_count": 1,
+      "stars": 42,
+      "description": "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
+    },
+    "skills-to-agents": {
+      "name": "Skills to Agents Converter",
+      "repo": "https://github.com/dave1010/skills-to-agents",
+      "skills_count": 0,
+      "stars": 27,
+      "description": "Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md"
+    },
+    "sanjay-ai-skills": {
+      "name": "Sanjay AI Skills",
+      "repo": "https://github.com/sanjay3290/ai-skills",
+      "skills_count": 14,
+      "stars": 73,
+      "description": "Collection of agent skills for AI coding assistants"
+    },
+    "obra-superpowers": {
+      "name": "Obra Superpowers",
+      "repo": "https://github.com/obra/superpowers",
+      "skills_count": 14,
+      "stars": 45654,
+      "description": "An agentic skills framework & software development methodology that works."
+    },
+    "heilcheng": {
+      "name": "heilcheng Catalog",
+      "repo": "https://github.com/heilcheng/awesome-agent-skills",
+      "skills_count": 0,
+      "stars": 1859,
+      "description": "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Copilot, VS Code)"
+    },
+    "skillcreatorai": {
+      "name": "SkillCreator.ai",
+      "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+      "skills_count": 47,
+      "stars": 657,
+      "description": "Homebrew for AI Agent Skills."
+    },
+    "aws-skills": {
+      "name": "AWS Skills",
+      "repo": "https://github.com/zxkane/aws-skills",
+      "skills_count": 5,
+      "stars": 114,
+      "description": "Claude Agent Skills for AWS"
     },
     "composiohq": {
       "name": "ComposioHQ",
@@ -319,6 +284,41 @@
       "stars": 30965,
       "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
     },
+    "claude-marketplace-engineering": {
+      "name": "Claude Marketplace (Engineering)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 5,
+      "stars": 300,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "claude-marketplace-productivity": {
+      "name": "Claude Marketplace (Productivity)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 4,
+      "stars": 300,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "google-labs-stitch": {
+      "name": "Google Labs Stitch",
+      "repo": "https://github.com/google-labs-code/stitch-skills",
+      "skills_count": 6,
+      "stars": 1099,
+      "description": null
+    },
+    "anthropics": {
+      "name": "Anthropic",
+      "repo": "https://github.com/anthropics/skills",
+      "skills_count": 16,
+      "stars": 64906,
+      "description": "Public repository for Agent Skills"
+    },
+    "move-quality-skill": {
+      "name": "Move Code Quality",
+      "repo": "https://github.com/1NickPappas/move-code-quality-skill",
+      "skills_count": 1,
+      "stars": 10,
+      "description": "Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist"
+    },
     "expo": {
       "name": "Expo",
       "repo": "https://github.com/expo/skills",
@@ -326,12 +326,12 @@
       "stars": 847,
       "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services"
     },
-    "better-auth": {
-      "name": "Better Auth",
-      "repo": "https://github.com/better-auth/skills",
-      "skills_count": 0,
-      "stars": 90,
-      "description": null
+    "notebooklm-skill": {
+      "name": "NotebookLM Integration",
+      "repo": "https://github.com/PleasePrompto/notebooklm-skill",
+      "skills_count": 1,
+      "stars": 3024,
+      "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
     }
   },
   "categories": [
@@ -358,7 +358,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/agentic-eval",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/agentic-eval/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -375,7 +375,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 22,
+      "days_since_update": 23,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -393,7 +393,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/appinsights-instrumentation",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/appinsights-instrumentation/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": true,
       "has_references": true,
@@ -406,7 +406,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 31,
+      "days_since_update": 32,
       "maintenance_status": "maintained",
       "quality_score": 80
     },
@@ -424,7 +424,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-deployment-preflight",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-deployment-preflight/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": true,
@@ -440,7 +440,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 19,
+      "days_since_update": 20,
       "maintenance_status": "active",
       "quality_score": 80
     },
@@ -458,7 +458,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-devops-cli",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-devops-cli/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -476,7 +476,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 18,
+      "days_since_update": 19,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -496,7 +496,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-resource-visualizer",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-resource-visualizer/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -511,7 +511,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 52,
+      "days_since_update": 53,
       "maintenance_status": "maintained",
       "quality_score": 70
     },
@@ -529,7 +529,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-role-selector",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-role-selector/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -544,7 +544,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 35,
+      "days_since_update": 36,
       "maintenance_status": "maintained",
       "quality_score": 60
     },
@@ -562,7 +562,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/azure-static-web-apps",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-static-web-apps/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -583,7 +583,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 24,
+      "days_since_update": 25,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -601,7 +601,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/chrome-devtools",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/chrome-devtools/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -617,7 +617,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 18,
+      "days_since_update": 19,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -635,7 +635,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/copilot-sdk",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/copilot-sdk/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -652,7 +652,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 15,
+      "days_since_update": 16,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -670,7 +670,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/create-web-form",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-web-form/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": true,
@@ -686,7 +686,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 0,
+      "days_since_update": 1,
       "maintenance_status": "active",
       "quality_score": 80
     },
@@ -704,7 +704,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/excalidraw-diagram-generator",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/excalidraw-diagram-generator/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": true,
       "has_references": true,
@@ -722,7 +722,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 7,
+      "days_since_update": 8,
       "maintenance_status": "active",
       "quality_score": 100
     },
@@ -740,7 +740,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/gh-cli",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/gh-cli/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -755,7 +755,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 0,
+      "days_since_update": 1,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -773,7 +773,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/git-commit",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/git-commit/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -787,7 +787,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 18,
+      "days_since_update": 19,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -805,7 +805,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/github-issues",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/github-issues/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": true,
@@ -820,7 +820,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 32,
+      "days_since_update": 33,
       "maintenance_status": "maintained",
       "quality_score": 70
     },
@@ -838,7 +838,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/image-manipulation-image-magick",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/image-manipulation-image-magick/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -853,7 +853,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 19,
+      "days_since_update": 20,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -871,7 +871,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/legacy-circuit-mockups",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/legacy-circuit-mockups/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": true,
@@ -889,7 +889,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 21,
+      "days_since_update": 22,
       "maintenance_status": "active",
       "quality_score": 80
     },
@@ -907,7 +907,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/make-repo-contribution",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/make-repo-contribution/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -923,7 +923,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 5,
+      "days_since_update": 6,
       "maintenance_status": "active",
       "quality_score": 80
     },
@@ -941,7 +941,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/make-skill-template",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/make-skill-template/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -959,7 +959,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 22,
+      "days_since_update": 23,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -977,7 +977,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/markdown-to-html",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/markdown-to-html/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": true,
@@ -993,7 +993,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 12,
+      "days_since_update": 13,
       "maintenance_status": "active",
       "quality_score": 80
     },
@@ -1011,7 +1011,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/mcp-cli",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/mcp-cli/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1026,7 +1026,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 18,
+      "days_since_update": 19,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -1044,7 +1044,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/meeting-minutes",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/meeting-minutes/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1058,7 +1058,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 6,
+      "days_since_update": 7,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -1076,7 +1076,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/microsoft-code-reference",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-code-reference/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1093,7 +1093,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 26,
+      "days_since_update": 27,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -1111,7 +1111,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/microsoft-docs",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-docs/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1129,7 +1129,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 1,
+      "days_since_update": 2,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -1158,7 +1158,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/nano-banana-pro-openrouter",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nano-banana-pro-openrouter/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": true,
       "has_references": false,
@@ -1174,7 +1174,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 0,
+      "days_since_update": 1,
       "maintenance_status": "active",
       "quality_score": 90
     },
@@ -1192,7 +1192,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/nuget-manager",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nuget-manager/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1207,7 +1207,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 34,
+      "days_since_update": 35,
       "maintenance_status": "maintained",
       "quality_score": 60
     },
@@ -1225,7 +1225,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/penpot-uiux-design",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/penpot-uiux-design/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": true,
@@ -1241,7 +1241,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 7,
+      "days_since_update": 8,
       "maintenance_status": "active",
       "quality_score": 80
     },
@@ -1259,7 +1259,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/plantuml-ascii",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/plantuml-ascii/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1275,7 +1275,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 18,
+      "days_since_update": 19,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -1293,7 +1293,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/powerbi-modeling",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/powerbi-modeling/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": true,
@@ -1310,7 +1310,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 6,
+      "days_since_update": 7,
       "maintenance_status": "active",
       "quality_score": 80
     },
@@ -1328,7 +1328,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/prd",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/prd/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1344,7 +1344,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 18,
+      "days_since_update": 19,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -1362,7 +1362,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/refactor",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/refactor/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1377,7 +1377,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 8,
+      "days_since_update": 9,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -1395,7 +1395,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/scoutqa-test",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/scoutqa-test/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1410,7 +1410,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 18,
+      "days_since_update": 19,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -1428,7 +1428,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/snowflake-semanticview",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/snowflake-semanticview/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1442,7 +1442,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 22,
+      "days_since_update": 23,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -1460,7 +1460,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/terraform-azurerm-set-diff-analyzer",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/terraform-azurerm-set-diff-analyzer/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": true,
       "has_references": true,
@@ -1478,7 +1478,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 8,
+      "days_since_update": 9,
       "maintenance_status": "active",
       "quality_score": 90
     },
@@ -1496,7 +1496,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/vscode-ext-commands",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-commands/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1511,9 +1511,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 29,
-      "maintenance_status": "active",
-      "quality_score": 70
+      "days_since_update": 30,
+      "maintenance_status": "maintained",
+      "quality_score": 60
     },
     {
       "id": "github/vscode-ext-localization",
@@ -1529,7 +1529,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/vscode-ext-localization",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-localization/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1544,9 +1544,9 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 29,
-      "maintenance_status": "active",
-      "quality_score": 70
+      "days_since_update": 30,
+      "maintenance_status": "maintained",
+      "quality_score": 60
     },
     {
       "id": "github/web-design-reviewer",
@@ -1562,7 +1562,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/web-design-reviewer",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/web-design-reviewer/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": true,
@@ -1578,7 +1578,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 32,
+      "days_since_update": 33,
       "maintenance_status": "maintained",
       "quality_score": 70
     },
@@ -1596,7 +1596,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/webapp-testing",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1610,7 +1610,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 54,
+      "days_since_update": 55,
       "maintenance_status": "maintained",
       "quality_score": 60
     },
@@ -1628,7 +1628,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/winapp-cli",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/winapp-cli/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1642,7 +1642,7 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 8,
+      "days_since_update": 9,
       "maintenance_status": "active",
       "quality_score": 70
     },
@@ -1660,7 +1660,7 @@
         "repo": "https://github.com/github/awesome-copilot",
         "path": "skills/workiq-copilot",
         "skill_md_url": "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/workiq-copilot/SKILL.md",
-        "commit_sha": "9bb89281e2f389a01705ae955ddb94475e4324d7"
+        "commit_sha": "4555fee5d28a96fdb203ab22ed12b6471ab96be9"
       },
       "has_scripts": false,
       "has_references": false,
@@ -1677,9 +1677,85 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 15,
+      "days_since_update": 16,
       "maintenance_status": "active",
       "quality_score": 70
+    },
+    {
+      "id": "remotion/remotion-best-practices",
+      "name": "remotion-best-practices",
+      "description": "Best practices for Remotion - Video creation in React",
+      "provider": "remotion",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-02-09T14:43:32Z",
+      "metadata": {
+        "tags": "remotion, video, react, animation, composition"
+      },
+      "source": {
+        "repo": "https://github.com/remotion-dev/skills",
+        "path": "skills/remotion",
+        "skill_md_url": "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion/SKILL.md",
+        "commit_sha": "3f0bb3ae354b847e37bded0644d1c11675aaf5b6"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "remotion",
+        "best",
+        "practices"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 1,
+      "maintenance_status": "active",
+      "quality_score": 70
+    },
+    {
+      "id": "supabase/supabase-postgres-best-practices",
+      "name": "supabase-postgres-best-practices",
+      "description": "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
+      "provider": "supabase",
+      "category": "development",
+      "license": "MIT",
+      "compatibility": null,
+      "last_updated_at": "2026-01-27T21:38:29Z",
+      "metadata": {
+        "author": "supabase",
+        "version": "1.1.0",
+        "organization": "Supabase",
+        "date": "January 2026",
+        "abstract": "Comprehensive Postgres performance optimization guide for developers using Supabase and Postgres. Contains performance rules across 8 categories, prioritized by impact from critical (query performance, connection management) to incremental (advanced features). Each rule includes detailed explanations, incorrect vs. correct SQL examples, query plan analysis, and specific performance metrics to guide automated optimization and code generation."
+      },
+      "source": {
+        "repo": "https://github.com/supabase/agent-skills",
+        "path": "skills/supabase-postgres-best-practices",
+        "skill_md_url": "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase-postgres-best-practices/SKILL.md",
+        "commit_sha": "9b236f3ebd65d76a2c570f19931353da9c858d5a"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "design",
+        "supabase",
+        "postgres",
+        "best",
+        "practices"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 14,
+      "maintenance_status": "active",
+      "quality_score": 80
     },
     {
       "id": "openai/cloudflare-deploy",
@@ -2771,41 +2847,6 @@
       "quality_score": 80
     },
     {
-      "id": "remotion/remotion-best-practices",
-      "name": "remotion-best-practices",
-      "description": "Best practices for Remotion - Video creation in React",
-      "provider": "remotion",
-      "category": "other",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-02-09T14:43:32Z",
-      "metadata": {
-        "tags": "remotion, video, react, animation, composition"
-      },
-      "source": {
-        "repo": "https://github.com/remotion-dev/skills",
-        "path": "skills/remotion",
-        "skill_md_url": "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion/SKILL.md",
-        "commit_sha": "76137b07389ff9aff8422b7c41f49efd12bb6af0"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "remotion",
-        "best",
-        "practices"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 70
-    },
-    {
       "id": "sanjay-ai-skills/deep-research",
       "name": "deep-research",
       "description": "Execute autonomous multi-step research using Google Gemini Deep Research Agent. Use for: market analysis, competitive landscaping, literature reviews, technical research, due diligence. Takes 2-10 minutes but produces detailed, cited reports. Costs $2-5 per task.",
@@ -3264,47 +3305,6 @@
       "days_since_update": 49,
       "maintenance_status": "maintained",
       "quality_score": 60
-    },
-    {
-      "id": "supabase/supabase-postgres-best-practices",
-      "name": "supabase-postgres-best-practices",
-      "description": "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
-      "provider": "supabase",
-      "category": "development",
-      "license": "MIT",
-      "compatibility": null,
-      "last_updated_at": "2026-01-27T21:38:29Z",
-      "metadata": {
-        "author": "supabase",
-        "version": "1.1.0",
-        "organization": "Supabase",
-        "date": "January 2026",
-        "abstract": "Comprehensive Postgres performance optimization guide for developers using Supabase and Postgres. Contains performance rules across 8 categories, prioritized by impact from critical (query performance, connection management) to incremental (advanced features). Each rule includes detailed explanations, incorrect vs. correct SQL examples, query plan analysis, and specific performance metrics to guide automated optimization and code generation."
-      },
-      "source": {
-        "repo": "https://github.com/supabase/agent-skills",
-        "path": "skills/supabase-postgres-best-practices",
-        "skill_md_url": "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase-postgres-best-practices/SKILL.md",
-        "commit_sha": "0d88c8a3e44e064367514eb1891b3920d97a992e"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "design",
-        "supabase",
-        "postgres",
-        "best",
-        "practices"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 13,
-      "maintenance_status": "active",
-      "quality_score": 80
     },
     {
       "id": "tinybird/tinybird",
@@ -12840,12 +12840,12 @@
     "probable_duplicates": 0
   },
   "maintenance_summary": {
-    "active": 81,
-    "maintained": 19,
+    "active": 32,
+    "maintained": 9,
     "stale": 0,
     "abandoned": 0,
     "unknown": 0,
-    "active_percentage": 81.0,
+    "active_percentage": 78.0,
     "maintained_percentage": 100.0
   }
 }
