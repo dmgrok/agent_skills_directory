@@ -1,292 +1,373 @@
 "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json"
-version: 2026.02.13
-generated_at: "2026-02-13T07:07:50.864170+00:00"
+version: 2026.02.14
+generated_at: "2026-02-14T06:55:21.866321+00:00"
 total_skills: 1204
 providers:
-  github:
-    name: GitHub
-    repo: "https://github.com/github/awesome-copilot"
-    skills_count: 43
-    stars: 21076
-    description: "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
-  "obra-superpowers":
-    name: Obra Superpowers
-    repo: "https://github.com/obra/superpowers"
-    skills_count: 14
-    stars: 50695
-    description: An agentic skills framework & software development methodology that works.
-  "sanjay-ai-skills":
-    name: Sanjay AI Skills
-    repo: "https://github.com/sanjay3290/ai-skills"
-    skills_count: 15
-    stars: 79
-    description: Collection of agent skills for AI coding assistants
-  stripe:
-    name: Stripe
-    repo: "https://github.com/stripe/ai"
-    skills_count: 0
-    stars: 1267
-    description: One-stop shop for building AI-powered products and businesses with Stripe.
-  cloudflare:
-    name: Cloudflare
-    repo: "https://github.com/cloudflare/skills"
-    skills_count: 9
-    stars: 272
-    description: Skills for teaching agents how to build on Cloudflare.
   trailofbits:
     name: Trail of Bits Security
     repo: "https://github.com/trailofbits/skills"
     skills_count: 0
-    stars: 2617
+    stars: 2633
     description: "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
+  expo:
+    name: Expo
+    repo: "https://github.com/expo/skills"
+    skills_count: 0
+    stars: 1002
+    description: A collection of AI agent skills for working with Expo projects and Expo Application Services
   getsentry:
     name: Sentry
     repo: "https://github.com/getsentry/skills"
     skills_count: 0
-    stars: 187
+    stars: 243
     description: Agent Skills used by the Sentry team for development.
-  "google-labs-stitch":
-    name: Google Labs Stitch
-    repo: "https://github.com/google-labs-code/stitch-skills"
-    skills_count: 6
-    stars: 1605
-    description: null
-  "better-auth":
-    name: Better Auth
-    repo: "https://github.com/better-auth/skills"
-    skills_count: 0
-    stars: 105
-    description: null
-  tinybird:
-    name: Tinybird
-    repo: "https://github.com/tinybirdco/tinybird-agent-skills"
-    skills_count: 3
-    stars: 9
-    description: null
+  supabase:
+    name: Supabase
+    repo: "https://github.com/supabase/agent-skills"
+    skills_count: 1
+    stars: 1309
+    description: Agent Skills to help developers using AI agents with Supabase
   neondatabase:
     name: Neon Database
     repo: "https://github.com/neondatabase/agent-skills"
     skills_count: 1
     stars: 23
     description: Agent Skills for Neon Severless Postgres
+  remotion:
+    name: Remotion
+    repo: "https://github.com/remotion-dev/skills"
+    skills_count: 1
+    stars: 1558
+    description: Agent Skills
   voltagent:
     name: VoltAgent Catalog
     repo: "https://github.com/VoltAgent/awesome-agent-skills"
     skills_count: 0
-    stars: 6907
+    stars: 7008
     description: "Claude Code Skills and 300+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
-  "move-quality-skill":
-    name: Move Code Quality
-    repo: "https://github.com/1NickPappas/move-code-quality-skill"
-    skills_count: 1
-    stars: 10
-    description: Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist
-  "claude-marketplace-code":
-    name: Claude Marketplace (Code Ops)
-    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 4
-    stars: 300
-    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  "skills-to-agents":
-    name: Skills to Agents Converter
-    repo: "https://github.com/dave1010/skills-to-agents"
-    skills_count: 0
-    stars: 27
-    description: Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md
-  "d3js-skill":
-    name: D3.js Visualization
-    repo: "https://github.com/chrisvoncsefalvay/claude-d3js-skill"
-    skills_count: 1
-    stars: 88
-    description: A Claude skill for d3.js.
-  "pypict-skill":
-    name: PICT Test Cases
-    repo: "https://github.com/omkamal/pypict-claude-skill"
-    skills_count: 1
-    stars: 30
-    description: A claude skill that generate test cases using N-wise test cases using the pypict library
-  anthropics:
-    name: Anthropic
-    repo: "https://github.com/anthropics/skills"
-    skills_count: 16
-    stars: 64906
-    description: Public repository for Agent Skills
-  "aws-skills":
-    name: AWS Skills
-    repo: "https://github.com/zxkane/aws-skills"
-    skills_count: 5
-    stars: 114
-    description: Claude Agent Skills for AWS
-  supabase:
-    name: Supabase
-    repo: "https://github.com/supabase/agent-skills"
-    skills_count: 1
-    stars: 1214
-    description: Agent Skills to help developers using AI agents with Supabase
-  tapestry:
-    name: Tapestry Skills
-    repo: "https://github.com/michalparkola/tapestry-skills-for-claude-code"
-    skills_count: 4
-    stars: 198
-    description: "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
-  "ffuf-skill":
-    name: FFUF Web Fuzzing
-    repo: "https://github.com/jthack/ffuf_claude_skill"
-    skills_count: 1
-    stars: 105
-    description: "This is a \"skill\" for claude to use FFUF."
-  nginity:
-    name: nginity Enterprise
-    repo: "https://github.com/alirezarezvani/claude-skills"
-    skills_count: 0
-    stars: 1719
-    description: "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
-  "csv-summarizer-skill":
-    name: CSV Data Summarizer
-    repo: "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill"
-    skills_count: 1
-    stars: 206
-    description: "A Claude Skill that automatically analyzes uploaded CSV files — generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
-  "obsidian-plugin":
-    name: Obsidian Plugin Development
-    repo: "https://github.com/gapmiss/obsidian-plugin-skill"
-    skills_count: 1
-    stars: 66
-    description: CLAUDE SKILL for Obsidian.md plugin development
-  "claude-marketplace-productivity":
-    name: Claude Marketplace (Productivity)
-    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 4
-    stars: 300
-    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  "claude-marketplace-engineering":
-    name: Claude Marketplace (Engineering)
-    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 5
-    stars: 300
-    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  tinybird:
+    name: Tinybird
+    repo: "https://github.com/tinybirdco/tinybird-agent-skills"
+    skills_count: 3
+    stars: 9
+    description: null
   "ipsw-skill":
     name: IPSW iOS Firmware
     repo: "https://github.com/blacktop/ipsw-skill"
     skills_count: 1
     stars: 37
     description: A SKILL.md for ipsw
-  heilcheng:
-    name: heilcheng Catalog
-    repo: "https://github.com/heilcheng/awesome-agent-skills"
-    skills_count: 0
-    stars: 1859
-    description: "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Copilot, VS Code)"
-  "ios-simulator-skill":
-    name: iOS Simulator
-    repo: "https://github.com/conorluddy/ios-simulator-skill"
+  "d3js-skill":
+    name: D3.js Visualization
+    repo: "https://github.com/chrisvoncsefalvay/claude-d3js-skill"
     skills_count: 1
-    stars: 463
-    description: "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
-  huggingface:
-    name: HuggingFace
-    repo: "https://github.com/huggingface/skills"
-    skills_count: 8
-    stars: 1182
-    description: null
-  "visionos-agents":
-    name: visionOS Development
-    repo: "https://github.com/tomkrikorian/visionOSAgents"
-    skills_count: 12
-    stars: 39
-    description: AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform
-  remotion:
-    name: Remotion
-    repo: "https://github.com/remotion-dev/skills"
-    skills_count: 1
-    stars: 1533
-    description: Agent Skills
-  "epub-skill":
-    name: EPUB Converter
-    repo: "https://github.com/smerchek/claude-epub-skill"
-    skills_count: 1
-    stars: 60
-    description: "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
-  vercel:
-    name: Vercel
-    repo: "https://github.com/vercel-labs/agent-skills"
-    skills_count: 5
-    stars: 18238
-    description: Vercel's official collection of agent skills
-  composiohq:
-    name: ComposioHQ
-    repo: "https://github.com/ComposioHQ/awesome-claude-skills"
-    skills_count: 943
-    stars: 34154
-    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
-  "playwright-skill":
-    name: Playwright Automation
-    repo: "https://github.com/lackeyjb/playwright-skill"
-    skills_count: 1
-    stars: 1546
-    description: Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.
-  aiqualitylab:
-    name: AI Quality Lab
-    repo: "https://github.com/aiqualitylab/agent-skills"
-    skills_count: 2
-    stars: 1
-    description: AI-powered testing skills for automation frameworks
-  expo:
-    name: Expo
-    repo: "https://github.com/expo/skills"
-    skills_count: 0
-    stars: 847
-    description: A collection of AI agent skills for working with Expo projects and Expo Application Services
-  travisvn:
-    name: travisvn Collection
-    repo: "https://github.com/travisvn/awesome-claude-skills"
-    skills_count: 0
-    stars: 6476
-    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code"
-  openai:
-    name: OpenAI
-    repo: "https://github.com/openai/skills"
-    skills_count: 32
-    stars: 7660
-    description: Skills Catalog for Codex
-  "stream-coding":
-    name: Stream Coding Methodology
-    repo: "https://github.com/frmoretto/stream-coding"
-    skills_count: 1
-    stars: 42
-    description: "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
-  "claude-marketplace-visual":
-    name: Claude Marketplace (Visual)
-    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 5
-    stars: 300
-    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  "fal-ai":
-    name: fal.ai
-    repo: "https://github.com/fal-ai-community/skills"
-    skills_count: 6
-    stars: 13
-    description: null
+    stars: 88
+    description: A Claude skill for d3.js.
   "notebooklm-skill":
     name: NotebookLM Integration
     repo: "https://github.com/PleasePrompto/notebooklm-skill"
     skills_count: 1
     stars: 3024
     description: "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
-  skillcreatorai:
-    name: SkillCreator.ai
-    repo: "https://github.com/skillcreatorai/Ai-Agent-Skills"
-    skills_count: 47
-    stars: 657
-    description: Homebrew for AI Agent Skills.
+  "claude-marketplace-code":
+    name: Claude Marketplace (Code Ops)
+    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
+    skills_count: 4
+    stars: 300
+    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  cloudflare:
+    name: Cloudflare
+    repo: "https://github.com/cloudflare/skills"
+    skills_count: 9
+    stars: 272
+    description: Skills for teaching agents how to build on Cloudflare.
+  "visionos-agents":
+    name: visionOS Development
+    repo: "https://github.com/tomkrikorian/visionOSAgents"
+    skills_count: 12
+    stars: 39
+    description: AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform
+  stripe:
+    name: Stripe
+    repo: "https://github.com/stripe/ai"
+    skills_count: 0
+    stars: 1267
+    description: One-stop shop for building AI-powered products and businesses with Stripe.
+  huggingface:
+    name: HuggingFace
+    repo: "https://github.com/huggingface/skills"
+    skills_count: 8
+    stars: 1182
+    description: null
+  "fal-ai":
+    name: fal.ai
+    repo: "https://github.com/fal-ai-community/skills"
+    skills_count: 6
+    stars: 13
+    description: null
+  anthropics:
+    name: Anthropic
+    repo: "https://github.com/anthropics/skills"
+    skills_count: 16
+    stars: 64906
+    description: Public repository for Agent Skills
+  "skills-to-agents":
+    name: Skills to Agents Converter
+    repo: "https://github.com/dave1010/skills-to-agents"
+    skills_count: 0
+    stars: 27
+    description: Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md
+  "csv-summarizer-skill":
+    name: CSV Data Summarizer
+    repo: "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill"
+    skills_count: 1
+    stars: 206
+    description: "A Claude Skill that automatically analyzes uploaded CSV files — generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
+  aiqualitylab:
+    name: AI Quality Lab
+    repo: "https://github.com/aiqualitylab/agent-skills"
+    skills_count: 2
+    stars: 1
+    description: AI-powered testing skills for automation frameworks
+  "claude-marketplace-visual":
+    name: Claude Marketplace (Visual)
+    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
+    skills_count: 5
+    stars: 300
+    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  tapestry:
+    name: Tapestry Skills
+    repo: "https://github.com/michalparkola/tapestry-skills-for-claude-code"
+    skills_count: 4
+    stars: 198
+    description: "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
   "family-history-skill":
     name: Family History Research
     repo: "https://github.com/emaynard/claude-family-history-research-skill"
     skills_count: 1
     stars: 28
     description: A Claude Skill to assist with family history and genealogy research planning.
-categories[7]: creative,data,development,documents,enterprise,integrations,other
+  "claude-marketplace-productivity":
+    name: Claude Marketplace (Productivity)
+    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
+    skills_count: 4
+    stars: 300
+    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  "better-auth":
+    name: Better Auth
+    repo: "https://github.com/better-auth/skills"
+    skills_count: 0
+    stars: 105
+    description: null
+  "playwright-skill":
+    name: Playwright Automation
+    repo: "https://github.com/lackeyjb/playwright-skill"
+    skills_count: 1
+    stars: 1546
+    description: Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.
+  "sanjay-ai-skills":
+    name: Sanjay AI Skills
+    repo: "https://github.com/sanjay3290/ai-skills"
+    skills_count: 15
+    stars: 79
+    description: Collection of agent skills for AI coding assistants
+  "claude-marketplace-engineering":
+    name: Claude Marketplace (Engineering)
+    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
+    skills_count: 5
+    stars: 300
+    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  "pypict-skill":
+    name: PICT Test Cases
+    repo: "https://github.com/omkamal/pypict-claude-skill"
+    skills_count: 1
+    stars: 30
+    description: A claude skill that generate test cases using N-wise test cases using the pypict library
+  "google-labs-stitch":
+    name: Google Labs Stitch
+    repo: "https://github.com/google-labs-code/stitch-skills"
+    skills_count: 6
+    stars: 1605
+    description: null
+  "ffuf-skill":
+    name: FFUF Web Fuzzing
+    repo: "https://github.com/jthack/ffuf_claude_skill"
+    skills_count: 1
+    stars: 105
+    description: "This is a \"skill\" for claude to use FFUF."
+  "ios-simulator-skill":
+    name: iOS Simulator
+    repo: "https://github.com/conorluddy/ios-simulator-skill"
+    skills_count: 1
+    stars: 463
+    description: "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
+  skillcreatorai:
+    name: SkillCreator.ai
+    repo: "https://github.com/skillcreatorai/Ai-Agent-Skills"
+    skills_count: 47
+    stars: 657
+    description: Homebrew for AI Agent Skills.
+  travisvn:
+    name: travisvn Collection
+    repo: "https://github.com/travisvn/awesome-claude-skills"
+    skills_count: 0
+    stars: 6476
+    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code"
+  "move-quality-skill":
+    name: Move Code Quality
+    repo: "https://github.com/1NickPappas/move-code-quality-skill"
+    skills_count: 1
+    stars: 10
+    description: Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist
+  "stream-coding":
+    name: Stream Coding Methodology
+    repo: "https://github.com/frmoretto/stream-coding"
+    skills_count: 1
+    stars: 42
+    description: "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
+  composiohq:
+    name: ComposioHQ
+    repo: "https://github.com/ComposioHQ/awesome-claude-skills"
+    skills_count: 943
+    stars: 34154
+    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
+  "obsidian-plugin":
+    name: Obsidian Plugin Development
+    repo: "https://github.com/gapmiss/obsidian-plugin-skill"
+    skills_count: 1
+    stars: 66
+    description: CLAUDE SKILL for Obsidian.md plugin development
+  openai:
+    name: OpenAI
+    repo: "https://github.com/openai/skills"
+    skills_count: 32
+    stars: 7660
+    description: Skills Catalog for Codex
+  vercel:
+    name: Vercel
+    repo: "https://github.com/vercel-labs/agent-skills"
+    skills_count: 5
+    stars: 18238
+    description: Vercel's official collection of agent skills
+  github:
+    name: GitHub
+    repo: "https://github.com/github/awesome-copilot"
+    skills_count: 43
+    stars: 21076
+    description: "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
+  nginity:
+    name: nginity Enterprise
+    repo: "https://github.com/alirezarezvani/claude-skills"
+    skills_count: 0
+    stars: 1719
+    description: "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
+  heilcheng:
+    name: heilcheng Catalog
+    repo: "https://github.com/heilcheng/awesome-agent-skills"
+    skills_count: 0
+    stars: 1859
+    description: "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Copilot, VS Code)"
+  "aws-skills":
+    name: AWS Skills
+    repo: "https://github.com/zxkane/aws-skills"
+    skills_count: 5
+    stars: 114
+    description: Claude Agent Skills for AWS
+  "epub-skill":
+    name: EPUB Converter
+    repo: "https://github.com/smerchek/claude-epub-skill"
+    skills_count: 1
+    stars: 60
+    description: "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
+  "obra-superpowers":
+    name: Obra Superpowers
+    repo: "https://github.com/obra/superpowers"
+    skills_count: 14
+    stars: 50695
+    description: An agentic skills framework & software development methodology that works.
+categories[3]: creative,development,other
 skills[1204]:
+  - id: neondatabase/neon-postgres
+    name: neon-postgres
+    description: "Guides and best practices for working with Neon Serverless Postgres. Covers getting started, local development with Neon, choosing a connection method, Neon features, authentication (@neondatabase/auth), PostgREST-style data API (@neondatabase/neon-js), Neon CLI, and Neon's Platform API/SDKs. Use for any Neon-related questions."
+    provider: neondatabase
+    category: creative
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-14T02:03:17Z"
+    metadata:
+    source:
+      repo: "https://github.com/neondatabase/agent-skills"
+      path: skills/neon-postgres
+      skill_md_url: "https://raw.githubusercontent.com/neondatabase/agent-skills/main/skills/neon-postgres/SKILL.md"
+      commit_sha: c67882ba0f57df776805dea95ddf645f99882592
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[6]: pr,api,cli,art,neon,postgres
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 0
+    maintenance_status: active
+    quality_score: 80
+  - id: remotion/remotion-best-practices
+    name: remotion-best-practices
+    description: Best practices for Remotion - Video creation in React
+    provider: remotion
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-11T08:53:39Z"
+    metadata:
+      tags: "remotion, video, react, animation, composition"
+    source:
+      repo: "https://github.com/remotion-dev/skills"
+      path: skills/remotion
+      skill_md_url: "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion/SKILL.md"
+      commit_sha: f59d94bf67b6f6be45665a466a6fd50ba7b7258a
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,remotion,best,practices
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 2
+    maintenance_status: active
+    quality_score: 70
+  - id: supabase/supabase-postgres-best-practices
+    name: supabase-postgres-best-practices
+    description: "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations."
+    provider: supabase
+    category: development
+    license: MIT
+    compatibility: null
+    last_updated_at: "2026-01-27T21:38:29Z"
+    metadata:
+      author: supabase
+      version: 1.1.0
+      organization: Supabase
+      date: January 2026
+      abstract: "Comprehensive Postgres performance optimization guide for developers using Supabase and Postgres. Contains performance rules across 8 categories, prioritized by impact from critical (query performance, connection management) to incremental (advanced features). Each rule includes detailed explanations, incorrect vs. correct SQL examples, query plan analysis, and specific performance metrics to guide automated optimization and code generation."
+    source:
+      repo: "https://github.com/supabase/agent-skills"
+      path: skills/supabase-postgres-best-practices
+      skill_md_url: "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase-postgres-best-practices/SKILL.md"
+      commit_sha: c6f5a2bec0746a7bf87af17ce5c461d5f4080291
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[6]: pr,design,supabase,postgres,best,practices
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 17
+    maintenance_status: active
+    quality_score: 80
   - id: cloudflare/agents-sdk
     name: agents-sdk
     description: "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks."
@@ -1743,31 +1824,6 @@ skills[1204]:
     days_since_update: 20
     maintenance_status: active
     quality_score: 60
-  - id: neondatabase/neon-postgres
-    name: neon-postgres
-    description: "Guides and best practices for working with Neon Serverless Postgres. Covers getting started, local development with Neon, choosing a connection method, Neon features, authentication (@neondatabase/auth), PostgREST-style data API (@neondatabase/neon-js), Neon CLI, and Neon's Platform API/SDKs. Use for any Neon-related questions."
-    provider: neondatabase
-    category: creative
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-13T01:59:32Z"
-    metadata:
-    source:
-      repo: "https://github.com/neondatabase/agent-skills"
-      path: skills/neon-postgres
-      skill_md_url: "https://raw.githubusercontent.com/neondatabase/agent-skills/main/skills/neon-postgres/SKILL.md"
-      commit_sha: a620680a686d9cd81cee66a5fe05e84680054763
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[6]: pr,api,cli,art,neon,postgres
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 0
-    maintenance_status: active
-    quality_score: 80
   - id: obra-superpowers/brainstorming
     name: brainstorming
     description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
@@ -26145,62 +26201,6 @@ skills[1204]:
     days_since_update: null
     maintenance_status: null
     quality_score: 35
-  - id: remotion/remotion-best-practices
-    name: remotion-best-practices
-    description: Best practices for Remotion - Video creation in React
-    provider: remotion
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-11T08:53:39Z"
-    metadata:
-      tags: "remotion, video, react, animation, composition"
-    source:
-      repo: "https://github.com/remotion-dev/skills"
-      path: skills/remotion
-      skill_md_url: "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion/SKILL.md"
-      commit_sha: cd0aa6c1409b0d4227798b38667727965ef71eee
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[4]: pr,remotion,best,practices
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 0
-    maintenance_status: active
-    quality_score: 70
-  - id: supabase/supabase-postgres-best-practices
-    name: supabase-postgres-best-practices
-    description: "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations."
-    provider: supabase
-    category: development
-    license: MIT
-    compatibility: null
-    last_updated_at: "2026-01-27T21:38:29Z"
-    metadata:
-      author: supabase
-      version: 1.1.0
-      organization: Supabase
-      date: January 2026
-      abstract: "Comprehensive Postgres performance optimization guide for developers using Supabase and Postgres. Contains performance rules across 8 categories, prioritized by impact from critical (query performance, connection management) to incremental (advanced features). Each rule includes detailed explanations, incorrect vs. correct SQL examples, query plan analysis, and specific performance metrics to guide automated optimization and code generation."
-    source:
-      repo: "https://github.com/supabase/agent-skills"
-      path: skills/supabase-postgres-best-practices
-      skill_md_url: "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase-postgres-best-practices/SKILL.md"
-      commit_sha: 9b236f3ebd65d76a2c570f19931353da9c858d5a
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[6]: pr,design,supabase,postgres,best,practices
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 14
-    maintenance_status: active
-    quality_score: 80
   - id: openai/cloudflare-deploy
     name: cloudflare-deploy
     description: "Deploy applications and infrastructure to Cloudflare using Workers, Pages, and related platform services. Use when the user asks to deploy, host, publish, or set up a project on Cloudflare."
@@ -30522,10 +30522,10 @@ duplicate_summary:
   mirrors: 0
   probable_duplicates: 0
 maintenance_summary:
-  active: 72
-  maintained: 19
+  active: 3
+  maintained: 0
   stale: 0
   abandoned: 0
   unknown: 0
-  active_percentage: 79.1
+  active_percentage: 100
   maintained_percentage: 100
