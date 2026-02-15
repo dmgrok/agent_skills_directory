@@ -876,12 +876,26 @@ def fetch_provider_skills(provider_id: str, config: dict) -> list:
             continue
         
         parsed = parse_skill_md(content)
-        if not parsed or "name" not in parsed["frontmatter"]:
-            print(f"  Skipping {sf['path']}: missing required frontmatter", file=sys.stderr)
+        if not parsed:
+            print(f"  Skipping {sf['path']}: failed to parse", file=sys.stderr)
             continue
         
         fm = parsed["frontmatter"]
+        
+        # Get name from frontmatter or derive from directory path
         name = fm.get("name", "")
+        if not name:
+            # Derive name from directory path (e.g., "skills/stripe-best-practices/SKILL.md" -> "stripe-best-practices")
+            if sf["dir"]:
+                name = Path(sf["dir"]).name
+            else:
+                # For root-level SKILL.md files, use the repo name
+                name = Path(config["repo"]).name
+        
+        if not name:
+            print(f"  Skipping {sf['path']}: unable to determine name", file=sys.stderr)
+            continue
+        
         description = fm.get("description", "")
         
         # Check for optional directories
