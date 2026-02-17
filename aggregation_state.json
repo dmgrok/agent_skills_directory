@@ -1,9 +1,9 @@
 {
-  "last_run": "2026-02-16T07:13:08.002166+00:00",
+  "last_run": "2026-02-17T07:07:49.547944+00:00",
   "provider_commits": {
     "anthropics": "1ed29a03dc852d30fa6ef2ca53a67dc2c2c2c563",
     "openai": "4ab6e0fd99c6667163bc34173e3ed3a3fed75ebc",
-    "github": "7855e66af84ab54d67129c43df429fee3583c855",
+    "github": "76b1c55befc0366a3bd4098cfdbbd38517e8dc2c",
     "vercel": "e23951b8cad2f4b1e7e176c5731127c1263fe86f",
     "huggingface": "3f4f55d6264b7baddec94031eeda70780d7e9189",
     "skillcreatorai": "6195a031c29c5bc11d1d4b3e4c64e660e441f087",
@@ -31,15 +31,15 @@
     "trailofbits": "b9ac28c21411543cff198f9d9e4e8f806f43ec91",
     "expo": "0b19547886fad065d37ae3f776050f6bb89ef7ee",
     "getsentry": "5d49db8eb2a8ff33949855f11529558158935b25",
-    "supabase": "c6f5a2bec0746a7bf87af17ce5c461d5f4080291",
+    "supabase": "32142e85fde0ff4e9fef44895cdf6914c1635389",
     "google-labs-stitch": "e8df14454755cbd8d1a7f96e2b7caae32f2eace1",
     "composiohq": "99e2a29515451cce8ed324b551a78864a70c27d4",
     "better-auth": "09b6d1b94fe9c5e44c0a4ed7cc829a5ff325bcdd",
     "tinybird": "9c58674c98d6eca9ab5e57d79e0fe9087842c825",
-    "neondatabase": "c67882ba0f57df776805dea95ddf645f99882592",
+    "neondatabase": "92f88d047a8c428349c8333cd67e44b97777df27",
     "fal-ai": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9",
     "remotion": "f59d94bf67b6f6be45665a466a6fd50ba7b7258a",
-    "nginity": "0137205fa8064702bec6ec65b270d70eb38b193c",
+    "nginity": "0bea02d2b6ab9647300dc10d71e4336ddd61c68c",
     "voltagent": "feb81d6c348323c9fec28d4a8e26893821d477b5",
     "heilcheng": "b72ec985761b9fd6705f242e0cab18a1d48b6fdb",
     "travisvn": "111ed605b43e84e3a3e85c470ba61f4771156046",
@@ -49,6 +49,6 @@
     "visionos-agents": "bd4b18447e4c3ef2c5b527d500b0f18fc996aa47",
     "skills-to-agents": "12f69f287941dfafb2fcf761455e73a5c6361469"
   },
-  "skills_count": 1205,
-  "version": "2026.02.16"
+  "skills_count": 1206,
+  "version": "2026.02.17"
 }
