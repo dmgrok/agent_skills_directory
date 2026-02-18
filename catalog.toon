@@ -1,181 +1,121 @@
 "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json"
-version: 2026.02.17
-generated_at: "2026-02-17T07:07:38.553718+00:00"
-total_skills: 1206
+version: 2026.02.18
+generated_at: "2026-02-18T07:10:24.036598+00:00"
+total_skills: 1212
 providers:
   github:
     name: GitHub
     repo: "https://github.com/github/awesome-copilot"
-    skills_count: 45
-    stars: 21430
+    skills_count: 50
+    stars: 21562
     description: "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
-  supabase:
-    name: Supabase
-    repo: "https://github.com/supabase/agent-skills"
-    skills_count: 1
-    stars: 1341
-    description: Agent Skills to help developers using AI agents with Supabase
-  neondatabase:
-    name: Neon Database
-    repo: "https://github.com/neondatabase/agent-skills"
-    skills_count: 1
-    stars: 23
-    description: Agent Skills for Neon Severless Postgres
-  nginity:
-    name: nginity Enterprise
-    repo: "https://github.com/alirezarezvani/claude-skills"
-    skills_count: 0
-    stars: 1840
-    description: "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
+  "obra-superpowers":
+    name: Obra Superpowers
+    repo: "https://github.com/obra/superpowers"
+    skills_count: 14
+    stars: 53800
+    description: An agentic skills framework & software development methodology that works.
+  "sanjay-ai-skills":
+    name: Sanjay AI Skills
+    repo: "https://github.com/sanjay3290/ai-skills"
+    skills_count: 16
+    stars: 82
+    description: Collection of agent skills for AI coding assistants
   cloudflare:
     name: Cloudflare
     repo: "https://github.com/cloudflare/skills"
     skills_count: 9
-    stars: 272
+    stars: 302
     description: Skills for teaching agents how to build on Cloudflare.
-  "csv-summarizer-skill":
-    name: CSV Data Summarizer
-    repo: "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill"
+  trailofbits:
+    name: Trail of Bits Security
+    repo: "https://github.com/trailofbits/skills"
+    skills_count: 0
+    stars: 2757
+    description: "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
+  getsentry:
+    name: Sentry
+    repo: "https://github.com/getsentry/skills"
+    skills_count: 0
+    stars: 267
+    description: Agent Skills used by the Sentry team for development.
+  supabase:
+    name: Supabase
+    repo: "https://github.com/supabase/agent-skills"
     skills_count: 1
-    stars: 206
-    description: "A Claude Skill that automatically analyzes uploaded CSV files — generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
-  "claude-marketplace-visual":
-    name: Claude Marketplace (Visual)
-    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 5
-    stars: 300
-    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    stars: 1351
+    description: Agent Skills to help developers using AI agents with Supabase
+  "google-labs-stitch":
+    name: Google Labs Stitch
+    repo: "https://github.com/google-labs-code/stitch-skills"
+    skills_count: 6
+    stars: 1751
+    description: null
+  "better-auth":
+    name: Better Auth
+    repo: "https://github.com/better-auth/skills"
+    skills_count: 0
+    stars: 116
+    description: null
+  voltagent:
+    name: VoltAgent Catalog
+    repo: "https://github.com/VoltAgent/awesome-agent-skills"
+    skills_count: 0
+    stars: 7354
+    description: "Claude Code Skills and 300+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
   "d3js-skill":
     name: D3.js Visualization
     repo: "https://github.com/chrisvoncsefalvay/claude-d3js-skill"
     skills_count: 1
     stars: 88
     description: A Claude skill for d3.js.
-  "fal-ai":
-    name: fal.ai
-    repo: "https://github.com/fal-ai-community/skills"
-    skills_count: 6
-    stars: 13
-    description: null
-  "obsidian-plugin":
-    name: Obsidian Plugin Development
-    repo: "https://github.com/gapmiss/obsidian-plugin-skill"
+  "move-quality-skill":
+    name: Move Code Quality
+    repo: "https://github.com/1NickPappas/move-code-quality-skill"
     skills_count: 1
-    stars: 66
-    description: CLAUDE SKILL for Obsidian.md plugin development
-  "family-history-skill":
-    name: Family History Research
-    repo: "https://github.com/emaynard/claude-family-history-research-skill"
+    stars: 10
+    description: Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist
+  "stream-coding":
+    name: Stream Coding Methodology
+    repo: "https://github.com/frmoretto/stream-coding"
     skills_count: 1
-    stars: 28
-    description: A Claude Skill to assist with family history and genealogy research planning.
-  vercel:
-    name: Vercel
-    repo: "https://github.com/vercel-labs/agent-skills"
-    skills_count: 5
-    stars: 18238
-    description: Vercel's official collection of agent skills
-  "skills-to-agents":
-    name: Skills to Agents Converter
-    repo: "https://github.com/dave1010/skills-to-agents"
-    skills_count: 0
-    stars: 27
-    description: Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md
-  tapestry:
-    name: Tapestry Skills
-    repo: "https://github.com/michalparkola/tapestry-skills-for-claude-code"
-    skills_count: 4
-    stars: 198
-    description: "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
-  heilcheng:
-    name: heilcheng Catalog
-    repo: "https://github.com/heilcheng/awesome-agent-skills"
-    skills_count: 0
-    stars: 1859
-    description: "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Copilot, VS Code)"
-  expo:
-    name: Expo
-    repo: "https://github.com/expo/skills"
-    skills_count: 0
-    stars: 1002
-    description: A collection of AI agent skills for working with Expo projects and Expo Application Services
-  travisvn:
-    name: travisvn Collection
-    repo: "https://github.com/travisvn/awesome-claude-skills"
-    skills_count: 0
-    stars: 7101
-    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code"
+    stars: 42
+    description: "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
   "claude-marketplace-productivity":
     name: Claude Marketplace (Productivity)
     repo: "https://github.com/mhattingpete/claude-skills-marketplace"
     skills_count: 4
     stars: 300
     description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  trailofbits:
-    name: Trail of Bits Security
-    repo: "https://github.com/trailofbits/skills"
-    skills_count: 0
-    stars: 2633
-    description: "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
-  "ios-simulator-skill":
-    name: iOS Simulator
-    repo: "https://github.com/conorluddy/ios-simulator-skill"
-    skills_count: 1
-    stars: 463
-    description: "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
   stripe:
     name: Stripe
     repo: "https://github.com/stripe/ai"
     skills_count: 0
     stars: 1267
     description: One-stop shop for building AI-powered products and businesses with Stripe.
-  "google-labs-stitch":
-    name: Google Labs Stitch
-    repo: "https://github.com/google-labs-code/stitch-skills"
-    skills_count: 6
-    stars: 1605
-    description: null
-  "claude-marketplace-code":
-    name: Claude Marketplace (Code Ops)
-    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 4
-    stars: 300
-    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  "better-auth":
-    name: Better Auth
-    repo: "https://github.com/better-auth/skills"
+  heilcheng:
+    name: heilcheng Catalog
+    repo: "https://github.com/heilcheng/awesome-agent-skills"
     skills_count: 0
-    stars: 105
-    description: null
+    stars: 1859
+    description: "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Copilot, VS Code)"
   "visionos-agents":
     name: visionOS Development
     repo: "https://github.com/tomkrikorian/visionOSAgents"
     skills_count: 12
     stars: 39
     description: AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform
-  "sanjay-ai-skills":
-    name: Sanjay AI Skills
-    repo: "https://github.com/sanjay3290/ai-skills"
-    skills_count: 15
-    stars: 79
-    description: Collection of agent skills for AI coding assistants
-  anthropics:
-    name: Anthropic
-    repo: "https://github.com/anthropics/skills"
-    skills_count: 16
-    stars: 64906
-    description: Public repository for Agent Skills
-  "ipsw-skill":
-    name: IPSW iOS Firmware
-    repo: "https://github.com/blacktop/ipsw-skill"
-    skills_count: 1
-    stars: 37
-    description: A SKILL.md for ipsw
-  tinybird:
-    name: Tinybird
-    repo: "https://github.com/tinybirdco/tinybird-agent-skills"
-    skills_count: 3
-    stars: 9
+  vercel:
+    name: Vercel
+    repo: "https://github.com/vercel-labs/agent-skills"
+    skills_count: 5
+    stars: 18238
+    description: Vercel's official collection of agent skills
+  huggingface:
+    name: HuggingFace
+    repo: "https://github.com/huggingface/skills"
+    skills_count: 8
+    stars: 1182
     description: null
   "epub-skill":
     name: EPUB Converter
@@ -183,72 +123,42 @@ providers:
     skills_count: 1
     stars: 60
     description: "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
-  "playwright-skill":
-    name: Playwright Automation
-    repo: "https://github.com/lackeyjb/playwright-skill"
-    skills_count: 1
-    stars: 1546
-    description: Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.
-  "aws-skills":
-    name: AWS Skills
-    repo: "https://github.com/zxkane/aws-skills"
-    skills_count: 5
-    stars: 114
-    description: Claude Agent Skills for AWS
-  "ffuf-skill":
-    name: FFUF Web Fuzzing
-    repo: "https://github.com/jthack/ffuf_claude_skill"
-    skills_count: 1
-    stars: 105
-    description: "This is a \"skill\" for claude to use FFUF."
-  "claude-marketplace-engineering":
-    name: Claude Marketplace (Engineering)
+  "fal-ai":
+    name: fal.ai
+    repo: "https://github.com/fal-ai-community/skills"
+    skills_count: 6
+    stars: 13
+    description: null
+  aiqualitylab:
+    name: AI Quality Lab
+    repo: "https://github.com/aiqualitylab/agent-skills"
+    skills_count: 2
+    stars: 1
+    description: AI-powered testing skills for automation frameworks
+  travisvn:
+    name: travisvn Collection
+    repo: "https://github.com/travisvn/awesome-claude-skills"
+    skills_count: 0
+    stars: 7101
+    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code"
+  anthropics:
+    name: Anthropic
+    repo: "https://github.com/anthropics/skills"
+    skills_count: 16
+    stars: 64906
+    description: Public repository for Agent Skills
+  "claude-marketplace-code":
+    name: Claude Marketplace (Code Ops)
     repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 5
+    skills_count: 4
     stars: 300
     description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  "stream-coding":
-    name: Stream Coding Methodology
-    repo: "https://github.com/frmoretto/stream-coding"
-    skills_count: 1
-    stars: 42
-    description: "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
-  huggingface:
-    name: HuggingFace
-    repo: "https://github.com/huggingface/skills"
-    skills_count: 8
-    stars: 1182
-    description: null
-  "obra-superpowers":
-    name: Obra Superpowers
-    repo: "https://github.com/obra/superpowers"
-    skills_count: 14
-    stars: 50695
-    description: An agentic skills framework & software development methodology that works.
-  remotion:
-    name: Remotion
-    repo: "https://github.com/remotion-dev/skills"
-    skills_count: 1
-    stars: 1558
-    description: Agent Skills
-  "pypict-skill":
-    name: PICT Test Cases
-    repo: "https://github.com/omkamal/pypict-claude-skill"
-    skills_count: 1
-    stars: 30
-    description: A claude skill that generate test cases using N-wise test cases using the pypict library
-  getsentry:
-    name: Sentry
-    repo: "https://github.com/getsentry/skills"
-    skills_count: 0
-    stars: 243
-    description: Agent Skills used by the Sentry team for development.
-  "notebooklm-skill":
-    name: NotebookLM Integration
-    repo: "https://github.com/PleasePrompto/notebooklm-skill"
-    skills_count: 1
-    stars: 3024
-    description: "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
+  tapestry:
+    name: Tapestry Skills
+    repo: "https://github.com/michalparkola/tapestry-skills-for-claude-code"
+    skills_count: 4
+    stars: 198
+    description: "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
   composiohq:
     name: ComposioHQ
     repo: "https://github.com/ComposioHQ/awesome-claude-skills"
@@ -261,32 +171,347 @@ providers:
     skills_count: 47
     stars: 657
     description: Homebrew for AI Agent Skills.
-  "move-quality-skill":
-    name: Move Code Quality
-    repo: "https://github.com/1NickPappas/move-code-quality-skill"
-    skills_count: 1
-    stars: 10
-    description: Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist
-  voltagent:
-    name: VoltAgent Catalog
-    repo: "https://github.com/VoltAgent/awesome-agent-skills"
-    skills_count: 0
-    stars: 7076
-    description: "Claude Code Skills and 300+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
-  aiqualitylab:
-    name: AI Quality Lab
-    repo: "https://github.com/aiqualitylab/agent-skills"
-    skills_count: 2
-    stars: 1
-    description: AI-powered testing skills for automation frameworks
+  tinybird:
+    name: Tinybird
+    repo: "https://github.com/tinybirdco/tinybird-agent-skills"
+    skills_count: 3
+    stars: 9
+    description: null
   openai:
     name: OpenAI
     repo: "https://github.com/openai/skills"
     skills_count: 32
     stars: 7660
     description: Skills Catalog for Codex
+  "playwright-skill":
+    name: Playwright Automation
+    repo: "https://github.com/lackeyjb/playwright-skill"
+    skills_count: 1
+    stars: 1546
+    description: Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.
+  "claude-marketplace-visual":
+    name: Claude Marketplace (Visual)
+    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
+    skills_count: 5
+    stars: 300
+    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  "aws-skills":
+    name: AWS Skills
+    repo: "https://github.com/zxkane/aws-skills"
+    skills_count: 5
+    stars: 114
+    description: Claude Agent Skills for AWS
+  "obsidian-plugin":
+    name: Obsidian Plugin Development
+    repo: "https://github.com/gapmiss/obsidian-plugin-skill"
+    skills_count: 1
+    stars: 66
+    description: CLAUDE SKILL for Obsidian.md plugin development
+  expo:
+    name: Expo
+    repo: "https://github.com/expo/skills"
+    skills_count: 0
+    stars: 1002
+    description: A collection of AI agent skills for working with Expo projects and Expo Application Services
+  "ios-simulator-skill":
+    name: iOS Simulator
+    repo: "https://github.com/conorluddy/ios-simulator-skill"
+    skills_count: 1
+    stars: 463
+    description: "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
+  nginity:
+    name: nginity Enterprise
+    repo: "https://github.com/alirezarezvani/claude-skills"
+    skills_count: 0
+    stars: 1840
+    description: "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
+  "ffuf-skill":
+    name: FFUF Web Fuzzing
+    repo: "https://github.com/jthack/ffuf_claude_skill"
+    skills_count: 1
+    stars: 105
+    description: "This is a \"skill\" for claude to use FFUF."
+  "claude-marketplace-engineering":
+    name: Claude Marketplace (Engineering)
+    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
+    skills_count: 5
+    stars: 300
+    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  "csv-summarizer-skill":
+    name: CSV Data Summarizer
+    repo: "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill"
+    skills_count: 1
+    stars: 206
+    description: "A Claude Skill that automatically analyzes uploaded CSV files — generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
+  remotion:
+    name: Remotion
+    repo: "https://github.com/remotion-dev/skills"
+    skills_count: 1
+    stars: 1558
+    description: Agent Skills
+  "family-history-skill":
+    name: Family History Research
+    repo: "https://github.com/emaynard/claude-family-history-research-skill"
+    skills_count: 1
+    stars: 28
+    description: A Claude Skill to assist with family history and genealogy research planning.
+  "notebooklm-skill":
+    name: NotebookLM Integration
+    repo: "https://github.com/PleasePrompto/notebooklm-skill"
+    skills_count: 1
+    stars: 3024
+    description: "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
+  "ipsw-skill":
+    name: IPSW iOS Firmware
+    repo: "https://github.com/blacktop/ipsw-skill"
+    skills_count: 1
+    stars: 37
+    description: A SKILL.md for ipsw
+  neondatabase:
+    name: Neon Database
+    repo: "https://github.com/neondatabase/agent-skills"
+    skills_count: 1
+    stars: 23
+    description: Agent Skills for Neon Severless Postgres
+  "skills-to-agents":
+    name: Skills to Agents Converter
+    repo: "https://github.com/dave1010/skills-to-agents"
+    skills_count: 0
+    stars: 27
+    description: Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md
+  "pypict-skill":
+    name: PICT Test Cases
+    repo: "https://github.com/omkamal/pypict-claude-skill"
+    skills_count: 1
+    stars: 30
+    description: A claude skill that generate test cases using N-wise test cases using the pypict library
 categories[7]: creative,data,development,documents,enterprise,integrations,other
-skills[1206]:
+skills[1212]:
+  - id: cloudflare/agents-sdk
+    name: agents-sdk
+    description: "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-03T14:38:10Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/agents-sdk
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/agents-sdk/SKILL.md"
+      commit_sha: fe4f2e9999991b36568e3d81a13de06a2b26bb20
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[3]: mcp,agents,sdk
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 14
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/building-ai-agent-on-cloudflare
+    name: building-ai-agent-on-cloudflare
+    description: "Builds AI agents on Cloudflare using the Agents SDK with state management,\nreal-time WebSockets, scheduled tasks, tool integration, and chat capabilities.\nGenerates production-ready agent code deployed to Workers.\n\nUse when: user wants to \"build an agent\", \"AI agent\", \"chat agent\", \"stateful\nagent\", mentions \"Agents SDK\", needs \"real-time AI\", \"WebSocket AI\", or asks\nabout agent \"state management\", \"scheduled tasks\", or \"tool calling\"."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-28T17:13:50Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/building-ai-agent-on-cloudflare
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/building-ai-agent-on-cloudflare/SKILL.md"
+      commit_sha: fe4f2e9999991b36568e3d81a13de06a2b26bb20
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[4]: pr,building,agent,cloudflare
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 20
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/building-mcp-server-on-cloudflare
+    name: building-mcp-server-on-cloudflare
+    description: "Builds remote MCP (Model Context Protocol) servers on Cloudflare Workers\nwith tools, OAuth authentication, and production deployment. Generates\nserver code, configures auth providers, and deploys to Workers.\n\nUse when: user wants to \"build MCP server\", \"create MCP tools\", \"remote\nMCP\", \"deploy MCP\", add \"OAuth to MCP\", or mentions Model Context Protocol\non Cloudflare. Also triggers on \"MCP authentication\" or \"MCP deployment\"."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-28T17:13:50Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/building-mcp-server-on-cloudflare
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/building-mcp-server-on-cloudflare/SKILL.md"
+      commit_sha: fe4f2e9999991b36568e3d81a13de06a2b26bb20
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[5]: pr,mcp,building,server,cloudflare
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 20
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/cloudflare
+    name: cloudflare
+    description: "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-28T17:13:50Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/cloudflare
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/cloudflare/SKILL.md"
+      commit_sha: fe4f2e9999991b36568e3d81a13de06a2b26bb20
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[2]: pr,cloudflare
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 20
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/durable-objects
+    name: durable-objects
+    description: "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-05T14:25:20Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/durable-objects
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/durable-objects/SKILL.md"
+      commit_sha: fe4f2e9999991b36568e3d81a13de06a2b26bb20
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[4]: pr,test,durable,objects
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 12
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/sandbox-sdk
+    name: sandbox-sdk
+    description: "Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-05T14:25:20Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/sandbox-sdk
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/sandbox-sdk/SKILL.md"
+      commit_sha: fe4f2e9999991b36568e3d81a13de06a2b26bb20
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[5]: pr,ci,cd,sandbox,sdk
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 12
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/web-perf
+    name: web-perf
+    description: "Analyzes web performance using Chrome DevTools MCP. Measures Core Web Vitals (FCP, LCP, TBT, CLS, Speed Index), identifies render-blocking resources, network dependency chains, layout shifts, caching issues, and accessibility gaps. Use when asked to audit, profile, debug, or optimize page load performance, Lighthouse scores, or site speed."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-28T17:13:50Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/web-perf
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/web-perf/SKILL.md"
+      commit_sha: fe4f2e9999991b36568e3d81a13de06a2b26bb20
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,mcp,web,perf
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 20
+    maintenance_status: active
+    quality_score: 70
+  - id: cloudflare/workers-best-practices
+    name: workers-best-practices
+    description: "Reviews and authors Cloudflare Workers code against production best practices. Load when writing new Workers, reviewing Worker code, configuring wrangler.jsonc, or checking for common Workers anti-patterns (streaming, floating promises, global state, secrets, bindings, observability). Biases towards retrieval from Cloudflare docs over pre-trained knowledge."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-12T20:50:56Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/workers-best-practices
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/workers-best-practices/SKILL.md"
+      commit_sha: fe4f2e9999991b36568e3d81a13de06a2b26bb20
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[6]: json,pr,knowledge,workers,best,practices
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 5
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/wrangler
+    name: wrangler
+    description: "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices."
+    provider: cloudflare
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-28T17:13:50Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/wrangler
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/wrangler/SKILL.md"
+      commit_sha: fe4f2e9999991b36568e3d81a13de06a2b26bb20
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: pr,cli,wrangler
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 20
+    maintenance_status: active
+    quality_score: 70
   - id: github/agentic-eval
     name: agentic-eval
     description: "Patterns and techniques for evaluating and improving AI agent outputs. Use this skill when:\n- Implementing self-critique and reflection loops\n- Building evaluator-optimizer pipelines for quality-critical generation\n- Creating test-driven code refinement workflows\n- Designing rubric-based or LLM-as-judge evaluation systems\n- Adding iterative improvement to agent outputs (code, reports, analysis)\n- Measuring and improving agent response quality"
@@ -300,7 +525,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/agentic-eval
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/agentic-eval/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -309,9 +534,9 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 29
-    maintenance_status: active
-    quality_score: 70
+    days_since_update: 30
+    maintenance_status: maintained
+    quality_score: 60
   - id: github/appinsights-instrumentation
     name: appinsights-instrumentation
     description: Instrument a webapp to send useful telemetry data to Azure App Insights
@@ -325,7 +550,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/appinsights-instrumentation
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/appinsights-instrumentation/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: true
     has_references: true
     has_assets: false
@@ -334,7 +559,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 38
+    days_since_update: 39
     maintenance_status: maintained
     quality_score: 80
   - id: github/aspire
@@ -350,7 +575,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/aspire
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/aspire/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: true
     has_assets: false
@@ -359,7 +584,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 8
+    days_since_update: 9
     maintenance_status: active
     quality_score: 80
   - id: github/azure-deployment-preflight
@@ -375,7 +600,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-deployment-preflight
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-deployment-preflight/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: true
     has_assets: false
@@ -384,7 +609,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 26
+    days_since_update: 27
     maintenance_status: active
     quality_score: 80
   - id: github/azure-devops-cli
@@ -400,7 +625,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-devops-cli
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-devops-cli/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -409,7 +634,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 25
+    days_since_update: 26
     maintenance_status: active
     quality_score: 70
   - id: github/azure-resource-visualizer
@@ -426,7 +651,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-resource-visualizer
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-resource-visualizer/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: true
@@ -435,7 +660,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 59
+    days_since_update: 60
     maintenance_status: maintained
     quality_score: 70
   - id: github/azure-role-selector
@@ -451,7 +676,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-role-selector
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-role-selector/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -460,7 +685,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 42
+    days_since_update: 43
     maintenance_status: maintained
     quality_score: 60
   - id: github/azure-static-web-apps
@@ -476,7 +701,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-static-web-apps
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-static-web-apps/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -485,7 +710,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 31
+    days_since_update: 32
     maintenance_status: maintained
     quality_score: 60
   - id: github/chrome-devtools
@@ -501,7 +726,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/chrome-devtools
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/chrome-devtools/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -510,7 +735,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 25
+    days_since_update: 26
     maintenance_status: active
     quality_score: 70
   - id: github/copilot-cli-quickstart
@@ -526,7 +751,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/copilot-cli-quickstart
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/copilot-cli-quickstart/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -535,7 +760,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 4
+    days_since_update: 5
     maintenance_status: active
     quality_score: 70
   - id: github/copilot-sdk
@@ -551,7 +776,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/copilot-sdk
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/copilot-sdk/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -560,7 +785,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 22
+    days_since_update: 23
     maintenance_status: active
     quality_score: 70
   - id: github/create-web-form
@@ -576,7 +801,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-web-form
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-web-form/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: true
     has_assets: false
@@ -585,7 +810,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 80
   - id: github/excalidraw-diagram-generator
@@ -601,7 +826,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/excalidraw-diagram-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/excalidraw-diagram-generator/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: true
     has_references: true
     has_assets: true
@@ -610,9 +835,36 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 14
+    days_since_update: 15
     maintenance_status: active
     quality_score: 100
+  - id: github/fabric-lakehouse
+    name: fabric-lakehouse
+    description: "Use this skill to get context about Fabric Lakehouse and its features for software systems and AI-powered functions. It offers descriptions of Lakehouse data components, organization with schemas and shortcuts, access control, and code examples. This skill supports users in designing, building, and optimizing Lakehouse solutions using best practices."
+    provider: github
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-17T19:18:43Z"
+    metadata:
+      author: tedvilutis
+      version: "1.0"
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/fabric-lakehouse
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/fabric-lakehouse/SKILL.md"
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[4]: pr,design,fabric,lakehouse
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 0
+    maintenance_status: active
+    quality_score: 80
   - id: github/finnish-humanizer
     name: finnish-humanizer
     description: "Detect and remove AI-generated markers from Finnish text, making it sound like a native Finnish speaker wrote it. Use when asked to \"humanize\", \"naturalize\", or \"remove AI feel\" from Finnish text, or when editing .md/.txt files containing Finnish content. Identifies 26 patterns (12 Finnish-specific + 14 universal) and 4 style markers."
@@ -626,7 +878,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/finnish-humanizer
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/finnish-humanizer/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: true
     has_assets: false
@@ -635,7 +887,32 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 0
+    days_since_update: 1
+    maintenance_status: active
+    quality_score: 80
+  - id: github/fluentui-blazor
+    name: fluentui-blazor
+    description: "Guide for using the Microsoft Fluent UI Blazor component library (Microsoft.FluentUI.AspNetCore.Components NuGet package) in Blazor applications. Use this when the user is building a Blazor app with Fluent UI components, setting up the library, using FluentUI components like FluentButton, FluentDataGrid, FluentDialog, FluentToast, FluentNavMenu, FluentTextField, FluentSelect, FluentAutocomplete, FluentDesignTheme, or any component prefixed with \"Fluent\". Also use when troubleshooting missing providers, JS interop issues, or theming."
+    provider: github
+    category: creative
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-16T21:43:41Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/fluentui-blazor
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/fluentui-blazor/SKILL.md"
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[4]: pr,design,fluentui,blazor
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 1
     maintenance_status: active
     quality_score: 80
   - id: github/gh-cli
@@ -651,7 +928,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/gh-cli
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/gh-cli/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -660,7 +937,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/git-commit
@@ -676,7 +953,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/git-commit
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/git-commit/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -685,7 +962,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 25
+    days_since_update: 26
     maintenance_status: active
     quality_score: 70
   - id: github/github-issues
@@ -701,7 +978,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/github-issues
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/github-issues/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: true
     has_assets: false
@@ -710,7 +987,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 39
+    days_since_update: 40
     maintenance_status: maintained
     quality_score: 70
   - id: github/image-manipulation-image-magick
@@ -726,7 +1003,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/image-manipulation-image-magick
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/image-manipulation-image-magick/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -735,7 +1012,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 26
+    days_since_update: 27
     maintenance_status: active
     quality_score: 70
   - id: github/legacy-circuit-mockups
@@ -751,7 +1028,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/legacy-circuit-mockups
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/legacy-circuit-mockups/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: true
     has_assets: false
@@ -760,7 +1037,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 28
+    days_since_update: 29
     maintenance_status: active
     quality_score: 80
   - id: github/make-repo-contribution
@@ -770,13 +1047,13 @@ skills[1206]:
     category: documents
     license: null
     compatibility: null
-    last_updated_at: "2026-02-04T22:09:40Z"
+    last_updated_at: "2026-02-17T21:27:02Z"
     metadata:
     source:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/make-repo-contribution
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/make-repo-contribution/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: true
@@ -785,7 +1062,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 12
+    days_since_update: 0
     maintenance_status: active
     quality_score: 80
   - id: github/make-skill-template
@@ -801,7 +1078,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/make-skill-template
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/make-skill-template/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -810,9 +1087,9 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 29
-    maintenance_status: active
-    quality_score: 70
+    days_since_update: 30
+    maintenance_status: maintained
+    quality_score: 60
   - id: github/markdown-to-html
     name: markdown-to-html
     description: "Convert Markdown files to HTML similar to `marked.js`, `pandoc`, `gomarkdown/markdown`, or similar tools; or writing custom script to convert markdown to html and/or working on web template systems like `jekyll/jekyll`, `gohugoio/hugo`, or similar web templating systems that utilize markdown documents, converting them to html. Use when asked to \"convert markdown to html\", \"transform md to html\", \"render markdown\", \"generate html from markdown\", or when working with .md files and/or web a templating system that converts markdown to HTML output. Supports CLI and Node.js workflows with GFM, CommonMark, and standard Markdown flavors."
@@ -826,7 +1103,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/markdown-to-html
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/markdown-to-html/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: true
     has_assets: false
@@ -835,7 +1112,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 19
+    days_since_update: 20
     maintenance_status: active
     quality_score: 80
   - id: github/mcp-cli
@@ -851,7 +1128,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/mcp-cli
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/mcp-cli/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -860,7 +1137,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 25
+    days_since_update: 26
     maintenance_status: active
     quality_score: 70
   - id: github/meeting-minutes
@@ -876,7 +1153,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/meeting-minutes
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/meeting-minutes/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -885,7 +1162,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 13
+    days_since_update: 14
     maintenance_status: active
     quality_score: 70
   - id: github/microsoft-code-reference
@@ -901,7 +1178,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/microsoft-code-reference
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-code-reference/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -910,7 +1187,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 33
+    days_since_update: 34
     maintenance_status: maintained
     quality_score: 60
   - id: github/microsoft-docs
@@ -926,7 +1203,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/microsoft-docs
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-docs/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -935,7 +1212,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 8
+    days_since_update: 9
     maintenance_status: active
     quality_score: 70
   - id: github/microsoft-skill-creator
@@ -951,7 +1228,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/microsoft-skill-creator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-skill-creator/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: true
     has_assets: false
@@ -960,7 +1237,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 80
   - id: github/nano-banana-pro-openrouter
@@ -981,7 +1258,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/nano-banana-pro-openrouter
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nano-banana-pro-openrouter/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: true
     has_references: false
     has_assets: true
@@ -990,7 +1267,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 90
   - id: github/nuget-manager
@@ -1006,7 +1283,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/nuget-manager
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nuget-manager/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1015,7 +1292,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 41
+    days_since_update: 42
     maintenance_status: maintained
     quality_score: 60
   - id: github/pdftk-server
@@ -1031,7 +1308,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/pdftk-server
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/pdftk-server/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: true
     has_assets: false
@@ -1040,7 +1317,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 1
+    days_since_update: 2
     maintenance_status: active
     quality_score: 80
   - id: github/penpot-uiux-design
@@ -1056,7 +1333,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/penpot-uiux-design
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/penpot-uiux-design/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: true
     has_assets: false
@@ -1065,7 +1342,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 14
+    days_since_update: 15
     maintenance_status: active
     quality_score: 80
   - id: github/plantuml-ascii
@@ -1081,7 +1358,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/plantuml-ascii
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/plantuml-ascii/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1090,7 +1367,32 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 25
+    days_since_update: 26
+    maintenance_status: active
+    quality_score: 70
+  - id: github/polyglot-test-agent
+    name: polyglot-test-agent
+    description: "Generates comprehensive, workable unit tests for any programming language using a multi-agent pipeline. Use when asked to generate tests, write unit tests, improve test coverage, add test coverage, create test files, or test a codebase. Supports C#, TypeScript, JavaScript, Python, Go, Rust, Java, and more. Orchestrates research, planning, and implementation phases to produce tests that compile, pass, and follow project conventions."
+    provider: github
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-16T14:51:07Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/polyglot-test-agent
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/polyglot-test-agent/SKILL.md"
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,test,polyglot,agent
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 1
     maintenance_status: active
     quality_score: 70
   - id: github/powerbi-modeling
@@ -1106,7 +1408,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/powerbi-modeling
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/powerbi-modeling/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: true
     has_assets: false
@@ -1115,7 +1417,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 13
+    days_since_update: 14
     maintenance_status: active
     quality_score: 80
   - id: github/prd
@@ -1131,7 +1433,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/prd
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/prd/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1140,7 +1442,32 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 25
+    days_since_update: 26
+    maintenance_status: active
+    quality_score: 70
+  - id: github/quasi-coder
+    name: quasi-coder
+    description: "Expert 10x engineer skill for interpreting and implementing code from shorthand, quasi-code, and natural language descriptions. Use when collaborators provide incomplete code snippets, pseudo-code, or descriptions with potential typos or incorrect terminology. Excels at translating non-technical or semi-technical descriptions into production-quality code."
+    provider: github
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-18T01:49:40Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/quasi-coder
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/quasi-coder/SKILL.md"
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: pr,quasi,coder
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 0
     maintenance_status: active
     quality_score: 70
   - id: github/refactor
@@ -1156,7 +1483,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/refactor
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/refactor/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1165,7 +1492,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 15
+    days_since_update: 16
     maintenance_status: active
     quality_score: 70
   - id: github/scoutqa-test
@@ -1181,7 +1508,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/scoutqa-test
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/scoutqa-test/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1190,7 +1517,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 25
+    days_since_update: 26
     maintenance_status: active
     quality_score: 70
   - id: github/snowflake-semanticview
@@ -1206,7 +1533,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/snowflake-semanticview
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/snowflake-semanticview/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1215,9 +1542,9 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 29
-    maintenance_status: active
-    quality_score: 70
+    days_since_update: 30
+    maintenance_status: maintained
+    quality_score: 60
   - id: github/sponsor-finder
     name: sponsor-finder
     description: "Find which of a GitHub repository's dependencies are sponsorable via GitHub Sponsors. Uses deps.dev API for dependency resolution across npm, PyPI, Cargo, Go, RubyGems, Maven, and NuGet. Checks npm funding metadata, FUNDING.yml files, and web search. Verifies every link. Shows direct and transitive dependencies with OSSF Scorecard health data. Invoke with /sponsor followed by a GitHub owner/repo (e.g. \"/sponsor expressjs/express\")."
@@ -1231,7 +1558,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/sponsor-finder
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/sponsor-finder/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1240,7 +1567,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 3
+    days_since_update: 4
     maintenance_status: active
     quality_score: 70
   - id: github/terraform-azurerm-set-diff-analyzer
@@ -1256,7 +1583,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/terraform-azurerm-set-diff-analyzer
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/terraform-azurerm-set-diff-analyzer/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: true
     has_references: true
     has_assets: false
@@ -1265,9 +1592,34 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 15
+    days_since_update: 16
     maintenance_status: active
     quality_score: 90
+  - id: github/transloadit-media-processing
+    name: transloadit-media-processing
+    description: "Process media files (video, audio, images, documents) using Transloadit. Use when asked to encode video to HLS/MP4, generate thumbnails, resize or watermark images, extract audio, concatenate clips, add subtitles, OCR documents, or run any media processing pipeline. Covers 86+ processing robots for file transformation at scale."
+    provider: github
+    category: data
+    license: MIT
+    compatibility: "Requires a free Transloadit account (https://transloadit.com/signup). Uses the @transloadit/mcp-server MCP server or the @transloadit/node CLI."
+    last_updated_at: "2026-02-17T14:42:15Z"
+    metadata:
+    source:
+      repo: "https://github.com/github/awesome-copilot"
+      path: skills/transloadit-media-processing
+      skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/transloadit-media-processing/SKILL.md"
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[7]: pr,cli,document,extract,transloadit,media,processing
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 0
+    maintenance_status: active
+    quality_score: 70
   - id: github/vscode-ext-commands
     name: vscode-ext-commands
     description: "Guidelines for contributing commands in VS Code extensions. Indicates naming convention, visibility, localization and other relevant attributes, following VS Code extension development guidelines, libraries and good practices"
@@ -1281,7 +1633,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/vscode-ext-commands
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-commands/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1290,7 +1642,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 36
+    days_since_update: 37
     maintenance_status: maintained
     quality_score: 60
   - id: github/vscode-ext-localization
@@ -1306,7 +1658,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/vscode-ext-localization
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-localization/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1315,7 +1667,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 36
+    days_since_update: 37
     maintenance_status: maintained
     quality_score: 60
   - id: github/web-design-reviewer
@@ -1331,7 +1683,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/web-design-reviewer
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/web-design-reviewer/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: true
     has_assets: false
@@ -1340,7 +1692,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 39
+    days_since_update: 40
     maintenance_status: maintained
     quality_score: 70
   - id: github/webapp-testing
@@ -1356,7 +1708,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/webapp-testing
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1365,7 +1717,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 61
+    days_since_update: 62
     maintenance_status: maintained
     quality_score: 60
   - id: github/winapp-cli
@@ -1381,7 +1733,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/winapp-cli
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/winapp-cli/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1390,7 +1742,7 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 15
+    days_since_update: 16
     maintenance_status: active
     quality_score: 70
   - id: github/workiq-copilot
@@ -1406,7 +1758,7 @@ skills[1206]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/workiq-copilot
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/workiq-copilot/SKILL.md"
-      commit_sha: 76b1c55befc0366a3bd4098cfdbbd38517e8dc2c
+      commit_sha: 84804535127a89f3f12af65f9ab0bb72094c5c4f
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1415,9 +1767,939 @@ skills[1206]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 22
+    days_since_update: 23
     maintenance_status: active
     quality_score: 70
+  - id: google-labs-stitch/design-md
+    name: design-md
+    description: Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files
+    provider: google-labs-stitch
+    category: creative
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-22T20:09:05Z"
+    metadata:
+    source:
+      repo: "https://github.com/google-labs-code/stitch-skills"
+      path: skills/design-md
+      skill_md_url: "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/design-md/SKILL.md"
+      commit_sha: 51d6d5ab56b9b46e1947bc4dabcd7f53bd343b3e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[2]: pr,design
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 26
+    maintenance_status: active
+    quality_score: 60
+  - id: google-labs-stitch/enhance-prompt
+    name: enhance-prompt
+    description: "Transforms vague UI ideas into polished, Stitch-optimized prompts. Enhances specificity, adds UI/UX keywords, injects design system context, and structures output for better generation results."
+    provider: google-labs-stitch
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-29T20:05:15Z"
+    metadata:
+    source:
+      repo: "https://github.com/google-labs-code/stitch-skills"
+      path: skills/enhance-prompt
+      skill_md_url: "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/enhance-prompt/SKILL.md"
+      commit_sha: 51d6d5ab56b9b46e1947bc4dabcd7f53bd343b3e
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[5]: pr,ci,design,enhance,prompt
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 19
+    maintenance_status: active
+    quality_score: 70
+  - id: "google-labs-stitch/react:components"
+    name: "react:components"
+    description: Converts Stitch designs into modular Vite and React components using system-level networking and AST-based validation.
+    provider: google-labs-stitch
+    category: creative
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-16T17:36:57Z"
+    metadata:
+    source:
+      repo: "https://github.com/google-labs-code/stitch-skills"
+      path: skills/react-components
+      skill_md_url: "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/react-components/SKILL.md"
+      commit_sha: 51d6d5ab56b9b46e1947bc4dabcd7f53bd343b3e
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[3]: design,convert,"react:components"
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 32
+    maintenance_status: maintained
+    quality_score: 60
+  - id: google-labs-stitch/remotion
+    name: remotion
+    description: "Generate walkthrough videos from Stitch projects using Remotion with smooth transitions, zooming, and text overlays"
+    provider: google-labs-stitch
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-03T22:30:13Z"
+    metadata:
+    source:
+      repo: "https://github.com/google-labs-code/stitch-skills"
+      path: skills/remotion
+      skill_md_url: "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/remotion/SKILL.md"
+      commit_sha: 51d6d5ab56b9b46e1947bc4dabcd7f53bd343b3e
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[2]: pr,remotion
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 14
+    maintenance_status: active
+    quality_score: 70
+  - id: google-labs-stitch/shadcn-ui
+    name: shadcn-ui
+    description: "Expert guidance for integrating and building applications with shadcn/ui components, including component discovery, installation, customization, and best practices."
+    provider: google-labs-stitch
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-03T22:43:22Z"
+    metadata:
+    source:
+      repo: "https://github.com/google-labs-code/stitch-skills"
+      path: skills/shadcn-ui
+      skill_md_url: "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/shadcn-ui/SKILL.md"
+      commit_sha: 51d6d5ab56b9b46e1947bc4dabcd7f53bd343b3e
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[2]: pr,shadcn
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 14
+    maintenance_status: active
+    quality_score: 70
+  - id: google-labs-stitch/stitch-loop
+    name: stitch-loop
+    description: Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern
+    provider: google-labs-stitch
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-23T19:54:24Z"
+    metadata:
+    source:
+      repo: "https://github.com/google-labs-code/stitch-skills"
+      path: skills/stitch-loop
+      skill_md_url: "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/stitch-loop/SKILL.md"
+      commit_sha: 51d6d5ab56b9b46e1947bc4dabcd7f53bd343b3e
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[2]: stitch,loop
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 25
+    maintenance_status: active
+    quality_score: 60
+  - id: obra-superpowers/brainstorming
+    name: brainstorming
+    description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
+    provider: obra-superpowers
+    category: creative
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-12T18:51:12Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/brainstorming
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/brainstorming/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[2]: design,brainstorming
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 5
+    maintenance_status: active
+    quality_score: 60
+  - id: obra-superpowers/dispatching-parallel-agents
+    name: dispatching-parallel-agents
+    description: Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies
+    provider: obra-superpowers
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-12T04:41:15Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/dispatching-parallel-agents
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/dispatching-parallel-agents/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: ci,dispatching,parallel,agents
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 68
+    maintenance_status: maintained
+    quality_score: 50
+  - id: obra-superpowers/executing-plans
+    name: executing-plans
+    description: Use when you have a written implementation plan to execute in a separate session with review checkpoints
+    provider: obra-superpowers
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-29T23:12:50Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/executing-plans
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/executing-plans/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[2]: executing,plans
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 19
+    maintenance_status: active
+    quality_score: 60
+  - id: obra-superpowers/finishing-a-development-branch
+    name: finishing-a-development-branch
+    description: "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup"
+    provider: obra-superpowers
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2025-10-17T17:18:50Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/finishing-a-development-branch
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/finishing-a-development-branch/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[7]: pr,ci,test,merge,finishing,development,branch
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 123
+    maintenance_status: maintained
+    quality_score: 50
+  - id: obra-superpowers/receiving-code-review
+    name: receiving-code-review
+    description: "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation"
+    provider: obra-superpowers
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-23T22:00:01Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/receiving-code-review
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/receiving-code-review/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: ci,receiving,code,review
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 56
+    maintenance_status: maintained
+    quality_score: 50
+  - id: obra-superpowers/requesting-code-review
+    name: requesting-code-review
+    description: "Use when completing tasks, implementing major features, or before merging to verify work meets requirements"
+    provider: obra-superpowers
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-12T04:41:15Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/requesting-code-review
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/requesting-code-review/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: requesting,code,review
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 68
+    maintenance_status: maintained
+    quality_score: 50
+  - id: obra-superpowers/subagent-driven-development
+    name: subagent-driven-development
+    description: Use when executing implementation plans with independent tasks in the current session
+    provider: obra-superpowers
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-29T23:12:50Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/subagent-driven-development
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/subagent-driven-development/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: subagent,driven,development
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 19
+    maintenance_status: active
+    quality_score: 60
+  - id: obra-superpowers/systematic-debugging
+    name: systematic-debugging
+    description: "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
+    provider: obra-superpowers
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-12T04:41:15Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/systematic-debugging
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/systematic-debugging/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,test,systematic,debugging
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 68
+    maintenance_status: maintained
+    quality_score: 50
+  - id: obra-superpowers/test-driven-development
+    name: test-driven-development
+    description: "Use when implementing any feature or bugfix, before writing implementation code"
+    provider: obra-superpowers
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-12T04:41:15Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/test-driven-development
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/test-driven-development/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: test,driven,development
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 68
+    maintenance_status: maintained
+    quality_score: 50
+  - id: obra-superpowers/using-git-worktrees
+    name: using-git-worktrees
+    description: Use when starting feature work that needs isolation from current workspace or before executing implementation plans - creates isolated git worktrees with smart directory selection and safety verification
+    provider: obra-superpowers
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-29T22:46:45Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/using-git-worktrees
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/using-git-worktrees/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: git,art,using,worktrees
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 19
+    maintenance_status: active
+    quality_score: 60
+  - id: obra-superpowers/using-superpowers
+    name: using-superpowers
+    description: "Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions"
+    provider: obra-superpowers
+    category: creative
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-12T18:51:12Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/using-superpowers
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/using-superpowers/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: art,using,superpowers
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 5
+    maintenance_status: active
+    quality_score: 60
+  - id: obra-superpowers/verification-before-completion
+    name: verification-before-completion
+    description: "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always"
+    provider: obra-superpowers
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2025-10-17T16:40:36Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/verification-before-completion
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/verification-before-completion/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,verification,before,completion
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 123
+    maintenance_status: maintained
+    quality_score: 50
+  - id: obra-superpowers/writing-plans
+    name: writing-plans
+    description: "Use when you have a spec or requirements for a multi-step task, before touching code"
+    provider: obra-superpowers
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-12T03:40:35Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/writing-plans
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-plans/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[2]: writing,plans
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 6
+    maintenance_status: active
+    quality_score: 60
+  - id: obra-superpowers/writing-skills
+    name: writing-skills
+    description: "Use when creating new skills, editing existing skills, or verifying skills work before deployment"
+    provider: obra-superpowers
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-06T01:09:57Z"
+    metadata:
+    source:
+      repo: "https://github.com/obra/superpowers"
+      path: skills/writing-skills
+      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-skills/SKILL.md"
+      commit_sha: a0b9ecce2b25aa7d703138f17650540c2e8b2cde
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[2]: writing,skills
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 12
+    maintenance_status: active
+    quality_score: 60
+  - id: sanjay-ai-skills/azure-devops
+    name: azure-devops
+    description: "Manage Azure DevOps projects, work items, repos, PRs, pipelines, wikis, test plans, security alerts,\nvariable groups, environments/approvals, branch policies, and attachments. Use when user asks to: manage\nsprints, create/update work items, list repos, create PRs, run pipelines, search code, manage wiki pages,\ncheck security alerts, manage variable groups, approve deployments, or configure branch policies.\nCovers 13 domains with 99 tools via REST API."
+    provider: sanjay-ai-skills
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-18T01:45:34Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/azure-devops
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/azure-devops/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[7]: pr,ci,test,api,wiki,azure,devops
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 0
+    maintenance_status: active
+    quality_score: 70
+  - id: sanjay-ai-skills/deep-research
+    name: deep-research
+    description: "Execute autonomous multi-step research using Google Gemini Deep Research Agent. Use for: market analysis, competitive landscaping, literature reviews, technical research, due diligence. Takes 2-10 minutes but produces detailed, cited reports. Costs $2-5 per task."
+    provider: sanjay-ai-skills
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-12T17:12:31Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/deep-research
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/deep-research/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[6]: pr,ci,api,analysis,deep,research
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 36
+    maintenance_status: maintained
+    quality_score: 60
+  - id: sanjay-ai-skills/elevenlabs
+    name: elevenlabs
+    description: "Convert documents and text to audio using ElevenLabs text-to-speech.\nUse this skill when the user wants to create a podcast, narrate a document,\nread aloud text, generate audio from a file, or convert text to speech."
+    provider: sanjay-ai-skills
+    category: documents
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-13T03:30:09Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/elevenlabs
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/elevenlabs/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[3]: document,convert,elevenlabs
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 5
+    maintenance_status: active
+    quality_score: 70
+  - id: sanjay-ai-skills/gmail
+    name: gmail
+    description: "Interact with Gmail - search emails, read messages, send emails, create drafts, and manage labels.\nUse when user asks to: search email, read email, send email, create email draft, mark as read,\narchive email, star email, or manage Gmail labels. Lightweight alternative to full Google\nWorkspace MCP server with standalone OAuth authentication."
+    provider: sanjay-ai-skills
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-12T22:19:21Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/gmail
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/gmail/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[3]: mcp,email,gmail
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 5
+    maintenance_status: active
+    quality_score: 70
+  - id: sanjay-ai-skills/google-calendar
+    name: google-calendar
+    description: "Interact with Google Calendar - list calendars, view events, create/update/delete events, and find free time.\nUse when user asks to: check calendar, schedule a meeting, create an event, find available time, list upcoming events,\ndelete or update a calendar event, or respond to meeting invitations. Lightweight alternative to full\nGoogle Workspace MCP server with standalone OAuth authentication."
+    provider: sanjay-ai-skills
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-20T17:37:25Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/google-calendar
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-calendar/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[4]: mcp,meeting,google,calendar
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 28
+    maintenance_status: active
+    quality_score: 70
+  - id: sanjay-ai-skills/google-chat
+    name: google-chat
+    description: "Interact with Google Chat - list spaces, send messages, read conversations, and manage DMs.\nUse when user asks to: send a message on Google Chat, read chat messages, list chat spaces,\nfind a chat room, send a DM, or create a new chat space. Lightweight alternative to full\nGoogle Workspace MCP server with standalone OAuth authentication."
+    provider: sanjay-ai-skills
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-10T03:55:13Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/google-chat
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-chat/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[3]: mcp,google,chat
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 8
+    maintenance_status: active
+    quality_score: 70
+  - id: sanjay-ai-skills/google-docs
+    name: google-docs
+    description: "Interact with Google Docs - create documents, search by title, read content, and edit text.\nUse when user asks to: create a Google Doc, find a document, read doc content, add text to a doc,\nor replace text in a document. Lightweight alternative to full Google Workspace MCP server with\nstandalone OAuth authentication."
+    provider: sanjay-ai-skills
+    category: documents
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-20T17:37:25Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/google-docs
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-docs/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[4]: mcp,document,google,docs
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 28
+    maintenance_status: active
+    quality_score: 70
+  - id: sanjay-ai-skills/google-drive
+    name: google-drive
+    description: "Interact with Google Drive - search files, find folders, list contents, download files, upload files,\ncreate folders, move, copy, rename, and trash files. Use when user asks to: search Google Drive,\nfind a file/folder, list Drive contents, download or upload files, create folders, move files,\nor organize Drive content. Lightweight integration with standalone OAuth authentication supporting\nfull read/write access."
+    provider: sanjay-ai-skills
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-12T23:49:38Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/google-drive
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-drive/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[2]: google,drive
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 5
+    maintenance_status: active
+    quality_score: 70
+  - id: sanjay-ai-skills/google-sheets
+    name: google-sheets
+    description: "Read and write Google Sheets spreadsheets - get content, update cells, append rows, fetch specific ranges,\nsearch for spreadsheets, and view metadata. Use when user asks to: read a spreadsheet, update cells,\nadd data to Google Sheets, find a spreadsheet, check sheet contents, export spreadsheet data, or get cell values.\nLightweight integration with standalone OAuth authentication supporting full read/write access."
+    provider: sanjay-ai-skills
+    category: documents
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-12T22:19:21Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/google-sheets
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-sheets/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[4]: pr,ci,google,sheets
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 5
+    maintenance_status: active
+    quality_score: 70
+  - id: sanjay-ai-skills/google-slides
+    name: google-slides
+    description: "Read and write Google Slides presentations - get text, find presentations, create presentations, add slides,\nreplace text, and manage slide content. Use when user asks to: read a presentation, create slides, find slides,\nadd a slide, replace text in a presentation, or manage presentation content. Lightweight integration with\nstandalone OAuth authentication supporting full read/write access."
+    provider: sanjay-ai-skills
+    category: documents
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-12T23:49:38Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/google-slides
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-slides/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[3]: pr,google,slides
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 5
+    maintenance_status: active
+    quality_score: 70
+  - id: sanjay-ai-skills/imagen
+    name: imagen
+    description: "Generate images using Google Gemini's image generation capabilities.\nUse this skill when the user needs to create, generate, or produce images\nfor any purpose including UI mockups, icons, illustrations, diagrams,\nconcept art, placeholder images, or visual representations."
+    provider: sanjay-ai-skills
+    category: creative
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-23T03:28:23Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/imagen
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/imagen/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[4]: pr,art,visual,imagen
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 57
+    maintenance_status: maintained
+    quality_score: 60
+  - id: sanjay-ai-skills/jules
+    name: jules
+    description: "Delegate coding tasks to Google Jules AI agent for asynchronous execution. Use when user says: 'have Jules fix', 'delegate to Jules', 'send to Jules', 'ask Jules to', 'check Jules sessions', 'pull Jules results', 'jules add tests', 'jules add docs', 'jules review pr'. Handles: bug fixes, documentation, features, tests, refactoring, code reviews. Works with GitHub repos, creates PRs."
+    provider: sanjay-ai-skills
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-24T23:46:31Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/jules
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/jules/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[6]: github,git,pr,test,document,jules
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 24
+    maintenance_status: active
+    quality_score: 60
+  - id: sanjay-ai-skills/manus
+    name: manus
+    description: "Delegate complex, long-running tasks to Manus AI agent for autonomous execution. Use when user says 'use manus', 'delegate to manus', 'send to manus', 'have manus do', 'ask manus', 'check manus sessions', or when tasks require deep web research, market analysis, product comparisons, stock analysis, competitive research, document generation, data analysis, or multi-step workflows that benefit from autonomous agent execution with parallel processing."
+    provider: sanjay-ai-skills
+    category: data
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-02T15:58:37Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/manus
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/manus/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[4]: pr,document,analysis,manus
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 15
+    maintenance_status: active
+    quality_score: 70
+  - id: sanjay-ai-skills/notebooklm
+    name: notebooklm
+    description: "Query and manage Google NotebookLM notebooks with persistent profile auth, source sync, batch/multi queries, and structured exports. Use when user asks to query NotebookLM, 'ask my notebook', shares NotebookLM notebook URLs, wants to list/create notebooks, manage sources, do bulk folder sync, dedupe, or audit exports."
+    provider: sanjay-ai-skills
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-08T16:48:59Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/notebooklm
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/notebooklm/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: true
+    has_assets: false
+    tags[2]: pr,notebooklm
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 9
+    maintenance_status: active
+    quality_score: 80
+  - id: sanjay-ai-skills/outline
+    name: outline
+    description: "Search, read, and manage Outline wiki documents. Use when: (1) searching wiki for documentation, (2) reading wiki pages or articles, (3) listing wiki collections or documents, (4) creating or updating wiki content, (5) exporting documents as markdown. Works with any Outline wiki instance (self-hosted or cloud)."
+    provider: sanjay-ai-skills
+    category: documents
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-20T14:46:31Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/outline
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/outline/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[4]: art,document,wiki,outline
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 28
+    maintenance_status: active
+    quality_score: 70
+  - id: sanjay-ai-skills/postgres
+    name: postgres
+    description: "Execute read-only SQL queries against multiple PostgreSQL databases. Use when: (1) querying PostgreSQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety."
+    provider: sanjay-ai-skills
+    category: data
+    license: null
+    compatibility: null
+    last_updated_at: "2025-12-22T18:51:28Z"
+    metadata:
+    source:
+      repo: "https://github.com/sanjay3290/ai-skills"
+      path: skills/postgres
+      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/postgres/SKILL.md"
+      commit_sha: ae338503dc96a67e0ee93cc434ccc0af4f54eb94
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[2]: analysis,postgres
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 57
+    maintenance_status: maintained
+    quality_score: 60
+  - id: supabase/supabase-postgres-best-practices
+    name: supabase-postgres-best-practices
+    description: "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations."
+    provider: supabase
+    category: development
+    license: MIT
+    compatibility: null
+    last_updated_at: "2026-01-27T21:38:29Z"
+    metadata:
+      author: supabase
+      version: 1.1.0
+      organization: Supabase
+      date: January 2026
+      abstract: "Comprehensive Postgres performance optimization guide for developers using Supabase and Postgres. Contains performance rules across 8 categories, prioritized by impact from critical (query performance, connection management) to incremental (advanced features). Each rule includes detailed explanations, incorrect vs. correct SQL examples, query plan analysis, and specific performance metrics to guide automated optimization and code generation."
+    source:
+      repo: "https://github.com/supabase/agent-skills"
+      path: skills/supabase-postgres-best-practices
+      skill_md_url: "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase-postgres-best-practices/SKILL.md"
+      commit_sha: 760460c221d30d0db904ff28e8fa52af85672255
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[6]: pr,design,supabase,postgres,best,practices
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 21
+    maintenance_status: active
+    quality_score: 80
   - id: neondatabase/neon-postgres
     name: neon-postgres
     description: "Guides and best practices for working with Neon Serverless Postgres. Covers getting started, local development with Neon, choosing a connection method, Neon features, authentication (@neondatabase/auth), PostgREST-style data API (@neondatabase/neon-js), Neon CLI, and Neon's Platform API/SDKs. Use for any Neon-related questions."
@@ -1441,36 +2723,6 @@ skills[1206]:
     duplicate_of: null
     duplicate_similarity: null
     days_since_update: 3
-    maintenance_status: active
-    quality_score: 80
-  - id: supabase/supabase-postgres-best-practices
-    name: supabase-postgres-best-practices
-    description: "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations."
-    provider: supabase
-    category: development
-    license: MIT
-    compatibility: null
-    last_updated_at: "2026-01-27T21:38:29Z"
-    metadata:
-      author: supabase
-      version: 1.1.0
-      organization: Supabase
-      date: January 2026
-      abstract: "Comprehensive Postgres performance optimization guide for developers using Supabase and Postgres. Contains performance rules across 8 categories, prioritized by impact from critical (query performance, connection management) to incremental (advanced features). Each rule includes detailed explanations, incorrect vs. correct SQL examples, query plan analysis, and specific performance metrics to guide automated optimization and code generation."
-    source:
-      repo: "https://github.com/supabase/agent-skills"
-      path: skills/supabase-postgres-best-practices
-      skill_md_url: "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase-postgres-best-practices/SKILL.md"
-      commit_sha: 32142e85fde0ff4e9fef44895cdf6914c1635389
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[6]: pr,design,supabase,postgres,best,practices
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 20
     maintenance_status: active
     quality_score: 80
   - id: remotion/remotion-best-practices
@@ -1499,1106 +2751,6 @@ skills[1206]:
     days_since_update: 2
     maintenance_status: active
     quality_score: 70
-  - id: cloudflare/agents-sdk
-    name: agents-sdk
-    description: "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-03T14:38:10Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/agents-sdk
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/agents-sdk/SKILL.md"
-      commit_sha: 426c3b406b3d3ef2ad3ca9bc2d3f41dd5be32ba0
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[3]: mcp,agents,sdk
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 9
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/building-ai-agent-on-cloudflare
-    name: building-ai-agent-on-cloudflare
-    description: "Builds AI agents on Cloudflare using the Agents SDK with state management,\nreal-time WebSockets, scheduled tasks, tool integration, and chat capabilities.\nGenerates production-ready agent code deployed to Workers.\n\nUse when: user wants to \"build an agent\", \"AI agent\", \"chat agent\", \"stateful\nagent\", mentions \"Agents SDK\", needs \"real-time AI\", \"WebSocket AI\", or asks\nabout agent \"state management\", \"scheduled tasks\", or \"tool calling\"."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-28T17:13:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/building-ai-agent-on-cloudflare
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/building-ai-agent-on-cloudflare/SKILL.md"
-      commit_sha: 426c3b406b3d3ef2ad3ca9bc2d3f41dd5be32ba0
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[4]: pr,building,agent,cloudflare
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 15
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/building-mcp-server-on-cloudflare
-    name: building-mcp-server-on-cloudflare
-    description: "Builds remote MCP (Model Context Protocol) servers on Cloudflare Workers\nwith tools, OAuth authentication, and production deployment. Generates\nserver code, configures auth providers, and deploys to Workers.\n\nUse when: user wants to \"build MCP server\", \"create MCP tools\", \"remote\nMCP\", \"deploy MCP\", add \"OAuth to MCP\", or mentions Model Context Protocol\non Cloudflare. Also triggers on \"MCP authentication\" or \"MCP deployment\"."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-28T17:13:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/building-mcp-server-on-cloudflare
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/building-mcp-server-on-cloudflare/SKILL.md"
-      commit_sha: 426c3b406b3d3ef2ad3ca9bc2d3f41dd5be32ba0
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[5]: pr,mcp,building,server,cloudflare
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 15
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/cloudflare
-    name: cloudflare
-    description: "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-28T17:13:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/cloudflare
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/cloudflare/SKILL.md"
-      commit_sha: 426c3b406b3d3ef2ad3ca9bc2d3f41dd5be32ba0
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[2]: pr,cloudflare
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 15
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/durable-objects
-    name: durable-objects
-    description: "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-05T14:25:20Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/durable-objects
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/durable-objects/SKILL.md"
-      commit_sha: 426c3b406b3d3ef2ad3ca9bc2d3f41dd5be32ba0
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[4]: pr,test,durable,objects
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 7
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/sandbox-sdk
-    name: sandbox-sdk
-    description: "Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-05T14:25:20Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/sandbox-sdk
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/sandbox-sdk/SKILL.md"
-      commit_sha: 426c3b406b3d3ef2ad3ca9bc2d3f41dd5be32ba0
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[5]: pr,ci,cd,sandbox,sdk
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 7
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/web-perf
-    name: web-perf
-    description: "Analyzes web performance using Chrome DevTools MCP. Measures Core Web Vitals (FCP, LCP, TBT, CLS, Speed Index), identifies render-blocking resources, network dependency chains, layout shifts, caching issues, and accessibility gaps. Use when asked to audit, profile, debug, or optimize page load performance, Lighthouse scores, or site speed."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-28T17:13:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/web-perf
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/web-perf/SKILL.md"
-      commit_sha: 426c3b406b3d3ef2ad3ca9bc2d3f41dd5be32ba0
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[4]: pr,mcp,web,perf
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 15
-    maintenance_status: active
-    quality_score: 70
-  - id: cloudflare/workers-best-practices
-    name: workers-best-practices
-    description: "Reviews and authors Cloudflare Workers code against production best practices. Load when writing new Workers, reviewing Worker code, configuring wrangler.jsonc, or checking for common Workers anti-patterns (streaming, floating promises, global state, secrets, bindings, observability). Biases towards retrieval from Cloudflare docs over pre-trained knowledge."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-12T20:50:56Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/workers-best-practices
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/workers-best-practices/SKILL.md"
-      commit_sha: 426c3b406b3d3ef2ad3ca9bc2d3f41dd5be32ba0
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[6]: json,pr,knowledge,workers,best,practices
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 0
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/wrangler
-    name: wrangler
-    description: "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices."
-    provider: cloudflare
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-28T17:13:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/wrangler
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/wrangler/SKILL.md"
-      commit_sha: 426c3b406b3d3ef2ad3ca9bc2d3f41dd5be32ba0
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[3]: pr,cli,wrangler
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 15
-    maintenance_status: active
-    quality_score: 70
-  - id: google-labs-stitch/design-md
-    name: design-md
-    description: Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files
-    provider: google-labs-stitch
-    category: creative
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-22T20:09:05Z"
-    metadata:
-    source:
-      repo: "https://github.com/google-labs-code/stitch-skills"
-      path: skills/design-md
-      skill_md_url: "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/design-md/SKILL.md"
-      commit_sha: e8df14454755cbd8d1a7f96e2b7caae32f2eace1
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[2]: pr,design
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 21
-    maintenance_status: active
-    quality_score: 60
-  - id: google-labs-stitch/enhance-prompt
-    name: enhance-prompt
-    description: "Transforms vague UI ideas into polished, Stitch-optimized prompts. Enhances specificity, adds UI/UX keywords, injects design system context, and structures output for better generation results."
-    provider: google-labs-stitch
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-29T20:05:15Z"
-    metadata:
-    source:
-      repo: "https://github.com/google-labs-code/stitch-skills"
-      path: skills/enhance-prompt
-      skill_md_url: "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/enhance-prompt/SKILL.md"
-      commit_sha: e8df14454755cbd8d1a7f96e2b7caae32f2eace1
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[5]: pr,ci,design,enhance,prompt
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 14
-    maintenance_status: active
-    quality_score: 70
-  - id: "google-labs-stitch/react:components"
-    name: "react:components"
-    description: Converts Stitch designs into modular Vite and React components using system-level networking and AST-based validation.
-    provider: google-labs-stitch
-    category: creative
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-16T17:36:57Z"
-    metadata:
-    source:
-      repo: "https://github.com/google-labs-code/stitch-skills"
-      path: skills/react-components
-      skill_md_url: "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/react-components/SKILL.md"
-      commit_sha: e8df14454755cbd8d1a7f96e2b7caae32f2eace1
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[3]: design,convert,"react:components"
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 27
-    maintenance_status: active
-    quality_score: 70
-  - id: google-labs-stitch/remotion
-    name: remotion
-    description: "Generate walkthrough videos from Stitch projects using Remotion with smooth transitions, zooming, and text overlays"
-    provider: google-labs-stitch
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-03T22:30:13Z"
-    metadata:
-    source:
-      repo: "https://github.com/google-labs-code/stitch-skills"
-      path: skills/remotion
-      skill_md_url: "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/remotion/SKILL.md"
-      commit_sha: e8df14454755cbd8d1a7f96e2b7caae32f2eace1
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[2]: pr,remotion
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 9
-    maintenance_status: active
-    quality_score: 70
-  - id: google-labs-stitch/shadcn-ui
-    name: shadcn-ui
-    description: "Expert guidance for integrating and building applications with shadcn/ui components, including component discovery, installation, customization, and best practices."
-    provider: google-labs-stitch
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-03T22:43:22Z"
-    metadata:
-    source:
-      repo: "https://github.com/google-labs-code/stitch-skills"
-      path: skills/shadcn-ui
-      skill_md_url: "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/shadcn-ui/SKILL.md"
-      commit_sha: e8df14454755cbd8d1a7f96e2b7caae32f2eace1
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[2]: pr,shadcn
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 9
-    maintenance_status: active
-    quality_score: 70
-  - id: google-labs-stitch/stitch-loop
-    name: stitch-loop
-    description: Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern
-    provider: google-labs-stitch
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-23T19:54:24Z"
-    metadata:
-    source:
-      repo: "https://github.com/google-labs-code/stitch-skills"
-      path: skills/stitch-loop
-      skill_md_url: "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main/skills/stitch-loop/SKILL.md"
-      commit_sha: e8df14454755cbd8d1a7f96e2b7caae32f2eace1
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[2]: stitch,loop
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 20
-    maintenance_status: active
-    quality_score: 60
-  - id: obra-superpowers/brainstorming
-    name: brainstorming
-    description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
-    provider: obra-superpowers
-    category: creative
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-12T18:51:12Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/brainstorming
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/brainstorming/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[2]: design,brainstorming
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 0
-    maintenance_status: active
-    quality_score: 60
-  - id: obra-superpowers/dispatching-parallel-agents
-    name: dispatching-parallel-agents
-    description: Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies
-    provider: obra-superpowers
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2025-12-12T04:41:15Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/dispatching-parallel-agents
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/dispatching-parallel-agents/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[4]: ci,dispatching,parallel,agents
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 63
-    maintenance_status: maintained
-    quality_score: 50
-  - id: obra-superpowers/executing-plans
-    name: executing-plans
-    description: Use when you have a written implementation plan to execute in a separate session with review checkpoints
-    provider: obra-superpowers
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-29T23:12:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/executing-plans
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/executing-plans/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[2]: executing,plans
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 14
-    maintenance_status: active
-    quality_score: 60
-  - id: obra-superpowers/finishing-a-development-branch
-    name: finishing-a-development-branch
-    description: "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup"
-    provider: obra-superpowers
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2025-10-17T17:18:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/finishing-a-development-branch
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/finishing-a-development-branch/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[7]: pr,ci,test,merge,finishing,development,branch
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 118
-    maintenance_status: maintained
-    quality_score: 50
-  - id: obra-superpowers/receiving-code-review
-    name: receiving-code-review
-    description: "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation"
-    provider: obra-superpowers
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2025-12-23T22:00:01Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/receiving-code-review
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/receiving-code-review/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[4]: ci,receiving,code,review
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 51
-    maintenance_status: maintained
-    quality_score: 50
-  - id: obra-superpowers/requesting-code-review
-    name: requesting-code-review
-    description: "Use when completing tasks, implementing major features, or before merging to verify work meets requirements"
-    provider: obra-superpowers
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2025-12-12T04:41:15Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/requesting-code-review
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/requesting-code-review/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[3]: requesting,code,review
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 63
-    maintenance_status: maintained
-    quality_score: 50
-  - id: obra-superpowers/subagent-driven-development
-    name: subagent-driven-development
-    description: Use when executing implementation plans with independent tasks in the current session
-    provider: obra-superpowers
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-29T23:12:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/subagent-driven-development
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/subagent-driven-development/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[3]: subagent,driven,development
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 14
-    maintenance_status: active
-    quality_score: 60
-  - id: obra-superpowers/systematic-debugging
-    name: systematic-debugging
-    description: "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
-    provider: obra-superpowers
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2025-12-12T04:41:15Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/systematic-debugging
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/systematic-debugging/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[4]: pr,test,systematic,debugging
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 63
-    maintenance_status: maintained
-    quality_score: 50
-  - id: obra-superpowers/test-driven-development
-    name: test-driven-development
-    description: "Use when implementing any feature or bugfix, before writing implementation code"
-    provider: obra-superpowers
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2025-12-12T04:41:15Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/test-driven-development
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/test-driven-development/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[3]: test,driven,development
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 63
-    maintenance_status: maintained
-    quality_score: 50
-  - id: obra-superpowers/using-git-worktrees
-    name: using-git-worktrees
-    description: Use when starting feature work that needs isolation from current workspace or before executing implementation plans - creates isolated git worktrees with smart directory selection and safety verification
-    provider: obra-superpowers
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-29T22:46:45Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/using-git-worktrees
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/using-git-worktrees/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[4]: git,art,using,worktrees
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 14
-    maintenance_status: active
-    quality_score: 60
-  - id: obra-superpowers/using-superpowers
-    name: using-superpowers
-    description: "Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions"
-    provider: obra-superpowers
-    category: creative
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-12T18:51:12Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/using-superpowers
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/using-superpowers/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[3]: art,using,superpowers
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 0
-    maintenance_status: active
-    quality_score: 60
-  - id: obra-superpowers/verification-before-completion
-    name: verification-before-completion
-    description: "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always"
-    provider: obra-superpowers
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2025-10-17T16:40:36Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/verification-before-completion
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/verification-before-completion/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[4]: pr,verification,before,completion
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 118
-    maintenance_status: maintained
-    quality_score: 50
-  - id: obra-superpowers/writing-plans
-    name: writing-plans
-    description: "Use when you have a spec or requirements for a multi-step task, before touching code"
-    provider: obra-superpowers
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-12T03:40:35Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/writing-plans
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-plans/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[2]: writing,plans
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 1
-    maintenance_status: active
-    quality_score: 60
-  - id: obra-superpowers/writing-skills
-    name: writing-skills
-    description: "Use when creating new skills, editing existing skills, or verifying skills work before deployment"
-    provider: obra-superpowers
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-06T01:09:57Z"
-    metadata:
-    source:
-      repo: "https://github.com/obra/superpowers"
-      path: skills/writing-skills
-      skill_md_url: "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-skills/SKILL.md"
-      commit_sha: e16d611eee14ac4c3253b4bf4c55a98d905c2e64
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[2]: writing,skills
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 7
-    maintenance_status: active
-    quality_score: 60
-  - id: sanjay-ai-skills/deep-research
-    name: deep-research
-    description: "Execute autonomous multi-step research using Google Gemini Deep Research Agent. Use for: market analysis, competitive landscaping, literature reviews, technical research, due diligence. Takes 2-10 minutes but produces detailed, cited reports. Costs $2-5 per task."
-    provider: sanjay-ai-skills
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-12T17:12:31Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/deep-research
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/deep-research/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[6]: pr,ci,api,analysis,deep,research
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 31
-    maintenance_status: maintained
-    quality_score: 60
-  - id: sanjay-ai-skills/elevenlabs
-    name: elevenlabs
-    description: "Convert documents and text to audio using ElevenLabs text-to-speech.\nUse this skill when the user wants to create a podcast, narrate a document,\nread aloud text, generate audio from a file, or convert text to speech."
-    provider: sanjay-ai-skills
-    category: documents
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-13T03:30:09Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/elevenlabs
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/elevenlabs/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[3]: document,convert,elevenlabs
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 0
-    maintenance_status: active
-    quality_score: 70
-  - id: sanjay-ai-skills/gmail
-    name: gmail
-    description: "Interact with Gmail - search emails, read messages, send emails, create drafts, and manage labels.\nUse when user asks to: search email, read email, send email, create email draft, mark as read,\narchive email, star email, or manage Gmail labels. Lightweight alternative to full Google\nWorkspace MCP server with standalone OAuth authentication."
-    provider: sanjay-ai-skills
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-12T22:19:21Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/gmail
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/gmail/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[3]: mcp,email,gmail
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 0
-    maintenance_status: active
-    quality_score: 70
-  - id: sanjay-ai-skills/google-calendar
-    name: google-calendar
-    description: "Interact with Google Calendar - list calendars, view events, create/update/delete events, and find free time.\nUse when user asks to: check calendar, schedule a meeting, create an event, find available time, list upcoming events,\ndelete or update a calendar event, or respond to meeting invitations. Lightweight alternative to full\nGoogle Workspace MCP server with standalone OAuth authentication."
-    provider: sanjay-ai-skills
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-20T17:37:25Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/google-calendar
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-calendar/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[4]: mcp,meeting,google,calendar
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 23
-    maintenance_status: active
-    quality_score: 70
-  - id: sanjay-ai-skills/google-chat
-    name: google-chat
-    description: "Interact with Google Chat - list spaces, send messages, read conversations, and manage DMs.\nUse when user asks to: send a message on Google Chat, read chat messages, list chat spaces,\nfind a chat room, send a DM, or create a new chat space. Lightweight alternative to full\nGoogle Workspace MCP server with standalone OAuth authentication."
-    provider: sanjay-ai-skills
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-10T03:55:13Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/google-chat
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-chat/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[3]: mcp,google,chat
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 3
-    maintenance_status: active
-    quality_score: 70
-  - id: sanjay-ai-skills/google-docs
-    name: google-docs
-    description: "Interact with Google Docs - create documents, search by title, read content, and edit text.\nUse when user asks to: create a Google Doc, find a document, read doc content, add text to a doc,\nor replace text in a document. Lightweight alternative to full Google Workspace MCP server with\nstandalone OAuth authentication."
-    provider: sanjay-ai-skills
-    category: documents
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-20T17:37:25Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/google-docs
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-docs/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[4]: mcp,document,google,docs
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 23
-    maintenance_status: active
-    quality_score: 70
-  - id: sanjay-ai-skills/google-drive
-    name: google-drive
-    description: "Interact with Google Drive - search files, find folders, list contents, download files, upload files,\ncreate folders, move, copy, rename, and trash files. Use when user asks to: search Google Drive,\nfind a file/folder, list Drive contents, download or upload files, create folders, move files,\nor organize Drive content. Lightweight integration with standalone OAuth authentication supporting\nfull read/write access."
-    provider: sanjay-ai-skills
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-12T23:49:38Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/google-drive
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-drive/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[2]: google,drive
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 0
-    maintenance_status: active
-    quality_score: 70
-  - id: sanjay-ai-skills/google-sheets
-    name: google-sheets
-    description: "Read and write Google Sheets spreadsheets - get content, update cells, append rows, fetch specific ranges,\nsearch for spreadsheets, and view metadata. Use when user asks to: read a spreadsheet, update cells,\nadd data to Google Sheets, find a spreadsheet, check sheet contents, export spreadsheet data, or get cell values.\nLightweight integration with standalone OAuth authentication supporting full read/write access."
-    provider: sanjay-ai-skills
-    category: documents
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-12T22:19:21Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/google-sheets
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-sheets/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[4]: pr,ci,google,sheets
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 0
-    maintenance_status: active
-    quality_score: 70
-  - id: sanjay-ai-skills/google-slides
-    name: google-slides
-    description: "Read and write Google Slides presentations - get text, find presentations, create presentations, add slides,\nreplace text, and manage slide content. Use when user asks to: read a presentation, create slides, find slides,\nadd a slide, replace text in a presentation, or manage presentation content. Lightweight integration with\nstandalone OAuth authentication supporting full read/write access."
-    provider: sanjay-ai-skills
-    category: documents
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-12T23:49:38Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/google-slides
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/google-slides/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[3]: pr,google,slides
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 0
-    maintenance_status: active
-    quality_score: 70
-  - id: sanjay-ai-skills/imagen
-    name: imagen
-    description: "Generate images using Google Gemini's image generation capabilities.\nUse this skill when the user needs to create, generate, or produce images\nfor any purpose including UI mockups, icons, illustrations, diagrams,\nconcept art, placeholder images, or visual representations."
-    provider: sanjay-ai-skills
-    category: creative
-    license: null
-    compatibility: null
-    last_updated_at: "2025-12-23T03:28:23Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/imagen
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/imagen/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[4]: pr,art,visual,imagen
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 52
-    maintenance_status: maintained
-    quality_score: 60
-  - id: sanjay-ai-skills/jules
-    name: jules
-    description: "Delegate coding tasks to Google Jules AI agent for asynchronous execution. Use when user says: 'have Jules fix', 'delegate to Jules', 'send to Jules', 'ask Jules to', 'check Jules sessions', 'pull Jules results', 'jules add tests', 'jules add docs', 'jules review pr'. Handles: bug fixes, documentation, features, tests, refactoring, code reviews. Works with GitHub repos, creates PRs."
-    provider: sanjay-ai-skills
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-24T23:46:31Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/jules
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/jules/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[6]: github,git,pr,test,document,jules
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 19
-    maintenance_status: active
-    quality_score: 60
-  - id: sanjay-ai-skills/manus
-    name: manus
-    description: "Delegate complex, long-running tasks to Manus AI agent for autonomous execution. Use when user says 'use manus', 'delegate to manus', 'send to manus', 'have manus do', 'ask manus', 'check manus sessions', or when tasks require deep web research, market analysis, product comparisons, stock analysis, competitive research, document generation, data analysis, or multi-step workflows that benefit from autonomous agent execution with parallel processing."
-    provider: sanjay-ai-skills
-    category: data
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-02T15:58:37Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/manus
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/manus/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[4]: pr,document,analysis,manus
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 10
-    maintenance_status: active
-    quality_score: 70
-  - id: sanjay-ai-skills/notebooklm
-    name: notebooklm
-    description: "Query and manage Google NotebookLM notebooks with persistent profile auth, source sync, batch/multi queries, and structured exports. Use when user asks to query NotebookLM, 'ask my notebook', shares NotebookLM notebook URLs, wants to list/create notebooks, manage sources, do bulk folder sync, dedupe, or audit exports."
-    provider: sanjay-ai-skills
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-08T16:48:59Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/notebooklm
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/notebooklm/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: true
-    has_assets: false
-    tags[2]: pr,notebooklm
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 4
-    maintenance_status: active
-    quality_score: 80
-  - id: sanjay-ai-skills/outline
-    name: outline
-    description: "Search, read, and manage Outline wiki documents. Use when: (1) searching wiki for documentation, (2) reading wiki pages or articles, (3) listing wiki collections or documents, (4) creating or updating wiki content, (5) exporting documents as markdown. Works with any Outline wiki instance (self-hosted or cloud)."
-    provider: sanjay-ai-skills
-    category: documents
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-20T14:46:31Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/outline
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/outline/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[4]: art,document,wiki,outline
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 23
-    maintenance_status: active
-    quality_score: 70
-  - id: sanjay-ai-skills/postgres
-    name: postgres
-    description: "Execute read-only SQL queries against multiple PostgreSQL databases. Use when: (1) querying PostgreSQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety."
-    provider: sanjay-ai-skills
-    category: data
-    license: null
-    compatibility: null
-    last_updated_at: "2025-12-22T18:51:28Z"
-    metadata:
-    source:
-      repo: "https://github.com/sanjay3290/ai-skills"
-      path: skills/postgres
-      skill_md_url: "https://raw.githubusercontent.com/sanjay3290/ai-skills/main/skills/postgres/SKILL.md"
-      commit_sha: 51aaa9c836c709c8e7e9db35778ecf350b8891de
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[2]: analysis,postgres
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 52
-    maintenance_status: maintained
-    quality_score: 60
   - id: tinybird/tinybird
     name: tinybird
     description: "Tinybird file formats, SQL rules, optimization patterns, and best practices for datasources, pipes, endpoints, and materialized views."
@@ -30572,10 +30724,10 @@ duplicate_summary:
   mirrors: 0
   probable_duplicates: 0
 maintenance_summary:
-  active: 36
-  maintained: 11
+  active: 71
+  maintained: 25
   stale: 0
   abandoned: 0
   unknown: 0
-  active_percentage: 76.6
+  active_percentage: 74
   maintained_percentage: 100
