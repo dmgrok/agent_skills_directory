@@ -1,13 +1,13 @@
 {
-  "last_run": "2026-02-21T06:52:47.907684+00:00",
+  "last_run": "2026-02-22T06:57:48.194897+00:00",
   "provider_commits": {
     "anthropics": "1ed29a03dc852d30fa6ef2ca53a67dc2c2c2c563",
     "openai": "2c9ebb321958f64aa9414b46e4240901e2b9e1a9",
-    "github": "98501a55b0b6676ee686832a8072c634c0f2d67a",
+    "github": "dc8b0cc5466dcaa482b1bb8b13b529bf8031d25a",
     "vercel": "e23951b8cad2f4b1e7e176c5731127c1263fe86f",
     "huggingface": "c1cd47139f401b8615d8ed8e7be7555f1312c179",
     "skillcreatorai": "90b5f32927b156351b9facbda0c3d95b6011b379",
-    "obra-superpowers": "a0b9ecce2b25aa7d703138f17650540c2e8b2cde",
+    "obra-superpowers": "e4a2375cb705ca5800f0833528ce36a3faf9017a",
     "tapestry": "b134509a6f2f80b4adbfe9c71f2a23ac3bc6ab10",
     "sanjay-ai-skills": "e4f1d4ebe43e75d307518a0ad76b4eaab0e56b43",
     "aws-skills": "e48bf4c63b6a2a39dac29c03546a3df97b384d0f",
@@ -50,5 +50,5 @@
     "skills-to-agents": "12f69f287941dfafb2fcf761455e73a5c6361469"
   },
   "skills_count": 1137,
-  "version": "2026.02.21"
+  "version": "2026.02.22"
 }
