@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-02-22T06:57:48.194897+00:00",
+  "last_run": "2026-02-23T07:14:00.161420+00:00",
   "provider_commits": {
     "anthropics": "1ed29a03dc852d30fa6ef2ca53a67dc2c2c2c563",
     "openai": "2c9ebb321958f64aa9414b46e4240901e2b9e1a9",
@@ -18,7 +18,7 @@
     "epub-skill": "7c0723087b9f6ec2352b42b73f61d224b542e059",
     "d3js-skill": "e198c87d03f1c9811acbff681886fac24baee53d",
     "ffuf-skill": "50fd4af4d8bd60cfc48fd84eda1720fbd718857d",
-    "ios-simulator-skill": "afcf21f5f8f69978f350cae942ac23cadedc1b65",
+    "ios-simulator-skill": "68be53b07ddf5e5122a07e8dae4791e0c0dc1568",
     "move-quality-skill": "6813ac55cb3bfcaa35c349da7dd5f9eae745009d",
     "playwright-skill": "bb7e920d376022958214e349ef25498a2644e189",
     "pypict-skill": "a001d8737c70066401cfe1b39cf64969b4d3e5df",
@@ -40,8 +40,8 @@
     "fal-ai": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9",
     "remotion": "e9d8ecd5685a0ab1291444f5ad0288a64d053155",
     "nginity": "0bea02d2b6ab9647300dc10d71e4336ddd61c68c",
-    "voltagent": "be956eb49eec1bb55c8a2ea642cc6585bc5d0969",
-    "heilcheng": "b72ec985761b9fd6705f242e0cab18a1d48b6fdb",
+    "voltagent": "9293eba2d66f24128f7c61a9cf4b30d369bfc2ed",
+    "heilcheng": "b7598be3dd5ecd8ec021f9e43495f90e883b9808",
     "travisvn": "df18d6f654fb78fe7698acce6a3cb515f80612fd",
     "obsidian-plugin": "b2fa26c7001222412f389f81166e24232f320f66",
     "stream-coding": "757c24081024aa87ddf1ec653f7278631408d45b",
@@ -50,5 +50,5 @@
     "skills-to-agents": "12f69f287941dfafb2fcf761455e73a5c6361469"
   },
   "skills_count": 1137,
-  "version": "2026.02.22"
+  "version": "2026.02.23"
 }
