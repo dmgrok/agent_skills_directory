@@ -1,19 +1,247 @@
 "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json"
-version: 2026.02.26
-generated_at: "2026-02-26T07:09:33.095327+00:00"
+version: 2026.02.27
+generated_at: "2026-02-27T07:03:45.361294+00:00"
 total_skills: 1288
 providers:
   github:
     name: GitHub
     repo: "https://github.com/github/awesome-copilot"
     skills_count: 198
-    stars: 22606
+    stars: 22765
     description: "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
+  cloudflare:
+    name: Cloudflare
+    repo: "https://github.com/cloudflare/skills"
+    skills_count: 9
+    stars: 365
+    description: Skills for teaching agents how to build on Cloudflare.
+  trailofbits:
+    name: Trail of Bits Security
+    repo: "https://github.com/trailofbits/skills"
+    skills_count: 0
+    stars: 2952
+    description: "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
+  expo:
+    name: Expo
+    repo: "https://github.com/expo/skills"
+    skills_count: 0
+    stars: 1206
+    description: A collection of AI agent skills for working with Expo projects and Expo Application Services
+  tinybird:
+    name: Tinybird
+    repo: "https://github.com/tinybirdco/tinybird-agent-skills"
+    skills_count: 3
+    stars: 10
+    description: null
+  remotion:
+    name: Remotion
+    repo: "https://github.com/remotion-dev/skills"
+    skills_count: 1
+    stars: 1800
+    description: Agent Skills
+  "stream-coding":
+    name: Stream Coding Methodology
+    repo: "https://github.com/frmoretto/stream-coding"
+    skills_count: 1
+    stars: 49
+    description: "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
+  "epub-skill":
+    name: EPUB Converter
+    repo: "https://github.com/smerchek/claude-epub-skill"
+    skills_count: 1
+    stars: 60
+    description: "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
+  "fal-ai":
+    name: fal.ai
+    repo: "https://github.com/fal-ai-community/skills"
+    skills_count: 6
+    stars: 13
+    description: null
+  "d3js-skill":
+    name: D3.js Visualization
+    repo: "https://github.com/chrisvoncsefalvay/claude-d3js-skill"
+    skills_count: 1
+    stars: 88
+    description: A Claude skill for d3.js.
+  "notebooklm-skill":
+    name: NotebookLM Integration
+    repo: "https://github.com/PleasePrompto/notebooklm-skill"
+    skills_count: 1
+    stars: 3024
+    description: "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
+  composiohq:
+    name: ComposioHQ
+    repo: "https://github.com/ComposioHQ/awesome-claude-skills"
+    skills_count: 864
+    stars: 35809
+    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
+  "ipsw-skill":
+    name: IPSW iOS Firmware
+    repo: "https://github.com/blacktop/ipsw-skill"
+    skills_count: 1
+    stars: 37
+    description: A SKILL.md for ipsw
+  "aws-skills":
+    name: AWS Skills
+    repo: "https://github.com/zxkane/aws-skills"
+    skills_count: 5
+    stars: 114
+    description: Claude Agent Skills for AWS
+  "visionos-agents":
+    name: visionOS Development
+    repo: "https://github.com/tomkrikorian/visionOSAgents"
+    skills_count: 12
+    stars: 39
+    description: AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform
+  heilcheng:
+    name: heilcheng Catalog
+    repo: "https://github.com/heilcheng/awesome-agent-skills"
+    skills_count: 0
+    stars: 2350
+    description: "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Antigravity, Copilot, VS Code)"
+  nginity:
+    name: nginity Enterprise
+    repo: "https://github.com/alirezarezvani/claude-skills"
+    skills_count: 0
+    stars: 1979
+    description: "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
+  getsentry:
+    name: Sentry
+    repo: "https://github.com/getsentry/skills"
+    skills_count: 0
+    stars: 330
+    description: Agent Skills used by the Sentry team for development.
+  "skills-to-agents":
+    name: Skills to Agents Converter
+    repo: "https://github.com/dave1010/skills-to-agents"
+    skills_count: 0
+    stars: 27
+    description: Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md
+  "sanjay-ai-skills":
+    name: Sanjay AI Skills
+    repo: "https://github.com/sanjay3290/ai-skills"
+    skills_count: 19
+    stars: 96
+    description: Collection of agent skills for AI coding assistants
+  "move-quality-skill":
+    name: Move Code Quality
+    repo: "https://github.com/1NickPappas/move-code-quality-skill"
+    skills_count: 1
+    stars: 10
+    description: Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist
+  neondatabase:
+    name: Neon Database
+    repo: "https://github.com/neondatabase/agent-skills"
+    skills_count: 2
+    stars: 25
+    description: Agent Skills for Neon Severless Postgres
+  aiqualitylab:
+    name: AI Quality Lab
+    repo: "https://github.com/aiqualitylab/agent-skills"
+    skills_count: 2
+    stars: 1
+    description: AI-powered testing skills for automation frameworks
+  "claude-marketplace-productivity":
+    name: Claude Marketplace (Productivity)
+    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
+    skills_count: 4
+    stars: 300
+    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  "family-history-skill":
+    name: Family History Research
+    repo: "https://github.com/emaynard/claude-family-history-research-skill"
+    skills_count: 1
+    stars: 28
+    description: A Claude Skill to assist with family history and genealogy research planning.
+  supabase:
+    name: Supabase
+    repo: "https://github.com/supabase/agent-skills"
+    skills_count: 1
+    stars: 1351
+    description: Agent Skills to help developers using AI agents with Supabase
+  "csv-summarizer-skill":
+    name: CSV Data Summarizer
+    repo: "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill"
+    skills_count: 1
+    stars: 206
+    description: "A Claude Skill that automatically analyzes uploaded CSV files — generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
+  "obra-superpowers":
+    name: Obra Superpowers
+    repo: "https://github.com/obra/superpowers"
+    skills_count: 14
+    stars: 57209
+    description: An agentic skills framework & software development methodology that works.
   huggingface:
     name: HuggingFace
     repo: "https://github.com/huggingface/skills"
     skills_count: 9
     stars: 6589
+    description: null
+  skillcreatorai:
+    name: SkillCreator.ai
+    repo: "https://github.com/skillcreatorai/Ai-Agent-Skills"
+    skills_count: 47
+    stars: 829
+    description: Homebrew for AI Agent Skills.
+  openai:
+    name: OpenAI
+    repo: "https://github.com/openai/skills"
+    skills_count: 32
+    stars: 9170
+    description: Skills Catalog for Codex
+  "playwright-skill":
+    name: Playwright Automation
+    repo: "https://github.com/lackeyjb/playwright-skill"
+    skills_count: 1
+    stars: 1546
+    description: Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.
+  "claude-marketplace-code":
+    name: Claude Marketplace (Code Ops)
+    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
+    skills_count: 4
+    stars: 300
+    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  anthropics:
+    name: Anthropic
+    repo: "https://github.com/anthropics/skills"
+    skills_count: 16
+    stars: 75165
+    description: Public repository for Agent Skills
+  "obsidian-plugin":
+    name: Obsidian Plugin Development
+    repo: "https://github.com/gapmiss/obsidian-plugin-skill"
+    skills_count: 1
+    stars: 85
+    description: CLAUDE SKILL for Obsidian.md plugin development
+  tapestry:
+    name: Tapestry Skills
+    repo: "https://github.com/michalparkola/tapestry-skills-for-claude-code"
+    skills_count: 4
+    stars: 198
+    description: "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
+  "claude-marketplace-visual":
+    name: Claude Marketplace (Visual)
+    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
+    skills_count: 5
+    stars: 300
+    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  travisvn:
+    name: travisvn Collection
+    repo: "https://github.com/travisvn/awesome-claude-skills"
+    skills_count: 0
+    stars: 7726
+    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code"
+  "ffuf-skill":
+    name: FFUF Web Fuzzing
+    repo: "https://github.com/jthack/ffuf_claude_skill"
+    skills_count: 1
+    stars: 105
+    description: "This is a \"skill\" for claude to use FFUF."
+  "better-auth":
+    name: Better Auth
+    repo: "https://github.com/better-auth/skills"
+    skills_count: 0
+    stars: 116
     description: null
   stripe:
     name: Stripe
@@ -21,272 +249,269 @@ providers:
     skills_count: 2
     stars: 1307
     description: One-stop shop for building AI-powered products and businesses with Stripe.
-  trailofbits:
-    name: Trail of Bits Security
-    repo: "https://github.com/trailofbits/skills"
-    skills_count: 0
-    stars: 2937
-    description: "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
-  expo:
-    name: Expo
-    repo: "https://github.com/expo/skills"
-    skills_count: 0
-    stars: 1176
-    description: A collection of AI agent skills for working with Expo projects and Expo Application Services
-  getsentry:
-    name: Sentry
-    repo: "https://github.com/getsentry/skills"
-    skills_count: 0
-    stars: 330
-    description: Agent Skills used by the Sentry team for development.
-  neondatabase:
-    name: Neon Database
-    repo: "https://github.com/neondatabase/agent-skills"
-    skills_count: 2
-    stars: 25
-    description: Agent Skills for Neon Severless Postgres
-  nginity:
-    name: nginity Enterprise
-    repo: "https://github.com/alirezarezvani/claude-skills"
-    skills_count: 0
-    stars: 1979
-    description: "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
-  travisvn:
-    name: travisvn Collection
-    repo: "https://github.com/travisvn/awesome-claude-skills"
-    skills_count: 0
-    stars: 7726
-    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code"
-  "obsidian-plugin":
-    name: Obsidian Plugin Development
-    repo: "https://github.com/gapmiss/obsidian-plugin-skill"
-    skills_count: 1
-    stars: 85
-    description: CLAUDE SKILL for Obsidian.md plugin development
-  "better-auth":
-    name: Better Auth
-    repo: "https://github.com/better-auth/skills"
-    skills_count: 0
-    stars: 116
-    description: null
-  "family-history-skill":
-    name: Family History Research
-    repo: "https://github.com/emaynard/claude-family-history-research-skill"
-    skills_count: 1
-    stars: 28
-    description: A Claude Skill to assist with family history and genealogy research planning.
-  aiqualitylab:
-    name: AI Quality Lab
-    repo: "https://github.com/aiqualitylab/agent-skills"
-    skills_count: 2
-    stars: 1
-    description: AI-powered testing skills for automation frameworks
-  "google-labs-stitch":
-    name: Google Labs Stitch
-    repo: "https://github.com/google-labs-code/stitch-skills"
-    skills_count: 6
-    stars: 1751
-    description: null
-  anthropics:
-    name: Anthropic
-    repo: "https://github.com/anthropics/skills"
-    skills_count: 16
-    stars: 75165
-    description: Public repository for Agent Skills
-  composiohq:
-    name: ComposioHQ
-    repo: "https://github.com/ComposioHQ/awesome-claude-skills"
-    skills_count: 864
-    stars: 35809
-    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
-  "pypict-skill":
-    name: PICT Test Cases
-    repo: "https://github.com/omkamal/pypict-claude-skill"
-    skills_count: 1
-    stars: 30
-    description: A claude skill that generate test cases using N-wise test cases using the pypict library
-  "notebooklm-skill":
-    name: NotebookLM Integration
-    repo: "https://github.com/PleasePrompto/notebooklm-skill"
-    skills_count: 1
-    stars: 3024
-    description: "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
-  "stream-coding":
-    name: Stream Coding Methodology
-    repo: "https://github.com/frmoretto/stream-coding"
-    skills_count: 1
-    stars: 42
-    description: "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
-  "sanjay-ai-skills":
-    name: Sanjay AI Skills
-    repo: "https://github.com/sanjay3290/ai-skills"
-    skills_count: 19
-    stars: 96
-    description: Collection of agent skills for AI coding assistants
-  tinybird:
-    name: Tinybird
-    repo: "https://github.com/tinybirdco/tinybird-agent-skills"
-    skills_count: 3
-    stars: 10
-    description: null
-  "csv-summarizer-skill":
-    name: CSV Data Summarizer
-    repo: "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill"
-    skills_count: 1
-    stars: 206
-    description: "A Claude Skill that automatically analyzes uploaded CSV files — generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
-  "visionos-agents":
-    name: visionOS Development
-    repo: "https://github.com/tomkrikorian/visionOSAgents"
-    skills_count: 12
-    stars: 39
-    description: AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform
-  "ipsw-skill":
-    name: IPSW iOS Firmware
-    repo: "https://github.com/blacktop/ipsw-skill"
-    skills_count: 1
-    stars: 37
-    description: A SKILL.md for ipsw
-  "playwright-skill":
-    name: Playwright Automation
-    repo: "https://github.com/lackeyjb/playwright-skill"
-    skills_count: 1
-    stars: 1546
-    description: Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.
-  supabase:
-    name: Supabase
-    repo: "https://github.com/supabase/agent-skills"
-    skills_count: 1
-    stars: 1351
-    description: Agent Skills to help developers using AI agents with Supabase
-  "claude-marketplace-visual":
-    name: Claude Marketplace (Visual)
-    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 5
-    stars: 300
-    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  "ios-simulator-skill":
-    name: iOS Simulator
-    repo: "https://github.com/conorluddy/ios-simulator-skill"
-    skills_count: 1
-    stars: 530
-    description: "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
-  "move-quality-skill":
-    name: Move Code Quality
-    repo: "https://github.com/1NickPappas/move-code-quality-skill"
-    skills_count: 1
-    stars: 10
-    description: Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist
-  cloudflare:
-    name: Cloudflare
-    repo: "https://github.com/cloudflare/skills"
-    skills_count: 9
-    stars: 355
-    description: Skills for teaching agents how to build on Cloudflare.
-  "epub-skill":
-    name: EPUB Converter
-    repo: "https://github.com/smerchek/claude-epub-skill"
-    skills_count: 1
-    stars: 60
-    description: "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
-  skillcreatorai:
-    name: SkillCreator.ai
-    repo: "https://github.com/skillcreatorai/Ai-Agent-Skills"
-    skills_count: 47
-    stars: 829
-    description: Homebrew for AI Agent Skills.
-  "d3js-skill":
-    name: D3.js Visualization
-    repo: "https://github.com/chrisvoncsefalvay/claude-d3js-skill"
-    skills_count: 1
-    stars: 88
-    description: A Claude skill for d3.js.
-  openai:
-    name: OpenAI
-    repo: "https://github.com/openai/skills"
-    skills_count: 32
-    stars: 9170
-    description: Skills Catalog for Codex
-  "skills-to-agents":
-    name: Skills to Agents Converter
-    repo: "https://github.com/dave1010/skills-to-agents"
-    skills_count: 0
-    stars: 27
-    description: Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md
-  "obra-superpowers":
-    name: Obra Superpowers
-    repo: "https://github.com/obra/superpowers"
-    skills_count: 14
-    stars: 57209
-    description: An agentic skills framework & software development methodology that works.
-  "claude-marketplace-code":
-    name: Claude Marketplace (Code Ops)
-    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 4
-    stars: 300
-    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  heilcheng:
-    name: heilcheng Catalog
-    repo: "https://github.com/heilcheng/awesome-agent-skills"
-    skills_count: 0
-    stars: 2350
-    description: "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Antigravity, Copilot, VS Code)"
-  "claude-marketplace-productivity":
-    name: Claude Marketplace (Productivity)
-    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 4
-    stars: 300
-    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  tapestry:
-    name: Tapestry Skills
-    repo: "https://github.com/michalparkola/tapestry-skills-for-claude-code"
-    skills_count: 4
-    stars: 198
-    description: "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
-  voltagent:
-    name: VoltAgent Catalog
-    repo: "https://github.com/VoltAgent/awesome-agent-skills"
-    skills_count: 0
-    stars: 7976
-    description: "Claude Code Skills and 380+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
-  "ffuf-skill":
-    name: FFUF Web Fuzzing
-    repo: "https://github.com/jthack/ffuf_claude_skill"
-    skills_count: 1
-    stars: 105
-    description: "This is a \"skill\" for claude to use FFUF."
-  vercel:
-    name: Vercel
-    repo: "https://github.com/vercel-labs/agent-skills"
-    skills_count: 5
-    stars: 18238
-    description: Vercel's official collection of agent skills
-  "fal-ai":
-    name: fal.ai
-    repo: "https://github.com/fal-ai-community/skills"
-    skills_count: 6
-    stars: 13
-    description: null
   "claude-marketplace-engineering":
     name: Claude Marketplace (Engineering)
     repo: "https://github.com/mhattingpete/claude-skills-marketplace"
     skills_count: 5
     stars: 300
     description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  "aws-skills":
-    name: AWS Skills
-    repo: "https://github.com/zxkane/aws-skills"
+  vercel:
+    name: Vercel
+    repo: "https://github.com/vercel-labs/agent-skills"
     skills_count: 5
-    stars: 114
-    description: Claude Agent Skills for AWS
-  remotion:
-    name: Remotion
-    repo: "https://github.com/remotion-dev/skills"
+    stars: 18238
+    description: Vercel's official collection of agent skills
+  "google-labs-stitch":
+    name: Google Labs Stitch
+    repo: "https://github.com/google-labs-code/stitch-skills"
+    skills_count: 6
+    stars: 1751
+    description: null
+  "pypict-skill":
+    name: PICT Test Cases
+    repo: "https://github.com/omkamal/pypict-claude-skill"
     skills_count: 1
-    stars: 1678
-    description: Agent Skills
+    stars: 30
+    description: A claude skill that generate test cases using N-wise test cases using the pypict library
+  voltagent:
+    name: VoltAgent Catalog
+    repo: "https://github.com/VoltAgent/awesome-agent-skills"
+    skills_count: 0
+    stars: 7976
+    description: "Claude Code Skills and 380+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
+  "ios-simulator-skill":
+    name: iOS Simulator
+    repo: "https://github.com/conorluddy/ios-simulator-skill"
+    skills_count: 1
+    stars: 530
+    description: "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
 categories[7]: creative,data,development,documents,enterprise,integrations,other
 skills[1288]:
+  - id: cloudflare/agents-sdk
+    name: agents-sdk
+    description: "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-03T14:38:10Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/agents-sdk
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/agents-sdk/SKILL.md"
+      commit_sha: 00eec280fa5c788000cd32f27a58b39dba15edfc
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[3]: mcp,agents,sdk
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 23
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/building-ai-agent-on-cloudflare
+    name: building-ai-agent-on-cloudflare
+    description: "Builds AI agents on Cloudflare using the Agents SDK with state management,\nreal-time WebSockets, scheduled tasks, tool integration, and chat capabilities.\nGenerates production-ready agent code deployed to Workers.\n\nUse when: user wants to \"build an agent\", \"AI agent\", \"chat agent\", \"stateful\nagent\", mentions \"Agents SDK\", needs \"real-time AI\", \"WebSocket AI\", or asks\nabout agent \"state management\", \"scheduled tasks\", or \"tool calling\"."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-28T17:13:50Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/building-ai-agent-on-cloudflare
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/building-ai-agent-on-cloudflare/SKILL.md"
+      commit_sha: 00eec280fa5c788000cd32f27a58b39dba15edfc
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[4]: pr,building,agent,cloudflare
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 29
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/building-mcp-server-on-cloudflare
+    name: building-mcp-server-on-cloudflare
+    description: "Builds remote MCP (Model Context Protocol) servers on Cloudflare Workers\nwith tools, OAuth authentication, and production deployment. Generates\nserver code, configures auth providers, and deploys to Workers.\n\nUse when: user wants to \"build MCP server\", \"create MCP tools\", \"remote\nMCP\", \"deploy MCP\", add \"OAuth to MCP\", or mentions Model Context Protocol\non Cloudflare. Also triggers on \"MCP authentication\" or \"MCP deployment\"."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-28T17:13:50Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/building-mcp-server-on-cloudflare
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/building-mcp-server-on-cloudflare/SKILL.md"
+      commit_sha: 00eec280fa5c788000cd32f27a58b39dba15edfc
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[5]: pr,mcp,building,server,cloudflare
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 29
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/cloudflare
+    name: cloudflare
+    description: "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-26T14:30:24Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/cloudflare
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/cloudflare/SKILL.md"
+      commit_sha: 00eec280fa5c788000cd32f27a58b39dba15edfc
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[2]: pr,cloudflare
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 0
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/durable-objects
+    name: durable-objects
+    description: "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-05T14:25:20Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/durable-objects
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/durable-objects/SKILL.md"
+      commit_sha: 00eec280fa5c788000cd32f27a58b39dba15edfc
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[4]: pr,test,durable,objects
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 21
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/sandbox-sdk
+    name: sandbox-sdk
+    description: "Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-05T14:25:20Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/sandbox-sdk
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/sandbox-sdk/SKILL.md"
+      commit_sha: 00eec280fa5c788000cd32f27a58b39dba15edfc
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[5]: pr,ci,cd,sandbox,sdk
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 21
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/web-perf
+    name: web-perf
+    description: "Analyzes web performance using Chrome DevTools MCP. Measures Core Web Vitals (FCP, LCP, TBT, CLS, Speed Index), identifies render-blocking resources, network dependency chains, layout shifts, caching issues, and accessibility gaps. Use when asked to audit, profile, debug, or optimize page load performance, Lighthouse scores, or site speed."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-28T17:13:50Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/web-perf
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/web-perf/SKILL.md"
+      commit_sha: 00eec280fa5c788000cd32f27a58b39dba15edfc
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,mcp,web,perf
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 29
+    maintenance_status: active
+    quality_score: 70
+  - id: cloudflare/workers-best-practices
+    name: workers-best-practices
+    description: "Reviews and authors Cloudflare Workers code against production best practices. Load when writing new Workers, reviewing Worker code, configuring wrangler.jsonc, or checking for common Workers anti-patterns (streaming, floating promises, global state, secrets, bindings, observability). Biases towards retrieval from Cloudflare docs over pre-trained knowledge."
+    provider: cloudflare
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-12T20:50:56Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/workers-best-practices
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/workers-best-practices/SKILL.md"
+      commit_sha: 00eec280fa5c788000cd32f27a58b39dba15edfc
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[6]: json,pr,knowledge,workers,best,practices
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 14
+    maintenance_status: active
+    quality_score: 80
+  - id: cloudflare/wrangler
+    name: wrangler
+    description: "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices."
+    provider: cloudflare
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-28T17:13:50Z"
+    metadata:
+    source:
+      repo: "https://github.com/cloudflare/skills"
+      path: skills/wrangler
+      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/wrangler/SKILL.md"
+      commit_sha: 00eec280fa5c788000cd32f27a58b39dba15edfc
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: pr,cli,wrangler
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 29
+    maintenance_status: active
+    quality_score: 70
   - id: github/add-educational-comments
     name: add-educational-comments
     description: "Add educational comments to the file specified, or prompt asking for file to comment if one is not provided."
@@ -300,7 +525,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/add-educational-comments
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/add-educational-comments/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -309,7 +534,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/agent-governance
@@ -325,7 +550,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/agent-governance
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/agent-governance/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -334,7 +559,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/agentic-eval
@@ -350,7 +575,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/agentic-eval
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/agentic-eval/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -359,7 +584,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 38
+    days_since_update: 39
     maintenance_status: maintained
     quality_score: 60
   - id: github/ai-prompt-engineering-safety-review
@@ -375,7 +600,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/ai-prompt-engineering-safety-review
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/ai-prompt-engineering-safety-review/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -384,7 +609,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/appinsights-instrumentation
@@ -400,7 +625,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/appinsights-instrumentation
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/appinsights-instrumentation/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: true
     has_references: true
     has_assets: false
@@ -409,7 +634,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 47
+    days_since_update: 48
     maintenance_status: maintained
     quality_score: 80
   - id: github/apple-appstore-reviewer
@@ -425,7 +650,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/apple-appstore-reviewer
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/apple-appstore-reviewer/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -434,7 +659,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/arch-linux-triage
@@ -450,7 +675,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/arch-linux-triage
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/arch-linux-triage/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -459,7 +684,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/architecture-blueprint-generator
@@ -475,7 +700,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/architecture-blueprint-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/architecture-blueprint-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -484,7 +709,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/aspire
@@ -500,7 +725,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/aspire
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/aspire/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -509,7 +734,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 17
+    days_since_update: 18
     maintenance_status: active
     quality_score: 80
   - id: github/aspnet-minimal-api-openapi
@@ -525,7 +750,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/aspnet-minimal-api-openapi
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/aspnet-minimal-api-openapi/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -534,7 +759,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/az-cost-optimize
@@ -550,7 +775,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/az-cost-optimize
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/az-cost-optimize/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -559,7 +784,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/azure-deployment-preflight
@@ -575,7 +800,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-deployment-preflight
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-deployment-preflight/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -584,7 +809,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 35
+    days_since_update: 36
     maintenance_status: maintained
     quality_score: 70
   - id: github/azure-devops-cli
@@ -600,7 +825,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-devops-cli
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-devops-cli/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -609,7 +834,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 34
+    days_since_update: 35
     maintenance_status: maintained
     quality_score: 60
   - id: github/azure-resource-health-diagnose
@@ -625,7 +850,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-resource-health-diagnose
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-resource-health-diagnose/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -634,7 +859,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/azure-resource-visualizer
@@ -651,7 +876,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-resource-visualizer
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-resource-visualizer/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: true
@@ -660,7 +885,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 68
+    days_since_update: 69
     maintenance_status: maintained
     quality_score: 70
   - id: github/azure-role-selector
@@ -676,7 +901,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-role-selector
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-role-selector/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -685,7 +910,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 51
+    days_since_update: 52
     maintenance_status: maintained
     quality_score: 60
   - id: github/azure-static-web-apps
@@ -701,7 +926,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/azure-static-web-apps
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/azure-static-web-apps/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -710,7 +935,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 40
+    days_since_update: 41
     maintenance_status: maintained
     quality_score: 60
   - id: github/bigquery-pipeline-audit
@@ -726,7 +951,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/bigquery-pipeline-audit
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/bigquery-pipeline-audit/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -735,7 +960,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 1
+    days_since_update: 2
     maintenance_status: active
     quality_score: 70
   - id: github/boost-prompt
@@ -751,7 +976,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/boost-prompt
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/boost-prompt/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -760,7 +985,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/breakdown-epic-arch
@@ -776,7 +1001,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/breakdown-epic-arch
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/breakdown-epic-arch/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -785,7 +1010,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/breakdown-epic-pm
@@ -801,7 +1026,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/breakdown-epic-pm
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/breakdown-epic-pm/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -810,7 +1035,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/breakdown-feature-implementation
@@ -826,7 +1051,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/breakdown-feature-implementation
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/breakdown-feature-implementation/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -835,7 +1060,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/breakdown-feature-prd
@@ -851,7 +1076,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/breakdown-feature-prd
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/breakdown-feature-prd/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -860,7 +1085,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/breakdown-plan
@@ -876,7 +1101,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/breakdown-plan
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/breakdown-plan/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -885,7 +1110,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/breakdown-test
@@ -901,7 +1126,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/breakdown-test
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/breakdown-test/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -910,7 +1135,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/centos-linux-triage
@@ -926,7 +1151,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/centos-linux-triage
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/centos-linux-triage/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -935,7 +1160,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/chrome-devtools
@@ -951,7 +1176,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/chrome-devtools
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/chrome-devtools/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -960,7 +1185,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 34
+    days_since_update: 35
     maintenance_status: maintained
     quality_score: 60
   - id: github/code-exemplars-blueprint-generator
@@ -976,7 +1201,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/code-exemplars-blueprint-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/code-exemplars-blueprint-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -985,7 +1210,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/comment-code-generate-a-tutorial
@@ -1001,7 +1226,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/comment-code-generate-a-tutorial
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/comment-code-generate-a-tutorial/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1010,7 +1235,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/containerize-aspnet-framework
@@ -1026,7 +1251,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/containerize-aspnet-framework
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/containerize-aspnet-framework/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1035,7 +1260,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/containerize-aspnetcore
@@ -1051,7 +1276,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/containerize-aspnetcore
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/containerize-aspnetcore/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1060,7 +1285,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/context-map
@@ -1076,7 +1301,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/context-map
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/context-map/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1085,7 +1310,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/conventional-commit
@@ -1101,7 +1326,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/conventional-commit
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/conventional-commit/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1110,7 +1335,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/convert-plaintext-to-md
@@ -1126,7 +1351,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/convert-plaintext-to-md
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/convert-plaintext-to-md/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1135,7 +1360,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/copilot-cli-quickstart
@@ -1151,7 +1376,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/copilot-cli-quickstart
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/copilot-cli-quickstart/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1160,7 +1385,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 13
+    days_since_update: 14
     maintenance_status: active
     quality_score: 70
   - id: github/copilot-instructions-blueprint-generator
@@ -1176,7 +1401,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/copilot-instructions-blueprint-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/copilot-instructions-blueprint-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1185,7 +1410,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/copilot-sdk
@@ -1201,7 +1426,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/copilot-sdk
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/copilot-sdk/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1210,7 +1435,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 31
+    days_since_update: 32
     maintenance_status: maintained
     quality_score: 60
   - id: github/copilot-usage-metrics
@@ -1226,7 +1451,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/copilot-usage-metrics
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/copilot-usage-metrics/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1235,7 +1460,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 8
+    days_since_update: 9
     maintenance_status: active
     quality_score: 70
   - id: github/cosmosdb-datamodeling
@@ -1251,7 +1476,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/cosmosdb-datamodeling
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/cosmosdb-datamodeling/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1260,7 +1485,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-agentsmd
@@ -1276,7 +1501,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-agentsmd
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-agentsmd/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1285,7 +1510,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-architectural-decision-record
@@ -1301,7 +1526,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-architectural-decision-record
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-architectural-decision-record/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1310,7 +1535,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-github-action-workflow-specification
@@ -1326,7 +1551,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-github-action-workflow-specification
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-github-action-workflow-specification/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1335,7 +1560,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-github-issue-feature-from-specification
@@ -1351,7 +1576,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-github-issue-feature-from-specification
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-github-issue-feature-from-specification/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1360,7 +1585,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-github-issues-feature-from-implementation-plan
@@ -1376,7 +1601,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-github-issues-feature-from-implementation-plan
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-github-issues-feature-from-implementation-plan/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1385,7 +1610,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-github-issues-for-unmet-specification-requirements
@@ -1401,7 +1626,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-github-issues-for-unmet-specification-requirements
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-github-issues-for-unmet-specification-requirements/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1410,7 +1635,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-github-pull-request-from-specification
@@ -1426,7 +1651,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-github-pull-request-from-specification
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-github-pull-request-from-specification/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1435,7 +1660,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-implementation-plan
@@ -1451,7 +1676,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-implementation-plan
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-implementation-plan/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1460,7 +1685,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-llms
@@ -1476,7 +1701,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-llms
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-llms/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1485,7 +1710,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-oo-component-documentation
@@ -1501,7 +1726,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-oo-component-documentation
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-oo-component-documentation/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1510,7 +1735,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-readme
@@ -1526,7 +1751,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-readme
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-readme/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1535,7 +1760,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-specification
@@ -1551,7 +1776,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-specification
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-specification/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1560,7 +1785,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-spring-boot-java-project
@@ -1576,7 +1801,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-spring-boot-java-project
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-spring-boot-java-project/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1585,7 +1810,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-spring-boot-kotlin-project
@@ -1601,7 +1826,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-spring-boot-kotlin-project
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-spring-boot-kotlin-project/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1610,7 +1835,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-technical-spike
@@ -1626,7 +1851,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-technical-spike
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-technical-spike/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1635,7 +1860,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-tldr-page
@@ -1651,7 +1876,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-tldr-page
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-tldr-page/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1660,7 +1885,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/create-web-form
@@ -1676,7 +1901,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/create-web-form
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/create-web-form/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -1685,7 +1910,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 16
+    days_since_update: 17
     maintenance_status: active
     quality_score: 80
   - id: github/csharp-async
@@ -1701,7 +1926,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/csharp-async
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/csharp-async/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1710,7 +1935,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/csharp-docs
@@ -1726,7 +1951,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/csharp-docs
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/csharp-docs/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1735,7 +1960,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/csharp-mcp-server-generator
@@ -1751,7 +1976,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/csharp-mcp-server-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/csharp-mcp-server-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1760,7 +1985,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/csharp-mstest
@@ -1776,7 +2001,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/csharp-mstest
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/csharp-mstest/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1785,7 +2010,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/csharp-nunit
@@ -1801,7 +2026,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/csharp-nunit
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/csharp-nunit/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1810,7 +2035,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/csharp-tunit
@@ -1826,7 +2051,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/csharp-tunit
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/csharp-tunit/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1835,7 +2060,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/csharp-xunit
@@ -1851,7 +2076,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/csharp-xunit
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/csharp-xunit/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1860,7 +2085,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/dataverse-python-advanced-patterns
@@ -1876,7 +2101,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/dataverse-python-advanced-patterns
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/dataverse-python-advanced-patterns/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1885,7 +2110,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/dataverse-python-production-code
@@ -1901,7 +2126,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/dataverse-python-production-code
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/dataverse-python-production-code/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1910,7 +2135,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/dataverse-python-quickstart
@@ -1926,7 +2151,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/dataverse-python-quickstart
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/dataverse-python-quickstart/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1935,7 +2160,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/dataverse-python-usecase-builder
@@ -1951,7 +2176,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/dataverse-python-usecase-builder
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/dataverse-python-usecase-builder/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1960,7 +2185,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/debian-linux-triage
@@ -1976,7 +2201,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/debian-linux-triage
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/debian-linux-triage/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -1985,7 +2210,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/declarative-agents
@@ -2001,7 +2226,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/declarative-agents
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/declarative-agents/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2010,7 +2235,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/devops-rollout-plan
@@ -2026,7 +2251,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/devops-rollout-plan
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/devops-rollout-plan/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2035,7 +2260,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/documentation-writer
@@ -2051,7 +2276,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/documentation-writer
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/documentation-writer/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2060,7 +2285,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/dotnet-best-practices
@@ -2076,7 +2301,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/dotnet-best-practices
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/dotnet-best-practices/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2085,7 +2310,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/dotnet-design-pattern-review
@@ -2101,7 +2326,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/dotnet-design-pattern-review
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/dotnet-design-pattern-review/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2110,7 +2335,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/dotnet-upgrade
@@ -2126,7 +2351,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/dotnet-upgrade
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/dotnet-upgrade/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2135,7 +2360,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/editorconfig
@@ -2151,7 +2376,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/editorconfig
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/editorconfig/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2160,7 +2385,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/ef-core
@@ -2176,7 +2401,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/ef-core
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/ef-core/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2185,7 +2410,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/entra-agent-user
@@ -2201,7 +2426,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/entra-agent-user
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/entra-agent-user/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2210,7 +2435,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 4
+    days_since_update: 5
     maintenance_status: active
     quality_score: 70
   - id: github/excalidraw-diagram-generator
@@ -2226,7 +2451,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/excalidraw-diagram-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/excalidraw-diagram-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: true
     has_references: true
     has_assets: true
@@ -2235,7 +2460,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 23
+    days_since_update: 24
     maintenance_status: active
     quality_score: 100
   - id: github/fabric-lakehouse
@@ -2253,7 +2478,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/fabric-lakehouse
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/fabric-lakehouse/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -2262,7 +2487,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 8
+    days_since_update: 9
     maintenance_status: active
     quality_score: 80
   - id: github/fedora-linux-triage
@@ -2278,7 +2503,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/fedora-linux-triage
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/fedora-linux-triage/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2287,7 +2512,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/finalize-agent-prompt
@@ -2303,7 +2528,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/finalize-agent-prompt
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/finalize-agent-prompt/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2312,7 +2537,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/finnish-humanizer
@@ -2328,7 +2553,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/finnish-humanizer
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/finnish-humanizer/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -2337,7 +2562,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 9
+    days_since_update: 10
     maintenance_status: active
     quality_score: 80
   - id: github/first-ask
@@ -2353,7 +2578,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/first-ask
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/first-ask/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2362,7 +2587,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/fluentui-blazor
@@ -2378,7 +2603,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/fluentui-blazor
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/fluentui-blazor/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -2387,7 +2612,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 9
+    days_since_update: 10
     maintenance_status: active
     quality_score: 80
   - id: github/folder-structure-blueprint-generator
@@ -2403,7 +2628,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/folder-structure-blueprint-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/folder-structure-blueprint-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2412,7 +2637,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/game-engine
@@ -2428,7 +2653,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/game-engine
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/game-engine/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: true
@@ -2437,7 +2662,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 3
+    days_since_update: 4
     maintenance_status: active
     quality_score: 90
   - id: github/gen-specs-as-issues
@@ -2453,7 +2678,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/gen-specs-as-issues
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/gen-specs-as-issues/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2462,7 +2687,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/generate-custom-instructions-from-codebase
@@ -2478,7 +2703,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/generate-custom-instructions-from-codebase
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/generate-custom-instructions-from-codebase/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2487,7 +2712,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/gh-cli
@@ -2503,7 +2728,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/gh-cli
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/gh-cli/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2512,7 +2737,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 16
+    days_since_update: 17
     maintenance_status: active
     quality_score: 70
   - id: github/git-commit
@@ -2528,7 +2753,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/git-commit
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/git-commit/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2537,7 +2762,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 34
+    days_since_update: 35
     maintenance_status: maintained
     quality_score: 60
   - id: github/git-flow-branch-creator
@@ -2553,7 +2778,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/git-flow-branch-creator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/git-flow-branch-creator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2562,7 +2787,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/github-copilot-starter
@@ -2578,7 +2803,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/github-copilot-starter
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/github-copilot-starter/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2587,7 +2812,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/github-issues
@@ -2603,7 +2828,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/github-issues
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/github-issues/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -2612,7 +2837,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 48
+    days_since_update: 49
     maintenance_status: maintained
     quality_score: 70
   - id: github/go-mcp-server-generator
@@ -2628,7 +2853,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/go-mcp-server-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/go-mcp-server-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2637,7 +2862,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/image-manipulation-image-magick
@@ -2653,7 +2878,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/image-manipulation-image-magick
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/image-manipulation-image-magick/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2662,7 +2887,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 35
+    days_since_update: 36
     maintenance_status: maintained
     quality_score: 60
   - id: github/java-add-graalvm-native-image-support
@@ -2678,7 +2903,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/java-add-graalvm-native-image-support
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/java-add-graalvm-native-image-support/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2687,7 +2912,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/java-docs
@@ -2703,7 +2928,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/java-docs
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/java-docs/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2712,7 +2937,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/java-junit
@@ -2728,7 +2953,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/java-junit
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/java-junit/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2737,7 +2962,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/java-mcp-server-generator
@@ -2753,7 +2978,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/java-mcp-server-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/java-mcp-server-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2762,7 +2987,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/java-refactoring-extract-method
@@ -2778,7 +3003,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/java-refactoring-extract-method
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/java-refactoring-extract-method/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2787,7 +3012,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/java-refactoring-remove-parameter
@@ -2803,7 +3028,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/java-refactoring-remove-parameter
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/java-refactoring-remove-parameter/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2812,7 +3037,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/java-springboot
@@ -2828,7 +3053,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/java-springboot
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/java-springboot/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2837,7 +3062,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/javascript-typescript-jest
@@ -2853,7 +3078,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/javascript-typescript-jest
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/javascript-typescript-jest/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2862,7 +3087,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/kotlin-mcp-server-generator
@@ -2878,7 +3103,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/kotlin-mcp-server-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/kotlin-mcp-server-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2887,7 +3112,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/kotlin-springboot
@@ -2903,7 +3128,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/kotlin-springboot
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/kotlin-springboot/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2912,7 +3137,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/legacy-circuit-mockups
@@ -2928,7 +3153,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/legacy-circuit-mockups
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/legacy-circuit-mockups/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -2937,7 +3162,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 37
+    days_since_update: 38
     maintenance_status: maintained
     quality_score: 70
   - id: github/make-repo-contribution
@@ -2953,7 +3178,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/make-repo-contribution
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/make-repo-contribution/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: true
@@ -2962,7 +3187,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 8
+    days_since_update: 9
     maintenance_status: active
     quality_score: 80
   - id: github/make-skill-template
@@ -2978,7 +3203,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/make-skill-template
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/make-skill-template/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -2987,7 +3212,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 38
+    days_since_update: 39
     maintenance_status: maintained
     quality_score: 60
   - id: github/markdown-to-html
@@ -3003,7 +3228,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/markdown-to-html
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/markdown-to-html/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -3012,7 +3237,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 28
+    days_since_update: 29
     maintenance_status: active
     quality_score: 80
   - id: github/mcp-cli
@@ -3028,7 +3253,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/mcp-cli
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/mcp-cli/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3037,7 +3262,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 34
+    days_since_update: 35
     maintenance_status: maintained
     quality_score: 60
   - id: github/mcp-configure
@@ -3053,7 +3278,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/mcp-configure
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/mcp-configure/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3062,7 +3287,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 1
+    days_since_update: 2
     maintenance_status: active
     quality_score: 70
   - id: github/mcp-copilot-studio-server-generator
@@ -3078,7 +3303,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/mcp-copilot-studio-server-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/mcp-copilot-studio-server-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3087,7 +3312,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/mcp-create-adaptive-cards
@@ -3103,7 +3328,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/mcp-create-adaptive-cards
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/mcp-create-adaptive-cards/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3112,7 +3337,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/mcp-create-declarative-agent
@@ -3128,7 +3353,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/mcp-create-declarative-agent
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/mcp-create-declarative-agent/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3137,7 +3362,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/mcp-deploy-manage-agents
@@ -3153,7 +3378,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/mcp-deploy-manage-agents
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/mcp-deploy-manage-agents/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3162,7 +3387,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/meeting-minutes
@@ -3178,7 +3403,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/meeting-minutes
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/meeting-minutes/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3187,7 +3412,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 22
+    days_since_update: 23
     maintenance_status: active
     quality_score: 70
   - id: github/memory-merger
@@ -3203,7 +3428,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/memory-merger
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/memory-merger/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3212,7 +3437,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/microsoft-code-reference
@@ -3228,7 +3453,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/microsoft-code-reference
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-code-reference/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3237,7 +3462,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 42
+    days_since_update: 43
     maintenance_status: maintained
     quality_score: 60
   - id: github/microsoft-docs
@@ -3253,7 +3478,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/microsoft-docs
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-docs/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3262,7 +3487,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 17
+    days_since_update: 18
     maintenance_status: active
     quality_score: 70
   - id: github/microsoft-skill-creator
@@ -3278,7 +3503,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/microsoft-skill-creator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/microsoft-skill-creator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -3287,7 +3512,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 16
+    days_since_update: 17
     maintenance_status: active
     quality_score: 80
   - id: github/mkdocs-translations
@@ -3303,7 +3528,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/mkdocs-translations
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/mkdocs-translations/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3312,7 +3537,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/model-recommendation
@@ -3328,7 +3553,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/model-recommendation
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/model-recommendation/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3337,7 +3562,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/multi-stage-dockerfile
@@ -3353,7 +3578,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/multi-stage-dockerfile
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/multi-stage-dockerfile/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3362,7 +3587,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/my-issues
@@ -3378,7 +3603,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/my-issues
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/my-issues/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3387,7 +3612,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/my-pull-requests
@@ -3403,7 +3628,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/my-pull-requests
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/my-pull-requests/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3412,7 +3637,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/nano-banana-pro-openrouter
@@ -3433,7 +3658,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/nano-banana-pro-openrouter
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nano-banana-pro-openrouter/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: true
     has_references: false
     has_assets: true
@@ -3442,7 +3667,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 16
+    days_since_update: 17
     maintenance_status: active
     quality_score: 90
   - id: github/next-intl-add-language
@@ -3458,7 +3683,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/next-intl-add-language
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/next-intl-add-language/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3467,7 +3692,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/nuget-manager
@@ -3483,7 +3708,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/nuget-manager
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/nuget-manager/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3492,7 +3717,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 50
+    days_since_update: 51
     maintenance_status: maintained
     quality_score: 60
   - id: github/openapi-to-application-code
@@ -3508,7 +3733,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/openapi-to-application-code
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/openapi-to-application-code/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3517,7 +3742,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/pdftk-server
@@ -3533,7 +3758,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/pdftk-server
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/pdftk-server/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -3542,7 +3767,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 10
+    days_since_update: 11
     maintenance_status: active
     quality_score: 80
   - id: github/penpot-uiux-design
@@ -3558,7 +3783,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/penpot-uiux-design
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/penpot-uiux-design/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -3583,7 +3808,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/php-mcp-server-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/php-mcp-server-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3592,7 +3817,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/plantuml-ascii
@@ -3608,7 +3833,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/plantuml-ascii
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/plantuml-ascii/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3617,7 +3842,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 34
+    days_since_update: 35
     maintenance_status: maintained
     quality_score: 60
   - id: github/playwright-automation-fill-in-form
@@ -3633,7 +3858,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/playwright-automation-fill-in-form
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/playwright-automation-fill-in-form/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3642,7 +3867,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/playwright-explore-website
@@ -3658,7 +3883,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/playwright-explore-website
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/playwright-explore-website/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3667,7 +3892,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/playwright-generate-test
@@ -3683,7 +3908,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/playwright-generate-test
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/playwright-generate-test/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3692,7 +3917,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/polyglot-test-agent
@@ -3708,7 +3933,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/polyglot-test-agent
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/polyglot-test-agent/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3717,7 +3942,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 9
+    days_since_update: 10
     maintenance_status: active
     quality_score: 70
   - id: github/postgresql-code-review
@@ -3733,7 +3958,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/postgresql-code-review
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/postgresql-code-review/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3742,7 +3967,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/postgresql-optimization
@@ -3758,7 +3983,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/postgresql-optimization
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/postgresql-optimization/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3767,7 +3992,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/power-apps-code-app-scaffold
@@ -3783,7 +4008,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/power-apps-code-app-scaffold
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/power-apps-code-app-scaffold/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3792,7 +4017,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/power-bi-dax-optimization
@@ -3808,7 +4033,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/power-bi-dax-optimization
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/power-bi-dax-optimization/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3817,7 +4042,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/power-bi-model-design-review
@@ -3833,7 +4058,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/power-bi-model-design-review
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/power-bi-model-design-review/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3842,7 +4067,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/power-bi-performance-troubleshooting
@@ -3858,7 +4083,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/power-bi-performance-troubleshooting
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/power-bi-performance-troubleshooting/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3867,7 +4092,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/power-bi-report-design-consultation
@@ -3883,7 +4108,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/power-bi-report-design-consultation
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/power-bi-report-design-consultation/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3892,7 +4117,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/power-platform-mcp-connector-suite
@@ -3908,7 +4133,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/power-platform-mcp-connector-suite
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/power-platform-mcp-connector-suite/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3917,7 +4142,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/powerbi-modeling
@@ -3933,7 +4158,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/powerbi-modeling
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/powerbi-modeling/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -3942,7 +4167,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 22
+    days_since_update: 23
     maintenance_status: active
     quality_score: 80
   - id: github/prd
@@ -3958,7 +4183,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/prd
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/prd/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3967,7 +4192,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 34
+    days_since_update: 35
     maintenance_status: maintained
     quality_score: 60
   - id: github/project-workflow-analysis-blueprint-generator
@@ -3983,7 +4208,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/project-workflow-analysis-blueprint-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/project-workflow-analysis-blueprint-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -3992,7 +4217,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/prompt-builder
@@ -4008,7 +4233,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/prompt-builder
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/prompt-builder/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4017,7 +4242,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/pytest-coverage
@@ -4033,7 +4258,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/pytest-coverage
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/pytest-coverage/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4042,7 +4267,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/python-mcp-server-generator
@@ -4058,7 +4283,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/python-mcp-server-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/python-mcp-server-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4067,7 +4292,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/quasi-coder
@@ -4083,7 +4308,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/quasi-coder
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/quasi-coder/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4092,7 +4317,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 8
+    days_since_update: 9
     maintenance_status: active
     quality_score: 70
   - id: github/readme-blueprint-generator
@@ -4108,7 +4333,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/readme-blueprint-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/readme-blueprint-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4117,7 +4342,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/refactor
@@ -4133,7 +4358,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/refactor
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/refactor/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4142,7 +4367,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 24
+    days_since_update: 25
     maintenance_status: active
     quality_score: 70
   - id: github/refactor-method-complexity-reduce
@@ -4158,7 +4383,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/refactor-method-complexity-reduce
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/refactor-method-complexity-reduce/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4167,7 +4392,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/refactor-plan
@@ -4183,7 +4408,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/refactor-plan
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/refactor-plan/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4192,7 +4417,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/remember
@@ -4208,7 +4433,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/remember
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/remember/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4217,7 +4442,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/remember-interactive-programming
@@ -4233,7 +4458,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/remember-interactive-programming
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/remember-interactive-programming/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4242,7 +4467,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/repo-story-time
@@ -4258,7 +4483,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/repo-story-time
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/repo-story-time/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4267,7 +4492,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/review-and-refactor
@@ -4283,7 +4508,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/review-and-refactor
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/review-and-refactor/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4292,7 +4517,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/ruby-mcp-server-generator
@@ -4308,7 +4533,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/ruby-mcp-server-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/ruby-mcp-server-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4317,7 +4542,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/rust-mcp-server-generator
@@ -4333,7 +4558,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/rust-mcp-server-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/rust-mcp-server-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4342,7 +4567,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/scoutqa-test
@@ -4358,7 +4583,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/scoutqa-test
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/scoutqa-test/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4367,7 +4592,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 34
+    days_since_update: 35
     maintenance_status: maintained
     quality_score: 60
   - id: github/shuffle-json-data
@@ -4383,7 +4608,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/shuffle-json-data
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/shuffle-json-data/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4392,7 +4617,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/snowflake-semanticview
@@ -4408,7 +4633,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/snowflake-semanticview
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/snowflake-semanticview/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4417,7 +4642,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 38
+    days_since_update: 39
     maintenance_status: maintained
     quality_score: 60
   - id: github/sponsor-finder
@@ -4433,7 +4658,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/sponsor-finder
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/sponsor-finder/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4442,7 +4667,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 12
+    days_since_update: 13
     maintenance_status: active
     quality_score: 70
   - id: github/sql-code-review
@@ -4458,7 +4683,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/sql-code-review
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/sql-code-review/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4467,7 +4692,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/sql-optimization
@@ -4483,7 +4708,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/sql-optimization
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/sql-optimization/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4492,7 +4717,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/structured-autonomy-generate
@@ -4508,7 +4733,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/structured-autonomy-generate
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/structured-autonomy-generate/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4517,7 +4742,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/structured-autonomy-implement
@@ -4533,7 +4758,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/structured-autonomy-implement
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/structured-autonomy-implement/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4542,7 +4767,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/structured-autonomy-plan
@@ -4558,7 +4783,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/structured-autonomy-plan
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/structured-autonomy-plan/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4567,7 +4792,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/suggest-awesome-github-copilot-agents
@@ -4583,7 +4808,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/suggest-awesome-github-copilot-agents
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/suggest-awesome-github-copilot-agents/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4592,7 +4817,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/suggest-awesome-github-copilot-instructions
@@ -4608,7 +4833,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/suggest-awesome-github-copilot-instructions
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/suggest-awesome-github-copilot-instructions/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4617,7 +4842,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/suggest-awesome-github-copilot-prompts
@@ -4633,7 +4858,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/suggest-awesome-github-copilot-prompts
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/suggest-awesome-github-copilot-prompts/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4642,7 +4867,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/suggest-awesome-github-copilot-skills
@@ -4658,7 +4883,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/suggest-awesome-github-copilot-skills
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/suggest-awesome-github-copilot-skills/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4667,7 +4892,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/swift-mcp-server-generator
@@ -4683,7 +4908,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/swift-mcp-server-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/swift-mcp-server-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4692,7 +4917,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/technology-stack-blueprint-generator
@@ -4708,7 +4933,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/technology-stack-blueprint-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/technology-stack-blueprint-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4717,7 +4942,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/terraform-azurerm-set-diff-analyzer
@@ -4733,7 +4958,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/terraform-azurerm-set-diff-analyzer
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/terraform-azurerm-set-diff-analyzer/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: true
     has_references: true
     has_assets: false
@@ -4742,7 +4967,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 24
+    days_since_update: 25
     maintenance_status: active
     quality_score: 90
   - id: github/tldr-prompt
@@ -4758,7 +4983,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/tldr-prompt
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/tldr-prompt/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4767,7 +4992,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/transloadit-media-processing
@@ -4783,7 +5008,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/transloadit-media-processing
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/transloadit-media-processing/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4792,7 +5017,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 8
+    days_since_update: 9
     maintenance_status: active
     quality_score: 70
   - id: github/typescript-mcp-server-generator
@@ -4808,7 +5033,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/typescript-mcp-server-generator
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/typescript-mcp-server-generator/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4817,7 +5042,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/typespec-api-operations
@@ -4833,7 +5058,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/typespec-api-operations
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/typespec-api-operations/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4842,7 +5067,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/typespec-create-agent
@@ -4858,7 +5083,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/typespec-create-agent
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/typespec-create-agent/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4867,7 +5092,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/typespec-create-api-plugin
@@ -4883,7 +5108,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/typespec-create-api-plugin
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/typespec-create-api-plugin/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4892,7 +5117,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/update-avm-modules-in-bicep
@@ -4908,7 +5133,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/update-avm-modules-in-bicep
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/update-avm-modules-in-bicep/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4917,7 +5142,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/update-implementation-plan
@@ -4933,7 +5158,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/update-implementation-plan
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/update-implementation-plan/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4942,7 +5167,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/update-llms
@@ -4958,7 +5183,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/update-llms
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/update-llms/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4967,7 +5192,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/update-markdown-file-index
@@ -4983,7 +5208,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/update-markdown-file-index
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/update-markdown-file-index/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -4992,7 +5217,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/update-oo-component-documentation
@@ -5008,7 +5233,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/update-oo-component-documentation
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/update-oo-component-documentation/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -5017,7 +5242,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/update-specification
@@ -5033,7 +5258,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/update-specification
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/update-specification/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -5042,7 +5267,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/vscode-ext-commands
@@ -5058,7 +5283,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/vscode-ext-commands
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-commands/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -5067,7 +5292,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 45
+    days_since_update: 46
     maintenance_status: maintained
     quality_score: 60
   - id: github/vscode-ext-localization
@@ -5083,7 +5308,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/vscode-ext-localization
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/vscode-ext-localization/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -5092,7 +5317,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 45
+    days_since_update: 46
     maintenance_status: maintained
     quality_score: 60
   - id: github/web-design-reviewer
@@ -5108,7 +5333,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/web-design-reviewer
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/web-design-reviewer/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: true
     has_assets: false
@@ -5117,7 +5342,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 48
+    days_since_update: 49
     maintenance_status: maintained
     quality_score: 70
   - id: github/webapp-testing
@@ -5133,7 +5358,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/webapp-testing
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/webapp-testing/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -5142,7 +5367,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 70
+    days_since_update: 71
     maintenance_status: maintained
     quality_score: 60
   - id: github/what-context-needed
@@ -5158,7 +5383,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/what-context-needed
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/what-context-needed/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -5167,7 +5392,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
     maintenance_status: active
     quality_score: 70
   - id: github/winapp-cli
@@ -5183,7 +5408,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/winapp-cli
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/winapp-cli/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -5192,7 +5417,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 24
+    days_since_update: 25
     maintenance_status: active
     quality_score: 70
   - id: github/workiq-copilot
@@ -5208,7 +5433,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/workiq-copilot
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/workiq-copilot/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -5217,7 +5442,7 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 31
+    days_since_update: 32
     maintenance_status: maintained
     quality_score: 60
   - id: github/write-coding-standards-from-file
@@ -5233,7 +5458,7 @@ skills[1288]:
       repo: "https://github.com/github/awesome-copilot"
       path: skills/write-coding-standards-from-file
       skill_md_url: "https://raw.githubusercontent.com/github/awesome-copilot/main/skills/write-coding-standards-from-file/SKILL.md"
-      commit_sha: 7e4ef496556b55d4b9762244434d7b9d9b84beff
+      commit_sha: 4488150e942c231c148e9648b3eda147d5237279
     has_scripts: false
     has_references: false
     has_assets: false
@@ -5242,7 +5467,133 @@ skills[1288]:
     duplicate_annotation: null
     duplicate_of: null
     duplicate_similarity: null
-    days_since_update: 7
+    days_since_update: 8
+    maintenance_status: active
+    quality_score: 70
+  - id: remotion/remotion-best-practices
+    name: remotion-best-practices
+    description: Best practices for Remotion - Video creation in React
+    provider: remotion
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-26T16:36:28Z"
+    metadata:
+      tags: "remotion, video, react, animation, composition"
+    source:
+      repo: "https://github.com/remotion-dev/skills"
+      path: skills/remotion
+      skill_md_url: "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion/SKILL.md"
+      commit_sha: 937ffb32b148fdceef4b4184f975a708aab8d560
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,remotion,best,practices
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 0
+    maintenance_status: active
+    quality_score: 70
+  - id: stream-coding/stream-coding
+    name: stream-coding
+    description: "Documentation-first development methodology. The goal is AI-ready documentation - when docs are clear enough, code generation becomes automatic. Triggers on \"Build\", \"Create\", \"Implement\", \"Document\", or \"Spec out\". Version 3.5 adds Phase 2.5 Adversarial Review and renames internal verification to Spec Gate (structural completeness). Clarity Gate is now a separate standalone tool for epistemic quality."
+    provider: stream-coding
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-26T13:09:55Z"
+    metadata:
+    source:
+      repo: "https://github.com/frmoretto/stream-coding"
+      path: skills/stream-coding
+      skill_md_url: "https://raw.githubusercontent.com/frmoretto/stream-coding/main/skills/stream-coding/SKILL.md"
+      commit_sha: 42a7cb5ceec5611040d6f2764ee7943e4984345d
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: document,stream,coding
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 0
+    maintenance_status: active
+    quality_score: 60
+  - id: tinybird/tinybird
+    name: tinybird
+    description: "Tinybird file formats, SQL rules, optimization patterns, and best practices for datasources, pipes, endpoints, and materialized views."
+    provider: tinybird
+    category: data
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-11T15:05:45Z"
+    metadata:
+    source:
+      repo: "https://github.com/tinybirdco/tinybird-agent-skills"
+      path: skills/tinybird-best-practices
+      skill_md_url: "https://raw.githubusercontent.com/tinybirdco/tinybird-agent-skills/main/skills/tinybird-best-practices/SKILL.md"
+      commit_sha: 86d28b9207e6ed6a37346812faee3f95b5f40700
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[2]: pr,tinybird
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 15
+    maintenance_status: active
+    quality_score: 70
+  - id: tinybird/tinybird-cli-guidelines
+    name: tinybird-cli-guidelines
+    description: "Tinybird CLI commands, workflows, and operations. Use when running tb commands, managing local development, deploying, or working with data operations."
+    provider: tinybird
+    category: data
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-11T15:07:10Z"
+    metadata:
+    source:
+      repo: "https://github.com/tinybirdco/tinybird-agent-skills"
+      path: skills/tinybird-cli-guidelines
+      skill_md_url: "https://raw.githubusercontent.com/tinybirdco/tinybird-agent-skills/main/skills/tinybird-cli-guidelines/SKILL.md"
+      commit_sha: 86d28b9207e6ed6a37346812faee3f95b5f40700
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: cli,tinybird,guidelines
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 15
+    maintenance_status: active
+    quality_score: 70
+  - id: tinybird/tinybird-typescript-sdk-guidelines
+    name: tinybird-typescript-sdk-guidelines
+    description: "Tinybird TypeScript SDK for defining datasources, pipes, and queries with full type inference. Use when working with @tinybirdco/sdk, TypeScript Tinybird projects, or type-safe data ingestion and queries."
+    provider: tinybird
+    category: data
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-11T15:22:01Z"
+    metadata:
+    source:
+      repo: "https://github.com/tinybirdco/tinybird-agent-skills"
+      path: skills/tinybird-typescript-sdk-guidelines
+      skill_md_url: "https://raw.githubusercontent.com/tinybirdco/tinybird-agent-skills/main/skills/tinybird-typescript-sdk-guidelines/SKILL.md"
+      commit_sha: 86d28b9207e6ed6a37346812faee3f95b5f40700
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[5]: pr,tinybird,typescript,sdk,guidelines
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 15
     maintenance_status: active
     quality_score: 70
   - id: huggingface/gradio
@@ -5998,231 +6349,6 @@ skills[1288]:
     days_since_update: 21
     maintenance_status: active
     quality_score: 80
-  - id: cloudflare/agents-sdk
-    name: agents-sdk
-    description: "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-03T14:38:10Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/agents-sdk
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/agents-sdk/SKILL.md"
-      commit_sha: 6bd8243a7e187da8f1bdd49d190ce7bb421e2d1e
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[3]: mcp,agents,sdk
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 21
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/building-ai-agent-on-cloudflare
-    name: building-ai-agent-on-cloudflare
-    description: "Builds AI agents on Cloudflare using the Agents SDK with state management,\nreal-time WebSockets, scheduled tasks, tool integration, and chat capabilities.\nGenerates production-ready agent code deployed to Workers.\n\nUse when: user wants to \"build an agent\", \"AI agent\", \"chat agent\", \"stateful\nagent\", mentions \"Agents SDK\", needs \"real-time AI\", \"WebSocket AI\", or asks\nabout agent \"state management\", \"scheduled tasks\", or \"tool calling\"."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-28T17:13:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/building-ai-agent-on-cloudflare
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/building-ai-agent-on-cloudflare/SKILL.md"
-      commit_sha: 6bd8243a7e187da8f1bdd49d190ce7bb421e2d1e
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[4]: pr,building,agent,cloudflare
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 27
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/building-mcp-server-on-cloudflare
-    name: building-mcp-server-on-cloudflare
-    description: "Builds remote MCP (Model Context Protocol) servers on Cloudflare Workers\nwith tools, OAuth authentication, and production deployment. Generates\nserver code, configures auth providers, and deploys to Workers.\n\nUse when: user wants to \"build MCP server\", \"create MCP tools\", \"remote\nMCP\", \"deploy MCP\", add \"OAuth to MCP\", or mentions Model Context Protocol\non Cloudflare. Also triggers on \"MCP authentication\" or \"MCP deployment\"."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-28T17:13:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/building-mcp-server-on-cloudflare
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/building-mcp-server-on-cloudflare/SKILL.md"
-      commit_sha: 6bd8243a7e187da8f1bdd49d190ce7bb421e2d1e
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[5]: pr,mcp,building,server,cloudflare
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 27
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/cloudflare
-    name: cloudflare
-    description: "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-24T12:42:02Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/cloudflare
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/cloudflare/SKILL.md"
-      commit_sha: 6bd8243a7e187da8f1bdd49d190ce7bb421e2d1e
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[2]: pr,cloudflare
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 0
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/durable-objects
-    name: durable-objects
-    description: "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-05T14:25:20Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/durable-objects
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/durable-objects/SKILL.md"
-      commit_sha: 6bd8243a7e187da8f1bdd49d190ce7bb421e2d1e
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[4]: pr,test,durable,objects
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 19
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/sandbox-sdk
-    name: sandbox-sdk
-    description: "Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-05T14:25:20Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/sandbox-sdk
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/sandbox-sdk/SKILL.md"
-      commit_sha: 6bd8243a7e187da8f1bdd49d190ce7bb421e2d1e
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[5]: pr,ci,cd,sandbox,sdk
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 19
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/web-perf
-    name: web-perf
-    description: "Analyzes web performance using Chrome DevTools MCP. Measures Core Web Vitals (FCP, LCP, TBT, CLS, Speed Index), identifies render-blocking resources, network dependency chains, layout shifts, caching issues, and accessibility gaps. Use when asked to audit, profile, debug, or optimize page load performance, Lighthouse scores, or site speed."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-28T17:13:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/web-perf
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/web-perf/SKILL.md"
-      commit_sha: 6bd8243a7e187da8f1bdd49d190ce7bb421e2d1e
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[4]: pr,mcp,web,perf
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 27
-    maintenance_status: active
-    quality_score: 70
-  - id: cloudflare/workers-best-practices
-    name: workers-best-practices
-    description: "Reviews and authors Cloudflare Workers code against production best practices. Load when writing new Workers, reviewing Worker code, configuring wrangler.jsonc, or checking for common Workers anti-patterns (streaming, floating promises, global state, secrets, bindings, observability). Biases towards retrieval from Cloudflare docs over pre-trained knowledge."
-    provider: cloudflare
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-12T20:50:56Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/workers-best-practices
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/workers-best-practices/SKILL.md"
-      commit_sha: 6bd8243a7e187da8f1bdd49d190ce7bb421e2d1e
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[6]: json,pr,knowledge,workers,best,practices
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 12
-    maintenance_status: active
-    quality_score: 80
-  - id: cloudflare/wrangler
-    name: wrangler
-    description: "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices."
-    provider: cloudflare
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-28T17:13:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/cloudflare/skills"
-      path: skills/wrangler
-      skill_md_url: "https://raw.githubusercontent.com/cloudflare/skills/main/skills/wrangler/SKILL.md"
-      commit_sha: 6bd8243a7e187da8f1bdd49d190ce7bb421e2d1e
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[3]: pr,cli,wrangler
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 27
-    maintenance_status: active
-    quality_score: 70
   - id: ios-simulator-skill/ios-simulator-skill
     name: ios-simulator-skill
     description: "21 production-ready scripts for iOS app testing, building, and automation. Provides semantic UI navigation, build automation, accessibility testing, and simulator lifecycle management. Optimized for AI agents with minimal token output."
@@ -6248,81 +6374,6 @@ skills[1288]:
     days_since_update: 45
     maintenance_status: maintained
     quality_score: 60
-  - id: tinybird/tinybird
-    name: tinybird
-    description: "Tinybird file formats, SQL rules, optimization patterns, and best practices for datasources, pipes, endpoints, and materialized views."
-    provider: tinybird
-    category: data
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-11T15:05:45Z"
-    metadata:
-    source:
-      repo: "https://github.com/tinybirdco/tinybird-agent-skills"
-      path: skills/tinybird-best-practices
-      skill_md_url: "https://raw.githubusercontent.com/tinybirdco/tinybird-agent-skills/main/skills/tinybird-best-practices/SKILL.md"
-      commit_sha: aff3b00679395dc18e710f78aa2ce1d9f3c1a4ad
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[2]: pr,tinybird
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 13
-    maintenance_status: active
-    quality_score: 70
-  - id: tinybird/tinybird-cli-guidelines
-    name: tinybird-cli-guidelines
-    description: "Tinybird CLI commands, workflows, and operations. Use when running tb commands, managing local development, deploying, or working with data operations."
-    provider: tinybird
-    category: data
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-11T15:07:10Z"
-    metadata:
-    source:
-      repo: "https://github.com/tinybirdco/tinybird-agent-skills"
-      path: skills/tinybird-cli-guidelines
-      skill_md_url: "https://raw.githubusercontent.com/tinybirdco/tinybird-agent-skills/main/skills/tinybird-cli-guidelines/SKILL.md"
-      commit_sha: aff3b00679395dc18e710f78aa2ce1d9f3c1a4ad
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[3]: cli,tinybird,guidelines
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 13
-    maintenance_status: active
-    quality_score: 70
-  - id: tinybird/tinybird-typescript-sdk-guidelines
-    name: tinybird-typescript-sdk-guidelines
-    description: "Tinybird TypeScript SDK for defining datasources, pipes, and queries with full type inference. Use when working with @tinybirdco/sdk, TypeScript Tinybird projects, or type-safe data ingestion and queries."
-    provider: tinybird
-    category: data
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-11T15:22:01Z"
-    metadata:
-    source:
-      repo: "https://github.com/tinybirdco/tinybird-agent-skills"
-      path: skills/tinybird-typescript-sdk-guidelines
-      skill_md_url: "https://raw.githubusercontent.com/tinybirdco/tinybird-agent-skills/main/skills/tinybird-typescript-sdk-guidelines/SKILL.md"
-      commit_sha: aff3b00679395dc18e710f78aa2ce1d9f3c1a4ad
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[5]: pr,tinybird,typescript,sdk,guidelines
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 13
-    maintenance_status: active
-    quality_score: 70
   - id: sanjay-ai-skills/azure-devops
     name: azure-devops
     description: "Manage Azure DevOps projects, work items, repos, PRs, pipelines, wikis, test plans, security alerts,\nvariable groups, environments/approvals, branch policies, and attachments. Use when user asks to: manage\nsprints, create/update work items, list repos, create PRs, run pipelines, search code, manage wiki pages,\ncheck security alerts, manage variable groups, approve deployments, or configure branch policies.\nCovers 13 domains with 99 tools via REST API.\n"
@@ -7992,32 +8043,6 @@ skills[1288]:
     days_since_update: 20
     maintenance_status: active
     quality_score: 80
-  - id: remotion/remotion-best-practices
-    name: remotion-best-practices
-    description: Best practices for Remotion - Video creation in React
-    provider: remotion
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-11T08:53:39Z"
-    metadata:
-      tags: "remotion, video, react, animation, composition"
-    source:
-      repo: "https://github.com/remotion-dev/skills"
-      path: skills/remotion
-      skill_md_url: "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion/SKILL.md"
-      commit_sha: e9d8ecd5685a0ab1291444f5ad0288a64d053155
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[4]: pr,remotion,best,practices
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 9
-    maintenance_status: active
-    quality_score: 70
   - id: skillcreatorai/algorithmic-art
     name: algorithmic-art
     description: "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems."
@@ -32316,31 +32341,6 @@ skills[1288]:
     days_since_update: 104
     maintenance_status: maintained
     quality_score: 50
-  - id: stream-coding/stream-coding
-    name: stream-coding
-    description: "Documentation-first development methodology. The goal is AI-ready documentation - when docs are clear enough, code generation becomes automatic.\n"
-    provider: stream-coding
-    category: documents
-    license: CC-BY-4.0
-    compatibility: null
-    last_updated_at: "2026-01-19T14:12:50Z"
-    metadata:
-    source:
-      repo: "https://github.com/frmoretto/stream-coding"
-      path: skills/stream-coding
-      skill_md_url: "https://raw.githubusercontent.com/frmoretto/stream-coding/main/skills/stream-coding/SKILL.md"
-      commit_sha: 757c24081024aa87ddf1ec653f7278631408d45b
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[3]: document,stream,coding
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 12
-    maintenance_status: active
-    quality_score: 60
   - id: tapestry/article-extractor
     name: article-extractor
     description: "Extract clean article content from URLs (blog posts, articles, tutorials) and save as readable text. Use when user wants to download, extract, or save an article/blog post from a URL without ads, navigation, or clutter."
@@ -32587,10 +32587,10 @@ duplicate_summary:
   mirrors: 0
   probable_duplicates: 0
 maintenance_summary:
-  active: 179
-  maintained: 33
+  active: 186
+  maintained: 26
   stale: 0
   abandoned: 0
   unknown: 0
-  active_percentage: 84.4
+  active_percentage: 87.7
   maintained_percentage: 100
