@@ -1,292 +1,617 @@
 "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json"
-version: 2026.02.27
-generated_at: "2026-02-27T07:03:45.361294+00:00"
+version: 2026.02.28
+generated_at: "2026-02-28T06:49:18.058508+00:00"
 total_skills: 1288
 providers:
-  github:
-    name: GitHub
-    repo: "https://github.com/github/awesome-copilot"
-    skills_count: 198
-    stars: 22765
-    description: "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
-  cloudflare:
-    name: Cloudflare
-    repo: "https://github.com/cloudflare/skills"
+  huggingface:
+    name: HuggingFace
+    repo: "https://github.com/huggingface/skills"
     skills_count: 9
-    stars: 365
-    description: Skills for teaching agents how to build on Cloudflare.
-  trailofbits:
-    name: Trail of Bits Security
-    repo: "https://github.com/trailofbits/skills"
-    skills_count: 0
-    stars: 2952
-    description: "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
-  expo:
-    name: Expo
-    repo: "https://github.com/expo/skills"
-    skills_count: 0
-    stars: 1206
-    description: A collection of AI agent skills for working with Expo projects and Expo Application Services
-  tinybird:
-    name: Tinybird
-    repo: "https://github.com/tinybirdco/tinybird-agent-skills"
-    skills_count: 3
-    stars: 10
+    stars: 7392
     description: null
-  remotion:
-    name: Remotion
-    repo: "https://github.com/remotion-dev/skills"
-    skills_count: 1
-    stars: 1800
-    description: Agent Skills
-  "stream-coding":
-    name: Stream Coding Methodology
-    repo: "https://github.com/frmoretto/stream-coding"
-    skills_count: 1
-    stars: 49
-    description: "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
+  stripe:
+    name: Stripe
+    repo: "https://github.com/stripe/ai"
+    skills_count: 2
+    stars: 1316
+    description: One-stop shop for building AI-powered products and businesses with Stripe.
+  neondatabase:
+    name: Neon Database
+    repo: "https://github.com/neondatabase/agent-skills"
+    skills_count: 2
+    stars: 27
+    description: Agent Skills for Neon Severless Postgres
+  voltagent:
+    name: VoltAgent Catalog
+    repo: "https://github.com/VoltAgent/awesome-agent-skills"
+    skills_count: 0
+    stars: 8597
+    description: "Claude Code Skills and 380+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
   "epub-skill":
     name: EPUB Converter
     repo: "https://github.com/smerchek/claude-epub-skill"
     skills_count: 1
     stars: 60
     description: "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
-  "fal-ai":
-    name: fal.ai
-    repo: "https://github.com/fal-ai-community/skills"
-    skills_count: 6
-    stars: 13
-    description: null
   "d3js-skill":
     name: D3.js Visualization
     repo: "https://github.com/chrisvoncsefalvay/claude-d3js-skill"
     skills_count: 1
     stars: 88
     description: A Claude skill for d3.js.
-  "notebooklm-skill":
-    name: NotebookLM Integration
-    repo: "https://github.com/PleasePrompto/notebooklm-skill"
-    skills_count: 1
-    stars: 3024
-    description: "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
-  composiohq:
-    name: ComposioHQ
-    repo: "https://github.com/ComposioHQ/awesome-claude-skills"
-    skills_count: 864
-    stars: 35809
-    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
-  "ipsw-skill":
-    name: IPSW iOS Firmware
-    repo: "https://github.com/blacktop/ipsw-skill"
-    skills_count: 1
-    stars: 37
-    description: A SKILL.md for ipsw
-  "aws-skills":
-    name: AWS Skills
-    repo: "https://github.com/zxkane/aws-skills"
-    skills_count: 5
-    stars: 114
-    description: Claude Agent Skills for AWS
-  "visionos-agents":
-    name: visionOS Development
-    repo: "https://github.com/tomkrikorian/visionOSAgents"
-    skills_count: 12
-    stars: 39
-    description: AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform
-  heilcheng:
-    name: heilcheng Catalog
-    repo: "https://github.com/heilcheng/awesome-agent-skills"
-    skills_count: 0
-    stars: 2350
-    description: "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Antigravity, Copilot, VS Code)"
-  nginity:
-    name: nginity Enterprise
-    repo: "https://github.com/alirezarezvani/claude-skills"
-    skills_count: 0
-    stars: 1979
-    description: "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
-  getsentry:
-    name: Sentry
-    repo: "https://github.com/getsentry/skills"
-    skills_count: 0
-    stars: 330
-    description: Agent Skills used by the Sentry team for development.
-  "skills-to-agents":
-    name: Skills to Agents Converter
-    repo: "https://github.com/dave1010/skills-to-agents"
-    skills_count: 0
-    stars: 27
-    description: Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md
-  "sanjay-ai-skills":
-    name: Sanjay AI Skills
-    repo: "https://github.com/sanjay3290/ai-skills"
-    skills_count: 19
-    stars: 96
-    description: Collection of agent skills for AI coding assistants
-  "move-quality-skill":
-    name: Move Code Quality
-    repo: "https://github.com/1NickPappas/move-code-quality-skill"
-    skills_count: 1
+  tinybird:
+    name: Tinybird
+    repo: "https://github.com/tinybirdco/tinybird-agent-skills"
+    skills_count: 3
     stars: 10
-    description: Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist
-  neondatabase:
-    name: Neon Database
-    repo: "https://github.com/neondatabase/agent-skills"
-    skills_count: 2
-    stars: 25
-    description: Agent Skills for Neon Severless Postgres
-  aiqualitylab:
-    name: AI Quality Lab
-    repo: "https://github.com/aiqualitylab/agent-skills"
-    skills_count: 2
-    stars: 1
-    description: AI-powered testing skills for automation frameworks
-  "claude-marketplace-productivity":
-    name: Claude Marketplace (Productivity)
-    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 4
-    stars: 300
-    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  "family-history-skill":
-    name: Family History Research
-    repo: "https://github.com/emaynard/claude-family-history-research-skill"
-    skills_count: 1
-    stars: 28
-    description: A Claude Skill to assist with family history and genealogy research planning.
-  supabase:
-    name: Supabase
-    repo: "https://github.com/supabase/agent-skills"
-    skills_count: 1
-    stars: 1351
-    description: Agent Skills to help developers using AI agents with Supabase
-  "csv-summarizer-skill":
-    name: CSV Data Summarizer
-    repo: "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill"
-    skills_count: 1
-    stars: 206
-    description: "A Claude Skill that automatically analyzes uploaded CSV files — generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
-  "obra-superpowers":
-    name: Obra Superpowers
-    repo: "https://github.com/obra/superpowers"
-    skills_count: 14
-    stars: 57209
-    description: An agentic skills framework & software development methodology that works.
-  huggingface:
-    name: HuggingFace
-    repo: "https://github.com/huggingface/skills"
-    skills_count: 9
-    stars: 6589
     description: null
-  skillcreatorai:
-    name: SkillCreator.ai
-    repo: "https://github.com/skillcreatorai/Ai-Agent-Skills"
-    skills_count: 47
-    stars: 829
-    description: Homebrew for AI Agent Skills.
-  openai:
-    name: OpenAI
-    repo: "https://github.com/openai/skills"
-    skills_count: 32
-    stars: 9170
-    description: Skills Catalog for Codex
-  "playwright-skill":
-    name: Playwright Automation
-    repo: "https://github.com/lackeyjb/playwright-skill"
-    skills_count: 1
-    stars: 1546
-    description: Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.
-  "claude-marketplace-code":
-    name: Claude Marketplace (Code Ops)
-    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 4
-    stars: 300
-    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  "fal-ai":
+    name: fal.ai
+    repo: "https://github.com/fal-ai-community/skills"
+    skills_count: 6
+    stars: 13
+    description: null
   anthropics:
     name: Anthropic
     repo: "https://github.com/anthropics/skills"
     skills_count: 16
     stars: 75165
     description: Public repository for Agent Skills
-  "obsidian-plugin":
-    name: Obsidian Plugin Development
-    repo: "https://github.com/gapmiss/obsidian-plugin-skill"
+  github:
+    name: GitHub
+    repo: "https://github.com/github/awesome-copilot"
+    skills_count: 198
+    stars: 22765
+    description: "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
+  trailofbits:
+    name: Trail of Bits Security
+    repo: "https://github.com/trailofbits/skills"
+    skills_count: 0
+    stars: 2952
+    description: "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
+  "claude-marketplace-productivity":
+    name: Claude Marketplace (Productivity)
+    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
+    skills_count: 4
+    stars: 300
+    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  "skills-to-agents":
+    name: Skills to Agents Converter
+    repo: "https://github.com/dave1010/skills-to-agents"
+    skills_count: 0
+    stars: 27
+    description: Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md
+  remotion:
+    name: Remotion
+    repo: "https://github.com/remotion-dev/skills"
     skills_count: 1
-    stars: 85
-    description: CLAUDE SKILL for Obsidian.md plugin development
+    stars: 1800
+    description: Agent Skills
   tapestry:
     name: Tapestry Skills
     repo: "https://github.com/michalparkola/tapestry-skills-for-claude-code"
     skills_count: 4
     stars: 198
     description: "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
-  "claude-marketplace-visual":
-    name: Claude Marketplace (Visual)
-    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
-    skills_count: 5
-    stars: 300
-    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  travisvn:
-    name: travisvn Collection
-    repo: "https://github.com/travisvn/awesome-claude-skills"
-    skills_count: 0
-    stars: 7726
-    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code"
-  "ffuf-skill":
-    name: FFUF Web Fuzzing
-    repo: "https://github.com/jthack/ffuf_claude_skill"
-    skills_count: 1
-    stars: 105
-    description: "This is a \"skill\" for claude to use FFUF."
   "better-auth":
     name: Better Auth
     repo: "https://github.com/better-auth/skills"
     skills_count: 0
     stars: 116
     description: null
-  stripe:
-    name: Stripe
-    repo: "https://github.com/stripe/ai"
-    skills_count: 2
-    stars: 1307
-    description: One-stop shop for building AI-powered products and businesses with Stripe.
+  "ffuf-skill":
+    name: FFUF Web Fuzzing
+    repo: "https://github.com/jthack/ffuf_claude_skill"
+    skills_count: 1
+    stars: 105
+    description: "This is a \"skill\" for claude to use FFUF."
+  "claude-marketplace-code":
+    name: Claude Marketplace (Code Ops)
+    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
+    skills_count: 4
+    stars: 300
+    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
   "claude-marketplace-engineering":
     name: Claude Marketplace (Engineering)
     repo: "https://github.com/mhattingpete/claude-skills-marketplace"
     skills_count: 5
     stars: 300
     description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-  vercel:
-    name: Vercel
-    repo: "https://github.com/vercel-labs/agent-skills"
-    skills_count: 5
-    stars: 18238
-    description: Vercel's official collection of agent skills
-  "google-labs-stitch":
-    name: Google Labs Stitch
-    repo: "https://github.com/google-labs-code/stitch-skills"
-    skills_count: 6
-    stars: 1751
-    description: null
+  "move-quality-skill":
+    name: Move Code Quality
+    repo: "https://github.com/1NickPappas/move-code-quality-skill"
+    skills_count: 1
+    stars: 10
+    description: Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist
+  "stream-coding":
+    name: Stream Coding Methodology
+    repo: "https://github.com/frmoretto/stream-coding"
+    skills_count: 1
+    stars: 49
+    description: "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
+  "obra-superpowers":
+    name: Obra Superpowers
+    repo: "https://github.com/obra/superpowers"
+    skills_count: 14
+    stars: 57209
+    description: An agentic skills framework & software development methodology that works.
   "pypict-skill":
     name: PICT Test Cases
     repo: "https://github.com/omkamal/pypict-claude-skill"
     skills_count: 1
     stars: 30
     description: A claude skill that generate test cases using N-wise test cases using the pypict library
-  voltagent:
-    name: VoltAgent Catalog
-    repo: "https://github.com/VoltAgent/awesome-agent-skills"
+  aiqualitylab:
+    name: AI Quality Lab
+    repo: "https://github.com/aiqualitylab/agent-skills"
+    skills_count: 2
+    stars: 1
+    description: AI-powered testing skills for automation frameworks
+  getsentry:
+    name: Sentry
+    repo: "https://github.com/getsentry/skills"
     skills_count: 0
-    stars: 7976
-    description: "Claude Code Skills and 380+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
+    stars: 330
+    description: Agent Skills used by the Sentry team for development.
+  skillcreatorai:
+    name: SkillCreator.ai
+    repo: "https://github.com/skillcreatorai/Ai-Agent-Skills"
+    skills_count: 47
+    stars: 829
+    description: Homebrew for AI Agent Skills.
+  "aws-skills":
+    name: AWS Skills
+    repo: "https://github.com/zxkane/aws-skills"
+    skills_count: 5
+    stars: 114
+    description: Claude Agent Skills for AWS
+  cloudflare:
+    name: Cloudflare
+    repo: "https://github.com/cloudflare/skills"
+    skills_count: 9
+    stars: 365
+    description: Skills for teaching agents how to build on Cloudflare.
+  "playwright-skill":
+    name: Playwright Automation
+    repo: "https://github.com/lackeyjb/playwright-skill"
+    skills_count: 1
+    stars: 1546
+    description: Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.
+  heilcheng:
+    name: heilcheng Catalog
+    repo: "https://github.com/heilcheng/awesome-agent-skills"
+    skills_count: 0
+    stars: 2350
+    description: "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Antigravity, Copilot, VS Code)"
+  "claude-marketplace-visual":
+    name: Claude Marketplace (Visual)
+    repo: "https://github.com/mhattingpete/claude-skills-marketplace"
+    skills_count: 5
+    stars: 300
+    description: "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+  "notebooklm-skill":
+    name: NotebookLM Integration
+    repo: "https://github.com/PleasePrompto/notebooklm-skill"
+    skills_count: 1
+    stars: 3024
+    description: "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
+  nginity:
+    name: nginity Enterprise
+    repo: "https://github.com/alirezarezvani/claude-skills"
+    skills_count: 0
+    stars: 1979
+    description: "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
+  "google-labs-stitch":
+    name: Google Labs Stitch
+    repo: "https://github.com/google-labs-code/stitch-skills"
+    skills_count: 6
+    stars: 1751
+    description: null
+  "family-history-skill":
+    name: Family History Research
+    repo: "https://github.com/emaynard/claude-family-history-research-skill"
+    skills_count: 1
+    stars: 28
+    description: A Claude Skill to assist with family history and genealogy research planning.
+  travisvn:
+    name: travisvn Collection
+    repo: "https://github.com/travisvn/awesome-claude-skills"
+    skills_count: 0
+    stars: 7726
+    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code"
+  "obsidian-plugin":
+    name: Obsidian Plugin Development
+    repo: "https://github.com/gapmiss/obsidian-plugin-skill"
+    skills_count: 1
+    stars: 85
+    description: CLAUDE SKILL for Obsidian.md plugin development
+  composiohq:
+    name: ComposioHQ
+    repo: "https://github.com/ComposioHQ/awesome-claude-skills"
+    skills_count: 864
+    stars: 35809
+    description: "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
+  supabase:
+    name: Supabase
+    repo: "https://github.com/supabase/agent-skills"
+    skills_count: 1
+    stars: 1351
+    description: Agent Skills to help developers using AI agents with Supabase
   "ios-simulator-skill":
     name: iOS Simulator
     repo: "https://github.com/conorluddy/ios-simulator-skill"
     skills_count: 1
     stars: 530
     description: "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
-categories[7]: creative,data,development,documents,enterprise,integrations,other
+  "sanjay-ai-skills":
+    name: Sanjay AI Skills
+    repo: "https://github.com/sanjay3290/ai-skills"
+    skills_count: 19
+    stars: 96
+    description: Collection of agent skills for AI coding assistants
+  vercel:
+    name: Vercel
+    repo: "https://github.com/vercel-labs/agent-skills"
+    skills_count: 5
+    stars: 18238
+    description: Vercel's official collection of agent skills
+  expo:
+    name: Expo
+    repo: "https://github.com/expo/skills"
+    skills_count: 0
+    stars: 1206
+    description: A collection of AI agent skills for working with Expo projects and Expo Application Services
+  openai:
+    name: OpenAI
+    repo: "https://github.com/openai/skills"
+    skills_count: 32
+    stars: 9170
+    description: Skills Catalog for Codex
+  "visionos-agents":
+    name: visionOS Development
+    repo: "https://github.com/tomkrikorian/visionOSAgents"
+    skills_count: 12
+    stars: 39
+    description: AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform
+  "ipsw-skill":
+    name: IPSW iOS Firmware
+    repo: "https://github.com/blacktop/ipsw-skill"
+    skills_count: 1
+    stars: 37
+    description: A SKILL.md for ipsw
+  "csv-summarizer-skill":
+    name: CSV Data Summarizer
+    repo: "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill"
+    skills_count: 1
+    stars: 206
+    description: "A Claude Skill that automatically analyzes uploaded CSV files — generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
+categories[5]: creative,data,development,integrations,other
 skills[1288]:
+  - id: huggingface/gradio
+    name: gradio
+    description: "Build Gradio web UIs and demos in Python. Use when creating or editing Gradio apps, components, event listeners, layouts, or chatbots."
+    provider: huggingface
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-24T18:07:40Z"
+    metadata:
+    source:
+      repo: "https://github.com/huggingface/skills"
+      path: skills/huggingface-gradio
+      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-gradio/SKILL.md"
+      commit_sha: ec9f530382838039f8455384089bcaf084665f19
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[1]: gradio
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 3
+    maintenance_status: active
+    quality_score: 70
+  - id: huggingface/hugging-face-cli
+    name: hugging-face-cli
+    description: "Execute Hugging Face Hub operations using the `hf` CLI. Use when the user needs to download models/datasets/spaces, upload files to Hub repositories, create repos, manage local cache, or run compute jobs on HF infrastructure. Covers authentication, file transfers, repository creation, cache operations, and cloud compute."
+    provider: huggingface
+    category: data
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-09T18:29:15Z"
+    metadata:
+    source:
+      repo: "https://github.com/huggingface/skills"
+      path: skills/hugging-face-cli
+      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-cli/SKILL.md"
+      commit_sha: ec9f530382838039f8455384089bcaf084665f19
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[3]: cli,hugging,face
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 49
+    maintenance_status: maintained
+    quality_score: 70
+  - id: huggingface/hugging-face-datasets
+    name: hugging-face-datasets
+    description: "Create and manage datasets on Hugging Face Hub. Supports initializing repos, defining configs/system prompts, streaming row updates, and SQL-based dataset querying/transformation. Designed to work alongside HF MCP server for comprehensive dataset workflows."
+    provider: huggingface
+    category: data
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-12T15:26:31Z"
+    metadata:
+    source:
+      repo: "https://github.com/huggingface/skills"
+      path: skills/hugging-face-datasets
+      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-datasets/SKILL.md"
+      commit_sha: ec9f530382838039f8455384089bcaf084665f19
+    has_scripts: true
+    has_references: false
+    has_assets: true
+    tags[6]: pr,mcp,design,hugging,face,datasets
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 46
+    maintenance_status: maintained
+    quality_score: 80
+  - id: huggingface/hugging-face-evaluation
+    name: hugging-face-evaluation
+    description: "Add and manage evaluation results in Hugging Face model cards. Supports extracting eval tables from README content, importing scores from Artificial Analysis API, and running custom model evaluations with vLLM/lighteval. Works with the model-index metadata format."
+    provider: huggingface
+    category: data
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-12T15:26:31Z"
+    metadata:
+    source:
+      repo: "https://github.com/huggingface/skills"
+      path: skills/hugging-face-evaluation
+      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-evaluation/SKILL.md"
+      commit_sha: ec9f530382838039f8455384089bcaf084665f19
+    has_scripts: true
+    has_references: false
+    has_assets: false
+    tags[8]: ci,api,art,extract,analysis,hugging,face,evaluation
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 46
+    maintenance_status: maintained
+    quality_score: 70
+  - id: huggingface/hugging-face-jobs
+    name: hugging-face-jobs
+    description: "This skill should be used when users want to run any workload on Hugging Face Jobs infrastructure. Covers UV scripts, Docker-based jobs, hardware selection, cost estimation, authentication with tokens, secrets management, timeout configuration, and result persistence. Designed for general-purpose compute workloads including data processing, inference, experiments, batch jobs, and any Python-based tasks. Should be invoked for tasks involving cloud compute, GPU workloads, or when users mention running jobs on Hugging Face infrastructure without local setup."
+    provider: huggingface
+    category: creative
+    license: Complete terms in LICENSE.txt
+    compatibility: null
+    last_updated_at: "2026-01-07T15:05:53Z"
+    metadata:
+    source:
+      repo: "https://github.com/huggingface/skills"
+      path: skills/hugging-face-jobs
+      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-jobs/SKILL.md"
+      commit_sha: ec9f530382838039f8455384089bcaf084665f19
+    has_scripts: true
+    has_references: true
+    has_assets: false
+    tags[5]: pr,design,hugging,face,jobs
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 51
+    maintenance_status: maintained
+    quality_score: 80
+  - id: huggingface/hugging-face-model-trainer
+    name: hugging-face-model-trainer
+    description: "This skill should be used when users want to train or fine-tune language models using TRL (Transformer Reinforcement Learning) on Hugging Face Jobs infrastructure. Covers SFT, DPO, GRPO and reward modeling training methods, plus GGUF conversion for local deployment. Includes guidance on the TRL Jobs package, UV scripts with PEP 723 format, dataset preparation and validation, hardware selection, cost estimation, Trackio monitoring, Hub authentication, and model persistence. Should be invoked for tasks involving cloud GPU training, GGUF conversion, or when users mention training on Hugging Face Jobs without local GPU setup."
+    provider: huggingface
+    category: data
+    license: Complete terms in LICENSE.txt
+    compatibility: null
+    last_updated_at: "2026-01-30T21:18:27Z"
+    metadata:
+    source:
+      repo: "https://github.com/huggingface/skills"
+      path: skills/hugging-face-model-trainer
+      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-model-trainer/SKILL.md"
+      commit_sha: ec9f530382838039f8455384089bcaf084665f19
+    has_scripts: true
+    has_references: true
+    has_assets: false
+    tags[5]: pr,hugging,face,model,trainer
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 28
+    maintenance_status: active
+    quality_score: 90
+  - id: huggingface/hugging-face-paper-publisher
+    name: hugging-face-paper-publisher
+    description: "Publish and manage research papers on Hugging Face Hub. Supports creating paper pages, linking papers to models/datasets, claiming authorship, and generating professional markdown-based research articles."
+    provider: huggingface
+    category: creative
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-12T15:26:31Z"
+    metadata:
+    source:
+      repo: "https://github.com/huggingface/skills"
+      path: skills/hugging-face-paper-publisher
+      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-paper-publisher/SKILL.md"
+      commit_sha: ec9f530382838039f8455384089bcaf084665f19
+    has_scripts: true
+    has_references: true
+    has_assets: true
+    tags[6]: pr,art,hugging,face,paper,publisher
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 46
+    maintenance_status: maintained
+    quality_score: 90
+  - id: huggingface/hugging-face-tool-builder
+    name: hugging-face-tool-builder
+    description: "Use this skill when the user wants to build tool/scripts or achieve a task where using data from the Hugging Face API would help. This is especially useful when chaining or combining API calls or the task will be repeated/automated. This Skill creates a reusable script to fetch, enrich or process data."
+    provider: huggingface
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-01-07T15:05:53Z"
+    metadata:
+    source:
+      repo: "https://github.com/huggingface/skills"
+      path: skills/hugging-face-tool-builder
+      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-tool-builder/SKILL.md"
+      commit_sha: ec9f530382838039f8455384089bcaf084665f19
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[7]: pr,ci,api,hugging,face,tool,builder
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 51
+    maintenance_status: maintained
+    quality_score: 70
+  - id: huggingface/hugging-face-trackio
+    name: hugging-face-trackio
+    description: "Track and visualize ML training experiments with Trackio. Use when logging metrics during training (Python API), firing alerts for training diagnostics, or retrieving/analyzing logged metrics (CLI). Supports real-time dashboard visualization, alerts with webhooks, HF Space syncing, and JSON output for automation."
+    provider: huggingface
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-27T08:31:22Z"
+    metadata:
+    source:
+      repo: "https://github.com/huggingface/skills"
+      path: skills/hugging-face-trackio
+      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-trackio/SKILL.md"
+      commit_sha: ec9f530382838039f8455384089bcaf084665f19
+    has_scripts: false
+    has_references: true
+    has_assets: false
+    tags[8]: json,ci,api,cli,visual,hugging,face,trackio
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 0
+    maintenance_status: active
+    quality_score: 80
+  - id: neondatabase/claimable-postgres
+    name: claimable-postgres
+    description: "Provision instant temporary Postgres databases via Claimable Postgres by Neon (pg.new) with no login, signup, or credit card. Supports REST API, CLI, and SDK. Use when users ask for a quick Postgres environment, a throwaway DATABASE_URL for prototyping/tests, or \"just give me a DB now\". Triggers include: \"quick postgres\", \"temporary postgres\", \"no signup database\", \"no credit card database\", \"instant DATABASE_URL\", \"npx get-db\", \"pg.new\", \"pg.new API\", \"claimable postgres API\"."
+    provider: neondatabase
+    category: development
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-27T19:51:25Z"
+    metadata:
+    source:
+      repo: "https://github.com/neondatabase/agent-skills"
+      path: skills/claimable-postgres
+      skill_md_url: "https://raw.githubusercontent.com/neondatabase/agent-skills/main/skills/claimable-postgres/SKILL.md"
+      commit_sha: 273a850482d89c750afe9674487c6b54208572b9
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[6]: pr,test,api,cli,claimable,postgres
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 0
+    maintenance_status: active
+    quality_score: 70
+  - id: neondatabase/neon-postgres
+    name: neon-postgres
+    description: "Guides and best practices for working with Neon Serverless Postgres. Covers getting started, local development with Neon, choosing a connection method, Neon features, authentication (@neondatabase/auth), PostgREST-style data API (@neondatabase/neon-js), Neon CLI, and Neon's Platform API/SDKs. Use for any Neon-related questions."
+    provider: neondatabase
+    category: creative
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-26T00:36:33Z"
+    metadata:
+    source:
+      repo: "https://github.com/neondatabase/agent-skills"
+      path: skills/neon-postgres
+      skill_md_url: "https://raw.githubusercontent.com/neondatabase/agent-skills/main/skills/neon-postgres/SKILL.md"
+      commit_sha: 273a850482d89c750afe9674487c6b54208572b9
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[6]: pr,api,cli,art,neon,postgres
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 2
+    maintenance_status: active
+    quality_score: 70
+  - id: stripe/stripe-best-practices
+    name: stripe-best-practices
+    description: Best practices for building Stripe integrations
+    provider: stripe
+    category: other
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-24T13:29:14Z"
+    metadata:
+    source:
+      repo: "https://github.com/stripe/ai"
+      path: skills/stripe-best-practices
+      skill_md_url: "https://raw.githubusercontent.com/stripe/ai/main/skills/stripe-best-practices/SKILL.md"
+      commit_sha: 74c4d3192dd1692e2c69981954914c0d59276342
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[4]: pr,stripe,best,practices
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 3
+    maintenance_status: active
+    quality_score: 70
+  - id: stripe/upgrade-stripe
+    name: upgrade-stripe
+    description: Guide for upgrading Stripe API versions and SDKs
+    provider: stripe
+    category: integrations
+    license: null
+    compatibility: null
+    last_updated_at: "2026-02-24T13:29:14Z"
+    metadata:
+    source:
+      repo: "https://github.com/stripe/ai"
+      path: skills/upgrade-stripe
+      skill_md_url: "https://raw.githubusercontent.com/stripe/ai/main/skills/upgrade-stripe/SKILL.md"
+      commit_sha: 74c4d3192dd1692e2c69981954914c0d59276342
+    has_scripts: false
+    has_references: false
+    has_assets: false
+    tags[3]: api,upgrade,stripe
+    duplicate_status: null
+    duplicate_annotation: null
+    duplicate_of: null
+    duplicate_similarity: null
+    days_since_update: 3
+    maintenance_status: active
+    quality_score: 70
   - id: cloudflare/agents-sdk
     name: agents-sdk
     description: "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks."
@@ -5596,281 +5921,6 @@ skills[1288]:
     days_since_update: 15
     maintenance_status: active
     quality_score: 70
-  - id: huggingface/gradio
-    name: gradio
-    description: "Build Gradio web UIs and demos in Python. Use when creating or editing Gradio apps, components, event listeners, layouts, or chatbots."
-    provider: huggingface
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-24T18:07:40Z"
-    metadata:
-    source:
-      repo: "https://github.com/huggingface/skills"
-      path: skills/huggingface-gradio
-      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/huggingface-gradio/SKILL.md"
-      commit_sha: 4c79590c999ca1b14074d13fd88dc8e592878f5f
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[1]: gradio
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 1
-    maintenance_status: active
-    quality_score: 70
-  - id: huggingface/hugging-face-cli
-    name: hugging-face-cli
-    description: "Execute Hugging Face Hub operations using the `hf` CLI. Use when the user needs to download models/datasets/spaces, upload files to Hub repositories, create repos, manage local cache, or run compute jobs on HF infrastructure. Covers authentication, file transfers, repository creation, cache operations, and cloud compute."
-    provider: huggingface
-    category: data
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-09T18:29:15Z"
-    metadata:
-    source:
-      repo: "https://github.com/huggingface/skills"
-      path: skills/hugging-face-cli
-      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-cli/SKILL.md"
-      commit_sha: 4c79590c999ca1b14074d13fd88dc8e592878f5f
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[3]: cli,hugging,face
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 47
-    maintenance_status: maintained
-    quality_score: 70
-  - id: huggingface/hugging-face-datasets
-    name: hugging-face-datasets
-    description: "Create and manage datasets on Hugging Face Hub. Supports initializing repos, defining configs/system prompts, streaming row updates, and SQL-based dataset querying/transformation. Designed to work alongside HF MCP server for comprehensive dataset workflows."
-    provider: huggingface
-    category: data
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-12T15:26:31Z"
-    metadata:
-    source:
-      repo: "https://github.com/huggingface/skills"
-      path: skills/hugging-face-datasets
-      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-datasets/SKILL.md"
-      commit_sha: 4c79590c999ca1b14074d13fd88dc8e592878f5f
-    has_scripts: true
-    has_references: false
-    has_assets: true
-    tags[6]: pr,mcp,design,hugging,face,datasets
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 44
-    maintenance_status: maintained
-    quality_score: 80
-  - id: huggingface/hugging-face-evaluation
-    name: hugging-face-evaluation
-    description: "Add and manage evaluation results in Hugging Face model cards. Supports extracting eval tables from README content, importing scores from Artificial Analysis API, and running custom model evaluations with vLLM/lighteval. Works with the model-index metadata format."
-    provider: huggingface
-    category: data
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-12T15:26:31Z"
-    metadata:
-    source:
-      repo: "https://github.com/huggingface/skills"
-      path: skills/hugging-face-evaluation
-      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-evaluation/SKILL.md"
-      commit_sha: 4c79590c999ca1b14074d13fd88dc8e592878f5f
-    has_scripts: true
-    has_references: false
-    has_assets: false
-    tags[8]: ci,api,art,extract,analysis,hugging,face,evaluation
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 44
-    maintenance_status: maintained
-    quality_score: 70
-  - id: huggingface/hugging-face-jobs
-    name: hugging-face-jobs
-    description: "This skill should be used when users want to run any workload on Hugging Face Jobs infrastructure. Covers UV scripts, Docker-based jobs, hardware selection, cost estimation, authentication with tokens, secrets management, timeout configuration, and result persistence. Designed for general-purpose compute workloads including data processing, inference, experiments, batch jobs, and any Python-based tasks. Should be invoked for tasks involving cloud compute, GPU workloads, or when users mention running jobs on Hugging Face infrastructure without local setup."
-    provider: huggingface
-    category: creative
-    license: Complete terms in LICENSE.txt
-    compatibility: null
-    last_updated_at: "2026-01-07T15:05:53Z"
-    metadata:
-    source:
-      repo: "https://github.com/huggingface/skills"
-      path: skills/hugging-face-jobs
-      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-jobs/SKILL.md"
-      commit_sha: 4c79590c999ca1b14074d13fd88dc8e592878f5f
-    has_scripts: true
-    has_references: true
-    has_assets: false
-    tags[5]: pr,design,hugging,face,jobs
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 49
-    maintenance_status: maintained
-    quality_score: 80
-  - id: huggingface/hugging-face-model-trainer
-    name: hugging-face-model-trainer
-    description: "This skill should be used when users want to train or fine-tune language models using TRL (Transformer Reinforcement Learning) on Hugging Face Jobs infrastructure. Covers SFT, DPO, GRPO and reward modeling training methods, plus GGUF conversion for local deployment. Includes guidance on the TRL Jobs package, UV scripts with PEP 723 format, dataset preparation and validation, hardware selection, cost estimation, Trackio monitoring, Hub authentication, and model persistence. Should be invoked for tasks involving cloud GPU training, GGUF conversion, or when users mention training on Hugging Face Jobs without local GPU setup."
-    provider: huggingface
-    category: data
-    license: Complete terms in LICENSE.txt
-    compatibility: null
-    last_updated_at: "2026-01-30T21:18:27Z"
-    metadata:
-    source:
-      repo: "https://github.com/huggingface/skills"
-      path: skills/hugging-face-model-trainer
-      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-model-trainer/SKILL.md"
-      commit_sha: 4c79590c999ca1b14074d13fd88dc8e592878f5f
-    has_scripts: true
-    has_references: true
-    has_assets: false
-    tags[5]: pr,hugging,face,model,trainer
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 26
-    maintenance_status: active
-    quality_score: 90
-  - id: huggingface/hugging-face-paper-publisher
-    name: hugging-face-paper-publisher
-    description: "Publish and manage research papers on Hugging Face Hub. Supports creating paper pages, linking papers to models/datasets, claiming authorship, and generating professional markdown-based research articles."
-    provider: huggingface
-    category: creative
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-12T15:26:31Z"
-    metadata:
-    source:
-      repo: "https://github.com/huggingface/skills"
-      path: skills/hugging-face-paper-publisher
-      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-paper-publisher/SKILL.md"
-      commit_sha: 4c79590c999ca1b14074d13fd88dc8e592878f5f
-    has_scripts: true
-    has_references: true
-    has_assets: true
-    tags[6]: pr,art,hugging,face,paper,publisher
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 44
-    maintenance_status: maintained
-    quality_score: 90
-  - id: huggingface/hugging-face-tool-builder
-    name: hugging-face-tool-builder
-    description: "Use this skill when the user wants to build tool/scripts or achieve a task where using data from the Hugging Face API would help. This is especially useful when chaining or combining API calls or the task will be repeated/automated. This Skill creates a reusable script to fetch, enrich or process data."
-    provider: huggingface
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-07T15:05:53Z"
-    metadata:
-    source:
-      repo: "https://github.com/huggingface/skills"
-      path: skills/hugging-face-tool-builder
-      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-tool-builder/SKILL.md"
-      commit_sha: 4c79590c999ca1b14074d13fd88dc8e592878f5f
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[7]: pr,ci,api,hugging,face,tool,builder
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 49
-    maintenance_status: maintained
-    quality_score: 70
-  - id: huggingface/hugging-face-trackio
-    name: hugging-face-trackio
-    description: "Track and visualize ML training experiments with Trackio. Use when logging metrics during training (Python API) or retrieving/analyzing logged metrics (CLI). Supports real-time dashboard visualization, HF Space syncing, and JSON output for automation."
-    provider: huggingface
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-01-07T21:46:16Z"
-    metadata:
-    source:
-      repo: "https://github.com/huggingface/skills"
-      path: skills/hugging-face-trackio
-      skill_md_url: "https://raw.githubusercontent.com/huggingface/skills/main/skills/hugging-face-trackio/SKILL.md"
-      commit_sha: 4c79590c999ca1b14074d13fd88dc8e592878f5f
-    has_scripts: false
-    has_references: true
-    has_assets: false
-    tags[8]: json,ci,api,cli,visual,hugging,face,trackio
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 49
-    maintenance_status: maintained
-    quality_score: 70
-  - id: neondatabase/claimable-postgres
-    name: claimable-postgres
-    description: "Provision instant temporary Postgres databases via Claimable Postgres by Neon (pg.new) with no login, signup, or credit card. Use when users ask for a quick Postgres environment, a throwaway DATABASE_URL for prototyping/tests, or \"just give me a DB now\". Triggers include: \"quick postgres\", \"temporary postgres\", \"no signup database\", \"no credit card database\", \"instant DATABASE_URL\"."
-    provider: neondatabase
-    category: development
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-20T21:21:23Z"
-    metadata:
-    source:
-      repo: "https://github.com/neondatabase/agent-skills"
-      path: skills/claimable-postgres
-      skill_md_url: "https://raw.githubusercontent.com/neondatabase/agent-skills/main/skills/claimable-postgres/SKILL.md"
-      commit_sha: d6c908f8b6649a6af46e6d1c1b84c27f3d398920
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[4]: pr,test,claimable,postgres
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 5
-    maintenance_status: active
-    quality_score: 70
-  - id: neondatabase/neon-postgres
-    name: neon-postgres
-    description: "Guides and best practices for working with Neon Serverless Postgres. Covers getting started, local development with Neon, choosing a connection method, Neon features, authentication (@neondatabase/auth), PostgREST-style data API (@neondatabase/neon-js), Neon CLI, and Neon's Platform API/SDKs. Use for any Neon-related questions."
-    provider: neondatabase
-    category: creative
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-26T00:36:33Z"
-    metadata:
-    source:
-      repo: "https://github.com/neondatabase/agent-skills"
-      path: skills/neon-postgres
-      skill_md_url: "https://raw.githubusercontent.com/neondatabase/agent-skills/main/skills/neon-postgres/SKILL.md"
-      commit_sha: d6c908f8b6649a6af46e6d1c1b84c27f3d398920
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[6]: pr,api,cli,art,neon,postgres
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 0
-    maintenance_status: active
-    quality_score: 70
   - id: obsidian-plugin/obsidian
     name: obsidian
     description: "Comprehensive guidelines for Obsidian.md plugin development including all 27 ESLint rules from eslint-plugin-obsidianmd v0.1.9, TypeScript best practices, memory management, API usage (requestUrl vs fetch), UI/UX standards, locale file sentence-case enforcement, and submission requirements. Use when working with Obsidian plugins, main.ts files, manifest.json, Plugin class, MarkdownView, TFile, vault operations, or any Obsidian API development."
@@ -5895,56 +5945,6 @@ skills[1288]:
     duplicate_of: null
     duplicate_similarity: null
     days_since_update: 0
-    maintenance_status: active
-    quality_score: 70
-  - id: stripe/stripe-best-practices
-    name: stripe-best-practices
-    description: Best practices for building Stripe integrations
-    provider: stripe
-    category: other
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-24T13:29:14Z"
-    metadata:
-    source:
-      repo: "https://github.com/stripe/ai"
-      path: skills/stripe-best-practices
-      skill_md_url: "https://raw.githubusercontent.com/stripe/ai/main/skills/stripe-best-practices/SKILL.md"
-      commit_sha: 8ae8517741f5e65e6aca94e1554c33a23a7f2d8b
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[4]: pr,stripe,best,practices
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 1
-    maintenance_status: active
-    quality_score: 70
-  - id: stripe/upgrade-stripe
-    name: upgrade-stripe
-    description: Guide for upgrading Stripe API versions and SDKs
-    provider: stripe
-    category: integrations
-    license: null
-    compatibility: null
-    last_updated_at: "2026-02-24T13:29:14Z"
-    metadata:
-    source:
-      repo: "https://github.com/stripe/ai"
-      path: skills/upgrade-stripe
-      skill_md_url: "https://raw.githubusercontent.com/stripe/ai/main/skills/upgrade-stripe/SKILL.md"
-      commit_sha: 8ae8517741f5e65e6aca94e1554c33a23a7f2d8b
-    has_scripts: false
-    has_references: false
-    has_assets: false
-    tags[3]: api,upgrade,stripe
-    duplicate_status: null
-    duplicate_annotation: null
-    duplicate_of: null
-    duplicate_similarity: null
-    days_since_update: 1
     maintenance_status: active
     quality_score: 70
   - id: anthropics/algorithmic-art
@@ -32587,10 +32587,10 @@ duplicate_summary:
   mirrors: 0
   probable_duplicates: 0
 maintenance_summary:
-  active: 186
-  maintained: 26
+  active: 7
+  maintained: 6
   stale: 0
   abandoned: 0
   unknown: 0
-  active_percentage: 87.7
+  active_percentage: 53.8
   maintained_percentage: 100
