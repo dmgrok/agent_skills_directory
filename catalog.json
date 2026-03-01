@@ -1,71 +1,15 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.02.28",
-  "generated_at": "2026-02-28T06:49:18.058508+00:00",
+  "version": "2026.03.01",
+  "generated_at": "2026-03-01T06:55:21.531424+00:00",
   "total_skills": 1288,
   "providers": {
-    "huggingface": {
-      "name": "HuggingFace",
-      "repo": "https://github.com/huggingface/skills",
-      "skills_count": 9,
-      "stars": 7392,
-      "description": null
-    },
-    "stripe": {
-      "name": "Stripe",
-      "repo": "https://github.com/stripe/ai",
-      "skills_count": 2,
-      "stars": 1316,
-      "description": "One-stop shop for building AI-powered products and businesses with Stripe."
-    },
-    "neondatabase": {
-      "name": "Neon Database",
-      "repo": "https://github.com/neondatabase/agent-skills",
-      "skills_count": 2,
-      "stars": 27,
-      "description": "Agent Skills for Neon Severless Postgres"
-    },
     "voltagent": {
       "name": "VoltAgent Catalog",
       "repo": "https://github.com/VoltAgent/awesome-agent-skills",
       "skills_count": 0,
-      "stars": 8597,
+      "stars": 8704,
       "description": "Claude Code Skills and 380+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
-    },
-    "epub-skill": {
-      "name": "EPUB Converter",
-      "repo": "https://github.com/smerchek/claude-epub-skill",
-      "skills_count": 1,
-      "stars": 60,
-      "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
-    },
-    "d3js-skill": {
-      "name": "D3.js Visualization",
-      "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
-      "skills_count": 1,
-      "stars": 88,
-      "description": "A Claude skill for d3.js."
-    },
-    "tinybird": {
-      "name": "Tinybird",
-      "repo": "https://github.com/tinybirdco/tinybird-agent-skills",
-      "skills_count": 3,
-      "stars": 10,
-      "description": null
-    },
-    "fal-ai": {
-      "name": "fal.ai",
-      "repo": "https://github.com/fal-ai-community/skills",
-      "skills_count": 6,
-      "stars": 13,
-      "description": null
-    },
-    "anthropics": {
-      "name": "Anthropic",
-      "repo": "https://github.com/anthropics/skills",
-      "skills_count": 16,
-      "stars": 75165,
-      "description": "Public repository for Agent Skills"
     },
     "github": {
       "name": "GitHub",
@@ -74,33 +18,12 @@
       "stars": 22765,
       "description": "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot."
     },
-    "trailofbits": {
-      "name": "Trail of Bits Security",
-      "repo": "https://github.com/trailofbits/skills",
-      "skills_count": 0,
-      "stars": 2952,
-      "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
-    },
-    "claude-marketplace-productivity": {
-      "name": "Claude Marketplace (Productivity)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 4,
-      "stars": 300,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "skills-to-agents": {
-      "name": "Skills to Agents Converter",
-      "repo": "https://github.com/dave1010/skills-to-agents",
-      "skills_count": 0,
-      "stars": 27,
-      "description": "Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md"
-    },
-    "remotion": {
-      "name": "Remotion",
-      "repo": "https://github.com/remotion-dev/skills",
+    "playwright-skill": {
+      "name": "Playwright Automation",
+      "repo": "https://github.com/lackeyjb/playwright-skill",
       "skills_count": 1,
-      "stars": 1800,
-      "description": "Agent Skills"
+      "stars": 1546,
+      "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
     },
     "tapestry": {
       "name": "Tapestry Skills",
@@ -109,54 +32,12 @@
       "stars": 198,
       "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
     },
-    "better-auth": {
-      "name": "Better Auth",
-      "repo": "https://github.com/better-auth/skills",
-      "skills_count": 0,
-      "stars": 116,
-      "description": null
-    },
-    "ffuf-skill": {
-      "name": "FFUF Web Fuzzing",
-      "repo": "https://github.com/jthack/ffuf_claude_skill",
-      "skills_count": 1,
-      "stars": 105,
-      "description": "This is a \"skill\" for claude to use FFUF."
-    },
-    "claude-marketplace-code": {
-      "name": "Claude Marketplace (Code Ops)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 4,
-      "stars": 300,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "claude-marketplace-engineering": {
-      "name": "Claude Marketplace (Engineering)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 5,
-      "stars": 300,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "move-quality-skill": {
-      "name": "Move Code Quality",
-      "repo": "https://github.com/1NickPappas/move-code-quality-skill",
-      "skills_count": 1,
+    "tinybird": {
+      "name": "Tinybird",
+      "repo": "https://github.com/tinybirdco/tinybird-agent-skills",
+      "skills_count": 3,
       "stars": 10,
-      "description": "Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist"
-    },
-    "stream-coding": {
-      "name": "Stream Coding Methodology",
-      "repo": "https://github.com/frmoretto/stream-coding",
-      "skills_count": 1,
-      "stars": 49,
-      "description": "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
-    },
-    "obra-superpowers": {
-      "name": "Obra Superpowers",
-      "repo": "https://github.com/obra/superpowers",
-      "skills_count": 14,
-      "stars": 57209,
-      "description": "An agentic skills framework & software development methodology that works."
+      "description": null
     },
     "pypict-skill": {
       "name": "PICT Test Cases",
@@ -165,34 +46,6 @@
       "stars": 30,
       "description": "A claude skill that generate test cases using N-wise test cases using the pypict library"
     },
-    "aiqualitylab": {
-      "name": "AI Quality Lab",
-      "repo": "https://github.com/aiqualitylab/agent-skills",
-      "skills_count": 2,
-      "stars": 1,
-      "description": "AI-powered testing skills for automation frameworks"
-    },
-    "getsentry": {
-      "name": "Sentry",
-      "repo": "https://github.com/getsentry/skills",
-      "skills_count": 0,
-      "stars": 330,
-      "description": "Agent Skills used by the Sentry team for development."
-    },
-    "skillcreatorai": {
-      "name": "SkillCreator.ai",
-      "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-      "skills_count": 47,
-      "stars": 829,
-      "description": "Homebrew for AI Agent Skills."
-    },
-    "aws-skills": {
-      "name": "AWS Skills",
-      "repo": "https://github.com/zxkane/aws-skills",
-      "skills_count": 5,
-      "stars": 114,
-      "description": "Claude Agent Skills for AWS"
-    },
     "cloudflare": {
       "name": "Cloudflare",
       "repo": "https://github.com/cloudflare/skills",
@@ -200,96 +53,12 @@
       "stars": 365,
       "description": "Skills for teaching agents how to build on Cloudflare."
     },
-    "playwright-skill": {
-      "name": "Playwright Automation",
-      "repo": "https://github.com/lackeyjb/playwright-skill",
+    "remotion": {
+      "name": "Remotion",
+      "repo": "https://github.com/remotion-dev/skills",
       "skills_count": 1,
-      "stars": 1546,
-      "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
-    },
-    "heilcheng": {
-      "name": "heilcheng Catalog",
-      "repo": "https://github.com/heilcheng/awesome-agent-skills",
-      "skills_count": 0,
-      "stars": 2350,
-      "description": "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Antigravity, Copilot, VS Code)"
-    },
-    "claude-marketplace-visual": {
-      "name": "Claude Marketplace (Visual)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 5,
-      "stars": 300,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "notebooklm-skill": {
-      "name": "NotebookLM Integration",
-      "repo": "https://github.com/PleasePrompto/notebooklm-skill",
-      "skills_count": 1,
-      "stars": 3024,
-      "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
-    },
-    "nginity": {
-      "name": "nginity Enterprise",
-      "repo": "https://github.com/alirezarezvani/claude-skills",
-      "skills_count": 0,
-      "stars": 1979,
-      "description": "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
-    },
-    "google-labs-stitch": {
-      "name": "Google Labs Stitch",
-      "repo": "https://github.com/google-labs-code/stitch-skills",
-      "skills_count": 6,
-      "stars": 1751,
-      "description": null
-    },
-    "family-history-skill": {
-      "name": "Family History Research",
-      "repo": "https://github.com/emaynard/claude-family-history-research-skill",
-      "skills_count": 1,
-      "stars": 28,
-      "description": "A Claude Skill to assist with family history and genealogy research planning."
-    },
-    "travisvn": {
-      "name": "travisvn Collection",
-      "repo": "https://github.com/travisvn/awesome-claude-skills",
-      "skills_count": 0,
-      "stars": 7726,
-      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows \u2014 particularly Claude Code"
-    },
-    "obsidian-plugin": {
-      "name": "Obsidian Plugin Development",
-      "repo": "https://github.com/gapmiss/obsidian-plugin-skill",
-      "skills_count": 1,
-      "stars": 85,
-      "description": "CLAUDE SKILL for Obsidian.md plugin development"
-    },
-    "composiohq": {
-      "name": "ComposioHQ",
-      "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "skills_count": 864,
-      "stars": 35809,
-      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
-    },
-    "supabase": {
-      "name": "Supabase",
-      "repo": "https://github.com/supabase/agent-skills",
-      "skills_count": 1,
-      "stars": 1351,
-      "description": "Agent Skills to help developers using AI agents with Supabase"
-    },
-    "ios-simulator-skill": {
-      "name": "iOS Simulator",
-      "repo": "https://github.com/conorluddy/ios-simulator-skill",
-      "skills_count": 1,
-      "stars": 530,
-      "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
-    },
-    "sanjay-ai-skills": {
-      "name": "Sanjay AI Skills",
-      "repo": "https://github.com/sanjay3290/ai-skills",
-      "skills_count": 19,
-      "stars": 96,
-      "description": "Collection of agent skills for AI coding assistants"
+      "stars": 1800,
+      "description": "Agent Skills"
     },
     "vercel": {
       "name": "Vercel",
@@ -298,19 +67,40 @@
       "stars": 18238,
       "description": "Vercel's official collection of agent skills"
     },
-    "expo": {
-      "name": "Expo",
-      "repo": "https://github.com/expo/skills",
-      "skills_count": 0,
-      "stars": 1206,
-      "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services"
+    "skillcreatorai": {
+      "name": "SkillCreator.ai",
+      "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+      "skills_count": 47,
+      "stars": 829,
+      "description": "Homebrew for AI Agent Skills."
     },
-    "openai": {
-      "name": "OpenAI",
-      "repo": "https://github.com/openai/skills",
-      "skills_count": 32,
-      "stars": 9170,
-      "description": "Skills Catalog for Codex"
+    "neondatabase": {
+      "name": "Neon Database",
+      "repo": "https://github.com/neondatabase/agent-skills",
+      "skills_count": 2,
+      "stars": 27,
+      "description": "Agent Skills for Neon Severless Postgres"
+    },
+    "nginity": {
+      "name": "nginity Enterprise",
+      "repo": "https://github.com/alirezarezvani/claude-skills",
+      "skills_count": 0,
+      "stars": 1979,
+      "description": "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commnads"
+    },
+    "stream-coding": {
+      "name": "Stream Coding Methodology",
+      "repo": "https://github.com/frmoretto/stream-coding",
+      "skills_count": 1,
+      "stars": 49,
+      "description": "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
+    },
+    "d3js-skill": {
+      "name": "D3.js Visualization",
+      "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+      "skills_count": 1,
+      "stars": 88,
+      "description": "A Claude skill for d3.js."
     },
     "visionos-agents": {
       "name": "visionOS Development",
@@ -319,12 +109,12 @@
       "stars": 39,
       "description": "AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform"
     },
-    "ipsw-skill": {
-      "name": "IPSW iOS Firmware",
-      "repo": "https://github.com/blacktop/ipsw-skill",
-      "skills_count": 1,
-      "stars": 37,
-      "description": "A SKILL.md for ipsw"
+    "openai": {
+      "name": "OpenAI",
+      "repo": "https://github.com/openai/skills",
+      "skills_count": 32,
+      "stars": 9170,
+      "description": "Skills Catalog for Codex"
     },
     "csv-summarizer-skill": {
       "name": "CSV Data Summarizer",
@@ -332,15 +122,219 @@
       "skills_count": 1,
       "stars": 206,
       "description": "A Claude Skill that automatically analyzes uploaded CSV files \u2014 generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
+    },
+    "anthropics": {
+      "name": "Anthropic",
+      "repo": "https://github.com/anthropics/skills",
+      "skills_count": 16,
+      "stars": 75165,
+      "description": "Public repository for Agent Skills"
+    },
+    "notebooklm-skill": {
+      "name": "NotebookLM Integration",
+      "repo": "https://github.com/PleasePrompto/notebooklm-skill",
+      "skills_count": 1,
+      "stars": 3024,
+      "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
+    },
+    "ipsw-skill": {
+      "name": "IPSW iOS Firmware",
+      "repo": "https://github.com/blacktop/ipsw-skill",
+      "skills_count": 1,
+      "stars": 37,
+      "description": "A SKILL.md for ipsw"
+    },
+    "supabase": {
+      "name": "Supabase",
+      "repo": "https://github.com/supabase/agent-skills",
+      "skills_count": 1,
+      "stars": 1351,
+      "description": "Agent Skills to help developers using AI agents with Supabase"
+    },
+    "heilcheng": {
+      "name": "heilcheng Catalog",
+      "repo": "https://github.com/heilcheng/awesome-agent-skills",
+      "skills_count": 0,
+      "stars": 2350,
+      "description": "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Antigravity, Copilot, VS Code)"
+    },
+    "composiohq": {
+      "name": "ComposioHQ",
+      "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "skills_count": 864,
+      "stars": 35809,
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
+    },
+    "move-quality-skill": {
+      "name": "Move Code Quality",
+      "repo": "https://github.com/1NickPappas/move-code-quality-skill",
+      "skills_count": 1,
+      "stars": 10,
+      "description": "Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist"
+    },
+    "aiqualitylab": {
+      "name": "AI Quality Lab",
+      "repo": "https://github.com/aiqualitylab/agent-skills",
+      "skills_count": 2,
+      "stars": 1,
+      "description": "AI-powered testing skills for automation frameworks"
+    },
+    "aws-skills": {
+      "name": "AWS Skills",
+      "repo": "https://github.com/zxkane/aws-skills",
+      "skills_count": 5,
+      "stars": 114,
+      "description": "Claude Agent Skills for AWS"
+    },
+    "travisvn": {
+      "name": "travisvn Collection",
+      "repo": "https://github.com/travisvn/awesome-claude-skills",
+      "skills_count": 0,
+      "stars": 7726,
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows \u2014 particularly Claude Code"
+    },
+    "huggingface": {
+      "name": "HuggingFace",
+      "repo": "https://github.com/huggingface/skills",
+      "skills_count": 9,
+      "stars": 7392,
+      "description": null
+    },
+    "claude-marketplace-engineering": {
+      "name": "Claude Marketplace (Engineering)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 5,
+      "stars": 300,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "sanjay-ai-skills": {
+      "name": "Sanjay AI Skills",
+      "repo": "https://github.com/sanjay3290/ai-skills",
+      "skills_count": 19,
+      "stars": 96,
+      "description": "Collection of agent skills for AI coding assistants"
+    },
+    "epub-skill": {
+      "name": "EPUB Converter",
+      "repo": "https://github.com/smerchek/claude-epub-skill",
+      "skills_count": 1,
+      "stars": 60,
+      "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
+    },
+    "trailofbits": {
+      "name": "Trail of Bits Security",
+      "repo": "https://github.com/trailofbits/skills",
+      "skills_count": 0,
+      "stars": 2952,
+      "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
+    },
+    "claude-marketplace-visual": {
+      "name": "Claude Marketplace (Visual)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 5,
+      "stars": 300,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "getsentry": {
+      "name": "Sentry",
+      "repo": "https://github.com/getsentry/skills",
+      "skills_count": 0,
+      "stars": 330,
+      "description": "Agent Skills used by the Sentry team for development."
+    },
+    "obra-superpowers": {
+      "name": "Obra Superpowers",
+      "repo": "https://github.com/obra/superpowers",
+      "skills_count": 14,
+      "stars": 57209,
+      "description": "An agentic skills framework & software development methodology that works."
+    },
+    "google-labs-stitch": {
+      "name": "Google Labs Stitch",
+      "repo": "https://github.com/google-labs-code/stitch-skills",
+      "skills_count": 6,
+      "stars": 1751,
+      "description": null
+    },
+    "ios-simulator-skill": {
+      "name": "iOS Simulator",
+      "repo": "https://github.com/conorluddy/ios-simulator-skill",
+      "skills_count": 1,
+      "stars": 530,
+      "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
+    },
+    "family-history-skill": {
+      "name": "Family History Research",
+      "repo": "https://github.com/emaynard/claude-family-history-research-skill",
+      "skills_count": 1,
+      "stars": 28,
+      "description": "A Claude Skill to assist with family history and genealogy research planning."
+    },
+    "ffuf-skill": {
+      "name": "FFUF Web Fuzzing",
+      "repo": "https://github.com/jthack/ffuf_claude_skill",
+      "skills_count": 1,
+      "stars": 105,
+      "description": "This is a \"skill\" for claude to use FFUF."
+    },
+    "expo": {
+      "name": "Expo",
+      "repo": "https://github.com/expo/skills",
+      "skills_count": 0,
+      "stars": 1206,
+      "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services"
+    },
+    "stripe": {
+      "name": "Stripe",
+      "repo": "https://github.com/stripe/ai",
+      "skills_count": 2,
+      "stars": 1316,
+      "description": "One-stop shop for building AI-powered products and businesses with Stripe."
+    },
+    "skills-to-agents": {
+      "name": "Skills to Agents Converter",
+      "repo": "https://github.com/dave1010/skills-to-agents",
+      "skills_count": 0,
+      "stars": 27,
+      "description": "Automatic support for (Claude) Skills for any coding agent that supports AGENTS.md"
+    },
+    "better-auth": {
+      "name": "Better Auth",
+      "repo": "https://github.com/better-auth/skills",
+      "skills_count": 0,
+      "stars": 116,
+      "description": null
+    },
+    "claude-marketplace-code": {
+      "name": "Claude Marketplace (Code Ops)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 4,
+      "stars": 300,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "fal-ai": {
+      "name": "fal.ai",
+      "repo": "https://github.com/fal-ai-community/skills",
+      "skills_count": 6,
+      "stars": 13,
+      "description": null
+    },
+    "obsidian-plugin": {
+      "name": "Obsidian Plugin Development",
+      "repo": "https://github.com/gapmiss/obsidian-plugin-skill",
+      "skills_count": 1,
+      "stars": 85,
+      "description": "CLAUDE SKILL for Obsidian.md plugin development"
+    },
+    "claude-marketplace-productivity": {
+      "name": "Claude Marketplace (Productivity)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 4,
+      "stars": 300,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     }
   },
-  "categories": [
-    "creative",
-    "data",
-    "development",
-    "integrations",
-    "other"
-  ],
+  "categories": [],
   "skills": [
     {
       "id": "huggingface/gradio",
@@ -42638,12 +42632,12 @@
     "probable_duplicates": 0
   },
   "maintenance_summary": {
-    "active": 7,
-    "maintained": 6,
+    "active": 0,
+    "maintained": 0,
     "stale": 0,
     "abandoned": 0,
     "unknown": 0,
-    "active_percentage": 53.8,
-    "maintained_percentage": 100.0
+    "active_percentage": 0,
+    "maintained_percentage": 0
   }
 }

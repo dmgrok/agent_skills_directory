@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-02-28T06:49:29.886016+00:00",
+  "last_run": "2026-03-01T06:55:35.983387+00:00",
   "provider_commits": {
     "anthropics": "3d59511518591fa82e6cfcf0438d68dd5dad3e76",
     "openai": "2c9ebb321958f64aa9414b46e4240901e2b9e1a9",
@@ -40,7 +40,7 @@
     "fal-ai": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9",
     "remotion": "937ffb32b148fdceef4b4184f975a708aab8d560",
     "nginity": "7fde8a90e97f99c25bb21cda3724a500c278d192",
-    "voltagent": "0fa70cec19222cf28f0d955e55b93d256541f58d",
+    "voltagent": "0bd80303330a9d81957b82907a4b649919147acf",
     "heilcheng": "b7598be3dd5ecd8ec021f9e43495f90e883b9808",
     "travisvn": "c9f1fd4399d0d429677f813b1db3389de66b75b3",
     "obsidian-plugin": "040c26e119ff52dcd54353a2e1781fb65e2baafd",
@@ -50,5 +50,5 @@
     "skills-to-agents": "12f69f287941dfafb2fcf761455e73a5c6361469"
   },
   "skills_count": 1288,
-  "version": "2026.02.28"
+  "version": "2026.03.01"
 }
