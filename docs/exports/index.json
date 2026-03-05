@@ -1,0 +1,40 @@
+{
+  "name": "Agent Skills Directory - Ecosystem Exports",
+  "version": "2026.03.05",
+  "generated_at": "2026-03-05T21:01:21.896580+00:00",
+  "description": "Pre-filtered skill catalogs for different ecosystems and use cases",
+  "exports": {
+    "claude-skills.json": {
+      "description": "Skills for Claude Code",
+      "total": 55,
+      "cdn": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/claude-skills.json"
+    },
+    "copilot-skills.json": {
+      "description": "Skills for GitHub Copilot",
+      "total": 55,
+      "cdn": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/copilot-skills.json"
+    },
+    "mcp-compatible.json": {
+      "description": "MCP-compatible skills",
+      "total": 6,
+      "cdn": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/mcp-compatible.json"
+    },
+    "premium-skills.json": {
+      "description": "High-quality skills (score >= 70)",
+      "total": 40,
+      "cdn": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/premium-skills.json"
+    },
+    "active-skills.json": {
+      "description": "Recently maintained skills",
+      "total": 43,
+      "cdn": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/active-skills.json"
+    }
+  },
+  "badges": {
+    "skills-count": "https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-skills.json",
+    "providers-count": "https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-providers.json",
+    "quality": "https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-quality.json",
+    "listed-badge": "https://img.shields.io/badge/Listed_on-Agent_Skills_Directory-6366f1?style=flat&logo=data:image/svg+xml;base64,8J+ngQ==",
+    "quality-score": "https://img.shields.io/badge/quality_score-{score}%2F100-{color}?style=flat"
+  }
+}

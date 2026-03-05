@@ -1,0 +1,245 @@
+{
+  "name": "MCP-Compatible Skills",
+  "description": "Skills with MCP integration support, filtered from Agent Skills Directory",
+  "version": "2026.03.05",
+  "generated_at": "2026-03-05T21:01:21.896580+00:00",
+  "source": "https://github.com/dmgrok/agent_skills_directory",
+  "catalog_url": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json",
+  "website": "https://dmgrok.github.io/agent_skills_directory/",
+  "total_skills": 6,
+  "skills": [
+    {
+      "id": "anthropics/mcp-builder",
+      "name": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "provider": "anthropics",
+      "category": "development",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": "2025-12-01T18:05:36Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/anthropics/skills",
+        "path": "skills/mcp-builder",
+        "skill_md_url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/mcp-builder/SKILL.md",
+        "commit_sha": "7029232b9212482c0476da354b83364bd28fab2f"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "mcp",
+        "design",
+        "builder"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 94,
+      "maintenance_status": "maintained",
+      "quality_score": 80,
+      "skill_type": "full"
+    },
+    {
+      "id": "openai/chatgpt-apps",
+      "name": "chatgpt-apps",
+      "description": "Build, scaffold, refactor, and troubleshoot ChatGPT Apps SDK applications that combine an MCP server and widget UI. Use when Codex needs to design tools, register UI resources, wire the MCP Apps bridge or ChatGPT compatibility APIs, apply Apps SDK metadata or CSP or domain settings, or produce a docs-aligned project scaffold. Prefer a docs-first workflow by invoking the openai-docs skill or OpenAI developer docs MCP tools before generating code.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-02T18:22:37Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/chatgpt-apps",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/chatgpt-apps/SKILL.md",
+        "commit_sha": "fe06517f6e7b83249220c0c1fe71a2ce74f95ea7"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "mcp",
+        "design",
+        "chatgpt",
+        "apps"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 3,
+      "maintenance_status": "active",
+      "quality_score": 90,
+      "skill_type": "full"
+    },
+    {
+      "id": "openai/figma",
+      "name": "figma",
+      "description": "Use the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma, and to translate Figma nodes into production code. Trigger when a task involves Figma URLs, node IDs, design-to-code implementation, or Figma MCP setup and troubleshooting.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-02-01T17:05:37Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/figma",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/figma/SKILL.md",
+        "commit_sha": "fe06517f6e7b83249220c0c1fe71a2ce74f95ea7"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "mcp",
+        "design",
+        "figma"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 32,
+      "maintenance_status": "maintained",
+      "quality_score": 80,
+      "skill_type": "full"
+    },
+    {
+      "id": "openai/figma-implement-design",
+      "name": "figma-implement-design",
+      "description": "Translate Figma nodes into production-ready code with 1:1 visual fidelity using the Figma MCP workflow (design context, screenshots, assets, and project-convention translation). Trigger when the user provides Figma URLs or node IDs, or asks to implement designs or components that must match Figma specs. Requires a working Figma MCP server connection.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-01-31T18:14:20Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/figma-implement-design",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/figma-implement-design/SKILL.md",
+        "commit_sha": "fe06517f6e7b83249220c0c1fe71a2ce74f95ea7"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "mcp",
+        "design",
+        "visual",
+        "figma",
+        "implement"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 33,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full"
+    },
+    {
+      "id": "openai/openai-docs",
+      "name": "openai-docs",
+      "description": "Use when the user asks how to build with OpenAI products or APIs and needs up-to-date official documentation with citations, help choosing the latest model for a use case, or explicit GPT-5.4 upgrade and prompt-upgrade guidance; prioritize OpenAI docs MCP tools, use bundled references only as helper context, and restrict any fallback browsing to official OpenAI domains.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-05T18:03:47Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.curated/openai-docs",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/openai-docs/SKILL.md",
+        "commit_sha": "fe06517f6e7b83249220c0c1fe71a2ce74f95ea7"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "ci",
+        "test",
+        "api",
+        "mcp",
+        "document",
+        "openai",
+        "docs"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 90,
+      "skill_type": "full",
+      "similar_skills": [
+        {
+          "id": "openai/openai-docs",
+          "provider": "openai",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "id": "openai/openai-docs",
+      "name": "openai-docs",
+      "description": "Use when the user asks how to build with OpenAI products or APIs and needs up-to-date official documentation with citations, help choosing the latest model for a use case, or explicit GPT-5.4 upgrade and prompt-upgrade guidance; prioritize OpenAI docs MCP tools, use bundled references only as helper context, and restrict any fallback browsing to official OpenAI domains.",
+      "provider": "openai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": null,
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/openai/skills",
+        "path": "skills/.system/openai-docs",
+        "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/openai-docs/SKILL.md",
+        "commit_sha": "fe06517f6e7b83249220c0c1fe71a2ce74f95ea7"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "ci",
+        "test",
+        "api",
+        "mcp",
+        "document",
+        "openai",
+        "docs"
+      ],
+      "duplicate_status": "mirror",
+      "duplicate_annotation": "Complete mirror of openai/openai-docs",
+      "duplicate_of": "openai/openai-docs",
+      "duplicate_similarity": 1.0,
+      "days_since_update": null,
+      "maintenance_status": null,
+      "quality_score": 65,
+      "skill_type": "full",
+      "similar_skills": [
+        {
+          "id": "openai/openai-docs",
+          "provider": "openai",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ],
+  "ecosystem": "mcp",
+  "install_command": "skillsdir install <skill-id> --project --agent mcp"
+}

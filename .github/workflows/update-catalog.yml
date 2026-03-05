@@ -85,37 +85,60 @@ jobs:
           tag_name: v${{ steps.date.outputs.date }}
           name: Skills Catalog v${{ steps.date.outputs.date }}
           body: |
-            ## Agent Skills Catalog
+            ## Agent Skills Catalog v${{ steps.date.outputs.date }}
             
-            Updated: ${{ steps.date.outputs.date }}
+            ### 📦 Core Catalog
+            | File | Description |
+            |------|-------------|
+            | [catalog.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.json) | Full catalog (pretty printed) |
+            | [catalog.min.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.min.json) | Full catalog (minified) |
+            | [catalog.toon](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.toon) | TOON format |
+            | [catalog.min.toon](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.min.toon) | TOON format (minified) |
+            | [CHANGELOG.md](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/CHANGELOG.md) | Version history |
             
-            ### Download
-            - [catalog.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.json) - Pretty printed JSON
-            - [catalog.min.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.min.json) - Minified JSON
-            - [catalog.toon](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.toon) - TOON format
-            - [catalog.min.toon](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.min.toon) - Minified TOON format
-            - [CHANGELOG.md](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/CHANGELOG.md) - Version history
+            ### 🌐 Ecosystem Exports
+            | File | Description |
+            |------|-------------|
+            | [claude-skills.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/claude-skills.json) | Claude Code skills (quality ≥ 50) |
+            | [copilot-skills.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/copilot-skills.json) | GitHub Copilot skills (quality ≥ 50) |
+            | [mcp-compatible.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/mcp-compatible.json) | MCP-compatible skills |
+            | [premium-skills.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/premium-skills.json) | Premium skills (quality ≥ 70) |
+            | [active-skills.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/active-skills.json) | Recently maintained skills |
+            | [index.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/index.json) | Exports index with CDN URLs |
             
-            ### CDN URLs
+            ### 🏷️ Badge Endpoints
+            | Badge | URL |
+            |-------|-----|
+            | ![Skills](https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/${{ github.repository }}@v${{ steps.date.outputs.date }}/exports/badge-skills.json) | `exports/badge-skills.json` |
+            | ![Providers](https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/${{ github.repository }}@v${{ steps.date.outputs.date }}/exports/badge-providers.json) | `exports/badge-providers.json` |
+            | ![Quality](https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/${{ github.repository }}@v${{ steps.date.outputs.date }}/exports/badge-quality.json) | `exports/badge-quality.json` |
+            
+            ### 🔗 CDN URLs
             ```
-            # Latest
+            # Latest (always up-to-date)
             https://cdn.jsdelivr.net/gh/${{ github.repository }}@main/catalog.json
+            https://cdn.jsdelivr.net/gh/${{ github.repository }}@main/exports/claude-skills.json
+            https://cdn.jsdelivr.net/gh/${{ github.repository }}@main/exports/badge-skills.json
             
-            # This version
+            # Pinned to this version
             https://cdn.jsdelivr.net/gh/${{ github.repository }}@v${{ steps.date.outputs.date }}/catalog.json
+            https://cdn.jsdelivr.net/gh/${{ github.repository }}@v${{ steps.date.outputs.date }}/exports/claude-skills.json
             ```
-            catalog.toon
-            catalog.min.toon
-            CHANGELOG.md
           files: |
             catalog.json
             catalog.min.json
+            catalog.toon
+            catalog.min.toon
+            CHANGELOG.md
             exports/claude-skills.json
             exports/copilot-skills.json
             exports/mcp-compatible.json
             exports/premium-skills.json
             exports/active-skills.json
             exports/index.json
+            exports/badge-skills.json
+            exports/badge-providers.json
+            exports/badge-quality.json
           draft: false
           prerelease: false
         env:
