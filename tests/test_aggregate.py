@@ -1,5 +1,4 @@
 import sys
-from types import SimpleNamespace
 from pathlib import Path
 
 
@@ -29,21 +28,3 @@ def test_extract_tags_includes_keywords_and_name_words():
     assert "pdf" in tags
     assert "convert" in tags
     assert "converter" in tags
-
-
-def test_write_toon_output_uses_python_encoder(tmp_path, monkeypatch):
-    # Provide a stub encoder to avoid CLI and the unimplemented upstream encoder
-    monkeypatch.setattr(aggregate, "HAS_TOON", True)
-    monkeypatch.setattr(aggregate, "toon_format", SimpleNamespace(encode=lambda data: "encoded"))
-
-    output_dir = tmp_path
-    catalog_json = output_dir / "catalog.json"
-    catalog_json.write_text("{}", encoding="utf-8")
-    catalog_min_json = output_dir / "catalog.min.json"
-    catalog_min_json.write_text("{}", encoding="utf-8")
-
-    aggregate.write_toon_output({"hello": "world"}, output_dir, catalog_json, catalog_min_json)
-
-    toon_file = output_dir / "catalog.toon"
-    assert toon_file.exists()
-    assert toon_file.read_text(encoding="utf-8") == "encoded"

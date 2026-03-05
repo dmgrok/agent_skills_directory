@@ -74,7 +74,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add catalog.json catalog.min.json catalog.toon catalog.min.toon CHANGELOG.md aggregation_state.json docs/catalog.json docs/catalog.min.json docs/bundles.json exports/ docs/exports/
+          git add catalog.json catalog.min.json CHANGELOG.md aggregation_state.json docs/catalog.json docs/catalog.min.json docs/bundles.json exports/ docs/exports/
           git commit -m "Update catalog - ${{ steps.date.outputs.date }}"
           git push
       
@@ -92,8 +92,6 @@ jobs:
             |------|-------------|
             | [catalog.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.json) | Full catalog (pretty printed) |
             | [catalog.min.json](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.min.json) | Full catalog (minified) |
-            | [catalog.toon](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.toon) | TOON format |
-            | [catalog.min.toon](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/catalog.min.toon) | TOON format (minified) |
             | [CHANGELOG.md](https://github.com/${{ github.repository }}/releases/download/v${{ steps.date.outputs.date }}/CHANGELOG.md) | Version history |
             
             ### 🌐 Ecosystem Exports
@@ -127,8 +125,6 @@ jobs:
           files: |
             catalog.json
             catalog.min.json
-            catalog.toon
-            catalog.min.toon
             CHANGELOG.md
             exports/claude-skills.json
             exports/copilot-skills.json

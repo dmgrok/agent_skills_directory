@@ -287,21 +287,6 @@ Shows how many alternative skills exist with similar:
 - Name keywords
 - Description keywords
 
-This helps you explore options and make informed comparisons.
-# Create a new skill
-skillsdir init
-
-# Validate before publishing
-skills validate .
-
-# Publish to GitHub
-skills login
-skillsdir publish
-
-# Submit to official directory
-skillsdir publish --submit
-```
-
 ---
 
 ## Supported Agents & Paths
@@ -594,11 +579,11 @@ Pre-filtered catalogs optimized for specific ecosystems, updated daily via CDN:
 
 | Export | Description | CDN URL |
 |--------|-------------|---------|
-| **Claude Skills** | Quality ≥ 50, full skills | `exports/claude-skills.json` |
-| **Copilot Skills** | Quality ≥ 50, full skills | `exports/copilot-skills.json` |
-| **MCP-Compatible** | Skills with MCP tags | `exports/mcp-compatible.json` |
-| **Premium Skills** | Quality ≥ 70 | `exports/premium-skills.json` |
-| **Active Skills** | Updated within 6 months | `exports/active-skills.json` |
+| **Claude Skills** | Quality ≥ 50, full skills | [`exports/claude-skills.json`](https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/claude-skills.json) |
+| **Copilot Skills** | Quality ≥ 50, full skills | [`exports/copilot-skills.json`](https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/copilot-skills.json) |
+| **MCP-Compatible** | Skills with MCP tags | [`exports/mcp-compatible.json`](https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/mcp-compatible.json) |
+| **Premium Skills** | Quality ≥ 70 | [`exports/premium-skills.json`](https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/premium-skills.json) |
+| **Active Skills** | Updated within 6 months | [`exports/active-skills.json`](https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/active-skills.json) |
 
 **Base URL:** `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/`
 

@@ -19,8 +19,6 @@ from pathlib import Path
 from typing import Any, Optional
 import urllib.request
 import urllib.error
-import subprocess
-import shutil
 from urllib.parse import urlsplit
 
 # Load environment variables from .env if available
@@ -29,12 +27,6 @@ try:
     load_dotenv()
 except ImportError:
     pass  # dotenv not installed, skip
-
-try:
-    import toon_format  # type: ignore[import-untyped]
-    HAS_TOON = True
-except ImportError:
-    HAS_TOON = False
 
 import yaml  # type: ignore[import-untyped]
 
@@ -1352,49 +1344,6 @@ def generate_ecosystem_exports(catalog: dict, output_dir: Path) -> None:
     print(f"✓ Exports index: {exports_dir / 'index.json'}")
 
 
-def write_toon_output(catalog: dict, output_dir: Path, catalog_json: Path, catalog_min_json: Path) -> None:
-    """Write TOON format using python encoder if available, else fall back to npx CLI."""
-    catalog_toon = output_dir / "catalog.toon"
-    catalog_toon_min = output_dir / "catalog.min.toon"
-
-    if HAS_TOON:
-        try:
-            toon_content = toon_format.encode(catalog)
-            catalog_toon.write_text(toon_content, encoding="utf-8")
-            catalog_toon_min.write_text(toon_content, encoding="utf-8")
-            print(f"✓ Written: {catalog_toon} (python toon_format)")
-            print(f"✓ Written: {catalog_toon_min} (python toon_format)")
-            return
-        except NotImplementedError:
-            print("⚠ toon_format.encode not implemented; falling back to npx @toon-format/cli", file=sys.stderr)
-        except Exception as e:
-            print(f"⚠ toon_format.encode failed ({e}); falling back to npx @toon-format/cli", file=sys.stderr)
-
-    npx_path = shutil.which("npx")
-    if not npx_path:
-        print("⚠ Skipped TOON output: npx not found and python encoder unavailable", file=sys.stderr)
-        return
-
-    try:
-        subprocess.run(
-            [npx_path, "@toon-format/cli", str(catalog_json), "-o", str(catalog_toon)],
-            check=True,
-            capture_output=True,
-            text=True,
-        )
-        subprocess.run(
-            [npx_path, "@toon-format/cli", str(catalog_min_json), "-o", str(catalog_toon_min)],
-            check=True,
-            capture_output=True,
-            text=True,
-        )
-        print(f"✓ Written: {catalog_toon} (via npx @toon-format/cli)")
-        print(f"✓ Written: {catalog_toon_min} (via npx @toon-format/cli)")
-    except subprocess.CalledProcessError as e:
-        error_out = e.stderr.strip() if e.stderr else str(e)
-        print(f"⚠ Failed TOON output via npx @toon-format/cli: {error_out}", file=sys.stderr)
-
-
 def main():
     global PROVIDERS  # Declare at top for potential modification in incremental mode
     
@@ -1514,13 +1463,42 @@ def main():
         json.dump(catalog, f, indent=2)
     print(f"\n✓ Written: {catalog_json}")
     
-    # Write minified JSON
+    # Write minified JSON (stripped of verbose fields for lightweight consumption)
+    min_catalog = {
+        "version": catalog["version"],
+        "generated_at": catalog["generated_at"],
+        "total_skills": catalog["total_skills"],
+        "categories": catalog["categories"],
+        "providers": {
+            pid: {"name": p["name"], "skills_count": p["skills_count"], "stars": p.get("stars", 0)}
+            for pid, p in catalog["providers"].items()
+        },
+        "skills": [],
+    }
+    for skill in catalog["skills"]:
+        min_skill = {
+            "id": skill["id"],
+            "name": skill["name"],
+            "description": skill["description"],
+            "provider": skill["provider"],
+            "category": skill["category"],
+            "tags": skill.get("tags", []),
+            "quality_score": skill.get("quality_score"),
+            "maintenance_status": skill.get("maintenance_status"),
+            "days_since_update": skill.get("days_since_update"),
+            "skill_type": skill.get("skill_type", "full"),
+            "has_scripts": skill.get("has_scripts", False),
+            "has_references": skill.get("has_references", False),
+            "has_assets": skill.get("has_assets", False),
+            "source": {
+                "repo": skill["source"]["repo"],
+                "skill_md_url": skill["source"]["skill_md_url"],
+            },
+        }
+        min_catalog["skills"].append(min_skill)
     with open(catalog_min_json, "w") as f:
-        json.dump(catalog, f, separators=(",", ":"))
+        json.dump(min_catalog, f, separators=(",", ":"))
     print(f"✓ Written: {catalog_min_json}")
-    
-    # Write TOON format (Token-Oriented Object Notation)
-    write_toon_output(catalog, output_dir, catalog_json, catalog_min_json)
     
     # Generate ecosystem-specific exports
     generate_ecosystem_exports(catalog, output_dir)

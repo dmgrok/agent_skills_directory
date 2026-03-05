@@ -15,7 +15,7 @@ This repository aggregates agent skills from **41 provider repositories** (Anthr
 1. **`scripts/aggregate.py`** - Main aggregation script (425 lines)
    - Fetches skills from GitHub API using tree endpoints
    - Parses `SKILL.md` files with YAML frontmatter
-   - Generates 4 output formats: `catalog.json`, `catalog.min.json`, `catalog.toon`, `catalog.min.toon`
+   - Generates 2 output formats: `catalog.json`, `catalog.min.json`
    - Auto-updates `CHANGELOG.md` with version metadata
    - Uses `GITHUB_TOKEN` env var to avoid rate limits
 
@@ -96,9 +96,9 @@ This repository aggregates agent skills from **41 provider repositories** (Anthr
 
 ### Running Aggregation Locally
 ```bash
-# Required: PyYAML, optional: toon_format (for TOON encoding), python-dotenv (for .env support), pytest
+# Required: PyYAML, optional: python-dotenv (for .env support), pytest
 python -m venv .venv && . .venv/bin/activate
-pip install pyyaml toon_format python-dotenv pytest
+pip install pyyaml python-dotenv pytest
 
 # Optional: Create .env file with GitHub token to avoid rate limits
 echo "GITHUB_TOKEN=your_token_here" > .env
@@ -109,7 +109,7 @@ python scripts/aggregate.py
 # Run incremental aggregation (only fetches changed providers - saves API requests)
 python scripts/aggregate.py --incremental
 
-# Outputs: catalog.json, catalog.min.json, catalog.toon, catalog.min.toon, 
+# Outputs: catalog.json, catalog.min.json, 
 #          CHANGELOG.md updated, aggregation_state.json (for incremental mode)
 ```
 
@@ -140,9 +140,6 @@ State file structure:
 pytest  # Runs tests/test_aggregate.py
 ```
 
-### TOON Format Fallback Strategy
-The script tries Python `toon_format.encode()` first, then falls back to `npx @toon-format/cli` if unavailable or fails. Both `catalog.toon` (from full JSON) and `catalog.min.toon` (from minified JSON) are generated.
-
 ### Changelog Generation
 `update_changelog()` function (starting around line 335) automatically:
 - Inserts new version entry after `## [Unreleased]` section
@@ -169,7 +166,7 @@ The script tries Python `toon_format.encode()` first, then falls back to `npx @t
 - **Full refresh option**: workflow_dispatch supports `full_refresh: true` for manual full runs
 - **Commit strategy**: Only commits if `catalog.json` changes
 - **Release strategy**: Creates GitHub release with `vYYYY.MM.DD` tag on changes
-- **Files committed**: `catalog.json`, `catalog.min.json`, `catalog.toon`, `catalog.min.toon`, `CHANGELOG.md`, `aggregation_state.json`
+- **Files committed**: `catalog.json`, `catalog.min.json`, `CHANGELOG.md`, `aggregation_state.json`
 - **Git user**: `github-actions[bot]` (NOT dmgrok) for automated commits
 
 ### CDN Delivery
@@ -207,7 +204,7 @@ Edit `CATEGORY_KEYWORDS` dict or `categorize_skill()` function (line 195).
 - ❌ Don't hardcode skill data - always fetch from source repos
 - ❌ Don't skip CHANGELOG updates - `update_changelog()` must be called in `main()`
 - ❌ Don't commit without testing schema validation
-- ❌ Don't modify GitHub Actions workflow without updating commit file list (currently: catalog.json, catalog.min.json, catalog.toon, catalog.min.toon, CHANGELOG.md, aggregation_state.json, exports/, docs/exports/)
+- ❌ Don't modify GitHub Actions workflow without updating commit file list (currently: catalog.json, catalog.min.json, CHANGELOG.md, aggregation_state.json, exports/, docs/exports/)
 - ❌ Don't use `dmgrok` as git user in automated workflows - use `github-actions[bot]` instead
 - ❌ **Don't add new features without updating the docs site** - always update `docs/index.html`, `docs/app.js`, and `docs/style.css` when adding user-facing features
 
