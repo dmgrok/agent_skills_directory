@@ -1,0 +1,186 @@
+name: Validate Skill
+
+# Reusable workflow that skill authors can reference in their repos
+# Usage in your repo's .github/workflows/validate.yml:
+#
+#   name: Validate Skill
+#   on: [push, pull_request]
+#   jobs:
+#     validate:
+#       uses: dmgrok/agent_skills_directory/.github/workflows/validate-skill.yml@main
+#       with:
+#         skill-path: '.'
+#
+# Or use it as a standalone action in your workflow:
+#
+#   - uses: dmgrok/agent_skills_directory/.github/actions/validate-skill@main
+#     with:
+#       skill-path: '.'
+
+on:
+  workflow_call:
+    inputs:
+      skill-path:
+        description: 'Path to the skill directory (default: root)'
+        required: false
+        default: '.'
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: Validate SKILL.md
+    
+    steps:
+      - name: Checkout skill repo
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install pyyaml
+      
+      - name: Validate SKILL.md
+        run: |
+          python3 << 'VALIDATE_SCRIPT'
+          import yaml
+          import re
+          import sys
+          import os
+          from pathlib import Path
+
+          skill_path = Path("${{ inputs.skill-path }}")
+          errors = []
+          warnings = []
+
+          # Find SKILL.md files
+          skill_files = list(skill_path.rglob("SKILL.md"))
+          if not skill_files:
+              errors.append("❌ No SKILL.md file found")
+              print("\n".join(errors))
+              sys.exit(1)
+
+          print(f"Found {len(skill_files)} SKILL.md file(s)")
+          
+          for skill_file in skill_files:
+              print(f"\n📄 Validating: {skill_file}")
+              content = skill_file.read_text(encoding="utf-8")
+              
+              # Check frontmatter
+              match = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)$", content, re.DOTALL)
+              if not match:
+                  errors.append(f"  ❌ {skill_file}: Missing YAML frontmatter (---)")
+                  continue
+              
+              try:
+                  frontmatter = yaml.safe_load(match.group(1))
+              except yaml.YAMLError as e:
+                  errors.append(f"  ❌ {skill_file}: Invalid YAML: {e}")
+                  continue
+              
+              body = match.group(2)
+              
+              # Required fields
+              if not frontmatter:
+                  errors.append(f"  ❌ {skill_file}: Empty frontmatter")
+                  continue
+              
+              if "name" not in frontmatter:
+                  errors.append(f"  ❌ {skill_file}: Missing required 'name' field")
+              else:
+                  name = frontmatter["name"]
+                  if not re.match(r"^[a-z0-9-]+$", name):
+                      errors.append(f"  ❌ {skill_file}: Name must be lowercase alphanumeric with hyphens: '{name}'")
+                  if len(name) > 64:
+                      errors.append(f"  ❌ {skill_file}: Name too long (max 64 chars): '{name}'")
+                  print(f"  ✓ name: {name}")
+              
+              if "description" not in frontmatter:
+                  errors.append(f"  ❌ {skill_file}: Missing required 'description' field")
+              else:
+                  desc = frontmatter["description"]
+                  if len(desc) > 1024:
+                      errors.append(f"  ❌ {skill_file}: Description too long (max 1024 chars)")
+                  if len(desc) < 10:
+                      warnings.append(f"  ⚠ {skill_file}: Description is very short ({len(desc)} chars)")
+                  print(f"  ✓ description: {desc[:80]}{'...' if len(desc) > 80 else ''}")
+              
+              # Optional but recommended fields
+              for field in ["category", "tags", "version"]:
+                  if field in frontmatter:
+                      print(f"  ✓ {field}: {frontmatter[field]}")
+                  else:
+                      warnings.append(f"  ⚠ {skill_file}: Missing recommended '{field}' field")
+              
+              # Check body content
+              if len(body.strip()) < 50:
+                  warnings.append(f"  ⚠ {skill_file}: Body content is very short ({len(body.strip())} chars)")
+              else:
+                  print(f"  ✓ body: {len(body.strip())} chars")
+              
+              # Check for scripts/references/assets directories
+              skill_dir = skill_file.parent
+              has_scripts = (skill_dir / "scripts").is_dir()
+              has_references = (skill_dir / "references").is_dir() or (skill_dir / "reference").is_dir()
+              has_assets = (skill_dir / "assets").is_dir() or (skill_dir / "templates").is_dir()
+              
+              if has_scripts: print("  ✓ scripts/ directory found")
+              if has_references: print("  ✓ references/ directory found")
+              if has_assets: print("  ✓ assets/ directory found")
+              
+              # Security checks
+              secret_patterns = [
+                  r'(?:api[_-]?key|secret|token|password)\s*[:=]\s*["\'][^"\']{8,}',
+                  r'ghp_[a-zA-Z0-9]{36}',
+                  r'sk-[a-zA-Z0-9]{32,}',
+                  r'AKIA[0-9A-Z]{16}',
+              ]
+              for pattern in secret_patterns:
+                  if re.search(pattern, content, re.IGNORECASE):
+                      errors.append(f"  ❌ {skill_file}: Possible secret/credential detected (pattern: {pattern[:30]}...)")
+              
+              print(f"  ✓ No secrets detected")
+
+          # Summary
+          print(f"\n{'='*50}")
+          print(f"Validation Summary")
+          print(f"{'='*50}")
+          
+          if warnings:
+              print(f"\n⚠ {len(warnings)} warning(s):")
+              for w in warnings:
+                  print(w)
+          
+          if errors:
+              print(f"\n❌ {len(errors)} error(s):")
+              for e in errors:
+                  print(e)
+              print(f"\n❌ Validation FAILED")
+              sys.exit(1)
+          else:
+              print(f"\n✅ All checks passed!")
+          
+          VALIDATE_SCRIPT
+      
+      - name: Generate badge data
+        if: success()
+        run: |
+          echo "## ✅ Skill Validation Passed" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Your skill meets the [Agent Skills Directory](https://github.com/dmgrok/agent_skills_directory) standards." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Add a badge to your README:" >> $GITHUB_STEP_SUMMARY
+          echo '```markdown' >> $GITHUB_STEP_SUMMARY
+          echo '[![Listed on Agent Skills Directory](https://img.shields.io/badge/Listed_on-Agent_Skills_Directory-6366f1?style=flat)](https://dmgrok.github.io/agent_skills_directory/)' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Submit to the directory:" >> $GITHUB_STEP_SUMMARY
+          echo '```bash' >> $GITHUB_STEP_SUMMARY
+          echo 'skillsdir publish --submit' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY

@@ -29,6 +29,7 @@ const SEARCH_CACHE_MAX_SIZE = 50;
 const searchInput = document.getElementById('search');
 const providerFilter = document.getElementById('provider-filter');
 const categoryFilter = document.getElementById('category-filter');
+const skillTypeFilter = document.getElementById('skill-type-filter');
 const skillsGrid = document.getElementById('skills-grid');
 const modal = document.getElementById('skill-modal');
 const modalBody = document.getElementById('modal-body');
@@ -54,6 +55,7 @@ function getQueryParams() {
         provider: params.get('provider'),
         category: params.get('category'),
         search: params.get('search') || params.get('q'),
+        type: params.get('type'),
         tags: params.get('tags')?.split(',').map(t => t.trim().toLowerCase()) || []
     };
 }
@@ -70,6 +72,9 @@ function applyQueryParams() {
     }
     if (params.category && categoryFilter.querySelector(`option[value="${params.category}"]`)) {
         categoryFilter.value = params.category;
+    }
+    if (params.type !== null && params.type !== undefined) {
+        skillTypeFilter.value = params.type;
     }
     
     // If id param, show that skill's modal directly
@@ -90,6 +95,7 @@ function updateURLParams() {
     if (searchInput.value) params.set('search', searchInput.value);
     if (providerFilter.value) params.set('provider', providerFilter.value);
     if (categoryFilter.value) params.set('category', categoryFilter.value);
+    if (skillTypeFilter.value && skillTypeFilter.value !== 'full') params.set('type', skillTypeFilter.value);
     
     const newURL = params.toString() 
         ? `${window.location.pathname}?${params.toString()}`
@@ -213,7 +219,8 @@ function buildSearchIndex() {
             searchText,
             tagsLower: (skill.tags || []).map(t => t.toLowerCase()),
             provider: skill.provider,
-            category: skill.category
+            category: skill.category,
+            skill_type: skill.skill_type || 'full'
         };
     });
     
@@ -222,18 +229,19 @@ function buildSearchIndex() {
 }
 
 // Get cache key for current filter state
-function getSearchCacheKey(searchTerm, provider, category, urlTags) {
-    return `${searchTerm}|${provider}|${category}|${urlTags.join(',')}`;
+function getSearchCacheKey(searchTerm, provider, category, urlTags, skillType) {
+    return `${searchTerm}|${provider}|${category}|${urlTags.join(',')}|${skillType}`;
 }
 
 function filterSkills() {
     const searchTerm = searchInput.value.toLowerCase().trim();
     const provider = providerFilter.value;
     const category = categoryFilter.value;
+    const skillType = skillTypeFilter.value;
     const urlTags = getQueryParams().tags;
     
     // Check cache first
-    const cacheKey = getSearchCacheKey(searchTerm, provider, category, urlTags);
+    const cacheKey = getSearchCacheKey(searchTerm, provider, category, urlTags, skillType);
     if (searchCache.has(cacheKey)) {
         filteredSkills = searchCache.get(cacheKey);
         filteredCountEl.textContent = filteredSkills.length;
@@ -248,10 +256,14 @@ function filterSkills() {
     const hasSearch = searchTerm.length > 0;
     const hasProvider = provider.length > 0;
     const hasCategory = category.length > 0;
+    const hasSkillType = skillType.length > 0;
     const hasUrlTags = urlTags.length > 0;
     
     for (let i = 0; i < searchIndex.length; i++) {
         const entry = searchIndex[i];
+        
+        // Skill type filter (fastest - direct comparison)
+        if (hasSkillType && entry.skill_type !== skillType) continue;
         
         // Provider filter (fastest - direct comparison)
         if (hasProvider && entry.provider !== provider) continue;
@@ -357,6 +369,12 @@ function renderSkills(skills) {
             qualityBadge = `<span class="quality-badge ${scoreClass}" title="Quality score: ${skill.quality_score}/100">⭐ ${skill.quality_score}</span>`;
         }
 
+        // Skill type badge (only show for integration stubs)
+        let skillTypeBadge = '';
+        if (skill.skill_type === 'integration') {
+            skillTypeBadge = `<span class="skill-type-badge skill-type-integration" title="Integration stub — lightweight wrapper">🔌 Integration</span>`;
+        }
+
         return `
         <article class="skill-card ${skill.duplicate_status ? 'skill-card-duplicate' : ''}" data-skill-id="${skill.id}">
             <div class="skill-header">
@@ -366,6 +384,7 @@ function renderSkills(skills) {
                     ${starsHtml}
                     ${qualityBadge}
                     ${maintenanceBadge}
+                    ${skillTypeBadge}
                     ${duplicateBadge}
                 </div>
             </div>
@@ -540,6 +559,11 @@ function showSkillModal(skill) {
         }
     }
     
+    // Skill type badge for modal
+    const skillTypeLabel = skill.skill_type === 'integration'
+        ? `<span class="skill-type-badge skill-type-integration">🔌 Integration Stub</span>`
+        : `<span class="skill-type-badge skill-type-full">✅ Full Skill</span>`;
+
     modalBody.innerHTML = `
         <div class="modal-header">
             <h2>${escapeHtml(skill.name)}</h2>
@@ -547,6 +571,7 @@ function showSkillModal(skill) {
                 <span class="skill-provider ${skill.provider}">${skill.provider}</span>
                 ${starsHtml}
                 <span class="skill-category">📁 ${skill.category}</span>
+                ${skillTypeLabel}
             </div>
         </div>
 
@@ -724,6 +749,7 @@ function escapeHtml(text) {
 searchInput.addEventListener('input', debounce(filterSkills, 200));
 providerFilter.addEventListener('change', filterSkills);
 categoryFilter.addEventListener('change', filterSkills);
+skillTypeFilter.addEventListener('change', filterSkills);
 
 document.querySelector('.modal-close').addEventListener('click', closeModal);
 modal.addEventListener('click', (e) => {
@@ -1069,3 +1095,68 @@ window.toggleAccordion = toggleAccordion;
 
 // Start
 init();
+
+// ===== EXPORTS & BADGES FUNCTIONALITY =====
+
+// Load exports index for counts
+async function loadExportsIndex() {
+    const EXPORTS_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        ? './exports/index.json'
+        : 'https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/index.json';
+    
+    try {
+        const response = await fetch(EXPORTS_URL, { cache: 'no-cache' });
+        if (!response.ok) return;
+        const data = await response.json();
+        
+        // Update export counts in the UI
+        const exports = data.exports || {};
+        const countMap = {
+            'export-claude-count': exports['claude-skills.json']?.total,
+            'export-copilot-count': exports['copilot-skills.json']?.total,
+            'export-mcp-count': exports['mcp-compatible.json']?.total,
+            'export-premium-count': exports['premium-skills.json']?.total,
+            'export-active-count': exports['active-skills.json']?.total,
+        };
+        
+        for (const [id, count] of Object.entries(countMap)) {
+            const el = document.getElementById(id);
+            if (el && count !== undefined) {
+                el.textContent = count + ' skills';
+            }
+        }
+    } catch (e) {
+        console.log('Exports index not available yet:', e.message);
+    }
+}
+
+// Generate quality score badge
+function generateQualityBadge() {
+    const score = parseInt(document.getElementById('badge-score-input')?.value || '80');
+    const clampedScore = Math.max(0, Math.min(100, score));
+    
+    let color;
+    if (clampedScore >= 80) color = '22c55e';
+    else if (clampedScore >= 60) color = '3b82f6';
+    else if (clampedScore >= 40) color = 'f59e0b';
+    else color = 'ef4444';
+    
+    const badgeUrl = `https://img.shields.io/badge/quality_score-${clampedScore}%2F100-${color}?style=flat`;
+    const markdown = `[![Quality Score](${badgeUrl})](https://dmgrok.github.io/agent_skills_directory/)`;
+    
+    const outputEl = document.getElementById('badge-output');
+    const previewEl = document.getElementById('badge-output-preview');
+    const codeEl = document.getElementById('badge-output-code');
+    
+    if (outputEl && previewEl && codeEl) {
+        outputEl.style.display = 'block';
+        previewEl.innerHTML = `<img src="${badgeUrl}" alt="Quality Score ${clampedScore}" loading="lazy">`;
+        codeEl.textContent = markdown;
+    }
+}
+
+// Make generateQualityBadge available globally
+window.generateQualityBadge = generateQualityBadge;
+
+// Load exports data after main init
+loadExportsIndex();

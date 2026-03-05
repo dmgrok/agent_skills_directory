@@ -106,7 +106,7 @@
         "category": {
           "type": "string",
           "description": "Skill category",
-          "enum": ["documents", "development", "creative", "enterprise", "integrations", "data", "other"]
+          "enum": ["documents", "development", "creative", "enterprise", "integrations", "data", "security", "cloud", "mobile", "ml-ai", "testing", "devops", "web", "other"]
         },
         "license": {
           "type": ["string", "null"],
@@ -165,6 +165,11 @@
           "minimum": 0,
           "maximum": 100,
           "description": "Composite quality score (0-100) based on maintenance (50pts), documentation (30pts), and provider trust (20pts)"
+        },
+        "skill_type": {
+          "type": "string",
+          "enum": ["full", "integration"],
+          "description": "Skill classification: 'full' for complete skills with documentation, 'integration' for lightweight stubs/wrappers"
         }
       }
     },

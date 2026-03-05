@@ -28,7 +28,7 @@ def test_extract_tags_includes_keywords_and_name_words():
     tags = aggregate.extract_tags("PDF Converter", "Convert PDF to text")
     assert "pdf" in tags
     assert "convert" in tags
-    assert "Converter" in tags
+    assert "converter" in tags
 
 
 def test_write_toon_output_uses_python_encoder(tmp_path, monkeypatch):

@@ -521,6 +521,27 @@ main {
     white-space: nowrap;
 }
 
+/* Skill type badges */
+.skill-type-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.skill-type-full {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.skill-type-integration {
+    background: rgba(168, 85, 247, 0.15);
+    color: #a855f7;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
 .quality-excellent {
     background: rgba(34, 197, 94, 0.15);
     color: #22c55e;
@@ -2536,5 +2557,191 @@ footer a:hover {
     
     .accordion-item.active .accordion-content {
         padding: 0 1rem 1rem 1rem;
+    }
+}
+
+/* ===== EXPORTS & BADGES STYLES ===== */
+
+.exports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.export-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.2s;
+}
+
+.export-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.export-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.export-icon {
+    font-size: 1.75rem;
+}
+
+.export-header h3 {
+    flex: 1;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.export-count {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--primary);
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.export-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.export-card .code-block-wrapper pre {
+    font-size: 0.75rem;
+    word-break: break-all;
+}
+
+/* Badge Sections */
+.badge-section {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.badge-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.badge-section p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.badge-preview {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--bg-card);
+    border-radius: 8px;
+}
+
+.badge-preview img {
+    height: 20px;
+}
+
+.badge-generator {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.badge-generator label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.badge-input {
+    width: 80px;
+    padding: 0.5rem 0.75rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.badge-input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.badge-output {
+    margin-top: 1rem;
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* Distribution Grid */
+.distribution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.distribution-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.2s;
+}
+
+.distribution-card:hover {
+    border-color: var(--primary);
+}
+
+.distribution-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.distribution-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.distribution-card code {
+    display: block;
+    background: var(--bg-card);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: var(--primary);
+    word-break: break-all;
+}
+
+@media (max-width: 480px) {
+    .exports-grid,
+    .distribution-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .badge-generator {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

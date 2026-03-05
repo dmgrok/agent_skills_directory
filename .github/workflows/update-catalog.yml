@@ -66,13 +66,15 @@ jobs:
         if: steps.changes.outputs.changed == 'true'
         run: |
           cp catalog.json catalog.min.json bundles.json docs/
+          mkdir -p docs/exports
+          cp -r exports/* docs/exports/ 2>/dev/null || true
       
       - name: Commit changes
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add catalog.json catalog.min.json catalog.toon catalog.min.toon CHANGELOG.md aggregation_state.json docs/catalog.json docs/catalog.min.json docs/bundles.json
+          git add catalog.json catalog.min.json catalog.toon catalog.min.toon CHANGELOG.md aggregation_state.json docs/catalog.json docs/catalog.min.json docs/bundles.json exports/ docs/exports/
           git commit -m "Update catalog - ${{ steps.date.outputs.date }}"
           git push
       
@@ -108,6 +110,12 @@ jobs:
           files: |
             catalog.json
             catalog.min.json
+            exports/claude-skills.json
+            exports/copilot-skills.json
+            exports/mcp-compatible.json
+            exports/premium-skills.json
+            exports/active-skills.json
+            exports/index.json
           draft: false
           prerelease: false
         env:

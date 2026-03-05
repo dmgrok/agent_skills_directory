@@ -238,21 +238,21 @@ PROVIDERS = {
         "repo": "https://github.com/trailofbits/skills",
         "api_tree_url": "https://api.github.com/repos/trailofbits/skills/git/trees/main?recursive=1",
         "raw_base": "https://raw.githubusercontent.com/trailofbits/skills/main",
-        "skills_path_prefix": "skills/",
+        "skills_path_prefix": "plugins/",
     },
     "expo": {
         "name": "Expo",
         "repo": "https://github.com/expo/skills",
         "api_tree_url": "https://api.github.com/repos/expo/skills/git/trees/main?recursive=1",
         "raw_base": "https://raw.githubusercontent.com/expo/skills/main",
-        "skills_path_prefix": "skills/",
+        "skills_path_prefix": "plugins/",
     },
     "getsentry": {
         "name": "Sentry",
         "repo": "https://github.com/getsentry/skills",
         "api_tree_url": "https://api.github.com/repos/getsentry/skills/git/trees/main?recursive=1",
         "raw_base": "https://raw.githubusercontent.com/getsentry/skills/main",
-        "skills_path_prefix": "skills/",
+        "skills_path_prefix": "",
     },
     "supabase": {
         "name": "Supabase",
@@ -280,7 +280,7 @@ PROVIDERS = {
         "repo": "https://github.com/better-auth/skills",
         "api_tree_url": "https://api.github.com/repos/better-auth/skills/git/trees/main?recursive=1",
         "raw_base": "https://raw.githubusercontent.com/better-auth/skills/main",
-        "skills_path_prefix": "skills/",
+        "skills_path_prefix": "better-auth/",
     },
     "tinybird": {
         "name": "Tinybird",
@@ -315,29 +315,11 @@ PROVIDERS = {
         "repo": "https://github.com/alirezarezvani/claude-skills",
         "api_tree_url": "https://api.github.com/repos/alirezarezvani/claude-skills/git/trees/main?recursive=1",
         "raw_base": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/main",
-        "skills_path_prefix": "skills/",
-    },
-    "voltagent": {
-        "name": "VoltAgent Catalog",
-        "repo": "https://github.com/VoltAgent/awesome-agent-skills",
-        "api_tree_url": "https://api.github.com/repos/VoltAgent/awesome-agent-skills/git/trees/main?recursive=1",
-        "raw_base": "https://raw.githubusercontent.com/VoltAgent/awesome-agent-skills/main",
         "skills_path_prefix": "",
     },
-    "heilcheng": {
-        "name": "heilcheng Catalog",
-        "repo": "https://github.com/heilcheng/awesome-agent-skills",
-        "api_tree_url": "https://api.github.com/repos/heilcheng/awesome-agent-skills/git/trees/main?recursive=1",
-        "raw_base": "https://raw.githubusercontent.com/heilcheng/awesome-agent-skills/main",
-        "skills_path_prefix": "",
-    },
-    "travisvn": {
-        "name": "travisvn Collection",
-        "repo": "https://github.com/travisvn/awesome-claude-skills",
-        "api_tree_url": "https://api.github.com/repos/travisvn/awesome-claude-skills/git/trees/main?recursive=1",
-        "raw_base": "https://raw.githubusercontent.com/travisvn/awesome-claude-skills/main",
-        "skills_path_prefix": "",
-    },
+    # voltagent removed: awesome-list repo with no SKILL.md files
+    # heilcheng removed: awesome-list repo with no SKILL.md files
+    # travisvn removed: awesome-list repo with no SKILL.md files
     # New community providers from GitHub search
     "obsidian-plugin": {
         "name": "Obsidian Plugin Development",
@@ -367,13 +349,7 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/tomkrikorian/visionOSAgents/main",
         "skills_path_prefix": "skills/",
     },
-    "skills-to-agents": {
-        "name": "Skills to Agents Converter",
-        "repo": "https://github.com/dave1010/skills-to-agents",
-        "api_tree_url": "https://api.github.com/repos/dave1010/skills-to-agents/git/trees/main?recursive=1",
-        "raw_base": "https://raw.githubusercontent.com/dave1010/skills-to-agents/main",
-        "skills_path_prefix": "",
-    },
+    # skills-to-agents removed: JS tool, not a skills repo
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -399,12 +375,19 @@ PROVIDER_PRIORITY = {
 
 # Category mappings based on keywords in name/description
 CATEGORY_KEYWORDS = {
-    "documents": ["pdf", "docx", "xlsx", "pptx", "document", "spreadsheet", "presentation"],
-    "development": ["git", "gh-", "code", "test", "ci", "debug", "lint", "review", "mcp"],
-    "creative": ["art", "design", "canvas", "music", "brand", "visual", "image"],
-    "enterprise": ["communication", "meeting", "email", "slack", "notion", "knowledge"],
-    "integrations": ["notion", "github", "slack", "api"],
-    "data": ["data", "analysis", "extract", "transform", "csv", "json"],
+    "documents": ["pdf", "docx", "xlsx", "pptx", "document", "spreadsheet", "presentation", "epub", "markdown", "md"],
+    "development": ["git", "gh-", "code", "test", "ci", "debug", "lint", "review", "mcp", "refactor", "build", "compile"],
+    "creative": ["art", "design", "canvas", "music", "brand", "visual", "image", "video", "animation", "svg", "d3"],
+    "enterprise": ["communication", "meeting", "email", "slack", "notion", "knowledge", "crm", "erp"],
+    "integrations": ["notion", "github", "slack", "api", "webhook", "oauth", "plugin", "extension"],
+    "data": ["data", "analysis", "extract", "transform", "csv", "json", "database", "sql", "analytics", "pipeline"],
+    "security": ["security", "auth", "encrypt", "vulnerability", "pentest", "fuzzing", "scan", "secret", "ssl", "tls"],
+    "cloud": ["aws", "gcp", "azure", "cloud", "docker", "kubernetes", "k8s", "terraform", "serverless", "lambda"],
+    "mobile": ["ios", "android", "react-native", "flutter", "mobile", "swift", "kotlin", "expo", "visionos"],
+    "ml-ai": ["ml", "ai", "model", "llm", "embedding", "neural", "training", "inference", "huggingface", "openai"],
+    "testing": ["test", "spec", "jest", "pytest", "playwright", "cypress", "e2e", "unit-test", "coverage", "pict"],
+    "devops": ["deploy", "ci-cd", "pipeline", "monitor", "log", "infrastructure", "helm", "ansible"],
+    "web": ["web", "html", "css", "react", "nextjs", "next-js", "vue", "svelte", "browser", "frontend", "scrape"],
 }
 
 # State file for incremental aggregation
@@ -447,6 +430,7 @@ class Skill:
     days_since_update: Optional[int] = field(default=None)  # Days since last commit
     maintenance_status: Optional[str] = field(default=None)  # "active", "maintained", "stale", "abandoned"
     quality_score: Optional[int] = field(default=None)  # Composite quality score 0-100
+    skill_type: str = field(default="full")  # "full" or "integration" (stub/lightweight)
 
 
 def calculate_quality_score(
@@ -765,11 +749,12 @@ def extract_tags(name: str, description: str) -> list:
         if kw in text:
             tags.append(kw)
     
-    # Add words from name
+    # Add words from name (normalized to lowercase)
     name_words = name.replace("-", " ").split()
     for word in name_words:
-        if word not in tags and len(word) > 2:
-            tags.append(word)
+        word_lower = word.lower()
+        if word_lower not in tags and len(word_lower) > 2:
+            tags.append(word_lower)
     
     return tags[:10]  # Limit to 10 tags
 
@@ -833,6 +818,43 @@ def fetch_last_updated_at(owner: str, repo: str, file_path: str) -> Optional[str
         committer = commit.get("committer", {}) or {}
         return author.get("date") or committer.get("date")
     return None
+
+
+def classify_skill_type(
+    provider: str,
+    has_scripts: bool,
+    has_references: bool,
+    has_assets: bool,
+    body: str,
+) -> str:
+    """
+    Classify a skill as 'full' or 'integration' (lightweight stub).
+    
+    Integration stubs are typically auto-generated, thin wrappers with
+    minimal documentation and no scripts/references/assets.
+    
+    Heuristics:
+    - Provider-level: known stub-heavy providers (composiohq)
+    - Content-level: very short body + no scripts/references/assets
+    """
+    # Known integration-stub providers
+    INTEGRATION_PROVIDERS = {"composiohq"}
+    
+    if provider in INTEGRATION_PROVIDERS:
+        # ComposioHQ skills with real content are still 'full'
+        if has_scripts or has_references or has_assets:
+            return "full"
+        return "integration"
+    
+    # For other providers, classify by content richness
+    body_length = len(body.strip()) if body else 0
+    has_resources = has_scripts or has_references or has_assets
+    
+    # Very short body with no resources = likely a stub
+    if body_length < 200 and not has_resources:
+        return "integration"
+    
+    return "full"
 
 
 def categorize_skill(name: str, description: str) -> str:
@@ -925,6 +947,15 @@ def fetch_provider_skills(provider_id: str, config: dict) -> list:
             provider_id
         )
         
+        # Classify skill type
+        skill_type = classify_skill_type(
+            provider_id,
+            has_scripts,
+            has_references,
+            has_assets,
+            parsed["body"]
+        )
+        
         skill = Skill(
             id=f"{provider_id}/{name}",
             name=name,
@@ -948,7 +979,8 @@ def fetch_provider_skills(provider_id: str, config: dict) -> list:
             body=parsed["body"],  # Store body for dedup comparison
             days_since_update=days_since_update,
             maintenance_status=maintenance_status,
-            quality_score=quality_score
+            quality_score=quality_score,
+            skill_type=skill_type
         )
         
         skills.append(skill)
@@ -1033,13 +1065,19 @@ def build_catalog() -> dict:
     # Get unique categories
     categories = sorted(set(s.category for s in all_skills))
     
-    # Calculate maintenance statistics
+    # Calculate maintenance statistics (count all skills, including those with None status)
     maintenance_stats = {
         "active": len([s for s in all_skills if s.maintenance_status == "active"]),
         "maintained": len([s for s in all_skills if s.maintenance_status == "maintained"]),
         "stale": len([s for s in all_skills if s.maintenance_status == "stale"]),
         "abandoned": len([s for s in all_skills if s.maintenance_status == "abandoned"]),
         "unknown": len([s for s in all_skills if s.maintenance_status is None])
+    }
+    
+    # Skill type summary
+    skill_type_stats = {
+        "full": len([s for s in all_skills if s.skill_type == "full"]),
+        "integration": len([s for s in all_skills if s.skill_type == "integration"]),
     }
     
     # Calculate percentages
@@ -1066,7 +1104,8 @@ def build_catalog() -> dict:
             "mirrors": len([r for r in duplicate_metadata if r["status"] == "mirror"]),
             "probable_duplicates": len([r for r in duplicate_metadata if r["status"] == "probable_duplicate"])
         },
-        "maintenance_summary": maintenance_stats
+        "maintenance_summary": maintenance_stats,
+        "skill_type_summary": skill_type_stats
     }
     
     # Convert skills to dicts
@@ -1141,6 +1180,176 @@ def check_provider_changed(provider_id: str, provider_config: dict, last_commit:
         return True  # Can't determine, be safe and fetch
     
     return current_commit != last_commit
+
+
+def generate_ecosystem_exports(catalog: dict, output_dir: Path) -> None:
+    """Generate ecosystem-specific filtered exports for Claude, Copilot, MCP, and badges."""
+    exports_dir = output_dir / "exports"
+    exports_dir.mkdir(exist_ok=True)
+    
+    skills = catalog["skills"]
+    now = catalog["generated_at"]
+    version = catalog["version"]
+    total = catalog["total_skills"]
+    providers_count = len(catalog["providers"])
+    
+    def make_export(name: str, description: str, filter_fn, ecosystem: str = "") -> dict:
+        filtered = [s for s in skills if filter_fn(s)]
+        export = {
+            "name": name,
+            "description": description,
+            "version": version,
+            "generated_at": now,
+            "source": "https://github.com/dmgrok/agent_skills_directory",
+            "catalog_url": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json",
+            "website": "https://dmgrok.github.io/agent_skills_directory/",
+            "total_skills": len(filtered),
+            "skills": filtered
+        }
+        if ecosystem:
+            export["ecosystem"] = ecosystem
+            export["install_command"] = f"skillsdir install <skill-id> --project --agent {ecosystem}"
+        return export
+    
+    # Claude-compatible skills: quality >= 50, full type preferred
+    claude_export = make_export(
+        "Claude Skills Export",
+        "High-quality skills compatible with Claude Code, filtered from Agent Skills Directory. "
+        "Install with: skillsdir install <skill-id> --project --agent claude",
+        lambda s: (s.get("quality_score") or 0) >= 50 and s.get("skill_type") == "full",
+        ecosystem="claude"
+    )
+    
+    # Copilot-compatible skills
+    copilot_export = make_export(
+        "Copilot Skills Export",
+        "High-quality skills compatible with GitHub Copilot, filtered from Agent Skills Directory. "
+        "Install with: skillsdir install <skill-id> --project --agent copilot",
+        lambda s: (s.get("quality_score") or 0) >= 50 and s.get("skill_type") == "full",
+        ecosystem="copilot"
+    )
+    
+    # MCP-compatible skills: tagged with 'mcp'
+    mcp_export = make_export(
+        "MCP-Compatible Skills",
+        "Skills with MCP integration support, filtered from Agent Skills Directory",
+        lambda s: "mcp" in (s.get("tags") or []) and s.get("skill_type") == "full",
+        ecosystem="mcp"
+    )
+    
+    # High-quality only (score >= 70)
+    premium_export = make_export(
+        "Premium Skills",
+        "Top-quality skills (score >= 70) from Agent Skills Directory",
+        lambda s: (s.get("quality_score") or 0) >= 70
+    )
+    
+    # Active skills only (maintained within 6 months)
+    active_export = make_export(
+        "Active Skills",
+        "Recently maintained skills from Agent Skills Directory (updated within 6 months)",
+        lambda s: s.get("maintenance_status") in ("active", "maintained") and s.get("skill_type") == "full"
+    )
+    
+    exports = {
+        "claude-skills.json": claude_export,
+        "copilot-skills.json": copilot_export,
+        "mcp-compatible.json": mcp_export,
+        "premium-skills.json": premium_export,
+        "active-skills.json": active_export,
+    }
+    
+    for filename, data in exports.items():
+        filepath = exports_dir / filename
+        with open(filepath, "w") as f:
+            json.dump(data, f, indent=2)
+        print(f"✓ Export: {filepath} ({data['total_skills']} skills)")
+    
+    # Generate shields.io endpoint for dynamic badges
+    badge_data = {
+        "schemaVersion": 1,
+        "label": "skills",
+        "message": str(total),
+        "color": "6366f1",
+        "namedLogo": "data:image/svg+xml;base64,8J+ngQ==",
+        "style": "flat"
+    }
+    badge_providers = {
+        "schemaVersion": 1,
+        "label": "providers",
+        "message": str(providers_count),
+        "color": "22c55e",
+        "style": "flat"
+    }
+    
+    # Maintenance stats for badge
+    maint = catalog.get("maintenance_summary", {})
+    active_pct = maint.get("maintained_percentage", 0)
+    badge_quality = {
+        "schemaVersion": 1,
+        "label": "actively maintained",
+        "message": f"{active_pct}%",
+        "color": "22c55e" if active_pct >= 70 else "f59e0b" if active_pct >= 50 else "ef4444",
+        "style": "flat"
+    }
+    
+    badges = {
+        "badge-skills.json": badge_data,
+        "badge-providers.json": badge_providers,
+        "badge-quality.json": badge_quality,
+    }
+    
+    for filename, data in badges.items():
+        filepath = exports_dir / filename
+        with open(filepath, "w") as f:
+            json.dump(data, f)
+        print(f"✓ Badge: {filepath}")
+    
+    # Generate summary/index for exports directory
+    exports_index = {
+        "name": "Agent Skills Directory - Ecosystem Exports",
+        "version": version,
+        "generated_at": now,
+        "description": "Pre-filtered skill catalogs for different ecosystems and use cases",
+        "exports": {
+            "claude-skills.json": {
+                "description": "Skills for Claude Code",
+                "total": claude_export["total_skills"],
+                "cdn": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/claude-skills.json"
+            },
+            "copilot-skills.json": {
+                "description": "Skills for GitHub Copilot",
+                "total": copilot_export["total_skills"],
+                "cdn": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/copilot-skills.json"
+            },
+            "mcp-compatible.json": {
+                "description": "MCP-compatible skills",
+                "total": mcp_export["total_skills"],
+                "cdn": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/mcp-compatible.json"
+            },
+            "premium-skills.json": {
+                "description": "High-quality skills (score >= 70)",
+                "total": premium_export["total_skills"],
+                "cdn": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/premium-skills.json"
+            },
+            "active-skills.json": {
+                "description": "Recently maintained skills",
+                "total": active_export["total_skills"],
+                "cdn": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/active-skills.json"
+            }
+        },
+        "badges": {
+            "skills-count": "https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-skills.json",
+            "providers-count": "https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-providers.json",
+            "quality": "https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-quality.json",
+            "listed-badge": "https://img.shields.io/badge/Listed_on-Agent_Skills_Directory-6366f1?style=flat&logo=data:image/svg+xml;base64,8J+ngQ==",
+            "quality-score": "https://img.shields.io/badge/quality_score-{score}%2F100-{color}?style=flat"
+        }
+    }
+    
+    with open(exports_dir / "index.json", "w") as f:
+        json.dump(exports_index, f, indent=2)
+    print(f"✓ Exports index: {exports_dir / 'index.json'}")
 
 
 def write_toon_output(catalog: dict, output_dir: Path, catalog_json: Path, catalog_min_json: Path) -> None:
@@ -1312,6 +1521,9 @@ def main():
     
     # Write TOON format (Token-Oriented Object Notation)
     write_toon_output(catalog, output_dir, catalog_json, catalog_min_json)
+    
+    # Generate ecosystem-specific exports
+    generate_ecosystem_exports(catalog, output_dir)
     
     # Save state for next incremental run
     save_state(catalog, provider_commits)

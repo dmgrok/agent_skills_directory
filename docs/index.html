@@ -30,6 +30,7 @@
             <nav class="main-tabs">
                 <button class="main-tab active" data-tab="browse">🔍 Browse Skills</button>
                 <button class="main-tab" data-tab="bundles">📦 Skill Bundles</button>
+                <button class="main-tab" data-tab="exports">🌐 Exports & Badges</button>
                 <button class="main-tab" data-tab="cli">⚡ CLI</button>
                 <button class="main-tab" data-tab="what-are-skills">📚 What are Skills?</button>
                 <button class="main-tab" data-tab="how-to-use">🚀 How to Use</button>
@@ -58,6 +59,14 @@
                         <label>Category:</label>
                         <select id="category-filter">
                             <option value="">All Categories</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Type:</label>
+                        <select id="skill-type-filter">
+                            <option value="full">Full Skills</option>
+                            <option value="">All Types</option>
+                            <option value="integration">Integration Stubs</option>
                         </select>
                     </div>
                 </div>
@@ -131,6 +140,230 @@
 
                 <div id="bundles-grid" class="bundles-grid">
                     <div class="loading">Loading bundles...</div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Exports & Badges Tab -->
+        <div id="tab-exports" class="tab-panel">
+            <section class="info-section">
+                <h2>🌐 Ecosystem Exports</h2>
+                <p class="intro-text">
+                    Pre-filtered skill catalogs optimized for different AI ecosystems. 
+                    Use these endpoints directly in your tools, MCP servers, or integrations.
+                </p>
+
+                <div class="exports-grid">
+                    <div class="export-card">
+                        <div class="export-header">
+                            <span class="export-icon">🤖</span>
+                            <h3>Claude Skills</h3>
+                            <span id="export-claude-count" class="export-count">-</span>
+                        </div>
+                        <p>High-quality skills (score ≥ 50) compatible with Claude Code</p>
+                        <div class="code-block-wrapper">
+                            <pre><code>https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/claude-skills.json</code></pre>
+                            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy URL">
+                                <span class="copy-icon">📋</span>
+                                <span class="copy-text">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="export-card">
+                        <div class="export-header">
+                            <span class="export-icon">🐙</span>
+                            <h3>Copilot Skills</h3>
+                            <span id="export-copilot-count" class="export-count">-</span>
+                        </div>
+                        <p>High-quality skills (score ≥ 50) compatible with GitHub Copilot</p>
+                        <div class="code-block-wrapper">
+                            <pre><code>https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/copilot-skills.json</code></pre>
+                            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy URL">
+                                <span class="copy-icon">📋</span>
+                                <span class="copy-text">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="export-card">
+                        <div class="export-header">
+                            <span class="export-icon">🔗</span>
+                            <h3>MCP-Compatible</h3>
+                            <span id="export-mcp-count" class="export-count">-</span>
+                        </div>
+                        <p>Skills with MCP integration support</p>
+                        <div class="code-block-wrapper">
+                            <pre><code>https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/mcp-compatible.json</code></pre>
+                            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy URL">
+                                <span class="copy-icon">📋</span>
+                                <span class="copy-text">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="export-card">
+                        <div class="export-header">
+                            <span class="export-icon">⭐</span>
+                            <h3>Premium Skills</h3>
+                            <span id="export-premium-count" class="export-count">-</span>
+                        </div>
+                        <p>Top-quality skills with score ≥ 70</p>
+                        <div class="code-block-wrapper">
+                            <pre><code>https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/premium-skills.json</code></pre>
+                            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy URL">
+                                <span class="copy-icon">📋</span>
+                                <span class="copy-text">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="export-card">
+                        <div class="export-header">
+                            <span class="export-icon">🟢</span>
+                            <h3>Active Skills</h3>
+                            <span id="export-active-count" class="export-count">-</span>
+                        </div>
+                        <p>Recently maintained skills (updated within 6 months)</p>
+                        <div class="code-block-wrapper">
+                            <pre><code>https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/active-skills.json</code></pre>
+                            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy URL">
+                                <span class="copy-icon">📋</span>
+                                <span class="copy-text">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <h2>🏷️ Badges for Skill Authors</h2>
+                <p class="intro-text">
+                    Add these badges to your repository README to show your skill is listed in the Agent Skills Directory.
+                </p>
+
+                <div class="badge-section">
+                    <h3>📌 "Listed on" Badge</h3>
+                    <p>Show that your skill is part of the curated directory:</p>
+                    <div class="badge-preview">
+                        <img src="https://img.shields.io/badge/Listed_on-Agent_Skills_Directory-6366f1?style=flat" alt="Listed on Agent Skills Directory" loading="lazy">
+                    </div>
+                    <div class="code-block-wrapper">
+                        <pre><code>[![Listed on Agent Skills Directory](https://img.shields.io/badge/Listed_on-Agent_Skills_Directory-6366f1?style=flat)](https://dmgrok.github.io/agent_skills_directory/)</code></pre>
+                        <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy badge markdown">
+                            <span class="copy-icon">📋</span>
+                            <span class="copy-text">Copy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="badge-section">
+                    <h3>📊 Dynamic Catalog Badges</h3>
+                    <p>Live-updating badges powered by shields.io endpoints:</p>
+                    <div class="badge-preview">
+                        <img src="https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-skills.json" alt="Skills count" loading="lazy">
+                        <img src="https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-providers.json" alt="Providers count" loading="lazy">
+                        <img src="https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-quality.json" alt="Quality" loading="lazy">
+                    </div>
+                    <div class="code-block-wrapper">
+                        <pre><code>![Skills](https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-skills.json)
+![Providers](https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-providers.json)
+![Quality](https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-quality.json)</code></pre>
+                        <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy badge markdown">
+                            <span class="copy-icon">📋</span>
+                            <span class="copy-text">Copy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="badge-section">
+                    <h3>⭐ Quality Score Badge</h3>
+                    <p>Show your skill's quality score (replace <code>{score}</code> and <code>{color}</code>):</p>
+                    <div class="badge-preview">
+                        <img src="https://img.shields.io/badge/quality_score-85%2F100-22c55e?style=flat" alt="Quality Score 85" loading="lazy">
+                        <img src="https://img.shields.io/badge/quality_score-65%2F100-3b82f6?style=flat" alt="Quality Score 65" loading="lazy">
+                        <img src="https://img.shields.io/badge/quality_score-45%2F100-f59e0b?style=flat" alt="Quality Score 45" loading="lazy">
+                    </div>
+                    <div class="badge-generator">
+                        <label for="badge-score-input">Your quality score:</label>
+                        <input type="number" id="badge-score-input" min="0" max="100" value="80" class="badge-input">
+                        <button onclick="generateQualityBadge()" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Generate</button>
+                    </div>
+                    <div id="badge-output" class="badge-output" style="display:none;">
+                        <div class="badge-preview" id="badge-output-preview"></div>
+                        <div class="code-block-wrapper">
+                            <pre><code id="badge-output-code"></code></pre>
+                            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy badge markdown">
+                                <span class="copy-icon">📋</span>
+                                <span class="copy-text">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <h2>🔌 Validate Your Skill</h2>
+                <p class="intro-text">
+                    Use our reusable GitHub Action to validate your SKILL.md files in CI/CD.
+                </p>
+                <div class="code-block-wrapper">
+                    <pre><code># .github/workflows/validate.yml
+name: Validate Skill
+on: [push, pull_request]
+jobs:
+  validate:
+    uses: dmgrok/agent_skills_directory/.github/workflows/validate-skill.yml@main
+    with:
+      skill-path: '.'</code></pre>
+                    <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy workflow">
+                        <span class="copy-icon">📋</span>
+                        <span class="copy-text">Copy</span>
+                    </button>
+                </div>
+                <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+                    This validates frontmatter schema, required fields, content length, and scans for leaked secrets.
+                    On success, it suggests a badge to add to your README.
+                </p>
+            </section>
+
+            <section class="info-section">
+                <h2>📡 Distribution Channels</h2>
+                <p class="intro-text">
+                    The Agent Skills Directory is available through multiple distribution channels for maximum reach.
+                </p>
+
+                <div class="distribution-grid">
+                    <div class="distribution-card">
+                        <h3>🌐 CDN (jsDelivr)</h3>
+                        <p>Direct JSON access via CDN. Zero setup, instant integration.</p>
+                        <code>cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json</code>
+                    </div>
+                    <div class="distribution-card">
+                        <h3>⚡ CLI Tool</h3>
+                        <p>npm-like package manager. Search, install, manage skills.</p>
+                        <code>brew install dmgrok/tap/skills</code>
+                    </div>
+                    <div class="distribution-card">
+                        <h3>🤖 MCP Server</h3>
+                        <p>Mother Skills MCP for auto-detection and installation.</p>
+                        <code>github.com/dmgrok/mcp_mother_skills</code>
+                    </div>
+                    <div class="distribution-card">
+                        <h3>🐍 PyPI</h3>
+                        <p>Python package installation for CLI access.</p>
+                        <code>pip install agent-skills-directory</code>
+                    </div>
+                    <div class="distribution-card">
+                        <h3>📦 GitHub Releases</h3>
+                        <p>Versioned releases with vYYYY.MM.DD tags.</p>
+                        <code>github.com/dmgrok/agent_skills_directory/releases</code>
+                    </div>
+                    <div class="distribution-card">
+                        <h3>🔍 Web Browser</h3>
+                        <p>This site! Browse, search, filter, and install skills.</p>
+                        <code>dmgrok.github.io/agent_skills_directory</code>
+                    </div>
                 </div>
             </section>
         </div>

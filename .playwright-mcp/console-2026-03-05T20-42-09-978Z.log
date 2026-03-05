@@ -1,0 +1,11 @@
+[    1483ms] ReferenceError: require is not defined
+    at <anonymous>:13:12
+    at f (https://code.claude.com/docs/_next/static/chunks/68789-e7d81f669637c445.js?dpl=dpl_AK57QzruAwz91mxnvysLF1qpX6DR:1:27615)
+    at https://code.claude.com/docs/_next/static/chunks/68789-e7d81f669637c445.js?dpl=dpl_AK57QzruAwz91mxnvysLF1qpX6DR:1:28429
+    at o1 (https://code.claude.com/docs/_next/static/chunks/87c73c54-dd8d81ac9604067c.js?dpl=dpl_AK57QzruAwz91mxnvysLF1qpX6DR:1:88955)
+    at uE (https://code.claude.com/docs/_next/static/chunks/87c73c54-dd8d81ac9604067c.js?dpl=dpl_AK57QzruAwz91mxnvysLF1qpX6DR:1:104847)
+    at ux (https://code.claude.com/docs/_next/static/chunks/87c73c54-dd8d81ac9604067c.js?dpl=dpl_AK57QzruAwz91mxnvysLF1qpX6DR:1:104731)
+    at uE (https://code.claude.com/docs/_next/static/chunks/87c73c54-dd8d81ac9604067c.js?dpl=dpl_AK57QzruAwz91mxnvysLF1qpX6DR:1:104827)
+    at ux (https://code.claude.com/docs/_next/static/chunks/87c73c54-dd8d81ac9604067c.js?dpl=dpl_AK57QzruAwz91mxnvysLF1qpX6DR:1:104731)
+    at uE (https://code.claude.com/docs/_next/static/chunks/87c73c54-dd8d81ac9604067c.js?dpl=dpl_AK57QzruAwz91mxnvysLF1qpX6DR:1:104892)
+    at ux (https://code.claude.com/docs/_next/static/chunks/87c73c54-dd8d81ac9604067c.js?dpl=dpl_AK57QzruAwz91mxnvysLF1qpX6DR:1:104731)

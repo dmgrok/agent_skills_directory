@@ -13,10 +13,11 @@ skillsdir search "pdf extraction"
 open https://dmgrok.github.io/agent_skills_directory/
 ```
 
-[![Curated Skills](https://img.shields.io/badge/Skills-245+-success)](https://dmgrok.github.io/agent_skills_directory/)
-[![Providers](https://img.shields.io/badge/Providers-41-blue)](https://dmgrok.github.io/agent_skills_directory/)
+[![Curated Skills](https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-skills.json)](https://dmgrok.github.io/agent_skills_directory/)
+[![Providers](https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-providers.json)](https://dmgrok.github.io/agent_skills_directory/)
 [![Quality Tracked](https://img.shields.io/badge/Quality-Tracked-yellow)](https://github.com/dmgrok/LGTM_agent_skills)
-[![Maintenance Status](https://img.shields.io/badge/Maintenance-🟢🟡🟠🔴-green)](https://dmgrok.github.io/agent_skills_directory/)
+[![Actively Maintained](https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-quality.json)](https://dmgrok.github.io/agent_skills_directory/)
+[![Listed on Agent Skills Directory](https://img.shields.io/badge/Listed_on-Agent_Skills_Directory-6366f1?style=flat)](https://dmgrok.github.io/agent_skills_directory/)
 
 ---
 
@@ -582,6 +583,104 @@ pytest                           # Run tests
 ## License
 
 MIT License - Individual skills retain their original licenses.
+
+---
+
+---
+
+## 🌐 Ecosystem Exports
+
+Pre-filtered catalogs optimized for specific ecosystems, updated daily via CDN:
+
+| Export | Description | CDN URL |
+|--------|-------------|---------|
+| **Claude Skills** | Quality ≥ 50, full skills | `exports/claude-skills.json` |
+| **Copilot Skills** | Quality ≥ 50, full skills | `exports/copilot-skills.json` |
+| **MCP-Compatible** | Skills with MCP tags | `exports/mcp-compatible.json` |
+| **Premium Skills** | Quality ≥ 70 | `exports/premium-skills.json` |
+| **Active Skills** | Updated within 6 months | `exports/active-skills.json` |
+
+**Base URL:** `https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/`
+
+**Example: Fetch Claude-optimized skills**
+```python
+import requests
+claude_skills = requests.get(
+    "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/claude-skills.json"
+).json()
+print(f"{claude_skills['total_skills']} high-quality Claude skills available")
+```
+
+---
+
+## 🏷️ Badges for Skill Authors
+
+Add these badges to your skill repository README:
+
+### "Listed on" Badge
+[![Listed on Agent Skills Directory](https://img.shields.io/badge/Listed_on-Agent_Skills_Directory-6366f1?style=flat)](https://dmgrok.github.io/agent_skills_directory/)
+
+```markdown
+[![Listed on Agent Skills Directory](https://img.shields.io/badge/Listed_on-Agent_Skills_Directory-6366f1?style=flat)](https://dmgrok.github.io/agent_skills_directory/)
+```
+
+### Dynamic Badges (auto-updated)
+These badges update automatically when the catalog refreshes:
+
+```markdown
+![Skills](https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-skills.json)
+![Providers](https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-providers.json)
+![Quality](https://img.shields.io/endpoint?url=https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/badge-quality.json)
+```
+
+### Quality Score Badge
+Replace `{score}` with your skill's quality score:
+
+```markdown
+![Quality Score](https://img.shields.io/badge/quality_score-85%2F100-22c55e?style=flat)
+```
+
+Use the [badge generator](https://dmgrok.github.io/agent_skills_directory/?tab=exports) on our website for custom badges.
+
+---
+
+## 🔌 Validate Your Skills (CI/CD)
+
+Use our reusable GitHub Action to validate SKILL.md files in your repository:
+
+```yaml
+# .github/workflows/validate.yml
+name: Validate Skill
+on: [push, pull_request]
+jobs:
+  validate:
+    uses: dmgrok/agent_skills_directory/.github/workflows/validate-skill.yml@main
+    with:
+      skill-path: '.'
+```
+
+This validates:
+- ✅ YAML frontmatter schema (required `name` and `description`)
+- ✅ Content quality (minimum body length)
+- ✅ Naming conventions (lowercase, alphanumeric, hyphens)
+- ✅ Security scan (no leaked secrets/credentials)
+- ✅ Generates a badge suggestion on success
+
+---
+
+## 📡 Distribution Channels
+
+The Agent Skills Directory is available through multiple channels:
+
+| Channel | URL / Command | Reach |
+|---------|--------------|-------|
+| **CDN (jsDelivr)** | `cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json` | Global |
+| **CLI Tool** | `brew install dmgrok/tap/skills` | macOS/Linux |
+| **MCP Server** | [Mother Skills MCP](https://github.com/dmgrok/mcp_mother_skills) | Claude/Copilot |
+| **Web Browser** | [dmgrok.github.io/agent_skills_directory](https://dmgrok.github.io/agent_skills_directory/) | Everyone |
+| **PyPI** | `pip install skillsdir` | Python devs |
+| **GitHub Releases** | [Releases page](https://github.com/dmgrok/agent_skills_directory/releases) | Versioned |
+| **Ecosystem Exports** | `exports/claude-skills.json`, `exports/copilot-skills.json` | Agent-specific |
 
 ---
 
