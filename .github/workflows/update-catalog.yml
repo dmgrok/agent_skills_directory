@@ -66,14 +66,13 @@ jobs:
         if: steps.changes.outputs.changed == 'true'
         run: |
           cp catalog.json catalog.min.json bundles.json docs/
-          git add docs/catalog.json docs/catalog.min.json docs/bundles.json
       
       - name: Commit changes
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add catalog.json catalog.min.json catalog.toon catalog.min.toon CHANGELOG.md aggregation_state.json
+          git add catalog.json catalog.min.json catalog.toon catalog.min.toon CHANGELOG.md aggregation_state.json docs/catalog.json docs/catalog.min.json docs/bundles.json
           git commit -m "Update catalog - ${{ steps.date.outputs.date }}"
           git push
       

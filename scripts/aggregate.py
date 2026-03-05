@@ -691,12 +691,31 @@ def deduplicate_skills(skills: list, similarity_threshold: float = 0.8) -> tuple
 
 
 def fetch_url(url: str, retries: int = 3) -> Optional[str]:
-    """Fetch content from URL with retry logic."""
+    """Fetch content from URL with retry logic and rate limit handling."""
     for attempt in range(retries):
         try:
             req = urllib.request.Request(url, headers=DEFAULT_HEADERS)
             with urllib.request.urlopen(req, timeout=30) as response:
                 return response.read().decode("utf-8")
+        except urllib.error.HTTPError as e:
+            # Handle GitHub API rate limiting specifically
+            if e.code == 403 and 'rate limit' in str(e.reason).lower():
+                reset_time = e.headers.get('X-RateLimit-Reset')
+                if reset_time:
+                    wait = max(int(reset_time) - int(time.time()), 0) + 5
+                    print(f"  Rate limit hit. Waiting {wait}s until reset...", file=sys.stderr)
+                    if wait < 300:  # Only wait up to 5 minutes
+                        time.sleep(wait)
+                        continue
+                print(f"  Warning: Rate limit exceeded for {url}", file=sys.stderr)
+                return None
+            elif attempt < retries - 1:
+                wait = 2 ** attempt  # Exponential backoff
+                print(f"  Retry {attempt + 1}/{retries} for {url} (waiting {wait}s)", file=sys.stderr)
+                time.sleep(wait)
+            else:
+                print(f"  Warning: Failed to fetch {url}: HTTP {e.code}", file=sys.stderr)
+                return None
         except (urllib.error.URLError, OSError) as e:
             if attempt < retries - 1:
                 wait = 2 ** attempt  # Exponential backoff
