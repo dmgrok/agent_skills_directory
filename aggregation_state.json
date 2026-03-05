@@ -1,9 +1,9 @@
 {
-  "last_run": "2026-03-04T06:58:58.076278+00:00",
+  "last_run": "2026-03-05T07:03:46.695737+00:00",
   "provider_commits": {
-    "anthropics": "3d59511518591fa82e6cfcf0438d68dd5dad3e76",
-    "openai": "8d04dc2f7ea6dd83d7639cd2f22a1d0b4f586573",
-    "github": "dafb59a616622064f692570b2126e3c4fba0a25b",
+    "anthropics": "7029232b9212482c0476da354b83364bd28fab2f",
+    "openai": "c207989386b30063bcecaf6b1977d761b244732e",
+    "github": "582d3ee263fa1b3e0c6e71be3dae8e74c9661d16",
     "vercel": "cc8bd7a5b51e41270f20b43466ffa4149c18cc01",
     "huggingface": "99a61b26ea997305810fb538c414a21d9cb85dd2",
     "skillcreatorai": "90b5f32927b156351b9facbda0c3d95b6011b379",
@@ -30,7 +30,7 @@
     "cloudflare": "d3113039790f64e052ff80f351190da65e9b7510",
     "trailofbits": "c6097699e4553f0dda4db615330f4a5097c4ff99",
     "expo": "46fa1f8b93479046445706c528af4c70d270e727",
-    "getsentry": "ef33bb503205a1e239452fe0159e8047bc795b21",
+    "getsentry": "fe1dd4f1d4d4d0f34da5bfe774ffd803d3c17685",
     "supabase": "760460c221d30d0db904ff28e8fa52af85672255",
     "google-labs-stitch": "51d6d5ab56b9b46e1947bc4dabcd7f53bd343b3e",
     "composiohq": "27904475d1270d8395acf07691966267d5abda2d",
@@ -39,8 +39,8 @@
     "neondatabase": "273a850482d89c750afe9674487c6b54208572b9",
     "fal-ai": "69efe6e17ae3c6ae9605dd177a36f47ee9e745f9",
     "remotion": "937ffb32b148fdceef4b4184f975a708aab8d560",
-    "nginity": "3960661ae5bd81ef3af1ac56e83b042fe3a6bfea",
-    "voltagent": "ccf1d4aeacf79be1945e22ba1a14c8ad663cec6c",
+    "nginity": "3d9d1d2d926129c4e5da6b93a00bc1252d663d01",
+    "voltagent": "602fa0062ac65f28dd0326800b23ec19b49e8a32",
     "heilcheng": "b7598be3dd5ecd8ec021f9e43495f90e883b9808",
     "travisvn": "c9f1fd4399d0d429677f813b1db3389de66b75b3",
     "obsidian-plugin": "08dae85e59696a47e773706a543069b1891d90f2",
@@ -49,6 +49,6 @@
     "visionos-agents": "32d34c3eb5ec1d1655588d632937d62dd684d454",
     "skills-to-agents": "12f69f287941dfafb2fcf761455e73a5c6361469"
   },
-  "skills_count": 1296,
-  "version": "2026.03.04"
+  "skills_count": 1299,
+  "version": "2026.03.05"
 }
