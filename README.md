@@ -62,13 +62,149 @@ Want to add your skills to the directory? It's fully automated!
 ---
 
 <!-- AUTO-GENERATED SKILLS TABLE START -->
-## 📋 All Skills
+## 📋 All Skills — 136 skills across 43 providers · v2026.03.06
 
-> Auto-generated daily. Legend: 🔒 Secrets scan · 🛡️ Injection check · 📝 Content · 🔄 No duplicate · ✅ Full skill · S=Scripts · R=References · A=Assets
+> Auto-generated daily · [Browse interactively →](https://dmgrok.github.io/agent_skills_directory/)  
+> Legend: 🔒 Secrets scan · 🛡️ Injection check · 📝 Content · 🔄 No duplicate · ✅ Full skill · S=Scripts · R=References · A=Assets
 
 | Skill | Provider | Compat | 🔒 | 🛡️ | 📝 | 🔄 | ✅ | S | R | A | Quality | Status |
 |-------|----------|--------|----|----|----|----|---|---|---|---|---------|--------|
-| *(run `python scripts/aggregate.py` to populate)* | | | | | | | | | | | | |
+| [customer-success-manager](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/business-growth/customer-success-manager/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 90/100 | 🟢 active |
+| [revenue-operations](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/business-growth/revenue-operations/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 90/100 | 🟢 active |
+| [sales-engineer](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/business-growth/sales-engineer/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 90/100 | 🟢 active |
+| [aws-solution-architect](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/aws-solution-architect/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 80/100 | 🟡 maintained |
+| [board-deck-builder](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/board-deck-builder/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ✅ | 80/100 | 🟢 active |
+| [board-meeting](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/board-meeting/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ✅ | 80/100 | 🟢 active |
+| [ceo-advisor](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/ceo-advisor/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [cfo-advisor](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/cfo-advisor/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [chro-advisor](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/chro-advisor/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [ciso-advisor](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/ciso-advisor/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [cmo-advisor](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/cmo-advisor/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [competitive-intel](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/competitive-intel/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ✅ | 80/100 | 🟢 active |
+| [coo-advisor](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/coo-advisor/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [cpo-advisor](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/cpo-advisor/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [cro-advisor](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/cro-advisor/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [cs-onboard](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/cs-onboard/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ✅ | 80/100 | 🟢 active |
+| [cto-advisor](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/cto-advisor/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [culture-architect](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/culture-architect/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ✅ | 80/100 | 🟢 active |
+| [decision-logger](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/decision-logger/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | 80/100 | 🟢 active |
+| [executive-mentor](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/executive-mentor/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [internal-narrative](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/internal-narrative/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ✅ | 80/100 | 🟢 active |
+| [org-health-diagnostic](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/org-health-diagnostic/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [playwright-pro](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/playwright-pro/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ✅ | 80/100 | 🟢 active |
+| [scenario-war-room](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/scenario-war-room/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [self-improving-agent](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/self-improving-agent/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ✅ | 80/100 | 🟢 active |
+| [strategic-alignment](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/strategic-alignment/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 80/100 | 🟢 active |
+| [agent-protocol](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/agent-protocol/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 70/100 | 🟢 active |
+| [change-management](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/change-management/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 70/100 | 🟢 active |
+| [chief-of-staff](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/chief-of-staff/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 70/100 | 🟢 active |
+| [code-reviewer](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/code-reviewer/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 70/100 | 🟡 maintained |
+| [company-os](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/company-os/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 70/100 | 🟢 active |
+| [context-engine](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/context-engine/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 70/100 | 🟢 active |
+| [founder-coach](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/founder-coach/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 70/100 | 🟢 active |
+| [intl-expansion](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/intl-expansion/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 70/100 | 🟢 active |
+| [ma-playbook](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/ma-playbook/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 70/100 | 🟢 active |
+| [ms365-tenant-manager](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/ms365-tenant-manager/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 70/100 | 🟡 maintained |
+| [remotion-best-practices](https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion/SKILL.md) | remotion | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 70/100 | 🟢 active |
+| [senior-architect](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-architect/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 70/100 | 🟡 maintained |
+| [senior-backend](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-backend/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 70/100 | 🟡 maintained |
+| [senior-computer-vision](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-computer-vision/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 70/100 | 🟡 maintained |
+| [app-store-optimization](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/app-store-optimization/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 65/100 | ⚪ unknown |
+| [campaign-analytics](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/campaign-analytics/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 65/100 | ⚪ unknown |
+| [content-production](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/content-production/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 65/100 | ⚪ unknown |
+| [financial-analyst](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/finance/financial-analyst/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 65/100 | ⚪ unknown |
+| [scrum-master](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/project-management/scrum-master/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 65/100 | ⚪ unknown |
+| [senior-pm](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/project-management/senior-pm/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 65/100 | ⚪ unknown |
+| [social-media-analyzer](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/social-media-analyzer/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 65/100 | ⚪ unknown |
+| [tdd-guide](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/tdd-guide/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 65/100 | ⚪ unknown |
+| [tech-stack-evaluator](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/tech-stack-evaluator/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 65/100 | ⚪ unknown |
+| [browserstack](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/playwright-pro/skills/browserstack/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [c-level-advisor](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/c-level-advisor/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [coverage](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/playwright-pro/skills/coverage/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [extract](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/self-improving-agent/skills/extract/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [fix](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/playwright-pro/skills/fix/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [generate](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/playwright-pro/skills/generate/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [init](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/playwright-pro/skills/init/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [migrate](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/playwright-pro/skills/migrate/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [promote](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/self-improving-agent/skills/promote/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [remember](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/self-improving-agent/skills/remember/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [report](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/playwright-pro/skills/report/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [review](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/playwright-pro/skills/review/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [review](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/self-improving-agent/skills/review/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [status](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/self-improving-agent/skills/status/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [testrail](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/playwright-pro/skills/testrail/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 60/100 | 🟢 active |
+| [ab-test-setup](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/ab-test-setup/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [ad-creative](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/ad-creative/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [agile-product-owner](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/product-team/agile-product-owner/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [analytics-tracking](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/analytics-tracking/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [capa-officer](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/ra-qm-team/capa-officer/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [churn-prevention](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/churn-prevention/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [cold-email](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/cold-email/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [competitor-alternatives](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/competitor-alternatives/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [content-creator](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/content-creator/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ✅ | 55/100 | ⚪ unknown |
+| [content-humanizer](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/content-humanizer/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [copy-editing](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/copy-editing/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [copywriting](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/copywriting/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [fda-consultant-specialist](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/ra-qm-team/fda-consultant-specialist/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [free-tool-strategy](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/free-tool-strategy/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [gdpr-dsgvo-expert](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/ra-qm-team/gdpr-dsgvo-expert/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [information-security-manager-iso27001](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/ra-qm-team/information-security-manager-iso27001/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [interview-system-designer](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering/interview-system-designer/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ✅ | 55/100 | ⚪ unknown |
+| [isms-audit-expert](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/ra-qm-team/isms-audit-expert/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [marketing-context](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/marketing-context/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | 55/100 | ⚪ unknown |
+| [marketing-demand-acquisition](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/marketing-demand-acquisition/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [mdr-745-specialist](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/ra-qm-team/mdr-745-specialist/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [paid-ads](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/paid-ads/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [pricing-strategy](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/pricing-strategy/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [product-manager-toolkit](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/product-team/product-manager-toolkit/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [product-strategist](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/product-team/product-strategist/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [prompt-engineer-toolkit](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/prompt-engineer-toolkit/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [qms-audit-expert](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/ra-qm-team/qms-audit-expert/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [quality-documentation-manager](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/ra-qm-team/quality-documentation-manager/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [quality-manager-qmr](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/ra-qm-team/quality-manager-qmr/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [quality-manager-qms-iso13485](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/ra-qm-team/quality-manager-qms-iso13485/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [referral-program](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/referral-program/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [regulatory-affairs-head](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/ra-qm-team/regulatory-affairs-head/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [risk-management-specialist](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/ra-qm-team/risk-management-specialist/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [schema-markup](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/schema-markup/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [senior-data-engineer](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-data-engineer/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [senior-data-scientist](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-data-scientist/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [senior-devops](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-devops/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [senior-frontend](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-frontend/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [senior-fullstack](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-fullstack/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [senior-ml-engineer](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-ml-engineer/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [senior-prompt-engineer](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-prompt-engineer/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [senior-qa](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-qa/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [senior-secops](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-secops/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [senior-security](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering-team/senior-security/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [site-architecture](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/site-architecture/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [skill-security-auditor](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering/skill-security-auditor/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [ui-design-system](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/product-team/ui-design-system/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [ux-researcher-designer](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/product-team/ux-researcher-designer/SKILL.md) | nginity | Universal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | 55/100 | ⚪ unknown |
+| [ai-seo](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/ai-seo/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 45/100 | ⚪ unknown |
+| [confluence-expert](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/project-management/confluence-expert/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 45/100 | ⚪ unknown |
+| [content-strategy](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/content-strategy/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | 45/100 | ⚪ unknown |
+| [email-sequence](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/email-sequence/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | 45/100 | ⚪ unknown |
+| [form-cro](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/form-cro/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | 45/100 | ⚪ unknown |
+| [jira-expert](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/project-management/jira-expert/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 45/100 | ⚪ unknown |
+| [launch-strategy](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/launch-strategy/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | 45/100 | ⚪ unknown |
+| [marketing-ideas](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/marketing-ideas/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 45/100 | ⚪ unknown |
+| [marketing-ops](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/marketing-ops/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | 45/100 | ⚪ unknown |
+| [marketing-psychology](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/marketing-psychology/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 45/100 | ⚪ unknown |
+| [marketing-strategy-pmm](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/marketing-strategy-pmm/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 45/100 | ⚪ unknown |
+| [onboarding-cro](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/onboarding-cro/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | 45/100 | ⚪ unknown |
+| [page-cro](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/page-cro/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | 45/100 | ⚪ unknown |
+| [programmatic-seo](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/programmatic-seo/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | 45/100 | ⚪ unknown |
+| [seo-audit](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/seo-audit/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | 45/100 | ⚪ unknown |
+| [signup-flow-cro](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/signup-flow-cro/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | 45/100 | ⚪ unknown |
+| [social-content](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/social-content/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ⬜ | ✅ | ⬜ | 45/100 | ⚪ unknown |
+| [social-media-manager](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/social-media-manager/SKILL.md) | nginity | Universal | ⬜ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ | ⬜ | 45/100 | ⚪ unknown |
+| [atlassian-admin](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/project-management/atlassian-admin/SKILL.md) | nginity | Universal | ⬜ | ⬜ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 35/100 | ⚪ unknown |
+| [atlassian-templates](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/project-management/atlassian-templates/SKILL.md) | nginity | Universal | ⬜ | ⬜ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 35/100 | ⚪ unknown |
+| [brand-guidelines](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/brand-guidelines/SKILL.md) | nginity | Universal | ⬜ | ⬜ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 35/100 | ⚪ unknown |
+| [marketing-skills](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/SKILL.md) | nginity | Universal | ⬜ | ⬜ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 35/100 | ⚪ unknown |
+| [paywall-upgrade-cro](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/paywall-upgrade-cro/SKILL.md) | nginity | Universal | ⬜ | ⬜ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 35/100 | ⚪ unknown |
+| [popup-cro](https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/marketing-skill/popup-cro/SKILL.md) | nginity | Universal | ⬜ | ⬜ | ✅ | ✅ | ✅ | ⬜ | ⬜ | ⬜ | 35/100 | ⚪ unknown |
 
 <!-- AUTO-GENERATED SKILLS TABLE END -->
 
