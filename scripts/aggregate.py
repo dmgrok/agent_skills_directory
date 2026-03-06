@@ -1385,6 +1385,144 @@ def generate_ecosystem_exports(catalog: dict, output_dir: Path) -> None:
     print(f"✓ Exports index: {exports_dir / 'index.json'}")
 
 
+def update_readme(catalog: dict, output_dir: Path) -> None:
+    """
+    Auto-generate a full skills listing table in README.md.
+
+    The table is inserted (and replaced on subsequent runs) between the markers:
+        <!-- AUTO-GENERATED SKILLS TABLE START -->
+        <!-- AUTO-GENERATED SKILLS TABLE END -->
+    
+    Columns: Skill (linked), Provider, Compatibility, Checks (5 icons), Features (S/R/A), Quality, Status
+    """
+    readme_path = output_dir / "README.md"
+    if not readme_path.exists():
+        print("⚠️  README.md not found, skipping update")
+        return
+
+    skills = catalog["skills"]
+    providers = catalog["providers"]
+    total = catalog["total_skills"]
+    version = catalog["version"]
+
+    # --- Compatibility inference (mirrors docs/app.js getAgentCompatibility) ---
+    claude_providers = {
+        "anthropics", "claude-marketplace-engineering", "claude-marketplace-visual",
+        "claude-marketplace-code", "claude-marketplace-productivity"
+    }
+
+    def get_compat(skill: dict) -> str:
+        provider = skill.get("provider", "")
+        tags = [t.lower() for t in (skill.get("tags") or [])]
+        has_claude  = "claude" in tags or "claude-code" in tags
+        has_copilot = "copilot" in tags or "github-copilot" in tags
+        if has_claude and not has_copilot:
+            return "Claude"
+        if has_copilot and not has_claude:
+            return "Copilot"
+        if provider in claude_providers:
+            return "Claude+Universal"
+        if provider == "github":
+            return "Copilot+Universal"
+        return "Universal"
+
+    # --- Check icons (same logic as renderSkillsList in app.js) ---
+    def check_icon(passed: bool) -> str:
+        return "✅" if passed else "⬜"
+
+    # --- Maintenance status emoji ---
+    status_emoji = {
+        "active":      "🟢 active",
+        "maintained":  "🟡 maintained",
+        "stale":       "🟠 stale",
+        "abandoned":   "🔴 abandoned",
+    }
+
+    # --- Sort: by quality_score desc, then name ---
+    sorted_skills = sorted(
+        skills,
+        key=lambda s: (-(s.get("quality_score") or 0), s.get("name", "").lower())
+    )
+
+    # Build table rows
+    rows = []
+    for skill in sorted_skills:
+        sid        = skill.get("id", "")
+        name       = skill.get("name", sid)
+        provider   = skill.get("provider", "")
+        q          = skill.get("quality_score") or 0
+        maint      = skill.get("maintenance_status") or "unknown"
+        skill_type = skill.get("skill_type", "full")
+        is_dup     = skill.get("duplicate_status") == "duplicate"
+        h_scripts  = skill.get("has_scripts", False)
+        h_refs     = skill.get("has_references", False)
+        h_assets   = skill.get("has_assets", False)
+
+        # Source URL for linking
+        skill_md_url = (skill.get("source") or {}).get("skill_md_url", "")
+        skill_link = f"[{name}]({skill_md_url})" if skill_md_url else name
+
+        compat = get_compat(skill)
+
+        # Validation check proxies
+        secrets_pass   = q >= 50
+        inject_pass    = q >= 40
+        content_pass   = q >= 30
+        dup_pass       = not is_dup
+        full_pass      = skill_type == "full"
+
+        feat_s = "✅" if h_scripts   else "⬜"
+        feat_r = "✅" if h_refs      else "⬜"
+        feat_a = "✅" if h_assets    else "⬜"
+
+        status_str = status_emoji.get(maint, f"⚪ {maint}")
+
+        rows.append(
+            f"| {skill_link} | {provider} | {compat} "
+            f"| {check_icon(secrets_pass)} "
+            f"| {check_icon(inject_pass)} "
+            f"| {check_icon(content_pass)} "
+            f"| {check_icon(dup_pass)} "
+            f"| {check_icon(full_pass)} "
+            f"| {feat_s} | {feat_r} | {feat_a} "
+            f"| {q}/100 | {status_str} |"
+        )
+
+    header_lines = [
+        f"<!-- AUTO-GENERATED SKILLS TABLE START -->",
+        f"## 📋 All Skills — {total} skills across {len(providers)} providers · v{version}",
+        f"",
+        f"> Auto-generated daily · [Browse interactively →](https://dmgrok.github.io/agent_skills_directory/)  ",
+        f"> Legend: 🔒 Secrets scan · 🛡️ Injection check · 📝 Content · 🔄 No duplicate · ✅ Full skill · S=Scripts · R=References · A=Assets",
+        f"",
+        f"| Skill | Provider | Compat | 🔒 | 🛡️ | 📝 | 🔄 | ✅ | S | R | A | Quality | Status |",
+        f"|-------|----------|--------|----|----|----|----|---|---|---|---|---------|--------|" ,
+    ]
+    footer_lines = [
+        f"",
+        f"<!-- AUTO-GENERATED SKILLS TABLE END -->",
+    ]
+
+    new_section = "\n".join(header_lines + rows + footer_lines)
+
+    # Replace existing section between markers
+    readme_text = readme_path.read_text(encoding="utf-8")
+    start_marker = "<!-- AUTO-GENERATED SKILLS TABLE START -->"
+    end_marker   = "<!-- AUTO-GENERATED SKILLS TABLE END -->"
+
+    start_idx = readme_text.find(start_marker)
+    end_idx   = readme_text.find(end_marker)
+
+    if start_idx == -1 or end_idx == -1:
+        print("⚠️  README.md missing AUTO-GENERATED markers, skipping skills table update")
+        return
+
+    # Replace the entire block including both markers
+    new_text = readme_text[:start_idx] + new_section + readme_text[end_idx + len(end_marker):]
+    readme_path.write_text(new_text, encoding="utf-8")
+    print(f"✓ README.md skills table updated ({total} skills)")
+
+
 def main():
     global PROVIDERS  # Declare at top for potential modification in incremental mode
     
@@ -1545,6 +1683,9 @@ def main():
     
     # Generate ecosystem-specific exports
     generate_ecosystem_exports(catalog, output_dir)
+
+    # Update README.md with auto-generated skills table
+    update_readme(catalog, output_dir)
     
     # Save state for next incremental run
     save_state(catalog, provider_commits)
