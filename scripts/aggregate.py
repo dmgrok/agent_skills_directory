@@ -353,6 +353,13 @@ PROVIDERS = {
         "skills_path_prefix": "skills/",
     },
     # skills-to-agents removed: JS tool, not a skills repo
+    "emblemcompany": {
+        "name": "EmblemAI",
+        "repo": "https://github.com/EmblemCompany/Agent-skills",
+        "api_tree_url": "https://api.github.com/repos/EmblemCompany/Agent-skills/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/EmblemCompany/Agent-skills/main",
+        "skills_path_prefix": "skills/",
+    },
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
