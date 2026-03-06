@@ -6,25 +6,25 @@ This is the official Homebrew tap for [Agent Skills CLI](https://github.com/dmgr
 
 ```bash
 brew tap dmgrok/tap
-brew install skills
+brew install skillsdir
 ```
 
 Or directly:
 
 ```bash
-brew install dmgrok/tap/skills
+brew install dmgrok/tap/skillsdir
 ```
 
 ## Updating
 
 ```bash
-brew upgrade skills
+brew upgrade skillsdir
 ```
 
 ## Uninstalling
 
 ```bash
-brew uninstall skills
+brew uninstall skillsdir
 brew untap dmgrok/tap  # optional: remove the tap
 ```
 
@@ -32,7 +32,7 @@ brew untap dmgrok/tap  # optional: remove the tap
 
 | Formula | Description |
 |---------|-------------|
-| `skills` | The package manager for AI agent skills |
+| `skillsdir` | The package manager for AI agent skills |
 
 ## Supported Platforms
 

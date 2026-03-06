@@ -124,7 +124,7 @@ def build_executable(onefile: bool = True, include_validation: bool = False):
     src = DIST_DIR / exe_name
     
     if onefile and src.exists():
-        dst_name = f"skills-{suffix}" + (".exe" if platform.system() == "Windows" else "")
+        dst_name = f"skillsdir-{suffix}" + (".exe" if platform.system() == "Windows" else "")
         dst = DIST_DIR / dst_name
         shutil.move(src, dst)
         print(f"{ICON_OK} Built: {dst}")
