@@ -170,6 +170,15 @@
           "type": "string",
           "enum": ["full", "integration"],
           "description": "Skill classification: 'full' for complete skills with documentation, 'integration' for lightweight stubs/wrappers"
+        },
+        "requires_mcp": {
+          "type": "boolean",
+          "description": "Whether the skill requires a running MCP server to function"
+        },
+        "github_stars": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "GitHub star count for the provider repository (community signal for trust/popularity)"
         }
       }
     },

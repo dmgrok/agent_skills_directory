@@ -702,6 +702,15 @@ def cmd_info(args):
     if quality_score is not None:
         score_color = Colors.GREEN if quality_score >= 80 else Colors.YELLOW if quality_score >= 60 else Colors.RED
         print(f"  {Colors.CYAN}quality:{Colors.RESET}     {score_color}⭐ {quality_score}/100{Colors.RESET}")
+
+    # Community signals
+    github_stars = skill.get("github_stars")
+    if github_stars is not None:
+        print(f"  {Colors.CYAN}repo stars:{Colors.RESET}  ⭐ {github_stars:,}")
+
+    # MCP requirement
+    if skill.get("requires_mcp"):
+        print(f"  {Colors.YELLOW}requires_mcp:{Colors.RESET} ⚠️  Yes — an MCP server must be running to use this skill")
     
     tags = skill.get("tags", [])
     if tags:
@@ -873,6 +882,16 @@ def cmd_install(args):
     if success:
         print_success(f"Installed {skill_id} → {install_path}")
         track_install(skill_id)  # Track analytics
+
+        # Warn if MCP server is required
+        if skill.get("requires_mcp"):
+            print(f"\n  {Colors.YELLOW}⚠️  MCP Server Required{Colors.RESET}")
+            print(f"  {Colors.DIM}This skill needs a running MCP server to function.{Colors.RESET}")
+            print(f"  {Colors.DIM}See https://modelcontextprotocol.io for setup instructions.{Colors.RESET}")
+
+        # Warn if dependencies were not resolved (no_deps flag set)
+        if skip_deps:
+            print(f"  {Colors.DIM}Dependencies were skipped (--no-deps). Install manually if needed.{Colors.RESET}")
     
     # Show agent-specific guidance
     profile = AGENT_PROFILES.get(detected_agent, AGENT_PROFILES["generic"])

@@ -14,7 +14,7 @@ import os
 import zlib
 import argparse
 from dataclasses import dataclass, asdict, field
-from datetime import datetime, timezone
+from datetime import datetime, date, timezone
 from pathlib import Path
 from typing import Any, Optional
 import urllib.request
@@ -29,6 +29,17 @@ except ImportError:
     pass  # dotenv not installed, skip
 
 import yaml  # type: ignore[import-untyped]
+
+
+class CatalogEncoder(json.JSONEncoder):
+    """JSON encoder that handles date/datetime objects from YAML frontmatter."""
+
+    def default(self, obj: Any) -> Any:
+        if isinstance(obj, datetime):
+            return obj.isoformat()
+        if isinstance(obj, date):
+            return obj.isoformat()
+        return super().default(obj)
 
 
 # Provider configurations
@@ -423,6 +434,8 @@ class Skill:
     maintenance_status: Optional[str] = field(default=None)  # "active", "maintained", "stale", "abandoned"
     quality_score: Optional[int] = field(default=None)  # Composite quality score 0-100
     skill_type: str = field(default="full")  # "full" or "integration" (stub/lightweight)
+    requires_mcp: bool = field(default=False)  # Whether skill requires an MCP server
+    github_stars: Optional[int] = field(default=None)  # Stars on the source provider repo
 
 
 def calculate_quality_score(
@@ -812,6 +825,31 @@ def fetch_last_updated_at(owner: str, repo: str, file_path: str) -> Optional[str
     return None
 
 
+# Keywords that signal an MCP server is needed at runtime
+_MCP_KEYWORDS = {
+    "mcp server", "model context protocol", "@modelcontextprotocol",
+    "requires mcp", "mcp-server", "mcp_server", "mcp tool", "mcp tools",
+    "claude_desktop_config", "claude desktop config",
+}
+
+
+def detect_requires_mcp(body: str, frontmatter: dict) -> bool:
+    """
+    Return True if the skill appears to require a running MCP server.
+
+    Detection heuristics (any one is sufficient):
+    - Frontmatter contains requires_mcp: true
+    - Frontmatter runtime is 'mcp'
+    - Body text contains known MCP-server signal phrases
+    """
+    if frontmatter.get("requires_mcp"):
+        return True
+    if str(frontmatter.get("runtime", "")).lower() == "mcp":
+        return True
+    body_lower = (body or "").lower()
+    return any(kw in body_lower for kw in _MCP_KEYWORDS)
+
+
 def classify_skill_type(
     provider: str,
     has_scripts: bool,
@@ -947,7 +985,10 @@ def fetch_provider_skills(provider_id: str, config: dict) -> list:
             has_assets,
             parsed["body"]
         )
-        
+
+        # Detect MCP server requirement
+        requires_mcp = detect_requires_mcp(parsed["body"], fm)
+
         skill = Skill(
             id=f"{provider_id}/{name}",
             name=name,
@@ -972,7 +1013,9 @@ def fetch_provider_skills(provider_id: str, config: dict) -> list:
             days_since_update=days_since_update,
             maintenance_status=maintenance_status,
             quality_score=quality_score,
-            skill_type=skill_type
+            skill_type=skill_type,
+            requires_mcp=requires_mcp,
+            github_stars=None  # filled in by build_catalog after repo_cache is populated
         )
         
         skills.append(skill)
@@ -1022,6 +1065,14 @@ def build_catalog() -> dict:
             "description": cached["description"]
         }
     
+    # Backfill github_stars onto each skill using the cached repo data
+    repo_stars_by_provider: dict[str, Optional[int]] = {
+        pid: repo_cache.get(config["repo"], {}).get("stars")
+        for pid, config in PROVIDERS.items()
+    }
+    for skill in all_skills:
+        skill.github_stars = repo_stars_by_provider.get(skill.provider)
+
     # Deduplicate skills - annotate mirrors and probable duplicates
     print(f"\nAnnotating duplicate skills...")
     all_skills, duplicate_metadata, similar_skills_map = deduplicate_skills(all_skills)
@@ -1135,7 +1186,7 @@ def save_state(catalog: dict, provider_commits: dict) -> None:
         "version": catalog["version"]
     }
     with open(STATE_FILE, 'w') as f:
-        json.dump(state, f, indent=2)
+        json.dump(state, f, indent=2, cls=CatalogEncoder)
     print(f"✓ Saved state to {STATE_FILE}")
 
 
@@ -1254,7 +1305,7 @@ def generate_ecosystem_exports(catalog: dict, output_dir: Path) -> None:
     for filename, data in exports.items():
         filepath = exports_dir / filename
         with open(filepath, "w") as f:
-            json.dump(data, f, indent=2)
+            json.dump(data, f, indent=2, cls=CatalogEncoder)
         print(f"✓ Export: {filepath} ({data['total_skills']} skills)")
     
     # Generate shields.io endpoint for dynamic badges
@@ -1340,7 +1391,7 @@ def generate_ecosystem_exports(catalog: dict, output_dir: Path) -> None:
     }
     
     with open(exports_dir / "index.json", "w") as f:
-        json.dump(exports_index, f, indent=2)
+        json.dump(exports_index, f, indent=2, cls=CatalogEncoder)
     print(f"✓ Exports index: {exports_dir / 'index.json'}")
 
 
@@ -1460,7 +1511,7 @@ def main():
     
     # Write pretty JSON
     with open(catalog_json, "w") as f:
-        json.dump(catalog, f, indent=2)
+        json.dump(catalog, f, indent=2, cls=CatalogEncoder)
     print(f"\n✓ Written: {catalog_json}")
     
     # Write minified JSON (stripped of verbose fields for lightweight consumption)
@@ -1487,6 +1538,8 @@ def main():
             "maintenance_status": skill.get("maintenance_status"),
             "days_since_update": skill.get("days_since_update"),
             "skill_type": skill.get("skill_type", "full"),
+            "requires_mcp": skill.get("requires_mcp", False),
+            "github_stars": skill.get("github_stars"),
             "has_scripts": skill.get("has_scripts", False),
             "has_references": skill.get("has_references", False),
             "has_assets": skill.get("has_assets", False),
@@ -1497,7 +1550,7 @@ def main():
         }
         min_catalog["skills"].append(min_skill)
     with open(catalog_min_json, "w") as f:
-        json.dump(min_catalog, f, separators=(",", ":"))
+        json.dump(min_catalog, f, separators=(",", ":"), cls=CatalogEncoder)
     print(f"✓ Written: {catalog_min_json}")
     
     # Generate ecosystem-specific exports
