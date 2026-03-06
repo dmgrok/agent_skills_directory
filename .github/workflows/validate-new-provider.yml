@@ -17,8 +17,14 @@ permissions:
 
 jobs:
   validate-provider:
-    # Only run on issues with the new-source label or containing provider configuration
-    if: contains(github.event.issue.labels.*.name, 'new-source') || contains(github.event.issue.body, 'Provider Configuration')
+    # Run when:
+    #   - issue has the 'new-source' label (maintainer-triggered), OR
+    #   - issue body matches the new-provider form template (auto-detect on open/edit), OR
+    #   - legacy code-block format
+    if: |
+      contains(github.event.issue.labels.*.name, 'new-source') ||
+      contains(github.event.issue.body, 'Provider Configuration') ||
+      contains(github.event.issue.body, '### Repository URL')
     runs-on: ubuntu-latest
     
     steps:
