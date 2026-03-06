@@ -46,9 +46,11 @@ jobs:
       
       - name: Install gitleaks
         run: |
-          wget https://github.com/gitleaks/gitleaks/releases/download/v8.18.1/gitleaks_8.18.1_linux_x64.tar.gz
+          cd /tmp
+          wget -q https://github.com/gitleaks/gitleaks/releases/download/v8.18.1/gitleaks_8.18.1_linux_x64.tar.gz
           tar -xzf gitleaks_8.18.1_linux_x64.tar.gz
           sudo mv gitleaks /usr/local/bin/
+          rm -f gitleaks_8.18.1_linux_x64.tar.gz
           gitleaks version
       
       - name: Fetch issue body (workflow_dispatch only)
@@ -215,7 +217,7 @@ jobs:
         continue-on-error: true
         run: |
           echo "Running gitleaks scan..."
-          if gitleaks detect --source ./contributor-repo --no-git --exit-code 0 --report-path gitleaks-report.json; then
+          if gitleaks detect --source ./contributor-repo --no-git --exit-code 0 --report-path /tmp/gitleaks-report.json; then
             echo "gitleaks_passed=true" >> $GITHUB_OUTPUT
           else
             echo "gitleaks_passed=false" >> $GITHUB_OUTPUT
@@ -253,7 +255,7 @@ jobs:
           name: validation-results
           path: |
             lgtm-results.json
-            gitleaks-report.json
+            /tmp/gitleaks-report.json
       
       - name: Check validation results
         id: check
@@ -329,6 +331,14 @@ jobs:
               sys.exit(1)
           EOF
       
+      - name: Clean up working directory
+        if: steps.check.outputs.validation_passed == 'true'
+        run: |
+          # Remove any artifacts that could accidentally be committed
+          rm -rf contributor-repo gitleaks* lgtm-results.json
+          # Only stage the file we actually want to change
+          git diff --name-only
+
       - name: Create Pull Request
         if: steps.check.outputs.validation_passed == 'true'
         id: create_pr
@@ -338,6 +348,8 @@ jobs:
           commit-message: 'feat: Add ${{ steps.parse.outputs.provider_name }} provider'
           branch: add-provider-${{ steps.parse.outputs.provider_id }}
           delete-branch: true
+          add-paths: |
+            scripts/aggregate.py
           title: '🤖 Add ${{ steps.parse.outputs.provider_name }} provider'
           body: |
             ## 🎉 Automated Provider Addition

@@ -271,13 +271,6 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/main",
         "skills_path_prefix": "skills/",
     },
-    "composiohq": {
-        "name": "ComposioHQ",
-        "repo": "https://github.com/ComposioHQ/awesome-claude-skills",
-        "api_tree_url": "https://api.github.com/repos/ComposioHQ/awesome-claude-skills/git/trees/master?recursive=1",
-        "raw_base": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master",
-        "skills_path_prefix": "",
-    },
     "better-auth": {
         "name": "Better Auth",
         "repo": "https://github.com/better-auth/skills",
@@ -871,19 +864,9 @@ def classify_skill_type(
     minimal documentation and no scripts/references/assets.
     
     Heuristics:
-    - Provider-level: known stub-heavy providers (composiohq)
     - Content-level: very short body + no scripts/references/assets
     """
-    # Known integration-stub providers
-    INTEGRATION_PROVIDERS = {"composiohq"}
-    
-    if provider in INTEGRATION_PROVIDERS:
-        # ComposioHQ skills with real content are still 'full'
-        if has_scripts or has_references or has_assets:
-            return "full"
-        return "integration"
-    
-    # For other providers, classify by content richness
+    # Classify by content richness
     body_length = len(body.strip()) if body else 0
     has_resources = has_scripts or has_references or has_assets
     

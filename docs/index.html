@@ -69,6 +69,12 @@
                             <option value="integration">Integration Stubs</option>
                         </select>
                     </div>
+                    <div class="filter-group" style="margin-left: auto;">
+                        <div class="view-toggle">
+                            <button class="view-toggle-btn active" data-view="list" title="List view">☰ List</button>
+                            <button class="view-toggle-btn" data-view="grid" title="Grid view">⊞ Grid</button>
+                        </div>
+                    </div>
                 </div>
 
             </section>
@@ -162,8 +168,8 @@
                         </div>
                         <p>High-quality skills (score ≥ 50) compatible with Claude Code</p>
                         <div class="code-block-wrapper">
-                            <pre><code>https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/claude-skills.json</code></pre>
-                            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy URL">
+                            <pre><code>cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/claude-skills.json</code></pre>
+                            <button class="copy-btn" onclick="copyUrl(this, 'https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/claude-skills.json')" aria-label="Copy URL">
                                 <span class="copy-icon">📋</span>
                                 <span class="copy-text">Copy</span>
                             </button>
@@ -178,8 +184,8 @@
                         </div>
                         <p>High-quality skills (score ≥ 50) compatible with GitHub Copilot</p>
                         <div class="code-block-wrapper">
-                            <pre><code>https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/copilot-skills.json</code></pre>
-                            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy URL">
+                            <pre><code>cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/copilot-skills.json</code></pre>
+                            <button class="copy-btn" onclick="copyUrl(this, 'https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/copilot-skills.json')" aria-label="Copy URL">
                                 <span class="copy-icon">📋</span>
                                 <span class="copy-text">Copy</span>
                             </button>
@@ -194,8 +200,8 @@
                         </div>
                         <p>Skills with MCP integration support</p>
                         <div class="code-block-wrapper">
-                            <pre><code>https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/mcp-compatible.json</code></pre>
-                            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy URL">
+                            <pre><code>cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/mcp-compatible.json</code></pre>
+                            <button class="copy-btn" onclick="copyUrl(this, 'https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/mcp-compatible.json')" aria-label="Copy URL">
                                 <span class="copy-icon">📋</span>
                                 <span class="copy-text">Copy</span>
                             </button>
@@ -210,8 +216,8 @@
                         </div>
                         <p>Top-quality skills with score ≥ 70</p>
                         <div class="code-block-wrapper">
-                            <pre><code>https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/premium-skills.json</code></pre>
-                            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy URL">
+                            <pre><code>cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/premium-skills.json</code></pre>
+                            <button class="copy-btn" onclick="copyUrl(this, 'https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/premium-skills.json')" aria-label="Copy URL">
                                 <span class="copy-icon">📋</span>
                                 <span class="copy-text">Copy</span>
                             </button>
@@ -226,8 +232,8 @@
                         </div>
                         <p>Recently maintained skills (updated within 6 months)</p>
                         <div class="code-block-wrapper">
-                            <pre><code>https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/active-skills.json</code></pre>
-                            <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy URL">
+                            <pre><code>cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/active-skills.json</code></pre>
+                            <button class="copy-btn" onclick="copyUrl(this, 'https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/active-skills.json')" aria-label="Copy URL">
                                 <span class="copy-icon">📋</span>
                                 <span class="copy-text">Copy</span>
                             </button>
@@ -305,8 +311,198 @@
             <section class="info-section">
                 <h2>🔌 Validate Your Skill</h2>
                 <p class="intro-text">
-                    Use our reusable GitHub Action to validate your SKILL.md files in CI/CD.
+                    Every skill submitted to the directory goes through a comprehensive automated validation pipeline.
+                    Use our reusable GitHub Action to validate locally, or submit and our pipeline handles the rest.
                 </p>
+
+                <div class="validation-pipeline">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">🛡️ Validation Pipeline — All Checks We Run</h3>
+                    <div class="pipeline-flow">
+
+                        <div class="pipeline-stage">
+                            <span class="pipeline-num">1</span>
+                            <div class="pipeline-details">
+                                <div class="pipeline-title">📄 YAML Frontmatter Validation</div>
+                                <div class="pipeline-desc">Parses the <code>---</code> frontmatter block in SKILL.md. Validates structure, required fields, and correct types. A malformed YAML block or missing required field is an immediate hard failure.</div>
+                                <div class="pipeline-checks">
+                                    <span class="pipeline-check"><code>name</code> present</span>
+                                    <span class="pipeline-check"><code>description</code> present</span>
+                                    <span class="pipeline-check"><code>category</code> present</span>
+                                    <span class="pipeline-check"><code>tags</code> is array</span>
+                                    <span class="pipeline-check"><code>version</code> present</span>
+                                    <span class="pipeline-check"><code>globs</code> optional</span>
+                                    <span class="pipeline-check">valid YAML syntax</span>
+                                    <span class="pipeline-check">no duplicate keys</span>
+                                </div>
+                            </div>
+                            <span class="pipeline-badge required">Required</span>
+                        </div>
+
+                        <div class="pipeline-stage">
+                            <span class="pipeline-num">2</span>
+                            <div class="pipeline-details">
+                                <div class="pipeline-title">🏷️ Naming & Format Conventions</div>
+                                <div class="pipeline-desc">Validates skill name format and version string. Reserved generic names are flagged to keep the catalog meaningful.</div>
+                                <div class="pipeline-checks">
+                                    <span class="pipeline-check">lowercase only</span>
+                                    <span class="pipeline-check">alphanumeric + hyphens</span>
+                                    <span class="pipeline-check">2–50 chars</span>
+                                    <span class="pipeline-check">no leading/trailing hyphen</span>
+                                    <span class="pipeline-check warning">no reserved names <code>test, demo, sample, app…</code></span>
+                                    <span class="pipeline-check">semver 2.0 version</span>
+                                    <span class="pipeline-check">description 10–200 chars</span>
+                                    <span class="pipeline-check">≤10 keywords</span>
+                                    <span class="pipeline-check info">known runtime</span>
+                                    <span class="pipeline-check info">known capabilities</span>
+                                    <span class="pipeline-check info">LICENSE present</span>
+                                </div>
+                            </div>
+                            <span class="pipeline-badge required">Required</span>
+                        </div>
+
+                        <div class="pipeline-stage">
+                            <span class="pipeline-num">3</span>
+                            <div class="pipeline-details">
+                                <div class="pipeline-title">📝 Content Quality Analysis</div>
+                                <div class="pipeline-desc">Analyzes the instruction body for completeness. Detects placeholder / template text that was never filled in, and checks for recommended structural sections and code examples.</div>
+                                <div class="pipeline-checks">
+                                    <span class="pipeline-check">≥100 chars total body</span>
+                                    <span class="pipeline-check">≥50 words</span>
+                                    <span class="pipeline-check warning">no <code>TODO</code></span>
+                                    <span class="pipeline-check warning">no <code>FIXME</code></span>
+                                    <span class="pipeline-check warning">no <code>TBD</code></span>
+                                    <span class="pipeline-check warning">no Lorem ipsum</span>
+                                    <span class="pipeline-check warning">no "placeholder" text</span>
+                                    <span class="pipeline-check warning">no "add your content here"</span>
+                                    <span class="pipeline-check info">Usage / How to use section</span>
+                                    <span class="pipeline-check info">Examples section</span>
+                                    <span class="pipeline-check info">fenced code blocks</span>
+                                    <span class="pipeline-check info">&lt;5000 words (not too long)</span>
+                                </div>
+                            </div>
+                            <span class="pipeline-badge quality">Quality</span>
+                        </div>
+
+                        <div class="pipeline-stage">
+                            <span class="pipeline-num">4</span>
+                            <div class="pipeline-details">
+                                <div class="pipeline-title">🔒 Secrets Detection — 30+ Patterns</div>
+                                <div class="pipeline-desc">Two-layer scan. Primary: <strong>detect-secrets</strong> (Yelp) with entropy-based detection and 20+ provider-specific plugins. Fallback: built-in regex patterns for 30+ known secret formats. Also runs <strong>gitleaks v8</strong> against the full repository tree.</div>
+                                <div class="pipeline-checks">
+                                    <span class="pipeline-check security">OpenAI <code>sk-…</code> / <code>sk-proj-…</code></span>
+                                    <span class="pipeline-check security">Anthropic <code>sk-ant-api…</code></span>
+                                    <span class="pipeline-check security">GitHub PAT <code>ghp_…</code></span>
+                                    <span class="pipeline-check security">GitHub OAuth <code>gho_…</code></span>
+                                    <span class="pipeline-check security">GitHub fine-grained <code>github_pat_…</code></span>
+                                    <span class="pipeline-check security">GitHub App <code>ghu_/ghs_</code></span>
+                                    <span class="pipeline-check security">AWS Access Key <code>AKIA…</code></span>
+                                    <span class="pipeline-check security">AWS Secret Key (entropy)</span>
+                                    <span class="pipeline-check security">Google API <code>AIza…</code></span>
+                                    <span class="pipeline-check security">Google OAuth <code>ya29.…</code></span>
+                                    <span class="pipeline-check security">Slack bot <code>xoxb-…</code></span>
+                                    <span class="pipeline-check security">Slack webhook URL</span>
+                                    <span class="pipeline-check security">Stripe live <code>sk_live_…</code></span>
+                                    <span class="pipeline-check security">Stripe test <code>sk_test_…</code></span>
+                                    <span class="pipeline-check security">Discord bot token</span>
+                                    <span class="pipeline-check security">Discord webhook URL</span>
+                                    <span class="pipeline-check security">npm token <code>npm_…</code></span>
+                                    <span class="pipeline-check security">PyPI token <code>pypi-AgE…</code></span>
+                                    <span class="pipeline-check security">Twilio API <code>SK…</code></span>
+                                    <span class="pipeline-check security">SendGrid <code>SG.…</code></span>
+                                    <span class="pipeline-check security">Private key PEM header</span>
+                                    <span class="pipeline-check security">generic <code>api_key=…</code></span>
+                                    <span class="pipeline-check security">generic <code>secret=…</code></span>
+                                    <span class="pipeline-check security">generic <code>token=…</code></span>
+                                    <span class="pipeline-check security">Base64 high-entropy strings</span>
+                                    <span class="pipeline-check security">Hex high-entropy strings</span>
+                                    <span class="pipeline-check security">JWT tokens</span>
+                                    <span class="pipeline-check security">gitleaks full-repo scan</span>
+                                </div>
+                            </div>
+                            <span class="pipeline-badge required">Required</span>
+                        </div>
+
+                        <div class="pipeline-stage">
+                            <span class="pipeline-num">5</span>
+                            <div class="pipeline-details">
+                                <div class="pipeline-title">🛡️ Injection & Malicious Pattern Detection</div>
+                                <div class="pipeline-desc">Scans skill instructions for patterns that could cause an AI agent to execute dangerous operations. Covers shell injection, code injection, RCE, obfuscation, and data exfiltration vectors.</div>
+                                <div class="pipeline-checks">
+                                    <span class="pipeline-check security">destructive <code>rm -rf /</code> targeting system dirs</span>
+                                    <span class="pipeline-check security">pipe-to-shell <code>curl … | bash</code></span>
+                                    <span class="pipeline-check security">pipe-to-shell <code>wget … | sh</code></span>
+                                    <span class="pipeline-check security">pipe-to-python <code>curl … | python3</code></span>
+                                    <span class="pipeline-check security">code injection <code>eval(input(…))</code></span>
+                                    <span class="pipeline-check security">code injection <code>exec(request.…)</code></span>
+                                    <span class="pipeline-check security">dynamic import <code>__import__(argv)</code></span>
+                                    <span class="pipeline-check security">shell injection <code>subprocess(shell=True)</code></span>
+                                    <span class="pipeline-check security">SQL injection via string concat</span>
+                                    <span class="pipeline-check security">obfuscation <code>base64.decode → exec</code></span>
+                                    <span class="pipeline-check warning">prompt injection attempts</span>
+                                    <span class="pipeline-check warning">jailbreak instructions</span>
+                                </div>
+                                <div class="pipeline-desc" style="margin-top:0.5rem; font-size:0.8rem;">Lakera Guard AI is also optionally used to detect prompt-injection in skill content.</div>
+                            </div>
+                            <span class="pipeline-badge required">Required</span>
+                        </div>
+
+                        <div class="pipeline-stage">
+                            <span class="pipeline-num">6</span>
+                            <div class="pipeline-details">
+                                <div class="pipeline-title">⭐ LGTM Quality Scoring (0–100)</div>
+                                <div class="pipeline-desc">Automated quality assessment using the <a href="https://github.com/dmgrok/LGTM_agent_skills" target="_blank">LGTM Agent Skills</a> action. Minimum score: <strong>70/100</strong> to pass. Sub-scores are weighted and visible in the PR comment.</div>
+                                <div class="pipeline-checks">
+                                    <span class="pipeline-check info">Spec Compliance</span>
+                                    <span class="pipeline-check security">Security KPI</span>
+                                    <span class="pipeline-check info">Content Quality</span>
+                                    <span class="pipeline-check info">Testing coverage</span>
+                                    <span class="pipeline-check info">Originality</span>
+                                    <span class="pipeline-check info">score &lt;70 → fail</span>
+                                    <span class="pipeline-check warning">score 70–84 → manual review</span>
+                                    <span class="pipeline-check">score ≥85 → auto-approve</span>
+                                </div>
+                            </div>
+                            <span class="pipeline-badge automated">Automated</span>
+                        </div>
+
+                        <div class="pipeline-stage">
+                            <span class="pipeline-num">7</span>
+                            <div class="pipeline-details">
+                                <div class="pipeline-title">🔄 Duplicate & Similarity Check</div>
+                                <div class="pipeline-desc">Checks the full catalog for exact name clashes and near-duplicates. Uses <strong>rapidfuzz</strong> (C-optimized) → <strong>python-Levenshtein</strong> → pure-Python fallback for the similarity calculation. Top-3 similar names are surfaced in the report.</div>
+                                <div class="pipeline-checks">
+                                    <span class="pipeline-check warning">exact name match → block</span>
+                                    <span class="pipeline-check warning">Levenshtein similarity &gt;80% → warn</span>
+                                    <span class="pipeline-check warning">top-3 similar names reported</span>
+                                    <span class="pipeline-check info">mirror / fork detection</span>
+                                    <span class="pipeline-check info">normalized similarity ratio (0–1)</span>
+                                </div>
+                            </div>
+                            <span class="pipeline-badge quality">Quality</span>
+                        </div>
+
+                        <div class="pipeline-stage">
+                            <span class="pipeline-num">8</span>
+                            <div class="pipeline-details">
+                                <div class="pipeline-title">🧪 Provider Integration Test</div>
+                                <div class="pipeline-desc">Live end-to-end test against the actual repository. Confirms the provider config resolves correctly, files are reachable, and at least one valid SKILL.md can be parsed before the PR is created.</div>
+                                <div class="pipeline-checks">
+                                    <span class="pipeline-check">GitHub API tree fetch</span>
+                                    <span class="pipeline-check">recursive tree traversal</span>
+                                    <span class="pipeline-check">SKILL.md reachable via raw URL</span>
+                                    <span class="pipeline-check">frontmatter parseable</span>
+                                    <span class="pipeline-check">skills_path_prefix valid</span>
+                                    <span class="pipeline-check">branch exists (main/master)</span>
+                                    <span class="pipeline-check warning">rate-limit check (needs GITHUB_TOKEN)</span>
+                                </div>
+                            </div>
+                            <span class="pipeline-badge automated">Automated</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem;">🔧 Run Validation in Your Repo</h3>
                 <div class="code-block-wrapper">
                     <pre><code># .github/workflows/validate.yml
 name: Validate Skill
@@ -536,12 +732,12 @@ Found 5 skill(s):
 
                         <div class="cli-command" data-category="discovery">
                             <div class="command-header">
-                                <h4><code>skills info &lt;skill-id&gt;</code></h4>
+                                <h4><code>skillsdir info &lt;skill-id&gt;</code></h4>
                                 <span class="badge badge-discovery">Discovery</span>
                             </div>
                             <p>View detailed information about a skill</p>
                             <div class="code-block-wrapper">
-                                <pre><code>$ skills info anthropic/pdf
+                                <pre><code>$ skillsdir info anthropic/pdf
 
 pdf
 ────────────────────────────────────────
@@ -607,12 +803,12 @@ $ skillsdir install anthropic/pdf -p --agent cursor   # .cursor/skills/</code></
 
                         <div class="cli-command" data-category="discovery">
                             <div class="command-header">
-                                <h4><code>skills detect</code></h4>
+                                <h4><code>skillsdir detect</code></h4>
                                 <span class="badge badge-discovery">Discovery</span>
                             </div>
                             <p>Show detected agent and skill paths for current directory</p>
                             <div class="code-block-wrapper">
-                                <pre><code>$ skills detect
+                                <pre><code>$ skillsdir detect
 
 Agent Detection
 ────────────────────────────────────────
@@ -699,12 +895,12 @@ keywords (comma-separated): web, scraping, extraction
 
                         <div class="cli-command" data-category="management">
                             <div class="command-header">
-                                <h4><code>skills uninstall &lt;skill-id&gt;</code></h4>
+                                <h4><code>skillsdir uninstall &lt;skill-id&gt;</code></h4>
                                 <span class="badge badge-manage">Manage</span>
                             </div>
                             <p>Remove an installed skill</p>
                             <div class="code-block-wrapper">
-                                <pre><code>$ skills uninstall anthropic/pdf
+                                <pre><code>$ skillsdir uninstall anthropic/pdf
 Remove anthropic/pdf from ~/.skills/installed/anthropic/pdf? [y/N] y
 ✓ Uninstalled anthropic/pdf</code></pre>
                                 <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
@@ -771,12 +967,12 @@ $ skillsdir config set cache_ttl 7200
                     <div class="cli-commands">
                         <div class="cli-command" data-category="publishing">
                             <div class="command-header">
-                                <h4><code>skills login</code></h4>
+                                <h4><code>skillsdir login</code></h4>
                                 <span class="badge badge-publish">Publish</span>
                             </div>
                             <p>Authenticate with GitHub for publishing skills</p>
                             <div class="code-block-wrapper">
-                                <pre><code>$ skills login
+                                <pre><code>$ skillsdir login
 
 GitHub Authentication
 ────────────────────────────────────────
@@ -795,12 +991,12 @@ Paste your token: ghp_xxxxxxxxxxxx
 
                         <div class="cli-command" data-category="publishing">
                             <div class="command-header">
-                                <h4><code>skills validate</code></h4>
+                                <h4><code>skillsdir validate</code></h4>
                                 <span class="badge badge-publish">Publish</span>
                             </div>
                             <p>Validate a skill directory before publishing</p>
                             <div class="code-block-wrapper">
-                                <pre><code>$ skills validate ./my-skill
+                                <pre><code>$ skillsdir validate ./my-skill
 
 Validating Skill
 ────────────────────────────────────────
@@ -824,12 +1020,12 @@ Checks passed:
 
                         <div class="cli-command" data-category="publishing">
                             <div class="command-header">
-                                <h4><code>skills publish</code></h4>
+                                <h4><code>skillsdir publish</code></h4>
                                 <span class="badge badge-publish">Publish</span>
                             </div>
                             <p>Publish a skill to GitHub and optionally submit to the directory</p>
                             <div class="code-block-wrapper">
-                                <pre><code>$ skills publish
+                                <pre><code>$ skillsdir publish
 
 Publishing Skill
 ────────────────────────────────────────
@@ -843,16 +1039,16 @@ Publishing Skill
 ✓ Published your-username/web-scraper@1.0.0
 
   To add to the official directory:
-    skills publish --submit
+    skillsdir publish --submit
 
 # Submit to official directory
-$ skills publish --submit
+$ skillsdir publish --submit
 → Creating submission issue...
 ✓ Submission created!
   https://github.com/dmgrok/agent_skills_directory/issues/123
 
 # Preview without changes
-$ skills publish --dry-run</code></pre>
+$ skillsdir publish --dry-run</code></pre>
                                 <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
                                     <span class="copy-icon">📋</span>
                                     <span class="copy-text">Copy</span>
@@ -1097,7 +1293,7 @@ skillsdir list
 skillsdir update
 
 # Detect project agent
-skills detect</code></pre>
+skillsdir detect</code></pre>
                             </div>
                         </div>
                     </div>

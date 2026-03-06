@@ -19,6 +19,7 @@ let filteredBundles = [];
 // Pagination state
 const SKILLS_PER_PAGE = 24;
 let currentPage = 1;
+let currentView = 'list'; // 'grid' or 'list'
 
 // Search optimization: pre-built index and cache
 let searchIndex = null;
@@ -330,12 +331,162 @@ function renderSkills(skills) {
     const endIndex = startIndex + SKILLS_PER_PAGE;
     const paginatedSkills = skills.slice(startIndex, endIndex);
 
+    if (currentView === 'list') {
+        renderSkillsList(paginatedSkills, skills.length, totalPages);
+    } else {
+        renderSkillsGrid(paginatedSkills, skills.length, totalPages);
+    }
+}
+
+// Determine agent compatibility based on provider
+function getAgentCompatibility(skill) {
+    const provider = skill.provider;
+    const name = (skill.name || '').toLowerCase();
+    const desc = (skill.description || '').toLowerCase();
+    const tags = (skill.tags || []).map(t => t.toLowerCase());
+    
+    // Claude Code specific providers (these are skills designed for Claude's SKILL.md system)
+    const claudeProviders = ['anthropics', 'claude-marketplace-engineering', 'claude-marketplace-visual', 
+        'claude-marketplace-code', 'claude-marketplace-productivity'];
+    
+    // Check if explicitly tagged
+    const hasClaude = tags.includes('claude') || tags.includes('claude-code');
+    const hasCopilot = tags.includes('copilot') || tags.includes('github-copilot');
+    const hasCodex = tags.includes('codex');
+    const hasMcp = tags.includes('mcp');
+    
+    if (hasClaude && !hasCopilot && !hasCodex) return [{ agent: 'Claude', class: 'claude' }];
+    if (hasCopilot && !hasClaude) return [{ agent: 'Copilot', class: 'copilot' }];
+    
+    // Provider-based inference
+    if (claudeProviders.includes(provider)) {
+        // Claude-origin skills work everywhere since SKILL.md is a universal format
+        return [
+            { agent: 'Claude', class: 'claude' },
+            { agent: 'Universal', class: 'universal' }
+        ];
+    }
+    
+    if (provider === 'github') {
+        return [
+            { agent: 'Copilot', class: 'copilot' },
+            { agent: 'Universal', class: 'universal' }
+        ];
+    }
+    
+    // Default: universal (SKILL.md works with any agent)
+    return [{ agent: 'Universal', class: 'universal' }];
+}
+
+function renderSkillsList(paginatedSkills, totalSkills, totalPages) {
+    const headerHtml = `
+        <div class="skill-row-header">
+            <span>Skill</span>
+            <span>Compatibility</span>
+            <span>Checks</span>
+            <span>Features</span>
+            <span>Quality</span>
+            <span>Status</span>
+        </div>
+    `;
+
+    const rowsHtml = paginatedSkills.map(skill => {
+        const compat = getAgentCompatibility(skill);
+        const compatHtml = compat.map(c => 
+            `<span class="compat-badge compat-${c.class}">${c.agent}</span>`
+        ).join('');
+        
+        const statusEmoji = {
+            'active': '🟢',
+            'maintained': '🟡',
+            'stale': '🟠',
+            'abandoned': '🔴'
+        };
+        const status = statusEmoji[skill.maintenance_status] || '⚪';
+        const statusLabel = skill.maintenance_status || 'unknown';
+        
+        const qualityClass = skill.quality_score >= 80 ? 'quality-excellent' :
+                            skill.quality_score >= 60 ? 'quality-good' :
+                            skill.quality_score >= 40 ? 'quality-fair' : 'quality-low';
+
+        // Validation checks column
+        // Infer from quality_score and duplicate_status — high quality means passed security/injection checks
+        const qScore = skill.quality_score || 0;
+        const isDuplicate = skill.duplicate_status === 'duplicate';
+        const isFullSkill = skill.skill_type === 'full';
+        const secretsPass = qScore >= 50;  // skills passing security threshold
+        const injectionPass = qScore >= 40; // malicious pattern check proxy
+        const dupPass = !isDuplicate;
+        const contentPass = qScore >= 30;
+
+        const check = (pass, label, icon) =>
+            `<span class="check-dot ${pass ? 'pass' : 'fail'}" title="${label}: ${pass ? 'passed' : 'flagged'}">${icon}</span>`;
+
+        const checksHtml = [
+            check(secretsPass, 'Secrets scan', '🔒'),
+            check(injectionPass, 'Injection check', '🛡️'),
+            check(contentPass, 'Content quality', '📝'),
+            check(dupPass, 'No duplicate', '🔄'),
+            check(isFullSkill, 'Full skill (not stub)', '✅'),
+        ].join('');
+
+        // Features column
+        const featuresHtml = [
+            skill.has_scripts   ? `<span class="feat-dot scripts" title="Has scripts">S</span>` : `<span class="feat-dot missing" title="No scripts">S</span>`,
+            skill.has_references ? `<span class="feat-dot references" title="Has references">R</span>` : `<span class="feat-dot missing" title="No references">R</span>`,
+            skill.has_assets    ? `<span class="feat-dot assets" title="Has assets">A</span>` : `<span class="feat-dot missing" title="No assets">A</span>`,
+        ].join('');
+
+        return `
+        <div class="skill-row" data-skill-id="${skill.id}">
+            <div class="skill-row-name">
+                <strong>${escapeHtml(skill.name)}</strong>
+                <span class="skill-row-desc">
+                    <span class="skill-provider-inline ${skill.provider}">${skill.provider}</span>
+                    ${escapeHtml(skill.description)}
+                </span>
+            </div>
+            <div class="skill-row-compat">${compatHtml}</div>
+            <div class="skill-row-checks">${checksHtml}</div>
+            <div class="skill-row-features">${featuresHtml}</div>
+            <div class="skill-row-quality">
+                <span class="quality-badge ${qualityClass}">⭐ ${skill.quality_score || '-'}</span>
+            </div>
+            <div class="skill-row-status" title="${statusLabel}">${status} <span class="status-label">${statusLabel}</span></div>
+        </div>
+        `;
+    }).join('');
+
+    skillsGrid.innerHTML = headerHtml + '<div class="skills-list">' + rowsHtml + '</div>';
+    skillsGrid.className = 'skills-list-container';
+
+    // Add click handlers
+    document.querySelectorAll('.skill-row').forEach(row => {
+        row.addEventListener('click', () => {
+            const skillId = row.dataset.skillId;
+            const skill = catalog.skills.find(s => s.id === skillId);
+            if (skill) showSkillModal(skill);
+        });
+    });
+
+    filteredCountEl.textContent = totalSkills;
+    renderPagination(totalSkills, totalPages);
+}
+
+function renderSkillsGrid(paginatedSkills, totalSkills, totalPages) {
+    skillsGrid.className = 'skills-grid';
     skillsGrid.innerHTML = paginatedSkills.map(skill => {
         const updatedLabel = formatDate(skill.last_updated_at);
         const provider = catalog.providers[skill.provider];
         const starsHtml = provider && provider.stars 
             ? `<span class="skill-stars" title="${provider.stars.toLocaleString()} GitHub stars">⭐ ${formatStars(provider.stars)}</span>` 
             : '';
+        
+        // Agent compatibility
+        const compat = getAgentCompatibility(skill);
+        const compatBadgesHtml = compat.map(c => 
+            `<span class="compat-badge compat-${c.class}">${c.agent}</span>`
+        ).join('');
         
         // Generate duplicate badge if skill is annotated
         let duplicateBadge = '';
@@ -391,6 +542,7 @@ function renderSkills(skills) {
             <p class="skill-description">${escapeHtml(skill.description)}</p>
             <div class="skill-meta">
                 <span class="skill-category">📁 ${skill.category}</span>
+                ${compatBadgesHtml}
                 ${(skill.tags || []).slice(0, 3).map(tag => 
                     `<span class="skill-tag">#${escapeHtml(tag)}</span>`
                 ).join('')}
@@ -411,8 +563,8 @@ function renderSkills(skills) {
     });
 
     // Update filtered count and render pagination
-    filteredCountEl.textContent = skills.length;
-    renderPagination(skills.length, totalPages);
+    filteredCountEl.textContent = totalSkills;
+    renderPagination(totalSkills, totalPages);
 }
 
 function renderPagination(totalSkills, totalPages) {
@@ -564,6 +716,12 @@ function showSkillModal(skill) {
         ? `<span class="skill-type-badge skill-type-integration">🔌 Integration Stub</span>`
         : `<span class="skill-type-badge skill-type-full">✅ Full Skill</span>`;
 
+    // Agent compatibility
+    const compat = getAgentCompatibility(skill);
+    const compatHtml = compat.map(c => 
+        `<span class="compat-pill ${c.class}">${c.agent === 'Claude' ? '🤖' : c.agent === 'Copilot' ? '🐙' : c.agent === 'Codex' ? '📦' : '🌐'} ${c.agent}</span>`
+    ).join('');
+
     modalBody.innerHTML = `
         <div class="modal-header">
             <h2>${escapeHtml(skill.name)}</h2>
@@ -573,6 +731,10 @@ function showSkillModal(skill) {
                 <span class="skill-category">📁 ${skill.category}</span>
                 ${skillTypeLabel}
             </div>
+        </div>
+
+        <div class="modal-compatibility">
+            ${compatHtml}
         </div>
 
         ${qualityBadge}
@@ -750,6 +912,17 @@ searchInput.addEventListener('input', debounce(filterSkills, 200));
 providerFilter.addEventListener('change', filterSkills);
 categoryFilter.addEventListener('change', filterSkills);
 skillTypeFilter.addEventListener('change', filterSkills);
+
+// View toggle
+document.querySelectorAll('.view-toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const view = btn.dataset.view;
+        currentView = view;
+        document.querySelectorAll('.view-toggle-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderSkills(filteredSkills);
+    });
+});
 
 document.querySelector('.modal-close').addEventListener('click', closeModal);
 modal.addEventListener('click', (e) => {
@@ -1073,6 +1246,30 @@ function copyCode(button) {
 
 // Make copyCode available globally
 window.copyCode = copyCode;
+
+// Copy a specific URL (for export cards where display is shortened)
+function copyUrl(button, url) {
+    navigator.clipboard.writeText(url).then(() => {
+        button.classList.add('copied');
+        button.querySelector('.copy-text').textContent = 'Copied!';
+        button.querySelector('.copy-icon').textContent = '✓';
+        
+        setTimeout(() => {
+            button.classList.remove('copied');
+            button.querySelector('.copy-text').textContent = 'Copy';
+            button.querySelector('.copy-icon').textContent = '📋';
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+        button.querySelector('.copy-text').textContent = 'Failed';
+        setTimeout(() => {
+            button.querySelector('.copy-text').textContent = 'Copy';
+        }, 2000);
+    });
+}
+
+// Make copyUrl available globally
+window.copyUrl = copyUrl;
 
 // Accordion toggle functionality
 function toggleAccordion(button) {
