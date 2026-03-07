@@ -1,8 +1,8 @@
 {
   "name": "MCP-Compatible Skills",
   "description": "Skills with MCP integration support, filtered from Agent Skills Directory",
-  "version": "2026.03.06",
-  "generated_at": "2026-03-06T17:37:41.215159+00:00",
+  "version": "2026.03.07",
+  "generated_at": "2026-03-07T06:52:41.829144+00:00",
   "source": "https://github.com/dmgrok/agent_skills_directory",
   "catalog_url": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json",
   "website": "https://dmgrok.github.io/agent_skills_directory/",
@@ -22,7 +22,7 @@
         "repo": "https://github.com/anthropics/skills",
         "path": "skills/mcp-builder",
         "skill_md_url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/mcp-builder/SKILL.md",
-        "commit_sha": "7029232b9212482c0476da354b83364bd28fab2f"
+        "commit_sha": "b0cbd3df1533b396d281a6886d5132f623393a9c"
       },
       "has_scripts": true,
       "has_references": true,
@@ -38,19 +38,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 94,
+      "days_since_update": 95,
       "maintenance_status": "maintained",
       "quality_score": 80,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 85829,
-      "similar_skills": [
-        {
-          "id": "skillcreatorai/mcp-builder",
-          "provider": "skillcreatorai",
-          "similarity": 1.0
-        }
-      ]
+      "github_stars": 86143
     },
     {
       "id": "aws-skills/aws-agentic-ai",
