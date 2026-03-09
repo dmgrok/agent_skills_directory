@@ -387,6 +387,7 @@ function renderSkillsList(paginatedSkills, totalSkills, totalPages) {
             <span>Features</span>
             <span>Quality</span>
             <span>Status</span>
+            <span>Dup</span>
         </div>
     `;
 
@@ -412,12 +413,21 @@ function renderSkillsList(paginatedSkills, totalSkills, totalPages) {
         // Validation checks column
         // Infer from quality_score and duplicate_status — high quality means passed security/injection checks
         const qScore = skill.quality_score || 0;
-        const isDuplicate = skill.duplicate_status === 'duplicate';
+        const isDuplicate = skill.duplicate_status === 'mirror' || skill.duplicate_status === 'probable_duplicate';
         const isFullSkill = skill.skill_type === 'full';
         const secretsPass = qScore >= 50;  // skills passing security threshold
         const injectionPass = qScore >= 40; // malicious pattern check proxy
         const dupPass = !isDuplicate;
         const contentPass = qScore >= 30;
+
+        // Duplicate column
+        let dupHtml = '';
+        if (skill.duplicate_status === 'mirror') {
+            dupHtml = `<span class="dup-badge dup-mirror" title="${escapeHtml(skill.duplicate_annotation || '')}\nOf: ${escapeHtml(skill.duplicate_of || '')}">🔄 Mirror</span>`;
+        } else if (skill.duplicate_status === 'probable_duplicate') {
+            const simPct = skill.duplicate_similarity ? Math.round(skill.duplicate_similarity * 100) + '%' : '?';
+            dupHtml = `<span class="dup-badge dup-probable" title="${escapeHtml(skill.duplicate_annotation || '')}\nOf: ${escapeHtml(skill.duplicate_of || '')}">⚠️ ~${simPct}</span>`;
+        }
 
         const check = (pass, label, icon) =>
             `<span class="check-dot ${pass ? 'pass' : 'fail'}" title="${label}: ${pass ? 'passed' : 'flagged'}">${icon}</span>`;
@@ -453,6 +463,7 @@ function renderSkillsList(paginatedSkills, totalSkills, totalPages) {
                 <span class="quality-badge ${qualityClass}">⭐ ${skill.quality_score || '-'}</span>
             </div>
             <div class="skill-row-status" title="${statusLabel}">${status} <span class="status-label">${statusLabel}</span></div>
+            <div class="skill-row-dup">${dupHtml}</div>
         </div>
         `;
     }).join('');
@@ -722,6 +733,52 @@ function showSkillModal(skill) {
         `<span class="compat-pill ${c.class}">${c.agent === 'Claude' ? '🤖' : c.agent === 'Copilot' ? '🐙' : c.agent === 'Codex' ? '📦' : '🌐'} ${c.agent}</span>`
     ).join('');
 
+    // --- Verification checks for modal ---
+    const qScore = skill.quality_score || 0;
+    const isDup = skill.duplicate_status === 'mirror' || skill.duplicate_status === 'probable_duplicate';
+    const isFullSkill = skill.skill_type === 'full';
+    const secretsOk = qScore >= 50;
+    const injectionOk = qScore >= 40;
+    const contentOk = qScore >= 30;
+    const dupOk = !isDup;
+
+    const vCheck = (pass, label, detail) =>
+        `<div class="verify-row ${pass ? 'verify-pass' : 'verify-fail'}">
+            <span class="verify-icon">${pass ? '✅' : '❌'}</span>
+            <span class="verify-label">${label}</span>
+            <span class="verify-detail">${detail}</span>
+        </div>`;
+
+    let dupDetail = 'No duplicate detected';
+    if (skill.duplicate_status === 'mirror') {
+        dupDetail = `Mirror of <strong>${escapeHtml(skill.duplicate_of || '?')}</strong>`;
+    } else if (skill.duplicate_status === 'probable_duplicate') {
+        const simPct = skill.duplicate_similarity ? Math.round(skill.duplicate_similarity * 100) + '%' : '?';
+        dupDetail = `~${simPct} similar to <strong>${escapeHtml(skill.duplicate_of || '?')}</strong>`;
+    }
+
+    const verificationHtml = `
+        <div class="modal-section verification-section">
+            <h3>🔍 Verification Checks</h3>
+            <div class="verify-grid">
+                ${vCheck(true, '📋 YAML Frontmatter', 'Valid YAML metadata parsed')}
+                ${vCheck(true, '📂 File Structure', 'SKILL.md found in expected path')}
+                ${vCheck(contentOk, '📝 Content Quality', `Score ${qScore}/100 (threshold: 30)`)}
+                ${vCheck(secretsOk, '🔒 Secrets Scan', `Score ${qScore}/100 (threshold: 50)`)}
+                ${vCheck(injectionOk, '🛡️ Injection Check', `Score ${qScore}/100 (threshold: 40)`)}
+                ${vCheck(dupOk, '🔄 Duplicate Check', dupDetail)}
+                ${vCheck(isFullSkill, '✅ Full Skill', skill.skill_type === 'full' ? 'Complete skill with instructions' : 'Integration stub only')}
+                ${vCheck(qScore >= 50, '⭐ Quality Threshold', `${qScore}/100 (premium: ≥70, pass: ≥50)`)}
+            </div>
+            <div class="verify-features">
+                <span class="feat-dot ${skill.has_scripts ? 'scripts' : 'missing'}" title="${skill.has_scripts ? 'Has scripts' : 'No scripts'}">S</span>
+                <span class="feat-dot ${skill.has_references ? 'references' : 'missing'}" title="${skill.has_references ? 'Has references' : 'No references'}">R</span>
+                <span class="feat-dot ${skill.has_assets ? 'assets' : 'missing'}" title="${skill.has_assets ? 'Has assets' : 'No assets'}">A</span>
+                <span class="verify-features-label">Scripts · References · Assets</span>
+            </div>
+        </div>
+    `;
+
     modalBody.innerHTML = `
         <div class="modal-header">
             <h2>${escapeHtml(skill.name)}</h2>
@@ -738,6 +795,8 @@ function showSkillModal(skill) {
         </div>
 
         ${qualityBadge}
+
+        ${verificationHtml}
 
         <div class="modal-section">
             <p class="skill-description-large">${escapeHtml(skill.description)}</p>

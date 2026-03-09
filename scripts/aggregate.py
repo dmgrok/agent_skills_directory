@@ -1453,7 +1453,10 @@ def update_readme(catalog: dict, output_dir: Path) -> None:
         q          = skill.get("quality_score") or 0
         maint      = skill.get("maintenance_status") or "unknown"
         skill_type = skill.get("skill_type", "full")
-        is_dup     = skill.get("duplicate_status") == "duplicate"
+        dup_status = skill.get("duplicate_status")
+        is_dup     = dup_status in ("mirror", "probable_duplicate")
+        dup_of     = skill.get("duplicate_of", "")
+        dup_sim    = skill.get("duplicate_similarity")
         h_scripts  = skill.get("has_scripts", False)
         h_refs     = skill.get("has_references", False)
         h_assets   = skill.get("has_assets", False)
@@ -1477,6 +1480,15 @@ def update_readme(catalog: dict, output_dir: Path) -> None:
 
         status_str = status_emoji.get(maint, f"⚪ {maint}")
 
+        # Duplicate column info
+        if dup_status == "mirror":
+            dup_info = f"🔄 → {dup_of}" if dup_of else "🔄 mirror"
+        elif dup_status == "probable_duplicate":
+            sim_pct = f"{int(dup_sim * 100)}%" if dup_sim else "?"
+            dup_info = f"⚠️ ~{sim_pct} → {dup_of}" if dup_of else f"⚠️ ~{sim_pct}"
+        else:
+            dup_info = ""
+
         rows.append(
             f"| {skill_link} | {provider} | {compat} "
             f"| {check_icon(secrets_pass)} "
@@ -1485,7 +1497,7 @@ def update_readme(catalog: dict, output_dir: Path) -> None:
             f"| {check_icon(dup_pass)} "
             f"| {check_icon(full_pass)} "
             f"| {feat_s} | {feat_r} | {feat_a} "
-            f"| {q}/100 | {status_str} |"
+            f"| {q}/100 | {status_str} | {dup_info} |"
         )
 
     header_lines = [
@@ -1495,8 +1507,8 @@ def update_readme(catalog: dict, output_dir: Path) -> None:
         f"> Auto-generated daily · [Browse interactively →](https://dmgrok.github.io/agent_skills_directory/)  ",
         f"> Legend: 🔒 Secrets scan · 🛡️ Injection check · 📝 Content · 🔄 No duplicate · ✅ Full skill · S=Scripts · R=References · A=Assets",
         f"",
-        f"| Skill | Provider | Compat | 🔒 | 🛡️ | 📝 | 🔄 | ✅ | S | R | A | Quality | Status |",
-        f"|-------|----------|--------|----|----|----|----|---|---|---|---|---------|--------|" ,
+        f"| Skill | Provider | Compat | 🔒 | 🛡️ | 📝 | 🔄 | ✅ | S | R | A | Quality | Status | Dup |",
+        f"|-------|----------|--------|----|----|----|----|---|---|---|---|---------|--------|-----|" ,
     ]
     footer_lines = [
         f"",
