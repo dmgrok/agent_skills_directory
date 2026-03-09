@@ -1,9 +1,9 @@
 {
-  "last_run": "2026-03-07T06:52:41.956434+00:00",
+  "last_run": "2026-03-09T07:12:39.529724+00:00",
   "provider_commits": {
     "anthropics": "b0cbd3df1533b396d281a6886d5132f623393a9c",
     "openai": "ce2535c009ef92f4065be9626ae695c9ecd77e61",
-    "github": "9ef54533f0e4e3f5f45d790d675af5f91344e821",
+    "github": "c41cc5cb38369a4436e9f860a0b32857dc5355c4",
     "vercel": "64bee5b7ea30702448e2aed774eb361914029944",
     "huggingface": "5d88e21bff0495d5a900b2fbc5a36958366ee3e0",
     "skillcreatorai": "90b5f32927b156351b9facbda0c3d95b6011b379",
@@ -18,7 +18,7 @@
     "epub-skill": "7c0723087b9f6ec2352b42b73f61d224b542e059",
     "d3js-skill": "e198c87d03f1c9811acbff681886fac24baee53d",
     "ffuf-skill": "50fd4af4d8bd60cfc48fd84eda1720fbd718857d",
-    "ios-simulator-skill": "df27f3d6643622571d741738d358baadac17836b",
+    "ios-simulator-skill": "96ff1fee9607f55fdc6c126eb5d06f29f6b4e7d9",
     "move-quality-skill": "6813ac55cb3bfcaa35c349da7dd5f9eae745009d",
     "playwright-skill": "bb7e920d376022958214e349ef25498a2644e189",
     "pypict-skill": "a001d8737c70066401cfe1b39cf64969b4d3e5df",
@@ -45,6 +45,6 @@
     "visionos-agents": "32d34c3eb5ec1d1655588d632937d62dd684d454",
     "emblemcompany": "eb61c402239b034c3b340a189f71310d35f20ecb"
   },
-  "skills_count": 687,
-  "version": "2026.03.07"
+  "skills_count": 691,
+  "version": "2026.03.09"
 }
