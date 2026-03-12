@@ -1,14 +1,14 @@
 {
-  "last_run": "2026-03-11T07:07:48.010921+00:00",
+  "last_run": "2026-03-12T07:07:55.818527+00:00",
   "provider_commits": {
     "anthropics": "b0cbd3df1533b396d281a6886d5132f623393a9c",
-    "openai": "392fbd84f3d99abb1f513095c49c4ca3ebc6e968",
-    "github": "58f16bacc0d70c293e81668e0c5b40ea652ad46c",
+    "openai": "ecc1fb8bc0b82f1d3c7a92a82167ae8e8e613a67",
+    "github": "060ddd5b83978fc0f279e143d39475060f991355",
     "vercel": "64bee5b7ea30702448e2aed774eb361914029944",
-    "huggingface": "4f94aa583850fd18240644404efbed042f5dd2d5",
+    "huggingface": "0e13610de2dad9a0a52f23ba5c85eaf4475087fb",
     "skillcreatorai": "90b5f32927b156351b9facbda0c3d95b6011b379",
-    "obra-superpowers": "5ef73d25b71e69e63a74eae359fb26c7a6ac8fc0",
-    "tapestry": "db523caba032a49f1591e05be55db7f6a9a27397",
+    "obra-superpowers": "363923f74aa9cd7b470c0aaa73dee629a8bfdc90",
+    "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
     "sanjay-ai-skills": "e4c0b94ad5c1e4489ce5c68a806b4512ae7e5d8b",
     "aws-skills": "fea945516453eb9f1eaf977c244610f456b871e7",
     "claude-marketplace-engineering": "3fa16a94e0aba3509e4d4b318ca175d3191b5b7d",
@@ -30,7 +30,7 @@
     "cloudflare": "d3113039790f64e052ff80f351190da65e9b7510",
     "trailofbits": "c6097699e4553f0dda4db615330f4a5097c4ff99",
     "expo": "991716e214d206384249322e9ef99a2fe059bb9b",
-    "getsentry": "66040dc448bbe107d07b70ac02d0697cfa19daea",
+    "getsentry": "405638a2ee3f131b910be238af499eac5c86e92c",
     "supabase": "760460c221d30d0db904ff28e8fa52af85672255",
     "google-labs-stitch": "a92f689a7f942cc1c061bb46a8bc8904f80c1aee",
     "better-auth": "6a1636950a1d7fc53602639ce7505a4a5d39c797",
@@ -38,13 +38,13 @@
     "neondatabase": "6ab87d38a13bb66e0a2ca5539a7f72642661c569",
     "fal-ai": "282eba6fb2a88c68aa3dc05335be7b955688258e",
     "remotion": "937ffb32b148fdceef4b4184f975a708aab8d560",
-    "nginity": "a028cc736cb0a0ab5d585d3e8ef7dd6cec20f266",
+    "nginity": "713e2deb8277fa0c5dfc3b20aa9214313c66a988",
     "obsidian-plugin": "08dae85e59696a47e773706a543069b1891d90f2",
     "stream-coding": "42a7cb5ceec5611040d6f2764ee7943e4984345d",
     "ipsw-skill": "84598a30c8cbd316fd0a287c6071c816b61f2f00",
     "visionos-agents": "32d34c3eb5ec1d1655588d632937d62dd684d454",
     "emblemcompany": "eb61c402239b034c3b340a189f71310d35f20ecb"
   },
-  "skills_count": 744,
-  "version": "2026.03.11"
+  "skills_count": 753,
+  "version": "2026.03.12"
 }
