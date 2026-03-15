@@ -1,12 +1,12 @@
 {
-  "last_run": "2026-03-14T07:00:20.413920+00:00",
+  "last_run": "2026-03-15T07:07:29.056026+00:00",
   "provider_commits": {
     "anthropics": "b0cbd3df1533b396d281a6886d5132f623393a9c",
     "openai": "ecc1fb8bc0b82f1d3c7a92a82167ae8e8e613a67",
     "github": "fcdf1a87ad66f2ab69e296e7fe6149be18fe85df",
     "vercel": "5847a7c7e79bab3e400cf47800b83449d7aea2d4",
     "huggingface": "9a685c9f0de100d26967e0d768f70aca78acd5fe",
-    "skillcreatorai": "f18cb5bb90399d78688580111e72a8209655f661",
+    "skillcreatorai": "fb7be772dabab6d34b26dd4b5ba6031879fd0115",
     "obra-superpowers": "363923f74aa9cd7b470c0aaa73dee629a8bfdc90",
     "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
     "sanjay-ai-skills": "e4c0b94ad5c1e4489ce5c68a806b4512ae7e5d8b",
@@ -46,5 +46,5 @@
     "emblemcompany": "199f8cdb90d4520d53fd298ada6d439e7331401a"
   },
   "skills_count": 766,
-  "version": "2026.03.14"
+  "version": "2026.03.15"
 }
