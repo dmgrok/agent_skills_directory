@@ -1,13 +1,13 @@
 {
-  "last_run": "2026-03-16T07:31:24.319763+00:00",
+  "last_run": "2026-03-17T07:16:54.721423+00:00",
   "provider_commits": {
     "anthropics": "b0cbd3df1533b396d281a6886d5132f623393a9c",
     "openai": "ecc1fb8bc0b82f1d3c7a92a82167ae8e8e613a67",
-    "github": "a56ee4bbb6103c48183d88188a48b185f82afd7f",
+    "github": "8d91380b79eabceeeda52af4b75d9c56a23d53ae",
     "vercel": "5847a7c7e79bab3e400cf47800b83449d7aea2d4",
-    "huggingface": "9a685c9f0de100d26967e0d768f70aca78acd5fe",
-    "skillcreatorai": "fb7be772dabab6d34b26dd4b5ba6031879fd0115",
-    "obra-superpowers": "363923f74aa9cd7b470c0aaa73dee629a8bfdc90",
+    "huggingface": "835b13732d70dee5981f93d4e1842775205718e1",
+    "skillcreatorai": "e56075328df66228a20759479994ba6b4b62caac",
+    "obra-superpowers": "3cee13e516e91d44b957c1336c3d08c8a8392702",
     "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
     "sanjay-ai-skills": "e4c0b94ad5c1e4489ce5c68a806b4512ae7e5d8b",
     "aws-skills": "fea945516453eb9f1eaf977c244610f456b871e7",
@@ -26,15 +26,15 @@
     "family-history-skill": "7334d3d400740fda3de1c54c90e186307f8f1176",
     "notebooklm-skill": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
     "aiqualitylab": "0321527eebbb39ed4ae7673c2917c6032cf2a050",
-    "stripe": "538dae7cc6bd38d28cd98291d637445ea2a4779d",
+    "stripe": "6e87b979ac49774f2e728ac64afdfd8b11d1dcce",
     "cloudflare": "d3113039790f64e052ff80f351190da65e9b7510",
-    "trailofbits": "c6097699e4553f0dda4db615330f4a5097c4ff99",
+    "trailofbits": "aab484c5b7aa17629dadd6739313f19b56644731",
     "expo": "3cd151c9d96bf481c4fc274f2de758cd2e265261",
     "getsentry": "405638a2ee3f131b910be238af499eac5c86e92c",
     "supabase": "760460c221d30d0db904ff28e8fa52af85672255",
     "google-labs-stitch": "ad0b5cc5d5c3569e12a3105b0dee7409c3227e1b",
     "better-auth": "6a1636950a1d7fc53602639ce7505a4a5d39c797",
-    "tinybird": "f62dc2ffff7119eb00aa9b07719888540ab47a69",
+    "tinybird": "31dbbb3bc5875b5418ec38e27d1aa25432362227",
     "neondatabase": "54d7a9db2ddd476f84d5d1fd7bac323907858a8b",
     "fal-ai": "282eba6fb2a88c68aa3dc05335be7b955688258e",
     "remotion": "937ffb32b148fdceef4b4184f975a708aab8d560",
@@ -43,8 +43,8 @@
     "stream-coding": "42a7cb5ceec5611040d6f2764ee7943e4984345d",
     "ipsw-skill": "84598a30c8cbd316fd0a287c6071c816b61f2f00",
     "visionos-agents": "32d34c3eb5ec1d1655588d632937d62dd684d454",
-    "emblemcompany": "6ade6886fbe2ae0a9e124027215855922a72a94b"
+    "emblemcompany": "422374222a61bd0a79147e599c9bf7f4a78e8ca7"
   },
   "skills_count": 774,
-  "version": "2026.03.16"
+  "version": "2026.03.17"
 }

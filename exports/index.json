@@ -1,7 +1,7 @@
 {
   "name": "Agent Skills Directory - Ecosystem Exports",
-  "version": "2026.03.16",
-  "generated_at": "2026-03-16T07:31:24.168380+00:00",
+  "version": "2026.03.17",
+  "generated_at": "2026-03-17T07:16:54.576755+00:00",
   "description": "Pre-filtered skill catalogs for different ecosystems and use cases",
   "exports": {
     "claude-skills.json": {
@@ -16,7 +16,7 @@
     },
     "mcp-compatible.json": {
       "description": "MCP-compatible skills",
-      "total": 60,
+      "total": 59,
       "cdn": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/exports/mcp-compatible.json"
     },
     "premium-skills.json": {
