@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-03-20T07:09:42.167167+00:00",
+  "last_run": "2026-03-21T06:55:02.457075+00:00",
   "provider_commits": {
     "anthropics": "b0cbd3df1533b396d281a6886d5132f623393a9c",
-    "openai": "dc48aff8208131776c9937326002bd60cf572ab6",
+    "openai": "82d2c5b44ac234ec0f204f647562a4349d90ef43",
     "github": "c6a75d7e0923ec0a754e5554b1c52ef76f0d75f8",
     "vercel": "9aec8ee6aaf702e49312a071e672f1c1b7b7e948",
-    "huggingface": "4cdabeec700d084152c21e0e6a7e697671ab319e",
+    "huggingface": "73246ad6dc1a2e7a7f428cefd0e11296d0fff7e3",
     "skillcreatorai": "d7ea8f34a69a7e26e3bad518c3c9af9ea7ec5110",
     "obra-superpowers": "8ea39819eed74fe2a0338e71789f06b30e953041",
     "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
@@ -26,7 +26,7 @@
     "family-history-skill": "7334d3d400740fda3de1c54c90e186307f8f1176",
     "notebooklm-skill": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
     "aiqualitylab": "0321527eebbb39ed4ae7673c2917c6032cf2a050",
-    "stripe": "5d4f8b2bf9749bdf8eb2350f349645e06e9dbdd1",
+    "stripe": "91f8471adfe5189145aaab61879bfa13452c51eb",
     "cloudflare": "d3113039790f64e052ff80f351190da65e9b7510",
     "trailofbits": "5c15f4f5644b4bd3d48882a802a7232d501852b6",
     "expo": "3cd151c9d96bf481c4fc274f2de758cd2e265261",
@@ -45,6 +45,6 @@
     "visionos-agents": "aaa9e660c62705a858fc43e2b6c35461f21a89ae",
     "emblemcompany": "e3ec2324da9dedfc1cc40dabc1c124eb1da65650"
   },
-  "skills_count": 803,
-  "version": "2026.03.20"
+  "skills_count": 804,
+  "version": "2026.03.21"
 }
