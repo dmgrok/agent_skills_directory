@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-03-23T07:22:44.965484+00:00",
+  "last_run": "2026-03-24T07:15:08.542548+00:00",
   "provider_commits": {
     "anthropics": "887114fd09f8f24a7e6c907f9ee505348498ab6a",
-    "openai": "82d2c5b44ac234ec0f204f647562a4349d90ef43",
-    "github": "09839090c304f0a2cb3c97d4a3810d092c5f157b",
+    "openai": "34bcbc7658a9a89631f1200c1e120ef74cd285ff",
+    "github": "23fb7006c132a0bba75b0e5af7a35cab11272812",
     "vercel": "9aec8ee6aaf702e49312a071e672f1c1b7b7e948",
-    "huggingface": "73246ad6dc1a2e7a7f428cefd0e11296d0fff7e3",
+    "huggingface": "386571e3e65ef0c129af2747ff36d1fa6fc5b8a4",
     "skillcreatorai": "89613ff416f65e3530c06f7e4e893cedfbc039a9",
     "obra-superpowers": "8ea39819eed74fe2a0338e71789f06b30e953041",
     "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
@@ -26,7 +26,7 @@
     "family-history-skill": "7334d3d400740fda3de1c54c90e186307f8f1176",
     "notebooklm-skill": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
     "aiqualitylab": "0321527eebbb39ed4ae7673c2917c6032cf2a050",
-    "stripe": "91f8471adfe5189145aaab61879bfa13452c51eb",
+    "stripe": "5d09320414125ae97860718352eac2fed7601852",
     "cloudflare": "d3113039790f64e052ff80f351190da65e9b7510",
     "trailofbits": "5c15f4f5644b4bd3d48882a802a7232d501852b6",
     "expo": "3cd151c9d96bf481c4fc274f2de758cd2e265261",
@@ -34,17 +34,17 @@
     "supabase": "760460c221d30d0db904ff28e8fa52af85672255",
     "google-labs-stitch": "ad0b5cc5d5c3569e12a3105b0dee7409c3227e1b",
     "better-auth": "6a1636950a1d7fc53602639ce7505a4a5d39c797",
-    "tinybird": "31dbbb3bc5875b5418ec38e27d1aa25432362227",
+    "tinybird": "a33c7fbc1a4684f2732267c12a106ee8ad853d53",
     "neondatabase": "1304e290a0b24b3f46d60ee20e9f40271db9b41c",
     "fal-ai": "282eba6fb2a88c68aa3dc05335be7b955688258e",
     "remotion": "d5d395582c6227249cec74f53ab79aca77a4ff16",
-    "nginity": "b8d5edd8f67204c7a8aad806fd36f4daa21056b8",
+    "nginity": "17228eff68e215404c25de5ca671f50aa5d46170",
     "obsidian-plugin": "bad3fcc73bf27f255b23d1ff42c5ba37b9e30fa3",
     "stream-coding": "42a7cb5ceec5611040d6f2764ee7943e4984345d",
     "ipsw-skill": "84598a30c8cbd316fd0a287c6071c816b61f2f00",
     "visionos-agents": "aaa9e660c62705a858fc43e2b6c35461f21a89ae",
     "emblemcompany": "e3ec2324da9dedfc1cc40dabc1c124eb1da65650"
   },
-  "skills_count": 768,
-  "version": "2026.03.23"
+  "skills_count": 767,
+  "version": "2026.03.24"
 }
