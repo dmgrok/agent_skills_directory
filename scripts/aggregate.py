@@ -353,6 +353,13 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/EmblemCompany/Agent-skills/main",
         "skills_path_prefix": "skills/",
     },
+    "clawdvault": {
+        "name": "ClawdVault",
+        "repo": "https://github.com/inavhq/clawdvault-skill",
+        "api_tree_url": "https://api.github.com/repos/inavhq/clawdvault-skill/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/inavhq/clawdvault-skill/main",
+        "skills_path_prefix": "",
+    },
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
