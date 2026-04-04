@@ -1,13 +1,49 @@
 {
   "name": "MCP-Compatible Skills",
   "description": "Skills with MCP integration support, filtered from Agent Skills Directory",
-  "version": "2026.04.03",
-  "generated_at": "2026-04-03T07:20:56.068682+00:00",
+  "version": "2026.04.04",
+  "generated_at": "2026-04-04T07:12:35.792270+00:00",
   "source": "https://github.com/dmgrok/agent_skills_directory",
   "catalog_url": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json",
   "website": "https://dmgrok.github.io/agent_skills_directory/",
-  "total_skills": 57,
+  "total_skills": 58,
   "skills": [
+    {
+      "id": "nginity/demo-video",
+      "name": "demo-video",
+      "description": "Use when the user asks to create a demo video, product walkthrough, feature showcase, animated presentation, marketing video, or GIF from screenshots or scene descriptions. Orchestrates playwright, ffmpeg, and edge-tts MCPs to produce polished video content.",
+      "provider": "nginity",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-04-04T00:05:19Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/alirezarezvani/claude-skills",
+        "path": "engineering/demo-video",
+        "skill_md_url": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering/demo-video/SKILL.md",
+        "commit_sha": "a96cc20bb5e0d47ff7fdcee967eebd561c99deb2"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "mcp",
+        "demo",
+        "video"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": false,
+      "github_stars": 9259
+    },
     {
       "id": "nginity/engineering-advanced-skills",
       "name": "engineering-advanced-skills",
@@ -22,7 +58,7 @@
         "repo": "https://github.com/alirezarezvani/claude-skills",
         "path": "engineering",
         "skill_md_url": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering/SKILL.md",
-        "commit_sha": "2be3a2e6363bef87932f556dc33e53d2eec9b186"
+        "commit_sha": "a96cc20bb5e0d47ff7fdcee967eebd561c99deb2"
       },
       "has_scripts": false,
       "has_references": false,
@@ -41,12 +77,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 18,
+      "days_since_update": 19,
       "maintenance_status": "active",
       "quality_score": 60,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 9036
+      "github_stars": 9259
     },
     {
       "id": "nginity/mcp-server-builder",
@@ -62,7 +98,7 @@
         "repo": "https://github.com/alirezarezvani/claude-skills",
         "path": "engineering/mcp-server-builder",
         "skill_md_url": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/engineering/mcp-server-builder/SKILL.md",
-        "commit_sha": "2be3a2e6363bef87932f556dc33e53d2eec9b186"
+        "commit_sha": "a96cc20bb5e0d47ff7fdcee967eebd561c99deb2"
       },
       "has_scripts": true,
       "has_references": true,
@@ -76,12 +112,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 24,
+      "days_since_update": 25,
       "maintenance_status": "active",
       "quality_score": 80,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 9036
+      "github_stars": 9259
     },
     {
       "id": "nginity/pm-skills",
@@ -97,7 +133,7 @@
         "repo": "https://github.com/alirezarezvani/claude-skills",
         "path": "project-management",
         "skill_md_url": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/main/project-management/SKILL.md",
-        "commit_sha": "2be3a2e6363bef87932f556dc33e53d2eec9b186"
+        "commit_sha": "a96cc20bb5e0d47ff7fdcee967eebd561c99deb2"
       },
       "has_scripts": false,
       "has_references": false,
@@ -112,12 +148,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 18,
+      "days_since_update": 19,
       "maintenance_status": "active",
       "quality_score": 60,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 9036
+      "github_stars": 9259
     },
     {
       "id": "cloudflare/agents-sdk",
