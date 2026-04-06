@@ -1,29 +1,36 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.04.04",
-  "generated_at": "2026-04-04T07:12:35.792270+00:00",
-  "total_skills": 848,
+  "version": "2026.04.06",
+  "generated_at": "2026-04-06T07:53:56.665421+00:00",
+  "total_skills": 849,
   "providers": {
-    "huggingface": {
-      "name": "HuggingFace",
-      "repo": "https://github.com/huggingface/skills",
-      "skills_count": 12,
-      "stars": 10030,
-      "description": "Give your agents the power of the Hugging Face ecosystem"
+    "supabase": {
+      "name": "Supabase",
+      "repo": "https://github.com/supabase/agent-skills",
+      "skills_count": 2,
+      "stars": 1831,
+      "description": "Agent Skills to help developers using AI agents with Supabase"
     },
-    "expo": {
-      "name": "Expo",
-      "repo": "https://github.com/expo/skills",
+    "openai": {
+      "name": "OpenAI",
+      "repo": "https://github.com/openai/skills",
+      "skills_count": 45,
+      "stars": 15371,
+      "description": "Skills Catalog for Codex"
+    },
+    "visionos-agents": {
+      "name": "visionOS Development",
+      "repo": "https://github.com/tomkrikorian/visionOSAgents",
       "skills_count": 10,
-      "stars": 1606,
-      "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services"
+      "stars": 45,
+      "description": "AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform"
     },
-    "nginity": {
-      "name": "nginity Enterprise",
-      "repo": "https://github.com/alirezarezvani/claude-skills",
-      "skills_count": 232,
-      "stars": 9259,
-      "description": "220+ Claude Code skills & agent plugins for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents \u2014 engineering, marketing, product, compliance, C-level advisory."
+    "epub-skill": {
+      "name": "EPUB Converter",
+      "repo": "https://github.com/smerchek/claude-epub-skill",
+      "skills_count": 1,
+      "stars": 83,
+      "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
     },
     "aiqualitylab": {
       "name": "AI Quality Lab",
@@ -32,61 +39,19 @@
       "stars": 1,
       "description": "AI-powered testing skills for automation frameworks"
     },
-    "playwright-skill": {
-      "name": "Playwright Automation",
-      "repo": "https://github.com/lackeyjb/playwright-skill",
-      "skills_count": 1,
-      "stars": 1889,
-      "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
-    },
-    "cloudflare": {
-      "name": "Cloudflare",
-      "repo": "https://github.com/cloudflare/skills",
-      "skills_count": 9,
-      "stars": 761,
-      "description": "Skills for teaching agents how to build on Cloudflare."
-    },
-    "supabase": {
-      "name": "Supabase",
-      "repo": "https://github.com/supabase/agent-skills",
-      "skills_count": 1,
-      "stars": 1726,
-      "description": "Agent Skills to help developers using AI agents with Supabase"
-    },
-    "better-auth": {
-      "name": "Better Auth",
-      "repo": "https://github.com/better-auth/skills",
-      "skills_count": 5,
-      "stars": 144,
-      "description": null
-    },
-    "emblemcompany": {
-      "name": "EmblemAI",
-      "repo": "https://github.com/EmblemCompany/Agent-skills",
+    "claude-marketplace-code": {
+      "name": "Claude Marketplace (Code Ops)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
       "skills_count": 4,
-      "stars": 8,
-      "description": null
+      "stars": 441,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
-    "stripe": {
-      "name": "Stripe",
-      "repo": "https://github.com/stripe/ai",
-      "skills_count": 3,
-      "stars": 1414,
-      "description": "One-stop shop for building AI-powered products and businesses with Stripe."
-    },
-    "stream-coding": {
-      "name": "Stream Coding Methodology",
-      "repo": "https://github.com/frmoretto/stream-coding",
+    "family-history-skill": {
+      "name": "Family History Research",
+      "repo": "https://github.com/emaynard/claude-family-history-research-skill",
       "skills_count": 1,
-      "stars": 60,
-      "description": "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
-    },
-    "tinybird": {
-      "name": "Tinybird",
-      "repo": "https://github.com/tinybirdco/tinybird-agent-skills",
-      "skills_count": 4,
-      "stars": 12,
-      "description": null
+      "stars": 44,
+      "description": "A Claude Skill to assist with family history and genealogy research planning."
     },
     "ipsw-skill": {
       "name": "IPSW iOS Firmware",
@@ -95,47 +60,19 @@
       "stars": 43,
       "description": "A SKILL.md for ipsw"
     },
-    "obsidian-plugin": {
-      "name": "Obsidian Plugin Development",
-      "repo": "https://github.com/gapmiss/obsidian-plugin-skill",
-      "skills_count": 0,
-      "stars": 103,
-      "description": "Agent SKILL for Obsidian.md plugin development"
+    "huggingface": {
+      "name": "HuggingFace",
+      "repo": "https://github.com/huggingface/skills",
+      "skills_count": 12,
+      "stars": 10030,
+      "description": "Give your agents the power of the Hugging Face ecosystem"
     },
-    "vercel": {
-      "name": "Vercel",
-      "repo": "https://github.com/vercel-labs/agent-skills",
-      "skills_count": 7,
-      "stars": 24340,
-      "description": "Vercel's official collection of agent skills"
-    },
-    "neondatabase": {
-      "name": "Neon Database",
-      "repo": "https://github.com/neondatabase/agent-skills",
-      "skills_count": 3,
-      "stars": 40,
-      "description": "Agent Skills for Neon Severless Postgres"
-    },
-    "claude-marketplace-engineering": {
-      "name": "Claude Marketplace (Engineering)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 5,
-      "stars": 441,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "ffuf-skill": {
-      "name": "FFUF Web Fuzzing",
-      "repo": "https://github.com/jthack/ffuf_claude_skill",
+    "playwright-skill": {
+      "name": "Playwright Automation",
+      "repo": "https://github.com/lackeyjb/playwright-skill",
       "skills_count": 1,
-      "stars": 121,
-      "description": "This is a \"skill\" for claude to use FFUF."
-    },
-    "skillcreatorai": {
-      "name": "SkillCreator.ai",
-      "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-      "skills_count": 17,
-      "stars": 974,
-      "description": "my curated agent skills library "
+      "stars": 1889,
+      "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
     },
     "notebooklm-skill": {
       "name": "NotebookLM Integration",
@@ -144,12 +81,103 @@
       "stars": 4163,
       "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
     },
-    "openai": {
-      "name": "OpenAI",
-      "repo": "https://github.com/openai/skills",
-      "skills_count": 45,
-      "stars": 15371,
-      "description": "Skills Catalog for Codex"
+    "d3js-skill": {
+      "name": "D3.js Visualization",
+      "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+      "skills_count": 1,
+      "stars": 125,
+      "description": "A Claude skill for d3.js."
+    },
+    "better-auth": {
+      "name": "Better Auth",
+      "repo": "https://github.com/better-auth/skills",
+      "skills_count": 5,
+      "stars": 144,
+      "description": null
+    },
+    "ffuf-skill": {
+      "name": "FFUF Web Fuzzing",
+      "repo": "https://github.com/jthack/ffuf_claude_skill",
+      "skills_count": 1,
+      "stars": 121,
+      "description": "This is a \"skill\" for claude to use FFUF."
+    },
+    "google-labs-stitch": {
+      "name": "Google Labs Stitch",
+      "repo": "https://github.com/google-labs-code/stitch-skills",
+      "skills_count": 8,
+      "stars": 3588,
+      "description": null
+    },
+    "claude-marketplace-engineering": {
+      "name": "Claude Marketplace (Engineering)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 5,
+      "stars": 441,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "ios-simulator-skill": {
+      "name": "iOS Simulator",
+      "repo": "https://github.com/conorluddy/ios-simulator-skill",
+      "skills_count": 1,
+      "stars": 605,
+      "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
+    },
+    "claude-marketplace-visual": {
+      "name": "Claude Marketplace (Visual)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 5,
+      "stars": 441,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "tapestry": {
+      "name": "Tapestry Skills",
+      "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
+      "skills_count": 7,
+      "stars": 276,
+      "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
+    },
+    "trailofbits": {
+      "name": "Trail of Bits Security",
+      "repo": "https://github.com/trailofbits/skills",
+      "skills_count": 72,
+      "stars": 4217,
+      "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
+    },
+    "nginity": {
+      "name": "nginity Enterprise",
+      "repo": "https://github.com/alirezarezvani/claude-skills",
+      "skills_count": 232,
+      "stars": 9259,
+      "description": "220+ Claude Code skills & agent plugins for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents \u2014 engineering, marketing, product, compliance, C-level advisory."
+    },
+    "neondatabase": {
+      "name": "Neon Database",
+      "repo": "https://github.com/neondatabase/agent-skills",
+      "skills_count": 3,
+      "stars": 40,
+      "description": "Agent Skills for Neon Severless Postgres"
+    },
+    "aws-skills": {
+      "name": "AWS Skills",
+      "repo": "https://github.com/zxkane/aws-skills",
+      "skills_count": 5,
+      "stars": 194,
+      "description": "Claude Agent Skills for AWS"
+    },
+    "obsidian-plugin": {
+      "name": "Obsidian Plugin Development",
+      "repo": "https://github.com/gapmiss/obsidian-plugin-skill",
+      "skills_count": 0,
+      "stars": 103,
+      "description": "Agent SKILL for Obsidian.md plugin development"
+    },
+    "fal-ai": {
+      "name": "fal.ai",
+      "repo": "https://github.com/fal-ai-community/skills",
+      "skills_count": 15,
+      "stars": 27,
+      "description": null
     },
     "github": {
       "name": "GitHub",
@@ -165,33 +193,19 @@
       "stars": 276,
       "description": "A Claude Skill that automatically analyzes uploaded CSV files \u2014 generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
     },
-    "obra-superpowers": {
-      "name": "Obra Superpowers",
-      "repo": "https://github.com/obra/superpowers",
-      "skills_count": 14,
-      "stars": 130935,
-      "description": "An agentic skills framework & software development methodology that works."
+    "remotion": {
+      "name": "Remotion",
+      "repo": "https://github.com/remotion-dev/skills",
+      "skills_count": 1,
+      "stars": 2252,
+      "description": "Agent Skills"
     },
-    "tapestry": {
-      "name": "Tapestry Skills",
-      "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
-      "skills_count": 7,
-      "stars": 276,
-      "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
-    },
-    "anthropics": {
-      "name": "Anthropic",
-      "repo": "https://github.com/anthropics/skills",
-      "skills_count": 17,
-      "stars": 103213,
-      "description": "Public repository for Agent Skills"
-    },
-    "claude-marketplace-visual": {
-      "name": "Claude Marketplace (Visual)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 5,
-      "stars": 441,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    "stream-coding": {
+      "name": "Stream Coding Methodology",
+      "repo": "https://github.com/frmoretto/stream-coding",
+      "skills_count": 1,
+      "stars": 60,
+      "description": "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
     },
     "move-quality-skill": {
       "name": "Move Code Quality",
@@ -200,75 +214,40 @@
       "stars": 16,
       "description": "Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist"
     },
+    "stripe": {
+      "name": "Stripe",
+      "repo": "https://github.com/stripe/ai",
+      "skills_count": 3,
+      "stars": 1414,
+      "description": "One-stop shop for building AI-powered products and businesses with Stripe."
+    },
+    "cloudflare": {
+      "name": "Cloudflare",
+      "repo": "https://github.com/cloudflare/skills",
+      "skills_count": 9,
+      "stars": 761,
+      "description": "Skills for teaching agents how to build on Cloudflare."
+    },
+    "obra-superpowers": {
+      "name": "Obra Superpowers",
+      "repo": "https://github.com/obra/superpowers",
+      "skills_count": 14,
+      "stars": 130935,
+      "description": "An agentic skills framework & software development methodology that works."
+    },
+    "vercel": {
+      "name": "Vercel",
+      "repo": "https://github.com/vercel-labs/agent-skills",
+      "skills_count": 7,
+      "stars": 24340,
+      "description": "Vercel's official collection of agent skills"
+    },
     "getsentry": {
       "name": "Sentry",
       "repo": "https://github.com/getsentry/skills",
       "skills_count": 24,
       "stars": 494,
       "description": "Agent Skills used by the Sentry team for development."
-    },
-    "visionos-agents": {
-      "name": "visionOS Development",
-      "repo": "https://github.com/tomkrikorian/visionOSAgents",
-      "skills_count": 10,
-      "stars": 45,
-      "description": "AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform"
-    },
-    "fal-ai": {
-      "name": "fal.ai",
-      "repo": "https://github.com/fal-ai-community/skills",
-      "skills_count": 15,
-      "stars": 27,
-      "description": null
-    },
-    "remotion": {
-      "name": "Remotion",
-      "repo": "https://github.com/remotion-dev/skills",
-      "skills_count": 1,
-      "stars": 2252,
-      "description": "Agent Skills"
-    },
-    "epub-skill": {
-      "name": "EPUB Converter",
-      "repo": "https://github.com/smerchek/claude-epub-skill",
-      "skills_count": 1,
-      "stars": 83,
-      "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
-    },
-    "family-history-skill": {
-      "name": "Family History Research",
-      "repo": "https://github.com/emaynard/claude-family-history-research-skill",
-      "skills_count": 1,
-      "stars": 44,
-      "description": "A Claude Skill to assist with family history and genealogy research planning."
-    },
-    "claude-marketplace-code": {
-      "name": "Claude Marketplace (Code Ops)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 4,
-      "stars": 441,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "pypict-skill": {
-      "name": "PICT Test Cases",
-      "repo": "https://github.com/omkamal/pypict-claude-skill",
-      "skills_count": 1,
-      "stars": 57,
-      "description": "A claude skill that generate test cases using N-wise test cases using the pypict library"
-    },
-    "aws-skills": {
-      "name": "AWS Skills",
-      "repo": "https://github.com/zxkane/aws-skills",
-      "skills_count": 5,
-      "stars": 194,
-      "description": "Claude Agent Skills for AWS"
-    },
-    "ios-simulator-skill": {
-      "name": "iOS Simulator",
-      "repo": "https://github.com/conorluddy/ios-simulator-skill",
-      "skills_count": 1,
-      "stars": 605,
-      "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps, without using up any of the available token/context budget."
     },
     "sanjay-ai-skills": {
       "name": "Sanjay AI Skills",
@@ -277,19 +256,33 @@
       "stars": 132,
       "description": "Collection of agent skills for AI coding assistants"
     },
-    "google-labs-stitch": {
-      "name": "Google Labs Stitch",
-      "repo": "https://github.com/google-labs-code/stitch-skills",
-      "skills_count": 8,
-      "stars": 3588,
+    "emblemcompany": {
+      "name": "EmblemAI",
+      "repo": "https://github.com/EmblemCompany/Agent-skills",
+      "skills_count": 4,
+      "stars": 8,
       "description": null
     },
-    "d3js-skill": {
-      "name": "D3.js Visualization",
-      "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+    "skillcreatorai": {
+      "name": "SkillCreator.ai",
+      "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+      "skills_count": 17,
+      "stars": 974,
+      "description": "my curated agent skills library "
+    },
+    "expo": {
+      "name": "Expo",
+      "repo": "https://github.com/expo/skills",
+      "skills_count": 10,
+      "stars": 1606,
+      "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services"
+    },
+    "pypict-skill": {
+      "name": "PICT Test Cases",
+      "repo": "https://github.com/omkamal/pypict-claude-skill",
       "skills_count": 1,
-      "stars": 125,
-      "description": "A Claude skill for d3.js."
+      "stars": 57,
+      "description": "A claude skill that generate test cases using N-wise test cases using the pypict library"
     },
     "claude-marketplace-productivity": {
       "name": "Claude Marketplace (Productivity)",
@@ -298,31 +291,108 @@
       "stars": 441,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
-    "trailofbits": {
-      "name": "Trail of Bits Security",
-      "repo": "https://github.com/trailofbits/skills",
-      "skills_count": 72,
-      "stars": 4217,
-      "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
+    "tinybird": {
+      "name": "Tinybird",
+      "repo": "https://github.com/tinybirdco/tinybird-agent-skills",
+      "skills_count": 4,
+      "stars": 12,
+      "description": null
+    },
+    "anthropics": {
+      "name": "Anthropic",
+      "repo": "https://github.com/anthropics/skills",
+      "skills_count": 17,
+      "stars": 103213,
+      "description": "Public repository for Agent Skills"
     }
   },
   "categories": [
-    "cloud",
-    "creative",
-    "data",
-    "development",
-    "devops",
-    "documents",
-    "enterprise",
-    "integrations",
-    "ml-ai",
-    "mobile",
-    "other",
-    "security",
-    "testing",
-    "web"
+    "data"
   ],
   "skills": [
+    {
+      "id": "supabase/supabase",
+      "name": "supabase",
+      "description": "Use when doing ANY task involving Supabase. Triggers: Supabase products (Database, Auth, Edge Functions, Realtime, Storage, Vectors, Cron, Queues); client libraries and SSR integrations (supabase-js, @supabase/ssr) in Next.js, React, SvelteKit, Astro, Remix; auth issues (login, logout, sessions, JWT, cookies, getSession, getUser, getClaims, RLS); Supabase CLI or MCP server; schema changes, migrations, security audits, Postgres extensions (pg_graphql, pg_cron, pg_vector).",
+      "provider": "supabase",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-04-05T18:12:42Z",
+      "metadata": {
+        "author": "supabase",
+        "version": "0.1.0"
+      },
+      "source": {
+        "repo": "https://github.com/supabase/agent-skills",
+        "path": "skills/supabase",
+        "skill_md_url": "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase/SKILL.md",
+        "commit_sha": "661203203890e2ea0c97846b710040ef4f697a8e"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "mcp",
+        "cli",
+        "supabase"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 90,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 1831
+    },
+    {
+      "id": "supabase/supabase-postgres-best-practices",
+      "name": "supabase-postgres-best-practices",
+      "description": "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
+      "provider": "supabase",
+      "category": "data",
+      "license": "MIT",
+      "compatibility": null,
+      "last_updated_at": "2026-04-05T18:37:31Z",
+      "metadata": {
+        "author": "supabase",
+        "version": "1.1.1",
+        "organization": "Supabase",
+        "date": "January 2026",
+        "abstract": "Comprehensive Postgres performance optimization guide for developers using Supabase and Postgres. Contains performance rules across 8 categories, prioritized by impact from critical (query performance, connection management) to incremental (advanced features). Each rule includes detailed explanations, incorrect vs. correct SQL examples, query plan analysis, and specific performance metrics to guide automated optimization and code generation."
+      },
+      "source": {
+        "repo": "https://github.com/supabase/agent-skills",
+        "path": "skills/supabase-postgres-best-practices",
+        "skill_md_url": "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase-postgres-best-practices/SKILL.md",
+        "commit_sha": "661203203890e2ea0c97846b710040ef4f697a8e"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "design",
+        "supabase",
+        "postgres",
+        "best",
+        "practices"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 80,
+      "skill_type": "full",
+      "requires_mcp": false,
+      "github_stars": 1831
+    },
     {
       "id": "expo/building-native-ui",
       "name": "building-native-ui",
@@ -25937,50 +26007,6 @@
       "github_stars": 1414
     },
     {
-      "id": "supabase/supabase-postgres-best-practices",
-      "name": "supabase-postgres-best-practices",
-      "description": "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
-      "provider": "supabase",
-      "category": "data",
-      "license": "MIT",
-      "compatibility": null,
-      "last_updated_at": "2026-01-27T21:38:29Z",
-      "metadata": {
-        "author": "supabase",
-        "version": "1.1.0",
-        "organization": "Supabase",
-        "date": "January 2026",
-        "abstract": "Comprehensive Postgres performance optimization guide for developers using Supabase and Postgres. Contains performance rules across 8 categories, prioritized by impact from critical (query performance, connection management) to incremental (advanced features). Each rule includes detailed explanations, incorrect vs. correct SQL examples, query plan analysis, and specific performance metrics to guide automated optimization and code generation."
-      },
-      "source": {
-        "repo": "https://github.com/supabase/agent-skills",
-        "path": "skills/supabase-postgres-best-practices",
-        "skill_md_url": "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase-postgres-best-practices/SKILL.md",
-        "commit_sha": "c7f83da3b60e198d2bed28cff4b56e8ac705e694"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "design",
-        "supabase",
-        "postgres",
-        "best",
-        "practices"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 59,
-      "maintenance_status": "maintained",
-      "quality_score": 70,
-      "skill_type": "full",
-      "requires_mcp": false,
-      "github_stars": 1726
-    },
-    {
       "id": "anthropics/algorithmic-art",
       "name": "algorithmic-art",
       "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
@@ -32155,7 +32181,7 @@
     "probable_duplicates": 0
   },
   "maintenance_summary": {
-    "active": 254,
+    "active": 2,
     "maintained": 0,
     "stale": 0,
     "abandoned": 0,
@@ -32164,7 +32190,7 @@
     "maintained_percentage": 100.0
   },
   "skill_type_summary": {
-    "full": 254,
+    "full": 2,
     "integration": 0
   }
 }

@@ -1,13 +1,96 @@
 {
   "name": "Premium Skills",
   "description": "Top-quality skills (score >= 70) from Agent Skills Directory",
-  "version": "2026.04.04",
-  "generated_at": "2026-04-04T07:12:35.792270+00:00",
+  "version": "2026.04.06",
+  "generated_at": "2026-04-06T07:53:56.665421+00:00",
   "source": "https://github.com/dmgrok/agent_skills_directory",
   "catalog_url": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json",
   "website": "https://dmgrok.github.io/agent_skills_directory/",
-  "total_skills": 474,
+  "total_skills": 475,
   "skills": [
+    {
+      "id": "supabase/supabase",
+      "name": "supabase",
+      "description": "Use when doing ANY task involving Supabase. Triggers: Supabase products (Database, Auth, Edge Functions, Realtime, Storage, Vectors, Cron, Queues); client libraries and SSR integrations (supabase-js, @supabase/ssr) in Next.js, React, SvelteKit, Astro, Remix; auth issues (login, logout, sessions, JWT, cookies, getSession, getUser, getClaims, RLS); Supabase CLI or MCP server; schema changes, migrations, security audits, Postgres extensions (pg_graphql, pg_cron, pg_vector).",
+      "provider": "supabase",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-04-05T18:12:42Z",
+      "metadata": {
+        "author": "supabase",
+        "version": "0.1.0"
+      },
+      "source": {
+        "repo": "https://github.com/supabase/agent-skills",
+        "path": "skills/supabase",
+        "skill_md_url": "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase/SKILL.md",
+        "commit_sha": "661203203890e2ea0c97846b710040ef4f697a8e"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": true,
+      "tags": [
+        "pr",
+        "mcp",
+        "cli",
+        "supabase"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 90,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 1831
+    },
+    {
+      "id": "supabase/supabase-postgres-best-practices",
+      "name": "supabase-postgres-best-practices",
+      "description": "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
+      "provider": "supabase",
+      "category": "data",
+      "license": "MIT",
+      "compatibility": null,
+      "last_updated_at": "2026-04-05T18:37:31Z",
+      "metadata": {
+        "author": "supabase",
+        "version": "1.1.1",
+        "organization": "Supabase",
+        "date": "January 2026",
+        "abstract": "Comprehensive Postgres performance optimization guide for developers using Supabase and Postgres. Contains performance rules across 8 categories, prioritized by impact from critical (query performance, connection management) to incremental (advanced features). Each rule includes detailed explanations, incorrect vs. correct SQL examples, query plan analysis, and specific performance metrics to guide automated optimization and code generation."
+      },
+      "source": {
+        "repo": "https://github.com/supabase/agent-skills",
+        "path": "skills/supabase-postgres-best-practices",
+        "skill_md_url": "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase-postgres-best-practices/SKILL.md",
+        "commit_sha": "661203203890e2ea0c97846b710040ef4f697a8e"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "design",
+        "supabase",
+        "postgres",
+        "best",
+        "practices"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 80,
+      "skill_type": "full",
+      "requires_mcp": false,
+      "github_stars": 1831
+    },
     {
       "id": "expo/building-native-ui",
       "name": "building-native-ui",
@@ -13562,50 +13645,6 @@
       "skill_type": "full",
       "requires_mcp": false,
       "github_stars": 1414
-    },
-    {
-      "id": "supabase/supabase-postgres-best-practices",
-      "name": "supabase-postgres-best-practices",
-      "description": "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
-      "provider": "supabase",
-      "category": "data",
-      "license": "MIT",
-      "compatibility": null,
-      "last_updated_at": "2026-01-27T21:38:29Z",
-      "metadata": {
-        "author": "supabase",
-        "version": "1.1.0",
-        "organization": "Supabase",
-        "date": "January 2026",
-        "abstract": "Comprehensive Postgres performance optimization guide for developers using Supabase and Postgres. Contains performance rules across 8 categories, prioritized by impact from critical (query performance, connection management) to incremental (advanced features). Each rule includes detailed explanations, incorrect vs. correct SQL examples, query plan analysis, and specific performance metrics to guide automated optimization and code generation."
-      },
-      "source": {
-        "repo": "https://github.com/supabase/agent-skills",
-        "path": "skills/supabase-postgres-best-practices",
-        "skill_md_url": "https://raw.githubusercontent.com/supabase/agent-skills/main/skills/supabase-postgres-best-practices/SKILL.md",
-        "commit_sha": "c7f83da3b60e198d2bed28cff4b56e8ac705e694"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "design",
-        "supabase",
-        "postgres",
-        "best",
-        "practices"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 59,
-      "maintenance_status": "maintained",
-      "quality_score": 70,
-      "skill_type": "full",
-      "requires_mcp": false,
-      "github_stars": 1726
     },
     {
       "id": "anthropics/algorithmic-art",
