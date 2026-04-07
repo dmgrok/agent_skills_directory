@@ -1,13 +1,13 @@
 {
-  "last_run": "2026-04-06T07:53:56.809716+00:00",
+  "last_run": "2026-04-07T07:30:25.536292+00:00",
   "provider_commits": {
     "anthropics": "98669c11ca63e9c81c11501e1437e5c47b556621",
     "openai": "736f600bf6ecbc000c04f1d2710b990899f28903",
-    "github": "0c3c5bbbfb2a7d57d36473a83fdbef1becc5053f",
+    "github": "ba2ade0312708d44c2966a4a1c278b92471d2b8b",
     "vercel": "73140fc5b3a214ad3222bcf557b397b3c02d11c1",
     "huggingface": "25b4bb02b995e19625241deb7321d087053146cd",
     "skillcreatorai": "a7bf55cdf34528d44b8c4959d9275d905a3be8f4",
-    "obra-superpowers": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+    "obra-superpowers": "917e5f53b16b115b70a3a355ed5f4993b9f8b73d",
     "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
     "sanjay-ai-skills": "e4c0b94ad5c1e4489ce5c68a806b4512ae7e5d8b",
     "aws-skills": "fea945516453eb9f1eaf977c244610f456b871e7",
@@ -26,8 +26,8 @@
     "family-history-skill": "7334d3d400740fda3de1c54c90e186307f8f1176",
     "notebooklm-skill": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
     "aiqualitylab": "0321527eebbb39ed4ae7673c2917c6032cf2a050",
-    "stripe": "6856c6cd4dd11152e4d8d97d42abc21558dcacc8",
-    "cloudflare": "22a32f5f10eedd4428b26597406804ddf43b747d",
+    "stripe": "c0a156cdb5bc4c0864200f9fa24ec0237702002c",
+    "cloudflare": "5ec03da67e230df52b698255c8e5979dc9b124b6",
     "trailofbits": "d7f76b532d1e4c6e7757e04d25c99ab60dd5e32c",
     "expo": "cef67e4da5200eba0934f3af09a98364447f5364",
     "getsentry": "df10050ac10ae0b922e1756c18e68fa5734b9a2e",
@@ -46,5 +46,5 @@
     "emblemcompany": "2e138efd1ab4f375f25bec78a732400445462b06"
   },
   "skills_count": 849,
-  "version": "2026.04.06"
+  "version": "2026.04.07"
 }
