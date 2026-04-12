@@ -1,12 +1,12 @@
 {
-  "last_run": "2026-04-11T07:10:20.747669+00:00",
+  "last_run": "2026-04-12T07:23:41.712249+00:00",
   "provider_commits": {
     "anthropics": "12ab35c2eb5668c95810e6a6066f40f4218adc39",
     "openai": "0ed2046f287a92b5f4bcace213dcb3cc5f094cb9",
     "github": "8395dce14cce763504aab2197effcc62c730a0f6",
     "vercel": "73140fc5b3a214ad3222bcf557b397b3c02d11c1",
-    "huggingface": "0e9820357fa0ed7711f346fb0d76df4e071c8364",
-    "skillcreatorai": "a7bf55cdf34528d44b8c4959d9275d905a3be8f4",
+    "huggingface": "f89b940362495d2a65dbd88af9755dd5001f2acd",
+    "skillcreatorai": "f8487e8b31858677ca188e1768987808f1d228e1",
     "obra-superpowers": "917e5f53b16b115b70a3a355ed5f4993b9f8b73d",
     "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
     "sanjay-ai-skills": "e4c0b94ad5c1e4489ce5c68a806b4512ae7e5d8b",
@@ -45,6 +45,6 @@
     "visionos-agents": "adfec2c29554cd6bd82056386375aa91fe65c9b6",
     "emblemcompany": "03d8e568f27be44ff0743803c1c3fa7d15ef0c3c"
   },
-  "skills_count": 883,
-  "version": "2026.04.11"
+  "skills_count": 882,
+  "version": "2026.04.12"
 }

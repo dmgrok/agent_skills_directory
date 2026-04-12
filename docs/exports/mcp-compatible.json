@@ -1,8 +1,8 @@
 {
   "name": "MCP-Compatible Skills",
   "description": "Skills with MCP integration support, filtered from Agent Skills Directory",
-  "version": "2026.04.11",
-  "generated_at": "2026-04-11T07:10:20.587632+00:00",
+  "version": "2026.04.12",
+  "generated_at": "2026-04-12T07:23:41.577464+00:00",
   "source": "https://github.com/dmgrok/agent_skills_directory",
   "catalog_url": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json",
   "website": "https://dmgrok.github.io/agent_skills_directory/",
