@@ -1,9 +1,9 @@
 {
-  "last_run": "2026-04-12T07:23:41.712249+00:00",
+  "last_run": "2026-04-13T08:16:11.465754+00:00",
   "provider_commits": {
     "anthropics": "12ab35c2eb5668c95810e6a6066f40f4218adc39",
     "openai": "0ed2046f287a92b5f4bcace213dcb3cc5f094cb9",
-    "github": "8395dce14cce763504aab2197effcc62c730a0f6",
+    "github": "2f4953242f2fc5256c8b1416d0136cb73e68640e",
     "vercel": "73140fc5b3a214ad3222bcf557b397b3c02d11c1",
     "huggingface": "f89b940362495d2a65dbd88af9755dd5001f2acd",
     "skillcreatorai": "f8487e8b31858677ca188e1768987808f1d228e1",
@@ -18,7 +18,7 @@
     "epub-skill": "7c0723087b9f6ec2352b42b73f61d224b542e059",
     "d3js-skill": "e198c87d03f1c9811acbff681886fac24baee53d",
     "ffuf-skill": "50fd4af4d8bd60cfc48fd84eda1720fbd718857d",
-    "ios-simulator-skill": "c9e021ed9dc2c5c1e302821f4b8034e38c42d178",
+    "ios-simulator-skill": "21a386904e57950a43b665e5d82af00d18573e4d",
     "move-quality-skill": "6813ac55cb3bfcaa35c349da7dd5f9eae745009d",
     "playwright-skill": "bb7e920d376022958214e349ef25498a2644e189",
     "pypict-skill": "fbda212bca79dfa7611be12527b102c89cc8faeb",
@@ -38,13 +38,13 @@
     "neondatabase": "1304e290a0b24b3f46d60ee20e9f40271db9b41c",
     "fal-ai": "282eba6fb2a88c68aa3dc05335be7b955688258e",
     "remotion": "41a3b0685bc648c5f66b3c81d67c61589875eefb",
-    "nginity": "554fcd968b6ab1041ff23b90d35330784f2e158f",
+    "nginity": "ea9a8759f2d55d910400691b33bb398c937ad787",
     "obsidian-plugin": "bad3fcc73bf27f255b23d1ff42c5ba37b9e30fa3",
     "stream-coding": "42a7cb5ceec5611040d6f2764ee7943e4984345d",
     "ipsw-skill": "84598a30c8cbd316fd0a287c6071c816b61f2f00",
     "visionos-agents": "adfec2c29554cd6bd82056386375aa91fe65c9b6",
-    "emblemcompany": "03d8e568f27be44ff0743803c1c3fa7d15ef0c3c"
+    "emblemcompany": "8ca154f3eff56eda8c71820883d893d1f4c13712"
   },
-  "skills_count": 882,
-  "version": "2026.04.12"
+  "skills_count": 884,
+  "version": "2026.04.13"
 }
