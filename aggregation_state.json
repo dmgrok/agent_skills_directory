@@ -1,13 +1,13 @@
 {
-  "last_run": "2026-04-14T08:03:11.365260+00:00",
+  "last_run": "2026-04-15T08:02:24.872802+00:00",
   "provider_commits": {
     "anthropics": "0f7c287eaf0d4fa511cb871bb55e2a7862251fbb",
-    "openai": "0ed2046f287a92b5f4bcace213dcb3cc5f094cb9",
-    "github": "00b2ed37901af92e70d81004cd666779d0b49c88",
-    "vercel": "73140fc5b3a214ad3222bcf557b397b3c02d11c1",
-    "huggingface": "f89b940362495d2a65dbd88af9755dd5001f2acd",
+    "openai": "e6afb0d74cc75d220df2faf3dd6c635c2dc6a108",
+    "github": "25ce7baa4ad25feb48628d6df745a532f080f595",
+    "vercel": "47863b24f8e22966bfcf8470debc7ba8c2c3b99c",
+    "huggingface": "3b092681dd0efe8883ba734b535cdd291d70dfc5",
     "skillcreatorai": "628dce65304d7d3e94a3cbf9c0bcaa414bb35f38",
-    "obra-superpowers": "917e5f53b16b115b70a3a355ed5f4993b9f8b73d",
+    "obra-superpowers": "f9b088f7b3a6fe9d9a9a98e392ad13c9d47053a4",
     "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
     "sanjay-ai-skills": "cde1c8385ead64df501c9b214e63d7ba9b283ff9",
     "aws-skills": "e4ef2e2147aa5d7b812af8970064dd822c7678ec",
@@ -27,15 +27,15 @@
     "notebooklm-skill": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
     "aiqualitylab": "0321527eebbb39ed4ae7673c2917c6032cf2a050",
     "stripe": "fd912693173dcba346cc9739f0f89f76ab934c78",
-    "cloudflare": "5ec03da67e230df52b698255c8e5979dc9b124b6",
-    "trailofbits": "d7f76b532d1e4c6e7757e04d25c99ab60dd5e32c",
+    "cloudflare": "54ca4fd800e69906355da5010c03499017ddc3b1",
+    "trailofbits": "1efb11a08f9865f4e33392133328e5f1404db05b",
     "expo": "8f26555fe105f72cf43051cf671771ad227a2f8f",
-    "getsentry": "53901e61b144bd60387b9b011ca4cb929c632d37",
+    "getsentry": "0dbe7ec59dea888a4a9e9e3b84879a3a5c3f233d",
     "supabase": "05a8f1a3a9f0977e192c44a85627532e0e69fe8f",
     "google-labs-stitch": "6c0cbdb909b7d256c8b9b3854c8c8f87aab2c140",
     "better-auth": "6a1636950a1d7fc53602639ce7505a4a5d39c797",
     "tinybird": "a33c7fbc1a4684f2732267c12a106ee8ad853d53",
-    "neondatabase": "1304e290a0b24b3f46d60ee20e9f40271db9b41c",
+    "neondatabase": "38c7da85db656c8c9efd1e6433c200212926fd2d",
     "fal-ai": "282eba6fb2a88c68aa3dc05335be7b955688258e",
     "remotion": "41a3b0685bc648c5f66b3c81d67c61589875eefb",
     "nginity": "f567c61def3fb86046d7242b4bf27fceb63ad8b4",
@@ -43,8 +43,8 @@
     "stream-coding": "42a7cb5ceec5611040d6f2764ee7943e4984345d",
     "ipsw-skill": "84598a30c8cbd316fd0a287c6071c816b61f2f00",
     "visionos-agents": "adfec2c29554cd6bd82056386375aa91fe65c9b6",
-    "emblemcompany": "8ca154f3eff56eda8c71820883d893d1f4c13712"
+    "emblemcompany": "18a2576d067835e8d20c66f1b46cdda686fadbe8"
   },
   "skills_count": 886,
-  "version": "2026.04.14"
+  "version": "2026.04.15"
 }
