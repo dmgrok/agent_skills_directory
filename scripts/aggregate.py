@@ -954,9 +954,10 @@ def fetch_provider_skills(provider_id: str, config: dict) -> list:
         
         # Check for optional directories
         skill_dir = sf["dir"]
-        has_scripts = any(p.startswith(f"{skill_dir}/scripts/") for p in all_paths)
-        has_references = any(p.startswith(f"{skill_dir}/references/") or p.startswith(f"{skill_dir}/reference/") for p in all_paths)
-        has_assets = any(p.startswith(f"{skill_dir}/assets/") or p.startswith(f"{skill_dir}/templates/") for p in all_paths)
+        dir_prefix = f"{skill_dir}/" if skill_dir else ""
+        has_scripts = any(p.startswith(f"{dir_prefix}scripts/") for p in all_paths)
+        has_references = any(p.startswith(f"{dir_prefix}references/") or p.startswith(f"{dir_prefix}reference/") for p in all_paths)
+        has_assets = any(p.startswith(f"{dir_prefix}assets/") or p.startswith(f"{dir_prefix}templates/") for p in all_paths)
 
         last_updated_at = None
         if owner_repo:
