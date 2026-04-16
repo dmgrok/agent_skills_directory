@@ -1,13 +1,13 @@
 {
-  "last_run": "2026-04-15T08:02:24.872802+00:00",
+  "last_run": "2026-04-16T07:58:44.690414+00:00",
   "provider_commits": {
     "anthropics": "0f7c287eaf0d4fa511cb871bb55e2a7862251fbb",
     "openai": "e6afb0d74cc75d220df2faf3dd6c635c2dc6a108",
-    "github": "25ce7baa4ad25feb48628d6df745a532f080f595",
+    "github": "9d117370f901e2244316dfd8cf5362435705b658",
     "vercel": "47863b24f8e22966bfcf8470debc7ba8c2c3b99c",
     "huggingface": "3b092681dd0efe8883ba734b535cdd291d70dfc5",
     "skillcreatorai": "628dce65304d7d3e94a3cbf9c0bcaa414bb35f38",
-    "obra-superpowers": "f9b088f7b3a6fe9d9a9a98e392ad13c9d47053a4",
+    "obra-superpowers": "c4bbe651cb1bc5e7bec6f7effae2b946571f3258",
     "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
     "sanjay-ai-skills": "cde1c8385ead64df501c9b214e63d7ba9b283ff9",
     "aws-skills": "e4ef2e2147aa5d7b812af8970064dd822c7678ec",
@@ -26,12 +26,12 @@
     "family-history-skill": "7334d3d400740fda3de1c54c90e186307f8f1176",
     "notebooklm-skill": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
     "aiqualitylab": "0321527eebbb39ed4ae7673c2917c6032cf2a050",
-    "stripe": "fd912693173dcba346cc9739f0f89f76ab934c78",
-    "cloudflare": "54ca4fd800e69906355da5010c03499017ddc3b1",
+    "stripe": "5811e64fdc1746bd3f6ae9f3a993a57053a5e88b",
+    "cloudflare": "70c9cb7a211b1b6922712142e0daad4fadf9022b",
     "trailofbits": "1efb11a08f9865f4e33392133328e5f1404db05b",
     "expo": "8f26555fe105f72cf43051cf671771ad227a2f8f",
     "getsentry": "0dbe7ec59dea888a4a9e9e3b84879a3a5c3f233d",
-    "supabase": "05a8f1a3a9f0977e192c44a85627532e0e69fe8f",
+    "supabase": "7a646f8812ec8d21cc8735d5b3fe67c9b5e665db",
     "google-labs-stitch": "6c0cbdb909b7d256c8b9b3854c8c8f87aab2c140",
     "better-auth": "6a1636950a1d7fc53602639ce7505a4a5d39c797",
     "tinybird": "a33c7fbc1a4684f2732267c12a106ee8ad853d53",
@@ -42,9 +42,9 @@
     "obsidian-plugin": "bad3fcc73bf27f255b23d1ff42c5ba37b9e30fa3",
     "stream-coding": "42a7cb5ceec5611040d6f2764ee7943e4984345d",
     "ipsw-skill": "84598a30c8cbd316fd0a287c6071c816b61f2f00",
-    "visionos-agents": "adfec2c29554cd6bd82056386375aa91fe65c9b6",
+    "visionos-agents": "0dccbdfc0e30326bacb421fbe27f05317a76c121",
     "emblemcompany": "18a2576d067835e8d20c66f1b46cdda686fadbe8"
   },
   "skills_count": 886,
-  "version": "2026.04.15"
+  "version": "2026.04.16"
 }
