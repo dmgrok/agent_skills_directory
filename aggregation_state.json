@@ -1,7 +1,7 @@
 {
-  "last_run": "2026-04-20T08:23:32.264844+00:00",
+  "last_run": "2026-04-21T08:02:38.646450+00:00",
   "provider_commits": {
-    "anthropics": "2c7ec5e78b8e5d43ea02e90bb8826f6b9f147b0c",
+    "anthropics": "b9e19e6f44773509fbdd7001d77ff41a49a486c1",
     "openai": "e940b8a86138adf03972802b990a1dfc57fcbf09",
     "github": "63d08d51f792d53feec8c1c06897cee870e83c18",
     "vercel": "ce3e64e468f8fa09a2d075d102771838061fdac0",
@@ -39,12 +39,12 @@
     "fal-ai": "282eba6fb2a88c68aa3dc05335be7b955688258e",
     "remotion": "41a3b0685bc648c5f66b3c81d67c61589875eefb",
     "nginity": "f567c61def3fb86046d7242b4bf27fceb63ad8b4",
-    "obsidian-plugin": "65d6eca589aff73f521fb7fef8f9b3bf88e4e50e",
+    "obsidian-plugin": "803c4d9fce190d13830336ca93e66605e7bd5fba",
     "stream-coding": "42a7cb5ceec5611040d6f2764ee7943e4984345d",
     "ipsw-skill": "84598a30c8cbd316fd0a287c6071c816b61f2f00",
     "visionos-agents": "0dccbdfc0e30326bacb421fbe27f05317a76c121",
-    "emblemcompany": "ec143bfca27db71025692f4aec1771bf96dcc984"
+    "emblemcompany": "e9e2828aa3e1c32a6dd36fd9037b815b8e12facd"
   },
   "skills_count": 913,
-  "version": "2026.04.20"
+  "version": "2026.04.21"
 }
