@@ -1,13 +1,695 @@
 {
   "name": "Premium Skills",
   "description": "Top-quality skills (score >= 70) from Agent Skills Directory",
-  "version": "2026.04.21",
-  "generated_at": "2026-04-21T08:02:38.479132+00:00",
+  "version": "2026.04.22",
+  "generated_at": "2026-04-22T07:59:29.177171+00:00",
   "source": "https://github.com/dmgrok/agent_skills_directory",
   "catalog_url": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json",
   "website": "https://dmgrok.github.io/agent_skills_directory/",
-  "total_skills": 485,
+  "total_skills": 486,
   "skills": [
+    {
+      "id": "aws-skills/aws-agentic-ai",
+      "name": "aws-agentic-ai",
+      "description": "AWS Bedrock AgentCore comprehensive expert for deploying and managing AI agents at scale. Use when working with any AgentCore service including Gateway, Runtime, Memory, Identity, Code Interpreter, Browser, Observability, Agent Registry, or Evaluations. Covers agent deployment, MCP tool integration, credential management, agent discovery, governance workflows, and automated quality assessment. Essential when user mentions AgentCore, agent runtime, agent registry, agent evaluation, MCP gateway, deploy agent, register MCP server, discover agents, evaluate agent quality, agent credentials, or wants to build, deploy, catalog, or monitor AI agents on AWS.",
+      "provider": "aws-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-04-13T10:40:24Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/zxkane/aws-skills",
+        "path": "plugins/aws-agentic-ai/skills/aws-agentic-ai",
+        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-agentic-ai/skills/aws-agentic-ai/SKILL.md",
+        "commit_sha": "de932ce491cf7e567ac78ccd2d25bc5da7167850"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "mcp",
+        "aws",
+        "agentic"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 8,
+      "maintenance_status": "active",
+      "quality_score": 80,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 256
+    },
+    {
+      "id": "aws-skills/aws-cdk-development",
+      "name": "aws-cdk-development",
+      "description": "AWS Cloud Development Kit (CDK) expert for building cloud infrastructure with TypeScript/Python. Use when creating CDK stacks, defining CDK constructs, implementing infrastructure as code, or when the user mentions CDK, CloudFormation, IaC, cdk synth, cdk deploy, or wants to define AWS infrastructure programmatically. Covers CDK app structure, construct patterns, stack composition, and deployment workflows.",
+      "provider": "aws-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T13:49:45Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/zxkane/aws-skills",
+        "path": "plugins/aws-cdk/skills/aws-cdk-development",
+        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-cdk/skills/aws-cdk-development/SKILL.md",
+        "commit_sha": "de932ce491cf7e567ac78ccd2d25bc5da7167850"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "cd",
+        "aws",
+        "cdk",
+        "development"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 46,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 256
+    },
+    {
+      "id": "fal-ai/fal-3d",
+      "name": "fal-3d",
+      "description": "Generate 3D models from text or images. Use when the user requests \"Create 3D model\", \"Text to 3D\", \"Image to 3D\", \"3D generation\", \"Generate mesh\", \"3D asset\".",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-3d",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-3d/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-audio",
+      "name": "fal-audio",
+      "description": "Text-to-speech and speech-to-text using fal.ai audio models. Use when the user requests \"Convert text to speech\", \"Transcribe audio\", \"Generate voice\", \"Speech to text\", \"TTS\", \"STT\", or similar audio tasks.",
+      "provider": "fal-ai",
+      "category": "ml-ai",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-audio",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-audio/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "convert",
+        "fal",
+        "audio"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-generate",
+      "name": "fal-generate",
+      "description": "Generate images and videos using fal.ai AI models with queue support. Use when the user requests \"Generate image\", \"Create video\", \"Make a picture of...\", \"Text to image\", \"Image to video\", \"Search models\", or similar generation tasks.",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "3.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-generate",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-generate/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "generate"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-image-edit",
+      "name": "fal-image-edit",
+      "description": "Edit images using AI on fal.ai. Style transfer, object removal, background changes, and more. Use when the user requests \"Edit image\", \"Remove object\", \"Change background\", \"Apply style\", or similar image editing tasks.",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-image-edit",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-image-edit/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "image",
+        "edit"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-kling-o3",
+      "name": "fal-kling-o3",
+      "description": "Generate images and videos with Kling O3 \u2014 Kling's most powerful model family. Text-to-image, text-to-video, image-to-video, and video-to-video editing. Use when the user requests \"Kling\", \"Kling O3\", \"Best quality video\", \"Kling image\", \"Kling video editing\".",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-kling-o3",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-kling-o3/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "kling"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": false,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-lip-sync",
+      "name": "fal-lip-sync",
+      "description": "Create talking head videos, lip sync audio to video, and animate portraits with expressions. Use when the user requests \"Talking head\", \"Lip sync\", \"Make this person talk\", \"Animate portrait\", \"Live portrait\", \"Avatar video\".",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-lip-sync",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-lip-sync/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "fal",
+        "lip",
+        "sync"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-platform",
+      "name": "fal-platform",
+      "description": "fal.ai Platform APIs for model management, pricing, usage tracking, and cost estimation. Use when user asks \"show pricing\", \"check usage\", \"estimate cost\", \"setup fal\", \"add API key\", or platform management tasks.",
+      "provider": "fal-ai",
+      "category": "ml-ai",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-platform",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-platform/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "api",
+        "fal",
+        "platform"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": false,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-realtime",
+      "name": "fal-realtime",
+      "description": "Real-time and streaming AI image generation \u2014 instant results for interactive use. Use when the user requests \"Real-time generation\", \"Fast generation\", \"Streaming image\", \"Instant image\", \"Live generation\", \"Realtime\".",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-realtime",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-realtime/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "realtime"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-redesign",
+      "name": "fal-redesign",
+      "description": "Upgrade a coded website to award-tier, editorially-crafted design using fal.ai. Takes a local HTML file or a dev-server URL, screenshots it, has an opus-4.7 vision model write a gpt-image-2 edit prompt, uses fal-ai/gpt-image-2/edit to produce the redesigned reference image, then opus-4.7 vision writes a Markdown build-spec with a \"Hard constraints\" section + a tokens.json. Also supports iterate (screenshot implemented site \u2192 delta-spec vs reference) and greenfield generate (brief \u2192 mockup \u2192 single-file HTML). Invoke when the user says \"improve the design\", \"make it world-class\", \"redesign this landing page\", \"upgrade this site\", \"design pass\", or points at a local HTML / dev server for a visual review.",
+      "provider": "fal-ai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-04-22T00:20:26Z",
+      "metadata": {
+        "author": "fal-ai-community",
+        "version": "0.1.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-redesign",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-redesign/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "json",
+        "pr",
+        "design",
+        "visual",
+        "fal",
+        "redesign"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 80,
+      "skill_type": "full",
+      "requires_mcp": false,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-restore",
+      "name": "fal-restore",
+      "description": "Restore and fix image quality \u2014 deblur, denoise, dehaze, fix faces, restore documents. Use when the user requests \"Fix blurry image\", \"Remove noise\", \"Fix face\", \"Restore photo\", \"Enhance document\", \"Deblur\", \"Denoise\".",
+      "provider": "fal-ai",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-restore",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-restore/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "document",
+        "fal",
+        "restore"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-train",
+      "name": "fal-train",
+      "description": "Train custom AI models (LoRA) on fal.ai \u2014 personalize image generation for specific people, styles, objects, or video generation. Use when the user requests \"Train model\", \"Train LoRA\", \"Fine-tune\", \"Custom model\", \"Train on my images\", \"Portrait training\".",
+      "provider": "fal-ai",
+      "category": "ml-ai",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-train",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-train/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "fal",
+        "train"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-tryon",
+      "name": "fal-tryon",
+      "description": "Virtual try-on \u2014 see how clothes look on a person. Use when the user requests \"Try on clothes\", \"Virtual try-on\", \"How does this look on me\", \"Fashion try-on\", \"Garment transfer\".",
+      "provider": "fal-ai",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-tryon",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-tryon/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "tryon"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-upscale",
+      "name": "fal-upscale",
+      "description": "Upscale and enhance image resolution using AI. Use when the user requests \"Upscale image\", \"Enhance resolution\", \"Make image bigger\", \"Increase quality\", or similar upscaling tasks.",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-upscale",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-upscale/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "upscale"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-video-edit",
+      "name": "fal-video-edit",
+      "description": "Edit existing videos using AI \u2014 remix style, edit content, upscale resolution, remove background, or add audio/sound effects. Use when the user requests \"Edit video\", \"Remix video\", \"Upscale video\", \"Remove video background\", \"Add sound to video\", \"Video to audio\".",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-video-edit",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-video-edit/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "video",
+        "edit"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-vision",
+      "name": "fal-vision",
+      "description": "Analyze images using AI \u2014 segment objects, detect objects, extract text (OCR), describe images, ask questions about images. Use when the user requests \"Segment image\", \"Detect objects\", \"OCR\", \"Extract text from image\", \"Describe image\", \"What's in this image\", \"Image analysis\".",
+      "provider": "fal-ai",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-vision",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-vision/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "extract",
+        "analysis",
+        "fal",
+        "vision"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-workflow",
+      "name": "fal-workflow",
+      "description": "Generate production-ready fal.ai workflow JSON files. Use when user requests \"create workflow\", \"chain models\", \"multi-step generation\", \"image to video pipeline\", or complex AI generation pipelines.",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "3.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-workflow",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-workflow/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "json",
+        "pr",
+        "fal",
+        "workflow"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 80,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
     {
       "id": "anthropics/algorithmic-art",
       "name": "algorithmic-art",
@@ -10251,79 +10933,6 @@
       "github_stars": 53
     },
     {
-      "id": "aws-skills/aws-agentic-ai",
-      "name": "aws-agentic-ai",
-      "description": "AWS Bedrock AgentCore comprehensive expert for deploying and managing AI agents at scale. Use when working with any AgentCore service including Gateway, Runtime, Memory, Identity, Code Interpreter, Browser, Observability, Agent Registry, or Evaluations. Covers agent deployment, MCP tool integration, credential management, agent discovery, governance workflows, and automated quality assessment. Essential when user mentions AgentCore, agent runtime, agent registry, agent evaluation, MCP gateway, deploy agent, register MCP server, discover agents, evaluate agent quality, agent credentials, or wants to build, deploy, catalog, or monitor AI agents on AWS.",
-      "provider": "aws-skills",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-04-13T10:40:24Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/zxkane/aws-skills",
-        "path": "plugins/aws-agentic-ai/skills/aws-agentic-ai",
-        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-agentic-ai/skills/aws-agentic-ai/SKILL.md",
-        "commit_sha": "e4ef2e2147aa5d7b812af8970064dd822c7678ec"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "mcp",
-        "aws",
-        "agentic"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 242
-    },
-    {
-      "id": "aws-skills/aws-cdk-development",
-      "name": "aws-cdk-development",
-      "description": "AWS Cloud Development Kit (CDK) expert for building cloud infrastructure with TypeScript/Python. Use when creating CDK stacks, defining CDK constructs, implementing infrastructure as code, or when the user mentions CDK, CloudFormation, IaC, cdk synth, cdk deploy, or wants to define AWS infrastructure programmatically. Covers CDK app structure, construct patterns, stack composition, and deployment workflows.",
-      "provider": "aws-skills",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T13:49:45Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/zxkane/aws-skills",
-        "path": "plugins/aws-cdk/skills/aws-cdk-development",
-        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-cdk/skills/aws-cdk-development/SKILL.md",
-        "commit_sha": "e4ef2e2147aa5d7b812af8970064dd822c7678ec"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "cd",
-        "aws",
-        "cdk",
-        "development"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 38,
-      "maintenance_status": "maintained",
-      "quality_score": 70,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 242
-    },
-    {
       "id": "nginity/a11y-audit",
       "name": "a11y-audit",
       "description": "Accessibility audit skill for scanning, fixing, and verifying WCAG 2.2 Level A and AA compliance across React, Next.js, Vue, Angular, Svelte, and plain HTML codebases. Use when auditing accessibility, fixing a11y violations, checking color contrast, generating compliance reports, or integrating accessibility checks into CI/CD pipelines.",
@@ -17867,574 +18476,6 @@
       "skill_type": "full",
       "requires_mcp": false,
       "github_stars": 441
-    },
-    {
-      "id": "fal-ai/fal-3d",
-      "name": "fal-3d",
-      "description": "Generate 3D models from text or images. Use when the user requests \"Create 3D model\", \"Text to 3D\", \"Image to 3D\", \"3D generation\", \"Generate mesh\", \"3D asset\".",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-3d",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-3d/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-audio",
-      "name": "fal-audio",
-      "description": "Text-to-speech and speech-to-text using fal.ai audio models. Use when the user requests \"Convert text to speech\", \"Transcribe audio\", \"Generate voice\", \"Speech to text\", \"TTS\", \"STT\", or similar audio tasks.",
-      "provider": "fal-ai",
-      "category": "ml-ai",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-audio",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-audio/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "convert",
-        "fal",
-        "audio"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-generate",
-      "name": "fal-generate",
-      "description": "Generate images and videos using fal.ai AI models with queue support. Use when the user requests \"Generate image\", \"Create video\", \"Make a picture of...\", \"Text to image\", \"Image to video\", \"Search models\", or similar generation tasks.",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "3.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-generate",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-generate/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "generate"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-image-edit",
-      "name": "fal-image-edit",
-      "description": "Edit images using AI on fal.ai. Style transfer, object removal, background changes, and more. Use when the user requests \"Edit image\", \"Remove object\", \"Change background\", \"Apply style\", or similar image editing tasks.",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-image-edit",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-image-edit/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "image",
-        "edit"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-kling-o3",
-      "name": "fal-kling-o3",
-      "description": "Generate images and videos with Kling O3 \u2014 Kling's most powerful model family. Text-to-image, text-to-video, image-to-video, and video-to-video editing. Use when the user requests \"Kling\", \"Kling O3\", \"Best quality video\", \"Kling image\", \"Kling video editing\".",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-kling-o3",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-kling-o3/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "kling"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": false,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-lip-sync",
-      "name": "fal-lip-sync",
-      "description": "Create talking head videos, lip sync audio to video, and animate portraits with expressions. Use when the user requests \"Talking head\", \"Lip sync\", \"Make this person talk\", \"Animate portrait\", \"Live portrait\", \"Avatar video\".",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-lip-sync",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-lip-sync/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "fal",
-        "lip",
-        "sync"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-platform",
-      "name": "fal-platform",
-      "description": "fal.ai Platform APIs for model management, pricing, usage tracking, and cost estimation. Use when user asks \"show pricing\", \"check usage\", \"estimate cost\", \"setup fal\", \"add API key\", or platform management tasks.",
-      "provider": "fal-ai",
-      "category": "ml-ai",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-platform",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-platform/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "ci",
-        "api",
-        "fal",
-        "platform"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": false,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-realtime",
-      "name": "fal-realtime",
-      "description": "Real-time and streaming AI image generation \u2014 instant results for interactive use. Use when the user requests \"Real-time generation\", \"Fast generation\", \"Streaming image\", \"Instant image\", \"Live generation\", \"Realtime\".",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-realtime",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-realtime/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "realtime"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-restore",
-      "name": "fal-restore",
-      "description": "Restore and fix image quality \u2014 deblur, denoise, dehaze, fix faces, restore documents. Use when the user requests \"Fix blurry image\", \"Remove noise\", \"Fix face\", \"Restore photo\", \"Enhance document\", \"Deblur\", \"Denoise\".",
-      "provider": "fal-ai",
-      "category": "documents",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-restore",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-restore/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "document",
-        "fal",
-        "restore"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-train",
-      "name": "fal-train",
-      "description": "Train custom AI models (LoRA) on fal.ai \u2014 personalize image generation for specific people, styles, objects, or video generation. Use when the user requests \"Train model\", \"Train LoRA\", \"Fine-tune\", \"Custom model\", \"Train on my images\", \"Portrait training\".",
-      "provider": "fal-ai",
-      "category": "ml-ai",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-train",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-train/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "ci",
-        "fal",
-        "train"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-tryon",
-      "name": "fal-tryon",
-      "description": "Virtual try-on \u2014 see how clothes look on a person. Use when the user requests \"Try on clothes\", \"Virtual try-on\", \"How does this look on me\", \"Fashion try-on\", \"Garment transfer\".",
-      "provider": "fal-ai",
-      "category": "other",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-tryon",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-tryon/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "tryon"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-upscale",
-      "name": "fal-upscale",
-      "description": "Upscale and enhance image resolution using AI. Use when the user requests \"Upscale image\", \"Enhance resolution\", \"Make image bigger\", \"Increase quality\", or similar upscaling tasks.",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-upscale",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-upscale/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "upscale"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-video-edit",
-      "name": "fal-video-edit",
-      "description": "Edit existing videos using AI \u2014 remix style, edit content, upscale resolution, remove background, or add audio/sound effects. Use when the user requests \"Edit video\", \"Remix video\", \"Upscale video\", \"Remove video background\", \"Add sound to video\", \"Video to audio\".",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-video-edit",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-video-edit/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "video",
-        "edit"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-vision",
-      "name": "fal-vision",
-      "description": "Analyze images using AI \u2014 segment objects, detect objects, extract text (OCR), describe images, ask questions about images. Use when the user requests \"Segment image\", \"Detect objects\", \"OCR\", \"Extract text from image\", \"Describe image\", \"What's in this image\", \"Image analysis\".",
-      "provider": "fal-ai",
-      "category": "data",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-vision",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-vision/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "extract",
-        "analysis",
-        "fal",
-        "vision"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-workflow",
-      "name": "fal-workflow",
-      "description": "Generate production-ready fal.ai workflow JSON files. Use when user requests \"create workflow\", \"chain models\", \"multi-step generation\", \"image to video pipeline\", or complex AI generation pipelines.",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "3.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-workflow",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-workflow/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "json",
-        "pr",
-        "fal",
-        "workflow"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 90,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
     }
   ]
 }

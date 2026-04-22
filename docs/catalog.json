@@ -1,64 +1,22 @@
 {
   "$schema": "https://raw.githubusercontent.com/dmgrok/agent_skills_directory/main/schema/catalog-schema.json",
-  "version": "2026.04.21",
-  "generated_at": "2026-04-21T08:02:38.479132+00:00",
-  "total_skills": 913,
+  "version": "2026.04.22",
+  "generated_at": "2026-04-22T07:59:29.177171+00:00",
+  "total_skills": 914,
   "providers": {
-    "anthropics": {
-      "name": "Anthropic",
-      "repo": "https://github.com/anthropics/skills",
-      "skills_count": 17,
-      "stars": 121326,
-      "description": "Public repository for Agent Skills"
+    "aws-skills": {
+      "name": "AWS Skills",
+      "repo": "https://github.com/zxkane/aws-skills",
+      "skills_count": 5,
+      "stars": 256,
+      "description": "Claude Code plugins and agent skills for AWS development \u2014 CDK, serverless, cost ops, and Bedrock AgentCore"
     },
-    "obsidian-plugin": {
-      "name": "Obsidian Plugin Development",
-      "repo": "https://github.com/gapmiss/obsidian-plugin-skill",
-      "skills_count": 0,
-      "stars": 123,
-      "description": "Agent SKILL for Obsidian.md plugin development"
-    },
-    "emblemcompany": {
-      "name": "EmblemAI",
-      "repo": "https://github.com/EmblemCompany/Agent-skills",
-      "skills_count": 9,
-      "stars": 10,
+    "fal-ai": {
+      "name": "fal.ai",
+      "repo": "https://github.com/fal-ai-community/skills",
+      "skills_count": 16,
+      "stars": 53,
       "description": null
-    },
-    "notebooklm-skill": {
-      "name": "NotebookLM Integration",
-      "repo": "https://github.com/PleasePrompto/notebooklm-skill",
-      "skills_count": 1,
-      "stars": 4163,
-      "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
-    },
-    "sanjay-ai-skills": {
-      "name": "Sanjay AI Skills",
-      "repo": "https://github.com/sanjay3290/ai-skills",
-      "skills_count": 20,
-      "stars": 208,
-      "description": "Collection of agent skills for AI coding assistants"
-    },
-    "move-quality-skill": {
-      "name": "Move Code Quality",
-      "repo": "https://github.com/1NickPappas/move-code-quality-skill",
-      "skills_count": 1,
-      "stars": 16,
-      "description": "Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist"
-    },
-    "stream-coding": {
-      "name": "Stream Coding Methodology",
-      "repo": "https://github.com/frmoretto/stream-coding",
-      "skills_count": 1,
-      "stars": 60,
-      "description": "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
-    },
-    "stripe": {
-      "name": "Stripe",
-      "repo": "https://github.com/stripe/ai",
-      "skills_count": 3,
-      "stars": 1477,
-      "description": "One-stop shop for building AI-powered products and businesses with Stripe."
     },
     "playwright-skill": {
       "name": "Playwright Automation",
@@ -67,124 +25,26 @@
       "stars": 1889,
       "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
     },
-    "epub-skill": {
-      "name": "EPUB Converter",
-      "repo": "https://github.com/smerchek/claude-epub-skill",
-      "skills_count": 1,
-      "stars": 83,
-      "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
-    },
-    "claude-marketplace-productivity": {
-      "name": "Claude Marketplace (Productivity)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 4,
-      "stars": 441,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
-    "aiqualitylab": {
-      "name": "AI Quality Lab",
-      "repo": "https://github.com/aiqualitylab/agent-skills",
-      "skills_count": 2,
-      "stars": 1,
-      "description": "AI-powered testing skills for automation frameworks"
-    },
-    "tinybird": {
-      "name": "Tinybird",
-      "repo": "https://github.com/tinybirdco/tinybird-agent-skills",
-      "skills_count": 4,
-      "stars": 12,
-      "description": null
-    },
-    "ios-simulator-skill": {
-      "name": "iOS Simulator",
-      "repo": "https://github.com/conorluddy/ios-simulator-skill",
-      "skills_count": 1,
-      "stars": 782,
-      "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps. I mainly use it as an xcodebuild wrapper to save context."
-    },
-    "expo": {
-      "name": "Expo",
-      "repo": "https://github.com/expo/skills",
-      "skills_count": 12,
-      "stars": 1662,
-      "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services"
-    },
-    "better-auth": {
-      "name": "Better Auth",
-      "repo": "https://github.com/better-auth/skills",
-      "skills_count": 5,
-      "stars": 144,
-      "description": null
-    },
-    "google-labs-stitch": {
-      "name": "Google Labs Stitch",
-      "repo": "https://github.com/google-labs-code/stitch-skills",
-      "skills_count": 8,
-      "stars": 3588,
-      "description": null
-    },
-    "skillcreatorai": {
-      "name": "SkillCreator.ai",
-      "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
-      "skills_count": 17,
-      "stars": 1010,
-      "description": "my curated agent skills library "
-    },
-    "huggingface": {
-      "name": "HuggingFace",
-      "repo": "https://github.com/huggingface/skills",
-      "skills_count": 11,
-      "stars": 10199,
-      "description": "Give your agents the power of the Hugging Face ecosystem"
-    },
-    "d3js-skill": {
-      "name": "D3.js Visualization",
-      "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
-      "skills_count": 1,
-      "stars": 125,
-      "description": "A Claude skill for d3.js."
-    },
-    "family-history-skill": {
-      "name": "Family History Research",
-      "repo": "https://github.com/emaynard/claude-family-history-research-skill",
-      "skills_count": 1,
-      "stars": 44,
-      "description": "A Claude Skill to assist with family history and genealogy research planning."
-    },
-    "neondatabase": {
-      "name": "Neon Database",
-      "repo": "https://github.com/neondatabase/agent-skills",
-      "skills_count": 3,
-      "stars": 53,
-      "description": "Agent Skills for Neon Severless Postgres"
-    },
-    "ipsw-skill": {
-      "name": "IPSW iOS Firmware",
-      "repo": "https://github.com/blacktop/ipsw-skill",
-      "skills_count": 1,
-      "stars": 43,
-      "description": "A SKILL.md for ipsw"
-    },
-    "obra-superpowers": {
-      "name": "Obra Superpowers",
-      "repo": "https://github.com/obra/superpowers",
-      "skills_count": 14,
-      "stars": 156761,
-      "description": "An agentic skills framework & software development methodology that works."
-    },
-    "claude-marketplace-code": {
-      "name": "Claude Marketplace (Code Ops)",
-      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
-      "skills_count": 4,
-      "stars": 441,
-      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
-    },
     "github": {
       "name": "GitHub",
       "repo": "https://github.com/github/awesome-copilot",
       "skills_count": 323,
       "stars": 30488,
       "description": "Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot."
+    },
+    "emblemcompany": {
+      "name": "EmblemAI",
+      "repo": "https://github.com/EmblemCompany/Agent-skills",
+      "skills_count": 9,
+      "stars": 10,
+      "description": null
+    },
+    "sanjay-ai-skills": {
+      "name": "Sanjay AI Skills",
+      "repo": "https://github.com/sanjay3290/ai-skills",
+      "skills_count": 20,
+      "stars": 208,
+      "description": "Collection of agent skills for AI coding assistants"
     },
     "claude-marketplace-visual": {
       "name": "Claude Marketplace (Visual)",
@@ -200,47 +60,26 @@
       "stars": 57,
       "description": "A claude skill that generate test cases using N-wise test cases using the pypict library"
     },
-    "visionos-agents": {
-      "name": "visionOS Development",
-      "repo": "https://github.com/tomkrikorian/visionOSAgents",
-      "skills_count": 11,
-      "stars": 47,
-      "description": "AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform"
-    },
-    "tapestry": {
-      "name": "Tapestry Skills",
-      "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
-      "skills_count": 7,
-      "stars": 276,
-      "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
-    },
-    "fal-ai": {
-      "name": "fal.ai",
-      "repo": "https://github.com/fal-ai-community/skills",
-      "skills_count": 15,
-      "stars": 27,
-      "description": null
-    },
-    "nginity": {
-      "name": "nginity Enterprise",
-      "repo": "https://github.com/alirezarezvani/claude-skills",
-      "skills_count": 238,
-      "stars": 10966,
-      "description": "232+ Claude Code skills & agent plugins for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents \u2014 engineering, marketing, product, compliance, C-level advisory."
-    },
-    "remotion": {
-      "name": "Remotion",
-      "repo": "https://github.com/remotion-dev/skills",
+    "move-quality-skill": {
+      "name": "Move Code Quality",
+      "repo": "https://github.com/1NickPappas/move-code-quality-skill",
       "skills_count": 1,
-      "stars": 2690,
-      "description": "Agent Skills"
+      "stars": 16,
+      "description": "Claude Code skill for analyzing Move packages against the official Move Book Code Quality Checklist"
     },
-    "openai": {
-      "name": "OpenAI",
-      "repo": "https://github.com/openai/skills",
-      "skills_count": 45,
-      "stars": 17039,
-      "description": "Skills Catalog for Codex"
+    "stripe": {
+      "name": "Stripe",
+      "repo": "https://github.com/stripe/ai",
+      "skills_count": 3,
+      "stars": 1477,
+      "description": "One-stop shop for building AI-powered products and businesses with Stripe."
+    },
+    "tinybird": {
+      "name": "Tinybird",
+      "repo": "https://github.com/tinybirdco/tinybird-agent-skills",
+      "skills_count": 4,
+      "stars": 12,
+      "description": null
     },
     "trailofbits": {
       "name": "Trail of Bits Security",
@@ -249,26 +88,12 @@
       "stars": 4641,
       "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
     },
-    "getsentry": {
-      "name": "Sentry",
-      "repo": "https://github.com/getsentry/skills",
-      "skills_count": 24,
-      "stars": 594,
-      "description": "Agent Skills used by the Sentry team for development."
-    },
-    "vercel": {
-      "name": "Vercel",
-      "repo": "https://github.com/vercel-labs/agent-skills",
-      "skills_count": 7,
-      "stars": 25245,
-      "description": "Vercel's official collection of agent skills"
-    },
-    "cloudflare": {
-      "name": "Cloudflare",
-      "repo": "https://github.com/cloudflare/skills",
-      "skills_count": 8,
-      "stars": 890,
-      "description": "Skills for teaching agents how to build on Cloudflare."
+    "anthropics": {
+      "name": "Anthropic",
+      "repo": "https://github.com/anthropics/skills",
+      "skills_count": 17,
+      "stars": 121326,
+      "description": "Public repository for Agent Skills"
     },
     "claude-marketplace-engineering": {
       "name": "Claude Marketplace (Engineering)",
@@ -277,12 +102,145 @@
       "stars": 441,
       "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
     },
+    "supabase": {
+      "name": "Supabase",
+      "repo": "https://github.com/supabase/agent-skills",
+      "skills_count": 2,
+      "stars": 1975,
+      "description": "Agent Skills to help developers using AI agents with Supabase"
+    },
+    "notebooklm-skill": {
+      "name": "NotebookLM Integration",
+      "repo": "https://github.com/PleasePrompto/notebooklm-skill",
+      "skills_count": 1,
+      "stars": 4163,
+      "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base."
+    },
+    "stream-coding": {
+      "name": "Stream Coding Methodology",
+      "repo": "https://github.com/frmoretto/stream-coding",
+      "skills_count": 1,
+      "stars": 60,
+      "description": "Stop \"vibe coding\" and start Stream Coding, the 10-20x velocity methodology for AI-accelerated development. Includes the official SKILL.md for Claude/Cursor/Windsurf and the complete Manifesto."
+    },
+    "google-labs-stitch": {
+      "name": "Google Labs Stitch",
+      "repo": "https://github.com/google-labs-code/stitch-skills",
+      "skills_count": 8,
+      "stars": 3588,
+      "description": null
+    },
+    "getsentry": {
+      "name": "Sentry",
+      "repo": "https://github.com/getsentry/skills",
+      "skills_count": 24,
+      "stars": 594,
+      "description": "Agent Skills used by the Sentry team for development."
+    },
+    "claude-marketplace-productivity": {
+      "name": "Claude Marketplace (Productivity)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 4,
+      "stars": 441,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "aiqualitylab": {
+      "name": "AI Quality Lab",
+      "repo": "https://github.com/aiqualitylab/agent-skills",
+      "skills_count": 2,
+      "stars": 1,
+      "description": "AI-powered testing skills for automation frameworks"
+    },
+    "family-history-skill": {
+      "name": "Family History Research",
+      "repo": "https://github.com/emaynard/claude-family-history-research-skill",
+      "skills_count": 1,
+      "stars": 44,
+      "description": "A Claude Skill to assist with family history and genealogy research planning."
+    },
+    "obra-superpowers": {
+      "name": "Obra Superpowers",
+      "repo": "https://github.com/obra/superpowers",
+      "skills_count": 14,
+      "stars": 156761,
+      "description": "An agentic skills framework & software development methodology that works."
+    },
+    "openai": {
+      "name": "OpenAI",
+      "repo": "https://github.com/openai/skills",
+      "skills_count": 45,
+      "stars": 17039,
+      "description": "Skills Catalog for Codex"
+    },
+    "neondatabase": {
+      "name": "Neon Database",
+      "repo": "https://github.com/neondatabase/agent-skills",
+      "skills_count": 3,
+      "stars": 53,
+      "description": "Agent Skills for Neon Severless Postgres"
+    },
+    "visionos-agents": {
+      "name": "visionOS Development",
+      "repo": "https://github.com/tomkrikorian/visionOSAgents",
+      "skills_count": 11,
+      "stars": 47,
+      "description": "AGENTS.MD & SKILLS for vibe coding efficiently for the visionOS platform"
+    },
     "csv-summarizer-skill": {
       "name": "CSV Data Summarizer",
       "repo": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill",
       "skills_count": 1,
       "stars": 276,
       "description": "A Claude Skill that automatically analyzes uploaded CSV files \u2014 generating summary statistics, detecting missing data, and creating quick visualizations using Python and pandas."
+    },
+    "tapestry": {
+      "name": "Tapestry Skills",
+      "repo": "https://github.com/michalparkola/tapestry-skills-for-claude-code",
+      "skills_count": 7,
+      "stars": 276,
+      "description": "Claude Code skills to download sources (articles, PDFs, YouTube video transcripts)"
+    },
+    "better-auth": {
+      "name": "Better Auth",
+      "repo": "https://github.com/better-auth/skills",
+      "skills_count": 5,
+      "stars": 144,
+      "description": null
+    },
+    "remotion": {
+      "name": "Remotion",
+      "repo": "https://github.com/remotion-dev/skills",
+      "skills_count": 1,
+      "stars": 2690,
+      "description": "Agent Skills"
+    },
+    "nginity": {
+      "name": "nginity Enterprise",
+      "repo": "https://github.com/alirezarezvani/claude-skills",
+      "skills_count": 238,
+      "stars": 10966,
+      "description": "232+ Claude Code skills & agent plugins for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents \u2014 engineering, marketing, product, compliance, C-level advisory."
+    },
+    "obsidian-plugin": {
+      "name": "Obsidian Plugin Development",
+      "repo": "https://github.com/gapmiss/obsidian-plugin-skill",
+      "skills_count": 0,
+      "stars": 123,
+      "description": "Agent SKILL for Obsidian.md plugin development"
+    },
+    "claude-marketplace-code": {
+      "name": "Claude Marketplace (Code Ops)",
+      "repo": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "skills_count": 4,
+      "stars": 441,
+      "description": "Claude Code Skills for software engineering workflows - Git automation, testing, and code review"
+    },
+    "cloudflare": {
+      "name": "Cloudflare",
+      "repo": "https://github.com/cloudflare/skills",
+      "skills_count": 8,
+      "stars": 890,
+      "description": "Skills for teaching agents how to build on Cloudflare."
     },
     "ffuf-skill": {
       "name": "FFUF Web Fuzzing",
@@ -291,30 +249,867 @@
       "stars": 121,
       "description": "This is a \"skill\" for claude to use FFUF."
     },
-    "aws-skills": {
-      "name": "AWS Skills",
-      "repo": "https://github.com/zxkane/aws-skills",
-      "skills_count": 5,
-      "stars": 242,
-      "description": "Claude Agent Skills for AWS"
+    "d3js-skill": {
+      "name": "D3.js Visualization",
+      "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+      "skills_count": 1,
+      "stars": 125,
+      "description": "A Claude skill for d3.js."
     },
-    "supabase": {
-      "name": "Supabase",
-      "repo": "https://github.com/supabase/agent-skills",
-      "skills_count": 2,
-      "stars": 1975,
-      "description": "Agent Skills to help developers using AI agents with Supabase"
+    "ipsw-skill": {
+      "name": "IPSW iOS Firmware",
+      "repo": "https://github.com/blacktop/ipsw-skill",
+      "skills_count": 1,
+      "stars": 43,
+      "description": "A SKILL.md for ipsw"
+    },
+    "epub-skill": {
+      "name": "EPUB Converter",
+      "repo": "https://github.com/smerchek/claude-epub-skill",
+      "skills_count": 1,
+      "stars": 83,
+      "description": "A Claude Skill for converting markdown documents, chat summaries, or research reports into a downloadable epub file that can be sent to kindle"
+    },
+    "vercel": {
+      "name": "Vercel",
+      "repo": "https://github.com/vercel-labs/agent-skills",
+      "skills_count": 7,
+      "stars": 25245,
+      "description": "Vercel's official collection of agent skills"
+    },
+    "skillcreatorai": {
+      "name": "SkillCreator.ai",
+      "repo": "https://github.com/skillcreatorai/Ai-Agent-Skills",
+      "skills_count": 17,
+      "stars": 1010,
+      "description": "my curated agent skills library "
+    },
+    "ios-simulator-skill": {
+      "name": "iOS Simulator",
+      "repo": "https://github.com/conorluddy/ios-simulator-skill",
+      "skills_count": 1,
+      "stars": 782,
+      "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps. I mainly use it as an xcodebuild wrapper to save context."
+    },
+    "expo": {
+      "name": "Expo",
+      "repo": "https://github.com/expo/skills",
+      "skills_count": 12,
+      "stars": 1662,
+      "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services"
+    },
+    "huggingface": {
+      "name": "HuggingFace",
+      "repo": "https://github.com/huggingface/skills",
+      "skills_count": 11,
+      "stars": 10199,
+      "description": "Give your agents the power of the Hugging Face ecosystem"
     }
   },
   "categories": [
+    "cloud",
     "creative",
     "data",
     "development",
+    "devops",
     "documents",
-    "enterprise",
-    "web"
+    "ml-ai",
+    "other"
   ],
   "skills": [
+    {
+      "id": "aws-skills/aws-agentic-ai",
+      "name": "aws-agentic-ai",
+      "description": "AWS Bedrock AgentCore comprehensive expert for deploying and managing AI agents at scale. Use when working with any AgentCore service including Gateway, Runtime, Memory, Identity, Code Interpreter, Browser, Observability, Agent Registry, or Evaluations. Covers agent deployment, MCP tool integration, credential management, agent discovery, governance workflows, and automated quality assessment. Essential when user mentions AgentCore, agent runtime, agent registry, agent evaluation, MCP gateway, deploy agent, register MCP server, discover agents, evaluate agent quality, agent credentials, or wants to build, deploy, catalog, or monitor AI agents on AWS.",
+      "provider": "aws-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-04-13T10:40:24Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/zxkane/aws-skills",
+        "path": "plugins/aws-agentic-ai/skills/aws-agentic-ai",
+        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-agentic-ai/skills/aws-agentic-ai/SKILL.md",
+        "commit_sha": "de932ce491cf7e567ac78ccd2d25bc5da7167850"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "mcp",
+        "aws",
+        "agentic"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 8,
+      "maintenance_status": "active",
+      "quality_score": 80,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 256
+    },
+    {
+      "id": "aws-skills/aws-cdk-development",
+      "name": "aws-cdk-development",
+      "description": "AWS Cloud Development Kit (CDK) expert for building cloud infrastructure with TypeScript/Python. Use when creating CDK stacks, defining CDK constructs, implementing infrastructure as code, or when the user mentions CDK, CloudFormation, IaC, cdk synth, cdk deploy, or wants to define AWS infrastructure programmatically. Covers CDK app structure, construct patterns, stack composition, and deployment workflows.",
+      "provider": "aws-skills",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T13:49:45Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/zxkane/aws-skills",
+        "path": "plugins/aws-cdk/skills/aws-cdk-development",
+        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-cdk/skills/aws-cdk-development/SKILL.md",
+        "commit_sha": "de932ce491cf7e567ac78ccd2d25bc5da7167850"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "cd",
+        "aws",
+        "cdk",
+        "development"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 46,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 256
+    },
+    {
+      "id": "aws-skills/aws-cost-operations",
+      "name": "aws-cost-operations",
+      "description": "AWS cost optimization, monitoring, and operational excellence expert. Use when analyzing AWS bills, estimating costs, setting up CloudWatch alarms, querying logs, auditing CloudTrail activity, or assessing security posture. Essential when user mentions AWS costs, spending, billing, budget, pricing, CloudWatch, observability, monitoring, alerting, CloudTrail, audit, or wants to optimize AWS infrastructure costs and operational efficiency.",
+      "provider": "aws-skills",
+      "category": "devops",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T13:49:45Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/zxkane/aws-skills",
+        "path": "plugins/aws-cost-ops/skills/aws-cost-operations",
+        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-cost-ops/skills/aws-cost-operations/SKILL.md",
+        "commit_sha": "de932ce491cf7e567ac78ccd2d25bc5da7167850"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "aws",
+        "cost",
+        "operations"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 46,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 256
+    },
+    {
+      "id": "aws-skills/aws-mcp-setup",
+      "name": "aws-mcp-setup",
+      "description": "Configure AWS MCP servers for documentation search and API access. Use when setting up AWS MCP, configuring AWS documentation tools, troubleshooting MCP connectivity, or when user mentions aws-mcp, awsdocs, uvx setup, or MCP server configuration. Covers both Full AWS MCP Server (with uvx + credentials) and lightweight Documentation MCP (no auth required).",
+      "provider": "aws-skills",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T13:49:45Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/zxkane/aws-skills",
+        "path": "plugins/aws-common/skills/aws-mcp-setup",
+        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-common/skills/aws-mcp-setup/SKILL.md",
+        "commit_sha": "de932ce491cf7e567ac78ccd2d25bc5da7167850"
+      },
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "api",
+        "mcp",
+        "document",
+        "aws",
+        "setup"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 46,
+      "maintenance_status": "maintained",
+      "quality_score": 50,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 256
+    },
+    {
+      "id": "aws-skills/aws-serverless-eda",
+      "name": "aws-serverless-eda",
+      "description": "AWS serverless and event-driven architecture expert based on Well-Architected Framework. Use when building serverless APIs, Lambda functions, REST APIs, microservices, or async workflows. Covers Lambda with TypeScript/Python, API Gateway (REST/HTTP), DynamoDB, Step Functions, EventBridge, SQS, SNS, and serverless patterns. Essential when user mentions serverless, Lambda, API Gateway, event-driven, async processing, queues, pub/sub, or wants to build scalable serverless applications with AWS best practices.",
+      "provider": "aws-skills",
+      "category": "cloud",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T13:49:45Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/zxkane/aws-skills",
+        "path": "plugins/serverless-eda/skills/aws-serverless-eda",
+        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/serverless-eda/skills/aws-serverless-eda/SKILL.md",
+        "commit_sha": "de932ce491cf7e567ac78ccd2d25bc5da7167850"
+      },
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "aws",
+        "serverless",
+        "eda"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 46,
+      "maintenance_status": "maintained",
+      "quality_score": 60,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 256
+    },
+    {
+      "id": "fal-ai/fal-3d",
+      "name": "fal-3d",
+      "description": "Generate 3D models from text or images. Use when the user requests \"Create 3D model\", \"Text to 3D\", \"Image to 3D\", \"3D generation\", \"Generate mesh\", \"3D asset\".",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-3d",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-3d/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-audio",
+      "name": "fal-audio",
+      "description": "Text-to-speech and speech-to-text using fal.ai audio models. Use when the user requests \"Convert text to speech\", \"Transcribe audio\", \"Generate voice\", \"Speech to text\", \"TTS\", \"STT\", or similar audio tasks.",
+      "provider": "fal-ai",
+      "category": "ml-ai",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-audio",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-audio/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "convert",
+        "fal",
+        "audio"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-generate",
+      "name": "fal-generate",
+      "description": "Generate images and videos using fal.ai AI models with queue support. Use when the user requests \"Generate image\", \"Create video\", \"Make a picture of...\", \"Text to image\", \"Image to video\", \"Search models\", or similar generation tasks.",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "3.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-generate",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-generate/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "generate"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-image-edit",
+      "name": "fal-image-edit",
+      "description": "Edit images using AI on fal.ai. Style transfer, object removal, background changes, and more. Use when the user requests \"Edit image\", \"Remove object\", \"Change background\", \"Apply style\", or similar image editing tasks.",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-image-edit",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-image-edit/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "image",
+        "edit"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-kling-o3",
+      "name": "fal-kling-o3",
+      "description": "Generate images and videos with Kling O3 \u2014 Kling's most powerful model family. Text-to-image, text-to-video, image-to-video, and video-to-video editing. Use when the user requests \"Kling\", \"Kling O3\", \"Best quality video\", \"Kling image\", \"Kling video editing\".",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-kling-o3",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-kling-o3/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "kling"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": false,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-lip-sync",
+      "name": "fal-lip-sync",
+      "description": "Create talking head videos, lip sync audio to video, and animate portraits with expressions. Use when the user requests \"Talking head\", \"Lip sync\", \"Make this person talk\", \"Animate portrait\", \"Live portrait\", \"Avatar video\".",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-lip-sync",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-lip-sync/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "fal",
+        "lip",
+        "sync"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-platform",
+      "name": "fal-platform",
+      "description": "fal.ai Platform APIs for model management, pricing, usage tracking, and cost estimation. Use when user asks \"show pricing\", \"check usage\", \"estimate cost\", \"setup fal\", \"add API key\", or platform management tasks.",
+      "provider": "fal-ai",
+      "category": "ml-ai",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-platform",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-platform/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "ci",
+        "api",
+        "fal",
+        "platform"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": false,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-realtime",
+      "name": "fal-realtime",
+      "description": "Real-time and streaming AI image generation \u2014 instant results for interactive use. Use when the user requests \"Real-time generation\", \"Fast generation\", \"Streaming image\", \"Instant image\", \"Live generation\", \"Realtime\".",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-realtime",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-realtime/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "realtime"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-redesign",
+      "name": "fal-redesign",
+      "description": "Upgrade a coded website to award-tier, editorially-crafted design using fal.ai. Takes a local HTML file or a dev-server URL, screenshots it, has an opus-4.7 vision model write a gpt-image-2 edit prompt, uses fal-ai/gpt-image-2/edit to produce the redesigned reference image, then opus-4.7 vision writes a Markdown build-spec with a \"Hard constraints\" section + a tokens.json. Also supports iterate (screenshot implemented site \u2192 delta-spec vs reference) and greenfield generate (brief \u2192 mockup \u2192 single-file HTML). Invoke when the user says \"improve the design\", \"make it world-class\", \"redesign this landing page\", \"upgrade this site\", \"design pass\", or points at a local HTML / dev server for a visual review.",
+      "provider": "fal-ai",
+      "category": "development",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-04-22T00:20:26Z",
+      "metadata": {
+        "author": "fal-ai-community",
+        "version": "0.1.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-redesign",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-redesign/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "json",
+        "pr",
+        "design",
+        "visual",
+        "fal",
+        "redesign"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 0,
+      "maintenance_status": "active",
+      "quality_score": 80,
+      "skill_type": "full",
+      "requires_mcp": false,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-restore",
+      "name": "fal-restore",
+      "description": "Restore and fix image quality \u2014 deblur, denoise, dehaze, fix faces, restore documents. Use when the user requests \"Fix blurry image\", \"Remove noise\", \"Fix face\", \"Restore photo\", \"Enhance document\", \"Deblur\", \"Denoise\".",
+      "provider": "fal-ai",
+      "category": "documents",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-restore",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-restore/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "document",
+        "fal",
+        "restore"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-train",
+      "name": "fal-train",
+      "description": "Train custom AI models (LoRA) on fal.ai \u2014 personalize image generation for specific people, styles, objects, or video generation. Use when the user requests \"Train model\", \"Train LoRA\", \"Fine-tune\", \"Custom model\", \"Train on my images\", \"Portrait training\".",
+      "provider": "fal-ai",
+      "category": "ml-ai",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-train",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-train/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "ci",
+        "fal",
+        "train"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-tryon",
+      "name": "fal-tryon",
+      "description": "Virtual try-on \u2014 see how clothes look on a person. Use when the user requests \"Try on clothes\", \"Virtual try-on\", \"How does this look on me\", \"Fashion try-on\", \"Garment transfer\".",
+      "provider": "fal-ai",
+      "category": "other",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-tryon",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-tryon/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "tryon"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-upscale",
+      "name": "fal-upscale",
+      "description": "Upscale and enhance image resolution using AI. Use when the user requests \"Upscale image\", \"Enhance resolution\", \"Make image bigger\", \"Increase quality\", or similar upscaling tasks.",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-upscale",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-upscale/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "upscale"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-video-edit",
+      "name": "fal-video-edit",
+      "description": "Edit existing videos using AI \u2014 remix style, edit content, upscale resolution, remove background, or add audio/sound effects. Use when the user requests \"Edit video\", \"Remix video\", \"Upscale video\", \"Remove video background\", \"Add sound to video\", \"Video to audio\".",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-video-edit",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-video-edit/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "fal",
+        "video",
+        "edit"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-vision",
+      "name": "fal-vision",
+      "description": "Analyze images using AI \u2014 segment objects, detect objects, extract text (OCR), describe images, ask questions about images. Use when the user requests \"Segment image\", \"Detect objects\", \"OCR\", \"Extract text from image\", \"Describe image\", \"What's in this image\", \"Image analysis\".",
+      "provider": "fal-ai",
+      "category": "data",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "1.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-vision",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-vision/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false,
+      "tags": [
+        "extract",
+        "analysis",
+        "fal",
+        "vision"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 70,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
+    {
+      "id": "fal-ai/fal-workflow",
+      "name": "fal-workflow",
+      "description": "Generate production-ready fal.ai workflow JSON files. Use when user requests \"create workflow\", \"chain models\", \"multi-step generation\", \"image to video pipeline\", or complex AI generation pipelines.",
+      "provider": "fal-ai",
+      "category": "creative",
+      "license": null,
+      "compatibility": null,
+      "last_updated_at": "2026-03-06T01:14:17Z",
+      "metadata": {
+        "author": "fal-ai",
+        "version": "3.0.0"
+      },
+      "source": {
+        "repo": "https://github.com/fal-ai-community/skills",
+        "path": "skills/claude.ai/fal-workflow",
+        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-workflow/SKILL.md",
+        "commit_sha": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "json",
+        "pr",
+        "fal",
+        "workflow"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 47,
+      "maintenance_status": "maintained",
+      "quality_score": 80,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 53
+    },
     {
       "id": "anthropics/algorithmic-art",
       "name": "algorithmic-art",
@@ -20773,190 +21568,6 @@
       "github_stars": 53
     },
     {
-      "id": "aws-skills/aws-agentic-ai",
-      "name": "aws-agentic-ai",
-      "description": "AWS Bedrock AgentCore comprehensive expert for deploying and managing AI agents at scale. Use when working with any AgentCore service including Gateway, Runtime, Memory, Identity, Code Interpreter, Browser, Observability, Agent Registry, or Evaluations. Covers agent deployment, MCP tool integration, credential management, agent discovery, governance workflows, and automated quality assessment. Essential when user mentions AgentCore, agent runtime, agent registry, agent evaluation, MCP gateway, deploy agent, register MCP server, discover agents, evaluate agent quality, agent credentials, or wants to build, deploy, catalog, or monitor AI agents on AWS.",
-      "provider": "aws-skills",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-04-13T10:40:24Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/zxkane/aws-skills",
-        "path": "plugins/aws-agentic-ai/skills/aws-agentic-ai",
-        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-agentic-ai/skills/aws-agentic-ai/SKILL.md",
-        "commit_sha": "e4ef2e2147aa5d7b812af8970064dd822c7678ec"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "mcp",
-        "aws",
-        "agentic"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 242
-    },
-    {
-      "id": "aws-skills/aws-cdk-development",
-      "name": "aws-cdk-development",
-      "description": "AWS Cloud Development Kit (CDK) expert for building cloud infrastructure with TypeScript/Python. Use when creating CDK stacks, defining CDK constructs, implementing infrastructure as code, or when the user mentions CDK, CloudFormation, IaC, cdk synth, cdk deploy, or wants to define AWS infrastructure programmatically. Covers CDK app structure, construct patterns, stack composition, and deployment workflows.",
-      "provider": "aws-skills",
-      "category": "development",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T13:49:45Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/zxkane/aws-skills",
-        "path": "plugins/aws-cdk/skills/aws-cdk-development",
-        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-cdk/skills/aws-cdk-development/SKILL.md",
-        "commit_sha": "e4ef2e2147aa5d7b812af8970064dd822c7678ec"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "cd",
-        "aws",
-        "cdk",
-        "development"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 38,
-      "maintenance_status": "maintained",
-      "quality_score": 70,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 242
-    },
-    {
-      "id": "aws-skills/aws-cost-operations",
-      "name": "aws-cost-operations",
-      "description": "AWS cost optimization, monitoring, and operational excellence expert. Use when analyzing AWS bills, estimating costs, setting up CloudWatch alarms, querying logs, auditing CloudTrail activity, or assessing security posture. Essential when user mentions AWS costs, spending, billing, budget, pricing, CloudWatch, observability, monitoring, alerting, CloudTrail, audit, or wants to optimize AWS infrastructure costs and operational efficiency.",
-      "provider": "aws-skills",
-      "category": "devops",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T13:49:45Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/zxkane/aws-skills",
-        "path": "plugins/aws-cost-ops/skills/aws-cost-operations",
-        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-cost-ops/skills/aws-cost-operations/SKILL.md",
-        "commit_sha": "e4ef2e2147aa5d7b812af8970064dd822c7678ec"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "ci",
-        "aws",
-        "cost",
-        "operations"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 38,
-      "maintenance_status": "maintained",
-      "quality_score": 60,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 242
-    },
-    {
-      "id": "aws-skills/aws-mcp-setup",
-      "name": "aws-mcp-setup",
-      "description": "Configure AWS MCP servers for documentation search and API access. Use when setting up AWS MCP, configuring AWS documentation tools, troubleshooting MCP connectivity, or when user mentions aws-mcp, awsdocs, uvx setup, or MCP server configuration. Covers both Full AWS MCP Server (with uvx + credentials) and lightweight Documentation MCP (no auth required).",
-      "provider": "aws-skills",
-      "category": "documents",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T13:49:45Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/zxkane/aws-skills",
-        "path": "plugins/aws-common/skills/aws-mcp-setup",
-        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/aws-common/skills/aws-mcp-setup/SKILL.md",
-        "commit_sha": "e4ef2e2147aa5d7b812af8970064dd822c7678ec"
-      },
-      "has_scripts": false,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "api",
-        "mcp",
-        "document",
-        "aws",
-        "setup"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 38,
-      "maintenance_status": "maintained",
-      "quality_score": 50,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 242
-    },
-    {
-      "id": "aws-skills/aws-serverless-eda",
-      "name": "aws-serverless-eda",
-      "description": "AWS serverless and event-driven architecture expert based on Well-Architected Framework. Use when building serverless APIs, Lambda functions, REST APIs, microservices, or async workflows. Covers Lambda with TypeScript/Python, API Gateway (REST/HTTP), DynamoDB, Step Functions, EventBridge, SQS, SNS, and serverless patterns. Essential when user mentions serverless, Lambda, API Gateway, event-driven, async processing, queues, pub/sub, or wants to build scalable serverless applications with AWS best practices.",
-      "provider": "aws-skills",
-      "category": "cloud",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T13:49:45Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/zxkane/aws-skills",
-        "path": "plugins/serverless-eda/skills/aws-serverless-eda",
-        "skill_md_url": "https://raw.githubusercontent.com/zxkane/aws-skills/main/plugins/serverless-eda/skills/aws-serverless-eda/SKILL.md",
-        "commit_sha": "e4ef2e2147aa5d7b812af8970064dd822c7678ec"
-      },
-      "has_scripts": false,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "api",
-        "aws",
-        "serverless",
-        "eda"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 38,
-      "maintenance_status": "maintained",
-      "quality_score": 60,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 242
-    },
-    {
       "id": "nginity/a11y-audit",
       "name": "a11y-audit",
       "description": "Accessibility audit skill for scanning, fixing, and verifying WCAG 2.2 Level A and AA compliance across React, Next.js, Vue, Angular, Svelte, and plain HTML codebases. Use when auditing accessibility, fixing a11y violations, checking color contrast, generating compliance reports, or integrating accessibility checks into CI/CD pipelines.",
@@ -33758,574 +34369,6 @@
       "github_stars": 83
     },
     {
-      "id": "fal-ai/fal-3d",
-      "name": "fal-3d",
-      "description": "Generate 3D models from text or images. Use when the user requests \"Create 3D model\", \"Text to 3D\", \"Image to 3D\", \"3D generation\", \"Generate mesh\", \"3D asset\".",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-3d",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-3d/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-audio",
-      "name": "fal-audio",
-      "description": "Text-to-speech and speech-to-text using fal.ai audio models. Use when the user requests \"Convert text to speech\", \"Transcribe audio\", \"Generate voice\", \"Speech to text\", \"TTS\", \"STT\", or similar audio tasks.",
-      "provider": "fal-ai",
-      "category": "ml-ai",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-audio",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-audio/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "convert",
-        "fal",
-        "audio"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-generate",
-      "name": "fal-generate",
-      "description": "Generate images and videos using fal.ai AI models with queue support. Use when the user requests \"Generate image\", \"Create video\", \"Make a picture of...\", \"Text to image\", \"Image to video\", \"Search models\", or similar generation tasks.",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "3.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-generate",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-generate/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "generate"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-image-edit",
-      "name": "fal-image-edit",
-      "description": "Edit images using AI on fal.ai. Style transfer, object removal, background changes, and more. Use when the user requests \"Edit image\", \"Remove object\", \"Change background\", \"Apply style\", or similar image editing tasks.",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-image-edit",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-image-edit/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "image",
-        "edit"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-kling-o3",
-      "name": "fal-kling-o3",
-      "description": "Generate images and videos with Kling O3 \u2014 Kling's most powerful model family. Text-to-image, text-to-video, image-to-video, and video-to-video editing. Use when the user requests \"Kling\", \"Kling O3\", \"Best quality video\", \"Kling image\", \"Kling video editing\".",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-kling-o3",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-kling-o3/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "kling"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": false,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-lip-sync",
-      "name": "fal-lip-sync",
-      "description": "Create talking head videos, lip sync audio to video, and animate portraits with expressions. Use when the user requests \"Talking head\", \"Lip sync\", \"Make this person talk\", \"Animate portrait\", \"Live portrait\", \"Avatar video\".",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-lip-sync",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-lip-sync/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "fal",
-        "lip",
-        "sync"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-platform",
-      "name": "fal-platform",
-      "description": "fal.ai Platform APIs for model management, pricing, usage tracking, and cost estimation. Use when user asks \"show pricing\", \"check usage\", \"estimate cost\", \"setup fal\", \"add API key\", or platform management tasks.",
-      "provider": "fal-ai",
-      "category": "ml-ai",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-platform",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-platform/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "ci",
-        "api",
-        "fal",
-        "platform"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": false,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-realtime",
-      "name": "fal-realtime",
-      "description": "Real-time and streaming AI image generation \u2014 instant results for interactive use. Use when the user requests \"Real-time generation\", \"Fast generation\", \"Streaming image\", \"Instant image\", \"Live generation\", \"Realtime\".",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-realtime",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-realtime/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "realtime"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-restore",
-      "name": "fal-restore",
-      "description": "Restore and fix image quality \u2014 deblur, denoise, dehaze, fix faces, restore documents. Use when the user requests \"Fix blurry image\", \"Remove noise\", \"Fix face\", \"Restore photo\", \"Enhance document\", \"Deblur\", \"Denoise\".",
-      "provider": "fal-ai",
-      "category": "documents",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-restore",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-restore/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "document",
-        "fal",
-        "restore"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-train",
-      "name": "fal-train",
-      "description": "Train custom AI models (LoRA) on fal.ai \u2014 personalize image generation for specific people, styles, objects, or video generation. Use when the user requests \"Train model\", \"Train LoRA\", \"Fine-tune\", \"Custom model\", \"Train on my images\", \"Portrait training\".",
-      "provider": "fal-ai",
-      "category": "ml-ai",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-train",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-train/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "ci",
-        "fal",
-        "train"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-tryon",
-      "name": "fal-tryon",
-      "description": "Virtual try-on \u2014 see how clothes look on a person. Use when the user requests \"Try on clothes\", \"Virtual try-on\", \"How does this look on me\", \"Fashion try-on\", \"Garment transfer\".",
-      "provider": "fal-ai",
-      "category": "other",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-tryon",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-tryon/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "tryon"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-upscale",
-      "name": "fal-upscale",
-      "description": "Upscale and enhance image resolution using AI. Use when the user requests \"Upscale image\", \"Enhance resolution\", \"Make image bigger\", \"Increase quality\", or similar upscaling tasks.",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-upscale",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-upscale/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "upscale"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-video-edit",
-      "name": "fal-video-edit",
-      "description": "Edit existing videos using AI \u2014 remix style, edit content, upscale resolution, remove background, or add audio/sound effects. Use when the user requests \"Edit video\", \"Remix video\", \"Upscale video\", \"Remove video background\", \"Add sound to video\", \"Video to audio\".",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-video-edit",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-video-edit/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "fal",
-        "video",
-        "edit"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-vision",
-      "name": "fal-vision",
-      "description": "Analyze images using AI \u2014 segment objects, detect objects, extract text (OCR), describe images, ask questions about images. Use when the user requests \"Segment image\", \"Detect objects\", \"OCR\", \"Extract text from image\", \"Describe image\", \"What's in this image\", \"Image analysis\".",
-      "provider": "fal-ai",
-      "category": "data",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "1.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-vision",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-vision/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": false,
-      "has_assets": false,
-      "tags": [
-        "extract",
-        "analysis",
-        "fal",
-        "vision"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
-      "id": "fal-ai/fal-workflow",
-      "name": "fal-workflow",
-      "description": "Generate production-ready fal.ai workflow JSON files. Use when user requests \"create workflow\", \"chain models\", \"multi-step generation\", \"image to video pipeline\", or complex AI generation pipelines.",
-      "provider": "fal-ai",
-      "category": "creative",
-      "license": null,
-      "compatibility": null,
-      "last_updated_at": "2026-03-06T01:14:17Z",
-      "metadata": {
-        "author": "fal-ai",
-        "version": "3.0.0"
-      },
-      "source": {
-        "repo": "https://github.com/fal-ai-community/skills",
-        "path": "skills/claude.ai/fal-workflow",
-        "skill_md_url": "https://raw.githubusercontent.com/fal-ai-community/skills/main/skills/claude.ai/fal-workflow/SKILL.md",
-        "commit_sha": "282eba6fb2a88c68aa3dc05335be7b955688258e"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "json",
-        "pr",
-        "fal",
-        "workflow"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 0,
-      "maintenance_status": "active",
-      "quality_score": 90,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 27
-    },
-    {
       "id": "family-history-skill/family-history-planning",
       "name": "family-history-planning",
       "description": "Provides assistance with planning family history and genealogy research projects.",
@@ -34592,16 +34635,16 @@
     "probable_duplicates": 0
   },
   "maintenance_summary": {
-    "active": 10,
-    "maintained": 16,
+    "active": 2,
+    "maintained": 19,
     "stale": 0,
     "abandoned": 0,
     "unknown": 0,
-    "active_percentage": 38.5,
+    "active_percentage": 9.5,
     "maintained_percentage": 100.0
   },
   "skill_type_summary": {
-    "full": 26,
+    "full": 21,
     "integration": 0
   }
 }
