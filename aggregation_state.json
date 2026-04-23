@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-04-22T07:59:29.326723+00:00",
+  "last_run": "2026-04-23T08:05:37.186912+00:00",
   "provider_commits": {
     "anthropics": "b9e19e6f44773509fbdd7001d77ff41a49a486c1",
-    "openai": "e940b8a86138adf03972802b990a1dfc57fcbf09",
+    "openai": "30444aed500c00c85294d12074f6e3ee794f808a",
     "github": "63d08d51f792d53feec8c1c06897cee870e83c18",
     "vercel": "ce3e64e468f8fa09a2d075d102771838061fdac0",
-    "huggingface": "061ab494cb145f43ae8f218939b99160e2c61c58",
+    "huggingface": "221f5f784ce3e71b148a7af4a76e43bb7ad86705",
     "skillcreatorai": "628dce65304d7d3e94a3cbf9c0bcaa414bb35f38",
     "obra-superpowers": "b55764852ac78870e65c6565fb585b6cd8b3c5c9",
     "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
@@ -27,7 +27,7 @@
     "notebooklm-skill": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
     "aiqualitylab": "0321527eebbb39ed4ae7673c2917c6032cf2a050",
     "stripe": "dd6deb03137908d0102ffde97e60c90cf79bf929",
-    "cloudflare": "0397d7d88fa6ac7517a88389622eb0799e86ded2",
+    "cloudflare": "8c01b03b0a09a01581beed87b656cf634009e735",
     "trailofbits": "e8cc5baf9329ccb491bfa200e82eacbac83b1ead",
     "expo": "8f26555fe105f72cf43051cf671771ad227a2f8f",
     "getsentry": "94ea2a26c70f3f646f07a613ffe5cd3d4eca1955",
@@ -36,7 +36,7 @@
     "better-auth": "6a1636950a1d7fc53602639ce7505a4a5d39c797",
     "tinybird": "a33c7fbc1a4684f2732267c12a106ee8ad853d53",
     "neondatabase": "38c7da85db656c8c9efd1e6433c200212926fd2d",
-    "fal-ai": "6a32bd7a8cc24dc473086d153034f6ee3e3dc5f6",
+    "fal-ai": "5cd97bbac5cde79742214ba8f0c3002ed869a4b3",
     "remotion": "41a3b0685bc648c5f66b3c81d67c61589875eefb",
     "nginity": "f567c61def3fb86046d7242b4bf27fceb63ad8b4",
     "obsidian-plugin": "803c4d9fce190d13830336ca93e66605e7bd5fba",
@@ -45,6 +45,6 @@
     "visionos-agents": "0dccbdfc0e30326bacb421fbe27f05317a76c121",
     "emblemcompany": "e9e2828aa3e1c32a6dd36fd9037b815b8e12facd"
   },
-  "skills_count": 914,
-  "version": "2026.04.22"
+  "skills_count": 915,
+  "version": "2026.04.23"
 }
