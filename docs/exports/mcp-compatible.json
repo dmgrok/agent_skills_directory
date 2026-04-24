@@ -1,13 +1,50 @@
 {
   "name": "MCP-Compatible Skills",
   "description": "Skills with MCP integration support, filtered from Agent Skills Directory",
-  "version": "2026.04.23",
-  "generated_at": "2026-04-23T08:05:37.035310+00:00",
+  "version": "2026.04.24",
+  "generated_at": "2026-04-24T08:13:54.842212+00:00",
   "source": "https://github.com/dmgrok/agent_skills_directory",
   "catalog_url": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json",
   "website": "https://dmgrok.github.io/agent_skills_directory/",
   "total_skills": 62,
   "skills": [
+    {
+      "id": "anthropics/mcp-builder",
+      "name": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "provider": "anthropics",
+      "category": "development",
+      "license": "Complete terms in LICENSE.txt",
+      "compatibility": null,
+      "last_updated_at": "2025-12-01T18:05:36Z",
+      "metadata": {},
+      "source": {
+        "repo": "https://github.com/anthropics/skills",
+        "path": "skills/mcp-builder",
+        "skill_md_url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/mcp-builder/SKILL.md",
+        "commit_sha": "5128e1865d670f5d6c9cef000e6dfc4e951fb5b9"
+      },
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false,
+      "tags": [
+        "pr",
+        "api",
+        "mcp",
+        "design",
+        "builder"
+      ],
+      "duplicate_status": null,
+      "duplicate_annotation": null,
+      "duplicate_of": null,
+      "duplicate_similarity": null,
+      "days_since_update": 143,
+      "maintenance_status": "maintained",
+      "quality_score": 80,
+      "skill_type": "full",
+      "requires_mcp": true,
+      "github_stars": 123153
+    },
     {
       "id": "cloudflare/agents-sdk",
       "name": "agents-sdk",
@@ -22,7 +59,7 @@
         "repo": "https://github.com/cloudflare/skills",
         "path": "skills/agents-sdk",
         "skill_md_url": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/agents-sdk/SKILL.md",
-        "commit_sha": "8c01b03b0a09a01581beed87b656cf634009e735"
+        "commit_sha": "0438a075b419f737eb091d1c91800b7387e3a75f"
       },
       "has_scripts": false,
       "has_references": true,
@@ -38,12 +75,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 8,
+      "days_since_update": 9,
       "maintenance_status": "active",
       "quality_score": 80,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 1238
+      "github_stars": 1252
     },
     {
       "id": "cloudflare/cloudflare-email-service",
@@ -59,7 +96,7 @@
         "repo": "https://github.com/cloudflare/skills",
         "path": "skills/cloudflare-email-service",
         "skill_md_url": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/cloudflare-email-service/SKILL.md",
-        "commit_sha": "8c01b03b0a09a01581beed87b656cf634009e735"
+        "commit_sha": "0438a075b419f737eb091d1c91800b7387e3a75f"
       },
       "has_scripts": false,
       "has_references": true,
@@ -75,12 +112,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 7,
+      "days_since_update": 8,
       "maintenance_status": "active",
       "quality_score": 80,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 1238
+      "github_stars": 1252
     },
     {
       "id": "cloudflare/web-perf",
@@ -96,7 +133,7 @@
         "repo": "https://github.com/cloudflare/skills",
         "path": "skills/web-perf",
         "skill_md_url": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/web-perf/SKILL.md",
-        "commit_sha": "8c01b03b0a09a01581beed87b656cf634009e735"
+        "commit_sha": "0438a075b419f737eb091d1c91800b7387e3a75f"
       },
       "has_scripts": false,
       "has_references": false,
@@ -113,12 +150,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 21,
+      "days_since_update": 22,
       "maintenance_status": "active",
       "quality_score": 70,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 1238
+      "github_stars": 1252
     },
     {
       "id": "openai/chatgpt-apps",
@@ -134,7 +171,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/chatgpt-apps",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/chatgpt-apps/SKILL.md",
-        "commit_sha": "30444aed500c00c85294d12074f6e3ee794f808a"
+        "commit_sha": "11c643813b4645ca9f25d49ca180697732e0141a"
       },
       "has_scripts": true,
       "has_references": true,
@@ -151,12 +188,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 51,
+      "days_since_update": 52,
       "maintenance_status": "maintained",
       "quality_score": 80,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 17304
+      "github_stars": 17382
     },
     {
       "id": "openai/figma",
@@ -172,7 +209,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/figma",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/figma/SKILL.md",
-        "commit_sha": "30444aed500c00c85294d12074f6e3ee794f808a"
+        "commit_sha": "11c643813b4645ca9f25d49ca180697732e0141a"
       },
       "has_scripts": false,
       "has_references": true,
@@ -187,12 +224,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 80,
+      "days_since_update": 81,
       "maintenance_status": "maintained",
       "quality_score": 80,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 17304
+      "github_stars": 17382
     },
     {
       "id": "openai/figma-create-design-system-rules",
@@ -208,7 +245,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/figma-create-design-system-rules",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/figma-create-design-system-rules/SKILL.md",
-        "commit_sha": "30444aed500c00c85294d12074f6e3ee794f808a"
+        "commit_sha": "11c643813b4645ca9f25d49ca180697732e0141a"
       },
       "has_scripts": true,
       "has_references": true,
@@ -227,12 +264,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 29,
-      "maintenance_status": "active",
-      "quality_score": 100,
+      "days_since_update": 30,
+      "maintenance_status": "maintained",
+      "quality_score": 90,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 17304
+      "github_stars": 17382
     },
     {
       "id": "openai/openai-docs",
@@ -248,7 +285,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.curated/openai-docs",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/openai-docs/SKILL.md",
-        "commit_sha": "30444aed500c00c85294d12074f6e3ee794f808a"
+        "commit_sha": "11c643813b4645ca9f25d49ca180697732e0141a"
       },
       "has_scripts": true,
       "has_references": true,
@@ -267,12 +304,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 0,
+      "days_since_update": 1,
       "maintenance_status": "active",
       "quality_score": 100,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 17304,
+      "github_stars": 17382,
       "similar_skills": [
         {
           "id": "openai/openai-docs",
@@ -295,7 +332,7 @@
         "repo": "https://github.com/openai/skills",
         "path": "skills/.system/openai-docs",
         "skill_md_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.system/openai-docs/SKILL.md",
-        "commit_sha": "30444aed500c00c85294d12074f6e3ee794f808a"
+        "commit_sha": "11c643813b4645ca9f25d49ca180697732e0141a"
       },
       "has_scripts": true,
       "has_references": true,
@@ -314,12 +351,12 @@
       "duplicate_annotation": "Complete mirror of openai/openai-docs",
       "duplicate_of": "openai/openai-docs",
       "duplicate_similarity": 1.0,
-      "days_since_update": 0,
+      "days_since_update": 1,
       "maintenance_status": "active",
       "quality_score": 100,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 17304,
+      "github_stars": 17382,
       "similar_skills": [
         {
           "id": "openai/openai-docs",
@@ -400,43 +437,6 @@
       "skill_type": "full",
       "requires_mcp": true,
       "github_stars": 256
-    },
-    {
-      "id": "anthropics/mcp-builder",
-      "name": "mcp-builder",
-      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
-      "provider": "anthropics",
-      "category": "development",
-      "license": "Complete terms in LICENSE.txt",
-      "compatibility": null,
-      "last_updated_at": "2025-12-01T18:05:36Z",
-      "metadata": {},
-      "source": {
-        "repo": "https://github.com/anthropics/skills",
-        "path": "skills/mcp-builder",
-        "skill_md_url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/mcp-builder/SKILL.md",
-        "commit_sha": "b9e19e6f44773509fbdd7001d77ff41a49a486c1"
-      },
-      "has_scripts": true,
-      "has_references": true,
-      "has_assets": false,
-      "tags": [
-        "pr",
-        "api",
-        "mcp",
-        "design",
-        "builder"
-      ],
-      "duplicate_status": null,
-      "duplicate_annotation": null,
-      "duplicate_of": null,
-      "duplicate_similarity": null,
-      "days_since_update": 140,
-      "maintenance_status": "maintained",
-      "quality_score": 80,
-      "skill_type": "full",
-      "requires_mcp": true,
-      "github_stars": 121326
     },
     {
       "id": "github/aspire",
