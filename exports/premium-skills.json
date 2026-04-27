@@ -1,8 +1,8 @@
 {
   "name": "Premium Skills",
   "description": "Top-quality skills (score >= 70) from Agent Skills Directory",
-  "version": "2026.04.25",
-  "generated_at": "2026-04-25T07:27:31.274421+00:00",
+  "version": "2026.04.27",
+  "generated_at": "2026-04-27T08:35:17.209397+00:00",
   "source": "https://github.com/dmgrok/agent_skills_directory",
   "catalog_url": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json",
   "website": "https://dmgrok.github.io/agent_skills_directory/",
@@ -22,7 +22,7 @@
         "repo": "https://github.com/getsentry/skills",
         "path": "skills/django-access-review",
         "skill_md_url": "https://raw.githubusercontent.com/getsentry/skills/main/skills/django-access-review/SKILL.md",
-        "commit_sha": "a2366b16ba49c0c845bdbbd27e0eae283b3a493f"
+        "commit_sha": "5cfc9e22a91c2d3a230c4d5154ea0f1babce3b28"
       },
       "has_scripts": false,
       "has_references": true,
@@ -36,12 +36,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 5,
+      "days_since_update": 7,
       "maintenance_status": "active",
       "quality_score": 70,
       "skill_type": "full",
       "requires_mcp": false,
-      "github_stars": 630
+      "github_stars": 639
     },
     {
       "id": "getsentry/gh-review-requests",
@@ -57,7 +57,7 @@
         "repo": "https://github.com/getsentry/skills",
         "path": "skills/gh-review-requests",
         "skill_md_url": "https://raw.githubusercontent.com/getsentry/skills/main/skills/gh-review-requests/SKILL.md",
-        "commit_sha": "a2366b16ba49c0c845bdbbd27e0eae283b3a493f"
+        "commit_sha": "5cfc9e22a91c2d3a230c4d5154ea0f1babce3b28"
       },
       "has_scripts": true,
       "has_references": false,
@@ -74,12 +74,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 5,
+      "days_since_update": 7,
       "maintenance_status": "active",
       "quality_score": 70,
       "skill_type": "full",
       "requires_mcp": false,
-      "github_stars": 630
+      "github_stars": 639
     },
     {
       "id": "getsentry/gha-security-review",
@@ -95,7 +95,7 @@
         "repo": "https://github.com/getsentry/skills",
         "path": "skills/gha-security-review",
         "skill_md_url": "https://raw.githubusercontent.com/getsentry/skills/main/skills/gha-security-review/SKILL.md",
-        "commit_sha": "a2366b16ba49c0c845bdbbd27e0eae283b3a493f"
+        "commit_sha": "5cfc9e22a91c2d3a230c4d5154ea0f1babce3b28"
       },
       "has_scripts": false,
       "has_references": true,
@@ -113,12 +113,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 5,
+      "days_since_update": 7,
       "maintenance_status": "active",
       "quality_score": 70,
       "skill_type": "full",
       "requires_mcp": false,
-      "github_stars": 630
+      "github_stars": 639
     },
     {
       "id": "getsentry/iterate-pr",
@@ -134,7 +134,7 @@
         "repo": "https://github.com/getsentry/skills",
         "path": "skills/iterate-pr",
         "skill_md_url": "https://raw.githubusercontent.com/getsentry/skills/main/skills/iterate-pr/SKILL.md",
-        "commit_sha": "a2366b16ba49c0c845bdbbd27e0eae283b3a493f"
+        "commit_sha": "5cfc9e22a91c2d3a230c4d5154ea0f1babce3b28"
       },
       "has_scripts": true,
       "has_references": false,
@@ -148,12 +148,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 5,
+      "days_since_update": 7,
       "maintenance_status": "active",
       "quality_score": 70,
       "skill_type": "full",
       "requires_mcp": false,
-      "github_stars": 630
+      "github_stars": 639
     },
     {
       "id": "getsentry/presentation-creator",
@@ -169,7 +169,7 @@
         "repo": "https://github.com/getsentry/skills",
         "path": "skills/presentation-creator",
         "skill_md_url": "https://raw.githubusercontent.com/getsentry/skills/main/skills/presentation-creator/SKILL.md",
-        "commit_sha": "a2366b16ba49c0c845bdbbd27e0eae283b3a493f"
+        "commit_sha": "5cfc9e22a91c2d3a230c4d5154ea0f1babce3b28"
       },
       "has_scripts": false,
       "has_references": true,
@@ -185,12 +185,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 5,
+      "days_since_update": 7,
       "maintenance_status": "active",
       "quality_score": 70,
       "skill_type": "full",
       "requires_mcp": false,
-      "github_stars": 630
+      "github_stars": 639
     },
     {
       "id": "getsentry/prompt-optimizer",
@@ -206,7 +206,7 @@
         "repo": "https://github.com/getsentry/skills",
         "path": "skills/prompt-optimizer",
         "skill_md_url": "https://raw.githubusercontent.com/getsentry/skills/main/skills/prompt-optimizer/SKILL.md",
-        "commit_sha": "a2366b16ba49c0c845bdbbd27e0eae283b3a493f"
+        "commit_sha": "5cfc9e22a91c2d3a230c4d5154ea0f1babce3b28"
       },
       "has_scripts": false,
       "has_references": true,
@@ -222,12 +222,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 0,
+      "days_since_update": 2,
       "maintenance_status": "active",
       "quality_score": 70,
       "skill_type": "full",
       "requires_mcp": false,
-      "github_stars": 630
+      "github_stars": 639
     },
     {
       "id": "getsentry/replay-ux-research",
@@ -243,7 +243,7 @@
         "repo": "https://github.com/getsentry/skills",
         "path": "skills/replay-ux-research",
         "skill_md_url": "https://raw.githubusercontent.com/getsentry/skills/main/skills/replay-ux-research/SKILL.md",
-        "commit_sha": "a2366b16ba49c0c845bdbbd27e0eae283b3a493f"
+        "commit_sha": "5cfc9e22a91c2d3a230c4d5154ea0f1babce3b28"
       },
       "has_scripts": false,
       "has_references": true,
@@ -257,12 +257,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 0,
+      "days_since_update": 2,
       "maintenance_status": "active",
       "quality_score": 70,
       "skill_type": "full",
       "requires_mcp": true,
-      "github_stars": 630
+      "github_stars": 639
     },
     {
       "id": "getsentry/security-review",
@@ -278,7 +278,7 @@
         "repo": "https://github.com/getsentry/skills",
         "path": "skills/security-review",
         "skill_md_url": "https://raw.githubusercontent.com/getsentry/skills/main/skills/security-review/SKILL.md",
-        "commit_sha": "a2366b16ba49c0c845bdbbd27e0eae283b3a493f"
+        "commit_sha": "5cfc9e22a91c2d3a230c4d5154ea0f1babce3b28"
       },
       "has_scripts": false,
       "has_references": true,
@@ -292,12 +292,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 5,
+      "days_since_update": 7,
       "maintenance_status": "active",
       "quality_score": 70,
       "skill_type": "full",
       "requires_mcp": false,
-      "github_stars": 630
+      "github_stars": 639
     },
     {
       "id": "getsentry/skill-scanner",
@@ -313,7 +313,7 @@
         "repo": "https://github.com/getsentry/skills",
         "path": "skills/skill-scanner",
         "skill_md_url": "https://raw.githubusercontent.com/getsentry/skills/main/skills/skill-scanner/SKILL.md",
-        "commit_sha": "a2366b16ba49c0c845bdbbd27e0eae283b3a493f"
+        "commit_sha": "5cfc9e22a91c2d3a230c4d5154ea0f1babce3b28"
       },
       "has_scripts": true,
       "has_references": true,
@@ -328,12 +328,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 5,
+      "days_since_update": 7,
       "maintenance_status": "active",
       "quality_score": 80,
       "skill_type": "full",
       "requires_mcp": false,
-      "github_stars": 630
+      "github_stars": 639
     },
     {
       "id": "getsentry/skill-writer",
@@ -343,13 +343,13 @@
       "category": "development",
       "license": null,
       "compatibility": null,
-      "last_updated_at": "2026-04-19T23:10:08Z",
+      "last_updated_at": "2026-04-26T17:24:30Z",
       "metadata": {},
       "source": {
         "repo": "https://github.com/getsentry/skills",
         "path": "skills/skill-writer",
         "skill_md_url": "https://raw.githubusercontent.com/getsentry/skills/main/skills/skill-writer/SKILL.md",
-        "commit_sha": "a2366b16ba49c0c845bdbbd27e0eae283b3a493f"
+        "commit_sha": "5cfc9e22a91c2d3a230c4d5154ea0f1babce3b28"
       },
       "has_scripts": true,
       "has_references": true,
@@ -364,12 +364,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 5,
+      "days_since_update": 0,
       "maintenance_status": "active",
       "quality_score": 80,
       "skill_type": "full",
       "requires_mcp": false,
-      "github_stars": 630
+      "github_stars": 639
     },
     {
       "id": "getsentry/sred-project-organizer",
@@ -385,7 +385,7 @@
         "repo": "https://github.com/getsentry/skills",
         "path": "skills/sred-project-organizer",
         "skill_md_url": "https://raw.githubusercontent.com/getsentry/skills/main/skills/sred-project-organizer/SKILL.md",
-        "commit_sha": "a2366b16ba49c0c845bdbbd27e0eae283b3a493f"
+        "commit_sha": "5cfc9e22a91c2d3a230c4d5154ea0f1babce3b28"
       },
       "has_scripts": false,
       "has_references": true,
@@ -401,12 +401,12 @@
       "duplicate_annotation": null,
       "duplicate_of": null,
       "duplicate_similarity": null,
-      "days_since_update": 5,
+      "days_since_update": 7,
       "maintenance_status": "active",
       "quality_score": 70,
       "skill_type": "full",
       "requires_mcp": false,
-      "github_stars": 630
+      "github_stars": 639
     },
     {
       "id": "openai/aspnet-core",
