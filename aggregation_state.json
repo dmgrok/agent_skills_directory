@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-05-26T10:12:39.882863+00:00",
+  "last_run": "2026-05-27T10:14:11.256280+00:00",
   "provider_commits": {
     "anthropics": "690f15cac7f7b4c055c5ab109c79ed9259934081",
     "openai": "b0401f07213a66414d84a65cb50c1d226f99485a",
-    "github": "f8c986079ede8a4caa788330ec7a97776a1b7d1d",
-    "vercel": "18a24346600009dc3fcb99e4b2cd83b301601775",
-    "huggingface": "3775200241906acdf936bf8766357d0f8c420fb4",
+    "github": "2e7c43b1f5bdf3695a79e0f2fd92648bcf4a389f",
+    "vercel": "180115660cfb8a86b808f117475a01f54caf3bc5",
+    "huggingface": "7a493b09c81aae09a41bd2e1fa33dfc0f68acd75",
     "skillcreatorai": "039ad59e2a1256a47c08abc7d2c194446e9a2c02",
     "obra-superpowers": "f2cbfbefebbfef77321e4c9abc9e949826bea9d7",
     "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
@@ -29,16 +29,16 @@
     "stripe": "a34795211da530a168f581122011bb5ceb2e4bd0",
     "cloudflare": "60147cbb773649eadca89cee92b4e0caf02234b4",
     "trailofbits": "a56045e9ae00b3506cacefea0f672aab0a1a6e3c",
-    "expo": "956a92b9a0018989d7a0002a2b2a525d741867c2",
+    "expo": "510373b50956ef4dc84c20bb4c9cce70b618aa06",
     "getsentry": "b10e2db21d3165de1904bdf3fa64285016765fe5",
     "supabase": "4e69c80e213f315c02c9ebef9c28dd6e43a4707e",
-    "google-labs-stitch": "21db6cdf511678a5d55d188f8c6b152f57b59f27",
+    "google-labs-stitch": "53f15d81da854039aae10e8af19ad389c3997653",
     "better-auth": "6a1636950a1d7fc53602639ce7505a4a5d39c797",
     "tinybird": "d60d8385bea6557a4ce96017b9b7cdd9bd8714e5",
     "neondatabase": "bd9ec7ff273ce54bdd3ebe581d5b0802a3479618",
     "fal-ai": "9ca850412943251fc9a466c4c29fdaf7a303a3d8",
     "remotion": "277510e78245ac0fa275d7cb6520d52e0ac2e212",
-    "nginity": "10c1ceb07bbc7a6613f8fa76adb83bb926e48e02",
+    "nginity": "eace618ba39ed401cb8f09fb1925ec3c7029b5a4",
     "obsidian-plugin": "e9dbceadbbb246a9d79c9a0ef26f15ecd2950be7",
     "stream-coding": "42a7cb5ceec5611040d6f2764ee7943e4984345d",
     "ipsw-skill": "30f98b82fdfd9d1ccbee47c2c2d494b42f56ed8c",
@@ -46,5 +46,5 @@
     "emblemcompany": "9a68a35c4d61a8b6fe673fa98c39e4b9dd9d2cd3"
   },
   "skills_count": 1048,
-  "version": "2026.05.26"
+  "version": "2026.05.27"
 }
