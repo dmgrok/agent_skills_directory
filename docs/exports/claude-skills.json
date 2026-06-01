@@ -1,8 +1,8 @@
 {
   "name": "Claude Skills Export",
   "description": "High-quality skills compatible with Claude Code, filtered from Agent Skills Directory. Install with: skillsdir install <skill-id> --project --agent claude",
-  "version": "2026.05.31",
-  "generated_at": "2026-05-31T08:54:29.578445+00:00",
+  "version": "2026.06.01",
+  "generated_at": "2026-06-01T11:46:47.754671+00:00",
   "source": "https://github.com/dmgrok/agent_skills_directory",
   "catalog_url": "https://cdn.jsdelivr.net/gh/dmgrok/agent_skills_directory@main/catalog.json",
   "website": "https://dmgrok.github.io/agent_skills_directory/",
