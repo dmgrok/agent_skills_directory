@@ -353,6 +353,13 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/EmblemCompany/Agent-skills/main",
         "skills_path_prefix": "skills/",
     },
+    "sematext": {
+        "name": "Sematext",
+        "repo": "https://github.com/sematext/sematext-otel-onboarding",
+        "api_tree_url": "https://api.github.com/repos/sematext/sematext-otel-onboarding/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/sematext/sematext-otel-onboarding/main",
+        "skills_path_prefix": "skills/",
+    },
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
