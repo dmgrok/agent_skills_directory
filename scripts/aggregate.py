@@ -353,6 +353,13 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/EmblemCompany/Agent-skills/main",
         "skills_path_prefix": "skills/",
     },
+    "accint": {
+        "name": "AccInt",
+        "repo": "https://github.com/maxbaluev/accreted-intelligence",
+        "api_tree_url": "https://api.github.com/repos/maxbaluev/accreted-intelligence/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/maxbaluev/accreted-intelligence/main",
+        "skills_path_prefix": "plugins/claude/skills/",
+    },
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
