@@ -353,6 +353,13 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/EmblemCompany/Agent-skills/main",
         "skills_path_prefix": "skills/",
     },
+    "low-frequency-thread-monitor": {
+        "name": "Low Frequency Thread Monitor",
+        "repo": "https://github.com/ggsq003-png/low-frequency-thread-monitor",
+        "api_tree_url": "https://api.github.com/repos/ggsq003-png/low-frequency-thread-monitor/git/trees/main?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/ggsq003-png/low-frequency-thread-monitor/main",
+        "skills_path_prefix": "",
+    },
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
