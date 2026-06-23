@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-06-22T12:19:06.394882+00:00",
+  "last_run": "2026-06-23T09:56:25.341414+00:00",
   "provider_commits": {
     "anthropics": "57546260929473d4e0d1c1bb75297be2fdfa1949",
-    "openai": "972cb867affac58fda9afa76bb1a19b399a278cf",
-    "github": "3e36d367091a1e67b77974cade6f1aa48bc77a81",
+    "openai": "778b0e6129cf18cbaee3bf11479f583fadae8d03",
+    "github": "3304e8e11c7457924ec1bdbfc2e2ce8e7e4eec5b",
     "vercel": "f8a72b9603728bb92a217a879b7e62e43ad76c81",
-    "huggingface": "ea9a24f38a98baf2430dab3bcb31a89753ae9e6d",
+    "huggingface": "093e0bb81e568503fbb091d694fbcdb6273d7f44",
     "skillcreatorai": "039ad59e2a1256a47c08abc7d2c194446e9a2c02",
     "obra-superpowers": "896224c4b1879920ab573417e68fd51d2ccc9072",
     "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
@@ -26,18 +26,18 @@
     "family-history-skill": "7334d3d400740fda3de1c54c90e186307f8f1176",
     "notebooklm-skill": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
     "aiqualitylab": "0321527eebbb39ed4ae7673c2917c6032cf2a050",
-    "stripe": "d9527bfc2d0993f3d2a650501e53e4f68d179ca3",
-    "cloudflare": "ffcc622bf112eccc49c4b433faa5dd28e9ede2ea",
+    "stripe": "2cf8986d67dbb0eb0d92f16ac7d8c99841000806",
+    "cloudflare": "27ce0c0e159225caa7ed30ebefd4107aa6c52497",
     "trailofbits": "ff4162dcb9cec5b7abe5ab039c868544b325275d",
-    "expo": "b553ae4e1755bec11eac21517fe63040c7e07f2c",
-    "getsentry": "b39c7c4b6056f0579b340b7c5c4e811e400368e8",
+    "expo": "81ee6546b0745dc666ebacfc1f48e4bff74fbf44",
+    "getsentry": "89a1f0105c5be12934bda2bcd01f58ab894976e2",
     "supabase": "1356046015476711a769601079262b5635929427",
     "google-labs-stitch": "fac732417e1b05525686fb78141a517b05f5d57e",
     "better-auth": "6a1636950a1d7fc53602639ce7505a4a5d39c797",
     "tinybird": "960fb7516723d7ac4dac00522a36825de9e906cd",
-    "neondatabase": "a67ffaf22d93ffd9275aba5d7bdb7fbf94461796",
+    "neondatabase": "dba1dbde912606664087842244206db107d586f1",
     "fal-ai": "9ca850412943251fc9a466c4c29fdaf7a303a3d8",
-    "remotion": "277510e78245ac0fa275d7cb6520d52e0ac2e212",
+    "remotion": "8dad6ec5c5c7cedee4d2aa620bb68386f8fe8eb9",
     "nginity": "4a3c05b69e64f4925f7fc65c88890f614f79caf0",
     "obsidian-plugin": "7fddc5f0ba17ae7baa36f95a417c9d7356c08840",
     "stream-coding": "42a7cb5ceec5611040d6f2764ee7943e4984345d",
@@ -46,5 +46,5 @@
     "emblemcompany": "9a68a35c4d61a8b6fe673fa98c39e4b9dd9d2cd3"
   },
   "skills_count": 1106,
-  "version": "2026.06.22"
+  "version": "2026.06.23"
 }
