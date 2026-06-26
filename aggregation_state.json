@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-06-25T09:38:27.410875+00:00",
+  "last_run": "2026-06-26T09:41:18.890180+00:00",
   "provider_commits": {
     "anthropics": "57546260929473d4e0d1c1bb75297be2fdfa1949",
     "openai": "49f948faa9258a0c61caceaf225e179651397431",
-    "github": "e9c8e3704181fa38245d101308a8527d12af6a4d",
+    "github": "cd420ca862a301755a32ed76d53611bd5e04de30",
     "vercel": "f8a72b9603728bb92a217a879b7e62e43ad76c81",
-    "huggingface": "093e0bb81e568503fbb091d694fbcdb6273d7f44",
+    "huggingface": "35e8c35a1ae5b462e0bb23d444d25569c3bb6700",
     "skillcreatorai": "039ad59e2a1256a47c08abc7d2c194446e9a2c02",
     "obra-superpowers": "896224c4b1879920ab573417e68fd51d2ccc9072",
     "tapestry": "80e1dc56df74d1cb849ad649c7ead9756e7929bb",
@@ -26,16 +26,16 @@
     "family-history-skill": "7334d3d400740fda3de1c54c90e186307f8f1176",
     "notebooklm-skill": "eea5cb28ba79ab8b078a1eaa44ce9ec44f75dbf8",
     "aiqualitylab": "0321527eebbb39ed4ae7673c2917c6032cf2a050",
-    "stripe": "23b54f12503eb18bb05eb9de9fbaeb301bec80b0",
+    "stripe": "f54c9e6c0e8b6cfe4e648745eec68ecab3ddc994",
     "cloudflare": "27ce0c0e159225caa7ed30ebefd4107aa6c52497",
     "trailofbits": "39e10bd31e808e4dbf50588dd023fa6197b6b0cc",
-    "expo": "b5f13f8fbf24da63248ca3b30284521dbcd00d3c",
+    "expo": "ad897fdf0c6593d0cc7523198aa752c6f62adeda",
     "getsentry": "89a1f0105c5be12934bda2bcd01f58ab894976e2",
     "supabase": "1356046015476711a769601079262b5635929427",
     "google-labs-stitch": "fac732417e1b05525686fb78141a517b05f5d57e",
     "better-auth": "6a1636950a1d7fc53602639ce7505a4a5d39c797",
     "tinybird": "960fb7516723d7ac4dac00522a36825de9e906cd",
-    "neondatabase": "9f4c830d946762357004ec02c19e29cf72ef34fd",
+    "neondatabase": "2a71e7b93d48977076c74e14ac3e470175e74eb2",
     "fal-ai": "9ca850412943251fc9a466c4c29fdaf7a303a3d8",
     "remotion": "8dad6ec5c5c7cedee4d2aa620bb68386f8fe8eb9",
     "nginity": "4a3c05b69e64f4925f7fc65c88890f614f79caf0",
@@ -46,5 +46,5 @@
     "emblemcompany": "9a68a35c4d61a8b6fe673fa98c39e4b9dd9d2cd3"
   },
   "skills_count": 1106,
-  "version": "2026.06.25"
+  "version": "2026.06.26"
 }
