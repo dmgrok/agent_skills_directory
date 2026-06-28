@@ -1,7 +1,7 @@
 {
-  "last_run": "2026-06-27T08:43:51.280749+00:00",
+  "last_run": "2026-06-28T09:19:24.260731+00:00",
   "provider_commits": {
-    "anthropics": "57546260929473d4e0d1c1bb75297be2fdfa1949",
+    "anthropics": "35414756ca55738e050562e272a6bbc6273aa926",
     "openai": "49f948faa9258a0c61caceaf225e179651397431",
     "github": "cd420ca862a301755a32ed76d53611bd5e04de30",
     "vercel": "f8a72b9603728bb92a217a879b7e62e43ad76c81",
@@ -46,5 +46,5 @@
     "emblemcompany": "9a68a35c4d61a8b6fe673fa98c39e4b9dd9d2cd3"
   },
   "skills_count": 1106,
-  "version": "2026.06.27"
+  "version": "2026.06.28"
 }
