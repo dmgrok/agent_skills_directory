@@ -353,6 +353,13 @@ PROVIDERS = {
         "raw_base": "https://raw.githubusercontent.com/EmblemCompany/Agent-skills/main",
         "skills_path_prefix": "skills/",
     },
+    "xquik-dev": {
+        "name": "Xquik",
+        "repo": "https://github.com/Xquik-dev/x-twitter-scraper",
+        "api_tree_url": "https://api.github.com/repos/Xquik-dev/x-twitter-scraper/git/trees/master?recursive=1",
+        "raw_base": "https://raw.githubusercontent.com/Xquik-dev/x-twitter-scraper/master",
+        "skills_path_prefix": "skills/",
+    },
 }
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
